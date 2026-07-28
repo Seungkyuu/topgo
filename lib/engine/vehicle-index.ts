@@ -36,6 +36,10 @@ export interface VehicleRef {
   /** 모델 그룹 키(예: "3시리즈", "GLC-클래스") — 트림 선택 UI 그룹핑용.
    *  scripts/build_model_groups.py가 원본 라벨 기준으로 미리 계산해둔다. */
   modelGroup: string;
+  /** 캐피탈사 엑셀 원 정가(겟챠 매칭 전 price) — 겟챠 실가격으로 교체된
+   *  ref만 존재. "할인율 TOP3"(탑고 전용) 계산에만 쓰고 견적 계산 경로엔
+   *  영향 없다. */
+  listPrice?: number;
 }
 
 export interface IndexedVehicle {
@@ -177,6 +181,7 @@ export function buildVehicleIndex(): IndexedVehicle[] {
     sourceId: string,
     price: number,
     offerKey?: string,
+    listPrice?: number,
   ) => {
     if (JUNK_LABELS.has(rawLabel.trim())) return;
     const display = cleanDisplayName(rawLabel);
@@ -196,17 +201,18 @@ export function buildVehicleIndex(): IndexedVehicle[] {
         existing.price = price;
         existing.offerKey = offerKey;
         existing.modelGroup = modelGroup;
+        existing.listPrice = listPrice;
       }
       return;
     }
-    v.refs.push({ sourceId, model: rawLabel, price, offerKey, modelGroup });
+    v.refs.push({ sourceId, model: rawLabel, price, offerKey, modelGroup, listPrice });
   };
 
   // 오릭스 — 벤츠·테슬라. 겟챠 실가격이 있으면 엑셀 가격 대신 그걸 쓴다
   // (계산 입력값 자체를 교체 — 수입차도 겟챠 할인가 기준이라는 사업 규칙).
   for (const m of listOrixModels()) {
     const price = findOrixVehicle(m)?.price ?? 0;
-    add(/model/i.test(m) ? "테슬라" : "벤츠", m, "orix", importRealPrice(m, price), importOfferKey(m));
+    add(/model/i.test(m) ? "테슬라" : "벤츠", m, "orix", importRealPrice(m, price), importOfferKey(m), price);
   }
   // 신한 오토리스
   for (const v of listShinhanModels()) {
@@ -217,6 +223,7 @@ export function buildVehicleIndex(): IndexedVehicle[] {
       "shinhan-lease",
       importRealPrice(rawKey, v.vehiclePrice),
       importOfferKey(rawKey),
+      v.vehiclePrice,
     );
   }
   // 신한 렌터카 — 원본 엑셀에 브랜드 자리에 "전기차"/"선구매 전용 OO"처럼
@@ -244,7 +251,14 @@ export function buildVehicleIndex(): IndexedVehicle[] {
   // 메리츠 수입차
   for (const [key, v] of listMeritzVehicles()) {
     const { brand, rest } = splitMeritzBrand(key);
-    add(brand, rest, "meritz-import", importRealPrice(key, v.vehiclePrice), importOfferKey(key));
+    add(
+      brand,
+      rest,
+      "meritz-import",
+      importRealPrice(key, v.vehiclePrice),
+      importOfferKey(key),
+      v.vehiclePrice,
+    );
   }
   // 메리츠 국산차
   for (const [key] of listDomesticVehicles()) {
@@ -342,6 +356,22 @@ export function listBrands(): string[] {
     counts.set(v.brand, (counts.get(v.brand) ?? 0) + 1);
   }
   return [...counts.entries()].sort((a, b) => b[1] - a[1]).map(([b]) => b);
+}
+
+/** (탑고 전용) 겟챠 실가격으로 교체된 ref 중 정가 대비 할인율이 가장 큰
+ *  것을 찾는다. listPrice가 없는(=수입차 겟챠 매칭이 안 된, 또는 원래
+ *  국산/EV처럼 정가·실가 쌍이 없는) 차량은 null — 할인율을 "모른다"를
+ *  0%로 위장하지 않는다. */
+export function bestDiscount(
+  v: IndexedVehicle,
+): { rate: number; listPrice: number; realPrice: number } | null {
+  let best: { rate: number; listPrice: number; realPrice: number } | null = null;
+  for (const r of v.refs) {
+    if (!r.listPrice || r.listPrice <= 0 || r.price <= 0 || r.listPrice <= r.price) continue;
+    const rate = (r.listPrice - r.price) / r.listPrice;
+    if (!best || rate > best.rate) best = { rate, listPrice: r.listPrice, realPrice: r.price };
+  }
+  return best;
 }
 
 // ─── 모델 그룹(브랜드→모델→트림 2단계 선택 UI) ────────────────────────────────

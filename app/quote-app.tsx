@@ -21,6 +21,7 @@ import {
   listBrands,
   dealsForIndexed,
   quoteIndexed,
+  bestDiscount,
   type IndexedVehicle,
   type ModelGroupSummary,
 } from "@/lib/engine/vehicle-index";
@@ -878,68 +879,37 @@ export default function QuoteApp() {
     [index],
   );
 
-  // 48개월·보증금30% 조건으로 실제 최저가 견적을 뽑는다(하드코딩 가격
-  // 아님) — 랜딩의 "할인 특가"·"인기 모델" 카드가 공용으로 쓴다.
-  function bestLandingQuote(
-    v: IndexedVehicle,
-    tryOrder: DealType[] = PROMO_DEAL_TRY_ORDER,
-  ): {
-    deal: DealType;
-    monthlyPayment: number;
-    residualRate?: number;
-    spread: number;
-    sourceCount: number;
-  } | null {
-    const deals = dealsForIndexed(v);
-    for (const deal of tryOrder) {
-      if (!deals.includes(deal)) continue;
-      const ok = quoteIndexed(v, deal, PROMO_CONDITIONS).filter(
-        (r) => r.available && typeof r.monthlyPayment === "number",
-      );
-      if (ok.length === 0) continue;
-      const best = ok.reduce((a, b) => (b.monthlyPayment! < a.monthlyPayment! ? b : a));
-      // 카드에 "최대 XXX원 차이"를 보여주려고 같은 조건으로 계산된 다른
-      // 금융사 견적과의 격차도 같이 뽑는다(결과 화면의 savings-badge와
-      // 같은 계산, 새 데이터 없이 이미 계산되는 rows에서 가져오는 것뿐).
-      const amounts = ok.map((r) => r.monthlyPayment!);
-      const spread = amounts.length >= 2 ? Math.max(...amounts) - Math.min(...amounts) : 0;
-      // 실명(오릭스/신한/메리츠)은 카드에 안 밝히고 "N사 비교"로만 말하되,
-      // N은 하드코딩이 아니라 이 차량·조건에서 실제로 비교된 금융사 수다.
-      const sourceCount = new Set(ok.map((r) => r.capital)).size;
-      return { deal, monthlyPayment: best.monthlyPayment!, residualRate: best.residualRate, spread, sourceCount };
-    }
-    return null;
-  }
+  /** "할인율 TOP3" — 단순 최저가 랭킹은 항상 같은 저가 차량만 1등이라
+   *  판매자 입장에서 딱히 내세울 이득이 없다(대표님 피드백). 대신 겟챠
+   *  실가격이 캐피탈사 정가보다 실제로 낮게 매칭된 수입차만 대상으로,
+   *  정가 대비 할인율(%)이 큰 순으로 뽑는다 — 비싼 차도 할인폭이 크면
+   *  1등이 될 수 있어 "싼 차만 이기는" 구조가 아니다. listPrice가 없는
+   *  차량(겟챠 미매칭)은 할인율을 모르는 것이므로 후보에서 제외한다. */
+  const discountCards = useMemo(() => {
+    return index
+      .map((v) => {
+        const d = bestDiscount(v);
+        return d ? { vehicle: v, ...d } : null;
+      })
+      .filter((c): c is NonNullable<typeof c> => !!c)
+      .sort((a, b) => b.rate - a.rate)
+      .slice(0, 3);
+  }, [index]);
 
-  /** 국산/수입 판정 — vehicle-index.ts의 domesticBrand()와 동일 기준(제네시스 포함 국산 3사) */
-  const DOMESTIC_BRANDS = new Set(["현대", "기아", "제네시스"]);
-
-  /** "이번 달 최저가 TOP3" — 실시간 계산가 기준으로 4개 기준(국산/수입/
-   *  장기렌트/리스) 각각 최저가 3개 모델그룹을 뽑는다. bestLandingQuote()가
-   *  이미 하는 계산(48개월·보증금 30% 기준 실시간 견적)을 그대로 재사용해
-   *  랭킹만 새로 만든다 — 임의 인기도·순위 조작 없이 100% 계산된 가격순
-   *  정렬이라 순위 자체가 광고 문구가 아니라 사실이다. 국산/수입은 상품
-   *  무관 최저가, 장기렌트/리스는 브랜드 무관 상품별 최저가다. */
-  const rankingCards = useMemo(() => {
-    function topByPrice(filterBrand: ((brand: string) => boolean) | null, tryOrder: DealType[]) {
-      return groups
-        .filter((g) => (!filterBrand || filterBrand(g.brand)) && g.trims[0])
-        .map((g) => {
-          const v = g.trims[0];
-          const q = bestLandingQuote(v, tryOrder);
-          return q ? { vehicle: v, group: g, ...q } : null;
-        })
-        .filter((c): c is NonNullable<typeof c> => !!c)
-        .sort((a, b) => a.monthlyPayment - b.monthlyPayment)
-        .slice(0, 3);
-    }
-    return {
-      domestic: topByPrice((b) => DOMESTIC_BRANDS.has(b), PROMO_DEAL_TRY_ORDER),
-      import: topByPrice((b) => !DOMESTIC_BRANDS.has(b), PROMO_DEAL_TRY_ORDER),
-      rental: topByPrice(null, ["longTermRental"]),
-      lease: topByPrice(null, ["operatingLease", "financeLease"]),
-    };
-  }, [groups]);
+  /** "예산대별 TOP1" — 예산 구간(50/70/100/150만원)마다 그 예산 안에서
+   *  가장 예산에 가깝게(=가장 좋은 차를) 채워주는 1대. recommend.ts의
+   *  예산 추천 로직(budget 화면과 동일 계산)을 그대로 재사용한다. 절대
+   *  최저가가 아니라 "이 예산에서 최선"이라 구간마다 다른 급의 차가 1등이
+   *  될 수 있다. */
+  const budgetTierCards = useMemo(() => {
+    return BUDGET_PRESETS.map((budget) => {
+      for (const deal of PROMO_DEAL_TRY_ORDER) {
+        const recs = recommendByBudget(budget, deal, PROMO_CONDITIONS.termMonths, 1);
+        if (recs.length > 0) return { budget, deal, ...recs[0] };
+      }
+      return null;
+    }).filter((c): c is NonNullable<typeof c> => !!c);
+  }, []);
 
   const instantDeliveryCards = useMemo(() => {
     return INSTANT_DELIVERY_TESLA.map((item) => {
@@ -1076,59 +1046,67 @@ export default function QuoteApp() {
           </div>
         </section>
 
-        {(rankingCards.domestic.length > 0 ||
-          rankingCards.import.length > 0 ||
-          rankingCards.rental.length > 0 ||
-          rankingCards.lease.length > 0) && (
+        {discountCards.length > 0 && (
           <section className="landing-section">
             <div className="landing-inner">
               <div className="landing-sec-head">
                 <div>
-                  <h2>이번 달 최저가 TOP3</h2>
+                  <h2>할인율 TOP3</h2>
                   <p className="landing-sec-desc">
-                    48개월 · 보증금 30% 기준 실시간 계산가 — 인기순이 아니라 계산된 가격순 랭킹
+                    캐피탈사 정가 대비 실거래가 할인율 순위 — 무조건 싼 차가 아니라, 가장 크게 깎인 차예요
                   </p>
                 </div>
               </div>
+              <div className="landing-model-grid">
+                {discountCards.map((item, i) => (
+                  <button
+                    key={item.vehicle.id}
+                    type="button"
+                    className="landing-model-card"
+                    onClick={() => pickVehicle(item.vehicle)}
+                  >
+                    <span className="landing-model-badge">{i + 1}위 할인율 {Math.round(item.rate * 100)}%</span>
+                    <VehiclePhoto brand={item.vehicle.brand} src={item.vehicle.image} />
+                    <span className="landing-model-name">{item.vehicle.display}</span>
+                    <span className="landing-model-price">
+                      차량가 <b>{man(item.realPrice)}</b>
+                    </span>
+                    <span className="landing-model-spread">정가 {man(item.listPrice)} 대비</span>
+                  </button>
+                ))}
+              </div>
+            </div>
+          </section>
+        )}
 
-              {(
-                [
-                  ["국산차 TOP3", rankingCards.domestic],
-                  ["수입차 TOP3", rankingCards.import],
-                  ["장기렌트 TOP3", rankingCards.rental],
-                  ["리스 TOP3", rankingCards.lease],
-                ] as const
-              ).map(([label, items]) =>
-                items.length > 0 ? (
-                  <div className="landing-row-block" key={label}>
-                    <p className="landing-row-label">
-                      <span className="landing-tag">{label}</span>
-                    </p>
-                    <div className="landing-model-grid">
-                      {items.map((item, i) => (
-                        <button
-                          key={`${label}-${item.vehicle.id}`}
-                          type="button"
-                          className="landing-model-card"
-                          onClick={() => pickVehicle(item.vehicle)}
-                        >
-                          <span className="landing-model-badge">{i + 1}위 최저가</span>
-                          <VehiclePhoto brand={item.vehicle.brand} src={item.vehicle.image} />
-                          <span className="landing-model-name">{item.vehicle.display}</span>
-                          <span className="landing-model-price">
-                            월 <b>{won(item.monthlyPayment)}</b>원부터
-                          </span>
-                          {item.spread > 0 ? (
-                            <span className="landing-model-spread">최대 {won(item.spread)}원 차이</span>
-                          ) : (
-                            <span className="landing-model-spread landing-spread-muted">비교 대상 없음</span>
-                          )}
-                        </button>
-                      ))}
-                    </div>
-                  </div>
-                ) : null,
-              )}
+        {budgetTierCards.length > 0 && (
+          <section className="landing-section">
+            <div className="landing-inner">
+              <div className="landing-sec-head">
+                <div>
+                  <h2>예산대별 TOP1</h2>
+                  <p className="landing-sec-desc">
+                    48개월 기준 · 예산 구간마다 그 예산에서 가장 좋은 조건 1대 — 무조건 싼 차 랭킹이 아니에요
+                  </p>
+                </div>
+              </div>
+              <div className="landing-model-grid">
+                {budgetTierCards.map(({ budget, vehicle: v, monthlyPayment }) => (
+                  <button
+                    key={budget}
+                    type="button"
+                    className="landing-model-card"
+                    onClick={() => pickVehicle(v)}
+                  >
+                    <span className="landing-model-badge">월 {man(budget)} 예산 1위</span>
+                    <VehiclePhoto brand={v.brand} src={v.image} />
+                    <span className="landing-model-name">{v.display}</span>
+                    <span className="landing-model-price">
+                      월 <b>{won(monthlyPayment)}</b>원
+                    </span>
+                  </button>
+                ))}
+              </div>
             </div>
           </section>
         )}
