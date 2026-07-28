@@ -48,11 +48,17 @@ jobs:
       - name: 회귀 가드 (매칭 건수 급감 시 중단)
         run: python scripts/ci_regression_guard.py
 
+      # 사진도 가격처럼 우리가 복사해서 갖는다 — 겟챠 URL을 그대로 참조하면
+      # 그쪽이 핫링크를 막는 순간(403) 사이트 사진이 한꺼번에 깨진다.
+      - name: 차량 사진·브랜드 로고 내려받기
+        run: python scripts/fetch_getcha_images.py
+
       - name: 변경 사항 커밋 & 푸시
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add \
+            public/car-img \
             lib/engine/data/getcha-images.json \
             lib/engine/data/brand-logos.json \
             lib/engine/data/getcha-updated-at.json \
