@@ -177,15 +177,6 @@ const INSTANT_DELIVERY_TESLA: {
   },
 ];
 
-/** 랜딩 "인기 모델" — 고정 4개(브랜드+모델그룹). buildModelGroups()/
- *  quoteIndexed()로 그 자리에서 실시간 계산한다. */
-const POPULAR_TARGETS: { brand: string; group: string }[] = [
-  { brand: "BMW", group: "3시리즈" },
-  { brand: "테슬라", group: "모델 Y" },
-  { brand: "현대", group: "그랜저" },
-  { brand: "제네시스", group: "G80" },
-];
-
 type Screen = "landing" | "home" | "budget" | "result" | "quote-doc";
 
 /** 견적번호 — TG-YYMMDD-XXXX (백엔드 없이 표시용으로만 생성, 저장/추적 안 함) */
@@ -889,7 +880,10 @@ export default function QuoteApp() {
 
   // 48개월·보증금30% 조건으로 실제 최저가 견적을 뽑는다(하드코딩 가격
   // 아님) — 랜딩의 "할인 특가"·"인기 모델" 카드가 공용으로 쓴다.
-  function bestLandingQuote(v: IndexedVehicle): {
+  function bestLandingQuote(
+    v: IndexedVehicle,
+    tryOrder: DealType[] = PROMO_DEAL_TRY_ORDER,
+  ): {
     deal: DealType;
     monthlyPayment: number;
     residualRate?: number;
@@ -897,7 +891,7 @@ export default function QuoteApp() {
     sourceCount: number;
   } | null {
     const deals = dealsForIndexed(v);
-    for (const deal of PROMO_DEAL_TRY_ORDER) {
+    for (const deal of tryOrder) {
       if (!deals.includes(deal)) continue;
       const ok = quoteIndexed(v, deal, PROMO_CONDITIONS).filter(
         (r) => r.available && typeof r.monthlyPayment === "number",
@@ -917,40 +911,22 @@ export default function QuoteApp() {
     return null;
   }
 
-  function groupTargetCards(targets: { brand: string; group: string }[]) {
-    const cards: {
-      vehicle: IndexedVehicle;
-      deal: DealType;
-      monthlyPayment: number;
-      residualRate?: number;
-      spread: number;
-      sourceCount: number;
-    }[] = [];
-    for (const { brand, group } of targets) {
-      const g = groups.find((g) => g.brand === brand && g.name === group);
-      const v = g?.trims[0];
-      if (!v) continue;
-      const q = bestLandingQuote(v);
-      if (q) cards.push({ vehicle: v, ...q });
-    }
-    return cards;
-  }
-
   /** 국산/수입 판정 — vehicle-index.ts의 domesticBrand()와 동일 기준(제네시스 포함 국산 3사) */
   const DOMESTIC_BRANDS = new Set(["현대", "기아", "제네시스"]);
 
-  /** "이번 달 최저가 TOP3" — 실시간 계산가 기준으로 국산/수입 각각 최저가
-   *  3개 모델그룹을 뽑는다. bestLandingQuote()가 이미 하는 계산(48개월·
-   *  보증금 30% 기준 실시간 견적)을 그대로 재사용해 랭킹만 새로 만든다 —
-   *  임의 인기도·순위 조작 없이 100% 계산된 가격순 정렬이라 순위 자체가
-   *  광고 문구가 아니라 사실이다. */
+  /** "이번 달 최저가 TOP3" — 실시간 계산가 기준으로 4개 기준(국산/수입/
+   *  장기렌트/리스) 각각 최저가 3개 모델그룹을 뽑는다. bestLandingQuote()가
+   *  이미 하는 계산(48개월·보증금 30% 기준 실시간 견적)을 그대로 재사용해
+   *  랭킹만 새로 만든다 — 임의 인기도·순위 조작 없이 100% 계산된 가격순
+   *  정렬이라 순위 자체가 광고 문구가 아니라 사실이다. 국산/수입은 상품
+   *  무관 최저가, 장기렌트/리스는 브랜드 무관 상품별 최저가다. */
   const rankingCards = useMemo(() => {
-    function topByPrice(filter: (brand: string) => boolean) {
+    function topByPrice(filterBrand: ((brand: string) => boolean) | null, tryOrder: DealType[]) {
       return groups
-        .filter((g) => filter(g.brand) && g.trims[0])
+        .filter((g) => (!filterBrand || filterBrand(g.brand)) && g.trims[0])
         .map((g) => {
           const v = g.trims[0];
-          const q = bestLandingQuote(v);
+          const q = bestLandingQuote(v, tryOrder);
           return q ? { vehicle: v, group: g, ...q } : null;
         })
         .filter((c): c is NonNullable<typeof c> => !!c)
@@ -958,8 +934,10 @@ export default function QuoteApp() {
         .slice(0, 3);
     }
     return {
-      domestic: topByPrice((b) => DOMESTIC_BRANDS.has(b)),
-      import: topByPrice((b) => !DOMESTIC_BRANDS.has(b)),
+      domestic: topByPrice((b) => DOMESTIC_BRANDS.has(b), PROMO_DEAL_TRY_ORDER),
+      import: topByPrice((b) => !DOMESTIC_BRANDS.has(b), PROMO_DEAL_TRY_ORDER),
+      rental: topByPrice(null, ["longTermRental"]),
+      lease: topByPrice(null, ["operatingLease", "financeLease"]),
     };
   }, [groups]);
 
@@ -985,7 +963,6 @@ export default function QuoteApp() {
       return { ...item, monthlyPayment, residualRate, image: group?.image };
     }).filter((c): c is NonNullable<typeof c> => !!c);
   }, [groups]);
-  const popularCards = useMemo(() => groupTargetCards(POPULAR_TARGETS), [groups]);
 
   function goToSearch(q?: string) {
     if (q !== undefined) setSearchQuery(q);
@@ -1137,7 +1114,10 @@ export default function QuoteApp() {
           </div>
         </section>
 
-        {(rankingCards.domestic.length > 0 || rankingCards.import.length > 0) && (
+        {(rankingCards.domestic.length > 0 ||
+          rankingCards.import.length > 0 ||
+          rankingCards.rental.length > 0 ||
+          rankingCards.lease.length > 0) && (
           <section className="landing-section">
             <div className="landing-inner">
               <div className="landing-sec-head">
@@ -1149,159 +1129,99 @@ export default function QuoteApp() {
                 </div>
               </div>
 
-              {rankingCards.domestic.length > 0 && (
-                <div className="landing-row-block">
-                  <p className="landing-row-label">
-                    <span className="landing-tag">국산차 TOP3</span>
-                  </p>
-                  <div className="landing-model-grid">
-                    {rankingCards.domestic.map((item, i) => (
-                      <button
-                        key={item.vehicle.id}
-                        type="button"
-                        className="landing-model-card"
-                        onClick={() => pickVehicle(item.vehicle)}
-                      >
-                        <span className="landing-model-badge">{i + 1}위 최저가</span>
-                        <VehiclePhoto brand={item.vehicle.brand} src={item.vehicle.image} />
-                        <span className="landing-model-name">{item.vehicle.display}</span>
-                        <span className="landing-model-price">
-                          월 <b>{won(item.monthlyPayment)}</b>원부터
-                        </span>
-                        {item.spread > 0 ? (
-                          <span className="landing-model-spread">최대 {won(item.spread)}원 차이</span>
-                        ) : (
-                          <span className="landing-model-spread landing-spread-muted">비교 대상 없음</span>
-                        )}
-                      </button>
-                    ))}
+              {(
+                [
+                  ["국산차 TOP3", rankingCards.domestic],
+                  ["수입차 TOP3", rankingCards.import],
+                  ["장기렌트 TOP3", rankingCards.rental],
+                  ["리스 TOP3", rankingCards.lease],
+                ] as const
+              ).map(([label, items]) =>
+                items.length > 0 ? (
+                  <div className="landing-row-block" key={label}>
+                    <p className="landing-row-label">
+                      <span className="landing-tag">{label}</span>
+                    </p>
+                    <div className="landing-model-grid">
+                      {items.map((item, i) => (
+                        <button
+                          key={`${label}-${item.vehicle.id}`}
+                          type="button"
+                          className="landing-model-card"
+                          onClick={() => pickVehicle(item.vehicle)}
+                        >
+                          <span className="landing-model-badge">{i + 1}위 최저가</span>
+                          <VehiclePhoto brand={item.vehicle.brand} src={item.vehicle.image} />
+                          <span className="landing-model-name">{item.vehicle.display}</span>
+                          <span className="landing-model-price">
+                            월 <b>{won(item.monthlyPayment)}</b>원부터
+                          </span>
+                          {item.spread > 0 ? (
+                            <span className="landing-model-spread">최대 {won(item.spread)}원 차이</span>
+                          ) : (
+                            <span className="landing-model-spread landing-spread-muted">비교 대상 없음</span>
+                          )}
+                        </button>
+                      ))}
+                    </div>
                   </div>
-                </div>
-              )}
-
-              {rankingCards.import.length > 0 && (
-                <div className="landing-row-block">
-                  <p className="landing-row-label">
-                    <span className="landing-tag">수입차 TOP3</span>
-                  </p>
-                  <div className="landing-model-grid">
-                    {rankingCards.import.map((item, i) => (
-                      <button
-                        key={item.vehicle.id}
-                        type="button"
-                        className="landing-model-card"
-                        onClick={() => pickVehicle(item.vehicle)}
-                      >
-                        <span className="landing-model-badge">{i + 1}위 최저가</span>
-                        <VehiclePhoto brand={item.vehicle.brand} src={item.vehicle.image} />
-                        <span className="landing-model-name">{item.vehicle.display}</span>
-                        <span className="landing-model-price">
-                          월 <b>{won(item.monthlyPayment)}</b>원부터
-                        </span>
-                        {item.spread > 0 ? (
-                          <span className="landing-model-spread">최대 {won(item.spread)}원 차이</span>
-                        ) : (
-                          <span className="landing-model-spread landing-spread-muted">비교 대상 없음</span>
-                        )}
-                      </button>
-                    ))}
-                  </div>
-                </div>
+                ) : null,
               )}
             </div>
           </section>
         )}
 
-        {(instantDeliveryCards.length > 0 || popularCards.length > 0) && (
+        {instantDeliveryCards.length > 0 && (
           <section className="landing-section">
             <div className="landing-inner">
               <div className="landing-sec-head">
                 <div>
-                  <h2>이달의 추천 차량</h2>
+                  <h2>즉시출고 가능 차량</h2>
                   <p className="landing-sec-desc">
-                    48개월 · 보증금 30% 기준 실시간 계산가 · 클릭하면 트림 선택 → 최저가 비교로 이동
+                    이미 확보된 재고, 색상·옵션 변경 없이 바로 인도 · 48개월 · 보증금 30% 기준 실시간 계산가
                   </p>
                 </div>
               </div>
 
-              {instantDeliveryCards.length > 0 && (
-                <div className="landing-row-block">
-                  <p className="landing-row-label">
-                    <span className="landing-tag landing-tag-promo">즉시출고 가능 차량</span>
-                    이미 확보된 재고, 색상·옵션 변경 없이 바로 인도
-                  </p>
-                  <div className="landing-promo-grid">
-                    {instantDeliveryCards.map((item) => (
-                      <button
-                        key={`${item.model}-${item.color}-${item.interior}`}
-                        type="button"
-                        className="landing-promo-card"
-                        onClick={() => goToSearch(item.group)}
-                      >
-                        <span className="landing-promo-badge">즉시출고 가능</span>
-                        <VehiclePhoto brand="테슬라" src={item.image} />
-                        <span className="landing-promo-body">
-                          <span className="landing-promo-brand">테슬라</span>
-                          <span className="landing-promo-name">
-                            Model {item.group === "모델 Y" ? "Y" : "3"} {item.trimLabel}
-                          </span>
-                          <span className="landing-promo-row">
-                            <span>차량가</span>
-                            <span>{man(item.vehiclePrice)}</span>
-                          </span>
-                          <span className="landing-promo-cond">
-                            {item.color} · {item.wheel}
-                          </span>
-                          <span className="landing-promo-cond">
-                            운용리스 · 잔가 {Math.round(item.residualRate * 100)}% 반영
-                          </span>
-                          <span className="landing-promo-price-lbl">월 리스료</span>
-                          <span className="landing-promo-price">
-                            {won(item.monthlyPayment)}
-                            <small>원부터</small>
-                          </span>
-                          <span className="landing-promo-spread landing-spread-muted">
-                            고정 사양 재고 · 색상·옵션 변경 불가 · 소진 시 마감
-                          </span>
+              <div className="landing-row-block">
+                <div className="landing-promo-grid">
+                  {instantDeliveryCards.map((item) => (
+                    <button
+                      key={`${item.model}-${item.color}-${item.interior}`}
+                      type="button"
+                      className="landing-promo-card"
+                      onClick={() => goToSearch(item.group)}
+                    >
+                      <span className="landing-promo-badge">즉시출고 가능</span>
+                      <VehiclePhoto brand="테슬라" src={item.image} />
+                      <span className="landing-promo-body">
+                        <span className="landing-promo-brand">테슬라</span>
+                        <span className="landing-promo-name">
+                          Model {item.group === "모델 Y" ? "Y" : "3"} {item.trimLabel}
                         </span>
-                      </button>
-                    ))}
-                  </div>
+                        <span className="landing-promo-row">
+                          <span>차량가</span>
+                          <span>{man(item.vehiclePrice)}</span>
+                        </span>
+                        <span className="landing-promo-cond">
+                          {item.color} · {item.wheel}
+                        </span>
+                        <span className="landing-promo-cond">
+                          운용리스 · 잔가 {Math.round(item.residualRate * 100)}% 반영
+                        </span>
+                        <span className="landing-promo-price-lbl">월 리스료</span>
+                        <span className="landing-promo-price">
+                          {won(item.monthlyPayment)}
+                          <small>원부터</small>
+                        </span>
+                        <span className="landing-promo-spread landing-spread-muted">
+                          고정 사양 재고 · 색상·옵션 변경 불가 · 소진 시 마감
+                        </span>
+                      </span>
+                    </button>
+                  ))}
                 </div>
-              )}
-
-              {popularCards.length > 0 && (
-                <div className="landing-row-block">
-                  <p className="landing-row-label">
-                    <span className="landing-tag">인기 모델</span>
-                    지금 많이 찾는 모델
-                  </p>
-                  <div className="landing-model-grid">
-                    {popularCards.map(({ vehicle: v, monthlyPayment, spread, sourceCount }) => (
-                      <button
-                        key={v.id}
-                        type="button"
-                        className="landing-model-card"
-                        onClick={() => pickVehicle(v)}
-                      >
-                        <span className="landing-model-badge">
-                          {sourceCount > 1 ? `${sourceCount}사 비교` : "단독 취급"}
-                        </span>
-                        <VehiclePhoto brand={v.brand} src={v.image} />
-                        <span className="landing-model-name">{v.display}</span>
-                        <span className="landing-model-price">
-                          월 <b>{won(monthlyPayment)}</b>원부터
-                        </span>
-                        {spread > 0 ? (
-                          <span className="landing-model-spread">최대 {won(spread)}원 차이</span>
-                        ) : (
-                          <span className="landing-model-spread landing-spread-muted">비교 대상 없음</span>
-                        )}
-                      </button>
-                    ))}
-                  </div>
-                </div>
-              )}
+              </div>
             </div>
           </section>
         )}
