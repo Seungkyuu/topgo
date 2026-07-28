@@ -178,6 +178,26 @@ const INSTANT_DELIVERY_TESLA: {
   },
 ];
 
+/** "나이대별 추천" — 각 생애주기에 많이 찾는 차종 후보군(사람이 큐레이션)
+ *  안에서 실시간 계산가 오름차순 top3. "20대가 가장 많이 산 차" 같은
+ *  실사용 통계는 갖고 있지 않으므로, 그렇게 보이지 않게 "추천"으로만
+ *  표현한다(허위 통계 주장 금지). */
+const STARTER_POOL: { brand: string; group: string }[] = [
+  { brand: "현대", group: "캐스퍼" },
+  { brand: "현대", group: "코나" },
+  { brand: "현대", group: "아반떼" },
+];
+const NEWLYWED_POOL: { brand: string; group: string }[] = [
+  { brand: "현대", group: "투싼" },
+  { brand: "현대", group: "싼타페" },
+  { brand: "현대", group: "아이오닉6" },
+];
+const PREMIUM_POOL: { brand: string; group: string }[] = [
+  { brand: "현대", group: "그랜저" },
+  { brand: "제네시스", group: "G80" },
+  { brand: "BMW", group: "5시리즈" },
+];
+
 type Screen = "landing" | "home" | "budget" | "result" | "quote-doc";
 
 /** 견적번호 — TG-YYMMDD-XXXX (백엔드 없이 표시용으로만 생성, 저장/추적 안 함) */
@@ -880,6 +900,75 @@ export default function QuoteApp() {
     [index],
   );
 
+  // 48개월·보증금30% 조건으로 실제 최저가 견적을 뽑는다(하드코딩 가격
+  // 아님) — 나이대별 추천·잔가율 랭킹이 공용으로 쓴다.
+  function bestLandingQuote(v: IndexedVehicle): {
+    deal: DealType;
+    monthlyPayment: number;
+    residualRate?: number;
+    spread: number;
+    sourceCount: number;
+  } | null {
+    const deals = dealsForIndexed(v);
+    for (const deal of PROMO_DEAL_TRY_ORDER) {
+      if (!deals.includes(deal)) continue;
+      const ok = quoteIndexed(v, deal, PROMO_CONDITIONS).filter(
+        (r) => r.available && typeof r.monthlyPayment === "number",
+      );
+      if (ok.length === 0) continue;
+      const best = ok.reduce((a, b) => (b.monthlyPayment! < a.monthlyPayment! ? b : a));
+      const amounts = ok.map((r) => r.monthlyPayment!);
+      const spread = amounts.length >= 2 ? Math.max(...amounts) - Math.min(...amounts) : 0;
+      const sourceCount = new Set(ok.map((r) => r.capital)).size;
+      return { deal, monthlyPayment: best.monthlyPayment!, residualRate: best.residualRate, spread, sourceCount };
+    }
+    return null;
+  }
+
+  function rankPool(targets: { brand: string; group: string }[], limit = 3) {
+    const cards: {
+      vehicle: IndexedVehicle;
+      deal: DealType;
+      monthlyPayment: number;
+      residualRate?: number;
+      spread: number;
+      sourceCount: number;
+    }[] = [];
+    for (const { brand, group } of targets) {
+      const g = groups.find((g) => g.brand === brand && g.name === group);
+      const v = g?.trims[0];
+      if (!v) continue;
+      const q = bestLandingQuote(v);
+      if (q) cards.push({ vehicle: v, ...q });
+    }
+    return cards.sort((a, b) => a.monthlyPayment - b.monthlyPayment).slice(0, limit);
+  }
+
+  const ageTierCards = useMemo(
+    () => ({
+      starter: rankPool(STARTER_POOL),
+      newlywed: rankPool(NEWLYWED_POOL),
+      premium: rankPool(PREMIUM_POOL),
+    }),
+    [groups],
+  );
+
+  /** "잔가율 TOP3" — 계약 기간 동안 가치가 덜 떨어지는(잔가율이 높은) 차
+   *  순위. 월 납부액이 아니라 "나중에 유리한 차"라는 다른 축의 랭킹이라
+   *  할인율·예산대와 안 겹친다. */
+  const residualCards = useMemo(() => {
+    return groups
+      .filter((g) => g.trims[0])
+      .map((g) => {
+        const v = g.trims[0];
+        const q = bestLandingQuote(v);
+        return q && typeof q.residualRate === "number" ? { vehicle: v, ...q } : null;
+      })
+      .filter((c): c is NonNullable<typeof c> => !!c)
+      .sort((a, b) => b.residualRate! - a.residualRate!)
+      .slice(0, 3);
+  }, [groups]);
+
   /** "할인율 TOP3" — 단순 최저가 랭킹은 항상 같은 저가 차량만 1등이라
    *  판매자 입장에서 딱히 내세울 이득이 없다(대표님 피드백). 대신 겟챠
    *  실가격이 캐피탈사 정가보다 실제로 낮게 매칭된 수입차만 대상으로,
@@ -1111,6 +1200,96 @@ export default function QuoteApp() {
                     <span className="landing-model-cond">{DEAL_EXPLAIN[deal].name} · 48개월</span>
                     <span className="landing-model-price">
                       월 <b>{won(monthlyPayment)}</b>원
+                    </span>
+                  </button>
+                ))}
+              </div>
+            </div>
+          </section>
+        )}
+
+        {(ageTierCards.starter.length > 0 ||
+          ageTierCards.newlywed.length > 0 ||
+          ageTierCards.premium.length > 0) && (
+          <section className="landing-section">
+            <div className="landing-inner">
+              <div className="landing-sec-head">
+                <div>
+                  <h2>생애주기별 추천</h2>
+                  <p className="landing-sec-desc">
+                    많이 찾는 차종을 큐레이션한 추천이에요 · 실제 인기 통계가 아니라 각 시기에 어울리는 후보군 안에서 뽑은 최저가 순위예요
+                  </p>
+                </div>
+              </div>
+              {(
+                [
+                  ["사회초년생 추천", ageTierCards.starter],
+                  ["신혼·가족 추천", ageTierCards.newlywed],
+                  ["시니어·프리미엄 추천", ageTierCards.premium],
+                ] as const
+              ).map(([label, items]) =>
+                items.length > 0 ? (
+                  <div className="landing-row-block" key={label}>
+                    <p className="landing-row-label">
+                      <span className="landing-tag">{label}</span>
+                    </p>
+                    <div className="landing-model-grid">
+                      {items.map(({ vehicle: v, deal, monthlyPayment, spread, sourceCount }, i) => (
+                        <button
+                          key={`${label}-${v.id}`}
+                          type="button"
+                          className="landing-model-card"
+                          onClick={() => pickVehicle(v)}
+                        >
+                          <span className="landing-model-badge">
+                            {i + 1}위 · {sourceCount > 1 ? `${sourceCount}사 비교` : "단독 취급"}
+                          </span>
+                          <VehiclePhoto brand={v.brand} src={v.image} />
+                          <span className="landing-model-name">{v.display}</span>
+                          <span className="landing-model-cond">{DEAL_EXPLAIN[deal].name} · 48개월</span>
+                          <span className="landing-model-price">
+                            월 <b>{won(monthlyPayment)}</b>원부터
+                          </span>
+                          {spread > 0 ? (
+                            <span className="landing-model-spread">최대 {won(spread)}원 차이</span>
+                          ) : (
+                            <span className="landing-model-spread landing-spread-muted">비교 대상 없음</span>
+                          )}
+                        </button>
+                      ))}
+                    </div>
+                  </div>
+                ) : null,
+              )}
+            </div>
+          </section>
+        )}
+
+        {residualCards.length > 0 && (
+          <section className="landing-section">
+            <div className="landing-inner">
+              <div className="landing-sec-head">
+                <div>
+                  <h2>잔가율 TOP3</h2>
+                  <p className="landing-sec-desc">
+                    계약 기간 동안 가치가 덜 떨어지는 차 순위 — 나중을 생각한다면 이 순위도 참고하세요
+                  </p>
+                </div>
+              </div>
+              <div className="landing-model-grid">
+                {residualCards.map(({ vehicle: v, deal, monthlyPayment, residualRate }, i) => (
+                  <button
+                    key={v.id}
+                    type="button"
+                    className="landing-model-card"
+                    onClick={() => pickVehicle(v)}
+                  >
+                    <span className="landing-model-badge">{i + 1}위 잔가율 {Math.round((residualRate ?? 0) * 100)}%</span>
+                    <VehiclePhoto brand={v.brand} src={v.image} />
+                    <span className="landing-model-name">{v.display}</span>
+                    <span className="landing-model-cond">{DEAL_EXPLAIN[deal].name} · 48개월</span>
+                    <span className="landing-model-price">
+                      월 <b>{won(monthlyPayment)}</b>원부터
                     </span>
                   </button>
                 ))}
