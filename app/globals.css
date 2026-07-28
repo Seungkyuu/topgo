@@ -1120,6 +1120,8 @@ input:focus, select:focus { outline: 2px solid var(--navy); outline-offset: 1px;
 .rank-price { font-weight: 800; color: var(--navy-ink); font-variant-numeric: tabular-nums; white-space: nowrap; }
 .rank-hi { font-weight: 800; color: var(--accent); font-variant-numeric: tabular-nums; }
 .rank-sub { font-size: 11.5px; color: var(--ink-soft); white-space: nowrap; }
+.rank-no.top { min-width: 22px; width: auto; padding: 0 5px; }
+.rank-foot-note { font-size: 11.5px; color: var(--ink-faint); margin: 10px 0 0; }
 
 .landing-ranktabs { background: var(--panel-2); }
 .ranktab-bar { display: flex; flex-wrap: wrap; gap: 6px; margin-bottom: 18px; }

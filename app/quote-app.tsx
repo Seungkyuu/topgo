@@ -197,7 +197,7 @@ const PREMIUM_POOL: { brand: string; group: string }[] = [
 ];
 
 type Screen = "landing" | "home" | "budget" | "result" | "quote-doc";
-type RankTab = "lowest" | "discount" | "budget" | "lifecycle" | "residual";
+type RankTab = "lowest" | "discount" | "budget" | "lifecycle" | "residual" | "instant";
 
 /** 견적번호 — TG-YYMMDD-XXXX (백엔드 없이 표시용으로만 생성, 저장/추적 안 함) */
 function makeQuoteNumber(): string {
@@ -985,11 +985,24 @@ export default function QuoteApp() {
   }, [groups]);
 
   /** "최저가" — 전체 모델그룹 중 월 납부액이 낮은 순 10위까지. 히어로의
-   *  "이번 주 1위"도 이 목록의 첫 번째를 쓴다. */
-  const lowestCards = useMemo(
-    () => [...allGroupQuotes].sort((a, b) => a.monthlyPayment - b.monthlyPayment).slice(0, 10),
-    [allGroupQuotes],
-  );
+   *  "이번 주 1위"도 이 목록의 첫 번째를 쓴다.
+   *
+   *  단, 순수 가격순으로만 자르면 국산 경차만 10칸을 다 채워서 랭킹으로
+   *  읽히지 않는다(캐스퍼·아반떼·코나·포터…). 그래서 한 브랜드가 3칸을
+   *  넘지 않도록만 제한한다 — 순위 자체를 조작하는 게 아니라 같은 브랜드
+   *  반복만 걷어내는 것이라 "계산된 가격순"이라는 성격은 유지된다. */
+  const lowestCards = useMemo(() => {
+    const perBrand = new Map<string, number>();
+    const out: typeof allGroupQuotes = [];
+    for (const c of [...allGroupQuotes].sort((a, b) => a.monthlyPayment - b.monthlyPayment)) {
+      const n = perBrand.get(c.vehicle.brand) ?? 0;
+      if (n >= 3) continue;
+      perBrand.set(c.vehicle.brand, n + 1);
+      out.push(c);
+      if (out.length === 10) break;
+    }
+    return out;
+  }, [allGroupQuotes]);
 
   /** "잔가율" — 계약 기간 동안 가치가 덜 떨어지는(잔가율이 높은) 차
    *  순위. 월 납부액이 아니라 "나중에 유리한 차"라는 다른 축의 랭킹이라
@@ -1219,6 +1232,7 @@ export default function QuoteApp() {
                   ["budget", "예산대"],
                   ["lifecycle", "생애주기"],
                   ["residual", "잔가율"],
+                  ["instant", "즉시출고"],
                 ] as const
               ).map(([key, label]) => (
                 <button
@@ -1244,6 +1258,7 @@ export default function QuoteApp() {
                     <th>차량</th>
                     {rankTab === "lifecycle" && <th className="rank-col-tag">추천 대상</th>}
                     {rankTab === "budget" && <th className="rank-col-tag">예산</th>}
+                    {rankTab === "instant" && <th className="rank-col-tag">사양</th>}
                     <th className="rank-col-num">{rankTab === "discount" ? "할인액" : "월 납부액"}</th>
                     <th className="rank-col-num">
                       {rankTab === "discount" ? "할인율" : rankTab === "residual" ? "잔가율" : "상품"}
@@ -1313,9 +1328,32 @@ export default function QuoteApp() {
                         <td className="rank-col-num rank-hi">{Math.round((c.residualRate ?? 0) * 100)}%</td>
                       </tr>
                     ))}
+
+                  {rankTab === "instant" &&
+                    instantDeliveryCards.map((item, i) => (
+                      <tr
+                        key={`${item.model}-${item.color}`}
+                        onClick={() => goToSearch(item.group)}
+                      >
+                        <td className="rank-col-no"><span className="rank-no top">즉시</span></td>
+                        <td className="rank-col-name">
+                          테슬라 Model {item.group === "모델 Y" ? "Y" : "3"} {item.trimLabel}
+                          <em className="rank-note">차량가 {man(item.vehiclePrice)} · 색상·옵션 변경 불가</em>
+                        </td>
+                        <td className="rank-col-tag">{item.color} · {item.wheel}</td>
+                        <td className="rank-col-num rank-price">{won(item.monthlyPayment)}원</td>
+                        <td className="rank-col-num rank-sub">운용리스</td>
+                      </tr>
+                    ))}
                 </tbody>
               </table>
             </div>
+
+            {rankTab === "instant" && (
+              <p className="rank-foot-note">
+                이미 확보된 재고라 색상·옵션 변경 없이 바로 인도됩니다 · 소진 시 마감
+              </p>
+            )}
 
             <details className="ranktab-method">
               <summary>탑고가 순위를 매기는 방법</summary>
@@ -1380,60 +1418,6 @@ export default function QuoteApp() {
           </div>
         </section>
 
-        {instantDeliveryCards.length > 0 && (
-          <section className="landing-section">
-            <div className="landing-inner">
-              <div className="landing-sec-head">
-                <div>
-                  <h2>즉시출고 가능 차량</h2>
-                  <p className="landing-sec-desc">
-                    이미 확보된 재고, 색상·옵션 변경 없이 바로 인도 · 48개월 · 보증금 30% 기준 실시간 계산가
-                  </p>
-                </div>
-              </div>
-
-              <div className="landing-row-block">
-                <div className="landing-promo-grid">
-                  {instantDeliveryCards.map((item) => (
-                    <button
-                      key={`${item.model}-${item.color}-${item.interior}`}
-                      type="button"
-                      className="landing-promo-card"
-                      onClick={() => goToSearch(item.group)}
-                    >
-                      <span className="landing-promo-badge">즉시출고 가능</span>
-                      <VehiclePhoto brand="테슬라" src={item.image} />
-                      <span className="landing-promo-body">
-                        <span className="landing-promo-brand">테슬라</span>
-                        <span className="landing-promo-name">
-                          Model {item.group === "모델 Y" ? "Y" : "3"} {item.trimLabel}
-                        </span>
-                        <span className="landing-promo-row">
-                          <span>차량가</span>
-                          <span>{man(item.vehiclePrice)}</span>
-                        </span>
-                        <span className="landing-promo-cond">
-                          {item.color} · {item.wheel}
-                        </span>
-                        <span className="landing-promo-cond">
-                          운용리스 · 잔가 {Math.round(item.residualRate * 100)}% 반영
-                        </span>
-                        <span className="landing-promo-price-lbl">월 리스료</span>
-                        <span className="landing-promo-price">
-                          {won(item.monthlyPayment)}
-                          <small>원부터</small>
-                        </span>
-                        <span className="landing-promo-spread landing-spread-muted">
-                          고정 사양 재고 · 색상·옵션 변경 불가 · 소진 시 마감
-                        </span>
-                      </span>
-                    </button>
-                  ))}
-                </div>
-              </div>
-            </div>
-          </section>
-        )}
 
         <section className="landing-section landing-features landing-features-compact">
           <div className="landing-inner">
@@ -1468,13 +1452,10 @@ export default function QuoteApp() {
           <div className="landing-inner landing-contact-bar">
             <div className="landing-contact-bar-text">
               <p className="landing-contact-bar-title">
-                차량명으로 바로 찾거나, 확신이 서면 오픈카톡으로 상담하세요
+                마음에 드는 차를 찾으셨나요? 조건은 상담에서 확정됩니다
               </p>
               <p className="landing-contact-bar-meta">
-                {COMPANY_NAME} · {COMPANY_LEGAL} ·{" "}
-                <a href={BLOG_URL} target="_blank" rel="noopener noreferrer">
-                  블로그
-                </a>
+                순위·견적은 무료로 확인하실 수 있어요
               </p>
             </div>
             <div className="landing-contact-bar-btns">
