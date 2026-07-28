@@ -1073,44 +1073,6 @@ export default function QuoteApp() {
             <p className="landing-hero-sub">
               최고의 조건, 가장 빠른 실행. 장기렌트·리스·법인 리스까지, 여러 금융사 견적을 실시간 순위로 비교해 최저가를 확인합니다
             </p>
-            <form
-              className="landing-search"
-              onSubmit={(e) => {
-                e.preventDefault();
-                goToSearch(query);
-              }}
-            >
-              <input
-                type="text"
-                placeholder="차량명으로 검색 (예: 그랜저, E 300, Model Y)"
-                value={query}
-                onChange={(e) => setSearchQuery(e.target.value)}
-                aria-label="차량 검색"
-              />
-              <button type="submit">검색</button>
-            </form>
-            <div className="brand-chips landing-hero-chips">
-              {brands.slice(0, 8).map((b) => (
-                <button
-                  key={b}
-                  type="button"
-                  className="brand-chip"
-                  onClick={() => {
-                    setSearchBrand(b);
-                    navigate("home");
-                  }}
-                >
-                  {b}
-                </button>
-              ))}
-              <button
-                type="button"
-                className="brand-chip"
-                onClick={() => navigate("home")}
-              >
-                +{Math.max(brands.length - 8, 0)}개 브랜드
-              </button>
-            </div>
           </div>
         </section>
 
@@ -1170,6 +1132,49 @@ export default function QuoteApp() {
             </div>
           </section>
         )}
+
+        <section className="landing-section landing-search-secondary">
+          <div className="landing-inner">
+            <p className="landing-row-label">
+              <span className="landing-tag">직접 찾기</span>
+              찾는 차가 TOP3에 없나요? 차량명으로 바로 검색하세요
+            </p>
+            <form
+              className="landing-search"
+              onSubmit={(e) => {
+                e.preventDefault();
+                goToSearch(query);
+              }}
+            >
+              <input
+                type="text"
+                placeholder="차량명으로 검색 (예: 그랜저, E 300, Model Y)"
+                value={query}
+                onChange={(e) => setSearchQuery(e.target.value)}
+                aria-label="차량 검색"
+              />
+              <button type="submit">검색</button>
+            </form>
+            <div className="brand-chips landing-hero-chips">
+              {brands.slice(0, 8).map((b) => (
+                <button
+                  key={b}
+                  type="button"
+                  className="brand-chip"
+                  onClick={() => {
+                    setSearchBrand(b);
+                    navigate("home");
+                  }}
+                >
+                  {b}
+                </button>
+              ))}
+              <button type="button" className="brand-chip" onClick={() => navigate("home")}>
+                +{Math.max(brands.length - 8, 0)}개 브랜드
+              </button>
+            </div>
+          </div>
+        </section>
 
         {instantDeliveryCards.length > 0 && (
           <section className="landing-section">

@@ -1039,6 +1039,11 @@ input:focus, select:focus { outline: 2px solid var(--navy); outline-offset: 1px;
 
 .landing-section { padding: 48px 20px; border-bottom: 1px solid var(--rule); }
 .landing-section-alt { background: var(--panel-2); }
+/* 탑고 전용 — TOP3 랭킹 다음에 오는 보조 검색 유틸리티. 히어로 검색과
+   달리 랭킹이 주인공이라는 걸 보여주려고 일부러 작고 조용하게 둔다. */
+.landing-search-secondary { padding: 24px 20px; background: var(--panel-2); }
+.landing-search-secondary .landing-row-label { margin-bottom: 10px; }
+.landing-search-secondary .landing-search { max-width: 460px; }
 .landing-sec-head { margin-bottom: 20px; }
 .landing-sec-head h2 { font-size: 19px; font-weight: 800; margin: 0; color: var(--navy-ink); }
 .landing-sec-desc { font-size: 13px; color: var(--ink-soft); margin: 4px 0 0; }
