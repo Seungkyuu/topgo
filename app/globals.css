@@ -1045,6 +1045,11 @@ input:focus, select:focus { outline: 2px solid var(--navy); outline-offset: 1px;
 .landing-stats-compact .landing-stat-num span { font-size: 11px; }
 .landing-stats-compact .landing-stat-label { font-size: 10px; }
 
+.landing-stats-inline { margin-top: 18px; padding-top: 18px; border-top: 1px solid var(--rule); }
+.landing-stats-inline .landing-stat-num { font-size: 18px; }
+.landing-stats-inline .landing-stat-num span { font-size: 12px; }
+.landing-stats-inline .landing-stat-label { font-size: 10.5px; }
+
 .landing-section { padding: 48px 20px; border-bottom: 1px solid var(--rule); }
 .landing-section-alt { background: var(--panel-2); }
 /* 탑고 전용 — TOP3 랭킹 다음에 오는 보조 검색 유틸리티. 히어로 검색과
@@ -1053,9 +1058,22 @@ input:focus, select:focus { outline: 2px solid var(--navy); outline-offset: 1px;
 .landing-search-secondary .landing-row-label { margin-bottom: 10px; }
 .landing-search-secondary .landing-search { max-width: 460px; }
 
-/* 탑고 전용 — 랭킹 산출 기준 공개. 랭킹 사이트는 "어떻게 순위를 매기는지"가
-   신뢰의 핵심이라 다른 강조 배경으로 눈에 띄게 한다. */
-.landing-method { background: var(--panel-2); }
+/* 탑고 전용 — 랭킹 6종을 탭 하나로 묶어서 스크롤 길이를 줄인다(사이트가
+   너무 길다는 피드백 반영 — 예전엔 섹션 4개가 따로 있었다). */
+.landing-ranktabs { background: var(--panel-2); }
+.ranktab-bar { display: flex; flex-wrap: wrap; gap: 6px; margin-bottom: 18px; }
+.ranktab-btn {
+  border: 1px solid var(--rule); background: var(--panel); color: var(--ink-soft);
+  font-size: 12.5px; font-weight: 700; padding: 7px 14px; border-radius: 999px; cursor: pointer;
+}
+.ranktab-btn.active { background: var(--navy); color: var(--on-accent); border-color: var(--navy); }
+.ranktab-method { margin-top: 20px; padding-top: 16px; border-top: 1px solid var(--rule); }
+.ranktab-method summary { cursor: pointer; font-size: 12.5px; font-weight: 700; color: var(--ink-soft); list-style: none; }
+.ranktab-method summary::-webkit-details-marker { display: none; }
+.ranktab-method summary::before { content: "▸ "; }
+.ranktab-method[open] summary::before { content: "▾ "; }
+.ranktab-method .method-list { margin-top: 14px; }
+
 .method-list { display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px; list-style: none; margin: 0; padding: 0; }
 .method-list li { display: flex; flex-direction: column; gap: 5px; }
 .method-list b { font-size: 14px; color: var(--navy-ink); }

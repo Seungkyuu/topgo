@@ -199,6 +199,7 @@ const PREMIUM_POOL: { brand: string; group: string }[] = [
 ];
 
 type Screen = "landing" | "home" | "budget" | "result" | "quote-doc";
+type RankTab = "discount" | "budget" | "starter" | "newlywed" | "premium" | "residual";
 
 /** 견적번호 — TG-YYMMDD-XXXX (백엔드 없이 표시용으로만 생성, 저장/추적 안 함) */
 function makeQuoteNumber(): string {
@@ -817,6 +818,7 @@ export default function QuoteApp() {
   const priceDate = (getchaUpdatedAt as { date: string }).date;
 
   const [screen, setScreen] = useState<Screen>("landing");
+  const [rankTab, setRankTab] = useState<RankTab>("discount");
   const [vehicle, setVehicle] = useState<IndexedVehicle | null>(null);
   const [docRow, setDocRow] = useState<CapitalQuoteRow | null>(null);
   const [dealType, setDealType] = useState<DealType>("operatingLease");
@@ -1141,17 +1143,42 @@ export default function QuoteApp() {
           </div>
         </section>
 
-        {discountCards.length > 0 && (
-          <section className="landing-section">
-            <div className="landing-inner">
-              <div className="landing-sec-head">
-                <div>
-                  <h2>할인율 TOP3</h2>
-                  <p className="landing-sec-desc">
-                    캐피탈사 정가 대비 실거래가 할인율 순위 — 무조건 싼 차가 아니라, 가장 크게 깎인 차예요
-                  </p>
-                </div>
+        <section className="landing-section landing-ranktabs">
+          <div className="landing-inner">
+            <div className="landing-sec-head">
+              <div>
+                <h2>이번 달 랭킹</h2>
+                <p className="landing-sec-desc">
+                  48개월·보증금 30% 기준 실시간 계산가 · 겟차 실거래가 기준 · {priceDate} 갱신
+                </p>
               </div>
+            </div>
+
+            <div className="ranktab-bar" role="tablist">
+              {(
+                [
+                  ["discount", "할인율"],
+                  ["budget", "예산대"],
+                  ["starter", "사회초년생"],
+                  ["newlywed", "신혼·가족"],
+                  ["premium", "시니어·프리미엄"],
+                  ["residual", "잔가율"],
+                ] as const
+              ).map(([key, label]) => (
+                <button
+                  key={key}
+                  type="button"
+                  role="tab"
+                  aria-selected={rankTab === key}
+                  className={`ranktab-btn${rankTab === key ? " active" : ""}`}
+                  onClick={() => setRankTab(key)}
+                >
+                  {label}
+                </button>
+              ))}
+            </div>
+
+            {rankTab === "discount" && (
               <div className="landing-model-grid">
                 {discountCards.map((item, i) => (
                   <button
@@ -1171,21 +1198,9 @@ export default function QuoteApp() {
                   </button>
                 ))}
               </div>
-            </div>
-          </section>
-        )}
+            )}
 
-        {budgetTierCards.length > 0 && (
-          <section className="landing-section">
-            <div className="landing-inner">
-              <div className="landing-sec-head">
-                <div>
-                  <h2>예산대별 TOP1</h2>
-                  <p className="landing-sec-desc">
-                    48개월 기준 · 예산 구간마다 그 예산에서 가장 좋은 조건 1대 — 무조건 싼 차 랭킹이 아니에요
-                  </p>
-                </div>
-              </div>
+            {rankTab === "budget" && (
               <div className="landing-model-grid">
                 {budgetTierCards.map(({ budget, deal, vehicle: v, monthlyPayment }) => (
                   <button
@@ -1204,78 +1219,45 @@ export default function QuoteApp() {
                   </button>
                 ))}
               </div>
-            </div>
-          </section>
-        )}
+            )}
 
-        {(ageTierCards.starter.length > 0 ||
-          ageTierCards.newlywed.length > 0 ||
-          ageTierCards.premium.length > 0) && (
-          <section className="landing-section">
-            <div className="landing-inner">
-              <div className="landing-sec-head">
-                <div>
-                  <h2>생애주기별 추천</h2>
-                  <p className="landing-sec-desc">
-                    많이 찾는 차종을 큐레이션한 추천이에요 · 실제 인기 통계가 아니라 각 시기에 어울리는 후보군 안에서 뽑은 최저가 순위예요
-                  </p>
+            {(
+              [
+                ["starter", ageTierCards.starter],
+                ["newlywed", ageTierCards.newlywed],
+                ["premium", ageTierCards.premium],
+              ] as const
+            ).map(([key, items]) =>
+              rankTab === key ? (
+                <div className="landing-model-grid" key={key}>
+                  {items.map(({ vehicle: v, deal, monthlyPayment, spread, sourceCount }, i) => (
+                    <button
+                      key={v.id}
+                      type="button"
+                      className="landing-model-card"
+                      onClick={() => pickVehicle(v)}
+                    >
+                      <span className="landing-model-badge">
+                        {i + 1}위 · {sourceCount > 1 ? `${sourceCount}사 비교` : "단독 취급"}
+                      </span>
+                      <VehiclePhoto brand={v.brand} src={v.image} />
+                      <span className="landing-model-name">{v.display}</span>
+                      <span className="landing-model-cond">{DEAL_EXPLAIN[deal].name} · 48개월</span>
+                      <span className="landing-model-price">
+                        월 <b>{won(monthlyPayment)}</b>원부터
+                      </span>
+                      {spread > 0 ? (
+                        <span className="landing-model-spread">최대 {won(spread)}원 차이</span>
+                      ) : (
+                        <span className="landing-model-spread landing-spread-muted">비교 대상 없음</span>
+                      )}
+                    </button>
+                  ))}
                 </div>
-              </div>
-              {(
-                [
-                  ["사회초년생 추천", ageTierCards.starter],
-                  ["신혼·가족 추천", ageTierCards.newlywed],
-                  ["시니어·프리미엄 추천", ageTierCards.premium],
-                ] as const
-              ).map(([label, items]) =>
-                items.length > 0 ? (
-                  <div className="landing-row-block" key={label}>
-                    <p className="landing-row-label">
-                      <span className="landing-tag">{label}</span>
-                    </p>
-                    <div className="landing-model-grid">
-                      {items.map(({ vehicle: v, deal, monthlyPayment, spread, sourceCount }, i) => (
-                        <button
-                          key={`${label}-${v.id}`}
-                          type="button"
-                          className="landing-model-card"
-                          onClick={() => pickVehicle(v)}
-                        >
-                          <span className="landing-model-badge">
-                            {i + 1}위 · {sourceCount > 1 ? `${sourceCount}사 비교` : "단독 취급"}
-                          </span>
-                          <VehiclePhoto brand={v.brand} src={v.image} />
-                          <span className="landing-model-name">{v.display}</span>
-                          <span className="landing-model-cond">{DEAL_EXPLAIN[deal].name} · 48개월</span>
-                          <span className="landing-model-price">
-                            월 <b>{won(monthlyPayment)}</b>원부터
-                          </span>
-                          {spread > 0 ? (
-                            <span className="landing-model-spread">최대 {won(spread)}원 차이</span>
-                          ) : (
-                            <span className="landing-model-spread landing-spread-muted">비교 대상 없음</span>
-                          )}
-                        </button>
-                      ))}
-                    </div>
-                  </div>
-                ) : null,
-              )}
-            </div>
-          </section>
-        )}
+              ) : null,
+            )}
 
-        {residualCards.length > 0 && (
-          <section className="landing-section">
-            <div className="landing-inner">
-              <div className="landing-sec-head">
-                <div>
-                  <h2>잔가율 TOP3</h2>
-                  <p className="landing-sec-desc">
-                    계약 기간 동안 가치가 덜 떨어지는 차 순위 — 나중을 생각한다면 이 순위도 참고하세요
-                  </p>
-                </div>
-              </div>
+            {rankTab === "residual" && (
               <div className="landing-model-grid">
                 {residualCards.map(({ vehicle: v, deal, monthlyPayment, residualRate }, i) => (
                   <button
@@ -1294,31 +1276,25 @@ export default function QuoteApp() {
                   </button>
                 ))}
               </div>
-            </div>
-          </section>
-        )}
+            )}
 
-        <section className="landing-section landing-method">
-          <div className="landing-inner">
-            <div className="landing-sec-head">
-              <div>
-                <h2>탑고가 순위를 매기는 방법</h2>
-              </div>
-            </div>
-            <ul className="method-list">
-              <li>
-                <b>동일 조건 비교</b>
-                <span>모든 차량을 48개월·보증금 30%로 똑같이 계산해요. 조건이 다르면 비교가 아니니까요.</span>
-              </li>
-              <li>
-                <b>실거래가 기준</b>
-                <span>캐피탈사 정가가 아니라 겟차 실거래가로 계산해요. 할인율 랭킹도 이 값 기준이에요.</span>
-              </li>
-              <li>
-                <b>매일 갱신</b>
-                <span>가격이 바뀌면 순위도 다시 계산돼요. 지금 보시는 순위는 {priceDate} 기준이에요.</span>
-              </li>
-            </ul>
+            <details className="ranktab-method">
+              <summary>탑고가 순위를 매기는 방법</summary>
+              <ul className="method-list">
+                <li>
+                  <b>동일 조건 비교</b>
+                  <span>모든 차량을 48개월·보증금 30%로 똑같이 계산해요. 조건이 다르면 비교가 아니니까요.</span>
+                </li>
+                <li>
+                  <b>실거래가 기준</b>
+                  <span>캐피탈사 정가가 아니라 겟차 실거래가로 계산해요. 할인율 랭킹도 이 값 기준이에요.</span>
+                </li>
+                <li>
+                  <b>매일 갱신</b>
+                  <span>가격이 바뀌면 순위도 다시 계산돼요. 지금 보시는 순위는 {priceDate} 기준이에요.</span>
+                </li>
+              </ul>
+            </details>
           </div>
         </section>
 
@@ -1420,6 +1396,35 @@ export default function QuoteApp() {
           </section>
         )}
 
+        <section className="landing-section landing-features landing-features-compact">
+          <div className="landing-inner">
+            <p className="landing-mini-label">왜 탑고인가 · Top Choice, Go Further — 순위로 보여주는 비교 계산기입니다</p>
+            <div className="landing-feature-list">
+              {RENTO_FEATURES.map((f) => (
+                <div key={f.title} className="landing-feature-item">
+                  <b>{f.title}</b>
+                  <span>{f.desc}</span>
+                </div>
+              ))}
+            </div>
+            <div className="landing-stats-grid landing-stats-inline">
+              {[
+                ...TRUST_STATS,
+                { num: index.length.toLocaleString("ko-KR"), unit: "+", label: "취급 차량" },
+                { num: String(brands.length), unit: "개", label: "취급 브랜드" },
+              ].map((s) => (
+                <div key={s.label} className="landing-stat-item">
+                  <div className="landing-stat-num">
+                    {s.num}
+                    <span>{s.unit}</span>
+                  </div>
+                  <div className="landing-stat-label">{s.label}</div>
+                </div>
+              ))}
+            </div>
+          </div>
+        </section>
+
         <section className="landing-contact landing-contact-compact">
           <div className="landing-inner landing-contact-bar">
             <div className="landing-contact-bar-text">
@@ -1446,38 +1451,6 @@ export default function QuoteApp() {
                 💬 오픈카톡 상담
               </a>
             </div>
-          </div>
-        </section>
-
-        <section className="landing-section landing-features landing-features-compact">
-          <div className="landing-inner">
-            <p className="landing-mini-label">왜 탑고인가 · Top Choice, Go Further — 순위로 보여주는 비교 계산기입니다</p>
-            <div className="landing-feature-list">
-              {RENTO_FEATURES.map((f) => (
-                <div key={f.title} className="landing-feature-item">
-                  <b>{f.title}</b>
-                  <span>{f.desc}</span>
-                </div>
-              ))}
-            </div>
-          </div>
-        </section>
-
-        <section className="landing-stats landing-stats-compact">
-          <div className="landing-inner landing-stats-grid">
-            {[
-              ...TRUST_STATS,
-              { num: index.length.toLocaleString("ko-KR"), unit: "+", label: "취급 차량" },
-              { num: String(brands.length), unit: "개", label: "취급 브랜드" },
-            ].map((s) => (
-              <div key={s.label} className="landing-stat-item">
-                <div className="landing-stat-num">
-                  {s.num}
-                  <span>{s.unit}</span>
-                </div>
-                <div className="landing-stat-label">{s.label}</div>
-              </div>
-            ))}
           </div>
         </section>
 
