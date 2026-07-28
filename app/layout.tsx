@@ -2,16 +2,16 @@ import type { Metadata, Viewport } from "next";
 import "./globals.css";
 import Providers from "./providers";
 
-const TITLE = "렌토(RENTO) — 자동차 장기렌트·리스·법인 리스 비교";
+const TITLE = "탑고 — 자동차 장기렌트·리스·법인 리스 최저가 랭킹 비교";
 const DESCRIPTION =
-  "렌토(RENTO)는 자동차 장기렌트·리스·법인 리스 견적을 여러 금융사와 실시간으로 비교하는 플랫폼입니다. 차량을 고르면 최저가를 바로 확인할 수 있어요.";
+  "탑고는 자동차 장기렌트·리스·법인 리스 견적을 여러 금융사와 실시간으로 비교해 순위로 보여드리는 플랫폼입니다. 차량을 고르면 최저가를 바로 확인할 수 있어요.";
 
 export const metadata: Metadata = {
   title: TITLE,
   description: DESCRIPTION,
   keywords: [
-    "렌토",
-    "RENTO",
+    "탑고",
+    "TopGo",
     "자동차 리스",
     "장기렌트",
     "법인 리스",
@@ -24,34 +24,20 @@ export const metadata: Metadata = {
   openGraph: {
     title: TITLE,
     description: DESCRIPTION,
-    url: "https://rento-project.vercel.app",
-    siteName: "렌토(RENTO)",
+    siteName: "탑고",
     locale: "ko_KR",
     type: "website",
   },
-  verification: {
-    google: "Rw6U5zAI7wwxTD1-FyYmEms1kEsq9OgffTeHF6tOyOg",
-    other: {
-      "naver-site-verification": "1d7fc30cf0d998623e9414bcd8f5703a91af6596",
-    },
-  },
+  // 구글 서치콘솔·네이버 서치어드바이저 소유확인 토큰은 배포 도메인이 정해지면
+  // 그 도메인 기준으로 새로 발급해서 채워야 한다(RENTO 값을 그대로 쓰면 안 됨).
 };
 
 const ORG_JSON_LD = {
   "@context": "https://schema.org",
   "@type": "Organization",
-  name: "주식회사 RENTO",
-  alternateName: "렌토",
-  url: "https://rento-project.vercel.app",
+  name: "주식회사 탑고",
+  alternateName: "탑고",
   description: DESCRIPTION,
-  address: {
-    "@type": "PostalAddress",
-    streetAddress: "선릉로 129길 25",
-    addressLocality: "강남구",
-    addressRegion: "서울특별시",
-    addressCountry: "KR",
-  },
-  sameAs: ["https://blog.naver.com/leenkim_lease_"],
 };
 
 export const viewport: Viewport = {

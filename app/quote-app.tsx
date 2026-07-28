@@ -96,6 +96,10 @@ const BUDGET_PRESETS = [500_000, 700_000, 1_000_000, 1_500_000];
 const KAKAO_URL = "https://open.kakao.com/o/sQJ56vFi";
 const BLOG_URL = "https://blog.naver.com/leenkim_lease_";
 
+/** 사업자등록증 확정 전 임시값 — 대표자명·사업자등록번호 확인되는 대로 교체 */
+const COMPANY_NAME = "주식회사 탑고";
+const COMPANY_LEGAL = "대표자명 확인 중 · 사업자등록번호 확인 중";
+
 const TRUST_STATS: { num: string; unit: string; label: string }[] = [
   { num: "10", unit: "년+", label: "업력" },
   { num: "3,400", unit: "+", label: "누적 계약" },
@@ -105,8 +109,8 @@ const TRUST_STATS: { num: string; unit: string; label: string }[] = [
 
 const RENTO_FEATURES: { title: string; desc: string }[] = [
   {
-    title: "실시간 최저가 비교",
-    desc: "여러 금융사 견적을 한 번에 비교해요. 하루 지난 시세가 아니라 항상 최신 가격 기준이에요.",
+    title: "실시간 최저가 랭킹",
+    desc: "여러 금융사 견적을 한 번에 비교해서 순위로 보여드려요. 하루 지난 시세가 아니라 항상 최신 가격 기준이에요.",
   },
   {
     title: "숨김 없는 계산 근거",
@@ -184,12 +188,12 @@ const POPULAR_TARGETS: { brand: string; group: string }[] = [
 
 type Screen = "landing" | "home" | "budget" | "result" | "quote-doc";
 
-/** 견적번호 — RT-YYMMDD-XXXX (백엔드 없이 표시용으로만 생성, 저장/추적 안 함) */
+/** 견적번호 — TG-YYMMDD-XXXX (백엔드 없이 표시용으로만 생성, 저장/추적 안 함) */
 function makeQuoteNumber(): string {
   const d = new Date();
   const ymd = `${String(d.getFullYear()).slice(2)}${String(d.getMonth() + 1).padStart(2, "0")}${String(d.getDate()).padStart(2, "0")}`;
   const rand = Math.random().toString(36).slice(2, 6).toUpperCase();
-  return `RT-${ymd}-${rand}`;
+  return `TG-${ymd}-${rand}`;
 }
 
 // ─── 공용 소품 ────────────────────────────────────────────────────────────────
@@ -231,7 +235,7 @@ function Wordmark() {
     <p className="brand">
       <LogoMark />
       <span>
-        REN<span className="amp">T</span>O
+        TOP<span className="amp">G</span>O
       </span>
     </p>
   );
@@ -482,7 +486,7 @@ function CompareResult({
       <div className="trust-badge-row">
         <span className="trust-badge">
           <i className="dot" aria-hidden="true" />
-          RENTO가 확인한 차량가 기준
+          탑고가 확인한 차량가 기준
         </span>
       </div>
       {available.length === 1 && (
@@ -589,7 +593,7 @@ function QuoteDocument({
   });
 
   // 겟차 이런 단일 회사 견적서는 절대 못 넣는 부분 — 비교 근거를 문서에
-  // 그대로 남긴다. RENTO 정체성이 "비교해서 골라준 결과"라는 게 여기서
+  // 그대로 남긴다. 탑고 정체성이 "비교해서 골라준 결과"라는 게 여기서
   // 드러나야 한다.
   const compared = [...rows]
     .filter((r) => r.available && typeof r.monthlyPayment === "number")
@@ -599,7 +603,7 @@ function QuoteDocument({
 
   async function handleShare() {
     const summary =
-      `[RENTO 견적서 ${quoteNumber}]\n` +
+      `[탑고 견적서 ${quoteNumber}]\n` +
       `${vehicle.brand} ${vehicle.display}\n` +
       `${anonCapital(row.capital)} · ${DEAL_EXPLAIN[deal].name}\n` +
       `${monthlyFeeLabel(deal)} ${won(row.monthlyPayment!)}원 · ${termMonths}개월\n` +
@@ -609,7 +613,7 @@ function QuoteDocument({
         : "");
     if (typeof navigator !== "undefined" && navigator.share) {
       try {
-        await navigator.share({ title: "RENTO 견적서", text: summary });
+        await navigator.share({ title: "탑고 견적서", text: summary });
         return;
       } catch {
         // 사용자가 공유 취소한 경우 등 — 조용히 무시
@@ -756,7 +760,7 @@ function QuoteDocument({
         </p>
 
         <p className="doc-disclaimer">
-          차량가는 {priceDate} 기준 RENTO가 확인한 시세예요. 이 견적은 입력하신 조건 기준
+          차량가는 {priceDate} 기준 탑고가 확인한 시세예요. 이 견적은 입력하신 조건 기준
           예상 견적이며, 실제 계약 조건은 상담 시 확정돼요.
         </p>
       </div>
@@ -931,6 +935,33 @@ export default function QuoteApp() {
     return cards;
   }
 
+  /** 국산/수입 판정 — vehicle-index.ts의 domesticBrand()와 동일 기준(제네시스 포함 국산 3사) */
+  const DOMESTIC_BRANDS = new Set(["현대", "기아", "제네시스"]);
+
+  /** "이번 달 최저가 TOP3" — 실시간 계산가 기준으로 국산/수입 각각 최저가
+   *  3개 모델그룹을 뽑는다. bestLandingQuote()가 이미 하는 계산(48개월·
+   *  보증금 30% 기준 실시간 견적)을 그대로 재사용해 랭킹만 새로 만든다 —
+   *  임의 인기도·순위 조작 없이 100% 계산된 가격순 정렬이라 순위 자체가
+   *  광고 문구가 아니라 사실이다. */
+  const rankingCards = useMemo(() => {
+    function topByPrice(filter: (brand: string) => boolean) {
+      return groups
+        .filter((g) => filter(g.brand) && g.trims[0])
+        .map((g) => {
+          const v = g.trims[0];
+          const q = bestLandingQuote(v);
+          return q ? { vehicle: v, group: g, ...q } : null;
+        })
+        .filter((c): c is NonNullable<typeof c> => !!c)
+        .sort((a, b) => a.monthlyPayment - b.monthlyPayment)
+        .slice(0, 3);
+    }
+    return {
+      domestic: topByPrice((b) => DOMESTIC_BRANDS.has(b)),
+      import: topByPrice((b) => !DOMESTIC_BRANDS.has(b)),
+    };
+  }, [groups]);
+
   const instantDeliveryCards = useMemo(() => {
     return INSTANT_DELIVERY_TESLA.map((item) => {
       let monthlyPayment: number;
@@ -1050,7 +1081,7 @@ export default function QuoteApp() {
           <div className="landing-inner">
             <div className="landing-hero-row">
               <h1>
-                다음 차, <em>가장 합리적인 조건</em>으로
+                Top Choice, <em>Go Further</em>
               </h1>
               <a
                 className="landing-hero-kakao"
@@ -1062,7 +1093,7 @@ export default function QuoteApp() {
               </a>
             </div>
             <p className="landing-hero-sub">
-              장기렌트·리스·법인 리스까지, 여러 금융사 견적을 실시간으로 비교해 최저가를 확인합니다
+              최고의 조건, 가장 빠른 실행. 장기렌트·리스·법인 리스까지, 여러 금융사 견적을 실시간 순위로 비교해 최저가를 확인합니다
             </p>
             <form
               className="landing-search"
@@ -1104,6 +1135,81 @@ export default function QuoteApp() {
             </div>
           </div>
         </section>
+
+        {(rankingCards.domestic.length > 0 || rankingCards.import.length > 0) && (
+          <section className="landing-section">
+            <div className="landing-inner">
+              <div className="landing-sec-head">
+                <div>
+                  <h2>이번 달 최저가 TOP3</h2>
+                  <p className="landing-sec-desc">
+                    48개월 · 보증금 30% 기준 실시간 계산가 — 인기순이 아니라 계산된 가격순 랭킹
+                  </p>
+                </div>
+              </div>
+
+              {rankingCards.domestic.length > 0 && (
+                <div className="landing-row-block">
+                  <p className="landing-row-label">
+                    <span className="landing-tag">국산차 TOP3</span>
+                  </p>
+                  <div className="landing-model-grid">
+                    {rankingCards.domestic.map((item, i) => (
+                      <button
+                        key={item.vehicle.id}
+                        type="button"
+                        className="landing-model-card"
+                        onClick={() => pickVehicle(item.vehicle)}
+                      >
+                        <span className="landing-model-badge">{i + 1}위 최저가</span>
+                        <VehiclePhoto brand={item.vehicle.brand} src={item.vehicle.image} />
+                        <span className="landing-model-name">{item.vehicle.display}</span>
+                        <span className="landing-model-price">
+                          월 <b>{won(item.monthlyPayment)}</b>원부터
+                        </span>
+                        {item.spread > 0 ? (
+                          <span className="landing-model-spread">최대 {won(item.spread)}원 차이</span>
+                        ) : (
+                          <span className="landing-model-spread landing-spread-muted">비교 대상 없음</span>
+                        )}
+                      </button>
+                    ))}
+                  </div>
+                </div>
+              )}
+
+              {rankingCards.import.length > 0 && (
+                <div className="landing-row-block">
+                  <p className="landing-row-label">
+                    <span className="landing-tag">수입차 TOP3</span>
+                  </p>
+                  <div className="landing-model-grid">
+                    {rankingCards.import.map((item, i) => (
+                      <button
+                        key={item.vehicle.id}
+                        type="button"
+                        className="landing-model-card"
+                        onClick={() => pickVehicle(item.vehicle)}
+                      >
+                        <span className="landing-model-badge">{i + 1}위 최저가</span>
+                        <VehiclePhoto brand={item.vehicle.brand} src={item.vehicle.image} />
+                        <span className="landing-model-name">{item.vehicle.display}</span>
+                        <span className="landing-model-price">
+                          월 <b>{won(item.monthlyPayment)}</b>원부터
+                        </span>
+                        {item.spread > 0 ? (
+                          <span className="landing-model-spread">최대 {won(item.spread)}원 차이</span>
+                        ) : (
+                          <span className="landing-model-spread landing-spread-muted">비교 대상 없음</span>
+                        )}
+                      </button>
+                    ))}
+                  </div>
+                </div>
+              )}
+            </div>
+          </section>
+        )}
 
         {(instantDeliveryCards.length > 0 || popularCards.length > 0) && (
           <section className="landing-section">
@@ -1206,8 +1312,7 @@ export default function QuoteApp() {
                 차량명으로 바로 찾거나, 확신이 서면 오픈카톡으로 상담하세요
               </p>
               <p className="landing-contact-bar-meta">
-                이두영 대표 · 주식회사 RENTO · 본점 서울 강남구 선릉로 129길 25 · 지점 서울
-                영등포구 영등포로 144 ·{" "}
+                {COMPANY_NAME} · {COMPANY_LEGAL} ·{" "}
                 <a href={BLOG_URL} target="_blank" rel="noopener noreferrer">
                   블로그
                 </a>
@@ -1231,7 +1336,7 @@ export default function QuoteApp() {
 
         <section className="landing-section landing-features landing-features-compact">
           <div className="landing-inner">
-            <p className="landing-mini-label">왜 RENTO인가 · 비교 사이트가 아니라 비교 계산기입니다</p>
+            <p className="landing-mini-label">왜 탑고인가 · Top Choice, Go Further — 순위로 보여주는 비교 계산기입니다</p>
             <div className="landing-feature-list">
               {RENTO_FEATURES.map((f) => (
                 <div key={f.title} className="landing-feature-item">
@@ -1263,7 +1368,7 @@ export default function QuoteApp() {
 
         <footer className="landing-footer">
           <div className="landing-inner landing-footer-row">
-            <span>주식회사 유니디아 자회사 · RENTO — Driven by Precision</span>
+            <span>{COMPANY_NAME} · {COMPANY_LEGAL}</span>
             <span>
               <a href={KAKAO_URL} target="_blank" rel="noopener noreferrer">
                 오픈카톡

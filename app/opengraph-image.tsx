@@ -1,7 +1,7 @@
 import { ImageResponse } from "next/og";
 
 export const runtime = "edge";
-export const alt = "렌토(RENTO) — 자동차 장기렌트·리스·법인 리스 비교";
+export const alt = "탑고 — 자동차 장기렌트·리스·법인 리스 최저가 랭킹 비교";
 export const size = { width: 1200, height: 630 };
 export const contentType = "image/png";
 
@@ -35,11 +35,11 @@ export default function OpengraphImage() {
               fontWeight: 800,
             }}
           >
-            R
+            T
           </div>
           <div style={{ display: "flex", fontSize: 44, fontWeight: 800, letterSpacing: -1 }}>
-            <span>REN</span>
-            <span style={{ color: "#3dd6e8" }}>T</span>
+            <span>TOP</span>
+            <span style={{ color: "#3dd6e8" }}>G</span>
             <span>O</span>
           </div>
         </div>
@@ -47,10 +47,10 @@ export default function OpengraphImage() {
           자동차 장기렌트·리스·법인 리스
         </div>
         <div style={{ display: "flex", fontSize: 40, fontWeight: 800, lineHeight: 1.4 }}>
-          여러 금융사 견적을 한 번에 비교
+          최저가 랭킹으로 한눈에 비교
         </div>
         <div style={{ display: "flex", fontSize: 24, color: "#a9bcf2", marginTop: 24 }}>
-          RENTO — Driven by Precision
+          Top Choice, Go Further
         </div>
       </div>
     ),
