@@ -1,32 +1,29 @@
 /*
- * RENTO 디자인 시스템 — "정밀 계기판(precision instrument)" 미학.
+ * 탑고 디자인 시스템 — "거래 단말기(trading terminal)" 미학. RENTO의
+ * 네이비+청록에서 벗어나, 랭킹이 계속 상승한다는 로고 모티프(우상향
+ * 꺾은선)를 색으로도 이어간다 — 차콜 블랙 지면 + 상승장 그린 강조.
  *
- *   · 딥 네이비(주 색) × 메탈릭 실버(보조·괘선) × 화이트(지면) — RENTO
- *     로고 아이덴티티 그대로.
- *   · 장식 대신 여백과 헤어라인 — 그림자·그라디언트 카드 대신 얇은 테두리
- *     패널. "AI가 만든 티" 나는 과한 장식을 피하고 절제된 정보 위계로
- *     신뢰를 준다.
- *   · 단 하나의 강조색(청록 accent)만 "최저가"처럼 진짜 중요한 지점에
- *     쓴다 — 로고 워드마크의 청록 스트로크에서 가져온 색.
- *   · 워드마크는 굵은 산세리프 RENTO + 얇은 헤어라인 밑줄.
+ *   · 차콜(주 색) × 상승장 그린(단일 강조) × 쿨그레이(괘선) — 순위·시세
+ *     터미널의 긴장감을 전달.
+ *   · 장식 대신 여백과 헤어라인 원칙은 RENTO와 동일하게 유지, 팔레트만
+ *     탑고 전용으로 교체.
  */
 
 :root {
-  --paper: #ffffff;                    /* 지면 — 순백 */
-  --panel: #ffffff;                    /* 패널 표면 (지면과 같아 헤어라인 테두리로만 구분) */
-  --panel-2: #f1f3f6;                  /* 보조 표면 (상세 명세부) */
-  --rule: #dde1e7;                     /* 괘선 — 실버 */
-  --rule-strong: #0f2044;              /* 강한 괘선 (헤더 밑줄) */
-  --ink: #10182b;                      /* 본문 잉크 — 네이비블랙 */
-  --ink-soft: #475569;                 /* 명암비 ~8:1 (흰 배경) */
-  --ink-faint: #64748b;                /* 명암비 ~4.6:1 — WCAG AA 통과 (기존 #98a0b2는 2.6:1로 미달) */
-  --navy: #0f2044;                     /* 주 상호작용 — 딥 네이비 */
-  --navy-ink: #060f24;
-  --accent: #1fb6c9;                   /* 단일 강조색 — 청록 (최저가 등) */
-  --accent-bg: rgba(31,182,201,0.08);
+  --paper: #f5f6f4;                    /* 지면 — 쿨 오프화이트 */
+  --panel: #ffffff;
+  --panel-2: #eceeea;                  /* 보조 표면 */
+  --rule: #d7dbd3;                     /* 괘선 */
+  --rule-strong: #14170f;              /* 강한 괘선 (헤더 밑줄) */
+  --ink: #13160f;                      /* 본문 잉크 — 차콜 */
+  --ink-soft: #4b5147;
+  --ink-faint: #6f776a;
+  --navy: #14170f;                     /* 주 상호작용 — 차콜 블랙 */
+  --navy-ink: #0a0c07;
+  --accent: #16a34a;                   /* 단일 강조색 — 상승장 그린 */
+  --accent-bg: rgba(22,163,74,0.1);
   --on-accent: #ffffff;
-  --bar: #0f2044;                      /* 하단 고정 바 */
-  /* 구 변수명(green/gold) 호환 */
+  --bar: #14170f;
   --green: var(--navy); --green-ink: var(--navy-ink);
   --gold: var(--accent); --gold-bg: var(--accent-bg);
 }
@@ -38,39 +35,39 @@
  */
 :root[data-theme="light"] {
   color-scheme: light;
-  --paper: #ffffff;
+  --paper: #f5f6f4;
   --panel: #ffffff;
-  --panel-2: #f1f3f6;
-  --rule: #dde1e7;
-  --rule-strong: #0f2044;
-  --ink: #10182b;
-  --ink-soft: #475569;
-  --ink-faint: #64748b;
-  --navy: #0f2044;
-  --navy-ink: #060f24;
-  --accent: #1fb6c9;
-  --accent-bg: rgba(31,182,201,0.08);
+  --panel-2: #eceeea;
+  --rule: #d7dbd3;
+  --rule-strong: #14170f;
+  --ink: #13160f;
+  --ink-soft: #4b5147;
+  --ink-faint: #6f776a;
+  --navy: #14170f;
+  --navy-ink: #0a0c07;
+  --accent: #16a34a;
+  --accent-bg: rgba(22,163,74,0.1);
   --on-accent: #ffffff;
-  --bar: #0f2044;
+  --bar: #14170f;
   --green: var(--navy); --green-ink: var(--navy-ink);
   --gold: var(--accent); --gold-bg: var(--accent-bg);
 }
 :root[data-theme="dark"] {
   color-scheme: dark;
-  --paper: #0b1120;
-  --panel: #121a2e;
-  --panel-2: #0e1526;
-  --rule: #263153;
-  --rule-strong: #c1c6cf;
-  --ink: #e7eaf2;
-  --ink-soft: #a6adc0;
-  --ink-faint: #7a87a8;
-  --navy: #6f8ade;
-  --navy-ink: #a9bcf2;
-  --accent: #3dd6e8;
-  --accent-bg: rgba(61,214,232,0.12);
-  --on-accent: #06101f;
-  --bar: #0b1120;
+  --paper: #0c0f0b;
+  --panel: #141813;
+  --panel-2: #10130f;
+  --rule: #262b23;
+  --rule-strong: #d7ddd2;
+  --ink: #e9ede6;
+  --ink-soft: #aab3a3;
+  --ink-faint: #78816f;
+  --navy: #7fe3a0;
+  --navy-ink: #bff0cf;
+  --accent: #34e37a;
+  --accent-bg: rgba(52,227,122,0.14);
+  --on-accent: #06140c;
+  --bar: #0c0f0b;
   --green: var(--navy); --green-ink: var(--navy-ink);
   --gold: var(--accent); --gold-bg: var(--accent-bg);
 }
@@ -1006,6 +1003,17 @@ input:focus, select:focus { outline: 2px solid var(--navy); outline-offset: 1px;
 }
 .landing-hero-chips { margin-top: 14px; }
 
+.landing-hero-badges { display: flex; flex-wrap: wrap; gap: 8px 16px; margin: 10px 0 4px; }
+.landing-hero-badges span {
+  font-size: 12px; color: var(--ink-soft); font-weight: 600;
+  padding: 4px 0; position: relative;
+}
+.landing-hero-badges span + span { padding-left: 16px; }
+.landing-hero-badges span + span::before {
+  content: ""; position: absolute; left: 0; top: 50%; transform: translateY(-50%);
+  width: 3px; height: 3px; border-radius: 50%; background: var(--rule-strong, var(--rule));
+}
+
 .landing-kakao-btn {
   display: block;
   background: #FEE500; color: #191600; font-weight: 700; font-size: 13px;
@@ -1044,6 +1052,17 @@ input:focus, select:focus { outline: 2px solid var(--navy); outline-offset: 1px;
 .landing-search-secondary { padding: 24px 20px; background: var(--panel-2); }
 .landing-search-secondary .landing-row-label { margin-bottom: 10px; }
 .landing-search-secondary .landing-search { max-width: 460px; }
+
+/* 탑고 전용 — 랭킹 산출 기준 공개. 랭킹 사이트는 "어떻게 순위를 매기는지"가
+   신뢰의 핵심이라 다른 강조 배경으로 눈에 띄게 한다. */
+.landing-method { background: var(--panel-2); }
+.method-list { display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px; list-style: none; margin: 0; padding: 0; }
+.method-list li { display: flex; flex-direction: column; gap: 5px; }
+.method-list b { font-size: 14px; color: var(--navy-ink); }
+.method-list span { font-size: 12.5px; color: var(--ink-soft); line-height: 1.55; }
+@media (max-width: 640px) {
+  .method-list { grid-template-columns: 1fr; }
+}
 .landing-sec-head { margin-bottom: 20px; }
 .landing-sec-head h2 { font-size: 19px; font-weight: 800; margin: 0; color: var(--navy-ink); }
 .landing-sec-desc { font-size: 13px; color: var(--ink-soft); margin: 4px 0 0; }
@@ -1084,6 +1103,7 @@ input:focus, select:focus { outline: 2px solid var(--navy); outline-offset: 1px;
 .landing-spread-muted { color: var(--ink-faint) !important; font-weight: 600 !important; }
 
 .landing-model-name { font-size: 14px; font-weight: 800; padding: 0 12px; margin-top: 2px; }
+.landing-model-cond { display: block; font-size: 10.5px; color: var(--ink-soft); padding: 2px 12px 0; }
 .landing-model-price { font-size: 12px; color: var(--ink-soft); padding: 4px 12px 2px; }
 .landing-model-price b { color: var(--navy-ink); font-size: 14px; }
 .landing-model-spread { display: block; font-size: 10.5px; font-weight: 700; color: var(--accent); padding: 0 12px 12px; }
@@ -1097,6 +1117,20 @@ input:focus, select:focus { outline: 2px solid var(--navy); outline-offset: 1px;
 .landing-contact-bar-meta { font-size: 11.5px; color: var(--ink-faint); margin: 5px 0 0; }
 .landing-contact-bar-meta a { color: var(--accent); text-decoration: underline; text-underline-offset: 2px; }
 .landing-contact-bar-btns { display: flex; gap: 8px; flex-shrink: 0; }
+
+.faq-list { display: flex; flex-direction: column; gap: 0; max-width: 720px; }
+.faq-list details {
+  border-bottom: 1px solid var(--rule); padding: 14px 0;
+}
+.faq-list details:first-child { border-top: 1px solid var(--rule); }
+.faq-list summary {
+  cursor: pointer; font-size: 14px; font-weight: 700; color: var(--navy-ink);
+  list-style: none; display: flex; align-items: center; justify-content: space-between; gap: 12px;
+}
+.faq-list summary::-webkit-details-marker { display: none; }
+.faq-list summary::after { content: "+"; font-weight: 400; color: var(--ink-soft); font-size: 18px; flex-shrink: 0; }
+.faq-list details[open] summary::after { content: "−"; }
+.faq-list p { margin: 10px 0 0; font-size: 13px; color: var(--ink-soft); line-height: 1.6; }
 
 .landing-footer { background: var(--paper); border-top: 1px solid var(--rule); padding: 22px 20px; }
 .landing-footer-row { display: flex; justify-content: space-between; flex-wrap: wrap; gap: 8px; font-size: 12px; color: var(--ink-faint); }

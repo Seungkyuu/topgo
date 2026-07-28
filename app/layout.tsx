@@ -28,8 +28,12 @@ export const metadata: Metadata = {
     locale: "ko_KR",
     type: "website",
   },
-  // 구글 서치콘솔·네이버 서치어드바이저 소유확인 토큰은 배포 도메인이 정해지면
-  // 그 도메인 기준으로 새로 발급해서 채워야 한다(RENTO 값을 그대로 쓰면 안 됨).
+  verification: {
+    other: {
+      "naver-site-verification": "ba982c88bcf23099aa7d1c9450622550fc3aed4e",
+    },
+  },
+  // 구글 서치콘솔 소유확인 토큰은 아직 미발급 — 배포 도메인 확정 후 추가.
 };
 
 const ORG_JSON_LD = {

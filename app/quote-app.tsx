@@ -94,7 +94,7 @@ function customerReason(note?: string): string {
 const POPULAR_QUERIES = ["그랜저", "E 300", "Model Y", "G80", "Dolphin"];
 const BUDGET_PRESETS = [500_000, 700_000, 1_000_000, 1_500_000];
 
-const KAKAO_URL = "https://open.kakao.com/o/sQJ56vFi";
+const KAKAO_URL = "https://open.kakao.com/o/skXis8Fi";
 const BLOG_URL = "https://blog.naver.com/leenkim_lease_";
 
 /** 사업자등록증 원본 기준(등록번호 530-86-03837) */
@@ -794,6 +794,7 @@ export default function QuoteApp() {
   const index = useMemo(() => buildVehicleIndex(), []);
   const groups = useMemo(() => buildModelGroups(), []);
   const brands = useMemo(() => listBrands(), []);
+  const priceDate = (getchaUpdatedAt as { date: string }).date;
 
   const [screen, setScreen] = useState<Screen>("landing");
   const [vehicle, setVehicle] = useState<IndexedVehicle | null>(null);
@@ -1043,6 +1044,11 @@ export default function QuoteApp() {
             <p className="landing-hero-sub">
               최고의 조건, 가장 빠른 실행. 장기렌트·리스·법인 리스까지, 여러 금융사 견적을 실시간 순위로 비교해 최저가를 확인합니다
             </p>
+            <div className="landing-hero-badges">
+              <span>{priceDate} 기준 실시간 순위</span>
+              <span>취급 차량 {index.length.toLocaleString("ko-KR")}+</span>
+              <span>취급 브랜드 {brands.length}개</span>
+            </div>
           </div>
         </section>
 
@@ -1068,10 +1074,11 @@ export default function QuoteApp() {
                     <span className="landing-model-badge">{i + 1}위 할인율 {Math.round(item.rate * 100)}%</span>
                     <VehiclePhoto brand={item.vehicle.brand} src={item.vehicle.image} />
                     <span className="landing-model-name">{item.vehicle.display}</span>
+                    <span className="landing-model-cond">정가 {man(item.listPrice)}</span>
                     <span className="landing-model-price">
                       차량가 <b>{man(item.realPrice)}</b>
                     </span>
-                    <span className="landing-model-spread">정가 {man(item.listPrice)} 대비</span>
+                    <span className="landing-model-spread">정가 대비 {man(item.listPrice - item.realPrice)} 할인</span>
                   </button>
                 ))}
               </div>
@@ -1091,7 +1098,7 @@ export default function QuoteApp() {
                 </div>
               </div>
               <div className="landing-model-grid">
-                {budgetTierCards.map(({ budget, vehicle: v, monthlyPayment }) => (
+                {budgetTierCards.map(({ budget, deal, vehicle: v, monthlyPayment }) => (
                   <button
                     key={budget}
                     type="button"
@@ -1101,6 +1108,7 @@ export default function QuoteApp() {
                     <span className="landing-model-badge">월 {man(budget)} 예산 1위</span>
                     <VehiclePhoto brand={v.brand} src={v.image} />
                     <span className="landing-model-name">{v.display}</span>
+                    <span className="landing-model-cond">{DEAL_EXPLAIN[deal].name} · 48개월</span>
                     <span className="landing-model-price">
                       월 <b>{won(monthlyPayment)}</b>원
                     </span>
@@ -1110,6 +1118,30 @@ export default function QuoteApp() {
             </div>
           </section>
         )}
+
+        <section className="landing-section landing-method">
+          <div className="landing-inner">
+            <div className="landing-sec-head">
+              <div>
+                <h2>탑고가 순위를 매기는 방법</h2>
+              </div>
+            </div>
+            <ul className="method-list">
+              <li>
+                <b>동일 조건 비교</b>
+                <span>모든 차량을 48개월·보증금 30%로 똑같이 계산해요. 조건이 다르면 비교가 아니니까요.</span>
+              </li>
+              <li>
+                <b>실거래가 기준</b>
+                <span>캐피탈사 정가가 아니라 겟차 실거래가로 계산해요. 할인율 랭킹도 이 값 기준이에요.</span>
+              </li>
+              <li>
+                <b>매일 갱신</b>
+                <span>가격이 바뀌면 순위도 다시 계산돼요. 지금 보시는 순위는 {priceDate} 기준이에요.</span>
+              </li>
+            </ul>
+          </div>
+        </section>
 
         <section className="landing-section landing-search-secondary">
           <div className="landing-inner">
@@ -1267,6 +1299,51 @@ export default function QuoteApp() {
                 <div className="landing-stat-label">{s.label}</div>
               </div>
             ))}
+          </div>
+        </section>
+
+        <section className="landing-section landing-faq">
+          <div className="landing-inner">
+            <div className="landing-sec-head">
+              <div>
+                <h2>자주 묻는 질문</h2>
+              </div>
+            </div>
+            <div className="faq-list">
+              <details>
+                <summary>순위가 왜 매일 바뀌나요?</summary>
+                <p>
+                  겟차 실거래가가 갱신될 때마다 할인율·예산대 순위를 다시 계산해요. 어제 1위였던 차가
+                  오늘은 다른 차로 바뀔 수 있어요 — 그만큼 지금 순위가 최신이라는 뜻이에요.
+                </p>
+              </details>
+              <details>
+                <summary>할인율은 어떻게 계산되나요?</summary>
+                <p>
+                  캐피탈사가 정한 정가와 겟차 실거래가의 차이를 정가로 나눈 값이에요. 겟차 매칭이 안
+                  된(할인율을 확인할 수 없는) 차량은 랭킹에서 제외해요 — 모르는 값을 0%로 보여드리지
+                  않아요.
+                </p>
+              </details>
+              <details>
+                <summary>왜 항상 싼 차만 나오지 않나요?</summary>
+                <p>
+                  최저가 랭킹만 보여드리면 늘 같은 저가 차량만 1등이 돼요. 그래서 할인율·예산대 기준으로
+                  나눠서, 비싼 차도 조건이 좋으면 순위에 오를 수 있게 설계했어요.
+                </p>
+              </details>
+              <details>
+                <summary>이용료가 있나요?</summary>
+                <p>순위 확인, 견적 비교, 상담 모두 무료예요.</p>
+              </details>
+              <details>
+                <summary>상담은 어떻게 진행되나요?</summary>
+                <p>
+                  마음에 드는 차를 고르면 오픈카톡으로 담당 컨설턴트와 바로 연결돼요. 조건을 확인하고
+                  다음 단계를 안내해드려요.
+                </p>
+              </details>
+            </div>
           </div>
         </section>
 

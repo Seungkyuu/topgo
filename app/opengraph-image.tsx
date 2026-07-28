@@ -16,8 +16,8 @@ export default function OpengraphImage() {
           flexDirection: "column",
           justifyContent: "center",
           padding: "80px",
-          background: "#0f2044",
-          color: "#ffffff",
+          background: "#14170f",
+          color: "#f5f6f4",
           fontFamily: "sans-serif",
         }}
       >
@@ -27,7 +27,7 @@ export default function OpengraphImage() {
               width: 56,
               height: 56,
               borderRadius: "50%",
-              border: "3px solid #ffffff",
+              border: "3px solid #f5f6f4",
               display: "flex",
               alignItems: "center",
               justifyContent: "center",
@@ -39,7 +39,7 @@ export default function OpengraphImage() {
           </div>
           <div style={{ display: "flex", fontSize: 44, fontWeight: 800, letterSpacing: -1 }}>
             <span>TOP</span>
-            <span style={{ color: "#3dd6e8" }}>G</span>
+            <span style={{ color: "#34e37a" }}>G</span>
             <span>O</span>
           </div>
         </div>
@@ -49,7 +49,7 @@ export default function OpengraphImage() {
         <div style={{ display: "flex", fontSize: 40, fontWeight: 800, lineHeight: 1.4 }}>
           최저가 랭킹으로 한눈에 비교
         </div>
-        <div style={{ display: "flex", fontSize: 24, color: "#a9bcf2", marginTop: 24 }}>
+        <div style={{ display: "flex", fontSize: 24, color: "#7fe3a0", marginTop: 24 }}>
           Top Choice, Go Further
         </div>
       </div>
