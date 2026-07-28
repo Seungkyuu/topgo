@@ -1,0 +1,5979 @@
+{
+ "BMW 120i M Sport (P2)": {
+  "brand": "BMW",
+  "model": "120i M Sport (P2)",
+  "code": "372791036",
+  "vehiclePrice": 51400000,
+  "engineCc": 1998,
+  "fuel": "M",
+  "residualGroup": "V"
+ },
+ "BMW M135i xDrive (P2)": {
+  "brand": "BMW",
+  "model": "M135i xDrive (P2)",
+  "code": "372791035",
+  "vehiclePrice": 62600000,
+  "engineCc": 1998,
+  "fuel": "M",
+  "residualGroup": "X"
+ },
+ "BMW 220i Gran Coupe M Sport (P2)": {
+  "brand": "BMW",
+  "model": "220i Gran Coupe M Sport (P2)",
+  "code": "313091042",
+  "vehiclePrice": 52200000,
+  "engineCc": 1998,
+  "fuel": "M",
+  "residualGroup": "V"
+ },
+ "BMW 220i Gran Coupe Sport (P2)": {
+  "brand": "BMW",
+  "model": "220i Gran Coupe Sport (P2)",
+  "code": "313091041",
+  "vehiclePrice": 49600000,
+  "engineCc": 1998,
+  "fuel": "M",
+  "residualGroup": "V"
+ },
+ "BMW M235i xDrive Gran Coupe (P2)": {
+  "brand": "BMW",
+  "model": "M235i xDrive Gran Coupe (P2)",
+  "code": "313091040",
+  "vehiclePrice": 64800000,
+  "engineCc": 1998,
+  "fuel": "M",
+  "residualGroup": "AA"
+ },
+ "BMW M240i xDrive Coupe Online Exclusive (P0-1)": {
+  "brand": "BMW",
+  "model": "M240i xDrive Coupe Online Exclusive (P0-1)",
+  "code": "380391190",
+  "vehiclePrice": 74000000,
+  "engineCc": 2998,
+  "fuel": "M",
+  "residualGroup": "AA"
+ },
+ "BMW M240i xDrive Coupe Online Exclusive (P1)": {
+  "brand": "BMW",
+  "model": "M240i xDrive Coupe Online Exclusive (P1)",
+  "code": "380392686",
+  "vehiclePrice": 73100000,
+  "engineCc": 2998,
+  "fuel": "M",
+  "residualGroup": "AA"
+ },
+ "BMW 218d Active Tourer Advantage (P1)": {
+  "brand": "BMW",
+  "model": "218d Active Tourer Advantage (P1)",
+  "code": "411492377",
+  "vehiclePrice": 48800000,
+  "engineCc": 1995,
+  "fuel": "D",
+  "residualGroup": "V"
+ },
+ "BMW 218d Active Tourer Luxury (P1)": {
+  "brand": "BMW",
+  "model": "218d Active Tourer Luxury (P1)",
+  "code": "411492378",
+  "vehiclePrice": 52100000,
+  "engineCc": 1995,
+  "fuel": "D",
+  "residualGroup": "V"
+ },
+ "BMW 220i Active Tourer Advantage (P1)": {
+  "brand": "BMW",
+  "model": "220i Active Tourer Advantage (P1)",
+  "code": "411492374",
+  "vehiclePrice": 46500000,
+  "engineCc": 1998,
+  "fuel": "M",
+  "residualGroup": "V"
+ },
+ "BMW 220i Active Tourer Luxury (P1)": {
+  "brand": "BMW",
+  "model": "220i Active Tourer Luxury (P1)",
+  "code": "411492375",
+  "vehiclePrice": 49500000,
+  "engineCc": 1998,
+  "fuel": "M",
+  "residualGroup": "V"
+ },
+ "BMW 220i Active Tourer Luxury (P1-0)": {
+  "brand": "BMW",
+  "model": "220i Active Tourer Luxury (P1-0)",
+  "code": "411492376",
+  "vehiclePrice": 49500000,
+  "engineCc": 1998,
+  "fuel": "M",
+  "residualGroup": "V"
+ },
+ "BMW 228 xDrive Gran Coupe M Sport": {
+  "brand": "BMW",
+  "model": "228 xDrive Gran Coupe M Sport",
+  "code": "468393132",
+  "vehiclePrice": 57000000,
+  "engineCc": 1998,
+  "fuel": "M",
+  "residualGroup": "AA"
+ },
+ "BMW 320d (P1)": {
+  "brand": "BMW",
+  "model": "320d (P1)",
+  "code": "465091114",
+  "vehiclePrice": 61400000,
+  "engineCc": 1995,
+  "fuel": "D",
+  "residualGroup": "T"
+ },
+ "BMW 320d M Sport (P1)": {
+  "brand": "BMW",
+  "model": "320d M Sport (P1)",
+  "code": "465091115",
+  "vehiclePrice": 64400000,
+  "engineCc": 1995,
+  "fuel": "D",
+  "residualGroup": "T"
+ },
+ "BMW 320d Touring": {
+  "brand": "BMW",
+  "model": "320d Touring",
+  "code": "465091122",
+  "vehiclePrice": 63800000,
+  "engineCc": 1995,
+  "fuel": "D",
+  "residualGroup": "X"
+ },
+ "BMW 320d Touring M Sport (P1)": {
+  "brand": "BMW",
+  "model": "320d Touring M Sport (P1)",
+  "code": "465091123",
+  "vehiclePrice": 66700000,
+  "engineCc": 1995,
+  "fuel": "D",
+  "residualGroup": "X"
+ },
+ "BMW 320d xDrive (P1)": {
+  "brand": "BMW",
+  "model": "320d xDrive (P1)",
+  "code": "465092181",
+  "vehiclePrice": 63200000,
+  "engineCc": 1995,
+  "fuel": "D",
+  "residualGroup": "T"
+ },
+ "BMW 320d xDrive M Sport (P1)": {
+  "brand": "BMW",
+  "model": "320d xDrive M Sport (P1)",
+  "code": "465092182",
+  "vehiclePrice": 66200000,
+  "engineCc": 1995,
+  "fuel": "D",
+  "residualGroup": "T"
+ },
+ "BMW 320d xDrive M Sport (P1-0)": {
+  "brand": "BMW",
+  "model": "320d xDrive M Sport (P1-0)",
+  "code": "465092183",
+  "vehiclePrice": 66200000,
+  "engineCc": 1995,
+  "fuel": "D",
+  "residualGroup": "T"
+ },
+ "BMW 320i (P0-0)": {
+  "brand": "BMW",
+  "model": "320i (P0-0)",
+  "code": "465091111",
+  "vehiclePrice": 60700000,
+  "engineCc": 1998,
+  "fuel": "V",
+  "residualGroup": "T"
+ },
+ "BMW 320i (P1)": {
+  "brand": "BMW",
+  "model": "320i (P1)",
+  "code": "465091108",
+  "vehiclePrice": 58600000,
+  "engineCc": 1998,
+  "fuel": "V",
+  "residualGroup": "T"
+ },
+ "BMW 320i M Sport (P0-0)": {
+  "brand": "BMW",
+  "model": "320i M Sport (P0-0)",
+  "code": "465091110",
+  "vehiclePrice": 64400000,
+  "engineCc": 1998,
+  "fuel": "V",
+  "residualGroup": "T"
+ },
+ "BMW 320i M Sport (P1)": {
+  "brand": "BMW",
+  "model": "320i M Sport (P1)",
+  "code": "465091109",
+  "vehiclePrice": 61800000,
+  "engineCc": 1998,
+  "fuel": "V",
+  "residualGroup": "T"
+ },
+ "BMW 320i M Sport (P1-0)": {
+  "brand": "BMW",
+  "model": "320i M Sport (P1-0)",
+  "code": "465092179",
+  "vehiclePrice": 61000000,
+  "engineCc": 1998,
+  "fuel": "V",
+  "residualGroup": "T"
+ },
+ "BMW 320i M Sport Online Exclusive (P1)": {
+  "brand": "BMW",
+  "model": "320i M Sport Online Exclusive (P1)",
+  "code": "465092424",
+  "vehiclePrice": 62400000,
+  "engineCc": 1998,
+  "fuel": "V",
+  "residualGroup": "T"
+ },
+ "BMW 320i M Sport Pro Special Edition": {
+  "brand": "BMW",
+  "model": "320i M Sport Pro Special Edition",
+  "code": "465092173",
+  "vehiclePrice": 62400000,
+  "engineCc": 1998,
+  "fuel": "V",
+  "residualGroup": "T"
+ },
+ "BMW 320i Online Exclusive (P1)": {
+  "brand": "BMW",
+  "model": "320i Online Exclusive (P1)",
+  "code": "465092422",
+  "vehiclePrice": 59300000,
+  "engineCc": 1998,
+  "fuel": "V",
+  "residualGroup": "T"
+ },
+ "BMW 320i Touring (P1)": {
+  "brand": "BMW",
+  "model": "320i Touring (P1)",
+  "code": "465091118",
+  "vehiclePrice": 61000000,
+  "engineCc": 1998,
+  "fuel": "V",
+  "residualGroup": "X"
+ },
+ "BMW 320i Touring M Sport (P1)": {
+  "brand": "BMW",
+  "model": "320i Touring M Sport (P1)",
+  "code": "465091119",
+  "vehiclePrice": 63800000,
+  "engineCc": 1998,
+  "fuel": "V",
+  "residualGroup": "X"
+ },
+ "BMW 320i Touring M Sport Online Exclusive (P1)": {
+  "brand": "BMW",
+  "model": "320i Touring M Sport Online Exclusive (P1)",
+  "code": "465092428",
+  "vehiclePrice": 64300000,
+  "engineCc": 1998,
+  "fuel": "V",
+  "residualGroup": "X"
+ },
+ "BMW 320i Touring Online Exclusive (P1)": {
+  "brand": "BMW",
+  "model": "320i Touring Online Exclusive (P1)",
+  "code": "465092426",
+  "vehiclePrice": 61600000,
+  "engineCc": 1998,
+  "fuel": "V",
+  "residualGroup": "X"
+ },
+ "BMW M340i Pro": {
+  "brand": "BMW",
+  "model": "M340i Pro",
+  "code": "465091112",
+  "vehiclePrice": 84900000,
+  "engineCc": 2998,
+  "fuel": "V",
+  "residualGroup": "Y"
+ },
+ "BMW M340i Pro (P1-0)": {
+  "brand": "BMW",
+  "model": "M340i Pro (P1-0)",
+  "code": "465092180",
+  "vehiclePrice": 83900000,
+  "engineCc": 2998,
+  "fuel": "V",
+  "residualGroup": "Y"
+ },
+ "BMW M340i Pro First Edition": {
+  "brand": "BMW",
+  "model": "M340i Pro First Edition",
+  "code": "465091113",
+  "vehiclePrice": 87600000,
+  "engineCc": 2998,
+  "fuel": "V",
+  "residualGroup": "Y"
+ },
+ "BMW M340i Pro Frozen Brooklyn Grey Edition": {
+  "brand": "BMW",
+  "model": "M340i Pro Frozen Brooklyn Grey Edition",
+  "code": "465092814",
+  "vehiclePrice": 88300000,
+  "engineCc": 2998,
+  "fuel": "V",
+  "residualGroup": "Y"
+ },
+ "BMW M340i xDrive Touring Pro (P1)": {
+  "brand": "BMW",
+  "model": "M340i xDrive Touring Pro (P1)",
+  "code": "465091120",
+  "vehiclePrice": 91900000,
+  "engineCc": 2998,
+  "fuel": "V",
+  "residualGroup": "CC"
+ },
+ "BMW M340i xDrive Touring Pro First Edition": {
+  "brand": "BMW",
+  "model": "M340i xDrive Touring Pro First Edition",
+  "code": "465091121",
+  "vehiclePrice": 98600000,
+  "engineCc": 2998,
+  "fuel": "V",
+  "residualGroup": "CC"
+ },
+ "BMW 420i Convertible M Sport (P2)": {
+  "brand": "BMW",
+  "model": "420i Convertible M Sport (P2)",
+  "code": "461492392",
+  "vehiclePrice": 75000000,
+  "engineCc": 1998,
+  "fuel": "V",
+  "residualGroup": "AA"
+ },
+ "BMW 420i Convertible M Sport Barcelona Blue Edition": {
+  "brand": "BMW",
+  "model": "420i Convertible M Sport Barcelona Blue Edition",
+  "code": "461492361",
+  "vehiclePrice": 78900000,
+  "engineCc": 1998,
+  "fuel": "V",
+  "residualGroup": "AA"
+ },
+ "BMW 420i Convertible M Sport Pro (P2)": {
+  "brand": "BMW",
+  "model": "420i Convertible M Sport Pro (P2)",
+  "code": "461492393",
+  "vehiclePrice": 79200000,
+  "engineCc": 1998,
+  "fuel": "V",
+  "residualGroup": "AA"
+ },
+ "BMW 420i Coupe M Sport Pro (P2)": {
+  "brand": "BMW",
+  "model": "420i Coupe M Sport Pro (P2)",
+  "code": "461492389",
+  "vehiclePrice": 73300000,
+  "engineCc": 1998,
+  "fuel": "V",
+  "residualGroup": "V"
+ },
+ "BMW 420i Coupe M Sport Pro (P2-0)": {
+  "brand": "BMW",
+  "model": "420i Coupe M Sport Pro (P2-0)",
+  "code": "461492390",
+  "vehiclePrice": 73300000,
+  "engineCc": 1998,
+  "fuel": "V",
+  "residualGroup": "V"
+ },
+ "BMW 420i Gran Coupe M Sport": {
+  "brand": "BMW",
+  "model": "420i Gran Coupe M Sport",
+  "code": "461491127",
+  "vehiclePrice": 63700000,
+  "engineCc": 1998,
+  "fuel": "M",
+  "residualGroup": "T"
+ },
+ "BMW 420i Gran Coupe M Sport Pro (P0-0)": {
+  "brand": "BMW",
+  "model": "420i Gran Coupe M Sport Pro (P0-0)",
+  "code": "461491128",
+  "vehiclePrice": 71000000,
+  "engineCc": 1998,
+  "fuel": "V",
+  "residualGroup": "T"
+ },
+ "BMW 420i Gran Coupe M Sport Pro (P0-1)": {
+  "brand": "BMW",
+  "model": "420i Gran Coupe M Sport Pro (P0-1)",
+  "code": "461491124",
+  "vehiclePrice": 68300000,
+  "engineCc": 1998,
+  "fuel": "M",
+  "residualGroup": "T"
+ },
+ "BMW 420i Gran Coupe M Sport Pro (P1)": {
+  "brand": "BMW",
+  "model": "420i Gran Coupe M Sport Pro (P1)",
+  "code": "461491125",
+  "vehiclePrice": 67400000,
+  "engineCc": 1998,
+  "fuel": "V",
+  "residualGroup": "T"
+ },
+ "BMW 420i Gran Coupe M Sport Pro First Edition": {
+  "brand": "BMW",
+  "model": "420i Gran Coupe M Sport Pro First Edition",
+  "code": "461491126",
+  "vehiclePrice": 69300000,
+  "engineCc": 1998,
+  "fuel": "M",
+  "residualGroup": "T"
+ },
+ "BMW M440i xDrive Convertible Pro OS (P2)": {
+  "brand": "BMW",
+  "model": "M440i xDrive Convertible Pro OS (P2)",
+  "code": "461491089",
+  "vehiclePrice": 99200000,
+  "engineCc": 2998,
+  "fuel": "V",
+  "residualGroup": "BB"
+ },
+ "BMW M440i xDrive Convertible Pro OS (P2-0)": {
+  "brand": "BMW",
+  "model": "M440i xDrive Convertible Pro OS (P2-0)",
+  "code": "461492394",
+  "vehiclePrice": 99200000,
+  "engineCc": 2998,
+  "fuel": "V",
+  "residualGroup": "BB"
+ },
+ "BMW M440i xDrive Convertible Pro Grigio Telesto ED": {
+  "brand": "BMW",
+  "model": "M440i xDrive Convertible Pro Grigio Telesto ED",
+  "code": "461492811",
+  "vehiclePrice": 102700000,
+  "engineCc": 2998,
+  "fuel": "V",
+  "residualGroup": "BB"
+ },
+ "BMW M440i xDrive Coupe Pro First Edition": {
+  "brand": "BMW",
+  "model": "M440i xDrive Coupe Pro First Edition",
+  "code": "461491075",
+  "vehiclePrice": 93700000,
+  "engineCc": 2998,
+  "fuel": "V",
+  "residualGroup": "BB"
+ },
+ "BMW M440i xDrive Coupe Pro OS (P2)": {
+  "brand": "BMW",
+  "model": "M440i xDrive Coupe Pro OS (P2)",
+  "code": "461492391",
+  "vehiclePrice": 93400000,
+  "engineCc": 2998,
+  "fuel": "V",
+  "residualGroup": "BB"
+ },
+ "BMW 520i (P1)": {
+  "brand": "BMW",
+  "model": "520i (P1)",
+  "code": "451792195",
+  "vehiclePrice": 68700000,
+  "engineCc": 1998,
+  "fuel": "V",
+  "residualGroup": "O"
+ },
+ "BMW 520i M Sport (P1)": {
+  "brand": "BMW",
+  "model": "520i M Sport (P1)",
+  "code": "451792132",
+  "vehiclePrice": 74000000,
+  "engineCc": 1998,
+  "fuel": "V",
+  "residualGroup": "O"
+ },
+ "BMW 520i M Sport Pro Special Edition": {
+  "brand": "BMW",
+  "model": "520i M Sport Pro Special Edition",
+  "code": "451792174",
+  "vehiclePrice": 75700000,
+  "engineCc": 1998,
+  "fuel": "V",
+  "residualGroup": "O"
+ },
+ "BMW 523d (P1)": {
+  "brand": "BMW",
+  "model": "523d (P1)",
+  "code": "451792199",
+  "vehiclePrice": 75600000,
+  "engineCc": 1995,
+  "fuel": "W",
+  "residualGroup": "O"
+ },
+ "BMW 523d M Sport (P1)": {
+  "brand": "BMW",
+  "model": "523d M Sport (P1)",
+  "code": "451792133",
+  "vehiclePrice": 81000000,
+  "engineCc": 1995,
+  "fuel": "W",
+  "residualGroup": "O"
+ },
+ "BMW 523d xDrive (P1)": {
+  "brand": "BMW",
+  "model": "523d xDrive (P1)",
+  "code": "451792200",
+  "vehiclePrice": 78600000,
+  "engineCc": 1995,
+  "fuel": "W",
+  "residualGroup": "O"
+ },
+ "BMW 523d xDrive M Sport (P1)": {
+  "brand": "BMW",
+  "model": "523d xDrive M Sport (P1)",
+  "code": "451792201",
+  "vehiclePrice": 83000000,
+  "engineCc": 1995,
+  "fuel": "W",
+  "residualGroup": "O"
+ },
+ "BMW 530e (P1)": {
+  "brand": "BMW",
+  "model": "530e (P1)",
+  "code": "451792190",
+  "vehiclePrice": 88100000,
+  "engineCc": 1998,
+  "fuel": "V",
+  "residualGroup": "O"
+ },
+ "BMW 530e M Sport (P1)": {
+  "brand": "BMW",
+  "model": "530e M Sport (P1)",
+  "code": "451792191",
+  "vehiclePrice": 91100000,
+  "engineCc": 1998,
+  "fuel": "V",
+  "residualGroup": "O"
+ },
+ "BMW 530e xDrive M Sport (P0-0)": {
+  "brand": "BMW",
+  "model": "530e xDrive M Sport (P0-0)",
+  "code": "451791194",
+  "vehiclePrice": 96100000,
+  "engineCc": 1998,
+  "fuel": "V",
+  "residualGroup": "O"
+ },
+ "BMW 530e xDrive M Sport (P1)": {
+  "brand": "BMW",
+  "model": "530e xDrive M Sport (P1)",
+  "code": "451792192",
+  "vehiclePrice": 94200000,
+  "engineCc": 1998,
+  "fuel": "V",
+  "residualGroup": "O"
+ },
+ "BMW 530e xDrive M Sport Pro (P1)": {
+  "brand": "BMW",
+  "model": "530e xDrive M Sport Pro (P1)",
+  "code": "451792193",
+  "vehiclePrice": 97400000,
+  "engineCc": 1998,
+  "fuel": "V",
+  "residualGroup": "O"
+ },
+ "BMW 530i xDrive (P1)": {
+  "brand": "BMW",
+  "model": "530i xDrive (P1)",
+  "code": "451792196",
+  "vehiclePrice": 83200000,
+  "engineCc": 1998,
+  "fuel": "V",
+  "residualGroup": "O"
+ },
+ "BMW 530i xDrive M Sport (P1)": {
+  "brand": "BMW",
+  "model": "530i xDrive M Sport (P1)",
+  "code": "451792197",
+  "vehiclePrice": 87600000,
+  "engineCc": 1998,
+  "fuel": "V",
+  "residualGroup": "O"
+ },
+ "BMW 530i xDrive M Sport (P1-0)": {
+  "brand": "BMW",
+  "model": "530i xDrive M Sport (P1-0)",
+  "code": "451792198",
+  "vehiclePrice": 88400000,
+  "engineCc": 1998,
+  "fuel": "V",
+  "residualGroup": "O"
+ },
+ "BMW 530i xDrive M Sport Pro Special Edition": {
+  "brand": "BMW",
+  "model": "530i xDrive M Sport Pro Special Edition",
+  "code": "451791133",
+  "vehiclePrice": 92500000,
+  "engineCc": 1998,
+  "fuel": "V",
+  "residualGroup": "O"
+ },
+ "BMW 550e xDrive M Sport Pro (P1)": {
+  "brand": "BMW",
+  "model": "550e xDrive M Sport Pro (P1)",
+  "code": "451792194",
+  "vehiclePrice": 113500000,
+  "engineCc": 2998,
+  "fuel": "V",
+  "residualGroup": "O"
+ },
+ "BMW 550e xDrive M Sport Pro (P1-0)": {
+  "brand": "BMW",
+  "model": "550e xDrive M Sport Pro (P1-0)",
+  "code": "451792406",
+  "vehiclePrice": 114100000,
+  "engineCc": 2998,
+  "fuel": "V",
+  "residualGroup": "O"
+ },
+ "BMW 550e xDrive M Sport Pro Blue Onyx Edition": {
+  "brand": "BMW",
+  "model": "550e xDrive M Sport Pro Blue Onyx Edition",
+  "code": "451792589",
+  "vehiclePrice": 122200000,
+  "engineCc": 2998,
+  "fuel": "V",
+  "residualGroup": "O"
+ },
+ "BMW 740d xDrive M Sport (P1)": {
+  "brand": "BMW",
+  "model": "740d xDrive M Sport (P1)",
+  "code": "419691102",
+  "vehiclePrice": 150700000,
+  "engineCc": 2993,
+  "fuel": "W",
+  "residualGroup": "Y"
+ },
+ "BMW 740d xDrive M Sport (P1-0)": {
+  "brand": "BMW",
+  "model": "740d xDrive M Sport (P1-0)",
+  "code": "419692210",
+  "vehiclePrice": 150700000,
+  "engineCc": 2993,
+  "fuel": "W",
+  "residualGroup": "Y"
+ },
+ "BMW 740i xDrive M Sport (P1)": {
+  "brand": "BMW",
+  "model": "740i xDrive M Sport (P1)",
+  "code": "419692209",
+  "vehiclePrice": 176000000,
+  "engineCc": 2998,
+  "fuel": "V",
+  "residualGroup": "X"
+ },
+ "BMW 740i xDrive M Sport (P1-0)": {
+  "brand": "BMW",
+  "model": "740i xDrive M Sport (P1-0)",
+  "code": "419692440",
+  "vehiclePrice": 176000000,
+  "engineCc": 2998,
+  "fuel": "V",
+  "residualGroup": "X"
+ },
+ "BMW 740i xDrive M Sport Limited (P1)": {
+  "brand": "BMW",
+  "model": "740i xDrive M Sport Limited (P1)",
+  "code": "419692208",
+  "vehiclePrice": 160800000,
+  "engineCc": 2998,
+  "fuel": "V",
+  "residualGroup": "X"
+ },
+ "BMW 740i xDrive M Sport Pro Individual All Black ED": {
+  "brand": "BMW",
+  "model": "740i xDrive M Sport Pro Individual All Black ED",
+  "code": "419691100",
+  "vehiclePrice": 187800000,
+  "engineCc": 2998,
+  "fuel": "V",
+  "residualGroup": "X"
+ },
+ "BMW 750e xDrive DPE (P1)": {
+  "brand": "BMW",
+  "model": "750e xDrive DPE (P1)",
+  "code": "419692206",
+  "vehiclePrice": 201100000,
+  "engineCc": 2998,
+  "fuel": "V",
+  "residualGroup": "W"
+ },
+ "BMW 750e xDrive M Sport (P1)": {
+  "brand": "BMW",
+  "model": "750e xDrive M Sport (P1)",
+  "code": "419692207",
+  "vehiclePrice": 204100000,
+  "engineCc": 2998,
+  "fuel": "V",
+  "residualGroup": "W"
+ },
+ "BMW 750e xDrive M Sport Individual Peridot Green ED": {
+  "brand": "BMW",
+  "model": "750e xDrive M Sport Individual Peridot Green ED",
+  "code": "419692176",
+  "vehiclePrice": 209400000,
+  "engineCc": 2998,
+  "fuel": "V",
+  "residualGroup": "W"
+ },
+ "BMW 750e xDrive M Sport Pro Two-tone Mauritius Blue ED": {
+  "brand": "BMW",
+  "model": "750e xDrive M Sport Pro Two-tone Mauritius Blue ED",
+  "code": "419692588",
+  "vehiclePrice": 236300000,
+  "engineCc": 2998,
+  "fuel": "V",
+  "residualGroup": "W"
+ },
+ "BMW M850i xDrive Coupe M Performance (P1)": {
+  "brand": "BMW",
+  "model": "M850i xDrive Coupe M Performance (P1)",
+  "code": "417192211",
+  "vehiclePrice": 150700000,
+  "engineCc": 4395,
+  "fuel": "M",
+  "residualGroup": "Y"
+ },
+ "BMW M850i xDrive Gran Coupe Individual All Black ED": {
+  "brand": "BMW",
+  "model": "M850i xDrive Gran Coupe Individual All Black ED",
+  "code": "417191136",
+  "vehiclePrice": 154500000,
+  "engineCc": 4395,
+  "fuel": "M",
+  "residualGroup": "Y"
+ },
+ "BMW M850i xDrive Gran Coupe M Performance (P1)": {
+  "brand": "BMW",
+  "model": "M850i xDrive Gran Coupe M Performance (P1)",
+  "code": "417192212",
+  "vehiclePrice": 146700000,
+  "engineCc": 4395,
+  "fuel": "M",
+  "residualGroup": "Y"
+ },
+ "BMW M850i xDrive Gran Coupe M Performance (P1-0)": {
+  "brand": "BMW",
+  "model": "M850i xDrive Gran Coupe M Performance (P1-0)",
+  "code": "417192213",
+  "vehiclePrice": 146700000,
+  "engineCc": 4395,
+  "fuel": "M",
+  "residualGroup": "Y"
+ },
+ "BMW i4 eDrive40 Gran Coupe M Sport": {
+  "brand": "BMW",
+  "model": "i4 eDrive40 Gran Coupe M Sport",
+  "code": "463992565",
+  "vehiclePrice": 78300000,
+  "engineCc": 0,
+  "fuel": "E",
+  "residualGroup": "CC"
+ },
+ "BMW i4 eDrive40 Gran Coupe M Sport Pro": {
+  "brand": "BMW",
+  "model": "i4 eDrive40 Gran Coupe M Sport Pro",
+  "code": "463992566",
+  "vehiclePrice": 84500000,
+  "engineCc": 0,
+  "fuel": "E",
+  "residualGroup": "CC"
+ },
+ "BMW i4 M50 xDrive Gran Coupe": {
+  "brand": "BMW",
+  "model": "i4 M50 xDrive Gran Coupe",
+  "code": "463992628",
+  "vehiclePrice": 84900000,
+  "engineCc": 0,
+  "fuel": "E",
+  "residualGroup": "CC"
+ },
+ "BMW i4 M50 xDrive Gran Coupe Pro": {
+  "brand": "BMW",
+  "model": "i4 M50 xDrive Gran Coupe Pro",
+  "code": "463992629",
+  "vehiclePrice": 91600000,
+  "engineCc": 0,
+  "fuel": "E",
+  "residualGroup": "CC"
+ },
+ "BMW i4 M60 xDrive Gran Coupe": {
+  "brand": "BMW",
+  "model": "i4 M60 xDrive Gran Coupe",
+  "code": "463994529",
+  "vehiclePrice": 84900000,
+  "engineCc": 0,
+  "fuel": "E",
+  "residualGroup": "CC"
+ },
+ "BMW i4 M60 xDrive Gran Coupe Pro": {
+  "brand": "BMW",
+  "model": "i4 M60 xDrive Gran Coupe Pro",
+  "code": "463994530",
+  "vehiclePrice": 91600000,
+  "engineCc": 0,
+  "fuel": "E",
+  "residualGroup": "CC"
+ },
+ "BMW i5 eDrive40 (P1)": {
+  "brand": "BMW",
+  "model": "i5 eDrive40 (P1)",
+  "code": "452892229",
+  "vehiclePrice": 92800000,
+  "engineCc": 0,
+  "fuel": "E",
+  "residualGroup": "W"
+ },
+ "BMW i5 eDrive40 M Sport (P1)": {
+  "brand": "BMW",
+  "model": "i5 eDrive40 M Sport (P1)",
+  "code": "452892230",
+  "vehiclePrice": 95700000,
+  "engineCc": 0,
+  "fuel": "E",
+  "residualGroup": "W"
+ },
+ "BMW i5 M60 xDrive Pro (P1)": {
+  "brand": "BMW",
+  "model": "i5 M60 xDrive Pro (P1)",
+  "code": "452892231",
+  "vehiclePrice": 137500000,
+  "engineCc": 0,
+  "fuel": "E",
+  "residualGroup": "W"
+ },
+ "BMW i5 xDrive40 M Sport": {
+  "brand": "BMW",
+  "model": "i5 xDrive40 M Sport",
+  "code": "452892348",
+  "vehiclePrice": 103000000,
+  "engineCc": 0,
+  "fuel": "E",
+  "residualGroup": "W"
+ },
+ "BMW i5 xDrive40 M Sport Pro": {
+  "brand": "BMW",
+  "model": "i5 xDrive40 M Sport Pro",
+  "code": "452892349",
+  "vehiclePrice": 105800000,
+  "engineCc": 0,
+  "fuel": "E",
+  "residualGroup": "W"
+ },
+ "BMW i5 xDrive40 M Sport Pro (P0-0)": {
+  "brand": "BMW",
+  "model": "i5 xDrive40 M Sport Pro (P0-0)",
+  "code": "452892407",
+  "vehiclePrice": 105000000,
+  "engineCc": 0,
+  "fuel": "E",
+  "residualGroup": "W"
+ },
+ "BMW i7 eDrive50 M Sport (P1)": {
+  "brand": "BMW",
+  "model": "i7 eDrive50 M Sport (P1)",
+  "code": "418192442",
+  "vehiclePrice": 181100000,
+  "engineCc": 0,
+  "fuel": "E",
+  "residualGroup": "Y"
+ },
+ "BMW i7 eDrive50 M Sport Limited (P1)": {
+  "brand": "BMW",
+  "model": "i7 eDrive50 M Sport Limited (P1)",
+  "code": "418192441",
+  "vehiclePrice": 166100000,
+  "engineCc": 0,
+  "fuel": "E",
+  "residualGroup": "Y"
+ },
+ "BMW i7 M70 xDrive IndIvidual Two-tone Edition": {
+  "brand": "BMW",
+  "model": "i7 M70 xDrive IndIvidual Two-tone Edition",
+  "code": "418192129",
+  "vehiclePrice": 244700000,
+  "engineCc": 0,
+  "fuel": "E",
+  "residualGroup": "Y"
+ },
+ "BMW i7 xDrive60 DPE": {
+  "brand": "BMW",
+  "model": "i7 xDrive60 DPE",
+  "code": "418192142",
+  "vehiclePrice": 212100000,
+  "engineCc": 0,
+  "fuel": "E",
+  "residualGroup": "Y"
+ },
+ "BMW i7 xDrive60 DPE (P1)": {
+  "brand": "BMW",
+  "model": "i7 xDrive60 DPE (P1)",
+  "code": "418192695",
+  "vehiclePrice": 212100000,
+  "engineCc": 0,
+  "fuel": "E",
+  "residualGroup": "Y"
+ },
+ "BMW i7 xDrive60 M Sport (P1)": {
+  "brand": "BMW",
+  "model": "i7 xDrive60 M Sport (P1)",
+  "code": "418192443",
+  "vehiclePrice": 215100000,
+  "engineCc": 0,
+  "fuel": "E",
+  "residualGroup": "Y"
+ },
+ "BMW iX xDrive45 M Sport": {
+  "brand": "BMW",
+  "model": "iX xDrive45 M Sport",
+  "code": "470893410",
+  "vehiclePrice": 124800000,
+  "engineCc": 0,
+  "fuel": "E",
+  "residualGroup": "T"
+ },
+ "BMW iX xDrive50 Sport Plus": {
+  "brand": "BMW",
+  "model": "iX xDrive50 Sport Plus",
+  "code": "400991209",
+  "vehiclePrice": 153600000,
+  "engineCc": 0,
+  "fuel": "E",
+  "residualGroup": "V"
+ },
+ "BMW iX xDrive50 Sport Plus (P0-0)": {
+  "brand": "BMW",
+  "model": "iX xDrive50 Sport Plus (P0-0)",
+  "code": "400991210",
+  "vehiclePrice": 153600000,
+  "engineCc": 0,
+  "fuel": "E",
+  "residualGroup": "V"
+ },
+ "BMW iX xDrive50 Sport Plus (P1-0)": {
+  "brand": "BMW",
+  "model": "iX xDrive50 Sport Plus (P1-0)",
+  "code": "400992689",
+  "vehiclePrice": 152200000,
+  "engineCc": 0,
+  "fuel": "E",
+  "residualGroup": "V"
+ },
+ "BMW iX xDrive50 Sport SE": {
+  "brand": "BMW",
+  "model": "iX xDrive50 Sport SE",
+  "code": "400992232",
+  "vehiclePrice": 137500000,
+  "engineCc": 0,
+  "fuel": "E",
+  "residualGroup": "V"
+ },
+ "BMW iX xDrive50 Sport SE (P1)": {
+  "brand": "BMW",
+  "model": "iX xDrive50 Sport SE (P1)",
+  "code": "400992690",
+  "vehiclePrice": 137500000,
+  "engineCc": 0,
+  "fuel": "E",
+  "residualGroup": "V"
+ },
+ "BMW iX xDrive60 M Sport Pro": {
+  "brand": "BMW",
+  "model": "iX xDrive60 M Sport Pro",
+  "code": "470893411",
+  "vehiclePrice": 153800000,
+  "engineCc": 0,
+  "fuel": "E",
+  "residualGroup": "Y"
+ },
+ "BMW iX M70 xDrive": {
+  "brand": "BMW",
+  "model": "iX M70 xDrive",
+  "code": "470893412",
+  "vehiclePrice": 177700000,
+  "engineCc": 0,
+  "fuel": "E",
+  "residualGroup": "Y"
+ },
+ "BMW iX1 xDrive30 M Sport (P1)": {
+  "brand": "BMW",
+  "model": "iX1 xDrive30 M Sport (P1)",
+  "code": "437292385",
+  "vehiclePrice": 70200000,
+  "engineCc": 0,
+  "fuel": "E",
+  "residualGroup": "Q"
+ },
+ "BMW iX1 xDrive30 xLine (P1)": {
+  "brand": "BMW",
+  "model": "iX1 xDrive30 xLine (P1)",
+  "code": "437292384",
+  "vehiclePrice": 67600000,
+  "engineCc": 0,
+  "fuel": "E",
+  "residualGroup": "Q"
+ },
+ "BMW iX2 eDrive20 M Sport": {
+  "brand": "BMW",
+  "model": "iX2 eDrive20 M Sport",
+  "code": "458292359",
+  "vehiclePrice": 64700000,
+  "engineCc": 0,
+  "fuel": "E",
+  "residualGroup": "Y"
+ },
+ "BMW iX3 M Sport": {
+  "brand": "BMW",
+  "model": "iX3 M Sport",
+  "code": "398392140",
+  "vehiclePrice": 82600000,
+  "engineCc": 0,
+  "fuel": "E",
+  "residualGroup": "V"
+ },
+ "BMW M2 Coupe (P1)": {
+  "brand": "BMW",
+  "model": "M2 Coupe (P1)",
+  "code": "465592226",
+  "vehiclePrice": 90300000,
+  "engineCc": 2993,
+  "fuel": "M",
+  "residualGroup": "EE"
+ },
+ "BMW M3 Competition M xDrive (P1)": {
+  "brand": "BMW",
+  "model": "M3 Competition M xDrive (P1)",
+  "code": "464991106",
+  "vehiclePrice": 135800000,
+  "engineCc": 2993,
+  "fuel": "M",
+  "residualGroup": "EE"
+ },
+ "BMW M3 Competition M xDrive Touring (P1)": {
+  "brand": "BMW",
+  "model": "M3 Competition M xDrive Touring (P1)",
+  "code": "464991107",
+  "vehiclePrice": 137600000,
+  "engineCc": 2993,
+  "fuel": "M",
+  "residualGroup": "EE"
+ },
+ "BMW M4 Competition M xDrive Convertible (P2)": {
+  "brand": "BMW",
+  "model": "M4 Competition M xDrive Convertible (P2)",
+  "code": "461592396",
+  "vehiclePrice": 142800000,
+  "engineCc": 2993,
+  "fuel": "M",
+  "residualGroup": "EE"
+ },
+ "BMW M4 Competition M xDrive Coupe (P2)": {
+  "brand": "BMW",
+  "model": "M4 Competition M xDrive Coupe (P2)",
+  "code": "461592395",
+  "vehiclePrice": 137700000,
+  "engineCc": 2993,
+  "fuel": "M",
+  "residualGroup": "EE"
+ },
+ "BMW M5 (P1)": {
+  "brand": "BMW",
+  "model": "M5 (P1)",
+  "code": "465792408",
+  "vehiclePrice": 165500000,
+  "engineCc": 4395,
+  "fuel": "V",
+  "residualGroup": "BB"
+ },
+ "BMW M5 Touring": {
+  "brand": "BMW",
+  "model": "M5 Touring",
+  "code": "465794019",
+  "vehiclePrice": 171000000,
+  "engineCc": 4395,
+  "fuel": "V",
+  "residualGroup": "BB"
+ },
+ "BMW M8 Competition Coupe (P1)": {
+  "brand": "BMW",
+  "model": "M8 Competition Coupe (P1)",
+  "code": "417292429",
+  "vehiclePrice": 248200000,
+  "engineCc": 4395,
+  "fuel": "M",
+  "residualGroup": "EE"
+ },
+ "BMW M8 Competition Gran Coupe (P1)": {
+  "brand": "BMW",
+  "model": "M8 Competition Gran Coupe (P1)",
+  "code": "417292430",
+  "vehiclePrice": 247900000,
+  "engineCc": 4395,
+  "fuel": "M",
+  "residualGroup": "EE"
+ },
+ "BMW X1 M35i xDrive (P1)": {
+  "brand": "BMW",
+  "model": "X1 M35i xDrive (P1)",
+  "code": "437192381",
+  "vehiclePrice": 72200000,
+  "engineCc": 1998,
+  "fuel": "M",
+  "residualGroup": "W"
+ },
+ "BMW X1 sDrive18d M Sport (P1)": {
+  "brand": "BMW",
+  "model": "X1 sDrive18d M Sport (P1)",
+  "code": "437192383",
+  "vehiclePrice": 63900000,
+  "engineCc": 1995,
+  "fuel": "D",
+  "residualGroup": "S"
+ },
+ "BMW X1 sDrive18d xLine (P1)": {
+  "brand": "BMW",
+  "model": "X1 sDrive18d xLine (P1)",
+  "code": "437192382",
+  "vehiclePrice": 59100000,
+  "engineCc": 1995,
+  "fuel": "D",
+  "residualGroup": "S"
+ },
+ "BMW X1 xDrive20i M Sport (P1)": {
+  "brand": "BMW",
+  "model": "X1 xDrive20i M Sport (P1)",
+  "code": "437192380",
+  "vehiclePrice": 67900000,
+  "engineCc": 1998,
+  "fuel": "M",
+  "residualGroup": "S"
+ },
+ "BMW X1 xDrive20i xLine (P1)": {
+  "brand": "BMW",
+  "model": "X1 xDrive20i xLine (P1)",
+  "code": "437192379",
+  "vehiclePrice": 63100000,
+  "engineCc": 1998,
+  "fuel": "M",
+  "residualGroup": "S"
+ },
+ "BMW X2 M35i xDrive": {
+  "brand": "BMW",
+  "model": "X2 M35i xDrive",
+  "code": "458091202",
+  "vehiclePrice": 75000000,
+  "engineCc": 1998,
+  "fuel": "M",
+  "residualGroup": "W"
+ },
+ "BMW X2 M35i xDrive (P1)": {
+  "brand": "BMW",
+  "model": "X2 M35i xDrive (P1)",
+  "code": "458092688",
+  "vehiclePrice": 75500000,
+  "engineCc": 1998,
+  "fuel": "M",
+  "residualGroup": "W"
+ },
+ "BMW X2 xDrive20i M Sport": {
+  "brand": "BMW",
+  "model": "X2 xDrive20i M Sport",
+  "code": "458091201",
+  "vehiclePrice": 68900000,
+  "engineCc": 1998,
+  "fuel": "M",
+  "residualGroup": "S"
+ },
+ "BMW X2 xDrive20i M Sport (P1)": {
+  "brand": "BMW",
+  "model": "X2 xDrive20i M Sport (P1)",
+  "code": "458092687",
+  "vehiclePrice": 69300000,
+  "engineCc": 1998,
+  "fuel": "M",
+  "residualGroup": "S"
+ },
+ "BMW X3 20 xDrive (P1)": {
+  "brand": "BMW",
+  "model": "X3 20 xDrive (P1)",
+  "code": "465692214",
+  "vehiclePrice": 68000000,
+  "engineCc": 1998,
+  "fuel": "V",
+  "residualGroup": "Q"
+ },
+ "BMW X3 20 xDrive First Edition": {
+  "brand": "BMW",
+  "model": "X3 20 xDrive First Edition",
+  "code": "465691181",
+  "vehiclePrice": 81300000,
+  "engineCc": 1998,
+  "fuel": "V",
+  "residualGroup": "Q"
+ },
+ "BMW X3 20 xDrive M Sport (P1)": {
+  "brand": "BMW",
+  "model": "X3 20 xDrive M Sport (P1)",
+  "code": "465692215",
+  "vehiclePrice": 74700000,
+  "engineCc": 1998,
+  "fuel": "V",
+  "residualGroup": "Q"
+ },
+ "BMW X3 20 xDrive M Sport Pro (P1)": {
+  "brand": "BMW",
+  "model": "X3 20 xDrive M Sport Pro (P1)",
+  "code": "465692216",
+  "vehiclePrice": 79300000,
+  "engineCc": 1998,
+  "fuel": "V",
+  "residualGroup": "Q"
+ },
+ "BMW X3 20 xDrive M Sport Pro (P1-0)": {
+  "brand": "BMW",
+  "model": "X3 20 xDrive M Sport Pro (P1-0)",
+  "code": "465692217",
+  "vehiclePrice": 79300000,
+  "engineCc": 1998,
+  "fuel": "V",
+  "residualGroup": "Q"
+ },
+ "BMW X3 20d xDrive (P1)": {
+  "brand": "BMW",
+  "model": "X3 20d xDrive (P1)",
+  "code": "465692219",
+  "vehiclePrice": 72000000,
+  "engineCc": 1995,
+  "fuel": "W",
+  "residualGroup": "Q"
+ },
+ "BMW X3 20d xDrive M Sport (P1)": {
+  "brand": "BMW",
+  "model": "X3 20d xDrive M Sport (P1)",
+  "code": "465692220",
+  "vehiclePrice": 78200000,
+  "engineCc": 1995,
+  "fuel": "W",
+  "residualGroup": "Q"
+ },
+ "BMW X3 30 xDrive M Sport Pro": {
+  "brand": "BMW",
+  "model": "X3 30 xDrive M Sport Pro",
+  "code": "465693967",
+  "vehiclePrice": 83900000,
+  "engineCc": 1998,
+  "fuel": "V",
+  "residualGroup": "Q"
+ },
+ "BMW X3 M50 xDrive Pro (P1)": {
+  "brand": "BMW",
+  "model": "X3 M50 xDrive Pro (P1)",
+  "code": "465692218",
+  "vehiclePrice": 98700000,
+  "engineCc": 2998,
+  "fuel": "V",
+  "residualGroup": "W"
+ },
+ "BMW X3 M50 xDrive Pro First Edition": {
+  "brand": "BMW",
+  "model": "X3 M50 xDrive Pro First Edition",
+  "code": "465691183",
+  "vehiclePrice": 99900000,
+  "engineCc": 2998,
+  "fuel": "V",
+  "residualGroup": "W"
+ },
+ "BMW X4 M40i (P1)": {
+  "brand": "BMW",
+  "model": "X4 M40i (P1)",
+  "code": "407292402",
+  "vehiclePrice": 101900000,
+  "engineCc": 2998,
+  "fuel": "M",
+  "residualGroup": "T"
+ },
+ "BMW X4 xDrive20d M Sport (P1)": {
+  "brand": "BMW",
+  "model": "X4 xDrive20d M Sport (P1)",
+  "code": "407292403",
+  "vehiclePrice": 82300000,
+  "engineCc": 1995,
+  "fuel": "D",
+  "residualGroup": "O"
+ },
+ "BMW X4 xDrive20i M Sport": {
+  "brand": "BMW",
+  "model": "X4 xDrive20i M Sport",
+  "code": "407291148",
+  "vehiclePrice": 77000000,
+  "engineCc": 1998,
+  "fuel": "M",
+  "residualGroup": "O"
+ },
+ "BMW X4 xDrive20i M Sport (P0-0)": {
+  "brand": "BMW",
+  "model": "X4 xDrive20i M Sport (P0-0)",
+  "code": "407291149",
+  "vehiclePrice": 77000000,
+  "engineCc": 1998,
+  "fuel": "M",
+  "residualGroup": "O"
+ },
+ "BMW X4 xDrive20i M Sport Pro": {
+  "brand": "BMW",
+  "model": "X4 xDrive20i M Sport Pro",
+  "code": "407291150",
+  "vehiclePrice": 83900000,
+  "engineCc": 1998,
+  "fuel": "M",
+  "residualGroup": "O"
+ },
+ "BMW X4 xDrive20i M Sport Pro (P1-0)": {
+  "brand": "BMW",
+  "model": "X4 xDrive20i M Sport Pro (P1-0)",
+  "code": "407292400",
+  "vehiclePrice": 84000000,
+  "engineCc": 1998,
+  "fuel": "M",
+  "residualGroup": "O"
+ },
+ "BMW X4 xDrive20i M Sport Pro SE": {
+  "brand": "BMW",
+  "model": "X4 xDrive20i M Sport Pro SE",
+  "code": "407292489",
+  "vehiclePrice": 79300000,
+  "engineCc": 1998,
+  "fuel": "M",
+  "residualGroup": "O"
+ },
+ "BMW X4 xDrive20i M Sport Pro Tanzanite Blue Edition": {
+  "brand": "BMW",
+  "model": "X4 xDrive20i M Sport Pro Tanzanite Blue Edition",
+  "code": "407292362",
+  "vehiclePrice": 85300000,
+  "engineCc": 1998,
+  "fuel": "M",
+  "residualGroup": "O"
+ },
+ "BMW X4 xDrive20i xLine (P1)": {
+  "brand": "BMW",
+  "model": "X4 xDrive20i xLine (P1)",
+  "code": "407292399",
+  "vehiclePrice": 73300000,
+  "engineCc": 1998,
+  "fuel": "M",
+  "residualGroup": "O"
+ },
+ "BMW X4 M Competition (P1)": {
+  "brand": "BMW",
+  "model": "X4 M Competition (P1)",
+  "code": "407392404",
+  "vehiclePrice": 130200000,
+  "engineCc": 2993,
+  "fuel": "M",
+  "residualGroup": "W"
+ },
+ "BMW X4 M Competition (P1-0)": {
+  "brand": "BMW",
+  "model": "X4 M Competition (P1-0)",
+  "code": "407392405",
+  "vehiclePrice": 130200000,
+  "engineCc": 2993,
+  "fuel": "M",
+  "residualGroup": "W"
+ },
+ "BMW X5 M60i xDrive Pro (P1)": {
+  "brand": "BMW",
+  "model": "X5 M60i xDrive Pro (P1)",
+  "code": "447592413",
+  "vehiclePrice": 159000000,
+  "engineCc": 4395,
+  "fuel": "V",
+  "residualGroup": "T"
+ },
+ "BMW X5 xDrive30d M Sport (7인승) (P1)": {
+  "brand": "BMW",
+  "model": "X5 xDrive30d M Sport (7인승) (P1)",
+  "code": "447592223",
+  "vehiclePrice": 125400000,
+  "engineCc": 2993,
+  "fuel": "W",
+  "residualGroup": "O"
+ },
+ "BMW X5 xDrive30d M Sport (P1)": {
+  "brand": "BMW",
+  "model": "X5 xDrive30d M Sport (P1)",
+  "code": "447592222",
+  "vehiclePrice": 122900000,
+  "engineCc": 2993,
+  "fuel": "W",
+  "residualGroup": "O"
+ },
+ "BMW X5 xDrive30d M Sport Pro Special Edition": {
+  "brand": "BMW",
+  "model": "X5 xDrive30d M Sport Pro Special Edition",
+  "code": "447592175",
+  "vehiclePrice": 129300000,
+  "engineCc": 2993,
+  "fuel": "W",
+  "residualGroup": "O"
+ },
+ "BMW X5 xDrive30d xLine (7인승) (P1)": {
+  "brand": "BMW",
+  "model": "X5 xDrive30d xLine (7인승) (P1)",
+  "code": "447592414",
+  "vehiclePrice": 117800000,
+  "engineCc": 2993,
+  "fuel": "W",
+  "residualGroup": "O"
+ },
+ "BMW X5 xDrive40d M Sport Pro Online Exclusive (P1)": {
+  "brand": "BMW",
+  "model": "X5 xDrive40d M Sport Pro Online Exclusive (P1)",
+  "code": "447592224",
+  "vehiclePrice": 133000000,
+  "engineCc": 2993,
+  "fuel": "W",
+  "residualGroup": "O"
+ },
+ "BMW X5 xDrive40i M Sport (7인승) (P1)": {
+  "brand": "BMW",
+  "model": "X5 xDrive40i M Sport (7인승) (P1)",
+  "code": "447592412",
+  "vehiclePrice": 131900000,
+  "engineCc": 2998,
+  "fuel": "V",
+  "residualGroup": "O"
+ },
+ "BMW X5 xDrive40i M Sport (P1)": {
+  "brand": "BMW",
+  "model": "X5 xDrive40i M Sport (P1)",
+  "code": "447592221",
+  "vehiclePrice": 130500000,
+  "engineCc": 2998,
+  "fuel": "V",
+  "residualGroup": "O"
+ },
+ "BMW X5 xDrive40i xLine (7인승) (P1)": {
+  "brand": "BMW",
+  "model": "X5 xDrive40i xLine (7인승) (P1)",
+  "code": "447592411",
+  "vehiclePrice": 123800000,
+  "engineCc": 2998,
+  "fuel": "V",
+  "residualGroup": "O"
+ },
+ "BMW X5 xDrive50e M Sport Pro (P1)": {
+  "brand": "BMW",
+  "model": "X5 xDrive50e M Sport Pro (P1)",
+  "code": "447591154",
+  "vehiclePrice": 137600000,
+  "engineCc": 2998,
+  "fuel": "V",
+  "residualGroup": "O"
+ },
+ "BMW X5 xDrive50e M Sport Pro (P1-0)": {
+  "brand": "BMW",
+  "model": "X5 xDrive50e M Sport Pro (P1-0)",
+  "code": "447592410",
+  "vehiclePrice": 137600000,
+  "engineCc": 2998,
+  "fuel": "V",
+  "residualGroup": "O"
+ },
+ "BMW X5 xDrive50e M Sport Pro Night Blue Edition": {
+  "brand": "BMW",
+  "model": "X5 xDrive50e M Sport Pro Night Blue Edition",
+  "code": "447592590",
+  "vehiclePrice": 147500000,
+  "engineCc": 2998,
+  "fuel": "V",
+  "residualGroup": "O"
+ },
+ "BMW X5 xDrive50e xLine (P1)": {
+  "brand": "BMW",
+  "model": "X5 xDrive50e xLine (P1)",
+  "code": "447592409",
+  "vehiclePrice": 130900000,
+  "engineCc": 2998,
+  "fuel": "V",
+  "residualGroup": "O"
+ },
+ "BMW X5 M Competition (P1)": {
+  "brand": "BMW",
+  "model": "X5 M Competition (P1)",
+  "code": "447992419",
+  "vehiclePrice": 191700000,
+  "engineCc": 4395,
+  "fuel": "V",
+  "residualGroup": "Y"
+ },
+ "BMW X6 M60i xDrive Pro (P1)": {
+  "brand": "BMW",
+  "model": "X6 M60i xDrive Pro (P1)",
+  "code": "447692416",
+  "vehiclePrice": 162700000,
+  "engineCc": 4395,
+  "fuel": "V",
+  "residualGroup": "T"
+ },
+ "BMW X6 xDrive30d M Sport (P1)": {
+  "brand": "BMW",
+  "model": "X6 xDrive30d M Sport (P1)",
+  "code": "447692417",
+  "vehiclePrice": 126500000,
+  "engineCc": 2993,
+  "fuel": "W",
+  "residualGroup": "O"
+ },
+ "BMW X6 xDrive40d M Sport Pro Online Exclusive (P1)": {
+  "brand": "BMW",
+  "model": "X6 xDrive40d M Sport Pro Online Exclusive (P1)",
+  "code": "447692418",
+  "vehiclePrice": 138100000,
+  "engineCc": 2993,
+  "fuel": "W",
+  "residualGroup": "O"
+ },
+ "BMW X6 xDrive40i M Sport (P1)": {
+  "brand": "BMW",
+  "model": "X6 xDrive40i M Sport (P1)",
+  "code": "447692415",
+  "vehiclePrice": 132600000,
+  "engineCc": 2998,
+  "fuel": "V",
+  "residualGroup": "O"
+ },
+ "BMW X6 xDrive40i M Sport Pro Individual All Black Edition": {
+  "brand": "BMW",
+  "model": "X6 xDrive40i M Sport Pro Individual All Black Edition",
+  "code": "447692104",
+  "vehiclePrice": 141900000,
+  "engineCc": 2998,
+  "fuel": "V",
+  "residualGroup": "O"
+ },
+ "BMW X6 xDrive40i M Sport Pro Special Edition": {
+  "brand": "BMW",
+  "model": "X6 xDrive40i M Sport Pro Special Edition",
+  "code": "447692591",
+  "vehiclePrice": 141300000,
+  "engineCc": 2998,
+  "fuel": "V",
+  "residualGroup": "O"
+ },
+ "BMW X6 M Competition": {
+  "brand": "BMW",
+  "model": "X6 M Competition",
+  "code": "448091066",
+  "vehiclePrice": 194200000,
+  "engineCc": 4395,
+  "fuel": "V",
+  "residualGroup": "Y"
+ },
+ "BMW X6 M Competition (P1)": {
+  "brand": "BMW",
+  "model": "X6 M Competition (P1)",
+  "code": "448092420",
+  "vehiclePrice": 195800000,
+  "engineCc": 4395,
+  "fuel": "V",
+  "residualGroup": "Y"
+ },
+ "BMW X7 M60i xDrive M Sport Pro (P1)": {
+  "brand": "BMW",
+  "model": "X7 M60i xDrive M Sport Pro (P1)",
+  "code": "419291168",
+  "vehiclePrice": 182400000,
+  "engineCc": 4395,
+  "fuel": "V",
+  "residualGroup": "V"
+ },
+ "BMW X7 M60i xDrive M Sport Pro All Black Edition": {
+  "brand": "BMW",
+  "model": "X7 M60i xDrive M Sport Pro All Black Edition",
+  "code": "419292105",
+  "vehiclePrice": 185900000,
+  "engineCc": 4395,
+  "fuel": "V",
+  "residualGroup": "V"
+ },
+ "BMW X7 xDrive40d DPE (6인승) (P1)": {
+  "brand": "BMW",
+  "model": "X7 xDrive40d DPE (6인승) (P1)",
+  "code": "419292436",
+  "vehiclePrice": 152900000,
+  "engineCc": 2993,
+  "fuel": "W",
+  "residualGroup": "S"
+ },
+ "BMW X7 xDrive40d DPE (7인승) (P1)": {
+  "brand": "BMW",
+  "model": "X7 xDrive40d DPE (7인승) (P1)",
+  "code": "419292437",
+  "vehiclePrice": 150900000,
+  "engineCc": 2993,
+  "fuel": "W",
+  "residualGroup": "S"
+ },
+ "BMW X7 xDrive40d M Sport (6인승) (P1)": {
+  "brand": "BMW",
+  "model": "X7 xDrive40d M Sport (6인승) (P1)",
+  "code": "419292438",
+  "vehiclePrice": 155400000,
+  "engineCc": 2993,
+  "fuel": "W",
+  "residualGroup": "S"
+ },
+ "BMW X7 xDrive40d M Sport (7인승) (P1)": {
+  "brand": "BMW",
+  "model": "X7 xDrive40d M Sport (7인승) (P1)",
+  "code": "419292439",
+  "vehiclePrice": 153400000,
+  "engineCc": 2993,
+  "fuel": "W",
+  "residualGroup": "S"
+ },
+ "BMW X7 xDrive40i DPE (6인승) (P1)": {
+  "brand": "BMW",
+  "model": "X7 xDrive40i DPE (6인승) (P1)",
+  "code": "419292431",
+  "vehiclePrice": 151900000,
+  "engineCc": 2998,
+  "fuel": "V",
+  "residualGroup": "Q"
+ },
+ "BMW X7 xDrive40i DPE (7인승) (P1)": {
+  "brand": "BMW",
+  "model": "X7 xDrive40i DPE (7인승) (P1)",
+  "code": "419292432",
+  "vehiclePrice": 149900000,
+  "engineCc": 2998,
+  "fuel": "V",
+  "residualGroup": "Q"
+ },
+ "BMW X7 xDrive40i M Sport (6인승) (P1)": {
+  "brand": "BMW",
+  "model": "X7 xDrive40i M Sport (6인승) (P1)",
+  "code": "419292433",
+  "vehiclePrice": 154400000,
+  "engineCc": 2998,
+  "fuel": "V",
+  "residualGroup": "Q"
+ },
+ "BMW X7 xDrive40i M Sport (6인승) (P1-0)": {
+  "brand": "BMW",
+  "model": "X7 xDrive40i M Sport (6인승) (P1-0)",
+  "code": "419292434",
+  "vehiclePrice": 154400000,
+  "engineCc": 2998,
+  "fuel": "V",
+  "residualGroup": "Q"
+ },
+ "BMW X7 xDrive40i M Sport (7인승) (P1)": {
+  "brand": "BMW",
+  "model": "X7 xDrive40i M Sport (7인승) (P1)",
+  "code": "419292435",
+  "vehiclePrice": 152400000,
+  "engineCc": 2998,
+  "fuel": "V",
+  "residualGroup": "Q"
+ },
+ "BMW XM High Gloss Shadow Line (P1)": {
+  "brand": "BMW",
+  "model": "XM High Gloss Shadow Line (P1)",
+  "code": "442291073",
+  "vehiclePrice": 223600000,
+  "engineCc": 4395,
+  "fuel": "V",
+  "residualGroup": "AA"
+ },
+ "BMW XM High Gloss Shadow Line (P2)": {
+  "brand": "BMW",
+  "model": "XM High Gloss Shadow Line (P2)",
+  "code": "442292227",
+  "vehiclePrice": 222200000,
+  "engineCc": 4395,
+  "fuel": "V",
+  "residualGroup": "AA"
+ },
+ "BMW XM High Gloss Shadow Line (P2-0)": {
+  "brand": "BMW",
+  "model": "XM High Gloss Shadow Line (P2-0)",
+  "code": "442292228",
+  "vehiclePrice": 222200000,
+  "engineCc": 4395,
+  "fuel": "V",
+  "residualGroup": "AA"
+ },
+ "BMW XM Label Brooklyn Grey Edition": {
+  "brand": "BMW",
+  "model": "XM Label Brooklyn Grey Edition",
+  "code": "442291074",
+  "vehiclePrice": 251600000,
+  "engineCc": 4395,
+  "fuel": "V",
+  "residualGroup": "AA"
+ },
+ "BMW XM Night Gold (P1)": {
+  "brand": "BMW",
+  "model": "XM Night Gold (P1)",
+  "code": "442291072",
+  "vehiclePrice": 223300000,
+  "engineCc": 4395,
+  "fuel": "V",
+  "residualGroup": "AA"
+ },
+ "BMW Z4 M40i (P2)": {
+  "brand": "BMW",
+  "model": "Z4 M40i (P2)",
+  "code": "442492397",
+  "vehiclePrice": 99100000,
+  "engineCc": 2998,
+  "fuel": "M",
+  "residualGroup": "AA"
+ },
+ "BMW Z4 M40i (P2-0)": {
+  "brand": "BMW",
+  "model": "Z4 M40i (P2-0)",
+  "code": "442492398",
+  "vehiclePrice": 99100000,
+  "engineCc": 2998,
+  "fuel": "M",
+  "residualGroup": "AA"
+ },
+ "BMW Z4 sDrive20i M Sport (P2)": {
+  "brand": "BMW",
+  "model": "Z4 sDrive20i M Sport (P2)",
+  "code": "442492225",
+  "vehiclePrice": 76600000,
+  "engineCc": 1998,
+  "fuel": "M",
+  "residualGroup": "AA"
+ },
+ "BMW Z4 sDrive20i M Sport Special Edition": {
+  "brand": "BMW",
+  "model": "Z4 sDrive20i M Sport Special Edition",
+  "code": "442491080",
+  "vehiclePrice": 76800000,
+  "engineCc": 1998,
+  "fuel": "M",
+  "residualGroup": "AA"
+ },
+ "람보르기니 Huracan EVO LP640-4 Spyder": {
+  "brand": "람보르기니",
+  "model": "Huracan EVO LP640-4 Spyder",
+  "code": "374687089",
+  "vehiclePrice": 459046500,
+  "engineCc": 5204,
+  "fuel": "M",
+  "residualGroup": "BB"
+ },
+ "람보르기니 Huracan EVO LP640-4 Tecnica": {
+  "brand": "람보르기니",
+  "model": "Huracan EVO LP640-4 Tecnica",
+  "code": "374685805",
+  "vehiclePrice": 348000000,
+  "engineCc": 5204,
+  "fuel": "M",
+  "residualGroup": "BB"
+ },
+ "람보르기니 Urus V8": {
+  "brand": "람보르기니",
+  "model": "Urus V8",
+  "code": "352680742",
+  "vehiclePrice": 328900000,
+  "engineCc": 3996,
+  "fuel": "M",
+  "residualGroup": "BB"
+ },
+ "람보르기니 Urus S V8": {
+  "brand": "람보르기니",
+  "model": "Urus S V8",
+  "code": "442581118",
+  "vehiclePrice": 290000000,
+  "engineCc": 3996,
+  "fuel": "M",
+  "residualGroup": "BB"
+ },
+ "랜드로버 Defender 110 D250 X-Dynamic SE": {
+  "brand": "랜드로버",
+  "model": "Defender 110 D250 X-Dynamic SE",
+  "code": "377592559",
+  "vehiclePrice": 111670000,
+  "engineCc": 2997,
+  "fuel": "W",
+  "residualGroup": "W"
+ },
+ "랜드로버 Defender 110 D300 X-Dynamic HSE": {
+  "brand": "랜드로버",
+  "model": "Defender 110 D300 X-Dynamic HSE",
+  "code": "377592560",
+  "vehiclePrice": 127070000,
+  "engineCc": 2997,
+  "fuel": "W",
+  "residualGroup": "W"
+ },
+ "랜드로버 Defender 110 P300 X-Dynamic SE": {
+  "brand": "랜드로버",
+  "model": "Defender 110 P300 X-Dynamic SE",
+  "code": "377592553",
+  "vehiclePrice": 114870000,
+  "engineCc": 1997,
+  "fuel": "M",
+  "residualGroup": "W"
+ },
+ "랜드로버 Defender 110 P400 X": {
+  "brand": "랜드로버",
+  "model": "Defender 110 P400 X",
+  "code": "377592554",
+  "vehiclePrice": 151270000,
+  "engineCc": 2996,
+  "fuel": "V",
+  "residualGroup": "W"
+ },
+ "랜드로버 Defender 130 D300 X-Dynamic HSE": {
+  "brand": "랜드로버",
+  "model": "Defender 130 D300 X-Dynamic HSE",
+  "code": "377592561",
+  "vehiclePrice": 139770000,
+  "engineCc": 2997,
+  "fuel": "W",
+  "residualGroup": "W"
+ },
+ "랜드로버 Defender 130 P400 Outbound": {
+  "brand": "랜드로버",
+  "model": "Defender 130 P400 Outbound",
+  "code": "377592556",
+  "vehiclePrice": 142470000,
+  "engineCc": 2996,
+  "fuel": "V",
+  "residualGroup": "W"
+ },
+ "랜드로버 Defender 130 P400 X-Dynamic HSE": {
+  "brand": "랜드로버",
+  "model": "Defender 130 P400 X-Dynamic HSE",
+  "code": "377592555",
+  "vehiclePrice": 152970000,
+  "engineCc": 2996,
+  "fuel": "V",
+  "residualGroup": "W"
+ },
+ "랜드로버 Defender 90 D250 X-Dynamic SE": {
+  "brand": "랜드로버",
+  "model": "Defender 90 D250 X-Dynamic SE",
+  "code": "377592552",
+  "vehiclePrice": 106970000,
+  "engineCc": 2997,
+  "fuel": "W",
+  "residualGroup": "W"
+ },
+ "랜드로버 Defender 90 P400 X": {
+  "brand": "랜드로버",
+  "model": "Defender 90 P400 X",
+  "code": "377592551",
+  "vehiclePrice": 141470000,
+  "engineCc": 2996,
+  "fuel": "V",
+  "residualGroup": "W"
+ },
+ "랜드로버 Defender P635 OCTA": {
+  "brand": "랜드로버",
+  "model": "Defender P635 OCTA",
+  "code": "377592557",
+  "vehiclePrice": 224970000,
+  "engineCc": 4395,
+  "fuel": "V",
+  "residualGroup": "X"
+ },
+ "랜드로버 Defender P635 OCTA Edition One": {
+  "brand": "랜드로버",
+  "model": "Defender P635 OCTA Edition One",
+  "code": "377592558",
+  "vehiclePrice": 242570000,
+  "engineCc": 4395,
+  "fuel": "V",
+  "residualGroup": "X"
+ },
+ "랜드로버 Discovery D250 S": {
+  "brand": "랜드로버",
+  "model": "Discovery D250 S",
+  "code": "406492539",
+  "vehiclePrice": 101300000,
+  "engineCc": 2997,
+  "fuel": "W",
+  "residualGroup": "AA"
+ },
+ "랜드로버 Discovery D350 Dynamic HSE": {
+  "brand": "랜드로버",
+  "model": "Discovery D350 Dynamic HSE",
+  "code": "406492540",
+  "vehiclePrice": 126170000,
+  "engineCc": 2997,
+  "fuel": "W",
+  "residualGroup": "AA"
+ },
+ "랜드로버 Discovery P300 S": {
+  "brand": "랜드로버",
+  "model": "Discovery P300 S",
+  "code": "406492537",
+  "vehiclePrice": 96000000,
+  "engineCc": 1997,
+  "fuel": "M",
+  "residualGroup": "AA"
+ },
+ "랜드로버 Discovery P360 Dynamic HSE": {
+  "brand": "랜드로버",
+  "model": "Discovery P360 Dynamic HSE",
+  "code": "406492538",
+  "vehiclePrice": 129070000,
+  "engineCc": 2996,
+  "fuel": "V",
+  "residualGroup": "AA"
+ },
+ "랜드로버 Discovery Sport P250 Dynamic SE": {
+  "brand": "랜드로버",
+  "model": "Discovery Sport P250 Dynamic SE",
+  "code": "454892536",
+  "vehiclePrice": 78400000,
+  "engineCc": 1997,
+  "fuel": "M",
+  "residualGroup": "AA"
+ },
+ "랜드로버 Discovery Sport P250 S": {
+  "brand": "랜드로버",
+  "model": "Discovery Sport P250 S",
+  "code": "454892535",
+  "vehiclePrice": 74500000,
+  "engineCc": 1997,
+  "fuel": "M",
+  "residualGroup": "AA"
+ },
+ "랜드로버 New Range Rover Velar P250 Dynamic SE": {
+  "brand": "랜드로버",
+  "model": "New Range Rover Velar P250 Dynamic SE",
+  "code": "447292571",
+  "vehiclePrice": 90900000,
+  "engineCc": 1997,
+  "fuel": "M",
+  "residualGroup": "AA"
+ },
+ "랜드로버 New Range Rover Velar P400 Dynamic HSE": {
+  "brand": "랜드로버",
+  "model": "New Range Rover Velar P400 Dynamic HSE",
+  "code": "447292572",
+  "vehiclePrice": 125270000,
+  "engineCc": 2996,
+  "fuel": "V",
+  "residualGroup": "AA"
+ },
+ "랜드로버 New Range Rover Velar P400e Dynamic SE": {
+  "brand": "랜드로버",
+  "model": "New Range Rover Velar P400e Dynamic SE",
+  "code": "447291603",
+  "vehiclePrice": 117970000,
+  "engineCc": 1998,
+  "fuel": "V",
+  "residualGroup": "AA"
+ },
+ "랜드로버 Range Rover Velar P400 Autobiography": {
+  "brand": "랜드로버",
+  "model": "Range Rover Velar P400 Autobiography",
+  "code": "447292782",
+  "vehiclePrice": 127370000,
+  "engineCc": 2996,
+  "fuel": "V",
+  "residualGroup": "AA"
+ },
+ "랜드로버 Range Rover D350 Autobiography LWB": {
+  "brand": "랜드로버",
+  "model": "Range Rover D350 Autobiography LWB",
+  "code": "411992586",
+  "vehiclePrice": 236570000,
+  "engineCc": 2997,
+  "fuel": "W",
+  "residualGroup": "EE"
+ },
+ "랜드로버 Range Rover P530 Autobiography LWB": {
+  "brand": "랜드로버",
+  "model": "Range Rover P530 Autobiography LWB",
+  "code": "411992583",
+  "vehiclePrice": 257570000,
+  "engineCc": 4395,
+  "fuel": "V",
+  "residualGroup": "V"
+ },
+ "랜드로버 Range Rover P530 Autobiography LWB (7인승)": {
+  "brand": "랜드로버",
+  "model": "Range Rover P530 Autobiography LWB (7인승)",
+  "code": "411992584",
+  "vehiclePrice": 252570000,
+  "engineCc": 4395,
+  "fuel": "V",
+  "residualGroup": "V"
+ },
+ "랜드로버 Range Rover P530 Autobiography SWB": {
+  "brand": "랜드로버",
+  "model": "Range Rover P530 Autobiography SWB",
+  "code": "411992582",
+  "vehiclePrice": 245570000,
+  "engineCc": 4395,
+  "fuel": "V",
+  "residualGroup": "V"
+ },
+ "랜드로버 Range Rover P550e Autobiography SWB": {
+  "brand": "랜드로버",
+  "model": "Range Rover P550e Autobiography SWB",
+  "code": "411992581",
+  "vehiclePrice": 242270000,
+  "engineCc": 2996,
+  "fuel": "V",
+  "residualGroup": "V"
+ },
+ "랜드로버 Range Rover P615 SV Bespoke Morning Calm Edition": {
+  "brand": "랜드로버",
+  "model": "Range Rover P615 SV Bespoke Morning Calm Edition",
+  "code": "411992111",
+  "vehiclePrice": 465430000,
+  "engineCc": 4395,
+  "fuel": "V",
+  "residualGroup": "EE"
+ },
+ "랜드로버 Range Rover P615 SV LWB": {
+  "brand": "랜드로버",
+  "model": "Range Rover P615 SV LWB",
+  "code": "411992585",
+  "vehiclePrice": 337670000,
+  "engineCc": 4395,
+  "fuel": "V",
+  "residualGroup": "EE"
+ },
+ "랜드로버 Range Rover Evoque P250 Dynamic SE": {
+  "brand": "랜드로버",
+  "model": "Range Rover Evoque P250 Dynamic SE",
+  "code": "455192570",
+  "vehiclePrice": 81900000,
+  "engineCc": 1997,
+  "fuel": "M",
+  "residualGroup": "AA"
+ },
+ "랜드로버 Range Rover Evoque P250 S": {
+  "brand": "랜드로버",
+  "model": "Range Rover Evoque P250 S",
+  "code": "455192569",
+  "vehiclePrice": 74800000,
+  "engineCc": 1997,
+  "fuel": "M",
+  "residualGroup": "AA"
+ },
+ "랜드로버 Range Rover Sport P360 Dynamic HSE": {
+  "brand": "랜드로버",
+  "model": "Range Rover Sport P360 Dynamic HSE",
+  "code": "436392575",
+  "vehiclePrice": 141670000,
+  "engineCc": 2996,
+  "fuel": "V",
+  "residualGroup": "V"
+ },
+ "랜드로버 Range Rover Sport P360 Dynamic SE": {
+  "brand": "랜드로버",
+  "model": "Range Rover Sport P360 Dynamic SE",
+  "code": "436392574",
+  "vehiclePrice": 133170000,
+  "engineCc": 2996,
+  "fuel": "V",
+  "residualGroup": "V"
+ },
+ "랜드로버 Range Rover Sport P400 Autobiography": {
+  "brand": "랜드로버",
+  "model": "Range Rover Sport P400 Autobiography",
+  "code": "436392576",
+  "vehiclePrice": 158070000,
+  "engineCc": 2996,
+  "fuel": "V",
+  "residualGroup": "V"
+ },
+ "랜드로버 Range Rover Sport P550e Dynamic HSE": {
+  "brand": "랜드로버",
+  "model": "Range Rover Sport P550e Dynamic HSE",
+  "code": "436392573",
+  "vehiclePrice": 177170000,
+  "engineCc": 2996,
+  "fuel": "V",
+  "residualGroup": "V"
+ },
+ "랜드로버 Range Rover Sport P635 SV Edition Two Blue Nebula Matte": {
+  "brand": "랜드로버",
+  "model": "Range Rover Sport P635 SV Edition Two Blue Nebula Matte",
+  "code": "436392580",
+  "vehiclePrice": 275070000,
+  "engineCc": 4395,
+  "fuel": "V",
+  "residualGroup": "CC"
+ },
+ "랜드로버 Range Rover Sport P635 SV Edition Two Ligurian Black Gloss": {
+  "brand": "랜드로버",
+  "model": "Range Rover Sport P635 SV Edition Two Ligurian Black Gloss",
+  "code": "436392578",
+  "vehiclePrice": 287605000,
+  "engineCc": 4395,
+  "fuel": "V",
+  "residualGroup": "CC"
+ },
+ "랜드로버 Range Rover Sport P635 SV Edition Two Marl Grey Gloss": {
+  "brand": "랜드로버",
+  "model": "Range Rover Sport P635 SV Edition Two Marl Grey Gloss",
+  "code": "436392577",
+  "vehiclePrice": 277062000,
+  "engineCc": 4395,
+  "fuel": "V",
+  "residualGroup": "CC"
+ },
+ "랜드로버 Range Rover Sport P635 SV Edition Two Sunrise Copper Satin": {
+  "brand": "랜드로버",
+  "model": "Range Rover Sport P635 SV Edition Two Sunrise Copper Satin",
+  "code": "436392579",
+  "vehiclePrice": 264527000,
+  "engineCc": 4395,
+  "fuel": "V",
+  "residualGroup": "CC"
+ },
+ "렉서스 ES 300h Executive": {
+  "brand": "렉서스",
+  "model": "ES 300h Executive",
+  "code": "409389441",
+  "vehiclePrice": 73830000,
+  "engineCc": 2487,
+  "fuel": "T",
+  "residualGroup": "R"
+ },
+ "렉서스 ES 300h Luxury Plus": {
+  "brand": "렉서스",
+  "model": "ES 300h Luxury Plus",
+  "code": "409389440",
+  "vehiclePrice": 69130000,
+  "engineCc": 2487,
+  "fuel": "T",
+  "residualGroup": "R"
+ },
+ "렉서스 LM 500h Executive (6인승)": {
+  "brand": "렉서스",
+  "model": "LM 500h Executive (6인승)",
+  "code": "463591690",
+  "vehiclePrice": 148000000,
+  "engineCc": 2393,
+  "fuel": "V",
+  "residualGroup": "CC"
+ },
+ "렉서스 LM 500h Royal (4인승)": {
+  "brand": "렉서스",
+  "model": "LM 500h Royal (4인승)",
+  "code": "463591691",
+  "vehiclePrice": 196000000,
+  "engineCc": 2393,
+  "fuel": "V",
+  "residualGroup": "CC"
+ },
+ "렉서스 LS 500 Luxury AWD": {
+  "brand": "렉서스",
+  "model": "LS 500 Luxury AWD",
+  "code": "403191700",
+  "vehiclePrice": 146700000,
+  "engineCc": 3445,
+  "fuel": "M",
+  "residualGroup": "CC"
+ },
+ "렉서스 LS 500 Platinum AWD": {
+  "brand": "렉서스",
+  "model": "LS 500 Platinum AWD",
+  "code": "403191701",
+  "vehiclePrice": 162100000,
+  "engineCc": 3445,
+  "fuel": "M",
+  "residualGroup": "CC"
+ },
+ "렉서스 LS 500h Luxury AWD": {
+  "brand": "렉서스",
+  "model": "LS 500h Luxury AWD",
+  "code": "403191698",
+  "vehiclePrice": 157400000,
+  "engineCc": 3456,
+  "fuel": "V",
+  "residualGroup": "CC"
+ },
+ "렉서스 LS 500h Platinum AWD": {
+  "brand": "렉서스",
+  "model": "LS 500h Platinum AWD",
+  "code": "403191699",
+  "vehiclePrice": 178300000,
+  "engineCc": 3456,
+  "fuel": "V",
+  "residualGroup": "CC"
+ },
+ "렉서스 LX 700h Luxury (7인승)": {
+  "brand": "렉서스",
+  "model": "LX 700h Luxury (7인승)",
+  "code": "470092203",
+  "vehiclePrice": 167970000,
+  "engineCc": 3445,
+  "fuel": "V",
+  "residualGroup": "R"
+ },
+ "렉서스 LX 700h Overtrail (5인승)": {
+  "brand": "렉서스",
+  "model": "LX 700h Overtrail (5인승)",
+  "code": "470089438",
+  "vehiclePrice": 165870000,
+  "engineCc": 3445,
+  "fuel": "V",
+  "residualGroup": "R"
+ },
+ "렉서스 LX 700h VIP (4인승)": {
+  "brand": "렉서스",
+  "model": "LX 700h VIP (4인승)",
+  "code": "470092204",
+  "vehiclePrice": 194570000,
+  "engineCc": 3445,
+  "fuel": "V",
+  "residualGroup": "R"
+ },
+ "렉서스 NX 350h Luxury": {
+  "brand": "렉서스",
+  "model": "NX 350h Luxury",
+  "code": "416491687",
+  "vehiclePrice": 78130000,
+  "engineCc": 2487,
+  "fuel": "T",
+  "residualGroup": "U"
+ },
+ "렉서스 NX 350h Premium": {
+  "brand": "렉서스",
+  "model": "NX 350h Premium",
+  "code": "416491686",
+  "vehiclePrice": 68830000,
+  "engineCc": 2487,
+  "fuel": "T",
+  "residualGroup": "U"
+ },
+ "렉서스 NX 450h+ F SPORT": {
+  "brand": "렉서스",
+  "model": "NX 450h+ F SPORT",
+  "code": "416491689",
+  "vehiclePrice": 84430000,
+  "engineCc": 2487,
+  "fuel": "T",
+  "residualGroup": "U"
+ },
+ "렉서스 NX 450h+ Premium": {
+  "brand": "렉서스",
+  "model": "NX 450h+ Premium",
+  "code": "416491688",
+  "vehiclePrice": 76730000,
+  "engineCc": 2487,
+  "fuel": "T",
+  "residualGroup": "U"
+ },
+ "렉서스 RX 350h Luxury": {
+  "brand": "렉서스",
+  "model": "RX 350h Luxury",
+  "code": "439091702",
+  "vehiclePrice": 98700000,
+  "engineCc": 2487,
+  "fuel": "V",
+  "residualGroup": "T"
+ },
+ "렉서스 RX 350h Premium": {
+  "brand": "렉서스",
+  "model": "RX 350h Premium",
+  "code": "439092562",
+  "vehiclePrice": 86750000,
+  "engineCc": 2487,
+  "fuel": "V",
+  "residualGroup": "T"
+ },
+ "렉서스 RX 450h+ Luxury": {
+  "brand": "렉서스",
+  "model": "RX 450h+ Luxury",
+  "code": "439091703",
+  "vehiclePrice": 111360000,
+  "engineCc": 2487,
+  "fuel": "T",
+  "residualGroup": "T"
+ },
+ "렉서스 RX 500h F SPORT Performance": {
+  "brand": "렉서스",
+  "model": "RX 500h F SPORT Performance",
+  "code": "439091704",
+  "vehiclePrice": 119670000,
+  "engineCc": 2393,
+  "fuel": "V",
+  "residualGroup": "T"
+ },
+ "렉서스 UX 300h 2WD": {
+  "brand": "렉서스",
+  "model": "UX 300h 2WD",
+  "code": "368891692",
+  "vehiclePrice": 53830000,
+  "engineCc": 1987,
+  "fuel": "T",
+  "residualGroup": "T"
+ },
+ "렉서스 UX 300h F SPORT": {
+  "brand": "렉서스",
+  "model": "UX 300h F SPORT",
+  "code": "368891693",
+  "vehiclePrice": 60130000,
+  "engineCc": 1987,
+  "fuel": "T",
+  "residualGroup": "T"
+ },
+ "로터스 Eletre": {
+  "brand": "로터스",
+  "model": "Eletre",
+  "code": "418389199",
+  "vehiclePrice": 149000000,
+  "engineCc": 0,
+  "fuel": "E",
+  "residualGroup": "MM"
+ },
+ "로터스 Eletre R": {
+  "brand": "로터스",
+  "model": "Eletre R",
+  "code": "418387848",
+  "vehiclePrice": 209000000,
+  "engineCc": 0,
+  "fuel": "E",
+  "residualGroup": "MM"
+ },
+ "로터스 Eletre S": {
+  "brand": "로터스",
+  "model": "Eletre S",
+  "code": "418387847",
+  "vehiclePrice": 179000000,
+  "engineCc": 0,
+  "fuel": "E",
+  "residualGroup": "MM"
+ },
+ "로터스 Emeya BASE": {
+  "brand": "로터스",
+  "model": "Emeya BASE",
+  "code": "457489016",
+  "vehiclePrice": 148000000,
+  "engineCc": 0,
+  "fuel": "E",
+  "residualGroup": "MM"
+ },
+ "로터스 Emeya R": {
+  "brand": "로터스",
+  "model": "Emeya R",
+  "code": "457489018",
+  "vehiclePrice": 199900000,
+  "engineCc": 0,
+  "fuel": "E",
+  "residualGroup": "MM"
+ },
+ "로터스 Emeya S": {
+  "brand": "로터스",
+  "model": "Emeya S",
+  "code": "457489017",
+  "vehiclePrice": 169900000,
+  "engineCc": 0,
+  "fuel": "E",
+  "residualGroup": "MM"
+ },
+ "로터스 Emira I4": {
+  "brand": "로터스",
+  "model": "Emira I4",
+  "code": "408191610",
+  "vehiclePrice": 149900000,
+  "engineCc": 1991,
+  "fuel": "M",
+  "residualGroup": "MM"
+ },
+ "로터스 Emira V6": {
+  "brand": "로터스",
+  "model": "Emira V6",
+  "code": "408191612",
+  "vehiclePrice": 153900000,
+  "engineCc": 3456,
+  "fuel": "M",
+  "residualGroup": "MM"
+ },
+ "롤스로이스 Cullinan Series2 V12": {
+  "brand": "롤스로이스",
+  "model": "Cullinan Series2 V12",
+  "code": "468288891",
+  "vehiclePrice": 577000000,
+  "engineCc": 6749,
+  "fuel": "M",
+  "residualGroup": "BB"
+ },
+ "롤스로이스 Cullinan Series2 V12 Black Badge": {
+  "brand": "롤스로이스",
+  "model": "Cullinan Series2 V12 Black Badge",
+  "code": "468288892",
+  "vehiclePrice": 670000000,
+  "engineCc": 6749,
+  "fuel": "M",
+  "residualGroup": "BB"
+ },
+ "롤스로이스 Ghost Series II Black Badge": {
+  "brand": "롤스로이스",
+  "model": "Ghost Series II Black Badge",
+  "code": "472192449",
+  "vehiclePrice": 624000000,
+  "engineCc": 6749,
+  "fuel": "M",
+  "residualGroup": "JJ"
+ },
+ "롤스로이스 Ghost Series II Extended Wheel Base": {
+  "brand": "롤스로이스",
+  "model": "Ghost Series II Extended Wheel Base",
+  "code": "472192448",
+  "vehiclePrice": 577000000,
+  "engineCc": 6749,
+  "fuel": "M",
+  "residualGroup": "JJ"
+ },
+ "롤스로이스 Ghost Series II Standard Wheel Base": {
+  "brand": "롤스로이스",
+  "model": "Ghost Series II Standard Wheel Base",
+  "code": "472192447",
+  "vehiclePrice": 524000000,
+  "engineCc": 6749,
+  "fuel": "M",
+  "residualGroup": "JJ"
+ },
+ "롤스로이스 Phantom Series II Extended Wheel Base": {
+  "brand": "롤스로이스",
+  "model": "Phantom Series II Extended Wheel Base",
+  "code": "444381278",
+  "vehiclePrice": 826000000,
+  "engineCc": 6749,
+  "fuel": "M",
+  "residualGroup": "OO"
+ },
+ "롤스로이스 Spectre 2doors": {
+  "brand": "롤스로이스",
+  "model": "Spectre 2doors",
+  "code": "443380967",
+  "vehiclePrice": 622000000,
+  "engineCc": 0,
+  "fuel": "E",
+  "residualGroup": "JJ"
+ },
+ "롤스로이스 Spectre Black Badge": {
+  "brand": "롤스로이스",
+  "model": "Spectre Black Badge",
+  "code": "443392830",
+  "vehiclePrice": 719000000,
+  "engineCc": 0,
+  "fuel": "E",
+  "residualGroup": "JJ"
+ },
+ "링컨 Aviator Black Label": {
+  "brand": "링컨",
+  "model": "Aviator Black Label",
+  "code": "461791799",
+  "vehiclePrice": 106000000,
+  "engineCc": 2956,
+  "fuel": "M",
+  "residualGroup": "BB"
+ },
+ "링컨 Aviator Reserve": {
+  "brand": "링컨",
+  "model": "Aviator Reserve",
+  "code": "461791798",
+  "vehiclePrice": 91200000,
+  "engineCc": 2956,
+  "fuel": "M",
+  "residualGroup": "BB"
+ },
+ "링컨 Nautilus Reserve": {
+  "brand": "링컨",
+  "model": "Nautilus Reserve",
+  "code": "451291800",
+  "vehiclePrice": 77400000,
+  "engineCc": 1995,
+  "fuel": "M",
+  "residualGroup": "FF"
+ },
+ "링컨 Navigator Black Label": {
+  "brand": "링컨",
+  "model": "Navigator Black Label",
+  "code": "441791797",
+  "vehiclePrice": 152000000,
+  "engineCc": 3496,
+  "fuel": "M",
+  "residualGroup": "GG"
+ },
+ "마세라티 GranCabrio Trofeo": {
+  "brand": "마세라티",
+  "model": "GranCabrio Trofeo",
+  "code": "462588198",
+  "vehiclePrice": 312250000,
+  "engineCc": 2992,
+  "fuel": "M",
+  "residualGroup": "KK"
+ },
+ "마세라티 GranCabrio Folgore": {
+  "brand": "마세라티",
+  "model": "GranCabrio Folgore",
+  "code": "473492721",
+  "vehiclePrice": 283800000,
+  "engineCc": 0,
+  "fuel": "E",
+  "residualGroup": "KK"
+ },
+ "마세라티 GranTurismo Modena": {
+  "brand": "마세라티",
+  "model": "GranTurismo Modena",
+  "code": "442688187",
+  "vehiclePrice": 244250000,
+  "engineCc": 2992,
+  "fuel": "M",
+  "residualGroup": "KK"
+ },
+ "마세라티 GranTurismo Trofeo": {
+  "brand": "마세라티",
+  "model": "GranTurismo Trofeo",
+  "code": "442688188",
+  "vehiclePrice": 302250000,
+  "engineCc": 2992,
+  "fuel": "M",
+  "residualGroup": "KK"
+ },
+ "마세라티 GranTurismo Folgore": {
+  "brand": "마세라티",
+  "model": "GranTurismo Folgore",
+  "code": "473392720",
+  "vehiclePrice": 244700000,
+  "engineCc": 0,
+  "fuel": "E",
+  "residualGroup": "KK"
+ },
+ "마세라티 Grecale GT": {
+  "brand": "마세라티",
+  "model": "Grecale GT",
+  "code": "417688868",
+  "vehiclePrice": 107910000,
+  "engineCc": 1995,
+  "fuel": "V",
+  "residualGroup": "FF"
+ },
+ "마세라티 Grecale Modena": {
+  "brand": "마세라티",
+  "model": "Grecale Modena",
+  "code": "417688869",
+  "vehiclePrice": 127971000,
+  "engineCc": 1995,
+  "fuel": "V",
+  "residualGroup": "FF"
+ },
+ "마세라티 Grecale Trofeo": {
+  "brand": "마세라티",
+  "model": "Grecale Trofeo",
+  "code": "417688870",
+  "vehiclePrice": 168090000,
+  "engineCc": 2992,
+  "fuel": "M",
+  "residualGroup": "FF"
+ },
+ "마세라티 Grecale Nero Infinito": {
+  "brand": "마세라티",
+  "model": "Grecale Nero Infinito",
+  "code": "417692829",
+  "vehiclePrice": 151900000,
+  "engineCc": 1995,
+  "fuel": "V",
+  "residualGroup": "FF"
+ },
+ "마세라티 Grecale Folgore Dual Motor": {
+  "brand": "마세라티",
+  "model": "Grecale Folgore Dual Motor",
+  "code": "468592564",
+  "vehiclePrice": 123800000,
+  "engineCc": 0,
+  "fuel": "E",
+  "residualGroup": "FF"
+ },
+ "마세라티 MC20 V6": {
+  "brand": "마세라티",
+  "model": "MC20 V6",
+  "code": "399686041",
+  "vehiclePrice": 337000000,
+  "engineCc": 2992,
+  "fuel": "M",
+  "residualGroup": "KK"
+ },
+ "마세라티 MC20 Cielo V6": {
+  "brand": "마세라티",
+  "model": "MC20 Cielo V6",
+  "code": "436686042",
+  "vehiclePrice": 383000000,
+  "engineCc": 2992,
+  "fuel": "M",
+  "residualGroup": "KK"
+ },
+ "맥라렌 Artura V6": {
+  "brand": "맥라렌",
+  "model": "Artura V6",
+  "code": "403575866",
+  "vehiclePrice": 299000000,
+  "engineCc": 2993,
+  "fuel": "V",
+  "residualGroup": "HH"
+ },
+ "미니 Aceman E Classic": {
+  "brand": "미니",
+  "model": "Aceman E Classic",
+  "code": "464092368",
+  "vehiclePrice": 49700000,
+  "engineCc": 0,
+  "fuel": "E",
+  "residualGroup": "BB"
+ },
+ "미니 Aceman SE": {
+  "brand": "미니",
+  "model": "Aceman SE",
+  "code": "464092563",
+  "vehiclePrice": 58600000,
+  "engineCc": 0,
+  "fuel": "E",
+  "residualGroup": "BB"
+ },
+ "미니 Aceman SE Favoured": {
+  "brand": "미니",
+  "model": "Aceman SE Favoured",
+  "code": "464092369",
+  "vehiclePrice": 58000000,
+  "engineCc": 0,
+  "fuel": "E",
+  "residualGroup": "BB"
+ },
+ "미니 Aceman JCW": {
+  "brand": "미니",
+  "model": "Aceman JCW",
+  "code": "464092799",
+  "vehiclePrice": 62500000,
+  "engineCc": 0,
+  "fuel": "E",
+  "residualGroup": "BB"
+ },
+ "미니 Cooper C Classic 3 Door": {
+  "brand": "미니",
+  "model": "Cooper C Classic 3 Door",
+  "code": "461891241",
+  "vehiclePrice": 42300000,
+  "engineCc": 1998,
+  "fuel": "M",
+  "residualGroup": "Y"
+ },
+ "미니 Cooper C Classic 5 Door": {
+  "brand": "미니",
+  "model": "Cooper C Classic 5 Door",
+  "code": "461892456",
+  "vehiclePrice": 43100000,
+  "engineCc": 1998,
+  "fuel": "M",
+  "residualGroup": "Y"
+ },
+ "미니 Cooper C Essential 3 Door": {
+  "brand": "미니",
+  "model": "Cooper C Essential 3 Door",
+  "code": "461891240",
+  "vehiclePrice": 37400000,
+  "engineCc": 1998,
+  "fuel": "M",
+  "residualGroup": "Y"
+ },
+ "미니 Cooper C Essential 5 Door": {
+  "brand": "미니",
+  "model": "Cooper C Essential 5 Door",
+  "code": "461892455",
+  "vehiclePrice": 38200000,
+  "engineCc": 1998,
+  "fuel": "M",
+  "residualGroup": "Y"
+ },
+ "미니 Cooper S Favoured 3 Door": {
+  "brand": "미니",
+  "model": "Cooper S Favoured 3 Door",
+  "code": "461891239",
+  "vehiclePrice": 48100000,
+  "engineCc": 1998,
+  "fuel": "M",
+  "residualGroup": "Y"
+ },
+ "미니 Cooper S Favoured 5 Door": {
+  "brand": "미니",
+  "model": "Cooper S Favoured 5 Door",
+  "code": "461891245",
+  "vehiclePrice": 49700000,
+  "engineCc": 1998,
+  "fuel": "M",
+  "residualGroup": "Y"
+ },
+ "미니 Cooper JCW 3 Door": {
+  "brand": "미니",
+  "model": "Cooper JCW 3 Door",
+  "code": "461892800",
+  "vehiclePrice": 55100000,
+  "engineCc": 1998,
+  "fuel": "M",
+  "residualGroup": "Y"
+ },
+ "미니 Convertible Cooper C Classic": {
+  "brand": "미니",
+  "model": "Convertible Cooper C Classic",
+  "code": "468192793",
+  "vehiclePrice": 47100000,
+  "engineCc": 0,
+  "fuel": "M",
+  "residualGroup": "AA"
+ },
+ "미니 Convertible Cooper S Favoured": {
+  "brand": "미니",
+  "model": "Convertible Cooper S Favoured",
+  "code": "468192794",
+  "vehiclePrice": 52500000,
+  "engineCc": 0,
+  "fuel": "M",
+  "residualGroup": "AA"
+ },
+ "미니 Convertible JCW": {
+  "brand": "미니",
+  "model": "Convertible JCW",
+  "code": "468192795",
+  "vehiclePrice": 59300000,
+  "engineCc": 0,
+  "fuel": "M",
+  "residualGroup": "AA"
+ },
+ "미니 Countryman JCW ALL4": {
+  "brand": "미니",
+  "model": "Countryman JCW ALL4",
+  "code": "458792115",
+  "vehiclePrice": 66200000,
+  "engineCc": 1998,
+  "fuel": "M",
+  "residualGroup": "Y"
+ },
+ "미니 Countryman JCW ALL4 First Edition": {
+  "brand": "미니",
+  "model": "Countryman JCW ALL4 First Edition",
+  "code": "458792117",
+  "vehiclePrice": 66200000,
+  "engineCc": 1998,
+  "fuel": "M",
+  "residualGroup": "Y"
+ },
+ "미니 Countryman S ALL4 Classic": {
+  "brand": "미니",
+  "model": "Countryman S ALL4 Classic",
+  "code": "458792113",
+  "vehiclePrice": 49300000,
+  "engineCc": 1998,
+  "fuel": "M",
+  "residualGroup": "Y"
+ },
+ "미니 Countryman S ALL4 Classic First Edition": {
+  "brand": "미니",
+  "model": "Countryman S ALL4 Classic First Edition",
+  "code": "458792116",
+  "vehiclePrice": 49300000,
+  "engineCc": 1998,
+  "fuel": "M",
+  "residualGroup": "Y"
+ },
+ "미니 Countryman S ALL4 Favoured": {
+  "brand": "미니",
+  "model": "Countryman S ALL4 Favoured",
+  "code": "458792114",
+  "vehiclePrice": 56400000,
+  "engineCc": 1998,
+  "fuel": "M",
+  "residualGroup": "Y"
+ },
+ "미니 Countryman Electric E Classic": {
+  "brand": "미니",
+  "model": "Countryman Electric E Classic",
+  "code": "457292371",
+  "vehiclePrice": 56700000,
+  "engineCc": 0,
+  "fuel": "E",
+  "residualGroup": "BB"
+ },
+ "미니 Countryman Electric SE All4 Favoured": {
+  "brand": "미니",
+  "model": "Countryman Electric SE All4 Favoured",
+  "code": "457292372",
+  "vehiclePrice": 63100000,
+  "engineCc": 0,
+  "fuel": "E",
+  "residualGroup": "BB"
+ },
+ "미니 Countryman Electric SE All4 JCW": {
+  "brand": "미니",
+  "model": "Countryman Electric SE All4 JCW",
+  "code": "457292373",
+  "vehiclePrice": 66100000,
+  "engineCc": 0,
+  "fuel": "E",
+  "residualGroup": "BB"
+ },
+ "미니 MiniElectricSEClassic": {
+  "brand": "미니",
+  "model": "MiniElectricSEClassic",
+  "code": "457192364",
+  "vehiclePrice": 52500000,
+  "engineCc": 0,
+  "fuel": "E",
+  "residualGroup": "BB"
+ },
+ "미니 MiniElectricSEFavoured": {
+  "brand": "미니",
+  "model": "MiniElectricSEFavoured",
+  "code": "457192370",
+  "vehiclePrice": 56100000,
+  "engineCc": 0,
+  "fuel": "E",
+  "residualGroup": "BB"
+ },
+ "미니 Mini Electric JCW": {
+  "brand": "미니",
+  "model": "Mini Electric JCW",
+  "code": "457192798",
+  "vehiclePrice": 60500000,
+  "engineCc": 0,
+  "fuel": "E",
+  "residualGroup": "BB"
+ },
+ "벤츠 A220 Hatchback": {
+  "brand": "벤츠",
+  "model": "A220 Hatchback",
+  "code": "442792595",
+  "vehiclePrice": 48100000,
+  "engineCc": 1991,
+  "fuel": "V",
+  "residualGroup": "S"
+ },
+ "벤츠 A220 Sedan": {
+  "brand": "벤츠",
+  "model": "A220 Sedan",
+  "code": "442792596",
+  "vehiclePrice": 49900000,
+  "engineCc": 1991,
+  "fuel": "V",
+  "residualGroup": "S"
+ },
+ "벤츠 AMG A35 4MATIC Sedan": {
+  "brand": "벤츠",
+  "model": "AMG A35 4MATIC Sedan",
+  "code": "442792597",
+  "vehiclePrice": 67700000,
+  "engineCc": 1991,
+  "fuel": "V",
+  "residualGroup": "V"
+ },
+ "벤츠 AMG A45 S 4MATIC+ Hatchback": {
+  "brand": "벤츠",
+  "model": "AMG A45 S 4MATIC+ Hatchback",
+  "code": "442792598",
+  "vehiclePrice": 80400000,
+  "engineCc": 1991,
+  "fuel": "V",
+  "residualGroup": "U"
+ },
+ "벤츠 AMG A45 S 4MATIC+ Hatchback Limited Edition": {
+  "brand": "벤츠",
+  "model": "AMG A45 S 4MATIC+ Hatchback Limited Edition",
+  "code": "442792599",
+  "vehiclePrice": 88800000,
+  "engineCc": 1991,
+  "fuel": "V",
+  "residualGroup": "U"
+ },
+ "벤츠 AMG GT 43 4MATIC+": {
+  "brand": "벤츠",
+  "model": "AMG GT 43 4MATIC+",
+  "code": "398290928",
+  "vehiclePrice": 155800000,
+  "engineCc": 2999,
+  "fuel": "V",
+  "residualGroup": "V"
+ },
+ "벤츠 AMG GT 55 4MATIC+": {
+  "brand": "벤츠",
+  "model": "AMG GT 55 4MATIC+",
+  "code": "456692878",
+  "vehiclePrice": 205600000,
+  "engineCc": 3982,
+  "fuel": "M",
+  "residualGroup": "DD"
+ },
+ "벤츠 C200 AMG Line": {
+  "brand": "벤츠",
+  "model": "C200 AMG Line",
+  "code": "403792611",
+  "vehiclePrice": 65900000,
+  "engineCc": 1999,
+  "fuel": "V",
+  "residualGroup": "P"
+ },
+ "벤츠 C200 Avantgarde": {
+  "brand": "벤츠",
+  "model": "C200 Avantgarde",
+  "code": "403792610",
+  "vehiclePrice": 62800000,
+  "engineCc": 1999,
+  "fuel": "V",
+  "residualGroup": "P"
+ },
+ "벤츠 AMG CLA45 S 4MATIC+": {
+  "brand": "벤츠",
+  "model": "AMG CLA45 S 4MATIC+",
+  "code": "446192602",
+  "vehiclePrice": 90600000,
+  "engineCc": 1991,
+  "fuel": "V",
+  "residualGroup": "U"
+ },
+ "벤츠 CLA250 4MATIC AMG Line": {
+  "brand": "벤츠",
+  "model": "CLA250 4MATIC AMG Line",
+  "code": "446192601",
+  "vehiclePrice": 63700000,
+  "engineCc": 1991,
+  "fuel": "V",
+  "residualGroup": "Q"
+ },
+ "벤츠 CLA250 4MATIC Progressive": {
+  "brand": "벤츠",
+  "model": "CLA250 4MATIC Progressive",
+  "code": "446192600",
+  "vehiclePrice": 58200000,
+  "engineCc": 1991,
+  "fuel": "V",
+  "residualGroup": "Q"
+ },
+ "벤츠 AMG CLE53 4MATIC+ Cabriolet": {
+  "brand": "벤츠",
+  "model": "AMG CLE53 4MATIC+ Cabriolet",
+  "code": "455592187",
+  "vehiclePrice": 110300000,
+  "engineCc": 2998,
+  "fuel": "V",
+  "residualGroup": "S"
+ },
+ "벤츠 AMG CLE53 4MATIC+ Coupe": {
+  "brand": "벤츠",
+  "model": "AMG CLE53 4MATIC+ Coupe",
+  "code": "455593781",
+  "vehiclePrice": 107700000,
+  "engineCc": 2998,
+  "fuel": "V",
+  "residualGroup": "Q"
+ },
+ "벤츠 CLE200 Cabriolet": {
+  "brand": "벤츠",
+  "model": "CLE200 Cabriolet",
+  "code": "455592614",
+  "vehiclePrice": 80500000,
+  "engineCc": 1999,
+  "fuel": "V",
+  "residualGroup": "U"
+ },
+ "벤츠 CLE200 Coupe": {
+  "brand": "벤츠",
+  "model": "CLE200 Coupe",
+  "code": "455592612",
+  "vehiclePrice": 74200000,
+  "engineCc": 1999,
+  "fuel": "V",
+  "residualGroup": "Q"
+ },
+ "벤츠 CLE450 4MATIC Coupe": {
+  "brand": "벤츠",
+  "model": "CLE450 4MATIC Coupe",
+  "code": "455592613",
+  "vehiclePrice": 98200000,
+  "engineCc": 2998,
+  "fuel": "V",
+  "residualGroup": "Q"
+ },
+ "벤츠 CLE450 4MATIC Cabriolet": {
+  "brand": "벤츠",
+  "model": "CLE450 4MATIC Cabriolet",
+  "code": "455592778",
+  "vehiclePrice": 101100000,
+  "engineCc": 2999,
+  "fuel": "V",
+  "residualGroup": "U"
+ },
+ "벤츠 AMG E53 Hybrid 4MATIC+": {
+  "brand": "벤츠",
+  "model": "AMG E53 Hybrid 4MATIC+",
+  "code": "451692255",
+  "vehiclePrice": 138600000,
+  "engineCc": 2998,
+  "fuel": "V",
+  "residualGroup": "R"
+ },
+ "벤츠 E200 AMG Line": {
+  "brand": "벤츠",
+  "model": "E200 AMG Line",
+  "code": "451693542",
+  "vehiclePrice": 80000000,
+  "engineCc": 1999,
+  "fuel": "V",
+  "residualGroup": "N"
+ },
+ "벤츠 E200 Avantgarde": {
+  "brand": "벤츠",
+  "model": "E200 Avantgarde",
+  "code": "451692617",
+  "vehiclePrice": 75000000,
+  "engineCc": 1999,
+  "fuel": "V",
+  "residualGroup": "N"
+ },
+ "벤츠 E200 Avantgarde Limited": {
+  "brand": "벤츠",
+  "model": "E200 Avantgarde Limited",
+  "code": "451692616",
+  "vehiclePrice": 69900000,
+  "engineCc": 1999,
+  "fuel": "V",
+  "residualGroup": "N"
+ },
+ "벤츠 E220d 4MATIC Exclusive": {
+  "brand": "벤츠",
+  "model": "E220d 4MATIC Exclusive",
+  "code": "451689052",
+  "vehiclePrice": 84400000,
+  "engineCc": 1993,
+  "fuel": "W",
+  "residualGroup": "N"
+ },
+ "벤츠 E300 4MATIC AMG Line": {
+  "brand": "벤츠",
+  "model": "E300 4MATIC AMG Line",
+  "code": "451692619",
+  "vehiclePrice": 95600000,
+  "engineCc": 1999,
+  "fuel": "V",
+  "residualGroup": "N"
+ },
+ "벤츠 E300 4MATIC Exclusive": {
+  "brand": "벤츠",
+  "model": "E300 4MATIC Exclusive",
+  "code": "451692618",
+  "vehiclePrice": 91500000,
+  "engineCc": 1999,
+  "fuel": "V",
+  "residualGroup": "N"
+ },
+ "벤츠 E350e 4MATIC Exclusive": {
+  "brand": "벤츠",
+  "model": "E350e 4MATIC Exclusive",
+  "code": "451692615",
+  "vehiclePrice": 97600000,
+  "engineCc": 1999,
+  "fuel": "V",
+  "residualGroup": "Q"
+ },
+ "벤츠 E450 4MATIC": {
+  "brand": "벤츠",
+  "model": "E450 4MATIC",
+  "code": "451692620",
+  "vehiclePrice": 99900000,
+  "engineCc": 2998,
+  "fuel": "V",
+  "residualGroup": "S"
+ },
+ "벤츠 E450 4MATIC Exclusive": {
+  "brand": "벤츠",
+  "model": "E450 4MATIC Exclusive",
+  "code": "451692621",
+  "vehiclePrice": 125600000,
+  "engineCc": 2998,
+  "fuel": "V",
+  "residualGroup": "S"
+ },
+ "벤츠 G450d": {
+  "brand": "벤츠",
+  "model": "G450d",
+  "code": "462992662",
+  "vehiclePrice": 187600000,
+  "engineCc": 2989,
+  "fuel": "W",
+  "residualGroup": "R"
+ },
+ "벤츠 Mercedes-AMG G63": {
+  "brand": "벤츠",
+  "model": "Mercedes-AMG G63",
+  "code": "462992663",
+  "vehiclePrice": 253100000,
+  "engineCc": 3982,
+  "fuel": "V",
+  "residualGroup": "S"
+ },
+ "벤츠 Mercedes-AMG G63 MANUFAKTUR": {
+  "brand": "벤츠",
+  "model": "Mercedes-AMG G63 MANUFAKTUR",
+  "code": "462992664",
+  "vehiclePrice": 279600000,
+  "engineCc": 3982,
+  "fuel": "V",
+  "residualGroup": "S"
+ },
+ "벤츠 GLA250 4MATIC AMG Line": {
+  "brand": "벤츠",
+  "model": "GLA250 4MATIC AMG Line",
+  "code": "449592603",
+  "vehiclePrice": 69100000,
+  "engineCc": 1991,
+  "fuel": "V",
+  "residualGroup": "Q"
+ },
+ "벤츠 AMG GLB35 4MATIC": {
+  "brand": "벤츠",
+  "model": "AMG GLB35 4MATIC",
+  "code": "449692605",
+  "vehiclePrice": 78500000,
+  "engineCc": 1991,
+  "fuel": "V",
+  "residualGroup": "V"
+ },
+ "벤츠 GLB250 4MATIC": {
+  "brand": "벤츠",
+  "model": "GLB250 4MATIC",
+  "code": "449692604",
+  "vehiclePrice": 71100000,
+  "engineCc": 1991,
+  "fuel": "V",
+  "residualGroup": "R"
+ },
+ "벤츠 GLB200d": {
+  "brand": "벤츠",
+  "model": "GLB200d",
+  "code": "449692875",
+  "vehiclePrice": 63300000,
+  "engineCc": 1950,
+  "fuel": "D",
+  "residualGroup": "R"
+ },
+ "벤츠 AMG GLC43 4MATIC": {
+  "brand": "벤츠",
+  "model": "AMG GLC43 4MATIC",
+  "code": "437390960",
+  "vehiclePrice": 101100000,
+  "engineCc": 1991,
+  "fuel": "V",
+  "residualGroup": "V"
+ },
+ "벤츠 AMG GLC43 4MATIC Coupe": {
+  "brand": "벤츠",
+  "model": "AMG GLC43 4MATIC Coupe",
+  "code": "437390962",
+  "vehiclePrice": 105600000,
+  "engineCc": 1991,
+  "fuel": "V",
+  "residualGroup": "V"
+ },
+ "벤츠 GLC220d 4MATIC": {
+  "brand": "벤츠",
+  "model": "GLC220d 4MATIC",
+  "code": "437392634",
+  "vehiclePrice": 80300000,
+  "engineCc": 1993,
+  "fuel": "W",
+  "residualGroup": "O"
+ },
+ "벤츠 GLC300 4MATIC AMG Line": {
+  "brand": "벤츠",
+  "model": "GLC300 4MATIC AMG Line",
+  "code": "437392633",
+  "vehiclePrice": 90400000,
+  "engineCc": 1999,
+  "fuel": "V",
+  "residualGroup": "O"
+ },
+ "벤츠 GLC300 4MATIC Avantgarde": {
+  "brand": "벤츠",
+  "model": "GLC300 4MATIC Avantgarde",
+  "code": "437392632",
+  "vehiclePrice": 80500000,
+  "engineCc": 1999,
+  "fuel": "V",
+  "residualGroup": "O"
+ },
+ "벤츠 GLC300 4MATIC Coupe AMG Line": {
+  "brand": "벤츠",
+  "model": "GLC300 4MATIC Coupe AMG Line",
+  "code": "437392636",
+  "vehiclePrice": 94500000,
+  "engineCc": 1999,
+  "fuel": "V",
+  "residualGroup": "O"
+ },
+ "벤츠 GLC300 4MATIC Coupe Avantgarde": {
+  "brand": "벤츠",
+  "model": "GLC300 4MATIC Coupe Avantgarde",
+  "code": "437392635",
+  "vehiclePrice": 84500000,
+  "engineCc": 1999,
+  "fuel": "V",
+  "residualGroup": "O"
+ },
+ "벤츠 AMG GLE53 4MATIC+": {
+  "brand": "벤츠",
+  "model": "AMG GLE53 4MATIC+",
+  "code": "447192640",
+  "vehiclePrice": 161100000,
+  "engineCc": 2998,
+  "fuel": "V",
+  "residualGroup": "X"
+ },
+ "벤츠 AMG GLE53 4MATIC+ Coupe": {
+  "brand": "벤츠",
+  "model": "AMG GLE53 4MATIC+ Coupe",
+  "code": "447192641",
+  "vehiclePrice": 164600000,
+  "engineCc": 2998,
+  "fuel": "V",
+  "residualGroup": "X"
+ },
+ "벤츠 GLE300d 4MATIC": {
+  "brand": "벤츠",
+  "model": "GLE300d 4MATIC",
+  "code": "447192638",
+  "vehiclePrice": 116600000,
+  "engineCc": 1993,
+  "fuel": "W",
+  "residualGroup": "O"
+ },
+ "벤츠 GLE350 4MATIC": {
+  "brand": "벤츠",
+  "model": "GLE350 4MATIC",
+  "code": "447191001",
+  "vehiclePrice": 116600000,
+  "engineCc": 1999,
+  "fuel": "V",
+  "residualGroup": "O"
+ },
+ "벤츠 GLE450 4MATIC": {
+  "brand": "벤츠",
+  "model": "GLE450 4MATIC",
+  "code": "447192637",
+  "vehiclePrice": 137600000,
+  "engineCc": 2998,
+  "fuel": "V",
+  "residualGroup": "O"
+ },
+ "벤츠 GLE450 4MATIC Coupe": {
+  "brand": "벤츠",
+  "model": "GLE450 4MATIC Coupe",
+  "code": "447192639",
+  "vehiclePrice": 141100000,
+  "engineCc": 2998,
+  "fuel": "V",
+  "residualGroup": "O"
+ },
+ "벤츠 GLE450d 4MATIC Coupe": {
+  "brand": "벤츠",
+  "model": "GLE450d 4MATIC Coupe",
+  "code": "447192696",
+  "vehiclePrice": 141100000,
+  "engineCc": 2989,
+  "fuel": "W",
+  "residualGroup": "O"
+ },
+ "벤츠 GLS450 4MATIC": {
+  "brand": "벤츠",
+  "model": "GLS450 4MATIC",
+  "code": "450792653",
+  "vehiclePrice": 157100000,
+  "engineCc": 2998,
+  "fuel": "V",
+  "residualGroup": "R"
+ },
+ "벤츠 GLS450d 4MATIC": {
+  "brand": "벤츠",
+  "model": "GLS450d 4MATIC",
+  "code": "450792876",
+  "vehiclePrice": 157100000,
+  "engineCc": 2989,
+  "fuel": "W",
+  "residualGroup": "R"
+ },
+ "벤츠 GLS580 4MATIC": {
+  "brand": "벤츠",
+  "model": "GLS580 4MATIC",
+  "code": "450792903",
+  "vehiclePrice": 186600000,
+  "engineCc": 3982,
+  "fuel": "V",
+  "residualGroup": "R"
+ },
+ "벤츠 AMG GLS63 4MATIC+": {
+  "brand": "벤츠",
+  "model": "AMG GLS63 4MATIC+",
+  "code": "450794552",
+  "vehiclePrice": 208600000,
+  "engineCc": 3982,
+  "fuel": "V",
+  "residualGroup": "R"
+ },
+ "벤츠 GLS600 4MATIC": {
+  "brand": "벤츠",
+  "model": "GLS600 4MATIC",
+  "code": "450892654",
+  "vehiclePrice": 287600000,
+  "engineCc": 3982,
+  "fuel": "V",
+  "residualGroup": "BB"
+ },
+ "벤츠 Mercedes-AMG S63 E Performance": {
+  "brand": "벤츠",
+  "model": "Mercedes-AMG S63 E Performance",
+  "code": "399292625",
+  "vehiclePrice": 291600000,
+  "engineCc": 3982,
+  "fuel": "V",
+  "residualGroup": "V"
+ },
+ "벤츠 S350d 4MATIC": {
+  "brand": "벤츠",
+  "model": "S350d 4MATIC",
+  "code": "399290972",
+  "vehiclePrice": 151600000,
+  "engineCc": 2989,
+  "fuel": "W",
+  "residualGroup": "U"
+ },
+ "벤츠 S450 4MATIC": {
+  "brand": "벤츠",
+  "model": "S450 4MATIC",
+  "code": "399293775",
+  "vehiclePrice": 159600000,
+  "engineCc": 2998,
+  "fuel": "V",
+  "residualGroup": "S"
+ },
+ "벤츠 S450 4MATIC Long": {
+  "brand": "벤츠",
+  "model": "S450 4MATIC Long",
+  "code": "399292622",
+  "vehiclePrice": 187600000,
+  "engineCc": 2998,
+  "fuel": "V",
+  "residualGroup": "S"
+ },
+ "벤츠 S500 4MATIC Long": {
+  "brand": "벤츠",
+  "model": "S500 4MATIC Long",
+  "code": "399292623",
+  "vehiclePrice": 209100000,
+  "engineCc": 2998,
+  "fuel": "V",
+  "residualGroup": "S"
+ },
+ "벤츠 S580 4MATIC Long": {
+  "brand": "벤츠",
+  "model": "S580 4MATIC Long",
+  "code": "399292624",
+  "vehiclePrice": 253600000,
+  "engineCc": 3982,
+  "fuel": "V",
+  "residualGroup": "X"
+ },
+ "벤츠 AMG SL43": {
+  "brand": "벤츠",
+  "model": "AMG SL43",
+  "code": "438092265",
+  "vehiclePrice": 155600000,
+  "engineCc": 1991,
+  "fuel": "V",
+  "residualGroup": "Z"
+ },
+ "벤츠 AMG SL63 4MATIC+ Performance": {
+  "brand": "벤츠",
+  "model": "AMG SL63 4MATIC+ Performance",
+  "code": "438090926",
+  "vehiclePrice": 263000000,
+  "engineCc": 3982,
+  "fuel": "M",
+  "residualGroup": "Z"
+ },
+ "벤츠 AMG SL63 4MATIC+": {
+  "brand": "벤츠",
+  "model": "AMG SL63 4MATIC+",
+  "code": "438090927",
+  "vehiclePrice": 238000000,
+  "engineCc": 3982,
+  "fuel": "M",
+  "residualGroup": "Z"
+ },
+ "벤츠 Mercedes-Maybach S580": {
+  "brand": "벤츠",
+  "model": "Mercedes-Maybach S580",
+  "code": "401192626",
+  "vehiclePrice": 309600000,
+  "engineCc": 3982,
+  "fuel": "V",
+  "residualGroup": "BB"
+ },
+ "벤츠 Mercedes-Maybach S680": {
+  "brand": "벤츠",
+  "model": "Mercedes-Maybach S680",
+  "code": "401192627",
+  "vehiclePrice": 393600000,
+  "engineCc": 5980,
+  "fuel": "M",
+  "residualGroup": "BB"
+ },
+ "벤츠 Maybach SL680": {
+  "brand": "벤츠",
+  "model": "Maybach SL680",
+  "code": "467094011",
+  "vehiclePrice": 342600000,
+  "engineCc": 3982,
+  "fuel": "M",
+  "residualGroup": "BB"
+ },
+ "벤츠 EQA250 AMG Line": {
+  "brand": "벤츠",
+  "model": "EQA250 AMG Line",
+  "code": "456892607",
+  "vehiclePrice": 75100000,
+  "engineCc": 0,
+  "fuel": "E",
+  "residualGroup": "V"
+ },
+ "벤츠 EQA250 Progressive": {
+  "brand": "벤츠",
+  "model": "EQA250 Progressive",
+  "code": "456892606",
+  "vehiclePrice": 69300000,
+  "engineCc": 0,
+  "fuel": "E",
+  "residualGroup": "V"
+ },
+ "벤츠 EQB300 4MATIC AMG Line": {
+  "brand": "벤츠",
+  "model": "EQB300 4MATIC AMG Line",
+  "code": "456992609",
+  "vehiclePrice": 83600000,
+  "engineCc": 0,
+  "fuel": "E",
+  "residualGroup": "V"
+ },
+ "벤츠 EQB300 4MATIC Progressive": {
+  "brand": "벤츠",
+  "model": "EQB300 4MATIC Progressive",
+  "code": "456992608",
+  "vehiclePrice": 78100000,
+  "engineCc": 0,
+  "fuel": "E",
+  "residualGroup": "V"
+ },
+ "벤츠 EQE350 4MATIC": {
+  "brand": "벤츠",
+  "model": "EQE350 4MATIC",
+  "code": "411190921",
+  "vehiclePrice": 109900000,
+  "engineCc": 0,
+  "fuel": "E",
+  "residualGroup": "U"
+ },
+ "벤츠 EQE350+": {
+  "brand": "벤츠",
+  "model": "EQE350+",
+  "code": "411190920",
+  "vehiclePrice": 103500000,
+  "engineCc": 0,
+  "fuel": "E",
+  "residualGroup": "U"
+ },
+ "벤츠 EQE350 4MATIC SUV": {
+  "brand": "벤츠",
+  "model": "EQE350 4MATIC SUV",
+  "code": "443092645",
+  "vehiclePrice": 113100000,
+  "engineCc": 0,
+  "fuel": "E",
+  "residualGroup": "U"
+ },
+ "벤츠 EQE500 4MATIC": {
+  "brand": "벤츠",
+  "model": "EQE500 4MATIC",
+  "code": "443092646",
+  "vehiclePrice": 136200000,
+  "engineCc": 0,
+  "fuel": "E",
+  "residualGroup": "U"
+ },
+ "벤츠 EQS350": {
+  "brand": "벤츠",
+  "model": "EQS350",
+  "code": "463492446",
+  "vehiclePrice": 147600000,
+  "engineCc": 0,
+  "fuel": "E",
+  "residualGroup": "Y"
+ },
+ "벤츠 EQS450 4MATIC": {
+  "brand": "벤츠",
+  "model": "EQS450 4MATIC",
+  "code": "438192661",
+  "vehiclePrice": 162700000,
+  "engineCc": 0,
+  "fuel": "E",
+  "residualGroup": "Y"
+ },
+ "벤츠 EQS580 4MATIC": {
+  "brand": "벤츠",
+  "model": "EQS580 4MATIC",
+  "code": "438193116",
+  "vehiclePrice": 190000000,
+  "engineCc": 0,
+  "fuel": "E",
+  "residualGroup": "Y"
+ },
+ "벤츠 Mercedes-Maybach EQS680": {
+  "brand": "벤츠",
+  "model": "Mercedes-Maybach EQS680",
+  "code": "451190933",
+  "vehiclePrice": 225000000,
+  "engineCc": 0,
+  "fuel": "E",
+  "residualGroup": "Y"
+ },
+ "벤츠 G580 with EQ Technology Edition ONE": {
+  "brand": "벤츠",
+  "model": "G580 with EQ Technology Edition ONE",
+  "code": "463892665",
+  "vehiclePrice": 242600000,
+  "engineCc": 0,
+  "fuel": "E",
+  "residualGroup": "DD"
+ },
+ "벤틀리 Bentayga V8 Atelier Edition": {
+  "brand": "벤틀리",
+  "model": "Bentayga V8 Atelier Edition",
+  "code": "402492351",
+  "vehiclePrice": 308000000,
+  "engineCc": 3996,
+  "fuel": "M",
+  "residualGroup": "Z"
+ },
+ "벤틀리 Bentayga V8 Atelier Edition EWB": {
+  "brand": "벤틀리",
+  "model": "Bentayga V8 Atelier Edition EWB",
+  "code": "402492352",
+  "vehiclePrice": 335000000,
+  "engineCc": 3996,
+  "fuel": "M",
+  "residualGroup": "Z"
+ },
+ "벤틀리 Bentayga V8 Azure": {
+  "brand": "벤틀리",
+  "model": "Bentayga V8 Azure",
+  "code": "402486414",
+  "vehiclePrice": 331000000,
+  "engineCc": 3996,
+  "fuel": "M",
+  "residualGroup": "Z"
+ },
+ "벤틀리 Bentayga V8 Azure EWB": {
+  "brand": "벤틀리",
+  "model": "Bentayga V8 Azure EWB",
+  "code": "402487027",
+  "vehiclePrice": 340300000,
+  "engineCc": 3996,
+  "fuel": "M",
+  "residualGroup": "Z"
+ },
+ "벤틀리 Bentayga V8 First Edition EWB": {
+  "brand": "벤틀리",
+  "model": "Bentayga V8 First Edition EWB",
+  "code": "402487029",
+  "vehiclePrice": 381400000,
+  "engineCc": 3996,
+  "fuel": "M",
+  "residualGroup": "Z"
+ },
+ "벤틀리 Bentayga V8 Mulliner EWB": {
+  "brand": "벤틀리",
+  "model": "Bentayga V8 Mulliner EWB",
+  "code": "402487028",
+  "vehiclePrice": 393900000,
+  "engineCc": 3996,
+  "fuel": "M",
+  "residualGroup": "Z"
+ },
+ "벤틀리 The new Continental GT Mulliner": {
+  "brand": "벤틀리",
+  "model": "The new Continental GT Mulliner",
+  "code": "468888933",
+  "vehiclePrice": 374000000,
+  "engineCc": 3996,
+  "fuel": "V",
+  "residualGroup": "Z"
+ },
+ "벤틀리 The new Continental GT Speed": {
+  "brand": "벤틀리",
+  "model": "The new Continental GT Speed",
+  "code": "468888931",
+  "vehiclePrice": 346100000,
+  "engineCc": 3996,
+  "fuel": "V",
+  "residualGroup": "Z"
+ },
+ "벤틀리 The new Continental GTC Mulliner": {
+  "brand": "벤틀리",
+  "model": "The new Continental GTC Mulliner",
+  "code": "468892445",
+  "vehiclePrice": 451000000,
+  "engineCc": 3996,
+  "fuel": "V",
+  "residualGroup": "Z"
+ },
+ "벤틀리 The new Continental GTC Speed": {
+  "brand": "벤틀리",
+  "model": "The new Continental GTC Speed",
+  "code": "468892444",
+  "vehiclePrice": 417000000,
+  "engineCc": 3996,
+  "fuel": "V",
+  "residualGroup": "Z"
+ },
+ "벤틀리 Continental GT Azure": {
+  "brand": "벤틀리",
+  "model": "Continental GT Azure",
+  "code": "468893138",
+  "vehiclePrice": 393800000,
+  "engineCc": 3996,
+  "fuel": "V",
+  "residualGroup": "Z"
+ },
+ "벤틀리 Continental GT Core": {
+  "brand": "벤틀리",
+  "model": "Continental GT Core",
+  "code": "468893137",
+  "vehiclePrice": 336600000,
+  "engineCc": 3996,
+  "fuel": "V",
+  "residualGroup": "Z"
+ },
+ "벤틀리 The New Flying Spur Mulliner": {
+  "brand": "벤틀리",
+  "model": "The New Flying Spur Mulliner",
+  "code": "467692271",
+  "vehiclePrice": 426700000,
+  "engineCc": 3996,
+  "fuel": "V",
+  "residualGroup": "Z"
+ },
+ "벤틀리 The New Flying Spur Speed": {
+  "brand": "벤틀리",
+  "model": "The New Flying Spur Speed",
+  "code": "467688713",
+  "vehiclePrice": 375700000,
+  "engineCc": 3996,
+  "fuel": "V",
+  "residualGroup": "Z"
+ },
+ "벤틀리 The New Flying Spur Speed first edition": {
+  "brand": "벤틀리",
+  "model": "The New Flying Spur Speed first edition",
+  "code": "467688716",
+  "vehiclePrice": 441900000,
+  "engineCc": 3996,
+  "fuel": "V",
+  "residualGroup": "Z"
+ },
+ "벤틀리 Flying Spur Azure": {
+  "brand": "벤틀리",
+  "model": "Flying Spur Azure",
+  "code": "467693142",
+  "vehiclePrice": 382800000,
+  "engineCc": 3996,
+  "fuel": "V",
+  "residualGroup": "Z"
+ },
+ "벤틀리 Flying Spur Core": {
+  "brand": "벤틀리",
+  "model": "Flying Spur Core",
+  "code": "467693141",
+  "vehiclePrice": 322300000,
+  "engineCc": 3996,
+  "fuel": "V",
+  "residualGroup": "Z"
+ },
+ "아우디 A3 S3 TFSI": {
+  "brand": "아우디",
+  "model": "A3 S3 TFSI",
+  "code": "414192144",
+  "vehiclePrice": 62400000,
+  "engineCc": 1984,
+  "fuel": "M",
+  "residualGroup": "DD"
+ },
+ "아우디 A3 40 TFSI": {
+  "brand": "아우디",
+  "model": "A3 40 TFSI",
+  "code": "470792347",
+  "vehiclePrice": 44300000,
+  "engineCc": 1984,
+  "fuel": "V",
+  "residualGroup": "V"
+ },
+ "아우디 A3 40 TFSI Premium": {
+  "brand": "아우디",
+  "model": "A3 40 TFSI Premium",
+  "code": "470792137",
+  "vehiclePrice": 48300000,
+  "engineCc": 1984,
+  "fuel": "V",
+  "residualGroup": "V"
+ },
+ "아우디 A3 40 TFSI Quattro Premium": {
+  "brand": "아우디",
+  "model": "A3 40 TFSI Quattro Premium",
+  "code": "470792138",
+  "vehiclePrice": 51300000,
+  "engineCc": 1984,
+  "fuel": "V",
+  "residualGroup": "V"
+ },
+ "아우디 A3 RS3": {
+  "brand": "아우디",
+  "model": "A3 RS3",
+  "code": "470793547",
+  "vehiclePrice": 77200000,
+  "engineCc": 2480,
+  "fuel": "M",
+  "residualGroup": "DD"
+ },
+ "아우디 A4 35 TDI Premium": {
+  "brand": "아우디",
+  "model": "A4 35 TDI Premium",
+  "code": "389991314",
+  "vehiclePrice": 61400000,
+  "engineCc": 1968,
+  "fuel": "D",
+  "residualGroup": "V"
+ },
+ "아우디 A4 40 TDI Quattro Premium": {
+  "brand": "아우디",
+  "model": "A4 40 TDI Quattro Premium",
+  "code": "389991376",
+  "vehiclePrice": 66762000,
+  "engineCc": 1968,
+  "fuel": "D",
+  "residualGroup": "V"
+ },
+ "아우디 A4 40 TFSI": {
+  "brand": "아우디",
+  "model": "A4 40 TFSI",
+  "code": "389991312",
+  "vehiclePrice": 54900000,
+  "engineCc": 1984,
+  "fuel": "M",
+  "residualGroup": "V"
+ },
+ "아우디 A4 40 TFSI Premium": {
+  "brand": "아우디",
+  "model": "A4 40 TFSI Premium",
+  "code": "389991313",
+  "vehiclePrice": 60900000,
+  "engineCc": 1984,
+  "fuel": "M",
+  "residualGroup": "V"
+ },
+ "아우디 A4 45 TFSI Quattro Premium": {
+  "brand": "아우디",
+  "model": "A4 45 TFSI Quattro Premium",
+  "code": "389992146",
+  "vehiclePrice": 68400000,
+  "engineCc": 1984,
+  "fuel": "M",
+  "residualGroup": "V"
+ },
+ "아우디 A4 S4 TFSI": {
+  "brand": "아우디",
+  "model": "A4 S4 TFSI",
+  "code": "389991263",
+  "vehiclePrice": 84081000,
+  "engineCc": 2995,
+  "fuel": "M",
+  "residualGroup": "DD"
+ },
+ "아우디 A5 40 TDI Quattro Premium Sportback": {
+  "brand": "아우디",
+  "model": "A5 40 TDI Quattro Premium Sportback",
+  "code": "390091319",
+  "vehiclePrice": 70800000,
+  "engineCc": 1968,
+  "fuel": "D",
+  "residualGroup": "X"
+ },
+ "아우디 A5 40 TFSI Quattro Premium Sportback": {
+  "brand": "아우디",
+  "model": "A5 40 TFSI Quattro Premium Sportback",
+  "code": "390091315",
+  "vehiclePrice": 68800000,
+  "engineCc": 1984,
+  "fuel": "M",
+  "residualGroup": "U"
+ },
+ "아우디 A5 40 TFSI Quattro Sportback": {
+  "brand": "아우디",
+  "model": "A5 40 TFSI Quattro Sportback",
+  "code": "390091318",
+  "vehiclePrice": 61300000,
+  "engineCc": 1984,
+  "fuel": "M",
+  "residualGroup": "U"
+ },
+ "아우디 A5 40 TFSI Quattro S-Line": {
+  "brand": "아우디",
+  "model": "A5 40 TFSI Quattro S-Line",
+  "code": "473592723",
+  "vehiclePrice": 63780000,
+  "engineCc": 1984,
+  "fuel": "M",
+  "residualGroup": "U"
+ },
+ "아우디 A5 45 TFSI Quattro Premium Cabriolet": {
+  "brand": "아우디",
+  "model": "A5 45 TFSI Quattro Premium Cabriolet",
+  "code": "390091264",
+  "vehiclePrice": 82900000,
+  "engineCc": 1984,
+  "fuel": "M",
+  "residualGroup": "X"
+ },
+ "아우디 A5 45 TFSI Quattro Premium Coupe": {
+  "brand": "아우디",
+  "model": "A5 45 TFSI Quattro Premium Coupe",
+  "code": "390091378",
+  "vehiclePrice": 72776000,
+  "engineCc": 1984,
+  "fuel": "M",
+  "residualGroup": "X"
+ },
+ "아우디 A5 45 TFSI Quattro Premium Sportback": {
+  "brand": "아우디",
+  "model": "A5 45 TFSI Quattro Premium Sportback",
+  "code": "390091316",
+  "vehiclePrice": 71800000,
+  "engineCc": 1984,
+  "fuel": "M",
+  "residualGroup": "X"
+ },
+ "아우디 A5 45 TFSI Quattro Premium Sportback Carbon Edition": {
+  "brand": "아우디",
+  "model": "A5 45 TFSI Quattro Premium Sportback Carbon Edition",
+  "code": "390091317",
+  "vehiclePrice": 73800000,
+  "engineCc": 1984,
+  "fuel": "M",
+  "residualGroup": "X"
+ },
+ "아우디 A5 S5 TFSI": {
+  "brand": "아우디",
+  "model": "A5 S5 TFSI",
+  "code": "473592728",
+  "vehiclePrice": 83420000,
+  "engineCc": 2995,
+  "fuel": "M",
+  "residualGroup": "BB"
+ },
+ "아우디 A6 40 TFSI Comfort": {
+  "brand": "아우디",
+  "model": "A6 40 TFSI Comfort",
+  "code": "477394495",
+  "vehiclePrice": 65190000,
+  "engineCc": 1984,
+  "fuel": "M",
+  "residualGroup": "O"
+ },
+ "아우디 A6 40 TFSI Advanced": {
+  "brand": "아우디",
+  "model": "A6 40 TFSI Advanced",
+  "code": "477394959",
+  "vehiclePrice": 67640000,
+  "engineCc": 1984,
+  "fuel": "M",
+  "residualGroup": "O"
+ },
+ "아우디 A6 40 TFSI S-Line": {
+  "brand": "아우디",
+  "model": "A6 40 TFSI S-Line",
+  "code": "477394960",
+  "vehiclePrice": 72060000,
+  "engineCc": 1984,
+  "fuel": "M",
+  "residualGroup": "O"
+ },
+ "아우디 A6 45 TFSI Quattro S-Line": {
+  "brand": "아우디",
+  "model": "A6 45 TFSI Quattro S-Line",
+  "code": "477394961",
+  "vehiclePrice": 85410000,
+  "engineCc": 1984,
+  "fuel": "M",
+  "residualGroup": "O"
+ },
+ "아우디 A6 55 TFSI Quattro S-Line": {
+  "brand": "아우디",
+  "model": "A6 55 TFSI Quattro S-Line",
+  "code": "477394962",
+  "vehiclePrice": 97180000,
+  "engineCc": 2995,
+  "fuel": "M",
+  "residualGroup": "O"
+ },
+ "아우디 A6 40 TDI Quattro S-Line": {
+  "brand": "아우디",
+  "model": "A6 40 TDI Quattro S-Line",
+  "code": "477394963",
+  "vehiclePrice": 81780000,
+  "engineCc": 1968,
+  "fuel": "W",
+  "residualGroup": "W"
+ },
+ "아우디 A6 e-tron Performance Advanced": {
+  "brand": "아우디",
+  "model": "A6 e-tron Performance Advanced",
+  "code": "414293528",
+  "vehiclePrice": 94590000,
+  "engineCc": 0,
+  "fuel": "E",
+  "residualGroup": "V"
+ },
+ "아우디 A6 e-tron Performance S-line": {
+  "brand": "아우디",
+  "model": "A6 e-tron Performance S-line",
+  "code": "414293529",
+  "vehiclePrice": 102100000,
+  "engineCc": 0,
+  "fuel": "E",
+  "residualGroup": "V"
+ },
+ "아우디 A6 e-tron Performance S-line Black Edition": {
+  "brand": "아우디",
+  "model": "A6 e-tron Performance S-line Black Edition",
+  "code": "414293530",
+  "vehiclePrice": 105860000,
+  "engineCc": 0,
+  "fuel": "E",
+  "residualGroup": "V"
+ },
+ "아우디 S6 e-tron": {
+  "brand": "아우디",
+  "model": "S6 e-tron",
+  "code": "414293531",
+  "vehiclePrice": 116240000,
+  "engineCc": 0,
+  "fuel": "E",
+  "residualGroup": "EE"
+ },
+ "아우디 A7 50 TDI Quattro Premium": {
+  "brand": "아우디",
+  "model": "A7 50 TDI Quattro Premium",
+  "code": "353791322",
+  "vehiclePrice": 107800000,
+  "engineCc": 2967,
+  "fuel": "W",
+  "residualGroup": "W"
+ },
+ "아우디 A7 55 TFSI e Quattro Premium": {
+  "brand": "아우디",
+  "model": "A7 55 TFSI e Quattro Premium",
+  "code": "353791320",
+  "vehiclePrice": 105400000,
+  "engineCc": 1984,
+  "fuel": "M",
+  "residualGroup": "Y"
+ },
+ "아우디 A7 55 TFSI Quattro Premium": {
+  "brand": "아우디",
+  "model": "A7 55 TFSI Quattro Premium",
+  "code": "353791321",
+  "vehiclePrice": 109900000,
+  "engineCc": 2995,
+  "fuel": "V",
+  "residualGroup": "S"
+ },
+ "아우디 A7 RS7 Performance": {
+  "brand": "아우디",
+  "model": "A7 RS7 Performance",
+  "code": "353791323",
+  "vehiclePrice": 187900000,
+  "engineCc": 3996,
+  "fuel": "V",
+  "residualGroup": "FF"
+ },
+ "아우디 A7 S7 TDI": {
+  "brand": "아우디",
+  "model": "A7 S7 TDI",
+  "code": "353791274",
+  "vehiclePrice": 128600000,
+  "engineCc": 2967,
+  "fuel": "W",
+  "residualGroup": "FF"
+ },
+ "아우디 A8 50 TDI Quattro Black Edition": {
+  "brand": "아우디",
+  "model": "A8 50 TDI Quattro Black Edition",
+  "code": "443191258",
+  "vehiclePrice": 140380000,
+  "engineCc": 2967,
+  "fuel": "W",
+  "residualGroup": "BB"
+ },
+ "아우디 A8 50 TDI Quattro Premium": {
+  "brand": "아우디",
+  "model": "A8 50 TDI Quattro Premium",
+  "code": "443191260",
+  "vehiclePrice": 144400000,
+  "engineCc": 2967,
+  "fuel": "W",
+  "residualGroup": "BB"
+ },
+ "아우디 A8 L 50 TDI Quattro Premium": {
+  "brand": "아우디",
+  "model": "A8 L 50 TDI Quattro Premium",
+  "code": "443191259",
+  "vehiclePrice": 154400000,
+  "engineCc": 2967,
+  "fuel": "W",
+  "residualGroup": "BB"
+ },
+ "아우디 A8 L 55 TFSI Quattro Premium": {
+  "brand": "아우디",
+  "model": "A8 L 55 TFSI Quattro Premium",
+  "code": "443191257",
+  "vehiclePrice": 160700000,
+  "engineCc": 2995,
+  "fuel": "V",
+  "residualGroup": "BB"
+ },
+ "아우디 A8 S8 TFSI": {
+  "brand": "아우디",
+  "model": "A8 S8 TFSI",
+  "code": "443191249",
+  "vehiclePrice": 216300000,
+  "engineCc": 3996,
+  "fuel": "V",
+  "residualGroup": "GG"
+ },
+ "아우디 e-tron GT Quattro": {
+  "brand": "아우디",
+  "model": "e-tron GT Quattro",
+  "code": "403991251",
+  "vehiclePrice": 147500000,
+  "engineCc": 0,
+  "fuel": "E",
+  "residualGroup": "HH"
+ },
+ "아우디 e-tron GT Quattro Premium": {
+  "brand": "아우디",
+  "model": "e-tron GT Quattro Premium",
+  "code": "403991252",
+  "vehiclePrice": 170500000,
+  "engineCc": 0,
+  "fuel": "E",
+  "residualGroup": "HH"
+ },
+ "아우디 e-tron GT RS": {
+  "brand": "아우디",
+  "model": "e-tron GT RS",
+  "code": "403991253",
+  "vehiclePrice": 211500000,
+  "engineCc": 0,
+  "fuel": "E",
+  "residualGroup": "HH"
+ },
+ "아우디 Q3 35 TDI": {
+  "brand": "아우디",
+  "model": "Q3 35 TDI",
+  "code": "366892074",
+  "vehiclePrice": 51100000,
+  "engineCc": 1968,
+  "fuel": "D",
+  "residualGroup": "U"
+ },
+ "아우디 Q3 35 TDI Premium": {
+  "brand": "아우디",
+  "model": "Q3 35 TDI Premium",
+  "code": "366892075",
+  "vehiclePrice": 58100000,
+  "engineCc": 1968,
+  "fuel": "D",
+  "residualGroup": "U"
+ },
+ "아우디 Q3 35 TDI Premium Sportback": {
+  "brand": "아우디",
+  "model": "Q3 35 TDI Premium Sportback",
+  "code": "366891280",
+  "vehiclePrice": 58700000,
+  "engineCc": 1968,
+  "fuel": "D",
+  "residualGroup": "U"
+ },
+ "아우디 Q3 35 TDI Quattro Premium Sportback": {
+  "brand": "아우디",
+  "model": "Q3 35 TDI Quattro Premium Sportback",
+  "code": "366891281",
+  "vehiclePrice": 60700000,
+  "engineCc": 1968,
+  "fuel": "D",
+  "residualGroup": "U"
+ },
+ "아우디 Q3 35 TDI Sportback": {
+  "brand": "아우디",
+  "model": "Q3 35 TDI Sportback",
+  "code": "366891279",
+  "vehiclePrice": 53100000,
+  "engineCc": 1968,
+  "fuel": "D",
+  "residualGroup": "U"
+ },
+ "아우디 Q3 40 TFSI Quattro": {
+  "brand": "아우디",
+  "model": "Q3 40 TFSI Quattro",
+  "code": "366892071",
+  "vehiclePrice": 52300000,
+  "engineCc": 1984,
+  "fuel": "M",
+  "residualGroup": "U"
+ },
+ "아우디 Q3 40 TFSI Quattro Premium": {
+  "brand": "아우디",
+  "model": "Q3 40 TFSI Quattro Premium",
+  "code": "366892073",
+  "vehiclePrice": 59300000,
+  "engineCc": 1984,
+  "fuel": "M",
+  "residualGroup": "U"
+ },
+ "아우디 Q3 40 TFSI Quattro Premium (6I3+2PK) Sportback": {
+  "brand": "아우디",
+  "model": "Q3 40 TFSI Quattro Premium (6I3+2PK) Sportback",
+  "code": "366891270",
+  "vehiclePrice": 60008000,
+  "engineCc": 1984,
+  "fuel": "M",
+  "residualGroup": "U"
+ },
+ "아우디 Q3 40 TFSI Quattro Premium Sportback": {
+  "brand": "아우디",
+  "model": "Q3 40 TFSI Quattro Premium Sportback",
+  "code": "366891269",
+  "vehiclePrice": 59900000,
+  "engineCc": 1984,
+  "fuel": "M",
+  "residualGroup": "U"
+ },
+ "아우디 Q3 40 TFSI Quattro Sportback": {
+  "brand": "아우디",
+  "model": "Q3 40 TFSI Quattro Sportback",
+  "code": "366891268",
+  "vehiclePrice": 54300000,
+  "engineCc": 1984,
+  "fuel": "M",
+  "residualGroup": "U"
+ },
+ "아우디 Q4 e-tron 45 Premium": {
+  "brand": "아우디",
+  "model": "Q4 e-tron 45 Premium",
+  "code": "406289418",
+  "vehiclePrice": 69800000,
+  "engineCc": 0,
+  "fuel": "E",
+  "residualGroup": "HH"
+ },
+ "아우디 Q4 e-tron 45 Premium Sportback": {
+  "brand": "아우디",
+  "model": "Q4 e-tron 45 Premium Sportback",
+  "code": "406289420",
+  "vehiclePrice": 73800000,
+  "engineCc": 0,
+  "fuel": "E",
+  "residualGroup": "HH"
+ },
+ "아우디 Q4 e-tron 45 Sportback": {
+  "brand": "아우디",
+  "model": "Q4 e-tron 45 Sportback",
+  "code": "406289419",
+  "vehiclePrice": 68300000,
+  "engineCc": 0,
+  "fuel": "E",
+  "residualGroup": "HH"
+ },
+ "아우디 Q5 40 TDI Quattro Premium Sportback": {
+  "brand": "아우디",
+  "model": "Q5 40 TDI Quattro Premium Sportback",
+  "code": "407491291",
+  "vehiclePrice": 79700000,
+  "engineCc": 1968,
+  "fuel": "D",
+  "residualGroup": "U"
+ },
+ "아우디 Q5 40 TDI Quattro Sportback": {
+  "brand": "아우디",
+  "model": "Q5 40 TDI Quattro Sportback",
+  "code": "407491290",
+  "vehiclePrice": 73700000,
+  "engineCc": 1968,
+  "fuel": "D",
+  "residualGroup": "U"
+ },
+ "아우디 Q5 40 TDI Quattro S-Line": {
+  "brand": "아우디",
+  "model": "Q5 40 TDI Quattro S-Line",
+  "code": "473692731",
+  "vehiclePrice": 75570000,
+  "engineCc": 1968,
+  "fuel": "W",
+  "residualGroup": "U"
+ },
+ "아우디 Q5 40 TFSI Quattro Advanced": {
+  "brand": "아우디",
+  "model": "Q5 40 TFSI Quattro Advanced",
+  "code": "473693595",
+  "vehiclePrice": 66730000,
+  "engineCc": 1984,
+  "fuel": "M",
+  "residualGroup": "U"
+ },
+ "아우디 Q5 40 TFSI Quattro S-Line": {
+  "brand": "아우디",
+  "model": "Q5 40 TFSI Quattro S-Line",
+  "code": "473693596",
+  "vehiclePrice": 72620000,
+  "engineCc": 1984,
+  "fuel": "M",
+  "residualGroup": "U"
+ },
+ "아우디 Q5 45 TFSI Quattro": {
+  "brand": "아우디",
+  "model": "Q5 45 TFSI Quattro",
+  "code": "407491283",
+  "vehiclePrice": 71700000,
+  "engineCc": 1984,
+  "fuel": "M",
+  "residualGroup": "U"
+ },
+ "아우디 Q5 45 TFSI Quattro Premium": {
+  "brand": "아우디",
+  "model": "Q5 45 TFSI Quattro Premium",
+  "code": "407491282",
+  "vehiclePrice": 77700000,
+  "engineCc": 1984,
+  "fuel": "M",
+  "residualGroup": "U"
+ },
+ "아우디 Q5 45 TFSI Quattro Premium Black edition": {
+  "brand": "아우디",
+  "model": "Q5 45 TFSI Quattro Premium Black edition",
+  "code": "407491284",
+  "vehiclePrice": 78200000,
+  "engineCc": 1984,
+  "fuel": "M",
+  "residualGroup": "U"
+ },
+ "아우디 Q5 45 TFSI Quattro Premium Sportback": {
+  "brand": "아우디",
+  "model": "Q5 45 TFSI Quattro Premium Sportback",
+  "code": "407491286",
+  "vehiclePrice": 80700000,
+  "engineCc": 1984,
+  "fuel": "M",
+  "residualGroup": "U"
+ },
+ "아우디 Q5 45 TFSI Quattro Premium Sportback Black edition": {
+  "brand": "아우디",
+  "model": "Q5 45 TFSI Quattro Premium Sportback Black edition",
+  "code": "407491287",
+  "vehiclePrice": 81200000,
+  "engineCc": 1984,
+  "fuel": "M",
+  "residualGroup": "U"
+ },
+ "아우디 Q5 45 TFSI Quattro Sportback": {
+  "brand": "아우디",
+  "model": "Q5 45 TFSI Quattro Sportback",
+  "code": "407491285",
+  "vehiclePrice": 74700000,
+  "engineCc": 1984,
+  "fuel": "M",
+  "residualGroup": "U"
+ },
+ "아우디 Q6 e-tron": {
+  "brand": "아우디",
+  "model": "Q6 e-tron",
+  "code": "469089046",
+  "vehiclePrice": 115900000,
+  "engineCc": 0,
+  "fuel": "E",
+  "residualGroup": "HH"
+ },
+ "아우디 Q6 e-tron Performance": {
+  "brand": "아우디",
+  "model": "Q6 e-tron Performance",
+  "code": "469089043",
+  "vehiclePrice": 82900000,
+  "engineCc": 0,
+  "fuel": "E",
+  "residualGroup": "HH"
+ },
+ "아우디 Q6 e-tron Performance Premium": {
+  "brand": "아우디",
+  "model": "Q6 e-tron Performance Premium",
+  "code": "469089044",
+  "vehiclePrice": 89900000,
+  "engineCc": 0,
+  "fuel": "E",
+  "residualGroup": "HH"
+ },
+ "아우디 Q6 e-tron Quattro Premium": {
+  "brand": "아우디",
+  "model": "Q6 e-tron Quattro Premium",
+  "code": "469089045",
+  "vehiclePrice": 106900000,
+  "engineCc": 0,
+  "fuel": "E",
+  "residualGroup": "HH"
+ },
+ "아우디 Q8 55 e-tron Quattro": {
+  "brand": "아우디",
+  "model": "Q8 55 e-tron Quattro",
+  "code": "443691247",
+  "vehiclePrice": 120600000,
+  "engineCc": 0,
+  "fuel": "E",
+  "residualGroup": "HH"
+ },
+ "아우디 Q8 55 e-tron Quattro (443691271)": {
+  "brand": "아우디",
+  "model": "Q8 55 e-tron Quattro",
+  "code": "443691271",
+  "vehiclePrice": 124600000,
+  "engineCc": 0,
+  "fuel": "E",
+  "residualGroup": "HH"
+ },
+ "아우디 Q8 55 e-tron Quattro Premium": {
+  "brand": "아우디",
+  "model": "Q8 55 e-tron Quattro Premium",
+  "code": "443691248",
+  "vehiclePrice": 131600000,
+  "engineCc": 0,
+  "fuel": "E",
+  "residualGroup": "HH"
+ },
+ "아우디 Q8 e-tron": {
+  "brand": "아우디",
+  "model": "Q8 e-tron",
+  "code": "443691273",
+  "vehiclePrice": 154600000,
+  "engineCc": 0,
+  "fuel": "E",
+  "residualGroup": "HH"
+ },
+ "아우디 Q7 50 TDI Quattro": {
+  "brand": "아우디",
+  "model": "Q7 50 TDI Quattro",
+  "code": "469891305",
+  "vehiclePrice": 115600000,
+  "engineCc": 2967,
+  "fuel": "W",
+  "residualGroup": "T"
+ },
+ "아우디 Q7 50 TDI Quattro Premium": {
+  "brand": "아우디",
+  "model": "Q7 50 TDI Quattro Premium",
+  "code": "469891306",
+  "vehiclePrice": 121000000,
+  "engineCc": 2967,
+  "fuel": "W",
+  "residualGroup": "T"
+ },
+ "아우디 Q7 55 TFSI Quattro": {
+  "brand": "아우디",
+  "model": "Q7 55 TFSI Quattro",
+  "code": "469891304",
+  "vehiclePrice": 118600000,
+  "engineCc": 2995,
+  "fuel": "V",
+  "residualGroup": "R"
+ },
+ "아우디 Q7 55 TFSI Quattro Premium": {
+  "brand": "아우디",
+  "model": "Q7 55 TFSI Quattro Premium",
+  "code": "469891303",
+  "vehiclePrice": 124000000,
+  "engineCc": 2995,
+  "fuel": "V",
+  "residualGroup": "R"
+ },
+ "아우디 Q7 SQ7 TFSI": {
+  "brand": "아우디",
+  "model": "Q7 SQ7 TFSI",
+  "code": "469891307",
+  "vehiclePrice": 141900000,
+  "engineCc": 3996,
+  "fuel": "M",
+  "residualGroup": "U"
+ },
+ "아우디 Q8 50 TDI Quattro": {
+  "brand": "아우디",
+  "model": "Q8 50 TDI Quattro",
+  "code": "469791302",
+  "vehiclePrice": 120000000,
+  "engineCc": 2967,
+  "fuel": "W",
+  "residualGroup": "T"
+ },
+ "아우디 Q8 50 TDI Quattro Premium": {
+  "brand": "아우디",
+  "model": "Q8 50 TDI Quattro Premium",
+  "code": "469791301",
+  "vehiclePrice": 127000000,
+  "engineCc": 2967,
+  "fuel": "W",
+  "residualGroup": "T"
+ },
+ "아우디 Q8 55 TFSI Quattro": {
+  "brand": "아우디",
+  "model": "Q8 55 TFSI Quattro",
+  "code": "469791300",
+  "vehiclePrice": 123000000,
+  "engineCc": 2995,
+  "fuel": "V",
+  "residualGroup": "S"
+ },
+ "아우디 Q8 55 TFSI Quattro Premium": {
+  "brand": "아우디",
+  "model": "Q8 55 TFSI Quattro Premium",
+  "code": "469791299",
+  "vehiclePrice": 130000000,
+  "engineCc": 2995,
+  "fuel": "V",
+  "residualGroup": "S"
+ },
+ "아우디 Q8 RS Q8 Performance": {
+  "brand": "아우디",
+  "model": "Q8 RS Q8 Performance",
+  "code": "469792266",
+  "vehiclePrice": 193900000,
+  "engineCc": 3996,
+  "fuel": "V",
+  "residualGroup": "W"
+ },
+ "이네오스 Grenadier Station Wagon Trialmaster Edition": {
+  "brand": "이네오스",
+  "model": "Grenadier Station Wagon Trialmaster Edition",
+  "code": "448287101",
+  "vehiclePrice": 129900000,
+  "engineCc": 2998,
+  "fuel": "M",
+  "residualGroup": "HH"
+ },
+ "애스턴마틴 DBX V8": {
+  "brand": "애스턴마틴",
+  "model": "DBX V8",
+  "code": "381663457",
+  "vehiclePrice": 248000000,
+  "engineCc": 3982,
+  "fuel": "M",
+  "residualGroup": "HH"
+ },
+ "애스턴마틴 DBX V8 DBX707": {
+  "brand": "애스턴마틴",
+  "model": "DBX V8 DBX707",
+  "code": "381680018",
+  "vehiclePrice": 317000000,
+  "engineCc": 3982,
+  "fuel": "M",
+  "residualGroup": "HH"
+ },
+ "애스턴마틴 DB12 V8 쿠페가솔린 4.0": {
+  "brand": "애스턴마틴",
+  "model": "DB12 V8 쿠페가솔린 4.0",
+  "code": "453082778",
+  "vehiclePrice": 309000000,
+  "engineCc": 3982,
+  "fuel": "M",
+  "residualGroup": "HH"
+ },
+ "애스턴마틴 Vantage V8 Coupe": {
+  "brand": "애스턴마틴",
+  "model": "Vantage V8 Coupe",
+  "code": "358086408",
+  "vehiclePrice": 215000000,
+  "engineCc": 3982,
+  "fuel": "M",
+  "residualGroup": "HH"
+ },
+ "지프 Avenger Altitude": {
+  "brand": "지프",
+  "model": "Avenger Altitude",
+  "code": "441388338",
+  "vehiclePrice": 56400000,
+  "engineCc": 0,
+  "fuel": "E",
+  "residualGroup": "EE"
+ },
+ "지프 Avenger Longitude": {
+  "brand": "지프",
+  "model": "Avenger Longitude",
+  "code": "441381924",
+  "vehiclePrice": 52900000,
+  "engineCc": 0,
+  "fuel": "E",
+  "residualGroup": "EE"
+ },
+ "지프 Grand Cherokee Summit Reserve": {
+  "brand": "지프",
+  "model": "Grand Cherokee Summit Reserve",
+  "code": "406591812",
+  "vehiclePrice": 102300000,
+  "engineCc": 3604,
+  "fuel": "M",
+  "residualGroup": "AA"
+ },
+ "지프 Gladiator Rubicon": {
+  "brand": "지프",
+  "model": "Gladiator Rubicon",
+  "code": "473292630",
+  "vehiclePrice": 85100000,
+  "engineCc": 3604,
+  "fuel": "M",
+  "residualGroup": "취급불가"
+ },
+ "지프 Gladiator Rubicon 41 Edition": {
+  "brand": "지프",
+  "model": "Gladiator Rubicon 41 Edition",
+  "code": "473292631",
+  "vehiclePrice": 85600000,
+  "engineCc": 3604,
+  "fuel": "M",
+  "residualGroup": "취급불가"
+ },
+ "지프 Renegade Bred Edition": {
+  "brand": "지프",
+  "model": "Renegade Bred Edition",
+  "code": "323389209",
+  "vehiclePrice": 48000000,
+  "engineCc": 1332,
+  "fuel": "M",
+  "residualGroup": "DD"
+ },
+ "지프 Renegade Limited FWD": {
+  "brand": "지프",
+  "model": "Renegade Limited FWD",
+  "code": "323386741",
+  "vehiclePrice": 45500000,
+  "engineCc": 1332,
+  "fuel": "M",
+  "residualGroup": "DD"
+ },
+ "지프 Wrangler Rubicon 2 Door Hard Top": {
+  "brand": "지프",
+  "model": "Wrangler Rubicon 2 Door Hard Top",
+  "code": "450992279",
+  "vehiclePrice": 80400000,
+  "engineCc": 1995,
+  "fuel": "M",
+  "residualGroup": "AA"
+ },
+ "지프 Wrangler Rubicon 2 Door Hard Top 41 Edition": {
+  "brand": "지프",
+  "model": "Wrangler Rubicon 2 Door Hard Top 41 Edition",
+  "code": "450992280",
+  "vehiclePrice": 80700000,
+  "engineCc": 1995,
+  "fuel": "M",
+  "residualGroup": "AA"
+ },
+ "지프 Wrangler Rubicon 4 Door Hard Top": {
+  "brand": "지프",
+  "model": "Wrangler Rubicon 4 Door Hard Top",
+  "code": "450992282",
+  "vehiclePrice": 83400000,
+  "engineCc": 1995,
+  "fuel": "M",
+  "residualGroup": "AA"
+ },
+ "지프 Wrangler Rubicon 4 Door Hard Top 41 Edition": {
+  "brand": "지프",
+  "model": "Wrangler Rubicon 4 Door Hard Top 41 Edition",
+  "code": "450992283",
+  "vehiclePrice": 84900000,
+  "engineCc": 1995,
+  "fuel": "M",
+  "residualGroup": "AA"
+ },
+ "지프 Wrangler Rubicon 4 Door Power Top": {
+  "brand": "지프",
+  "model": "Wrangler Rubicon 4 Door Power Top",
+  "code": "450992284",
+  "vehiclePrice": 85900000,
+  "engineCc": 1995,
+  "fuel": "M",
+  "residualGroup": "AA"
+ },
+ "지프 Wrangler Rubicon 4 Door Power Top 41 Edition": {
+  "brand": "지프",
+  "model": "Wrangler Rubicon 4 Door Power Top 41 Edition",
+  "code": "450992285",
+  "vehiclePrice": 87400000,
+  "engineCc": 1995,
+  "fuel": "M",
+  "residualGroup": "AA"
+ },
+ "지프 Wrangler Sahara 4 Door Hard Top": {
+  "brand": "지프",
+  "model": "Wrangler Sahara 4 Door Hard Top",
+  "code": "450991817",
+  "vehiclePrice": 80900000,
+  "engineCc": 1995,
+  "fuel": "M",
+  "residualGroup": "AA"
+ },
+ "지프 Wrangler Sahara 4 Door Power Top": {
+  "brand": "지프",
+  "model": "Wrangler Sahara 4 Door Power Top",
+  "code": "450991818",
+  "vehiclePrice": 83400000,
+  "engineCc": 1995,
+  "fuel": "M",
+  "residualGroup": "AA"
+ },
+ "지프 Wrangler Sport S 4 Door Hard Top": {
+  "brand": "지프",
+  "model": "Wrangler Sport S 4 Door Hard Top",
+  "code": "450991822",
+  "vehiclePrice": 72700000,
+  "engineCc": 1995,
+  "fuel": "M",
+  "residualGroup": "AA"
+ },
+ "캐딜락 Escalade가솔린6.2PremiumLuxuryPlatinum": {
+  "brand": "캐딜락",
+  "model": "Escalade가솔린6.2PremiumLuxuryPlatinum",
+  "code": "466392692",
+  "vehiclePrice": 166070000,
+  "engineCc": 6162,
+  "fuel": "M",
+  "residualGroup": "AA"
+ },
+ "캐딜락 EscaladeESV가솔린6.2PremiumLuxuryPlatinum": {
+  "brand": "캐딜락",
+  "model": "EscaladeESV가솔린6.2PremiumLuxuryPlatinum",
+  "code": "466392694",
+  "vehiclePrice": 188070000,
+  "engineCc": 6162,
+  "fuel": "M",
+  "residualGroup": "Y"
+ },
+ "캐딜락 Escalade가솔린6.2SportPlatinum": {
+  "brand": "캐딜락",
+  "model": "Escalade가솔린6.2SportPlatinum",
+  "code": "466392691",
+  "vehiclePrice": 166070000,
+  "engineCc": 6162,
+  "fuel": "M",
+  "residualGroup": "AA"
+ },
+ "캐딜락 Lyriq Sport": {
+  "brand": "캐딜락",
+  "model": "Lyriq Sport",
+  "code": "406175695",
+  "vehiclePrice": 106960000,
+  "engineCc": 0,
+  "fuel": "E",
+  "residualGroup": "DD"
+ },
+ "캐딜락 Escalade IQ Premium Sport": {
+  "brand": "캐딜락",
+  "model": "Escalade IQ Premium Sport",
+  "code": "456593917",
+  "vehiclePrice": 277570000,
+  "engineCc": 0,
+  "fuel": "E",
+  "residualGroup": "Y"
+ },
+ "테슬라 Model 3 Long Range": {
+  "brand": "테슬라",
+  "model": "Model 3 Long Range",
+  "code": "461087758",
+  "vehiclePrice": 59990000,
+  "engineCc": 0,
+  "fuel": "E",
+  "residualGroup": "T"
+ },
+ "테슬라 Model 3 Performance": {
+  "brand": "테슬라",
+  "model": "Model 3 Performance",
+  "code": "461087864",
+  "vehiclePrice": 69390000,
+  "engineCc": 0,
+  "fuel": "E",
+  "residualGroup": "T"
+ },
+ "테슬라 Model 3 RWD": {
+  "brand": "테슬라",
+  "model": "Model 3 RWD",
+  "code": "461087279",
+  "vehiclePrice": 51990000,
+  "engineCc": 0,
+  "fuel": "E",
+  "residualGroup": "T"
+ },
+ "테슬라 Model 3 Standard": {
+  "brand": "테슬라",
+  "model": "Model 3 Standard",
+  "code": "461094497",
+  "vehiclePrice": 59990000,
+  "engineCc": 0,
+  "fuel": "E",
+  "residualGroup": "T"
+ },
+ "테슬라 Model 3 Premium": {
+  "brand": "테슬라",
+  "model": "Model 3 Premium",
+  "code": "461094498",
+  "vehiclePrice": 41990000,
+  "engineCc": 0,
+  "fuel": "E",
+  "residualGroup": "T"
+ },
+ "테슬라 Model S AWD": {
+  "brand": "테슬라",
+  "model": "Model S AWD",
+  "code": "404385984",
+  "vehiclePrice": 128061000,
+  "engineCc": 0,
+  "fuel": "E",
+  "residualGroup": "X"
+ },
+ "테슬라 Model S Plaid": {
+  "brand": "테슬라",
+  "model": "Model S Plaid",
+  "code": "404385985",
+  "vehiclePrice": 141061000,
+  "engineCc": 0,
+  "fuel": "E",
+  "residualGroup": "X"
+ },
+ "테슬라 Model X AWD": {
+  "brand": "테슬라",
+  "model": "Model X AWD",
+  "code": "402785986",
+  "vehiclePrice": 143061000,
+  "engineCc": 0,
+  "fuel": "E",
+  "residualGroup": "X"
+ },
+ "테슬라 Model X Plaid": {
+  "brand": "테슬라",
+  "model": "Model X Plaid",
+  "code": "402785987",
+  "vehiclePrice": 157061000,
+  "engineCc": 0,
+  "fuel": "E",
+  "residualGroup": "X"
+ },
+ "테슬라 Model Y Long Range": {
+  "brand": "테슬라",
+  "model": "Model Y Long Range",
+  "code": "466792533",
+  "vehiclePrice": 63140000,
+  "engineCc": 0,
+  "fuel": "E",
+  "residualGroup": "T"
+ },
+ "테슬라 Model Y RWD": {
+  "brand": "테슬라",
+  "model": "Model Y RWD",
+  "code": "466792534",
+  "vehiclePrice": 52990000,
+  "engineCc": 0,
+  "fuel": "E",
+  "residualGroup": "T"
+ },
+ "테슬라 Model Y Premium RWD": {
+  "brand": "테슬라",
+  "model": "Model Y Premium RWD",
+  "code": "466794500",
+  "vehiclePrice": 49990000,
+  "engineCc": 0,
+  "fuel": "E",
+  "residualGroup": "T"
+ },
+ "테슬라 Model Y Premium Long Range": {
+  "brand": "테슬라",
+  "model": "Model Y Premium Long Range",
+  "code": "466794501",
+  "vehiclePrice": 59990000,
+  "engineCc": 0,
+  "fuel": "E",
+  "residualGroup": "T"
+ },
+ "테슬라 Model Y L AWD": {
+  "brand": "테슬라",
+  "model": "Model Y L AWD",
+  "code": "466794872",
+  "vehiclePrice": 64990000,
+  "engineCc": 0,
+  "fuel": "E",
+  "residualGroup": "T"
+ },
+ "토요타 Alphard AWD": {
+  "brand": "토요타",
+  "model": "Alphard AWD",
+  "code": "447392386",
+  "vehiclePrice": 100490000,
+  "engineCc": 2487,
+  "fuel": "V",
+  "residualGroup": "V"
+ },
+ "토요타 Camry XLE": {
+  "brand": "토요타",
+  "model": "Camry XLE",
+  "code": "467491723",
+  "vehiclePrice": 49430000,
+  "engineCc": 2487,
+  "fuel": "T",
+  "residualGroup": "S"
+ },
+ "토요타 Camry XLE Premium": {
+  "brand": "토요타",
+  "model": "Camry XLE Premium",
+  "code": "467491724",
+  "vehiclePrice": 55030000,
+  "engineCc": 2487,
+  "fuel": "T",
+  "residualGroup": "S"
+ },
+ "토요타 Crown 2.4L HEV Dual Boost": {
+  "brand": "토요타",
+  "model": "Crown 2.4L HEV Dual Boost",
+  "code": "444791721",
+  "vehiclePrice": 69400000,
+  "engineCc": 2393,
+  "fuel": "V",
+  "residualGroup": "U"
+ },
+ "토요타 Crown 2.5L HEV": {
+  "brand": "토요타",
+  "model": "Crown 2.5L HEV",
+  "code": "444791722",
+  "vehiclePrice": 60630000,
+  "engineCc": 2487,
+  "fuel": "T",
+  "residualGroup": "U"
+ },
+ "토요타 GR 86 Premium": {
+  "brand": "토요타",
+  "model": "GR 86 Premium",
+  "code": "417791719",
+  "vehiclePrice": 47700000,
+  "engineCc": 2387,
+  "fuel": "M",
+  "residualGroup": "CC"
+ },
+ "토요타 GR 86 Standard": {
+  "brand": "토요타",
+  "model": "GR 86 Standard",
+  "code": "417791718",
+  "vehiclePrice": 41700000,
+  "engineCc": 2387,
+  "fuel": "M",
+  "residualGroup": "CC"
+ },
+ "토요타 Highlander Limited": {
+  "brand": "토요타",
+  "model": "Highlander Limited",
+  "code": "446089414",
+  "vehiclePrice": 67070000,
+  "engineCc": 2487,
+  "fuel": "T",
+  "residualGroup": "Z"
+ },
+ "토요타 Highlander Platinum": {
+  "brand": "토요타",
+  "model": "Highlander Platinum",
+  "code": "446089415",
+  "vehiclePrice": 75030000,
+  "engineCc": 2487,
+  "fuel": "T",
+  "residualGroup": "Z"
+ },
+ "토요타 Prius LE": {
+  "brand": "토요타",
+  "model": "Prius LE",
+  "code": "443991725",
+  "vehiclePrice": 41330000,
+  "engineCc": 1987,
+  "fuel": "T",
+  "residualGroup": "U"
+ },
+ "토요타 Prius SE": {
+  "brand": "토요타",
+  "model": "Prius SE",
+  "code": "443991727",
+  "vehiclePrice": 47730000,
+  "engineCc": 1987,
+  "fuel": "T",
+  "residualGroup": "U"
+ },
+ "토요타 Prius XLE": {
+  "brand": "토요타",
+  "model": "Prius XLE",
+  "code": "443991726",
+  "vehiclePrice": 45130000,
+  "engineCc": 1987,
+  "fuel": "T",
+  "residualGroup": "U"
+ },
+ "토요타 Prius XSE": {
+  "brand": "토요타",
+  "model": "Prius XSE",
+  "code": "443991728",
+  "vehiclePrice": 51330000,
+  "engineCc": 1987,
+  "fuel": "T",
+  "residualGroup": "U"
+ },
+ "토요타 RAV4 2WD XLE": {
+  "brand": "토요타",
+  "model": "RAV4 2WD XLE",
+  "code": "417391729",
+  "vehiclePrice": 45730000,
+  "engineCc": 2487,
+  "fuel": "T",
+  "residualGroup": "AA"
+ },
+ "토요타 RAV4 AWD LTD": {
+  "brand": "토요타",
+  "model": "RAV4 AWD LTD",
+  "code": "417391730",
+  "vehiclePrice": 51630000,
+  "engineCc": 2487,
+  "fuel": "T",
+  "residualGroup": "AA"
+ },
+ "토요타 RAV4 XSE": {
+  "brand": "토요타",
+  "model": "RAV4 XSE",
+  "code": "417391731",
+  "vehiclePrice": 58430000,
+  "engineCc": 2487,
+  "fuel": "T",
+  "residualGroup": "AA"
+ },
+ "토요타 Sienna 2WD": {
+  "brand": "토요타",
+  "model": "Sienna 2WD",
+  "code": "406391732",
+  "vehiclePrice": 72030000,
+  "engineCc": 2487,
+  "fuel": "T",
+  "residualGroup": "V"
+ },
+ "토요타 Sienna AWD (E-four)": {
+  "brand": "토요타",
+  "model": "Sienna AWD (E-four)",
+  "code": "406392453",
+  "vehiclePrice": 72200000,
+  "engineCc": 2487,
+  "fuel": "V",
+  "residualGroup": "V"
+ },
+ "페라리 296 GTB V6": {
+  "brand": "페라리",
+  "model": "296 GTB V6",
+  "code": "407977825",
+  "vehiclePrice": 376000000,
+  "engineCc": 2992,
+  "fuel": "V",
+  "residualGroup": "BB"
+ },
+ "페라리 296 GTB V6 (469485803)": {
+  "brand": "페라리",
+  "model": "296 GTB V6",
+  "code": "469485803",
+  "vehiclePrice": 460000000,
+  "engineCc": 2992,
+  "fuel": "V",
+  "residualGroup": "BB"
+ },
+ "페라리 812 GTS V12": {
+  "brand": "페라리",
+  "model": "812 GTS V12",
+  "code": "381863354",
+  "vehiclePrice": 515000000,
+  "engineCc": 6496,
+  "fuel": "M",
+  "residualGroup": "OO"
+ },
+ "페라리 Purosangue V12": {
+  "brand": "페라리",
+  "model": "Purosangue V12",
+  "code": "418489197",
+  "vehiclePrice": 549000000,
+  "engineCc": 6496,
+  "fuel": "M",
+  "residualGroup": "BB"
+ },
+ "페라리 Roma V8": {
+  "brand": "페라리",
+  "model": "Roma V8",
+  "code": "381963490",
+  "vehiclePrice": 320000000,
+  "engineCc": 3855,
+  "fuel": "M",
+  "residualGroup": "BB"
+ },
+ "페라리 Roma Spider V8": {
+  "brand": "페라리",
+  "model": "Roma Spider V8",
+  "code": "449782032",
+  "vehiclePrice": 340000000,
+  "engineCc": 3855,
+  "fuel": "M",
+  "residualGroup": "BB"
+ },
+ "페라리 SF90 Spider V8": {
+  "brand": "페라리",
+  "model": "SF90 Spider V8",
+  "code": "401092171",
+  "vehiclePrice": 701000000,
+  "engineCc": 3990,
+  "fuel": "V",
+  "residualGroup": "OO"
+ },
+ "페라리 SF90 Stradale V8": {
+  "brand": "페라리",
+  "model": "SF90 Stradale V8",
+  "code": "375162008",
+  "vehiclePrice": 640000000,
+  "engineCc": 3990,
+  "fuel": "V",
+  "residualGroup": "OO"
+ },
+ "페라리 12Cilindri 가솔린 6.5": {
+  "brand": "페라리",
+  "model": "12Cilindri 가솔린 6.5",
+  "code": "464393783",
+  "vehiclePrice": 580000000,
+  "engineCc": 6496,
+  "fuel": "M",
+  "residualGroup": "OO"
+ },
+ "포드 Bronco 가솔린 2.3 Outer Banks": {
+  "brand": "포드",
+  "model": "Bronco 가솔린 2.3 Outer Banks",
+  "code": "405991793",
+  "vehiclePrice": 74000000,
+  "engineCc": 2261,
+  "fuel": "M",
+  "residualGroup": "W"
+ },
+ "포드 Bronco 가솔린 2.7 Outer Banks": {
+  "brand": "포드",
+  "model": "Bronco 가솔린 2.7 Outer Banks",
+  "code": "405991796",
+  "vehiclePrice": 81600000,
+  "engineCc": 2694,
+  "fuel": "M",
+  "residualGroup": "W"
+ },
+ "포드 Expedition Platinum (7인승)": {
+  "brand": "포드",
+  "model": "Expedition Platinum (7인승)",
+  "code": "436091791",
+  "vehiclePrice": 112700000,
+  "engineCc": 3496,
+  "fuel": "M",
+  "residualGroup": "Y"
+ },
+ "포드 Expedition Platinum (8인승)": {
+  "brand": "포드",
+  "model": "Expedition Platinum (8인승)",
+  "code": "436091792",
+  "vehiclePrice": 112700000,
+  "engineCc": 3496,
+  "fuel": "M",
+  "residualGroup": "Y"
+ },
+ "포드 Explorer Platinum": {
+  "brand": "포드",
+  "model": "Explorer Platinum",
+  "code": "461691795",
+  "vehiclePrice": 69000000,
+  "engineCc": 2261,
+  "fuel": "M",
+  "residualGroup": "W"
+ },
+ "포드 Explorer ST-Line": {
+  "brand": "포드",
+  "model": "Explorer ST-Line",
+  "code": "461691794",
+  "vehiclePrice": 62900000,
+  "engineCc": 2261,
+  "fuel": "M",
+  "residualGroup": "W"
+ },
+ "포드 Mustang Ecoboost Premium Convertible": {
+  "brand": "포드",
+  "model": "Mustang Ecoboost Premium Convertible",
+  "code": "441591789",
+  "vehiclePrice": 67000000,
+  "engineCc": 2261,
+  "fuel": "M",
+  "residualGroup": "CC"
+ },
+ "포드 Mustang Ecoboost Premium Coupe": {
+  "brand": "포드",
+  "model": "Mustang Ecoboost Premium Coupe",
+  "code": "441591787",
+  "vehiclePrice": 59900000,
+  "engineCc": 2261,
+  "fuel": "M",
+  "residualGroup": "CC"
+ },
+ "포드 Mustang GT Premium Convertible": {
+  "brand": "포드",
+  "model": "Mustang GT Premium Convertible",
+  "code": "441591790",
+  "vehiclePrice": 86000000,
+  "engineCc": 5038,
+  "fuel": "M",
+  "residualGroup": "CC"
+ },
+ "포드 Mustang GT Premium Coupe": {
+  "brand": "포드",
+  "model": "Mustang GT Premium Coupe",
+  "code": "441591788",
+  "vehiclePrice": 79900000,
+  "engineCc": 5038,
+  "fuel": "M",
+  "residualGroup": "CC"
+ },
+ "포드 Ranger Raptor": {
+  "brand": "포드",
+  "model": "Ranger Raptor",
+  "code": "413891786",
+  "vehiclePrice": 79900000,
+  "engineCc": 1996,
+  "fuel": "D",
+  "residualGroup": "취급불가"
+ },
+ "포드 Ranger Wildtrak": {
+  "brand": "포드",
+  "model": "Ranger Wildtrak",
+  "code": "413891785",
+  "vehiclePrice": 63500000,
+  "engineCc": 1996,
+  "fuel": "D",
+  "residualGroup": "취급불가"
+ },
+ "포르쉐 718 Boxtser GTS": {
+  "brand": "포르쉐",
+  "model": "718 Boxtser GTS",
+  "code": "333691497",
+  "vehiclePrice": 135300000,
+  "engineCc": 3995,
+  "fuel": "M",
+  "residualGroup": "R"
+ },
+ "포르쉐 718 Cayman GTS": {
+  "brand": "포르쉐",
+  "model": "718 Cayman GTS",
+  "code": "336191496",
+  "vehiclePrice": 130500000,
+  "engineCc": 3995,
+  "fuel": "M",
+  "residualGroup": "U"
+ },
+ "포르쉐 911 Turbo S Cabriolet": {
+  "brand": "포르쉐",
+  "model": "911 Turbo S Cabriolet",
+  "code": "465193674",
+  "vehiclePrice": 358900000,
+  "engineCc": 3591,
+  "fuel": "V",
+  "residualGroup": "Z"
+ },
+ "포르쉐 911 Carrera 4 Cabriolet": {
+  "brand": "포르쉐",
+  "model": "911 Carrera 4 Cabriolet",
+  "code": "366685628",
+  "vehiclePrice": 196200000,
+  "engineCc": 2981,
+  "fuel": "M",
+  "residualGroup": "U"
+ },
+ "포르쉐 911 Carrera 4 Coupe": {
+  "brand": "포르쉐",
+  "model": "911 Carrera 4 Coupe",
+  "code": "366685622",
+  "vehiclePrice": 180300000,
+  "engineCc": 2981,
+  "fuel": "M",
+  "residualGroup": "U"
+ },
+ "포르쉐 911 Carrera 4 GTS Cabriolet": {
+  "brand": "포르쉐",
+  "model": "911 Carrera 4 GTS Cabriolet",
+  "code": "366685632",
+  "vehiclePrice": 241900000,
+  "engineCc": 2981,
+  "fuel": "M",
+  "residualGroup": "U"
+ },
+ "포르쉐 911 Carrera 4 GTS Cabriolet (465188083)": {
+  "brand": "포르쉐",
+  "model": "911 Carrera 4 GTS Cabriolet",
+  "code": "465188083",
+  "vehiclePrice": 255800000,
+  "engineCc": 3591,
+  "fuel": "V",
+  "residualGroup": "U"
+ },
+ "포르쉐 911 Carrera 4 GTS Cabriolet (465192496)": {
+  "brand": "포르쉐",
+  "model": "911 Carrera 4 GTS Cabriolet",
+  "code": "465192496",
+  "vehiclePrice": 266600000,
+  "engineCc": 3591,
+  "fuel": "V",
+  "residualGroup": "U"
+ },
+ "포르쉐 911 Carrera 4 GTS Coupe": {
+  "brand": "포르쉐",
+  "model": "911 Carrera 4 GTS Coupe",
+  "code": "366685626",
+  "vehiclePrice": 226100000,
+  "engineCc": 2981,
+  "fuel": "M",
+  "residualGroup": "U"
+ },
+ "포르쉐 911 Carrera 4 GTS Coupe (465188081)": {
+  "brand": "포르쉐",
+  "model": "911 Carrera 4 GTS Coupe",
+  "code": "465188081",
+  "vehiclePrice": 239400000,
+  "engineCc": 3591,
+  "fuel": "V",
+  "residualGroup": "U"
+ },
+ "포르쉐 911 Carrera 4 GTS Coupe (465192494)": {
+  "brand": "포르쉐",
+  "model": "911 Carrera 4 GTS Coupe",
+  "code": "465192494",
+  "vehiclePrice": 250300000,
+  "engineCc": 3591,
+  "fuel": "V",
+  "residualGroup": "U"
+ },
+ "포르쉐 911 Carrera 4S Cabriolet": {
+  "brand": "포르쉐",
+  "model": "911 Carrera 4S Cabriolet",
+  "code": "366685630",
+  "vehiclePrice": 212900000,
+  "engineCc": 2981,
+  "fuel": "M",
+  "residualGroup": "U"
+ },
+ "포르쉐 911 Carrera 4S Coupe": {
+  "brand": "포르쉐",
+  "model": "911 Carrera 4S Coupe",
+  "code": "366685624",
+  "vehiclePrice": 197700000,
+  "engineCc": 2981,
+  "fuel": "M",
+  "residualGroup": "U"
+ },
+ "포르쉐 911 Carrera Cabriolet": {
+  "brand": "포르쉐",
+  "model": "911 Carrera Cabriolet",
+  "code": "366685627",
+  "vehiclePrice": 187000000,
+  "engineCc": 2981,
+  "fuel": "M",
+  "residualGroup": "U"
+ },
+ "포르쉐 911 Carrera Coupe": {
+  "brand": "포르쉐",
+  "model": "911 Carrera Coupe",
+  "code": "366685621",
+  "vehiclePrice": 171100000,
+  "engineCc": 2981,
+  "fuel": "M",
+  "residualGroup": "U"
+ },
+ "포르쉐 911 Carrera GTS Cabriolet": {
+  "brand": "포르쉐",
+  "model": "911 Carrera GTS Cabriolet",
+  "code": "366685631",
+  "vehiclePrice": 232700000,
+  "engineCc": 2981,
+  "fuel": "M",
+  "residualGroup": "U"
+ },
+ "포르쉐 911 Carrera GTS Cabriolet (465188082)": {
+  "brand": "포르쉐",
+  "model": "911 Carrera GTS Cabriolet",
+  "code": "465188082",
+  "vehiclePrice": 246200000,
+  "engineCc": 3591,
+  "fuel": "V",
+  "residualGroup": "U"
+ },
+ "포르쉐 911 Carrera GTS Cabriolet (465192495)": {
+  "brand": "포르쉐",
+  "model": "911 Carrera GTS Cabriolet",
+  "code": "465192495",
+  "vehiclePrice": 257000000,
+  "engineCc": 3591,
+  "fuel": "V",
+  "residualGroup": "U"
+ },
+ "포르쉐 911 Carrera GTS Coupe": {
+  "brand": "포르쉐",
+  "model": "911 Carrera GTS Coupe",
+  "code": "366685625",
+  "vehiclePrice": 216900000,
+  "engineCc": 2981,
+  "fuel": "M",
+  "residualGroup": "U"
+ },
+ "포르쉐 911 Carrera GTS Coupe (465188080)": {
+  "brand": "포르쉐",
+  "model": "911 Carrera GTS Coupe",
+  "code": "465188080",
+  "vehiclePrice": 229800000,
+  "engineCc": 3591,
+  "fuel": "V",
+  "residualGroup": "U"
+ },
+ "포르쉐 911 Carrera GTS Coupe (465192493)": {
+  "brand": "포르쉐",
+  "model": "911 Carrera GTS Coupe",
+  "code": "465192493",
+  "vehiclePrice": 240700000,
+  "engineCc": 3591,
+  "fuel": "V",
+  "residualGroup": "U"
+ },
+ "포르쉐 911 Carrera S Cabriolet": {
+  "brand": "포르쉐",
+  "model": "911 Carrera S Cabriolet",
+  "code": "366685629",
+  "vehiclePrice": 204300000,
+  "engineCc": 2981,
+  "fuel": "M",
+  "residualGroup": "U"
+ },
+ "포르쉐 911 Carrera S Coupe": {
+  "brand": "포르쉐",
+  "model": "911 Carrera S Coupe",
+  "code": "366685623",
+  "vehiclePrice": 188500000,
+  "engineCc": 2981,
+  "fuel": "M",
+  "residualGroup": "U"
+ },
+ "포르쉐 911 GT3": {
+  "brand": "포르쉐",
+  "model": "911 GT3",
+  "code": "465192169",
+  "vehiclePrice": 271700000,
+  "engineCc": 3996,
+  "fuel": "M",
+  "residualGroup": "Z"
+ },
+ "포르쉐 911 GT3 with Touring Package": {
+  "brand": "포르쉐",
+  "model": "911 GT3 with Touring Package",
+  "code": "465192170",
+  "vehiclePrice": 271700000,
+  "engineCc": 3996,
+  "fuel": "M",
+  "residualGroup": "Z"
+ },
+ "포르쉐 911Spirit70": {
+  "brand": "포르쉐",
+  "model": "911Spirit70",
+  "code": "465192719",
+  "vehiclePrice": 326000000,
+  "engineCc": 3591,
+  "fuel": "V",
+  "residualGroup": "U"
+ },
+ "포르쉐 911 Targa 4": {
+  "brand": "포르쉐",
+  "model": "911 Targa 4",
+  "code": "366685633",
+  "vehiclePrice": 196200000,
+  "engineCc": 2981,
+  "fuel": "M",
+  "residualGroup": "W"
+ },
+ "포르쉐 911Targa4GTS가솔린3.6": {
+  "brand": "포르쉐",
+  "model": "911Targa4GTS가솔린3.6",
+  "code": "465188084",
+  "vehiclePrice": 256000000,
+  "engineCc": 3591,
+  "fuel": "V",
+  "residualGroup": "W"
+ },
+ "포르쉐 911Targa4GTS가솔린4.0": {
+  "brand": "포르쉐",
+  "model": "911Targa4GTS가솔린4.0",
+  "code": "366685635",
+  "vehiclePrice": 241900000,
+  "engineCc": 2981,
+  "fuel": "M",
+  "residualGroup": "W"
+ },
+ "포르쉐 911 Targa 4S": {
+  "brand": "포르쉐",
+  "model": "911 Targa 4S",
+  "code": "366685634",
+  "vehiclePrice": 213500000,
+  "engineCc": 2981,
+  "fuel": "M",
+  "residualGroup": "W"
+ },
+ "포르쉐 CayenneCoupe가솔린3.0": {
+  "brand": "포르쉐",
+  "model": "CayenneCoupe가솔린3.0",
+  "code": "450692470",
+  "vehiclePrice": 148400000,
+  "engineCc": 2995,
+  "fuel": "M",
+  "residualGroup": "R"
+ },
+ "포르쉐 CayenneGTSCoupe가솔린4.0": {
+  "brand": "포르쉐",
+  "model": "CayenneGTSCoupe가솔린4.0",
+  "code": "450692471",
+  "vehiclePrice": 204800000,
+  "engineCc": 3996,
+  "fuel": "M",
+  "residualGroup": "S"
+ },
+ "포르쉐 CayenneGTS가솔린4.0": {
+  "brand": "포르쉐",
+  "model": "CayenneGTS가솔린4.0",
+  "code": "450692466",
+  "vehiclePrice": 199400000,
+  "engineCc": 3996,
+  "fuel": "M",
+  "residualGroup": "R"
+ },
+ "포르쉐 CayenneTurboGTCoupe가솔린4.0": {
+  "brand": "포르쉐",
+  "model": "CayenneTurboGTCoupe가솔린4.0",
+  "code": "450692472",
+  "vehiclePrice": 269400000,
+  "engineCc": 3996,
+  "fuel": "M",
+  "residualGroup": "S"
+ },
+ "포르쉐 Cayenne가솔린3.0": {
+  "brand": "포르쉐",
+  "model": "Cayenne가솔린3.0",
+  "code": "450692465",
+  "vehiclePrice": 143800000,
+  "engineCc": 2995,
+  "fuel": "M",
+  "residualGroup": "R"
+ },
+ "포르쉐 Cayenne E-Hybrid": {
+  "brand": "포르쉐",
+  "model": "Cayenne E-Hybrid",
+  "code": "450692462",
+  "vehiclePrice": 154600000,
+  "engineCc": 2995,
+  "fuel": "M",
+  "residualGroup": "R"
+ },
+ "포르쉐 Cayenne E-Hybrid Coupe": {
+  "brand": "포르쉐",
+  "model": "Cayenne E-Hybrid Coupe",
+  "code": "450692467",
+  "vehiclePrice": 157800000,
+  "engineCc": 2995,
+  "fuel": "M",
+  "residualGroup": "R"
+ },
+ "포르쉐 Cayenne S E-Hybrid": {
+  "brand": "포르쉐",
+  "model": "Cayenne S E-Hybrid",
+  "code": "450692463",
+  "vehiclePrice": 163600000,
+  "engineCc": 2995,
+  "fuel": "M",
+  "residualGroup": "R"
+ },
+ "포르쉐 Cayenne S E-Hybrid Coupe": {
+  "brand": "포르쉐",
+  "model": "Cayenne S E-Hybrid Coupe",
+  "code": "450692468",
+  "vehiclePrice": 169500000,
+  "engineCc": 2995,
+  "fuel": "M",
+  "residualGroup": "R"
+ },
+ "포르쉐 Cayenne Turbo E-Hybrid": {
+  "brand": "포르쉐",
+  "model": "Cayenne Turbo E-Hybrid",
+  "code": "450692464",
+  "vehiclePrice": 221000000,
+  "engineCc": 3996,
+  "fuel": "M",
+  "residualGroup": "R"
+ },
+ "포르쉐 Cayenne Turbo E-Hybrid Coupe": {
+  "brand": "포르쉐",
+  "model": "Cayenne Turbo E-Hybrid Coupe",
+  "code": "450692469",
+  "vehiclePrice": 227200000,
+  "engineCc": 3996,
+  "fuel": "M",
+  "residualGroup": "R"
+ },
+ "포르쉐 Cayenne Electric 쿠페 전기": {
+  "brand": "포르쉐",
+  "model": "Cayenne Electric 쿠페 전기",
+  "code": "476295016",
+  "vehiclePrice": 146900000,
+  "engineCc": 0,
+  "fuel": "E",
+  "residualGroup": "W"
+ },
+ "포르쉐 Macan": {
+  "brand": "포르쉐",
+  "model": "Macan",
+  "code": "461388329",
+  "vehiclePrice": 99100000,
+  "engineCc": 0,
+  "fuel": "E",
+  "residualGroup": "W"
+ },
+ "포르쉐 Macan 4": {
+  "brand": "포르쉐",
+  "model": "Macan 4",
+  "code": "461387366",
+  "vehiclePrice": 105900000,
+  "engineCc": 0,
+  "fuel": "E",
+  "residualGroup": "W"
+ },
+ "포르쉐 Macan 4S": {
+  "brand": "포르쉐",
+  "model": "Macan 4S",
+  "code": "461388330",
+  "vehiclePrice": 114400000,
+  "engineCc": 0,
+  "fuel": "E",
+  "residualGroup": "W"
+ },
+ "포르쉐 Macan Turbo": {
+  "brand": "포르쉐",
+  "model": "Macan Turbo",
+  "code": "461388155",
+  "vehiclePrice": 138500000,
+  "engineCc": 0,
+  "fuel": "E",
+  "residualGroup": "W"
+ },
+ "포르쉐 Panamera4가솔린2.9": {
+  "brand": "포르쉐",
+  "model": "Panamera4가솔린2.9",
+  "code": "459392477",
+  "vehiclePrice": 183300000,
+  "engineCc": 2894,
+  "fuel": "M",
+  "residualGroup": "T"
+ },
+ "포르쉐 PanameraGTS가솔린4.0": {
+  "brand": "포르쉐",
+  "model": "PanameraGTS가솔린4.0",
+  "code": "459392479",
+  "vehiclePrice": 252800000,
+  "engineCc": 3996,
+  "fuel": "M",
+  "residualGroup": "T"
+ },
+ "포르쉐 Panamera4E-Hybrid가솔린2.9": {
+  "brand": "포르쉐",
+  "model": "Panamera4E-Hybrid가솔린2.9",
+  "code": "459392473",
+  "vehiclePrice": 194000000,
+  "engineCc": 2894,
+  "fuel": "M",
+  "residualGroup": "U"
+ },
+ "포르쉐 PanameraTurboE-Hybrid가솔린4.0": {
+  "brand": "포르쉐",
+  "model": "PanameraTurboE-Hybrid가솔린4.0",
+  "code": "459392474",
+  "vehiclePrice": 316400000,
+  "engineCc": 3996,
+  "fuel": "M",
+  "residualGroup": "W"
+ },
+ "포르쉐 Taycan": {
+  "brand": "포르쉐",
+  "model": "Taycan",
+  "code": "461992480",
+  "vehiclePrice": 131000000,
+  "engineCc": 0,
+  "fuel": "E",
+  "residualGroup": "W"
+ },
+ "포르쉐 Taycan 4": {
+  "brand": "포르쉐",
+  "model": "Taycan 4",
+  "code": "461992481",
+  "vehiclePrice": 136800000,
+  "engineCc": 0,
+  "fuel": "E",
+  "residualGroup": "W"
+ },
+ "포르쉐 Taycan 4 Cross Turismo": {
+  "brand": "포르쉐",
+  "model": "Taycan 4 Cross Turismo",
+  "code": "461992490",
+  "vehiclePrice": 144100000,
+  "engineCc": 0,
+  "fuel": "E",
+  "residualGroup": "W"
+ },
+ "포르쉐 Taycan 4S": {
+  "brand": "포르쉐",
+  "model": "Taycan 4S",
+  "code": "461992482",
+  "vehiclePrice": 155700000,
+  "engineCc": 0,
+  "fuel": "E",
+  "residualGroup": "W"
+ },
+ "포르쉐 Taycan 4S Cross Turismo": {
+  "brand": "포르쉐",
+  "model": "Taycan 4S Cross Turismo",
+  "code": "461992491",
+  "vehiclePrice": 161700000,
+  "engineCc": 0,
+  "fuel": "E",
+  "residualGroup": "W"
+ },
+ "포르쉐 Taycan GTS": {
+  "brand": "포르쉐",
+  "model": "Taycan GTS",
+  "code": "461992483",
+  "vehiclePrice": 179900000,
+  "engineCc": 0,
+  "fuel": "E",
+  "residualGroup": "W"
+ },
+ "포르쉐 Taycan Turbo": {
+  "brand": "포르쉐",
+  "model": "Taycan Turbo",
+  "code": "461992484",
+  "vehiclePrice": 216100000,
+  "engineCc": 0,
+  "fuel": "E",
+  "residualGroup": "W"
+ },
+ "포르쉐 Taycan Turbo Cross Turismo": {
+  "brand": "포르쉐",
+  "model": "Taycan Turbo Cross Turismo",
+  "code": "461992492",
+  "vehiclePrice": 218500000,
+  "engineCc": 0,
+  "fuel": "E",
+  "residualGroup": "W"
+ },
+ "포르쉐 Taycan Turbo GT": {
+  "brand": "포르쉐",
+  "model": "Taycan Turbo GT",
+  "code": "461992487",
+  "vehiclePrice": 297900000,
+  "engineCc": 0,
+  "fuel": "E",
+  "residualGroup": "W"
+ },
+ "포르쉐 Taycan Turbo GT with Weissach package": {
+  "brand": "포르쉐",
+  "model": "Taycan Turbo GT with Weissach package",
+  "code": "461992488",
+  "vehiclePrice": 297900000,
+  "engineCc": 0,
+  "fuel": "E",
+  "residualGroup": "W"
+ },
+ "포르쉐 Taycan Turbo S": {
+  "brand": "포르쉐",
+  "model": "Taycan Turbo S",
+  "code": "461992485",
+  "vehiclePrice": 254800000,
+  "engineCc": 0,
+  "fuel": "E",
+  "residualGroup": "W"
+ },
+ "폭스바겐 Atlas 2.0 TSI R-Line (7인승)": {
+  "brand": "폭스바겐",
+  "model": "Atlas 2.0 TSI R-Line (7인승)",
+  "code": "377386981",
+  "vehiclePrice": 68950000,
+  "engineCc": 1984,
+  "fuel": "M",
+  "residualGroup": "Y"
+ },
+ "폭스바겐 Atlas 2.0 TSI R-Line (6인승)": {
+  "brand": "폭스바겐",
+  "model": "Atlas 2.0 TSI R-Line (6인승)",
+  "code": "377392877",
+  "vehiclePrice": 69750000,
+  "engineCc": 1984,
+  "fuel": "M",
+  "residualGroup": "Y"
+ },
+ "폭스바겐 Golf 2.0 TDI Premium": {
+  "brand": "폭스바겐",
+  "model": "Golf 2.0 TDI Premium",
+  "code": "472092387",
+  "vehiclePrice": 40070000,
+  "engineCc": 1968,
+  "fuel": "D",
+  "residualGroup": "X"
+ },
+ "폭스바겐 Golf 2.0 TDI Prestige": {
+  "brand": "폭스바겐",
+  "model": "Golf 2.0 TDI Prestige",
+  "code": "472092388",
+  "vehiclePrice": 43960000,
+  "engineCc": 1968,
+  "fuel": "D",
+  "residualGroup": "X"
+ },
+ "폭스바겐 Golf2.0GTI": {
+  "brand": "폭스바겐",
+  "model": "Golf2.0GTI",
+  "code": "472092896",
+  "vehiclePrice": 52680000,
+  "engineCc": 1984,
+  "fuel": "M",
+  "residualGroup": "X"
+ },
+ "폭스바겐 ID.4 Pro": {
+  "brand": "폭스바겐",
+  "model": "ID.4 Pro",
+  "code": "400591484",
+  "vehiclePrice": 59900000,
+  "engineCc": 0,
+  "fuel": "E",
+  "residualGroup": "V"
+ },
+ "폭스바겐 ID.4 Pro Lite": {
+  "brand": "폭스바겐",
+  "model": "ID.4 Pro Lite",
+  "code": "400591485",
+  "vehiclePrice": 52990000,
+  "engineCc": 0,
+  "fuel": "E",
+  "residualGroup": "V"
+ },
+ "폭스바겐 ID.5 Pro": {
+  "brand": "폭스바겐",
+  "model": "ID.5 Pro",
+  "code": "412176830",
+  "vehiclePrice": 60990000,
+  "engineCc": 0,
+  "fuel": "E",
+  "residualGroup": "V"
+ },
+ "폭스바겐 Touareg Prestige": {
+  "brand": "폭스바겐",
+  "model": "Touareg Prestige",
+  "code": "453191479",
+  "vehiclePrice": 100990000,
+  "engineCc": 2967,
+  "fuel": "D",
+  "residualGroup": "Y"
+ },
+ "폭스바겐 Touareg R-Line": {
+  "brand": "폭스바겐",
+  "model": "Touareg R-Line",
+  "code": "453191480",
+  "vehiclePrice": 106990000,
+  "engineCc": 2967,
+  "fuel": "D",
+  "residualGroup": "Y"
+ },
+ "푸조 308 Allure": {
+  "brand": "푸조",
+  "model": "308 Allure",
+  "code": "437992567",
+  "vehiclePrice": 39900000,
+  "engineCc": 1199,
+  "fuel": "V",
+  "residualGroup": "Z"
+ },
+ "푸조 308 GT": {
+  "brand": "푸조",
+  "model": "308 GT",
+  "code": "437992568",
+  "vehiclePrice": 46500000,
+  "engineCc": 1199,
+  "fuel": "V",
+  "residualGroup": "Z"
+ },
+ "푸조 408 GT": {
+  "brand": "푸조",
+  "model": "408 GT",
+  "code": "437791619",
+  "vehiclePrice": 46900000,
+  "engineCc": 1199,
+  "fuel": "M",
+  "residualGroup": "Z"
+ },
+ "푸조 3008 가솔린 Allure": {
+  "brand": "푸조",
+  "model": "3008 가솔린 Allure",
+  "code": "399187121",
+  "vehiclePrice": 42200000,
+  "engineCc": 1199,
+  "fuel": "M",
+  "residualGroup": "Z"
+ },
+ "푸조 3008 가솔린 French Edition": {
+  "brand": "푸조",
+  "model": "3008 가솔린 French Edition",
+  "code": "399188331",
+  "vehiclePrice": 45200000,
+  "engineCc": 1199,
+  "fuel": "M",
+  "residualGroup": "Z"
+ },
+ "푸조 3008 가솔린 GT": {
+  "brand": "푸조",
+  "model": "3008 가솔린 GT",
+  "code": "399186856",
+  "vehiclePrice": 45200000,
+  "engineCc": 1199,
+  "fuel": "M",
+  "residualGroup": "Z"
+ },
+ "푸조 3008 하이브리드 Allure": {
+  "brand": "푸조",
+  "model": "3008 하이브리드 Allure",
+  "code": "474193124",
+  "vehiclePrice": 44900000,
+  "engineCc": 1199,
+  "fuel": "V",
+  "residualGroup": "Z"
+ },
+ "푸조 3008 하이브리드 GT": {
+  "brand": "푸조",
+  "model": "3008 하이브리드 GT",
+  "code": "474193125",
+  "vehiclePrice": 49900000,
+  "engineCc": 1199,
+  "fuel": "V",
+  "residualGroup": "Z"
+ },
+ "푸조 5008 Allure": {
+  "brand": "푸조",
+  "model": "5008 Allure",
+  "code": "399385765",
+  "vehiclePrice": 46000000,
+  "engineCc": 1199,
+  "fuel": "M",
+  "residualGroup": "Z"
+ },
+ "푸조 5008 French Edition": {
+  "brand": "푸조",
+  "model": "5008 French Edition",
+  "code": "399388332",
+  "vehiclePrice": 49000000,
+  "engineCc": 1199,
+  "fuel": "M",
+  "residualGroup": "Z"
+ },
+ "푸조 5008 GT": {
+  "brand": "푸조",
+  "model": "5008 GT",
+  "code": "399385766",
+  "vehiclePrice": 49000000,
+  "engineCc": 1199,
+  "fuel": "M",
+  "residualGroup": "Z"
+ },
+ "푸조 5008 하이브리드 Allure": {
+  "brand": "푸조",
+  "model": "5008 하이브리드 Allure",
+  "code": "462894400",
+  "vehiclePrice": 48900000,
+  "engineCc": 1199,
+  "fuel": "V",
+  "residualGroup": "Z"
+ },
+ "푸조 5008 하이브리드 GT": {
+  "brand": "푸조",
+  "model": "5008 하이브리드 GT",
+  "code": "462894401",
+  "vehiclePrice": 55900000,
+  "engineCc": 1199,
+  "fuel": "V",
+  "residualGroup": "Z"
+ },
+ "푸조 e-2008 Allure": {
+  "brand": "푸조",
+  "model": "e-2008 Allure",
+  "code": "440782456",
+  "vehiclePrice": 52900000,
+  "engineCc": 0,
+  "fuel": "E",
+  "residualGroup": "BB"
+ },
+ "푸조 e-2008 GT": {
+  "brand": "푸조",
+  "model": "e-2008 GT",
+  "code": "440782457",
+  "vehiclePrice": 54900000,
+  "engineCc": 0,
+  "fuel": "E",
+  "residualGroup": "BB"
+ },
+ "_note": "신한카드 오토리스(운용&금융) 2607_V1 엑셀 '모델, 잔가' 시트에서 추출"
+}

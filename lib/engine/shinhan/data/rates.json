@@ -1,0 +1,31 @@
+{
+ "operatingLease": {
+  "baseRate": 0.059,
+  "rateSurcharge": 0.0001,
+  "note": "주요기준!C7 — 매달 변동. PMT에는 +0.01% 가산 적용(엑셀 AR17)"
+ },
+ "mileageResidualAdj": {
+  "10000": 0.04,
+  "20000": 0.02,
+  "30000": 0.0,
+  "40000": -0.03
+ },
+ "residualFloorByTerm": {
+  "12": 0.54,
+  "24": 0.44,
+  "36": 0.34,
+  "42": 0.29,
+  "44": 0.29,
+  "48": 0.24,
+  "60": 0.2
+ },
+ "acquisition": {
+  "taxRate": 0.07,
+  "evTaxRebate": 1400000,
+  "bondCost": 80000,
+  "deliveryCost": 168000,
+  "stampDuty": 5000,
+  "note": "취득원가 = 원금 + ROUNDDOWN(원금/1.1*7%,-1) + 공채 + 탁송 + 인지대. 공채/탁송은 골든케이스 기본값(견적별 변동 가능)"
+ },
+ "defaultCaFeeRate": 0.04
+}

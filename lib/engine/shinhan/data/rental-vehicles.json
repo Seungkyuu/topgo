@@ -1,0 +1,7728 @@
+{
+ "벤츠 A220 Sedan": {
+  "brand": "벤츠",
+  "model": "A220 Sedan",
+  "vehiclePrice": 49500000,
+  "engineCc": 1991,
+  "fuel": "V",
+  "residualGroup": "W",
+  "maintenanceGrade": "3급",
+  "guaranteeFeeRate": 0.015,
+  "residualByTerm": {
+   "36": 0.64,
+   "48": 0.57,
+   "60": 0.51
+  }
+ },
+ "벤츠 A220 Hatchback": {
+  "brand": "벤츠",
+  "model": "A220 Hatchback",
+  "vehiclePrice": 47700000,
+  "engineCc": 1991,
+  "fuel": "V",
+  "residualGroup": "W",
+  "maintenanceGrade": "3급",
+  "guaranteeFeeRate": 0.015,
+  "residualByTerm": {
+   "36": 0.64,
+   "48": 0.57,
+   "60": 0.51
+  }
+ },
+ "벤츠 C200 Avantgarde": {
+  "brand": "벤츠",
+  "model": "C200 Avantgarde",
+  "vehiclePrice": 62000000,
+  "engineCc": 1999,
+  "fuel": "V",
+  "residualGroup": "T",
+  "maintenanceGrade": "3급",
+  "guaranteeFeeRate": 0.015,
+  "residualByTerm": {
+   "36": 0.64,
+   "48": 0.57,
+   "60": 0.51
+  }
+ },
+ "벤츠 C200 AMG Line": {
+  "brand": "벤츠",
+  "model": "C200 AMG Line",
+  "vehiclePrice": 65000000,
+  "engineCc": 1999,
+  "fuel": "V",
+  "residualGroup": "T",
+  "maintenanceGrade": "3급",
+  "guaranteeFeeRate": 0.015,
+  "residualByTerm": {
+   "36": 0.64,
+   "48": 0.57,
+   "60": 0.51
+  }
+ },
+ "벤츠 C200 Cabriolet": {
+  "brand": "벤츠",
+  "model": "C200 Cabriolet",
+  "vehiclePrice": 73800000,
+  "engineCc": 1991,
+  "fuel": "M",
+  "residualGroup": "취급불가",
+  "maintenanceGrade": "3급",
+  "guaranteeFeeRate": 0.015,
+  "residualByTerm": {
+   "36": 0.0,
+   "48": 0.0,
+   "60": 0.0
+  }
+ },
+ "벤츠 C300 4MATIC Avantgarde": {
+  "brand": "벤츠",
+  "model": "C300 4MATIC Avantgarde",
+  "vehiclePrice": 68800000,
+  "engineCc": 1999,
+  "fuel": "V",
+  "residualGroup": "T",
+  "maintenanceGrade": "3급",
+  "guaranteeFeeRate": 0.015,
+  "residualByTerm": {
+   "36": 0.64,
+   "48": 0.57,
+   "60": 0.51
+  }
+ },
+ "벤츠 C300 4MATIC AMG Line": {
+  "brand": "벤츠",
+  "model": "C300 4MATIC AMG Line",
+  "vehiclePrice": 76000000,
+  "engineCc": 1999,
+  "fuel": "V",
+  "residualGroup": "T",
+  "maintenanceGrade": "3급",
+  "guaranteeFeeRate": 0.015,
+  "residualByTerm": {
+   "36": 0.64,
+   "48": 0.57,
+   "60": 0.51
+  }
+ },
+ "벤츠 E200": {
+  "brand": "벤츠",
+  "model": "E200",
+  "vehiclePrice": 80000000,
+  "engineCc": 1999,
+  "fuel": "V",
+  "residualGroup": "R",
+  "maintenanceGrade": "3급",
+  "guaranteeFeeRate": 0.015,
+  "residualByTerm": {
+   "36": 0.67,
+   "48": 0.6,
+   "60": 0.54
+  }
+ },
+ "벤츠 E220d": {
+  "brand": "벤츠",
+  "model": "E220d",
+  "vehiclePrice": 82300000,
+  "engineCc": 1993,
+  "fuel": "W",
+  "residualGroup": "R",
+  "maintenanceGrade": "3급",
+  "guaranteeFeeRate": 0.015,
+  "residualByTerm": {
+   "36": 0.67,
+   "48": 0.6,
+   "60": 0.54
+  }
+ },
+ "벤츠 E250": {
+  "brand": "벤츠",
+  "model": "E250",
+  "vehiclePrice": 77100000,
+  "engineCc": 1991,
+  "fuel": "M",
+  "residualGroup": "R",
+  "maintenanceGrade": "3급",
+  "guaranteeFeeRate": 0.015,
+  "residualByTerm": {
+   "36": 0.0,
+   "48": 0.0,
+   "60": 0.0
+  }
+ },
+ "벤츠 E300": {
+  "brand": "벤츠",
+  "model": "E300",
+  "vehiclePrice": 89900000,
+  "engineCc": 1999,
+  "fuel": "V",
+  "residualGroup": "R",
+  "maintenanceGrade": "3급",
+  "guaranteeFeeRate": 0.015,
+  "residualByTerm": {
+   "36": 0.67,
+   "48": 0.6,
+   "60": 0.54
+  }
+ },
+ "벤츠 E350": {
+  "brand": "벤츠",
+  "model": "E350",
+  "vehiclePrice": 97000000,
+  "engineCc": 1999,
+  "fuel": "V",
+  "residualGroup": "S",
+  "maintenanceGrade": "3급",
+  "guaranteeFeeRate": 0.015,
+  "residualByTerm": {
+   "36": 0.67,
+   "48": 0.6,
+   "60": 0.54
+  }
+ },
+ "벤츠 E350e": {
+  "brand": "벤츠",
+  "model": "E350e",
+  "vehiclePrice": 115700000,
+  "engineCc": 1999,
+  "fuel": "M",
+  "residualGroup": "W",
+  "maintenanceGrade": "4급",
+  "guaranteeFeeRate": 0.015,
+  "residualByTerm": {
+   "36": 0.67,
+   "48": 0.6,
+   "60": 0.54
+  }
+ },
+ "벤츠 E450": {
+  "brand": "벤츠",
+  "model": "E450",
+  "vehiclePrice": 109600000,
+  "engineCc": 2998,
+  "fuel": "M",
+  "residualGroup": "W",
+  "maintenanceGrade": "4급",
+  "guaranteeFeeRate": 0.015,
+  "residualByTerm": {
+   "36": 0.67,
+   "48": 0.6,
+   "60": 0.54
+  }
+ },
+ "벤츠 E450 Cabriolet": {
+  "brand": "벤츠",
+  "model": "E450 Cabriolet",
+  "vehiclePrice": 114700000,
+  "engineCc": 2998,
+  "fuel": "M",
+  "residualGroup": "취급불가",
+  "maintenanceGrade": "4급",
+  "guaranteeFeeRate": 0.015,
+  "residualByTerm": {
+   "36": 0.0,
+   "48": 0.0,
+   "60": 0.0
+  }
+ },
+ "벤츠 G400d": {
+  "brand": "벤츠",
+  "model": "G400d",
+  "vehiclePrice": 178000000,
+  "engineCc": 2925,
+  "fuel": "D",
+  "residualGroup": "V",
+  "maintenanceGrade": "7급",
+  "guaranteeFeeRate": 0.015,
+  "residualByTerm": {
+   "36": 0.67,
+   "48": 0.6,
+   "60": 0.54
+  }
+ },
+ "벤츠 G450d": {
+  "brand": "벤츠",
+  "model": "G450d",
+  "vehiclePrice": 185000000,
+  "engineCc": 2989,
+  "fuel": "D",
+  "residualGroup": "V",
+  "maintenanceGrade": "7급",
+  "guaranteeFeeRate": 0.015,
+  "residualByTerm": {
+   "36": 0.67,
+   "48": 0.6,
+   "60": 0.54
+  }
+ },
+ "벤츠 S350d": {
+  "brand": "벤츠",
+  "model": "S350d",
+  "vehiclePrice": 150000000,
+  "engineCc": 2925,
+  "fuel": "D",
+  "residualGroup": "Y",
+  "maintenanceGrade": "4급",
+  "guaranteeFeeRate": 0.015,
+  "residualByTerm": {
+   "36": 0.57,
+   "48": 0.5,
+   "60": 0.44
+  }
+ },
+ "벤츠 S400d": {
+  "brand": "벤츠",
+  "model": "S400d",
+  "vehiclePrice": 158100000,
+  "engineCc": 2925,
+  "fuel": "D",
+  "residualGroup": "Y",
+  "maintenanceGrade": "4급",
+  "guaranteeFeeRate": 0.015,
+  "residualByTerm": {
+   "36": 0.57,
+   "48": 0.5,
+   "60": 0.44
+  }
+ },
+ "벤츠 S450d": {
+  "brand": "벤츠",
+  "model": "S450d",
+  "vehiclePrice": 159500000,
+  "engineCc": 2925,
+  "fuel": "D",
+  "residualGroup": "Y",
+  "maintenanceGrade": "4급",
+  "guaranteeFeeRate": 0.015,
+  "residualByTerm": {
+   "36": 0.57,
+   "48": 0.5,
+   "60": 0.44
+  }
+ },
+ "벤츠 S450 4MATIC": {
+  "brand": "벤츠",
+  "model": "S450 4MATIC",
+  "vehiclePrice": 159600000,
+  "engineCc": 2998,
+  "fuel": "V",
+  "residualGroup": "W",
+  "maintenanceGrade": "4급",
+  "guaranteeFeeRate": 0.015,
+  "residualByTerm": {
+   "36": 0.57,
+   "48": 0.5,
+   "60": 0.44
+  }
+ },
+ "벤츠 S450 4MATIC Long": {
+  "brand": "벤츠",
+  "model": "S450 4MATIC Long",
+  "vehiclePrice": 182000000,
+  "engineCc": 2998,
+  "fuel": "V",
+  "residualGroup": "W",
+  "maintenanceGrade": "4급",
+  "guaranteeFeeRate": 0.015,
+  "residualByTerm": {
+   "36": 0.57,
+   "48": 0.5,
+   "60": 0.44
+  }
+ },
+ "벤츠 S500 4MATIC Long": {
+  "brand": "벤츠",
+  "model": "S500 4MATIC Long",
+  "vehiclePrice": 203700000,
+  "engineCc": 2998,
+  "fuel": "V",
+  "residualGroup": "W",
+  "maintenanceGrade": "4급",
+  "guaranteeFeeRate": 0.015,
+  "residualByTerm": {
+   "36": 0.57,
+   "48": 0.5,
+   "60": 0.44
+  }
+ },
+ "벤츠 S580 4MATIC Long": {
+  "brand": "벤츠",
+  "model": "S580 4MATIC Long",
+  "vehiclePrice": 247500000,
+  "engineCc": 3982,
+  "fuel": "V",
+  "residualGroup": "BB",
+  "maintenanceGrade": "5급",
+  "guaranteeFeeRate": 0.015,
+  "residualByTerm": {
+   "36": 0.49,
+   "48": 0.42,
+   "60": 0.36
+  }
+ },
+ "벤츠 S580e 4MATIC Long": {
+  "brand": "벤츠",
+  "model": "S580e 4MATIC Long",
+  "vehiclePrice": 247000000,
+  "engineCc": 2999,
+  "fuel": "V",
+  "residualGroup": "AA",
+  "maintenanceGrade": "4급",
+  "guaranteeFeeRate": 0.015,
+  "residualByTerm": {
+   "36": 0.54,
+   "48": 0.47,
+   "60": 0.41
+  }
+ },
+ "벤츠 Mercedes-Maybach S580": {
+  "brand": "벤츠",
+  "model": "Mercedes-Maybach S580",
+  "vehiclePrice": 309600000,
+  "engineCc": 3982,
+  "fuel": "V",
+  "residualGroup": "II",
+  "maintenanceGrade": "5급",
+  "guaranteeFeeRate": 0.015,
+  "residualByTerm": {
+   "36": 0.49,
+   "48": 0.42,
+   "60": 0.36
+  }
+ },
+ "벤츠 Mercedes-Maybach S680": {
+  "brand": "벤츠",
+  "model": "Mercedes-Maybach S680",
+  "vehiclePrice": 393600000,
+  "engineCc": 5980,
+  "fuel": "M",
+  "residualGroup": "II",
+  "maintenanceGrade": "6급",
+  "guaranteeFeeRate": 0.015,
+  "residualByTerm": {
+   "36": 0.49,
+   "48": 0.42,
+   "60": 0.36
+  }
+ },
+ "벤츠 CLA250 4MATIC": {
+  "brand": "벤츠",
+  "model": "CLA250 4MATIC",
+  "vehiclePrice": 62500000,
+  "engineCc": 1991,
+  "fuel": "V",
+  "residualGroup": "W",
+  "maintenanceGrade": "3급",
+  "guaranteeFeeRate": 0.015,
+  "residualByTerm": {
+   "36": 0.63,
+   "48": 0.56,
+   "60": 0.5
+  }
+ },
+ "벤츠 CLA250 4MATIC AMG Line": {
+  "brand": "벤츠",
+  "model": "CLA250 4MATIC AMG Line",
+  "vehiclePrice": 63200000,
+  "engineCc": 1991,
+  "fuel": "V",
+  "residualGroup": "W",
+  "maintenanceGrade": "3급",
+  "guaranteeFeeRate": 0.015,
+  "residualByTerm": {
+   "36": 0.63,
+   "48": 0.56,
+   "60": 0.5
+  }
+ },
+ "벤츠 GLA250 4MATIC": {
+  "brand": "벤츠",
+  "model": "GLA250 4MATIC",
+  "vehiclePrice": 67900000,
+  "engineCc": 1991,
+  "fuel": "V",
+  "residualGroup": "U",
+  "maintenanceGrade": "7급",
+  "guaranteeFeeRate": 0.015,
+  "residualByTerm": {
+   "36": 0.63,
+   "48": 0.56,
+   "60": 0.5
+  }
+ },
+ "벤츠 GLA250 4MATIC AMG Line": {
+  "brand": "벤츠",
+  "model": "GLA250 4MATIC AMG Line",
+  "vehiclePrice": 68600000,
+  "engineCc": 1991,
+  "fuel": "M",
+  "residualGroup": "U",
+  "maintenanceGrade": "7급",
+  "guaranteeFeeRate": 0.015,
+  "residualByTerm": {
+   "36": 0.63,
+   "48": 0.56,
+   "60": 0.5
+  }
+ },
+ "벤츠 GLB200d": {
+  "brand": "벤츠",
+  "model": "GLB200d",
+  "vehiclePrice": 60100000,
+  "engineCc": 1950,
+  "fuel": "D",
+  "residualGroup": "V",
+  "maintenanceGrade": "7급",
+  "guaranteeFeeRate": 0.015,
+  "residualByTerm": {
+   "36": 0.63,
+   "48": 0.56,
+   "60": 0.5
+  }
+ },
+ "벤츠 GLB250 4MATIC": {
+  "brand": "벤츠",
+  "model": "GLB250 4MATIC",
+  "vehiclePrice": 69800000,
+  "engineCc": 1991,
+  "fuel": "V",
+  "residualGroup": "V",
+  "maintenanceGrade": "7급",
+  "guaranteeFeeRate": 0.015,
+  "residualByTerm": {
+   "36": 0.63,
+   "48": 0.56,
+   "60": 0.5
+  }
+ },
+ "벤츠 GLC220d 4MATIC": {
+  "brand": "벤츠",
+  "model": "GLC220d 4MATIC",
+  "vehiclePrice": 77900000,
+  "engineCc": 1993,
+  "fuel": "D",
+  "residualGroup": "S",
+  "maintenanceGrade": "7급",
+  "guaranteeFeeRate": 0.015,
+  "residualByTerm": {
+   "36": 0.66,
+   "48": 0.59,
+   "60": 0.53
+  }
+ },
+ "벤츠 GLC220d 4MATIC Coupe": {
+  "brand": "벤츠",
+  "model": "GLC220d 4MATIC Coupe",
+  "vehiclePrice": 79200000,
+  "engineCc": 1950,
+  "fuel": "D",
+  "residualGroup": "S",
+  "maintenanceGrade": "7급",
+  "guaranteeFeeRate": 0.015,
+  "residualByTerm": {
+   "36": 0.66,
+   "48": 0.59,
+   "60": 0.53
+  }
+ },
+ "벤츠 GLC300 4MATIC (AMG Line/Coupe/Avantgarde)": {
+  "brand": "벤츠",
+  "model": "GLC300 4MATIC (AMG Line/Coupe/Avantgarde)",
+  "vehiclePrice": 87900000,
+  "engineCc": 1999,
+  "fuel": "M",
+  "residualGroup": "S",
+  "maintenanceGrade": "7급",
+  "guaranteeFeeRate": 0.015,
+  "residualByTerm": {
+   "36": 0.66,
+   "48": 0.59,
+   "60": 0.53
+  }
+ },
+ "벤츠 GLC300e": {
+  "brand": "벤츠",
+  "model": "GLC300e",
+  "vehiclePrice": 85100000,
+  "engineCc": 1999,
+  "fuel": "V",
+  "residualGroup": "S",
+  "maintenanceGrade": "7급",
+  "guaranteeFeeRate": 0.015,
+  "residualByTerm": {
+   "36": 0.66,
+   "48": 0.59,
+   "60": 0.53
+  }
+ },
+ "벤츠 GLE300d 4MATIC": {
+  "brand": "벤츠",
+  "model": "GLE300d 4MATIC",
+  "vehiclePrice": 114000000,
+  "engineCc": 1993,
+  "fuel": "D",
+  "residualGroup": "S",
+  "maintenanceGrade": "7급",
+  "guaranteeFeeRate": 0.015,
+  "residualByTerm": {
+   "36": 0.67,
+   "48": 0.6,
+   "60": 0.54
+  }
+ },
+ "벤츠 GLE350 4MATIC": {
+  "brand": "벤츠",
+  "model": "GLE350 4MATIC",
+  "vehiclePrice": 116600000,
+  "engineCc": 1999,
+  "fuel": "M",
+  "residualGroup": "S",
+  "maintenanceGrade": "7급",
+  "guaranteeFeeRate": 0.015,
+  "residualByTerm": {
+   "36": 0.67,
+   "48": 0.6,
+   "60": 0.54
+  }
+ },
+ "벤츠 GLE400e 4MATIC Coupe": {
+  "brand": "벤츠",
+  "model": "GLE400e 4MATIC Coupe",
+  "vehiclePrice": 132000000,
+  "engineCc": 1999,
+  "fuel": "V",
+  "residualGroup": "R",
+  "maintenanceGrade": "7급",
+  "guaranteeFeeRate": 0.015,
+  "residualByTerm": {
+   "36": 0.67,
+   "48": 0.6,
+   "60": 0.54
+  }
+ },
+ "벤츠 GLE450 4MATIC (AMG Line/Coupe)": {
+  "brand": "벤츠",
+  "model": "GLE450 4MATIC (AMG Line/Coupe)",
+  "vehiclePrice": 137600000,
+  "engineCc": 2998,
+  "fuel": "V",
+  "residualGroup": "S",
+  "maintenanceGrade": "7급",
+  "guaranteeFeeRate": 0.015,
+  "residualByTerm": {
+   "36": 0.67,
+   "48": 0.6,
+   "60": 0.54
+  }
+ },
+ "벤츠 GLE450d 4MATIC Coupe": {
+  "brand": "벤츠",
+  "model": "GLE450d 4MATIC Coupe",
+  "vehiclePrice": 131000000,
+  "engineCc": 2989,
+  "fuel": "D",
+  "residualGroup": "S",
+  "maintenanceGrade": "7급",
+  "guaranteeFeeRate": 0.015,
+  "residualByTerm": {
+   "36": 0.67,
+   "48": 0.6,
+   "60": 0.54
+  }
+ },
+ "벤츠 GLS450d 4MATIC": {
+  "brand": "벤츠",
+  "model": "GLS450d 4MATIC",
+  "vehiclePrice": 161600000,
+  "engineCc": 2989,
+  "fuel": "D",
+  "residualGroup": "V",
+  "maintenanceGrade": "7급",
+  "guaranteeFeeRate": 0.015,
+  "residualByTerm": {
+   "36": 0.61,
+   "48": 0.54,
+   "60": 0.48
+  }
+ },
+ "벤츠 GLS450 4MATIC": {
+  "brand": "벤츠",
+  "model": "GLS450 4MATIC",
+  "vehiclePrice": 155000000,
+  "engineCc": 2998,
+  "fuel": "V",
+  "residualGroup": "V",
+  "maintenanceGrade": "7급",
+  "guaranteeFeeRate": 0.015,
+  "residualByTerm": {
+   "36": 0.61,
+   "48": 0.54,
+   "60": 0.48
+  }
+ },
+ "벤츠 GLS580 4MATIC": {
+  "brand": "벤츠",
+  "model": "GLS580 4MATIC",
+  "vehiclePrice": 181500000,
+  "engineCc": 3982,
+  "fuel": "V",
+  "residualGroup": "V",
+  "maintenanceGrade": "7급",
+  "guaranteeFeeRate": 0.015,
+  "residualByTerm": {
+   "36": 0.61,
+   "48": 0.54,
+   "60": 0.48
+  }
+ },
+ "벤츠 GLS 63 4MATIC+": {
+  "brand": "벤츠",
+  "model": "GLS 63 4MATIC+",
+  "vehiclePrice": 208600000,
+  "engineCc": 3982,
+  "fuel": "V",
+  "residualGroup": "V",
+  "maintenanceGrade": "7급",
+  "guaranteeFeeRate": 0.015,
+  "residualByTerm": {
+   "36": 0.61,
+   "48": 0.54,
+   "60": 0.48
+  }
+ },
+ "벤츠 Maybach GLS GLS600 4MATIC": {
+  "brand": "벤츠",
+  "model": "Maybach GLS GLS600 4MATIC",
+  "vehiclePrice": 293600000,
+  "engineCc": 3982,
+  "fuel": "M",
+  "residualGroup": "II",
+  "maintenanceGrade": "7급",
+  "guaranteeFeeRate": 0.015,
+  "residualByTerm": {
+   "36": 0.51,
+   "48": 0.44,
+   "60": 0.38
+  }
+ },
+ "벤츠 AMG A35 4MATIC Sedan": {
+  "brand": "벤츠",
+  "model": "AMG A35 4MATIC Sedan",
+  "vehiclePrice": 67300000,
+  "engineCc": 1991,
+  "fuel": "V",
+  "residualGroup": "Z",
+  "maintenanceGrade": "3급",
+  "guaranteeFeeRate": 0.015,
+  "residualByTerm": {
+   "36": 0.58,
+   "48": 0.51,
+   "60": 0.45
+  }
+ },
+ "벤츠 AMG A45 S 4MATIC+ Hatchback": {
+  "brand": "벤츠",
+  "model": "AMG A45 S 4MATIC+ Hatchback",
+  "vehiclePrice": 79800000,
+  "engineCc": 1991,
+  "fuel": "V",
+  "residualGroup": "W",
+  "maintenanceGrade": "3급",
+  "guaranteeFeeRate": 0.015,
+  "residualByTerm": {
+   "36": 0.58,
+   "48": 0.51,
+   "60": 0.45
+  }
+ },
+ "벤츠 AMG E53 Hybrid 4MATIC+": {
+  "brand": "벤츠",
+  "model": "AMG E53 Hybrid 4MATIC+",
+  "vehiclePrice": 138600000,
+  "engineCc": 2998,
+  "fuel": "M",
+  "residualGroup": "W",
+  "maintenanceGrade": "4급",
+  "guaranteeFeeRate": 0.015,
+  "residualByTerm": {
+   "36": 0.56,
+   "48": 0.49,
+   "60": 0.43
+  }
+ },
+ "벤츠 AMG G63": {
+  "brand": "벤츠",
+  "model": "AMG G63",
+  "vehiclePrice": 238000000,
+  "engineCc": 3982,
+  "fuel": "V",
+  "residualGroup": "W",
+  "maintenanceGrade": "7급",
+  "guaranteeFeeRate": 0.015,
+  "residualByTerm": {
+   "36": 0.63,
+   "48": 0.56,
+   "60": 0.5
+  }
+ },
+ "벤츠 AMG S63 E Performance": {
+  "brand": "벤츠",
+  "model": "AMG S63 E Performance",
+  "vehiclePrice": 285500000,
+  "engineCc": 3982,
+  "fuel": "V",
+  "residualGroup": "DD",
+  "maintenanceGrade": "5급",
+  "guaranteeFeeRate": 0.015,
+  "residualByTerm": {
+   "36": 0.48,
+   "48": 0.41,
+   "60": 0.35
+  }
+ },
+ "벤츠 AMG CLA45 S 4MATIC+": {
+  "brand": "벤츠",
+  "model": "AMG CLA45 S 4MATIC+",
+  "vehiclePrice": 90000000,
+  "engineCc": 1991,
+  "fuel": "V",
+  "residualGroup": "W",
+  "maintenanceGrade": "3급",
+  "guaranteeFeeRate": 0.015,
+  "residualByTerm": {
+   "36": 0.55,
+   "48": 0.48,
+   "60": 0.42
+  }
+ },
+ "벤츠 AMG GLB35 4MATIC": {
+  "brand": "벤츠",
+  "model": "AMG GLB35 4MATIC",
+  "vehiclePrice": 77100000,
+  "engineCc": 1991,
+  "fuel": "V",
+  "residualGroup": "Z",
+  "maintenanceGrade": "7급",
+  "guaranteeFeeRate": 0.015,
+  "residualByTerm": {
+   "36": 0.55,
+   "48": 0.48,
+   "60": 0.42
+  }
+ },
+ "벤츠 AMG GLC 43 4MATIC+": {
+  "brand": "벤츠",
+  "model": "AMG GLC 43 4MATIC+",
+  "vehiclePrice": 99600000,
+  "engineCc": 1991,
+  "fuel": "V",
+  "residualGroup": "Z",
+  "maintenanceGrade": "7급",
+  "guaranteeFeeRate": 0.015,
+  "residualByTerm": {
+   "36": 0.56,
+   "48": 0.49,
+   "60": 0.43
+  }
+ },
+ "벤츠 AMG GLC 43 4MATIC+ Coupe": {
+  "brand": "벤츠",
+  "model": "AMG GLC 43 4MATIC+ Coupe",
+  "vehiclePrice": 107500000,
+  "engineCc": 2996,
+  "fuel": "V",
+  "residualGroup": "Z",
+  "maintenanceGrade": "7급",
+  "guaranteeFeeRate": 0.015,
+  "residualByTerm": {
+   "36": 0.0,
+   "48": 0.0,
+   "60": 0.0
+  }
+ },
+ "벤츠 AMG GLE53 4MATIC+": {
+  "brand": "벤츠",
+  "model": "AMG GLE53 4MATIC+",
+  "vehiclePrice": 157100000,
+  "engineCc": 2999,
+  "fuel": "V",
+  "residualGroup": "BB",
+  "maintenanceGrade": "7급",
+  "guaranteeFeeRate": 0.015,
+  "residualByTerm": {
+   "36": 0.59,
+   "48": 0.52,
+   "60": 0.46
+  }
+ },
+ "벤츠 AMG GLE53 4MATIC+ Coupe": {
+  "brand": "벤츠",
+  "model": "AMG GLE53 4MATIC+ Coupe",
+  "vehiclePrice": 147600000,
+  "engineCc": 2999,
+  "fuel": "V",
+  "residualGroup": "BB",
+  "maintenanceGrade": "7급",
+  "guaranteeFeeRate": 0.015,
+  "residualByTerm": {
+   "36": 0.59,
+   "48": 0.52,
+   "60": 0.46
+  }
+ },
+ "벤츠 AMG SL63 4MATIC+": {
+  "brand": "벤츠",
+  "model": "AMG SL63 4MATIC+",
+  "vehiclePrice": 235000000,
+  "engineCc": 3982,
+  "fuel": "M",
+  "residualGroup": "취급불가",
+  "maintenanceGrade": "5급",
+  "guaranteeFeeRate": 0.015,
+  "residualByTerm": {
+   "36": 0.0,
+   "48": 0.0,
+   "60": 0.0
+  }
+ },
+ "벤츠 AMG SL63 4MATIC+ Performance": {
+  "brand": "벤츠",
+  "model": "AMG SL63 4MATIC+ Performance",
+  "vehiclePrice": 260000000,
+  "engineCc": 3982,
+  "fuel": "M",
+  "residualGroup": "취급불가",
+  "maintenanceGrade": "5급",
+  "guaranteeFeeRate": 0.015,
+  "residualByTerm": {
+   "36": 0.0,
+   "48": 0.0,
+   "60": 0.0
+  }
+ },
+ "벤츠 AMG GT 43 4MATIC+": {
+  "brand": "벤츠",
+  "model": "AMG GT 43 4MATIC+",
+  "vehiclePrice": 155600000,
+  "engineCc": 2999,
+  "fuel": "V",
+  "residualGroup": "Z",
+  "maintenanceGrade": "4급",
+  "guaranteeFeeRate": 0.015,
+  "residualByTerm": {
+   "36": 0.58,
+   "48": 0.51,
+   "60": 0.45
+  }
+ },
+ "벤츠 AMG GT 63 S 4MATIC+": {
+  "brand": "벤츠",
+  "model": "AMG GT 63 S 4MATIC+",
+  "vehiclePrice": 247400000,
+  "engineCc": 3982,
+  "fuel": "M",
+  "residualGroup": "Z",
+  "maintenanceGrade": "5급",
+  "guaranteeFeeRate": 0.015,
+  "residualByTerm": {
+   "36": 0.49,
+   "48": 0.42,
+   "60": 0.36
+  }
+ },
+ "포드 Mustang 5.0": {
+  "brand": "포드",
+  "model": "Mustang 5.0",
+  "vehiclePrice": 68250000,
+  "engineCc": 5035,
+  "fuel": "M",
+  "residualGroup": "취급불가",
+  "maintenanceGrade": "6급",
+  "guaranteeFeeRate": 0.015,
+  "residualByTerm": {
+   "36": 0.0,
+   "48": 0.0,
+   "60": 0.0
+  }
+ },
+ "포드 Mustang 2.3": {
+  "brand": "포드",
+  "model": "Mustang 2.3",
+  "vehiclePrice": 51550000,
+  "engineCc": 2261,
+  "fuel": "M",
+  "residualGroup": "취급불가",
+  "maintenanceGrade": "4급",
+  "guaranteeFeeRate": 0.015,
+  "residualByTerm": {
+   "36": 0.0,
+   "48": 0.0,
+   "60": 0.0
+  }
+ },
+ "포드 Explorer 3.0 Platinum": {
+  "brand": "포드",
+  "model": "Explorer 3.0 Platinum",
+  "vehiclePrice": 78950000,
+  "engineCc": 2956,
+  "fuel": "M",
+  "residualGroup": "AA",
+  "maintenanceGrade": "7급",
+  "guaranteeFeeRate": 0.015,
+  "residualByTerm": {
+   "36": 0.53,
+   "48": 0.46,
+   "60": 0.4
+  }
+ },
+ "포드 Explorer 3.3 FHEV": {
+  "brand": "포드",
+  "model": "Explorer 3.3 FHEV",
+  "vehiclePrice": 81950000,
+  "engineCc": 3339,
+  "fuel": "V",
+  "residualGroup": "AA",
+  "maintenanceGrade": "7급",
+  "guaranteeFeeRate": 0.015,
+  "residualByTerm": {
+   "36": 0.53,
+   "48": 0.46,
+   "60": 0.4
+  }
+ },
+ "포드 The New Explorer 2.3 ST-Line 6인승(25MY)": {
+  "brand": "포드",
+  "model": "The New Explorer 2.3 ST-Line 6인승(25MY)",
+  "vehiclePrice": 62900000,
+  "engineCc": 2261,
+  "fuel": "M",
+  "residualGroup": "AA",
+  "maintenanceGrade": "7급",
+  "guaranteeFeeRate": 0.015,
+  "residualByTerm": {
+   "36": 0.53,
+   "48": 0.46,
+   "60": 0.4
+  }
+ },
+ "포드 The New Explorer 2.3 Platinum 7인승(25MY)": {
+  "brand": "포드",
+  "model": "The New Explorer 2.3 Platinum 7인승(25MY)",
+  "vehiclePrice": 69000000,
+  "engineCc": 2261,
+  "fuel": "M",
+  "residualGroup": "AA",
+  "maintenanceGrade": "7급",
+  "guaranteeFeeRate": 0.015,
+  "residualByTerm": {
+   "36": 0.53,
+   "48": 0.46,
+   "60": 0.4
+  }
+ },
+ "포드 Bronco 2.7 Outer Banks": {
+  "brand": "포드",
+  "model": "Bronco 2.7 Outer Banks",
+  "vehiclePrice": 81600000,
+  "engineCc": 2694,
+  "fuel": "M",
+  "residualGroup": "AA",
+  "maintenanceGrade": "7급",
+  "guaranteeFeeRate": 0.015,
+  "residualByTerm": {
+   "36": 0.53,
+   "48": 0.46,
+   "60": 0.4
+  }
+ },
+ "포드 Bronco 2.3 Outer Banks": {
+  "brand": "포드",
+  "model": "Bronco 2.3 Outer Banks",
+  "vehiclePrice": 74000000,
+  "engineCc": 2261,
+  "fuel": "M",
+  "residualGroup": "AA",
+  "maintenanceGrade": "7급",
+  "guaranteeFeeRate": 0.015,
+  "residualByTerm": {
+   "36": 0.53,
+   "48": 0.46,
+   "60": 0.4
+  }
+ },
+ "포드 Ranger 2.0 Wildtrak": {
+  "brand": "포드",
+  "model": "Ranger 2.0 Wildtrak",
+  "vehiclePrice": 63500000,
+  "engineCc": 1996,
+  "fuel": "D",
+  "residualGroup": "취급불가",
+  "maintenanceGrade": "8급",
+  "guaranteeFeeRate": 0.015,
+  "residualByTerm": {
+   "36": 0.0,
+   "48": 0.0,
+   "60": 0.0
+  }
+ },
+ "포드 Ranger 2.0 Raptor": {
+  "brand": "포드",
+  "model": "Ranger 2.0 Raptor",
+  "vehiclePrice": 79900000,
+  "engineCc": 1996,
+  "fuel": "D",
+  "residualGroup": "취급불가",
+  "maintenanceGrade": "8급",
+  "guaranteeFeeRate": 0.015,
+  "residualByTerm": {
+   "36": 0.0,
+   "48": 0.0,
+   "60": 0.0
+  }
+ },
+ "포드 Expedition 3.5 Platinum(7인승)": {
+  "brand": "포드",
+  "model": "Expedition 3.5 Platinum(7인승)",
+  "vehiclePrice": 112700000,
+  "engineCc": 3496,
+  "fuel": "M",
+  "residualGroup": "CC",
+  "maintenanceGrade": "7급",
+  "guaranteeFeeRate": 0.015,
+  "residualByTerm": {
+   "36": 0.51,
+   "48": 0.44,
+   "60": 0.38
+  }
+ },
+ "포드 Expedition 3.5 Platinum (8인승)": {
+  "brand": "포드",
+  "model": "Expedition 3.5 Platinum (8인승)",
+  "vehiclePrice": 112700000,
+  "engineCc": 3496,
+  "fuel": "M",
+  "residualGroup": "CC",
+  "maintenanceGrade": "7급",
+  "guaranteeFeeRate": 0.015,
+  "residualByTerm": {
+   "36": 0.51,
+   "48": 0.44,
+   "60": 0.38
+  }
+ },
+ "링컨 Aviator": {
+  "brand": "링컨",
+  "model": "Aviator",
+  "vehiclePrice": 92850000,
+  "engineCc": 2956,
+  "fuel": "M",
+  "residualGroup": "FF",
+  "maintenanceGrade": "7급",
+  "guaranteeFeeRate": 0.015,
+  "residualByTerm": {
+   "36": 0.52,
+   "48": 0.45,
+   "60": 0.39
+  }
+ },
+ "링컨 Navigator": {
+  "brand": "링컨",
+  "model": "Navigator",
+  "vehiclePrice": 152000000,
+  "engineCc": 3496,
+  "fuel": "M",
+  "residualGroup": "JJ",
+  "maintenanceGrade": "7급",
+  "guaranteeFeeRate": 0.015,
+  "residualByTerm": {
+   "36": 0.46,
+   "48": 0.39,
+   "60": 0.33
+  }
+ },
+ "링컨 Nautilus 가솔린 2.0": {
+  "brand": "링컨",
+  "model": "Nautilus 가솔린 2.0",
+  "vehiclePrice": 77400000,
+  "engineCc": 1995,
+  "fuel": "M",
+  "residualGroup": "II",
+  "maintenanceGrade": "7급",
+  "guaranteeFeeRate": 0.015,
+  "residualByTerm": {
+   "36": 0.5,
+   "48": 0.43,
+   "60": 0.37
+  }
+ },
+ "링컨 Nautilus 가솔린 2.7": {
+  "brand": "링컨",
+  "model": "Nautilus 가솔린 2.7",
+  "vehiclePrice": 59200000,
+  "engineCc": 2694,
+  "fuel": "M",
+  "residualGroup": "II",
+  "maintenanceGrade": "7급",
+  "guaranteeFeeRate": 0.015,
+  "residualByTerm": {
+   "36": 0.5,
+   "48": 0.43,
+   "60": 0.37
+  }
+ },
+ "링컨 Nautilus FHEV 가솔린 2.0 하이브리드": {
+  "brand": "링컨",
+  "model": "Nautilus FHEV 가솔린 2.0 하이브리드",
+  "vehiclePrice": 95000000,
+  "engineCc": 1995,
+  "fuel": "V",
+  "residualGroup": "II",
+  "maintenanceGrade": "7급",
+  "guaranteeFeeRate": 0.015,
+  "residualByTerm": {
+   "36": 0.5,
+   "48": 0.43,
+   "60": 0.37
+  }
+ },
+ "BMW 120i sport": {
+  "brand": "BMW",
+  "model": "120i sport",
+  "vehiclePrice": 47300000,
+  "engineCc": 1998,
+  "fuel": "M",
+  "residualGroup": "Z",
+  "maintenanceGrade": "3급",
+  "guaranteeFeeRate": 0.015,
+  "residualByTerm": {
+   "36": 0.63,
+   "48": 0.56,
+   "60": 0.5
+  }
+ },
+ "BMW 218d": {
+  "brand": "BMW",
+  "model": "218d",
+  "vehiclePrice": 51400000,
+  "engineCc": 1995,
+  "fuel": "D",
+  "residualGroup": "Z",
+  "maintenanceGrade": "7급",
+  "guaranteeFeeRate": 0.015,
+  "residualByTerm": {
+   "36": 0.63,
+   "48": 0.56,
+   "60": 0.5
+  }
+ },
+ "BMW 220i": {
+  "brand": "BMW",
+  "model": "220i",
+  "vehiclePrice": 48700000,
+  "engineCc": 1998,
+  "fuel": "M",
+  "residualGroup": "Z",
+  "maintenanceGrade": "7급",
+  "guaranteeFeeRate": 0.015,
+  "residualByTerm": {
+   "36": 0.63,
+   "48": 0.56,
+   "60": 0.5
+  }
+ },
+ "BMW 220i Gran Coupe M Sport": {
+  "brand": "BMW",
+  "model": "220i Gran Coupe M Sport",
+  "vehiclePrice": 52200000,
+  "engineCc": 1998,
+  "fuel": "M",
+  "residualGroup": "Z",
+  "maintenanceGrade": "3급",
+  "guaranteeFeeRate": 0.015,
+  "residualByTerm": {
+   "36": 0.63,
+   "48": 0.56,
+   "60": 0.5
+  }
+ },
+ "BMW 228 xDrive Gran Coupe M Sport": {
+  "brand": "BMW",
+  "model": "228 xDrive Gran Coupe M Sport",
+  "vehiclePrice": 57000000,
+  "engineCc": 1998,
+  "fuel": "M",
+  "residualGroup": "EE",
+  "maintenanceGrade": "3급",
+  "guaranteeFeeRate": 0.015,
+  "residualByTerm": {
+   "36": 0.63,
+   "48": 0.56,
+   "60": 0.5
+  }
+ },
+ "BMW 320d": {
+  "brand": "BMW",
+  "model": "320d",
+  "vehiclePrice": 60000000,
+  "engineCc": 1995,
+  "fuel": "D",
+  "residualGroup": "X",
+  "maintenanceGrade": "3급",
+  "guaranteeFeeRate": 0.015,
+  "residualByTerm": {
+   "36": 0.66,
+   "48": 0.59,
+   "60": 0.53
+  }
+ },
+ "BMW 320d M Sport": {
+  "brand": "BMW",
+  "model": "320d M Sport",
+  "vehiclePrice": 63700000,
+  "engineCc": 1995,
+  "fuel": "D",
+  "residualGroup": "X",
+  "maintenanceGrade": "3급",
+  "guaranteeFeeRate": 0.015,
+  "residualByTerm": {
+   "36": 0.66,
+   "48": 0.59,
+   "60": 0.53
+  }
+ },
+ "BMW 320d Touring": {
+  "brand": "BMW",
+  "model": "320d Touring",
+  "vehiclePrice": 62300000,
+  "engineCc": 1995,
+  "fuel": "D",
+  "residualGroup": "BB",
+  "maintenanceGrade": "3급",
+  "guaranteeFeeRate": 0.015,
+  "residualByTerm": {
+   "36": 0.66,
+   "48": 0.59,
+   "60": 0.53
+  }
+ },
+ "BMW 320i": {
+  "brand": "BMW",
+  "model": "320i",
+  "vehiclePrice": 57000000,
+  "engineCc": 1998,
+  "fuel": "M",
+  "residualGroup": "X",
+  "maintenanceGrade": "3급",
+  "guaranteeFeeRate": 0.015,
+  "residualByTerm": {
+   "36": 0.66,
+   "48": 0.59,
+   "60": 0.53
+  }
+ },
+ "BMW 320i M Sport": {
+  "brand": "BMW",
+  "model": "320i M Sport",
+  "vehiclePrice": 61400000,
+  "engineCc": 1998,
+  "fuel": "M",
+  "residualGroup": "X",
+  "maintenanceGrade": "3급",
+  "guaranteeFeeRate": 0.015,
+  "residualByTerm": {
+   "36": 0.66,
+   "48": 0.59,
+   "60": 0.53
+  }
+ },
+ "BMW 320i Touring": {
+  "brand": "BMW",
+  "model": "320i Touring",
+  "vehiclePrice": 59800000,
+  "engineCc": 1998,
+  "fuel": "M",
+  "residualGroup": "BB",
+  "maintenanceGrade": "3급",
+  "guaranteeFeeRate": 0.015,
+  "residualByTerm": {
+   "36": 0.66,
+   "48": 0.59,
+   "60": 0.53
+  }
+ },
+ "BMW 420d Gran Coupe M Sport": {
+  "brand": "BMW",
+  "model": "420d Gran Coupe M Sport",
+  "vehiclePrice": 64300000,
+  "engineCc": 1995,
+  "fuel": "D",
+  "residualGroup": "X",
+  "maintenanceGrade": "3급",
+  "guaranteeFeeRate": 0.015,
+  "residualByTerm": {
+   "36": 0.65,
+   "48": 0.58,
+   "60": 0.52
+  }
+ },
+ "BMW 420i Coupe M Sport Pro": {
+  "brand": "BMW",
+  "model": "420i Coupe M Sport Pro",
+  "vehiclePrice": 73300000,
+  "engineCc": 1998,
+  "fuel": "V",
+  "residualGroup": "취급불가",
+  "maintenanceGrade": "3급",
+  "guaranteeFeeRate": 0.015,
+  "residualByTerm": {
+   "36": 0.0,
+   "48": 0.0,
+   "60": 0.0
+  }
+ },
+ "BMW 420i Gran Coupe M Sport Pro": {
+  "brand": "BMW",
+  "model": "420i Gran Coupe M Sport Pro",
+  "vehiclePrice": 68300000,
+  "engineCc": 1998,
+  "fuel": "M",
+  "residualGroup": "X",
+  "maintenanceGrade": "3급",
+  "guaranteeFeeRate": 0.015,
+  "residualByTerm": {
+   "36": 0.65,
+   "48": 0.58,
+   "60": 0.52
+  }
+ },
+ "BMW 420i Convertible M Sport": {
+  "brand": "BMW",
+  "model": "420i Convertible M Sport",
+  "vehiclePrice": 75800000,
+  "engineCc": 1998,
+  "fuel": "M",
+  "residualGroup": "취급불가",
+  "maintenanceGrade": "3급",
+  "guaranteeFeeRate": 0.015,
+  "residualByTerm": {
+   "36": 0.0,
+   "48": 0.0,
+   "60": 0.0
+  }
+ },
+ "BMW 520i (xDrive / M Sport)": {
+  "brand": "BMW",
+  "model": "520i (xDrive / M Sport)",
+  "vehiclePrice": 68800000,
+  "engineCc": 1998,
+  "fuel": "M",
+  "residualGroup": "S",
+  "maintenanceGrade": "3급",
+  "guaranteeFeeRate": 0.015,
+  "residualByTerm": {
+   "36": 0.68,
+   "48": 0.61,
+   "60": 0.55
+  }
+ },
+ "BMW 523d (xDrive / M Sport)": {
+  "brand": "BMW",
+  "model": "523d (xDrive / M Sport)",
+  "vehiclePrice": 75800000,
+  "engineCc": 1995,
+  "fuel": "W",
+  "residualGroup": "S",
+  "maintenanceGrade": "3급",
+  "guaranteeFeeRate": 0.015,
+  "residualByTerm": {
+   "36": 0.68,
+   "48": 0.61,
+   "60": 0.55
+  }
+ },
+ "BMW 530e": {
+  "brand": "BMW",
+  "model": "530e",
+  "vehiclePrice": 89200000,
+  "engineCc": 1998,
+  "fuel": "V",
+  "residualGroup": "S",
+  "maintenanceGrade": "3급",
+  "guaranteeFeeRate": 0.015,
+  "residualByTerm": {
+   "36": 0.68,
+   "48": 0.61,
+   "60": 0.55
+  }
+ },
+ "BMW 530i (xDrive / M Sport)": {
+  "brand": "BMW",
+  "model": "530i (xDrive / M Sport)",
+  "vehiclePrice": 84200000,
+  "engineCc": 1998,
+  "fuel": "M",
+  "residualGroup": "S",
+  "maintenanceGrade": "3급",
+  "guaranteeFeeRate": 0.015,
+  "residualByTerm": {
+   "36": 0.68,
+   "48": 0.61,
+   "60": 0.55
+  }
+ },
+ "BMW 550e": {
+  "brand": "BMW",
+  "model": "550e",
+  "vehiclePrice": 114900000,
+  "engineCc": 2998,
+  "fuel": "V",
+  "residualGroup": "S",
+  "maintenanceGrade": "4급",
+  "guaranteeFeeRate": 0.015,
+  "residualByTerm": {
+   "36": 0.6,
+   "48": 0.53,
+   "60": 0.47
+  }
+ },
+ "BMW 620d GT": {
+  "brand": "BMW",
+  "model": "620d GT",
+  "vehiclePrice": 86500000,
+  "engineCc": 1995,
+  "fuel": "D",
+  "residualGroup": "X",
+  "maintenanceGrade": "3급",
+  "guaranteeFeeRate": 0.015,
+  "residualByTerm": {
+   "36": 0.54,
+   "48": 0.47,
+   "60": 0.41
+  }
+ },
+ "BMW 630i GT": {
+  "brand": "BMW",
+  "model": "630i GT",
+  "vehiclePrice": 95500000,
+  "engineCc": 2998,
+  "fuel": "M",
+  "residualGroup": "X",
+  "maintenanceGrade": "4급",
+  "guaranteeFeeRate": 0.015,
+  "residualByTerm": {
+   "36": 0.58,
+   "48": 0.51,
+   "60": 0.45
+  }
+ },
+ "BMW 640i GT": {
+  "brand": "BMW",
+  "model": "640i GT",
+  "vehiclePrice": 115500000,
+  "engineCc": 2998,
+  "fuel": "M",
+  "residualGroup": "X",
+  "maintenanceGrade": "4급",
+  "guaranteeFeeRate": 0.015,
+  "residualByTerm": {
+   "36": 0.58,
+   "48": 0.51,
+   "60": 0.45
+  }
+ },
+ "BMW 740d xDrive M Sport": {
+  "brand": "BMW",
+  "model": "740d xDrive M Sport",
+  "vehiclePrice": 154700000,
+  "engineCc": 2993,
+  "fuel": "W",
+  "residualGroup": "CC",
+  "maintenanceGrade": "4급",
+  "guaranteeFeeRate": 0.015,
+  "residualByTerm": {
+   "36": 0.59,
+   "48": 0.52,
+   "60": 0.46
+  }
+ },
+ "BMW 740i xDrive M Sport": {
+  "brand": "BMW",
+  "model": "740i xDrive M Sport",
+  "vehiclePrice": 174900000,
+  "engineCc": 2998,
+  "fuel": "M",
+  "residualGroup": "BB",
+  "maintenanceGrade": "4급",
+  "guaranteeFeeRate": 0.015,
+  "residualByTerm": {
+   "36": 0.59,
+   "48": 0.52,
+   "60": 0.46
+  }
+ },
+ "BMW 750e xDrive DPE": {
+  "brand": "BMW",
+  "model": "750e xDrive DPE",
+  "vehiclePrice": 199800000,
+  "engineCc": 2998,
+  "fuel": "V",
+  "residualGroup": "AA",
+  "maintenanceGrade": "4급",
+  "guaranteeFeeRate": 0.015,
+  "residualByTerm": {
+   "36": 0.58,
+   "48": 0.51,
+   "60": 0.45
+  }
+ },
+ "BMW 750e xDrive M Sport": {
+  "brand": "BMW",
+  "model": "750e xDrive M Sport",
+  "vehiclePrice": 202800000,
+  "engineCc": 2998,
+  "fuel": "V",
+  "residualGroup": "AA",
+  "maintenanceGrade": "4급",
+  "guaranteeFeeRate": 0.015,
+  "residualByTerm": {
+   "36": 0.58,
+   "48": 0.51,
+   "60": 0.45
+  }
+ },
+ "BMW M135i xDrive": {
+  "brand": "BMW",
+  "model": "M135i xDrive",
+  "vehiclePrice": 62600000,
+  "engineCc": 1998,
+  "fuel": "M",
+  "residualGroup": "BB",
+  "maintenanceGrade": "3급",
+  "guaranteeFeeRate": 0.015,
+  "residualByTerm": {
+   "36": 0.56,
+   "48": 0.49,
+   "60": 0.43
+  }
+ },
+ "BMW M235i xDrive Gran Coupe": {
+  "brand": "BMW",
+  "model": "M235i xDrive Gran Coupe",
+  "vehiclePrice": 64800000,
+  "engineCc": 1998,
+  "fuel": "M",
+  "residualGroup": "EE",
+  "maintenanceGrade": "3급",
+  "guaranteeFeeRate": 0.015,
+  "residualByTerm": {
+   "36": 0.63,
+   "48": 0.56,
+   "60": 0.5
+  }
+ },
+ "BMW M240i xDrive": {
+  "brand": "BMW",
+  "model": "M240i xDrive",
+  "vehiclePrice": 74700000,
+  "engineCc": 2998,
+  "fuel": "M",
+  "residualGroup": "취급불가",
+  "maintenanceGrade": "4급",
+  "guaranteeFeeRate": 0.015,
+  "residualByTerm": {
+   "36": 0.0,
+   "48": 0.0,
+   "60": 0.0
+  }
+ },
+ "BMW M2 Coupe": {
+  "brand": "BMW",
+  "model": "M2 Coupe",
+  "vehiclePrice": 89900000,
+  "engineCc": 2993,
+  "fuel": "M",
+  "residualGroup": "취급불가",
+  "maintenanceGrade": "4급",
+  "guaranteeFeeRate": 0.015,
+  "residualByTerm": {
+   "36": 0.0,
+   "48": 0.0,
+   "60": 0.0
+  }
+ },
+ "BMW M3 Competition M xDrive Touring": {
+  "brand": "BMW",
+  "model": "M3 Competition M xDrive Touring",
+  "vehiclePrice": 138200000,
+  "engineCc": 2993,
+  "fuel": "M",
+  "residualGroup": "취급불가",
+  "maintenanceGrade": "4급",
+  "guaranteeFeeRate": 0.015,
+  "residualByTerm": {
+   "36": 0.0,
+   "48": 0.0,
+   "60": 0.0
+  }
+ },
+ "BMW M340i": {
+  "brand": "BMW",
+  "model": "M340i",
+  "vehiclePrice": 82900000,
+  "engineCc": 2998,
+  "fuel": "M",
+  "residualGroup": "CC",
+  "maintenanceGrade": "4급",
+  "guaranteeFeeRate": 0.015,
+  "residualByTerm": {
+   "36": 0.59,
+   "48": 0.52,
+   "60": 0.46
+  }
+ },
+ "BMW M4 Competition M xDrive Coupe": {
+  "brand": "BMW",
+  "model": "M4 Competition M xDrive Coupe",
+  "vehiclePrice": 136400000,
+  "engineCc": 2993,
+  "fuel": "M",
+  "residualGroup": "취급불가",
+  "maintenanceGrade": "4급",
+  "guaranteeFeeRate": 0.015,
+  "residualByTerm": {
+   "36": 0.0,
+   "48": 0.0,
+   "60": 0.0
+  }
+ },
+ "BMW M4 Competition M xDrive Convertible": {
+  "brand": "BMW",
+  "model": "M4 Competition M xDrive Convertible",
+  "vehiclePrice": 140700000,
+  "engineCc": 2993,
+  "fuel": "M",
+  "residualGroup": "취급불가",
+  "maintenanceGrade": "4급",
+  "guaranteeFeeRate": 0.015,
+  "residualByTerm": {
+   "36": 0.0,
+   "48": 0.0,
+   "60": 0.0
+  }
+ },
+ "BMW M440i xDrive Coupe": {
+  "brand": "BMW",
+  "model": "M440i xDrive Coupe",
+  "vehiclePrice": 92100000,
+  "engineCc": 2998,
+  "fuel": "M",
+  "residualGroup": "취급불가",
+  "maintenanceGrade": "4급",
+  "guaranteeFeeRate": 0.015,
+  "residualByTerm": {
+   "36": 0.0,
+   "48": 0.0,
+   "60": 0.0
+  }
+ },
+ "BMW M440i xDrive Convertible": {
+  "brand": "BMW",
+  "model": "M440i xDrive Convertible",
+  "vehiclePrice": 97800000,
+  "engineCc": 2998,
+  "fuel": "M",
+  "residualGroup": "취급불가",
+  "maintenanceGrade": "4급",
+  "guaranteeFeeRate": 0.015,
+  "residualByTerm": {
+   "36": 0.0,
+   "48": 0.0,
+   "60": 0.0
+  }
+ },
+ "BMW M5": {
+  "brand": "BMW",
+  "model": "M5",
+  "vehiclePrice": 169900000,
+  "engineCc": 4395,
+  "fuel": "V",
+  "residualGroup": "II",
+  "maintenanceGrade": "6급",
+  "guaranteeFeeRate": 0.015,
+  "residualByTerm": {
+   "36": 0.55,
+   "48": 0.48,
+   "60": 0.42
+  }
+ },
+ "BMW M8 Competition Coupe": {
+  "brand": "BMW",
+  "model": "M8 Competition Coupe",
+  "vehiclePrice": 249400000,
+  "engineCc": 4395,
+  "fuel": "M",
+  "residualGroup": "취급불가",
+  "maintenanceGrade": "6급",
+  "guaranteeFeeRate": 0.015,
+  "residualByTerm": {
+   "36": 0.0,
+   "48": 0.0,
+   "60": 0.0
+  }
+ },
+ "BMW M8 Competition Gran Coupe": {
+  "brand": "BMW",
+  "model": "M8 Competition Gran Coupe",
+  "vehiclePrice": 249100000,
+  "engineCc": 4395,
+  "fuel": "M",
+  "residualGroup": "취급불가",
+  "maintenanceGrade": "6급",
+  "guaranteeFeeRate": 0.015,
+  "residualByTerm": {
+   "36": 0.0,
+   "48": 0.0,
+   "60": 0.0
+  }
+ },
+ "BMW M850i xDrive Coupe": {
+  "brand": "BMW",
+  "model": "M850i xDrive Coupe",
+  "vehiclePrice": 148500000,
+  "engineCc": 4395,
+  "fuel": "M",
+  "residualGroup": "취급불가",
+  "maintenanceGrade": "6급",
+  "guaranteeFeeRate": 0.015,
+  "residualByTerm": {
+   "36": 0.0,
+   "48": 0.0,
+   "60": 0.0
+  }
+ },
+ "BMW M850i xDrive Gran Coupe": {
+  "brand": "BMW",
+  "model": "M850i xDrive Gran Coupe",
+  "vehiclePrice": 151900000,
+  "engineCc": 4395,
+  "fuel": "M",
+  "residualGroup": "CC",
+  "maintenanceGrade": "6급",
+  "guaranteeFeeRate": 0.015,
+  "residualByTerm": {
+   "36": 0.55,
+   "48": 0.48,
+   "60": 0.42
+  }
+ },
+ "BMW X1 sDrive18d": {
+  "brand": "BMW",
+  "model": "X1 sDrive18d",
+  "vehiclePrice": 58200000,
+  "engineCc": 1995,
+  "fuel": "D",
+  "residualGroup": "W",
+  "maintenanceGrade": "7급",
+  "guaranteeFeeRate": 0.015,
+  "residualByTerm": {
+   "36": 0.66,
+   "48": 0.59,
+   "60": 0.53
+  }
+ },
+ "BMW X1 sDrive20i": {
+  "brand": "BMW",
+  "model": "X1 sDrive20i",
+  "vehiclePrice": 59400000,
+  "engineCc": 1998,
+  "fuel": "M",
+  "residualGroup": "W",
+  "maintenanceGrade": "7급",
+  "guaranteeFeeRate": 0.015,
+  "residualByTerm": {
+   "36": 0.66,
+   "48": 0.59,
+   "60": 0.53
+  }
+ },
+ "BMW X1 xDrive20i": {
+  "brand": "BMW",
+  "model": "X1 xDrive20i",
+  "vehiclePrice": 62100000,
+  "engineCc": 1998,
+  "fuel": "M",
+  "residualGroup": "W",
+  "maintenanceGrade": "7급",
+  "guaranteeFeeRate": 0.015,
+  "residualByTerm": {
+   "36": 0.66,
+   "48": 0.59,
+   "60": 0.53
+  }
+ },
+ "BMW X1 M35i xDrive": {
+  "brand": "BMW",
+  "model": "X1 M35i xDrive",
+  "vehiclePrice": 71500000,
+  "engineCc": 1998,
+  "fuel": "M",
+  "residualGroup": "AA",
+  "maintenanceGrade": "7급",
+  "guaranteeFeeRate": 0.015,
+  "residualByTerm": {
+   "36": 0.6,
+   "48": 0.53,
+   "60": 0.47
+  }
+ },
+ "BMW X2 xDrive20i": {
+  "brand": "BMW",
+  "model": "X2 xDrive20i",
+  "vehiclePrice": 69300000,
+  "engineCc": 1998,
+  "fuel": "M",
+  "residualGroup": "W",
+  "maintenanceGrade": "7급",
+  "guaranteeFeeRate": 0.015,
+  "residualByTerm": {
+   "36": 0.66,
+   "48": 0.59,
+   "60": 0.53
+  }
+ },
+ "BMW X2 M35i xDrive": {
+  "brand": "BMW",
+  "model": "X2 M35i xDrive",
+  "vehiclePrice": 75500000,
+  "engineCc": 1998,
+  "fuel": "M",
+  "residualGroup": "AA",
+  "maintenanceGrade": "7급",
+  "guaranteeFeeRate": 0.015,
+  "residualByTerm": {
+   "36": 0.6,
+   "48": 0.53,
+   "60": 0.47
+  }
+ },
+ "BMW X3 xDrive20d": {
+  "brand": "BMW",
+  "model": "X3 xDrive20d",
+  "vehiclePrice": 78600000,
+  "engineCc": 1995,
+  "fuel": "D",
+  "residualGroup": "U",
+  "maintenanceGrade": "7급",
+  "guaranteeFeeRate": 0.015,
+  "residualByTerm": {
+   "36": 0.69,
+   "48": 0.62,
+   "60": 0.56
+  }
+ },
+ "BMW X3 xDrive20i": {
+  "brand": "BMW",
+  "model": "X3 xDrive20i",
+  "vehiclePrice": 73400000,
+  "engineCc": 1998,
+  "fuel": "M",
+  "residualGroup": "U",
+  "maintenanceGrade": "7급",
+  "guaranteeFeeRate": 0.015,
+  "residualByTerm": {
+   "36": 0.69,
+   "48": 0.62,
+   "60": 0.56
+  }
+ },
+ "BMW X3 xDrive30": {
+  "brand": "BMW",
+  "model": "X3 xDrive30",
+  "vehiclePrice": 83900000,
+  "engineCc": 1998,
+  "fuel": "M",
+  "residualGroup": "U",
+  "maintenanceGrade": "7급",
+  "guaranteeFeeRate": 0.015,
+  "residualByTerm": {
+   "36": 0.69,
+   "48": 0.62,
+   "60": 0.56
+  }
+ },
+ "BMW X3 xDrive30e": {
+  "brand": "BMW",
+  "model": "X3 xDrive30e",
+  "vehiclePrice": 88400000,
+  "engineCc": 1998,
+  "fuel": "V",
+  "residualGroup": "U",
+  "maintenanceGrade": "7급",
+  "guaranteeFeeRate": 0.015,
+  "residualByTerm": {
+   "36": 0.69,
+   "48": 0.62,
+   "60": 0.56
+  }
+ },
+ "BMW X3 M Competition": {
+  "brand": "BMW",
+  "model": "X3 M Competition",
+  "vehiclePrice": 124900000,
+  "engineCc": 2993,
+  "fuel": "M",
+  "residualGroup": "AA",
+  "maintenanceGrade": "7급",
+  "guaranteeFeeRate": 0.015,
+  "residualByTerm": {
+   "36": 0.61,
+   "48": 0.54,
+   "60": 0.48
+  }
+ },
+ "BMW X3 xDrive40": {
+  "brand": "BMW",
+  "model": "X3 xDrive40",
+  "vehiclePrice": 98900000,
+  "engineCc": 2998,
+  "fuel": "M",
+  "residualGroup": "AA",
+  "maintenanceGrade": "7급",
+  "guaranteeFeeRate": 0.015,
+  "residualByTerm": {
+   "36": 0.62,
+   "48": 0.55,
+   "60": 0.49
+  }
+ },
+ "BMW X3 xDrive50": {
+  "brand": "BMW",
+  "model": "X3 xDrive50",
+  "vehiclePrice": 98700000,
+  "engineCc": 2998,
+  "fuel": "M",
+  "residualGroup": "AA",
+  "maintenanceGrade": "7급",
+  "guaranteeFeeRate": 0.015,
+  "residualByTerm": {
+   "36": 0.62,
+   "48": 0.55,
+   "60": 0.49
+  }
+ },
+ "BMW X4 xDrive20d": {
+  "brand": "BMW",
+  "model": "X4 xDrive20d",
+  "vehiclePrice": 80800000,
+  "engineCc": 1995,
+  "fuel": "D",
+  "residualGroup": "S",
+  "maintenanceGrade": "7급",
+  "guaranteeFeeRate": 0.015,
+  "residualByTerm": {
+   "36": 0.67,
+   "48": 0.6,
+   "60": 0.54
+  }
+ },
+ "BMW X4 xDrive20i": {
+  "brand": "BMW",
+  "model": "X4 xDrive20i",
+  "vehiclePrice": 75700000,
+  "engineCc": 1998,
+  "fuel": "M",
+  "residualGroup": "S",
+  "maintenanceGrade": "7급",
+  "guaranteeFeeRate": 0.015,
+  "residualByTerm": {
+   "36": 0.67,
+   "48": 0.6,
+   "60": 0.54
+  }
+ },
+ "BMW X4 M Competition": {
+  "brand": "BMW",
+  "model": "X4 M Competition",
+  "vehiclePrice": 129200000,
+  "engineCc": 2993,
+  "fuel": "M",
+  "residualGroup": "AA",
+  "maintenanceGrade": "7급",
+  "guaranteeFeeRate": 0.015,
+  "residualByTerm": {
+   "36": 0.61,
+   "48": 0.54,
+   "60": 0.48
+  }
+ },
+ "BMW X4 M40i": {
+  "brand": "BMW",
+  "model": "X4 M40i",
+  "vehiclePrice": 101600000,
+  "engineCc": 2998,
+  "fuel": "M",
+  "residualGroup": "X",
+  "maintenanceGrade": "7급",
+  "guaranteeFeeRate": 0.015,
+  "residualByTerm": {
+   "36": 0.62,
+   "48": 0.55,
+   "60": 0.49
+  }
+ },
+ "BMW X5 xDrive30d (7인승)": {
+  "brand": "BMW",
+  "model": "X5 xDrive30d (7인승)",
+  "vehiclePrice": 117000000,
+  "engineCc": 2993,
+  "fuel": "W",
+  "residualGroup": "S",
+  "maintenanceGrade": "7급",
+  "guaranteeFeeRate": 0.015,
+  "residualByTerm": {
+   "36": 0.69,
+   "48": 0.62,
+   "60": 0.56
+  }
+ },
+ "BMW X5 xDrive30d (5인승)": {
+  "brand": "BMW",
+  "model": "X5 xDrive30d (5인승)",
+  "vehiclePrice": 117000000,
+  "engineCc": 2993,
+  "fuel": "W",
+  "residualGroup": "S",
+  "maintenanceGrade": "7급",
+  "guaranteeFeeRate": 0.015,
+  "residualByTerm": {
+   "36": 0.69,
+   "48": 0.62,
+   "60": 0.56
+  }
+ },
+ "BMW X5 xDrive40d": {
+  "brand": "BMW",
+  "model": "X5 xDrive40d",
+  "vehiclePrice": 131000000,
+  "engineCc": 2993,
+  "fuel": "W",
+  "residualGroup": "S",
+  "maintenanceGrade": "7급",
+  "guaranteeFeeRate": 0.015,
+  "residualByTerm": {
+   "36": 0.69,
+   "48": 0.62,
+   "60": 0.56
+  }
+ },
+ "BMW X5 xDrive40i (7인승)": {
+  "brand": "BMW",
+  "model": "X5 xDrive40i (7인승)",
+  "vehiclePrice": 127700000,
+  "engineCc": 2998,
+  "fuel": "M",
+  "residualGroup": "S",
+  "maintenanceGrade": "7급",
+  "guaranteeFeeRate": 0.015,
+  "residualByTerm": {
+   "36": 0.69,
+   "48": 0.62,
+   "60": 0.56
+  }
+ },
+ "BMW X5 xDrive40i (5인승)": {
+  "brand": "BMW",
+  "model": "X5 xDrive40i (5인승)",
+  "vehiclePrice": 127700000,
+  "engineCc": 2998,
+  "fuel": "M",
+  "residualGroup": "S",
+  "maintenanceGrade": "7급",
+  "guaranteeFeeRate": 0.015,
+  "residualByTerm": {
+   "36": 0.69,
+   "48": 0.62,
+   "60": 0.56
+  }
+ },
+ "BMW X5 50e xDrive": {
+  "brand": "BMW",
+  "model": "X5 50e xDrive",
+  "vehiclePrice": 128200000,
+  "engineCc": 2998,
+  "fuel": "V",
+  "residualGroup": "S",
+  "maintenanceGrade": "7급",
+  "guaranteeFeeRate": 0.015,
+  "residualByTerm": {
+   "36": 0.69,
+   "48": 0.62,
+   "60": 0.56
+  }
+ },
+ "BMW X5 M Competition": {
+  "brand": "BMW",
+  "model": "X5 M Competition",
+  "vehiclePrice": 189900000,
+  "engineCc": 4395,
+  "fuel": "M",
+  "residualGroup": "CC",
+  "maintenanceGrade": "7급",
+  "guaranteeFeeRate": 0.015,
+  "residualByTerm": {
+   "36": 0.58,
+   "48": 0.51,
+   "60": 0.45
+  }
+ },
+ "BMW X5 M60i xDrive": {
+  "brand": "BMW",
+  "model": "X5 M60i xDrive",
+  "vehiclePrice": 158000000,
+  "engineCc": 4395,
+  "fuel": "M",
+  "residualGroup": "X",
+  "maintenanceGrade": "7급",
+  "guaranteeFeeRate": 0.015,
+  "residualByTerm": {
+   "36": 0.6,
+   "48": 0.53,
+   "60": 0.47
+  }
+ },
+ "BMW X6 xDrive30d": {
+  "brand": "BMW",
+  "model": "X6 xDrive30d",
+  "vehiclePrice": 125800000,
+  "engineCc": 2993,
+  "fuel": "W",
+  "residualGroup": "S",
+  "maintenanceGrade": "7급",
+  "guaranteeFeeRate": 0.015,
+  "residualByTerm": {
+   "36": 0.69,
+   "48": 0.62,
+   "60": 0.56
+  }
+ },
+ "BMW X6 xDrive40d": {
+  "brand": "BMW",
+  "model": "X6 xDrive40d",
+  "vehiclePrice": 136000000,
+  "engineCc": 2993,
+  "fuel": "W",
+  "residualGroup": "S",
+  "maintenanceGrade": "7급",
+  "guaranteeFeeRate": 0.015,
+  "residualByTerm": {
+   "36": 0.69,
+   "48": 0.62,
+   "60": 0.56
+  }
+ },
+ "BMW X6 xDrive40i": {
+  "brand": "BMW",
+  "model": "X6 xDrive40i",
+  "vehiclePrice": 131400000,
+  "engineCc": 2998,
+  "fuel": "M",
+  "residualGroup": "S",
+  "maintenanceGrade": "7급",
+  "guaranteeFeeRate": 0.015,
+  "residualByTerm": {
+   "36": 0.69,
+   "48": 0.62,
+   "60": 0.56
+  }
+ },
+ "BMW X6 M Competition": {
+  "brand": "BMW",
+  "model": "X6 M Competition",
+  "vehiclePrice": 193900000,
+  "engineCc": 4395,
+  "fuel": "M",
+  "residualGroup": "CC",
+  "maintenanceGrade": "7급",
+  "guaranteeFeeRate": 0.015,
+  "residualByTerm": {
+   "36": 0.58,
+   "48": 0.51,
+   "60": 0.45
+  }
+ },
+ "BMW X6 M60i xDrive": {
+  "brand": "BMW",
+  "model": "X6 M60i xDrive",
+  "vehiclePrice": 161500000,
+  "engineCc": 4395,
+  "fuel": "M",
+  "residualGroup": "X",
+  "maintenanceGrade": "7급",
+  "guaranteeFeeRate": 0.015,
+  "residualByTerm": {
+   "36": 0.6,
+   "48": 0.53,
+   "60": 0.47
+  }
+ },
+ "BMW X7 xDrive40d DPE (6인승)": {
+  "brand": "BMW",
+  "model": "X7 xDrive40d DPE (6인승)",
+  "vehiclePrice": 150200000,
+  "engineCc": 2993,
+  "fuel": "W",
+  "residualGroup": "W",
+  "maintenanceGrade": "7급",
+  "guaranteeFeeRate": 0.015,
+  "residualByTerm": {
+   "36": 0.66,
+   "48": 0.59,
+   "60": 0.53
+  }
+ },
+ "BMW X7 xDrive40d DPE (7인승)": {
+  "brand": "BMW",
+  "model": "X7 xDrive40d DPE (7인승)",
+  "vehiclePrice": 148200000,
+  "engineCc": 2993,
+  "fuel": "W",
+  "residualGroup": "W",
+  "maintenanceGrade": "7급",
+  "guaranteeFeeRate": 0.015,
+  "residualByTerm": {
+   "36": 0.66,
+   "48": 0.59,
+   "60": 0.53
+  }
+ },
+ "BMW X7 xDrive40d M Sport (6인승)": {
+  "brand": "BMW",
+  "model": "X7 xDrive40d M Sport (6인승)",
+  "vehiclePrice": 152700000,
+  "engineCc": 2993,
+  "fuel": "W",
+  "residualGroup": "W",
+  "maintenanceGrade": "7급",
+  "guaranteeFeeRate": 0.015,
+  "residualByTerm": {
+   "36": 0.66,
+   "48": 0.59,
+   "60": 0.53
+  }
+ },
+ "BMW X7 xDrive40d M Sport (7인승)": {
+  "brand": "BMW",
+  "model": "X7 xDrive40d M Sport (7인승)",
+  "vehiclePrice": 150700000,
+  "engineCc": 2993,
+  "fuel": "W",
+  "residualGroup": "W",
+  "maintenanceGrade": "7급",
+  "guaranteeFeeRate": 0.015,
+  "residualByTerm": {
+   "36": 0.66,
+   "48": 0.59,
+   "60": 0.53
+  }
+ },
+ "BMW X7 xDrive40i DPE (6인승)": {
+  "brand": "BMW",
+  "model": "X7 xDrive40i DPE (6인승)",
+  "vehiclePrice": 149200000,
+  "engineCc": 2998,
+  "fuel": "M",
+  "residualGroup": "U",
+  "maintenanceGrade": "7급",
+  "guaranteeFeeRate": 0.015,
+  "residualByTerm": {
+   "36": 0.66,
+   "48": 0.59,
+   "60": 0.53
+  }
+ },
+ "BMW X7 xDrive40i DPE (7인승)": {
+  "brand": "BMW",
+  "model": "X7 xDrive40i DPE (7인승)",
+  "vehiclePrice": 147200000,
+  "engineCc": 2998,
+  "fuel": "M",
+  "residualGroup": "U",
+  "maintenanceGrade": "7급",
+  "guaranteeFeeRate": 0.015,
+  "residualByTerm": {
+   "36": 0.66,
+   "48": 0.59,
+   "60": 0.53
+  }
+ },
+ "BMW X7 40i M Sport xDrive (6인승)": {
+  "brand": "BMW",
+  "model": "X7 40i M Sport xDrive (6인승)",
+  "vehiclePrice": 151700000,
+  "engineCc": 2998,
+  "fuel": "M",
+  "residualGroup": "U",
+  "maintenanceGrade": "7급",
+  "guaranteeFeeRate": 0.015,
+  "residualByTerm": {
+   "36": 0.66,
+   "48": 0.59,
+   "60": 0.53
+  }
+ },
+ "BMW X7 40i M Sport xDrive (7인승)": {
+  "brand": "BMW",
+  "model": "X7 40i M Sport xDrive (7인승)",
+  "vehiclePrice": 149700000,
+  "engineCc": 2998,
+  "fuel": "M",
+  "residualGroup": "U",
+  "maintenanceGrade": "7급",
+  "guaranteeFeeRate": 0.015,
+  "residualByTerm": {
+   "36": 0.66,
+   "48": 0.59,
+   "60": 0.53
+  }
+ },
+ "BMW X7 M60i xDrive M Sport Pro(6인승)": {
+  "brand": "BMW",
+  "model": "X7 M60i xDrive M Sport Pro(6인승)",
+  "vehiclePrice": 180800000,
+  "engineCc": 4395,
+  "fuel": "M",
+  "residualGroup": "Z",
+  "maintenanceGrade": "7급",
+  "guaranteeFeeRate": 0.015,
+  "residualByTerm": {
+   "36": 0.6,
+   "48": 0.53,
+   "60": 0.47
+  }
+ },
+ "BMW X7 M60i xDrive M Sport Pro(7인승)": {
+  "brand": "BMW",
+  "model": "X7 M60i xDrive M Sport Pro(7인승)",
+  "vehiclePrice": 185900000,
+  "engineCc": 4395,
+  "fuel": "V",
+  "residualGroup": "Z",
+  "maintenanceGrade": "7급",
+  "guaranteeFeeRate": 0.015,
+  "residualByTerm": {
+   "36": 0.6,
+   "48": 0.53,
+   "60": 0.47
+  }
+ },
+ "BMW XM Label": {
+  "brand": "BMW",
+  "model": "XM Label",
+  "vehiclePrice": 222200000,
+  "engineCc": 4395,
+  "fuel": "V",
+  "residualGroup": "EE",
+  "maintenanceGrade": "7급",
+  "guaranteeFeeRate": 0.015,
+  "residualByTerm": {
+   "36": 0.54,
+   "48": 0.47,
+   "60": 0.41
+  }
+ },
+ "BMW Z4 sDrive20i M Sport": {
+  "brand": "BMW",
+  "model": "Z4 sDrive20i M Sport",
+  "vehiclePrice": 74500000,
+  "engineCc": 1998,
+  "fuel": "M",
+  "residualGroup": "취급불가",
+  "maintenanceGrade": "3급",
+  "guaranteeFeeRate": 0.015,
+  "residualByTerm": {
+   "36": 0.0,
+   "48": 0.0,
+   "60": 0.0
+  }
+ },
+ "BMW Z4 M40i": {
+  "brand": "BMW",
+  "model": "Z4 M40i",
+  "vehiclePrice": 98800000,
+  "engineCc": 2998,
+  "fuel": "M",
+  "residualGroup": "취급불가",
+  "maintenanceGrade": "4급",
+  "guaranteeFeeRate": 0.015,
+  "residualByTerm": {
+   "36": 0.0,
+   "48": 0.0,
+   "60": 0.0
+  }
+ },
+ "렉서스 ES 300h": {
+  "brand": "렉서스",
+  "model": "ES 300h",
+  "vehiclePrice": 68600000,
+  "engineCc": 2487,
+  "fuel": "T",
+  "residualGroup": "W",
+  "maintenanceGrade": "4급",
+  "guaranteeFeeRate": 0.015,
+  "residualByTerm": {
+   "36": 0.62,
+   "48": 0.55,
+   "60": 0.49
+  }
+ },
+ "렉서스 LC 500 sport+ Convertible": {
+  "brand": "렉서스",
+  "model": "LC 500 sport+ Convertible",
+  "vehiclePrice": 178000000,
+  "engineCc": 4969,
+  "fuel": "M",
+  "residualGroup": "취급불가",
+  "maintenanceGrade": "6급",
+  "guaranteeFeeRate": 0.015,
+  "residualByTerm": {
+   "36": 0.0,
+   "48": 0.0,
+   "60": 0.0
+  }
+ },
+ "렉서스 LC 500": {
+  "brand": "렉서스",
+  "model": "LC 500",
+  "vehiclePrice": 169500000,
+  "engineCc": 4969,
+  "fuel": "M",
+  "residualGroup": "II",
+  "maintenanceGrade": "6급",
+  "guaranteeFeeRate": 0.015,
+  "residualByTerm": {
+   "36": 0.47,
+   "48": 0.4,
+   "60": 0.34
+  }
+ },
+ "렉서스 LC 500h": {
+  "brand": "렉서스",
+  "model": "LC 500h",
+  "vehiclePrice": 178600000,
+  "engineCc": 3456,
+  "fuel": "V",
+  "residualGroup": "II",
+  "maintenanceGrade": "5급",
+  "guaranteeFeeRate": 0.015,
+  "residualByTerm": {
+   "36": 0.47,
+   "48": 0.4,
+   "60": 0.34
+  }
+ },
+ "렉서스 LS 500": {
+  "brand": "렉서스",
+  "model": "LS 500",
+  "vehiclePrice": 137300000,
+  "engineCc": 3445,
+  "fuel": "M",
+  "residualGroup": "GG",
+  "maintenanceGrade": "5급",
+  "guaranteeFeeRate": 0.015,
+  "residualByTerm": {
+   "36": 0.47,
+   "48": 0.4,
+   "60": 0.34
+  }
+ },
+ "렉서스 LS 500h": {
+  "brand": "렉서스",
+  "model": "LS 500h",
+  "vehiclePrice": 147500000,
+  "engineCc": 3456,
+  "fuel": "V",
+  "residualGroup": "GG",
+  "maintenanceGrade": "5급",
+  "guaranteeFeeRate": 0.015,
+  "residualByTerm": {
+   "36": 0.47,
+   "48": 0.4,
+   "60": 0.34
+  }
+ },
+ "렉서스 LM 500h Executive (6인승)": {
+  "brand": "렉서스",
+  "model": "LM 500h Executive (6인승)",
+  "vehiclePrice": 148000000,
+  "engineCc": 2398,
+  "fuel": "V",
+  "residualGroup": "EE",
+  "maintenanceGrade": "7급",
+  "guaranteeFeeRate": 0.015,
+  "residualByTerm": {
+   "36": 0.47,
+   "48": 0.4,
+   "60": 0.34
+  }
+ },
+ "렉서스 LM 500h Royal (4인승)": {
+  "brand": "렉서스",
+  "model": "LM 500h Royal (4인승)",
+  "vehiclePrice": 196000000,
+  "engineCc": 2398,
+  "fuel": "V",
+  "residualGroup": "EE",
+  "maintenanceGrade": "7급",
+  "guaranteeFeeRate": 0.015,
+  "residualByTerm": {
+   "36": 0.47,
+   "48": 0.4,
+   "60": 0.34
+  }
+ },
+ "렉서스 NX 350h": {
+  "brand": "렉서스",
+  "model": "NX 350h",
+  "vehiclePrice": 74400000,
+  "engineCc": 2487,
+  "fuel": "T",
+  "residualGroup": "Z",
+  "maintenanceGrade": "7급",
+  "guaranteeFeeRate": 0.015,
+  "residualByTerm": {
+   "36": 0.59,
+   "48": 0.52,
+   "60": 0.46
+  }
+ },
+ "렉서스 NX 450h": {
+  "brand": "렉서스",
+  "model": "NX 450h",
+  "vehiclePrice": 78000000,
+  "engineCc": 2487,
+  "fuel": "T",
+  "residualGroup": "Z",
+  "maintenanceGrade": "7급",
+  "guaranteeFeeRate": 0.015,
+  "residualByTerm": {
+   "36": 0.59,
+   "48": 0.52,
+   "60": 0.46
+  }
+ },
+ "렉서스 RX 350h": {
+  "brand": "렉서스",
+  "model": "RX 350h",
+  "vehiclePrice": 98700000,
+  "engineCc": 2487,
+  "fuel": "V",
+  "residualGroup": "Y",
+  "maintenanceGrade": "7급",
+  "guaranteeFeeRate": 0.015,
+  "residualByTerm": {
+   "36": 0.56,
+   "48": 0.49,
+   "60": 0.43
+  }
+ },
+ "렉서스 RX 450h": {
+  "brand": "렉서스",
+  "model": "RX 450h",
+  "vehiclePrice": 111360000,
+  "engineCc": 2487,
+  "fuel": "T",
+  "residualGroup": "Y",
+  "maintenanceGrade": "7급",
+  "guaranteeFeeRate": 0.015,
+  "residualByTerm": {
+   "36": 0.56,
+   "48": 0.49,
+   "60": 0.43
+  }
+ },
+ "렉서스 RX 500h": {
+  "brand": "렉서스",
+  "model": "RX 500h",
+  "vehiclePrice": 117030000,
+  "engineCc": 2393,
+  "fuel": "V",
+  "residualGroup": "Y",
+  "maintenanceGrade": "7급",
+  "guaranteeFeeRate": 0.015,
+  "residualByTerm": {
+   "36": 0.56,
+   "48": 0.49,
+   "60": 0.43
+  }
+ },
+ "렉서스 UX 250h": {
+  "brand": "렉서스",
+  "model": "UX 250h",
+  "vehiclePrice": 46400000,
+  "engineCc": 1987,
+  "fuel": "T",
+  "residualGroup": "Y",
+  "maintenanceGrade": "7급",
+  "guaranteeFeeRate": 0.015,
+  "residualByTerm": {
+   "36": 0.55,
+   "48": 0.48,
+   "60": 0.42
+  }
+ },
+ "렉서스 UX 300h": {
+  "brand": "렉서스",
+  "model": "UX 300h",
+  "vehiclePrice": 53830000,
+  "engineCc": 1987,
+  "fuel": "T",
+  "residualGroup": "Y",
+  "maintenanceGrade": "7급",
+  "guaranteeFeeRate": 0.015,
+  "residualByTerm": {
+   "36": 0.55,
+   "48": 0.48,
+   "60": 0.42
+  }
+ },
+ "렉서스 LX 700h Overtrail (5인승)": {
+  "brand": "렉서스",
+  "model": "LX 700h Overtrail (5인승)",
+  "vehiclePrice": 165870000,
+  "engineCc": 3445,
+  "fuel": "V",
+  "residualGroup": "W",
+  "maintenanceGrade": "7급",
+  "guaranteeFeeRate": 0.015,
+  "residualByTerm": {
+   "36": 0.57,
+   "48": 0.5,
+   "60": 0.44
+  }
+ },
+ "렉서스 LX 700h Luxury (7인승)": {
+  "brand": "렉서스",
+  "model": "LX 700h Luxury (7인승)",
+  "vehiclePrice": 167970000,
+  "engineCc": 3445,
+  "fuel": "V",
+  "residualGroup": "W",
+  "maintenanceGrade": "7급",
+  "guaranteeFeeRate": 0.015,
+  "residualByTerm": {
+   "36": 0.57,
+   "48": 0.5,
+   "60": 0.44
+  }
+ },
+ "렉서스 LX 700h VIP (4인승)": {
+  "brand": "렉서스",
+  "model": "LX 700h VIP (4인승)",
+  "vehiclePrice": 194570000,
+  "engineCc": 3445,
+  "fuel": "V",
+  "residualGroup": "W",
+  "maintenanceGrade": "7급",
+  "guaranteeFeeRate": 0.015,
+  "residualByTerm": {
+   "36": 0.57,
+   "48": 0.5,
+   "60": 0.44
+  }
+ },
+ "푸조/시트로엥/DS 3008 Allure": {
+  "brand": "푸조/시트로엥/DS",
+  "model": "3008 Allure",
+  "vehiclePrice": 44900000,
+  "engineCc": 1199,
+  "fuel": "V",
+  "residualGroup": "GG",
+  "maintenanceGrade": "7급",
+  "guaranteeFeeRate": 0.015,
+  "residualByTerm": {
+   "36": 0.5,
+   "48": 0.43,
+   "60": 0.37
+  }
+ },
+ "푸조/시트로엥/DS 3008 GT": {
+  "brand": "푸조/시트로엥/DS",
+  "model": "3008 GT",
+  "vehiclePrice": 49900000,
+  "engineCc": 1199,
+  "fuel": "V",
+  "residualGroup": "GG",
+  "maintenanceGrade": "7급",
+  "guaranteeFeeRate": 0.015,
+  "residualByTerm": {
+   "36": 0.5,
+   "48": 0.43,
+   "60": 0.37
+  }
+ },
+ "푸조/시트로엥/DS 5008 Allure": {
+  "brand": "푸조/시트로엥/DS",
+  "model": "5008 Allure",
+  "vehiclePrice": 48900000,
+  "engineCc": 1199,
+  "fuel": "V",
+  "residualGroup": "II",
+  "maintenanceGrade": "7급",
+  "guaranteeFeeRate": 0.015,
+  "residualByTerm": {
+   "36": 0.5,
+   "48": 0.43,
+   "60": 0.37
+  }
+ },
+ "푸조/시트로엥/DS 5008 GT": {
+  "brand": "푸조/시트로엥/DS",
+  "model": "5008 GT",
+  "vehiclePrice": 55900000,
+  "engineCc": 1199,
+  "fuel": "V",
+  "residualGroup": "II",
+  "maintenanceGrade": "7급",
+  "guaranteeFeeRate": 0.015,
+  "residualByTerm": {
+   "36": 0.5,
+   "48": 0.43,
+   "60": 0.37
+  }
+ },
+ "푸조/시트로엥/DS 308 Allure 가솔린 1.2 하이브리드": {
+  "brand": "푸조/시트로엥/DS",
+  "model": "308 Allure 가솔린 1.2 하이브리드",
+  "vehiclePrice": 39900000,
+  "engineCc": 1199,
+  "fuel": "V",
+  "residualGroup": "GG",
+  "maintenanceGrade": "1급",
+  "guaranteeFeeRate": 0.015,
+  "residualByTerm": {
+   "36": 0.5,
+   "48": 0.43,
+   "60": 0.37
+  }
+ },
+ "푸조/시트로엥/DS 308 GT 가솔린 1.2 하이브리드": {
+  "brand": "푸조/시트로엥/DS",
+  "model": "308 GT 가솔린 1.2 하이브리드",
+  "vehiclePrice": 46500000,
+  "engineCc": 1199,
+  "fuel": "V",
+  "residualGroup": "GG",
+  "maintenanceGrade": "1급",
+  "guaranteeFeeRate": 0.015,
+  "residualByTerm": {
+   "36": 0.5,
+   "48": 0.43,
+   "60": 0.37
+  }
+ },
+ "푸조/시트로엥/DS 408 Allure": {
+  "brand": "푸조/시트로엥/DS",
+  "model": "408 Allure",
+  "vehiclePrice": 42900000,
+  "engineCc": 1199,
+  "fuel": "M",
+  "residualGroup": "GG",
+  "maintenanceGrade": "7급",
+  "guaranteeFeeRate": 0.015,
+  "residualByTerm": {
+   "36": 0.5,
+   "48": 0.43,
+   "60": 0.37
+  }
+ },
+ "푸조/시트로엥/DS 408 GT": {
+  "brand": "푸조/시트로엥/DS",
+  "model": "408 GT",
+  "vehiclePrice": 46900000,
+  "engineCc": 1199,
+  "fuel": "M",
+  "residualGroup": "GG",
+  "maintenanceGrade": "7급",
+  "guaranteeFeeRate": 0.015,
+  "residualByTerm": {
+   "36": 0.5,
+   "48": 0.43,
+   "60": 0.37
+  }
+ },
+ "미니 Hatch Cooper Classic 3 Door": {
+  "brand": "미니",
+  "model": "Hatch Cooper Classic 3 Door",
+  "vehiclePrice": 36600000,
+  "engineCc": 1499,
+  "fuel": "M",
+  "residualGroup": "CC",
+  "maintenanceGrade": "2급",
+  "guaranteeFeeRate": 0.015,
+  "residualByTerm": {
+   "36": 0.54,
+   "48": 0.47,
+   "60": 0.41
+  }
+ },
+ "미니 Hatch Cooper Classic Plus 3 Door": {
+  "brand": "미니",
+  "model": "Hatch Cooper Classic Plus 3 Door",
+  "vehiclePrice": 40400000,
+  "engineCc": 1499,
+  "fuel": "M",
+  "residualGroup": "CC",
+  "maintenanceGrade": "2급",
+  "guaranteeFeeRate": 0.015,
+  "residualByTerm": {
+   "36": 0.54,
+   "48": 0.47,
+   "60": 0.41
+  }
+ },
+ "미니 Hatch Cooper S Classic 3 Door": {
+  "brand": "미니",
+  "model": "Hatch Cooper S Classic 3 Door",
+  "vehiclePrice": 46700000,
+  "engineCc": 1998,
+  "fuel": "M",
+  "residualGroup": "CC",
+  "maintenanceGrade": "3급",
+  "guaranteeFeeRate": 0.015,
+  "residualByTerm": {
+   "36": 0.54,
+   "48": 0.47,
+   "60": 0.41
+  }
+ },
+ "미니 Hatch JCW 3 Door": {
+  "brand": "미니",
+  "model": "Hatch JCW 3 Door",
+  "vehiclePrice": 55000000,
+  "engineCc": 1998,
+  "fuel": "M",
+  "residualGroup": "CC",
+  "maintenanceGrade": "3급",
+  "guaranteeFeeRate": 0.015,
+  "residualByTerm": {
+   "36": 0.54,
+   "48": 0.47,
+   "60": 0.41
+  }
+ },
+ "미니 Hatch Cooper Classic 5 Door": {
+  "brand": "미니",
+  "model": "Hatch Cooper Classic 5 Door",
+  "vehiclePrice": 42000000,
+  "engineCc": 1499,
+  "fuel": "M",
+  "residualGroup": "CC",
+  "maintenanceGrade": "2급",
+  "guaranteeFeeRate": 0.015,
+  "residualByTerm": {
+   "36": 0.54,
+   "48": 0.47,
+   "60": 0.41
+  }
+ },
+ "미니 Hatch Cooper S Classic 5 Door": {
+  "brand": "미니",
+  "model": "Hatch Cooper S Classic 5 Door",
+  "vehiclePrice": 48600000,
+  "engineCc": 1998,
+  "fuel": "M",
+  "residualGroup": "CC",
+  "maintenanceGrade": "3급",
+  "guaranteeFeeRate": 0.015,
+  "residualByTerm": {
+   "36": 0.54,
+   "48": 0.47,
+   "60": 0.41
+  }
+ },
+ "미니 Hatch Cooper Classic Plus T1 3 Door": {
+  "brand": "미니",
+  "model": "Hatch Cooper Classic Plus T1 3 Door",
+  "vehiclePrice": 40200000,
+  "engineCc": 1499,
+  "fuel": "M",
+  "residualGroup": "CC",
+  "maintenanceGrade": "2급",
+  "guaranteeFeeRate": 0.015,
+  "residualByTerm": {
+   "36": 0.54,
+   "48": 0.47,
+   "60": 0.41
+  }
+ },
+ "미니 Hatch Cooper S Classic T1 3 Door": {
+  "brand": "미니",
+  "model": "Hatch Cooper S Classic T1 3 Door",
+  "vehiclePrice": 45400000,
+  "engineCc": 1998,
+  "fuel": "M",
+  "residualGroup": "CC",
+  "maintenanceGrade": "3급",
+  "guaranteeFeeRate": 0.015,
+  "residualByTerm": {
+   "36": 0.54,
+   "48": 0.47,
+   "60": 0.41
+  }
+ },
+ "미니 Clubman Cooper Classic": {
+  "brand": "미니",
+  "model": "Clubman Cooper Classic",
+  "vehiclePrice": 43700000,
+  "engineCc": 1499,
+  "fuel": "M",
+  "residualGroup": "EE",
+  "maintenanceGrade": "2급",
+  "guaranteeFeeRate": 0.015,
+  "residualByTerm": {
+   "36": 0.54,
+   "48": 0.47,
+   "60": 0.41
+  }
+ },
+ "미니 Clubman Cooper S Classic": {
+  "brand": "미니",
+  "model": "Clubman Cooper S Classic",
+  "vehiclePrice": 52300000,
+  "engineCc": 1998,
+  "fuel": "M",
+  "residualGroup": "EE",
+  "maintenanceGrade": "3급",
+  "guaranteeFeeRate": 0.015,
+  "residualByTerm": {
+   "36": 0.54,
+   "48": 0.47,
+   "60": 0.41
+  }
+ },
+ "미니 Clubman JCW ALL4": {
+  "brand": "미니",
+  "model": "Clubman JCW ALL4",
+  "vehiclePrice": 63200000,
+  "engineCc": 1998,
+  "fuel": "M",
+  "residualGroup": "EE",
+  "maintenanceGrade": "3급",
+  "guaranteeFeeRate": 0.015,
+  "residualByTerm": {
+   "36": 0.54,
+   "48": 0.47,
+   "60": 0.41
+  }
+ },
+ "미니 Clubman Cooper S Untold Edition": {
+  "brand": "미니",
+  "model": "Clubman Cooper S Untold Edition",
+  "vehiclePrice": 53200000,
+  "engineCc": 1998,
+  "fuel": "M",
+  "residualGroup": "EE",
+  "maintenanceGrade": "3급",
+  "guaranteeFeeRate": 0.015,
+  "residualByTerm": {
+   "36": 0.54,
+   "48": 0.47,
+   "60": 0.41
+  }
+ },
+ "미니 Clubman JCW ALL4 Untold Edition": {
+  "brand": "미니",
+  "model": "Clubman JCW ALL4 Untold Edition",
+  "vehiclePrice": 63400000,
+  "engineCc": 1998,
+  "fuel": "M",
+  "residualGroup": "EE",
+  "maintenanceGrade": "3급",
+  "guaranteeFeeRate": 0.015,
+  "residualByTerm": {
+   "36": 0.54,
+   "48": 0.47,
+   "60": 0.41
+  }
+ },
+ "미니 Countryman S ALL4 Favoured": {
+  "brand": "미니",
+  "model": "Countryman S ALL4 Favoured",
+  "vehiclePrice": 57000000,
+  "engineCc": 1998,
+  "fuel": "M",
+  "residualGroup": "CC",
+  "maintenanceGrade": "7급",
+  "guaranteeFeeRate": 0.015,
+  "residualByTerm": {
+   "36": 0.54,
+   "48": 0.47,
+   "60": 0.41
+  }
+ },
+ "미니 Countryman Cooper S ALL4 Classic": {
+  "brand": "미니",
+  "model": "Countryman Cooper S ALL4 Classic",
+  "vehiclePrice": 56500000,
+  "engineCc": 1998,
+  "fuel": "M",
+  "residualGroup": "CC",
+  "maintenanceGrade": "7급",
+  "guaranteeFeeRate": 0.015,
+  "residualByTerm": {
+   "36": 0.54,
+   "48": 0.47,
+   "60": 0.41
+  }
+ },
+ "미니 Countryman JCW ALL4": {
+  "brand": "미니",
+  "model": "Countryman JCW ALL4",
+  "vehiclePrice": 65500000,
+  "engineCc": 1998,
+  "fuel": "M",
+  "residualGroup": "CC",
+  "maintenanceGrade": "7급",
+  "guaranteeFeeRate": 0.015,
+  "residualByTerm": {
+   "36": 0.54,
+   "48": 0.47,
+   "60": 0.41
+  }
+ },
+ "미니 Countryman Cooper Classic": {
+  "brand": "미니",
+  "model": "Countryman Cooper Classic",
+  "vehiclePrice": 48900000,
+  "engineCc": 1499,
+  "fuel": "M",
+  "residualGroup": "CC",
+  "maintenanceGrade": "7급",
+  "guaranteeFeeRate": 0.015,
+  "residualByTerm": {
+   "36": 0.54,
+   "48": 0.47,
+   "60": 0.41
+  }
+ },
+ "미니 Countryman Cooper Classic T1": {
+  "brand": "미니",
+  "model": "Countryman Cooper Classic T1",
+  "vehiclePrice": 48400000,
+  "engineCc": 1499,
+  "fuel": "M",
+  "residualGroup": "CC",
+  "maintenanceGrade": "7급",
+  "guaranteeFeeRate": 0.015,
+  "residualByTerm": {
+   "36": 0.54,
+   "48": 0.47,
+   "60": 0.41
+  }
+ },
+ "미니 Countryman Cooper S ALL4 Classic T1": {
+  "brand": "미니",
+  "model": "Countryman Cooper S ALL4 Classic T1",
+  "vehiclePrice": 57400000,
+  "engineCc": 1998,
+  "fuel": "M",
+  "residualGroup": "CC",
+  "maintenanceGrade": "7급",
+  "guaranteeFeeRate": 0.015,
+  "residualByTerm": {
+   "36": 0.54,
+   "48": 0.47,
+   "60": 0.41
+  }
+ },
+ "미니 Countryman Cooper Classic Highlands Edition": {
+  "brand": "미니",
+  "model": "Countryman Cooper Classic Highlands Edition",
+  "vehiclePrice": 49500000,
+  "engineCc": 1499,
+  "fuel": "M",
+  "residualGroup": "CC",
+  "maintenanceGrade": "7급",
+  "guaranteeFeeRate": 0.015,
+  "residualByTerm": {
+   "36": 0.54,
+   "48": 0.47,
+   "60": 0.41
+  }
+ },
+ "미니 Countryman Cooper S ALL4 Classic Highlands Edition": {
+  "brand": "미니",
+  "model": "Countryman Cooper S ALL4 Classic Highlands Edition",
+  "vehiclePrice": 57300000,
+  "engineCc": 1998,
+  "fuel": "M",
+  "residualGroup": "CC",
+  "maintenanceGrade": "7급",
+  "guaranteeFeeRate": 0.015,
+  "residualByTerm": {
+   "36": 0.54,
+   "48": 0.47,
+   "60": 0.41
+  }
+ },
+ "미니 Convertible Cooper Classic": {
+  "brand": "미니",
+  "model": "Convertible Cooper Classic",
+  "vehiclePrice": 47000000,
+  "engineCc": 1499,
+  "fuel": "M",
+  "residualGroup": "EE",
+  "maintenanceGrade": "2급",
+  "guaranteeFeeRate": 0.015,
+  "residualByTerm": {
+   "36": 0.54,
+   "48": 0.47,
+   "60": 0.41
+  }
+ },
+ "미니 Convertible Cooper S Favoured": {
+  "brand": "미니",
+  "model": "Convertible Cooper S Favoured",
+  "vehiclePrice": 52500000,
+  "engineCc": 1998,
+  "fuel": "M",
+  "residualGroup": "EE",
+  "maintenanceGrade": "1급",
+  "guaranteeFeeRate": 0.015,
+  "residualByTerm": {
+   "36": 0.54,
+   "48": 0.47,
+   "60": 0.41
+  }
+ },
+ "미니 Convertible JCW": {
+  "brand": "미니",
+  "model": "Convertible JCW",
+  "vehiclePrice": 59300000,
+  "engineCc": 1998,
+  "fuel": "M",
+  "residualGroup": "EE",
+  "maintenanceGrade": "3급",
+  "guaranteeFeeRate": 0.015,
+  "residualByTerm": {
+   "36": 0.54,
+   "48": 0.47,
+   "60": 0.41
+  }
+ },
+ "미니 Cooper S Favoured 3 Door": {
+  "brand": "미니",
+  "model": "Cooper S Favoured 3 Door",
+  "vehiclePrice": 48100000,
+  "engineCc": 1998,
+  "fuel": "M",
+  "residualGroup": "CC",
+  "maintenanceGrade": "3급",
+  "guaranteeFeeRate": 0.015,
+  "residualByTerm": {
+   "36": 0.54,
+   "48": 0.47,
+   "60": 0.41
+  }
+ },
+ "미니 Cooper S Favoured 5 Door": {
+  "brand": "미니",
+  "model": "Cooper S Favoured 5 Door",
+  "vehiclePrice": 49700000,
+  "engineCc": 1998,
+  "fuel": "M",
+  "residualGroup": "CC",
+  "maintenanceGrade": "3급",
+  "guaranteeFeeRate": 0.015,
+  "residualByTerm": {
+   "36": 0.54,
+   "48": 0.47,
+   "60": 0.41
+  }
+ },
+ "미니 Cooper C Essential 5 Door": {
+  "brand": "미니",
+  "model": "Cooper C Essential 5 Door",
+  "vehiclePrice": 38200000,
+  "engineCc": 1998,
+  "fuel": "M",
+  "residualGroup": "CC",
+  "maintenanceGrade": "3급",
+  "guaranteeFeeRate": 0.015,
+  "residualByTerm": {
+   "36": 0.54,
+   "48": 0.47,
+   "60": 0.41
+  }
+ },
+ "미니 Cooper C Classic 3 Door": {
+  "brand": "미니",
+  "model": "Cooper C Classic 3 Door",
+  "vehiclePrice": 42300000,
+  "engineCc": 1998,
+  "fuel": "M",
+  "residualGroup": "CC",
+  "maintenanceGrade": "3급",
+  "guaranteeFeeRate": 0.015,
+  "residualByTerm": {
+   "36": 0.54,
+   "48": 0.47,
+   "60": 0.41
+  }
+ },
+ "미니 Cooper C Essential 3 Door": {
+  "brand": "미니",
+  "model": "Cooper C Essential 3 Door",
+  "vehiclePrice": 37400000,
+  "engineCc": 1988,
+  "fuel": "M",
+  "residualGroup": "CC",
+  "maintenanceGrade": "3급",
+  "guaranteeFeeRate": 0.015,
+  "residualByTerm": {
+   "36": 0.54,
+   "48": 0.47,
+   "60": 0.41
+  }
+ },
+ "미니 Cooper C Classic 5 Door": {
+  "brand": "미니",
+  "model": "Cooper C Classic 5 Door",
+  "vehiclePrice": 43300000,
+  "engineCc": 1998,
+  "fuel": "M",
+  "residualGroup": "CC",
+  "maintenanceGrade": "3급",
+  "guaranteeFeeRate": 0.015,
+  "residualByTerm": {
+   "36": 0.54,
+   "48": 0.47,
+   "60": 0.41
+  }
+ },
+ "아우디 Q5 40 TFSI Quattro Advanced": {
+  "brand": "아우디",
+  "model": "Q5 40 TFSI Quattro Advanced",
+  "vehiclePrice": 66730000,
+  "engineCc": 1984,
+  "fuel": "M",
+  "residualGroup": "CC",
+  "maintenanceGrade": "7급",
+  "guaranteeFeeRate": 0.015,
+  "residualByTerm": {
+   "36": 0.58,
+   "48": 0.51,
+   "60": 0.45
+  }
+ },
+ "아우디 Q5 40 TFSI Quattro S-Line": {
+  "brand": "아우디",
+  "model": "Q5 40 TFSI Quattro S-Line",
+  "vehiclePrice": 72620000,
+  "engineCc": 1984,
+  "fuel": "M",
+  "residualGroup": "CC",
+  "maintenanceGrade": "7급",
+  "guaranteeFeeRate": 0.015,
+  "residualByTerm": {
+   "36": 0.58,
+   "48": 0.51,
+   "60": 0.45
+  }
+ },
+ "아우디 Q5 45 TFSI Quattro S-Line": {
+  "brand": "아우디",
+  "model": "Q5 45 TFSI Quattro S-Line",
+  "vehiclePrice": 81460000,
+  "engineCc": 1984,
+  "fuel": "M",
+  "residualGroup": "CC",
+  "maintenanceGrade": "7급",
+  "guaranteeFeeRate": 0.015,
+  "residualByTerm": {
+   "36": 0.58,
+   "48": 0.51,
+   "60": 0.45
+  }
+ },
+ "아우디 Q5 45 TFSI Quattro S-Line Black Edition": {
+  "brand": "아우디",
+  "model": "Q5 45 TFSI Quattro S-Line Black Edition",
+  "vehiclePrice": 84400000,
+  "engineCc": 1984,
+  "fuel": "M",
+  "residualGroup": "CC",
+  "maintenanceGrade": "7급",
+  "guaranteeFeeRate": 0.015,
+  "residualByTerm": {
+   "36": 0.58,
+   "48": 0.51,
+   "60": 0.45
+  }
+ },
+ "아우디 Q5 40 TDI Quattro Advanced": {
+  "brand": "아우디",
+  "model": "Q5 40 TDI Quattro Advanced",
+  "vehiclePrice": 69680000,
+  "engineCc": 1968,
+  "fuel": "W",
+  "residualGroup": "CC",
+  "maintenanceGrade": "7급",
+  "guaranteeFeeRate": 0.015,
+  "residualByTerm": {
+   "36": 0.57,
+   "48": 0.5,
+   "60": 0.44
+  }
+ },
+ "아우디 S8 L TFSI": {
+  "brand": "아우디",
+  "model": "S8 L TFSI",
+  "vehiclePrice": 216300000,
+  "engineCc": 3996,
+  "fuel": "V",
+  "residualGroup": "HH",
+  "maintenanceGrade": "5급",
+  "guaranteeFeeRate": 0.015,
+  "residualByTerm": {
+   "36": 0.0,
+   "48": 0.0,
+   "60": 0.0
+  }
+ },
+ "폭스바겐 Golf 2.0 TDI Premium": {
+  "brand": "폭스바겐",
+  "model": "Golf 2.0 TDI Premium",
+  "vehiclePrice": 39850000,
+  "engineCc": 1968,
+  "fuel": "D",
+  "residualGroup": "AA",
+  "maintenanceGrade": "3급",
+  "guaranteeFeeRate": 0.015,
+  "residualByTerm": {
+   "36": 0.53,
+   "48": 0.46,
+   "60": 0.4
+  }
+ },
+ "폭스바겐 Golf 2.0 TDI Prestige": {
+  "brand": "폭스바겐",
+  "model": "Golf 2.0 TDI Prestige",
+  "vehiclePrice": 41400000,
+  "engineCc": 1968,
+  "fuel": "D",
+  "residualGroup": "AA",
+  "maintenanceGrade": "3급",
+  "guaranteeFeeRate": 0.015,
+  "residualByTerm": {
+   "36": 0.53,
+   "48": 0.46,
+   "60": 0.4
+  }
+ },
+ "폭스바겐 Golf  2.0 GTI": {
+  "brand": "폭스바겐",
+  "model": "Golf  2.0 GTI",
+  "vehiclePrice": 49700000,
+  "engineCc": 1984,
+  "fuel": "M",
+  "residualGroup": "AA",
+  "maintenanceGrade": "3급",
+  "guaranteeFeeRate": 0.015,
+  "residualByTerm": {
+   "36": 0.53,
+   "48": 0.46,
+   "60": 0.4
+  }
+ },
+ "폭스바겐 Tiguan TSI Prestige Allspace": {
+  "brand": "폭스바겐",
+  "model": "Tiguan TSI Prestige Allspace",
+  "vehiclePrice": 51900000,
+  "engineCc": 1984,
+  "fuel": "M",
+  "residualGroup": "AA",
+  "maintenanceGrade": "7급",
+  "guaranteeFeeRate": 0.015,
+  "residualByTerm": {
+   "36": 0.55,
+   "48": 0.48,
+   "60": 0.42
+  }
+ },
+ "폭스바겐 Tiguan TDI Premium": {
+  "brand": "폭스바겐",
+  "model": "Tiguan TDI Premium",
+  "vehiclePrice": 43900000,
+  "engineCc": 1968,
+  "fuel": "D",
+  "residualGroup": "AA",
+  "maintenanceGrade": "7급",
+  "guaranteeFeeRate": 0.015,
+  "residualByTerm": {
+   "36": 0.55,
+   "48": 0.48,
+   "60": 0.42
+  }
+ },
+ "폭스바겐 Tiguan TDI Prestige": {
+  "brand": "폭스바겐",
+  "model": "Tiguan TDI Prestige",
+  "vehiclePrice": 47900000,
+  "engineCc": 1968,
+  "fuel": "D",
+  "residualGroup": "AA",
+  "maintenanceGrade": "7급",
+  "guaranteeFeeRate": 0.015,
+  "residualByTerm": {
+   "36": 0.55,
+   "48": 0.48,
+   "60": 0.42
+  }
+ },
+ "폭스바겐 Tiguan TDI Prestige 4Motion": {
+  "brand": "폭스바겐",
+  "model": "Tiguan TDI Prestige 4Motion",
+  "vehiclePrice": 49900000,
+  "engineCc": 1968,
+  "fuel": "D",
+  "residualGroup": "AA",
+  "maintenanceGrade": "7급",
+  "guaranteeFeeRate": 0.015,
+  "residualByTerm": {
+   "36": 0.55,
+   "48": 0.48,
+   "60": 0.42
+  }
+ },
+ "폭스바겐 Tiguan TDI Prestige Allspace": {
+  "brand": "폭스바겐",
+  "model": "Tiguan TDI Prestige Allspace",
+  "vehiclePrice": 51900000,
+  "engineCc": 1968,
+  "fuel": "D",
+  "residualGroup": "AA",
+  "maintenanceGrade": "7급",
+  "guaranteeFeeRate": 0.015,
+  "residualByTerm": {
+   "36": 0.55,
+   "48": 0.48,
+   "60": 0.42
+  }
+ },
+ "폭스바겐 Tiguan TDI Premium Allspace": {
+  "brand": "폭스바겐",
+  "model": "Tiguan TDI Premium Allspace",
+  "vehiclePrice": 48900000,
+  "engineCc": 1968,
+  "fuel": "D",
+  "residualGroup": "AA",
+  "maintenanceGrade": "7급",
+  "guaranteeFeeRate": 0.015,
+  "residualByTerm": {
+   "36": 0.55,
+   "48": 0.48,
+   "60": 0.42
+  }
+ },
+ "폭스바겐 Arteon 2.0 TDI Prestige": {
+  "brand": "폭스바겐",
+  "model": "Arteon 2.0 TDI Prestige",
+  "vehiclePrice": 58800000,
+  "engineCc": 1968,
+  "fuel": "D",
+  "residualGroup": "FF",
+  "maintenanceGrade": "3급",
+  "guaranteeFeeRate": 0.015,
+  "residualByTerm": {
+   "36": 0.49,
+   "48": 0.42,
+   "60": 0.36
+  }
+ },
+ "폭스바겐 Arteon 2.0 TDI Prestige 4Motion": {
+  "brand": "폭스바겐",
+  "model": "Arteon 2.0 TDI Prestige 4Motion",
+  "vehiclePrice": 61900000,
+  "engineCc": 1968,
+  "fuel": "D",
+  "residualGroup": "FF",
+  "maintenanceGrade": "3급",
+  "guaranteeFeeRate": 0.015,
+  "residualByTerm": {
+   "36": 0.49,
+   "48": 0.42,
+   "60": 0.36
+  }
+ },
+ "폭스바겐 Arteon 2.0 TDI R-Line 4Motion": {
+  "brand": "폭스바겐",
+  "model": "Arteon 2.0 TDI R-Line 4Motion",
+  "vehiclePrice": 63700000,
+  "engineCc": 1968,
+  "fuel": "D",
+  "residualGroup": "FF",
+  "maintenanceGrade": "3급",
+  "guaranteeFeeRate": 0.015,
+  "residualByTerm": {
+   "36": 0.49,
+   "48": 0.42,
+   "60": 0.36
+  }
+ },
+ "폭스바겐 The New Jetta 1.5 Premium": {
+  "brand": "폭스바겐",
+  "model": "The New Jetta 1.5 Premium",
+  "vehiclePrice": 32900000,
+  "engineCc": 1498,
+  "fuel": "M",
+  "residualGroup": "DD",
+  "maintenanceGrade": "2급",
+  "guaranteeFeeRate": 0.015,
+  "residualByTerm": {
+   "36": 0.52,
+   "48": 0.45,
+   "60": 0.39
+  }
+ },
+ "폭스바겐 The New Jetta 1.5 Prestige": {
+  "brand": "폭스바겐",
+  "model": "The New Jetta 1.5 Prestige",
+  "vehiclePrice": 36600000,
+  "engineCc": 1498,
+  "fuel": "M",
+  "residualGroup": "DD",
+  "maintenanceGrade": "2급",
+  "guaranteeFeeRate": 0.015,
+  "residualByTerm": {
+   "36": 0.52,
+   "48": 0.45,
+   "60": 0.39
+  }
+ },
+ "폭스바겐 The Touareg 3.0 TDI Premium": {
+  "brand": "폭스바겐",
+  "model": "The Touareg 3.0 TDI Premium",
+  "vehiclePrice": 89900000,
+  "engineCc": 2967,
+  "fuel": "D",
+  "residualGroup": "EE",
+  "maintenanceGrade": "7급",
+  "guaranteeFeeRate": 0.015,
+  "residualByTerm": {
+   "36": 0.52,
+   "48": 0.45,
+   "60": 0.39
+  }
+ },
+ "폭스바겐 The Touareg 3.0 TDI Prestige": {
+  "brand": "폭스바겐",
+  "model": "The Touareg 3.0 TDI Prestige",
+  "vehiclePrice": 99700000,
+  "engineCc": 2967,
+  "fuel": "D",
+  "residualGroup": "EE",
+  "maintenanceGrade": "7급",
+  "guaranteeFeeRate": 0.015,
+  "residualByTerm": {
+   "36": 0.52,
+   "48": 0.45,
+   "60": 0.39
+  }
+ },
+ "폭스바겐 The Touareg 3.0 TDI R-Line": {
+  "brand": "폭스바겐",
+  "model": "The Touareg 3.0 TDI R-Line",
+  "vehiclePrice": 104700000,
+  "engineCc": 2967,
+  "fuel": "D",
+  "residualGroup": "EE",
+  "maintenanceGrade": "7급",
+  "guaranteeFeeRate": 0.015,
+  "residualByTerm": {
+   "36": 0.52,
+   "48": 0.45,
+   "60": 0.39
+  }
+ },
+ "폭스바겐 Atlas 2.0 TSI R-Line (7인승)": {
+  "brand": "폭스바겐",
+  "model": "Atlas 2.0 TSI R-Line (7인승)",
+  "vehiclePrice": 68950000,
+  "engineCc": 1984,
+  "fuel": "M",
+  "residualGroup": "AA",
+  "maintenanceGrade": "7급",
+  "guaranteeFeeRate": 0.015,
+  "residualByTerm": {
+   "36": 0.52,
+   "48": 0.45,
+   "60": 0.39
+  }
+ },
+ "폭스바겐 Atlas 2.0 TSI R-Line (6인승)": {
+  "brand": "폭스바겐",
+  "model": "Atlas 2.0 TSI R-Line (6인승)",
+  "vehiclePrice": 69750000,
+  "engineCc": 1984,
+  "fuel": "M",
+  "residualGroup": "AA",
+  "maintenanceGrade": "7급",
+  "guaranteeFeeRate": 0.015,
+  "residualByTerm": {
+   "36": 0.52,
+   "48": 0.45,
+   "60": 0.39
+  }
+ },
+ "JEEP Renegade Limited FWD 1.3": {
+  "brand": "JEEP",
+  "model": "Renegade Limited FWD 1.3",
+  "vehiclePrice": 45500000,
+  "engineCc": 1332,
+  "fuel": "M",
+  "residualGroup": "HH",
+  "maintenanceGrade": "7급",
+  "guaranteeFeeRate": 0.015,
+  "residualByTerm": {
+   "36": 0.53,
+   "48": 0.46,
+   "60": 0.4
+  }
+ },
+ "JEEP Renegade Bred Edition": {
+  "brand": "JEEP",
+  "model": "Renegade Bred Edition",
+  "vehiclePrice": 48000000,
+  "engineCc": 1332,
+  "fuel": "M",
+  "residualGroup": "HH",
+  "maintenanceGrade": "7급",
+  "guaranteeFeeRate": 0.015,
+  "residualByTerm": {
+   "36": 0.53,
+   "48": 0.46,
+   "60": 0.4
+  }
+ },
+ "JEEP Wrangler Overland 4xe 4 Door": {
+  "brand": "JEEP",
+  "model": "Wrangler Overland 4xe 4 Door",
+  "vehiclePrice": 97800000,
+  "engineCc": 1995,
+  "fuel": "M",
+  "residualGroup": "EE",
+  "maintenanceGrade": "7급",
+  "guaranteeFeeRate": 0.015,
+  "residualByTerm": {
+   "36": 0.55,
+   "48": 0.48,
+   "60": 0.42
+  }
+ },
+ "JEEP Wrangler Overland 4xe Power Top 4 Door": {
+  "brand": "JEEP",
+  "model": "Wrangler Overland 4xe Power Top 4 Door",
+  "vehiclePrice": 101300000,
+  "engineCc": 1995,
+  "fuel": "M",
+  "residualGroup": "EE",
+  "maintenanceGrade": "7급",
+  "guaranteeFeeRate": 0.015,
+  "residualByTerm": {
+   "36": 0.55,
+   "48": 0.48,
+   "60": 0.42
+  }
+ },
+ "JEEP Wrangler Sahara 4xe 4 Door Power Top": {
+  "brand": "JEEP",
+  "model": "Wrangler Sahara 4xe 4 Door Power Top",
+  "vehiclePrice": 101900000,
+  "engineCc": 1995,
+  "fuel": "V",
+  "residualGroup": "EE",
+  "maintenanceGrade": "7급",
+  "guaranteeFeeRate": 0.015,
+  "residualByTerm": {
+   "36": 0.55,
+   "48": 0.48,
+   "60": 0.42
+  }
+ },
+ "JEEP Wrangler Sahara 4xe 4 Door Power Top 41 Edition": {
+  "brand": "JEEP",
+  "model": "Wrangler Sahara 4xe 4 Door Power Top 41 Edition",
+  "vehiclePrice": 102200000,
+  "engineCc": 1995,
+  "fuel": "V",
+  "residualGroup": "EE",
+  "maintenanceGrade": "7급",
+  "guaranteeFeeRate": 0.015,
+  "residualByTerm": {
+   "36": 0.55,
+   "48": 0.48,
+   "60": 0.42
+  }
+ },
+ "JEEP Wrangler Rubicon 2 Door": {
+  "brand": "JEEP",
+  "model": "Wrangler Rubicon 2 Door",
+  "vehiclePrice": 69900000,
+  "engineCc": 1995,
+  "fuel": "M",
+  "residualGroup": "취급불가",
+  "maintenanceGrade": "7급",
+  "guaranteeFeeRate": 0.015,
+  "residualByTerm": {
+   "36": 0.0,
+   "48": 0.0,
+   "60": 0.0
+  }
+ },
+ "JEEP Wrangler Sport S 4 Door Hard Top": {
+  "brand": "JEEP",
+  "model": "Wrangler Sport S 4 Door Hard Top",
+  "vehiclePrice": 69700000,
+  "engineCc": 1995,
+  "fuel": "M",
+  "residualGroup": "EE",
+  "maintenanceGrade": "7급",
+  "guaranteeFeeRate": 0.015,
+  "residualByTerm": {
+   "36": 0.55,
+   "48": 0.48,
+   "60": 0.42
+  }
+ },
+ "JEEP Wrangler Overland 4 Door": {
+  "brand": "JEEP",
+  "model": "Wrangler Overland 4 Door",
+  "vehiclePrice": 72900000,
+  "engineCc": 1995,
+  "fuel": "M",
+  "residualGroup": "EE",
+  "maintenanceGrade": "7급",
+  "guaranteeFeeRate": 0.015,
+  "residualByTerm": {
+   "36": 0.55,
+   "48": 0.48,
+   "60": 0.42
+  }
+ },
+ "JEEP Wrangler Overland Power Top 4 Door": {
+  "brand": "JEEP",
+  "model": "Wrangler Overland Power Top 4 Door",
+  "vehiclePrice": 76500000,
+  "engineCc": 1995,
+  "fuel": "M",
+  "residualGroup": "EE",
+  "maintenanceGrade": "7급",
+  "guaranteeFeeRate": 0.015,
+  "residualByTerm": {
+   "36": 0.55,
+   "48": 0.48,
+   "60": 0.42
+  }
+ },
+ "JEEP Wrangler Rubicon 4 Door": {
+  "brand": "JEEP",
+  "model": "Wrangler Rubicon 4 Door",
+  "vehiclePrice": 73900000,
+  "engineCc": 1995,
+  "fuel": "M",
+  "residualGroup": "EE",
+  "maintenanceGrade": "7급",
+  "guaranteeFeeRate": 0.015,
+  "residualByTerm": {
+   "36": 0.55,
+   "48": 0.48,
+   "60": 0.42
+  }
+ },
+ "JEEP Wrangler Rubicon Hard Top 4 Door": {
+  "brand": "JEEP",
+  "model": "Wrangler Rubicon Hard Top 4 Door",
+  "vehiclePrice": 80400000,
+  "engineCc": 1995,
+  "fuel": "M",
+  "residualGroup": "EE",
+  "maintenanceGrade": "7급",
+  "guaranteeFeeRate": 0.015,
+  "residualByTerm": {
+   "36": 0.55,
+   "48": 0.48,
+   "60": 0.42
+  }
+ },
+ "JEEP Wrangler Rubicon Power Top 4 Door": {
+  "brand": "JEEP",
+  "model": "Wrangler Rubicon Power Top 4 Door",
+  "vehiclePrice": 83900000,
+  "engineCc": 1995,
+  "fuel": "M",
+  "residualGroup": "EE",
+  "maintenanceGrade": "7급",
+  "guaranteeFeeRate": 0.015,
+  "residualByTerm": {
+   "36": 0.55,
+   "48": 0.48,
+   "60": 0.42
+  }
+ },
+ "JEEP Wrangler Sahara 4 Door Hard Top": {
+  "brand": "JEEP",
+  "model": "Wrangler Sahara 4 Door Hard Top",
+  "vehiclePrice": 78900000,
+  "engineCc": 1995,
+  "fuel": "M",
+  "residualGroup": "EE",
+  "maintenanceGrade": "7급",
+  "guaranteeFeeRate": 0.015,
+  "residualByTerm": {
+   "36": 0.55,
+   "48": 0.48,
+   "60": 0.42
+  }
+ },
+ "JEEP Wrangler Sahara 4 Door Power Top": {
+  "brand": "JEEP",
+  "model": "Wrangler Sahara 4 Door Power Top",
+  "vehiclePrice": 82400000,
+  "engineCc": 1995,
+  "fuel": "M",
+  "residualGroup": "EE",
+  "maintenanceGrade": "7급",
+  "guaranteeFeeRate": 0.015,
+  "residualByTerm": {
+   "36": 0.55,
+   "48": 0.48,
+   "60": 0.42
+  }
+ },
+ "JEEP Wrangler Sahara S 4 Door Hard Top": {
+  "brand": "JEEP",
+  "model": "Wrangler Sahara S 4 Door Hard Top",
+  "vehiclePrice": 72700000,
+  "engineCc": 1995,
+  "fuel": "M",
+  "residualGroup": "EE",
+  "maintenanceGrade": "7급",
+  "guaranteeFeeRate": 0.015,
+  "residualByTerm": {
+   "36": 0.55,
+   "48": 0.48,
+   "60": 0.42
+  }
+ },
+ "JEEP Wrangler Snow Edition": {
+  "brand": "JEEP",
+  "model": "Wrangler Snow Edition",
+  "vehiclePrice": 84900000,
+  "engineCc": 1995,
+  "fuel": "M",
+  "residualGroup": "EE",
+  "maintenanceGrade": "7급",
+  "guaranteeFeeRate": 0.015,
+  "residualByTerm": {
+   "36": 0.55,
+   "48": 0.48,
+   "60": 0.42
+  }
+ },
+ "JEEP Gladiator Rubicon 3.6": {
+  "brand": "JEEP",
+  "model": "Gladiator Rubicon 3.6",
+  "vehiclePrice": 79900000,
+  "engineCc": 3604,
+  "fuel": "M",
+  "residualGroup": "취급불가",
+  "maintenanceGrade": "8급",
+  "guaranteeFeeRate": 0.015,
+  "residualByTerm": {
+   "36": 0.0,
+   "48": 0.0,
+   "60": 0.0
+  }
+ },
+ "JEEP Grand Cherokee 2.0 Limited 4xe": {
+  "brand": "JEEP",
+  "model": "Grand Cherokee 2.0 Limited 4xe",
+  "vehiclePrice": 94400000,
+  "engineCc": 1995,
+  "fuel": "M",
+  "residualGroup": "EE",
+  "maintenanceGrade": "7급",
+  "guaranteeFeeRate": 0.015,
+  "residualByTerm": {
+   "36": 0.53,
+   "48": 0.46,
+   "60": 0.4
+  }
+ },
+ "JEEP Grand Cherokee 2.0 Summit Reserve 4xe": {
+  "brand": "JEEP",
+  "model": "Grand Cherokee 2.0 Summit Reserve 4xe",
+  "vehiclePrice": 111900000,
+  "engineCc": 1995,
+  "fuel": "M",
+  "residualGroup": "EE",
+  "maintenanceGrade": "7급",
+  "guaranteeFeeRate": 0.015,
+  "residualByTerm": {
+   "36": 0.53,
+   "48": 0.46,
+   "60": 0.4
+  }
+ },
+ "JEEP Grand Cherokee 3.6 Limited": {
+  "brand": "JEEP",
+  "model": "Grand Cherokee 3.6 Limited",
+  "vehiclePrice": 76900000,
+  "engineCc": 3604,
+  "fuel": "M",
+  "residualGroup": "EE",
+  "maintenanceGrade": "7급",
+  "guaranteeFeeRate": 0.015,
+  "residualByTerm": {
+   "36": 0.53,
+   "48": 0.46,
+   "60": 0.4
+  }
+ },
+ "JEEP Grand Cherokee 3.6 Overland(5인승)": {
+  "brand": "JEEP",
+  "model": "Grand Cherokee 3.6 Overland(5인승)",
+  "vehiclePrice": 84700000,
+  "engineCc": 3604,
+  "fuel": "M",
+  "residualGroup": "EE",
+  "maintenanceGrade": "7급",
+  "guaranteeFeeRate": 0.015,
+  "residualByTerm": {
+   "36": 0.53,
+   "48": 0.46,
+   "60": 0.4
+  }
+ },
+ "JEEP Grand Cherokee 3.6 L Overland(7인승)": {
+  "brand": "JEEP",
+  "model": "Grand Cherokee 3.6 L Overland(7인승)",
+  "vehiclePrice": 89100000,
+  "engineCc": 3604,
+  "fuel": "M",
+  "residualGroup": "EE",
+  "maintenanceGrade": "7급",
+  "guaranteeFeeRate": 0.015,
+  "residualByTerm": {
+   "36": 0.53,
+   "48": 0.46,
+   "60": 0.4
+  }
+ },
+ "JEEP Grand Cherokee 3.6 L Summit Reserve": {
+  "brand": "JEEP",
+  "model": "Grand Cherokee 3.6 L Summit Reserve",
+  "vehiclePrice": 98800000,
+  "engineCc": 3604,
+  "fuel": "M",
+  "residualGroup": "EE",
+  "maintenanceGrade": "7급",
+  "guaranteeFeeRate": 0.015,
+  "residualByTerm": {
+   "36": 0.53,
+   "48": 0.46,
+   "60": 0.4
+  }
+ },
+ "랜드로버 Defender 90 P400 X": {
+  "brand": "랜드로버",
+  "model": "Defender 90 P400 X",
+  "vehiclePrice": 140100000,
+  "engineCc": 2996,
+  "fuel": "V",
+  "residualGroup": "취급불가",
+  "maintenanceGrade": "7급",
+  "guaranteeFeeRate": 0.015,
+  "residualByTerm": {
+   "36": 0.0,
+   "48": 0.0,
+   "60": 0.0
+  }
+ },
+ "랜드로버 Defender 90 D250 X-Dynamic SE": {
+  "brand": "랜드로버",
+  "model": "Defender 90 D250 X-Dynamic SE",
+  "vehiclePrice": 104880000,
+  "engineCc": 2997,
+  "fuel": "W",
+  "residualGroup": "AA",
+  "maintenanceGrade": "7급",
+  "guaranteeFeeRate": 0.015,
+  "residualByTerm": {
+   "36": 0.0,
+   "48": 0.0,
+   "60": 0.0
+  }
+ },
+ "랜드로버 Defender 130 P400 X-Dynamic HSE": {
+  "brand": "랜드로버",
+  "model": "Defender 130 P400 X-Dynamic HSE",
+  "vehiclePrice": 143700000,
+  "engineCc": 2996,
+  "fuel": "V",
+  "residualGroup": "AA",
+  "maintenanceGrade": "7급",
+  "guaranteeFeeRate": 0.015,
+  "residualByTerm": {
+   "36": 0.57,
+   "48": 0.5,
+   "60": 0.44
+  }
+ },
+ "랜드로버 Defender 130 P400 Outbound": {
+  "brand": "랜드로버",
+  "model": "Defender 130 P400 Outbound",
+  "vehiclePrice": 141200000,
+  "engineCc": 2996,
+  "fuel": "V",
+  "residualGroup": "AA",
+  "maintenanceGrade": "7급",
+  "guaranteeFeeRate": 0.015,
+  "residualByTerm": {
+   "36": 0.57,
+   "48": 0.5,
+   "60": 0.44
+  }
+ },
+ "랜드로버 Defender 130 D300 X-Dynamic HSE": {
+  "brand": "랜드로버",
+  "model": "Defender 130 D300 X-Dynamic HSE",
+  "vehiclePrice": 138700000,
+  "engineCc": 2997,
+  "fuel": "V",
+  "residualGroup": "AA",
+  "maintenanceGrade": "7급",
+  "guaranteeFeeRate": 0.015,
+  "residualByTerm": {
+   "36": 0.57,
+   "48": 0.5,
+   "60": 0.44
+  }
+ },
+ "랜드로버 Defender 110 P400 X": {
+  "brand": "랜드로버",
+  "model": "Defender 110 P400 X",
+  "vehiclePrice": 146000000,
+  "engineCc": 2996,
+  "fuel": "V",
+  "residualGroup": "AA",
+  "maintenanceGrade": "7급",
+  "guaranteeFeeRate": 0.015,
+  "residualByTerm": {
+   "36": 0.57,
+   "48": 0.5,
+   "60": 0.44
+  }
+ },
+ "랜드로버 Defender 110 P300 X-Dynamic SE": {
+  "brand": "랜드로버",
+  "model": "Defender 110 P300 X-Dynamic SE",
+  "vehiclePrice": 113200000,
+  "engineCc": 1997,
+  "fuel": "M",
+  "residualGroup": "AA",
+  "maintenanceGrade": "7급",
+  "guaranteeFeeRate": 0.015,
+  "residualByTerm": {
+   "36": 0.57,
+   "48": 0.5,
+   "60": 0.44
+  }
+ },
+ "랜드로버 Defender 110 D300 X-Dynamic HSE": {
+  "brand": "랜드로버",
+  "model": "Defender 110 D300 X-Dynamic HSE",
+  "vehiclePrice": 126100000,
+  "engineCc": 2997,
+  "fuel": "W",
+  "residualGroup": "AA",
+  "maintenanceGrade": "7급",
+  "guaranteeFeeRate": 0.015,
+  "residualByTerm": {
+   "36": 0.57,
+   "48": 0.5,
+   "60": 0.44
+  }
+ },
+ "랜드로버 Defender 110 D250 SE County Edition": {
+  "brand": "랜드로버",
+  "model": "Defender 110 D250 SE County Edition",
+  "vehiclePrice": 110560000,
+  "engineCc": 2997,
+  "fuel": "W",
+  "residualGroup": "AA",
+  "maintenanceGrade": "7급",
+  "guaranteeFeeRate": 0.015,
+  "residualByTerm": {
+   "36": 0.57,
+   "48": 0.5,
+   "60": 0.44
+  }
+ },
+ "랜드로버 Defender 110 D250 SE": {
+  "brand": "랜드로버",
+  "model": "Defender 110 D250 SE",
+  "vehiclePrice": 107600000,
+  "engineCc": 2997,
+  "fuel": "W",
+  "residualGroup": "AA",
+  "maintenanceGrade": "7급",
+  "guaranteeFeeRate": 0.015,
+  "residualByTerm": {
+   "36": 0.57,
+   "48": 0.5,
+   "60": 0.44
+  }
+ },
+ "랜드로버 Discovery D250 S": {
+  "brand": "랜드로버",
+  "model": "Discovery D250 S",
+  "vehiclePrice": 99500000,
+  "engineCc": 2997,
+  "fuel": "W",
+  "residualGroup": "EE",
+  "maintenanceGrade": "7급",
+  "guaranteeFeeRate": 0.015,
+  "residualByTerm": {
+   "36": 0.51,
+   "48": 0.44,
+   "60": 0.38
+  }
+ },
+ "랜드로버 Discovery D300 Dynamic HSE": {
+  "brand": "랜드로버",
+  "model": "Discovery D300 Dynamic HSE",
+  "vehiclePrice": 119900000,
+  "engineCc": 2997,
+  "fuel": "W",
+  "residualGroup": "EE",
+  "maintenanceGrade": "7급",
+  "guaranteeFeeRate": 0.015,
+  "residualByTerm": {
+   "36": 0.51,
+   "48": 0.44,
+   "60": 0.38
+  }
+ },
+ "랜드로버 Discovery P300 S": {
+  "brand": "랜드로버",
+  "model": "Discovery P300 S",
+  "vehiclePrice": 94200000,
+  "engineCc": 1997,
+  "fuel": "M",
+  "residualGroup": "EE",
+  "maintenanceGrade": "7급",
+  "guaranteeFeeRate": 0.015,
+  "residualByTerm": {
+   "36": 0.51,
+   "48": 0.44,
+   "60": 0.38
+  }
+ },
+ "랜드로버 Discovery D350 Dynamic HSE": {
+  "brand": "랜드로버",
+  "model": "Discovery D350 Dynamic HSE",
+  "vehiclePrice": 125300000,
+  "engineCc": 2997,
+  "fuel": "W",
+  "residualGroup": "EE",
+  "maintenanceGrade": "7급",
+  "guaranteeFeeRate": 0.015,
+  "residualByTerm": {
+   "36": 0.51,
+   "48": 0.44,
+   "60": 0.38
+  }
+ },
+ "랜드로버 Discovery P360 Dynamic HSE": {
+  "brand": "랜드로버",
+  "model": "Discovery P360 Dynamic HSE",
+  "vehiclePrice": 127600000,
+  "engineCc": 2996,
+  "fuel": "V",
+  "residualGroup": "EE",
+  "maintenanceGrade": "7급",
+  "guaranteeFeeRate": 0.015,
+  "residualByTerm": {
+   "36": 0.51,
+   "48": 0.44,
+   "60": 0.38
+  }
+ },
+ "랜드로버 Discovery Sport P250 Dynamic SE": {
+  "brand": "랜드로버",
+  "model": "Discovery Sport P250 Dynamic SE",
+  "vehiclePrice": 76600000,
+  "engineCc": 1997,
+  "fuel": "M",
+  "residualGroup": "EE",
+  "maintenanceGrade": "7급",
+  "guaranteeFeeRate": 0.015,
+  "residualByTerm": {
+   "36": 0.51,
+   "48": 0.44,
+   "60": 0.38
+  }
+ },
+ "랜드로버 Discovery Sport P250 S": {
+  "brand": "랜드로버",
+  "model": "Discovery Sport P250 S",
+  "vehiclePrice": 72900000,
+  "engineCc": 1997,
+  "fuel": "M",
+  "residualGroup": "EE",
+  "maintenanceGrade": "7급",
+  "guaranteeFeeRate": 0.015,
+  "residualByTerm": {
+   "36": 0.51,
+   "48": 0.44,
+   "60": 0.38
+  }
+ },
+ "랜드로버 Range Rover D350 Autobiography SWB": {
+  "brand": "랜드로버",
+  "model": "Range Rover D350 Autobiography SWB",
+  "vehiclePrice": 223900000,
+  "engineCc": 2997,
+  "fuel": "W",
+  "residualGroup": "II",
+  "maintenanceGrade": "7급",
+  "guaranteeFeeRate": 0.015,
+  "residualByTerm": {
+   "36": 0.57,
+   "48": 0.5,
+   "60": 0.44
+  }
+ },
+ "랜드로버 Range Rover D350 Autobiography LWB": {
+  "brand": "랜드로버",
+  "model": "Range Rover D350 Autobiography LWB",
+  "vehiclePrice": 233700000,
+  "engineCc": 2997,
+  "fuel": "W",
+  "residualGroup": "II",
+  "maintenanceGrade": "7급",
+  "guaranteeFeeRate": 0.015,
+  "residualByTerm": {
+   "36": 0.57,
+   "48": 0.5,
+   "60": 0.44
+  }
+ },
+ "랜드로버 Range Rover P530 Autobiography LWB": {
+  "brand": "랜드로버",
+  "model": "Range Rover P530 Autobiography LWB",
+  "vehiclePrice": 249900000,
+  "engineCc": 4395,
+  "fuel": "V",
+  "residualGroup": "Z",
+  "maintenanceGrade": "7급",
+  "guaranteeFeeRate": 0.015,
+  "residualByTerm": {
+   "36": 0.57,
+   "48": 0.5,
+   "60": 0.44
+  }
+ },
+ "랜드로버 Range Rover P530 Autobiography LWB (7인승)": {
+  "brand": "랜드로버",
+  "model": "Range Rover P530 Autobiography LWB (7인승)",
+  "vehiclePrice": 244800000,
+  "engineCc": 4395,
+  "fuel": "V",
+  "residualGroup": "Z",
+  "maintenanceGrade": "7급",
+  "guaranteeFeeRate": 0.015,
+  "residualByTerm": {
+   "36": 0.57,
+   "48": 0.5,
+   "60": 0.44
+  }
+ },
+ "랜드로버 Range Rover P530 Autobiography SWB": {
+  "brand": "랜드로버",
+  "model": "Range Rover P530 Autobiography SWB",
+  "vehiclePrice": 238000000,
+  "engineCc": 4395,
+  "fuel": "V",
+  "residualGroup": "Z",
+  "maintenanceGrade": "7급",
+  "guaranteeFeeRate": 0.015,
+  "residualByTerm": {
+   "36": 0.57,
+   "48": 0.5,
+   "60": 0.44
+  }
+ },
+ "랜드로버 Range Rover P550e Autobiography SWB": {
+  "brand": "랜드로버",
+  "model": "Range Rover P550e Autobiography SWB",
+  "vehiclePrice": 234700000,
+  "engineCc": 2997,
+  "fuel": "V",
+  "residualGroup": "Z",
+  "maintenanceGrade": "7급",
+  "guaranteeFeeRate": 0.015,
+  "residualByTerm": {
+   "36": 0.57,
+   "48": 0.5,
+   "60": 0.44
+  }
+ },
+ "랜드로버 Range Rover P615 SV LWB": {
+  "brand": "랜드로버",
+  "model": "Range Rover P615 SV LWB",
+  "vehiclePrice": 326600000,
+  "engineCc": 4395,
+  "fuel": "V",
+  "residualGroup": "II",
+  "maintenanceGrade": "7급",
+  "guaranteeFeeRate": 0.015,
+  "residualByTerm": {
+   "36": 0.51,
+   "48": 0.44,
+   "60": 0.38
+  }
+ },
+ "랜드로버 Range Rover Sport D300 Dynamic HSE": {
+  "brand": "랜드로버",
+  "model": "Range Rover Sport D300 Dynamic HSE",
+  "vehiclePrice": 152300000,
+  "engineCc": 2998,
+  "fuel": "W",
+  "residualGroup": "Z",
+  "maintenanceGrade": "7급",
+  "guaranteeFeeRate": 0.015,
+  "residualByTerm": {
+   "36": 0.57,
+   "48": 0.5,
+   "60": 0.44
+  }
+ },
+ "랜드로버 Range Rover Sport P360 Autobiography": {
+  "brand": "랜드로버",
+  "model": "Range Rover Sport P360 Autobiography",
+  "vehiclePrice": 159700000,
+  "engineCc": 2997,
+  "fuel": "V",
+  "residualGroup": "Z",
+  "maintenanceGrade": "7급",
+  "guaranteeFeeRate": 0.015,
+  "residualByTerm": {
+   "36": 0.57,
+   "48": 0.5,
+   "60": 0.44
+  }
+ },
+ "랜드로버 Range Rover Sport P360 Dynamic HSE": {
+  "brand": "랜드로버",
+  "model": "Range Rover Sport P360 Dynamic HSE",
+  "vehiclePrice": 152300000,
+  "engineCc": 2997,
+  "fuel": "V",
+  "residualGroup": "Z",
+  "maintenanceGrade": "7급",
+  "guaranteeFeeRate": 0.015,
+  "residualByTerm": {
+   "36": 0.57,
+   "48": 0.5,
+   "60": 0.44
+  }
+ },
+ "랜드로버 Range Rover Sport P360 Dynamic SE": {
+  "brand": "랜드로버",
+  "model": "Range Rover Sport P360 Dynamic SE",
+  "vehiclePrice": 141800000,
+  "engineCc": 2997,
+  "fuel": "V",
+  "residualGroup": "Z",
+  "maintenanceGrade": "7급",
+  "guaranteeFeeRate": 0.015,
+  "residualByTerm": {
+   "36": 0.57,
+   "48": 0.5,
+   "60": 0.44
+  }
+ },
+ "랜드로버 Range Rover Sport P400 Autobiography": {
+  "brand": "랜드로버",
+  "model": "Range Rover Sport P400 Autobiography",
+  "vehiclePrice": 165500000,
+  "engineCc": 2996,
+  "fuel": "V",
+  "residualGroup": "Z",
+  "maintenanceGrade": "7급",
+  "guaranteeFeeRate": 0.015,
+  "residualByTerm": {
+   "36": 0.57,
+   "48": 0.5,
+   "60": 0.44
+  }
+ },
+ "랜드로버 Range Rover Sport P550e Dynamic HSE(24MY)": {
+  "brand": "랜드로버",
+  "model": "Range Rover Sport P550e Dynamic HSE(24MY)",
+  "vehiclePrice": 187100000,
+  "engineCc": 2997,
+  "fuel": "V",
+  "residualGroup": "II",
+  "maintenanceGrade": "7급",
+  "guaranteeFeeRate": 0.015,
+  "residualByTerm": {
+   "36": 0.57,
+   "48": 0.5,
+   "60": 0.44
+  }
+ },
+ "랜드로버 Range Rover Sport P550e Dynamic HSE(25MY)": {
+  "brand": "랜드로버",
+  "model": "Range Rover Sport P550e Dynamic HSE(25MY)",
+  "vehiclePrice": 184100000,
+  "engineCc": 2997,
+  "fuel": "M",
+  "residualGroup": "II",
+  "maintenanceGrade": "7급",
+  "guaranteeFeeRate": 0.015,
+  "residualByTerm": {
+   "36": 0.57,
+   "48": 0.5,
+   "60": 0.44
+  }
+ },
+ "랜드로버 Range Rover Sport P635 SV Edition One Carbon Bronze": {
+  "brand": "랜드로버",
+  "model": "Range Rover Sport P635 SV Edition One Carbon Bronze",
+  "vehiclePrice": 285200000,
+  "engineCc": 4395,
+  "fuel": "V",
+  "residualGroup": "GG",
+  "maintenanceGrade": "7급",
+  "guaranteeFeeRate": 0.015,
+  "residualByTerm": {
+   "36": 0.47,
+   "48": 0.4,
+   "60": 0.34
+  }
+ },
+ "랜드로버 Range Rover Sport P635 SV Edition One Flux Silver": {
+  "brand": "랜드로버",
+  "model": "Range Rover Sport P635 SV Edition One Flux Silver",
+  "vehiclePrice": 262100000,
+  "engineCc": 4395,
+  "fuel": "V",
+  "residualGroup": "GG",
+  "maintenanceGrade": "7급",
+  "guaranteeFeeRate": 0.015,
+  "residualByTerm": {
+   "36": 0.47,
+   "48": 0.4,
+   "60": 0.34
+  }
+ },
+ "랜드로버 Range Rover Sport P635 SV Edition One Obsidian Black": {
+  "brand": "랜드로버",
+  "model": "Range Rover Sport P635 SV Edition One Obsidian Black",
+  "vehiclePrice": 262100000,
+  "engineCc": 4395,
+  "fuel": "V",
+  "residualGroup": "GG",
+  "maintenanceGrade": "7급",
+  "guaranteeFeeRate": 0.015,
+  "residualByTerm": {
+   "36": 0.47,
+   "48": 0.4,
+   "60": 0.34
+  }
+ },
+ "랜드로버 Range Rover Velar P250 Dynamic SE": {
+  "brand": "랜드로버",
+  "model": "Range Rover Velar P250 Dynamic SE",
+  "vehiclePrice": 90100000,
+  "engineCc": 1998,
+  "fuel": "M",
+  "residualGroup": "EE",
+  "maintenanceGrade": "7급",
+  "guaranteeFeeRate": 0.015,
+  "residualByTerm": {
+   "36": 0.51,
+   "48": 0.44,
+   "60": 0.38
+  }
+ },
+ "랜드로버 Range Rover Velar P400 Dynamic HSE": {
+  "brand": "랜드로버",
+  "model": "Range Rover Velar P400 Dynamic HSE",
+  "vehiclePrice": 124200000,
+  "engineCc": 2997,
+  "fuel": "V",
+  "residualGroup": "EE",
+  "maintenanceGrade": "7급",
+  "guaranteeFeeRate": 0.015,
+  "residualByTerm": {
+   "36": 0.51,
+   "48": 0.44,
+   "60": 0.38
+  }
+ },
+ "랜드로버 Range Rover Velar P400e Dynamic SE": {
+  "brand": "랜드로버",
+  "model": "Range Rover Velar P400e Dynamic SE",
+  "vehiclePrice": 117000000,
+  "engineCc": 1998,
+  "fuel": "V",
+  "residualGroup": "EE",
+  "maintenanceGrade": "7급",
+  "guaranteeFeeRate": 0.015,
+  "residualByTerm": {
+   "36": 0.51,
+   "48": 0.44,
+   "60": 0.38
+  }
+ },
+ "랜드로버 Range Rover Evoque P250 S": {
+  "brand": "랜드로버",
+  "model": "Range Rover Evoque P250 S",
+  "vehiclePrice": 74000000,
+  "engineCc": 1997,
+  "fuel": "M",
+  "residualGroup": "EE",
+  "maintenanceGrade": "7급",
+  "guaranteeFeeRate": 0.015,
+  "residualByTerm": {
+   "36": 0.51,
+   "48": 0.44,
+   "60": 0.38
+  }
+ },
+ "랜드로버 Range Rover Evoque P250 Dynamic SE": {
+  "brand": "랜드로버",
+  "model": "Range Rover Evoque P250 Dynamic SE",
+  "vehiclePrice": 80300000,
+  "engineCc": 1997,
+  "fuel": "M",
+  "residualGroup": "EE",
+  "maintenanceGrade": "7급",
+  "guaranteeFeeRate": 0.015,
+  "residualByTerm": {
+   "36": 0.51,
+   "48": 0.44,
+   "60": 0.38
+  }
+ },
+ "포르쉐 718 Boxster": {
+  "brand": "포르쉐",
+  "model": "718 Boxster",
+  "vehiclePrice": 91100000,
+  "engineCc": 1988,
+  "fuel": "M",
+  "residualGroup": "취급불가",
+  "maintenanceGrade": "3급",
+  "guaranteeFeeRate": 0.015,
+  "residualByTerm": {
+   "36": 0.0,
+   "48": 0.0,
+   "60": 0.0
+  }
+ },
+ "포르쉐 718 Cayman": {
+  "brand": "포르쉐",
+  "model": "718 Cayman",
+  "vehiclePrice": 86900000,
+  "engineCc": 1988,
+  "fuel": "M",
+  "residualGroup": "취급불가",
+  "maintenanceGrade": "3급",
+  "guaranteeFeeRate": 0.015,
+  "residualByTerm": {
+   "36": 0.0,
+   "48": 0.0,
+   "60": 0.0
+  }
+ },
+ "포르쉐 911 Carrera": {
+  "brand": "포르쉐",
+  "model": "911 Carrera",
+  "vehiclePrice": 149900000,
+  "engineCc": 2981,
+  "fuel": "M",
+  "residualGroup": "취급불가",
+  "maintenanceGrade": "4급",
+  "guaranteeFeeRate": 0.015,
+  "residualByTerm": {
+   "36": 0.0,
+   "48": 0.0,
+   "60": 0.0
+  }
+ },
+ "포르쉐 911 GT3": {
+  "brand": "포르쉐",
+  "model": "911 GT3",
+  "vehiclePrice": 220000000,
+  "engineCc": 3996,
+  "fuel": "M",
+  "residualGroup": "취급불가",
+  "maintenanceGrade": "5급",
+  "guaranteeFeeRate": 0.015,
+  "residualByTerm": {
+   "36": 0.0,
+   "48": 0.0,
+   "60": 0.0
+  }
+ },
+ "포르쉐 911 Targa": {
+  "brand": "포르쉐",
+  "model": "911 Targa",
+  "vehiclePrice": 175000000,
+  "engineCc": 2981,
+  "fuel": "M",
+  "residualGroup": "취급불가",
+  "maintenanceGrade": "4급",
+  "guaranteeFeeRate": 0.015,
+  "residualByTerm": {
+   "36": 0.0,
+   "48": 0.0,
+   "60": 0.0
+  }
+ },
+ "포르쉐 911 Turbo S": {
+  "brand": "포르쉐",
+  "model": "911 Turbo S",
+  "vehiclePrice": 278300000,
+  "engineCc": 3745,
+  "fuel": "M",
+  "residualGroup": "취급불가",
+  "maintenanceGrade": "5급",
+  "guaranteeFeeRate": 0.015,
+  "residualByTerm": {
+   "36": 0.0,
+   "48": 0.0,
+   "60": 0.0
+  }
+ },
+ "포르쉐 Cayenne": {
+  "brand": "포르쉐",
+  "model": "Cayenne",
+  "vehiclePrice": 111200000,
+  "engineCc": 2995,
+  "fuel": "M",
+  "residualGroup": "V",
+  "maintenanceGrade": "7급",
+  "guaranteeFeeRate": 0.015,
+  "residualByTerm": {
+   "36": 0.62,
+   "48": 0.55,
+   "60": 0.49
+  }
+ },
+ "포르쉐 Cayenne Coupe": {
+  "brand": "포르쉐",
+  "model": "Cayenne Coupe",
+  "vehiclePrice": 120200000,
+  "engineCc": 2995,
+  "fuel": "M",
+  "residualGroup": "V",
+  "maintenanceGrade": "7급",
+  "guaranteeFeeRate": 0.015,
+  "residualByTerm": {
+   "36": 0.62,
+   "48": 0.55,
+   "60": 0.49
+  }
+ },
+ "포르쉐 Cayenne S E-Hybrid": {
+  "brand": "포르쉐",
+  "model": "Cayenne S E-Hybrid",
+  "vehiclePrice": 163600000,
+  "engineCc": 2995,
+  "fuel": "V",
+  "residualGroup": "V",
+  "maintenanceGrade": "7급",
+  "guaranteeFeeRate": 0.015,
+  "residualByTerm": {
+   "36": 0.61,
+   "48": 0.54,
+   "60": 0.48
+  }
+ },
+ "포르쉐 Cayenne E-Hybrid": {
+  "brand": "포르쉐",
+  "model": "Cayenne E-Hybrid",
+  "vehiclePrice": 121600000,
+  "engineCc": 2995,
+  "fuel": "V",
+  "residualGroup": "V",
+  "maintenanceGrade": "7급",
+  "guaranteeFeeRate": 0.015,
+  "residualByTerm": {
+   "36": 0.61,
+   "48": 0.54,
+   "60": 0.48
+  }
+ },
+ "포르쉐 Cayenne E-Hybrid Coupe": {
+  "brand": "포르쉐",
+  "model": "Cayenne E-Hybrid Coupe",
+  "vehiclePrice": 127600000,
+  "engineCc": 2995,
+  "fuel": "V",
+  "residualGroup": "V",
+  "maintenanceGrade": "7급",
+  "guaranteeFeeRate": 0.015,
+  "residualByTerm": {
+   "36": 0.61,
+   "48": 0.54,
+   "60": 0.48
+  }
+ },
+ "포르쉐 Cayenne Turbo E-Hybrid": {
+  "brand": "포르쉐",
+  "model": "Cayenne Turbo E-Hybrid",
+  "vehiclePrice": 221000000,
+  "engineCc": 3996,
+  "fuel": "V",
+  "residualGroup": "V",
+  "maintenanceGrade": "7급",
+  "guaranteeFeeRate": 0.015,
+  "residualByTerm": {
+   "36": 0.57,
+   "48": 0.5,
+   "60": 0.44
+  }
+ },
+ "포르쉐 Cayenne Turbo": {
+  "brand": "포르쉐",
+  "model": "Cayenne Turbo",
+  "vehiclePrice": 171000000,
+  "engineCc": 3996,
+  "fuel": "M",
+  "residualGroup": "V",
+  "maintenanceGrade": "7급",
+  "guaranteeFeeRate": 0.015,
+  "residualByTerm": {
+   "36": 0.62,
+   "48": 0.55,
+   "60": 0.49
+  }
+ },
+ "포르쉐 Cayenne Turbo Coupe": {
+  "brand": "포르쉐",
+  "model": "Cayenne Turbo Coupe",
+  "vehiclePrice": 184200000,
+  "engineCc": 3996,
+  "fuel": "M",
+  "residualGroup": "V",
+  "maintenanceGrade": "7급",
+  "guaranteeFeeRate": 0.015,
+  "residualByTerm": {
+   "36": 0.62,
+   "48": 0.55,
+   "60": 0.49
+  }
+ },
+ "포르쉐 Cayenne Turbo GT": {
+  "brand": "포르쉐",
+  "model": "Cayenne Turbo GT",
+  "vehiclePrice": 234100000,
+  "engineCc": 3996,
+  "fuel": "M",
+  "residualGroup": "W",
+  "maintenanceGrade": "7급",
+  "guaranteeFeeRate": 0.015,
+  "residualByTerm": {
+   "36": 0.57,
+   "48": 0.5,
+   "60": 0.44
+  }
+ },
+ "포르쉐 Cayenne GTS": {
+  "brand": "포르쉐",
+  "model": "Cayenne GTS",
+  "vehiclePrice": 199400000,
+  "engineCc": 3996,
+  "fuel": "M",
+  "residualGroup": "V",
+  "maintenanceGrade": "7급",
+  "guaranteeFeeRate": 0.015,
+  "residualByTerm": {
+   "36": 0.62,
+   "48": 0.55,
+   "60": 0.49
+  }
+ },
+ "포르쉐 Cayenne GTS Coupe": {
+  "brand": "포르쉐",
+  "model": "Cayenne GTS Coupe",
+  "vehiclePrice": 204800000,
+  "engineCc": 3996,
+  "fuel": "M",
+  "residualGroup": "W",
+  "maintenanceGrade": "7급",
+  "guaranteeFeeRate": 0.015,
+  "residualByTerm": {
+   "36": 0.62,
+   "48": 0.55,
+   "60": 0.49
+  }
+ },
+ "포르쉐 Macan lll S": {
+  "brand": "포르쉐",
+  "model": "Macan lll S",
+  "vehiclePrice": 95600000,
+  "engineCc": 2894,
+  "fuel": "M",
+  "residualGroup": "Y",
+  "maintenanceGrade": "7급",
+  "guaranteeFeeRate": 0.015,
+  "residualByTerm": {
+   "36": 0.6,
+   "48": 0.53,
+   "60": 0.47
+  }
+ },
+ "포르쉐 Macan lll GTS": {
+  "brand": "포르쉐",
+  "model": "Macan lll GTS",
+  "vehiclePrice": 114500000,
+  "engineCc": 2894,
+  "fuel": "M",
+  "residualGroup": "Y",
+  "maintenanceGrade": "7급",
+  "guaranteeFeeRate": 0.015,
+  "residualByTerm": {
+   "36": 0.6,
+   "48": 0.53,
+   "60": 0.47
+  }
+ },
+ "포르쉐 Panamera 4": {
+  "brand": "포르쉐",
+  "model": "Panamera 4",
+  "vehiclePrice": 183300000,
+  "engineCc": 2894,
+  "fuel": "M",
+  "residualGroup": "X",
+  "maintenanceGrade": "4급",
+  "guaranteeFeeRate": 0.015,
+  "residualByTerm": {
+   "36": 0.61,
+   "48": 0.54,
+   "60": 0.48
+  }
+ },
+ "포르쉐 Panamera GTS": {
+  "brand": "포르쉐",
+  "model": "Panamera GTS",
+  "vehiclePrice": 252300000,
+  "engineCc": 3996,
+  "fuel": "M",
+  "residualGroup": "X",
+  "maintenanceGrade": "5급",
+  "guaranteeFeeRate": 0.015,
+  "residualByTerm": {
+   "36": 0.61,
+   "48": 0.54,
+   "60": 0.48
+  }
+ },
+ "포르쉐 Panamera 4 E-Hybrid": {
+  "brand": "포르쉐",
+  "model": "Panamera 4 E-Hybrid",
+  "vehiclePrice": 186100000,
+  "engineCc": 2894,
+  "fuel": "V",
+  "residualGroup": "Y",
+  "maintenanceGrade": "4급",
+  "guaranteeFeeRate": 0.015,
+  "residualByTerm": {
+   "36": 0.61,
+   "48": 0.54,
+   "60": 0.48
+  }
+ },
+ "포르쉐 Panamera Turbo E-Hybrid": {
+  "brand": "포르쉐",
+  "model": "Panamera Turbo E-Hybrid",
+  "vehiclePrice": 309100000,
+  "engineCc": 3996,
+  "fuel": "V",
+  "residualGroup": "AA",
+  "maintenanceGrade": "5급",
+  "guaranteeFeeRate": 0.015,
+  "residualByTerm": {
+   "36": 0.61,
+   "48": 0.54,
+   "60": 0.48
+  }
+ },
+ "포르쉐 Panamera Turbo S E-Hybrid": {
+  "brand": "포르쉐",
+  "model": "Panamera Turbo S E-Hybrid",
+  "vehiclePrice": 339600000,
+  "engineCc": 3996,
+  "fuel": "V",
+  "residualGroup": "AA",
+  "maintenanceGrade": "5급",
+  "guaranteeFeeRate": 0.015,
+  "residualByTerm": {
+   "36": 0.61,
+   "48": 0.54,
+   "60": 0.48
+  }
+ },
+ "캐딜락 Escalade": {
+  "brand": "캐딜락",
+  "model": "Escalade",
+  "vehiclePrice": 166070000,
+  "engineCc": 6162,
+  "fuel": "M",
+  "residualGroup": "DD",
+  "maintenanceGrade": "7급",
+  "guaranteeFeeRate": 0.015,
+  "residualByTerm": {
+   "36": 0.49,
+   "48": 0.42,
+   "60": 0.36
+  }
+ },
+ "캐딜락 CT5-V Blackwing": {
+  "brand": "캐딜락",
+  "model": "CT5-V Blackwing",
+  "vehiclePrice": 140000000,
+  "engineCc": 6162,
+  "fuel": "M",
+  "residualGroup": "EE",
+  "maintenanceGrade": "6급",
+  "guaranteeFeeRate": 0.015,
+  "residualByTerm": {
+   "36": 0.0,
+   "48": 0.0,
+   "60": 0.0
+  }
+ },
+ "캐딜락 XT6 Sport (6인승)": {
+  "brand": "캐딜락",
+  "model": "XT6 Sport (6인승)",
+  "vehiclePrice": 86400000,
+  "engineCc": 3649,
+  "fuel": "M",
+  "residualGroup": "FF",
+  "maintenanceGrade": "7급",
+  "guaranteeFeeRate": 0.015,
+  "residualByTerm": {
+   "36": 0.0,
+   "48": 0.0,
+   "60": 0.0
+  }
+ },
+ "캐딜락 XT6 Sport (7인승)": {
+  "brand": "캐딜락",
+  "model": "XT6 Sport (7인승)",
+  "vehiclePrice": 86400000,
+  "engineCc": 3649,
+  "fuel": "M",
+  "residualGroup": "FF",
+  "maintenanceGrade": "7급",
+  "guaranteeFeeRate": 0.015,
+  "residualByTerm": {
+   "36": 0.0,
+   "48": 0.0,
+   "60": 0.0
+  }
+ },
+ "캐딜락 XT5": {
+  "brand": "캐딜락",
+  "model": "XT5",
+  "vehiclePrice": 77100000,
+  "engineCc": 3649,
+  "fuel": "M",
+  "residualGroup": "FF",
+  "maintenanceGrade": "7급",
+  "guaranteeFeeRate": 0.015,
+  "residualByTerm": {
+   "36": 0.0,
+   "48": 0.0,
+   "60": 0.0
+  }
+ },
+ "캐딜락 XT4": {
+  "brand": "캐딜락",
+  "model": "XT4",
+  "vehiclePrice": 61200000,
+  "engineCc": 1998,
+  "fuel": "M",
+  "residualGroup": "FF",
+  "maintenanceGrade": "7급",
+  "guaranteeFeeRate": 0.015,
+  "residualByTerm": {
+   "36": 0.0,
+   "48": 0.0,
+   "60": 0.0
+  }
+ },
+ "롤스로이스 Cullinan 6.75 V12": {
+  "brand": "롤스로이스",
+  "model": "Cullinan 6.75 V12",
+  "vehiclePrice": 469000000,
+  "engineCc": 6749,
+  "fuel": "M",
+  "residualGroup": "취급불가",
+  "maintenanceGrade": "7급",
+  "guaranteeFeeRate": 0.015,
+  "residualByTerm": {
+   "36": 0.0,
+   "48": 0.0,
+   "60": 0.0
+  }
+ },
+ "롤스로이스 Cullinan 6.75 V12 Black Badge": {
+  "brand": "롤스로이스",
+  "model": "Cullinan 6.75 V12 Black Badge",
+  "vehiclePrice": 539000000,
+  "engineCc": 6749,
+  "fuel": "M",
+  "residualGroup": "취급불가",
+  "maintenanceGrade": "7급",
+  "guaranteeFeeRate": 0.015,
+  "residualByTerm": {
+   "36": 0.0,
+   "48": 0.0,
+   "60": 0.0
+  }
+ },
+ "롤스로이스 Ghost 6.75 Standard Wheel Base": {
+  "brand": "롤스로이스",
+  "model": "Ghost 6.75 Standard Wheel Base",
+  "vehiclePrice": 471000000,
+  "engineCc": 6749,
+  "fuel": "M",
+  "residualGroup": "취급불가",
+  "maintenanceGrade": "6급",
+  "guaranteeFeeRate": 0.015,
+  "residualByTerm": {
+   "36": 0.0,
+   "48": 0.0,
+   "60": 0.0
+  }
+ },
+ "롤스로이스 Ghost 6.75 Extended Wheel Base": {
+  "brand": "롤스로이스",
+  "model": "Ghost 6.75 Extended Wheel Base",
+  "vehiclePrice": 523000000,
+  "engineCc": 6749,
+  "fuel": "M",
+  "residualGroup": "취급불가",
+  "maintenanceGrade": "6급",
+  "guaranteeFeeRate": 0.015,
+  "residualByTerm": {
+   "36": 0.0,
+   "48": 0.0,
+   "60": 0.0
+  }
+ },
+ "롤스로이스 Ghost 6.75 Black Badge": {
+  "brand": "롤스로이스",
+  "model": "Ghost 6.75 Black Badge",
+  "vehiclePrice": 555000000,
+  "engineCc": 6749,
+  "fuel": "M",
+  "residualGroup": "취급불가",
+  "maintenanceGrade": "6급",
+  "guaranteeFeeRate": 0.015,
+  "residualByTerm": {
+   "36": 0.0,
+   "48": 0.0,
+   "60": 0.0
+  }
+ },
+ "롤스로이스 Phantom Series II 6.8 Standard Wheel Base": {
+  "brand": "롤스로이스",
+  "model": "Phantom Series II 6.8 Standard Wheel Base",
+  "vehiclePrice": 712000000,
+  "engineCc": 6749,
+  "fuel": "M",
+  "residualGroup": "취급불가",
+  "maintenanceGrade": "6급",
+  "guaranteeFeeRate": 0.015,
+  "residualByTerm": {
+   "36": 0.0,
+   "48": 0.0,
+   "60": 0.0
+  }
+ },
+ "롤스로이스 Phantom Series II 6.8 Extended Wheel Base": {
+  "brand": "롤스로이스",
+  "model": "Phantom Series II 6.8 Extended Wheel Base",
+  "vehiclePrice": 826000000,
+  "engineCc": 6749,
+  "fuel": "M",
+  "residualGroup": "취급불가",
+  "maintenanceGrade": "6급",
+  "guaranteeFeeRate": 0.015,
+  "residualByTerm": {
+   "36": 0.0,
+   "48": 0.0,
+   "60": 0.0
+  }
+ },
+ "맥라렌 4.0 GT": {
+  "brand": "맥라렌",
+  "model": "4.0 GT",
+  "vehiclePrice": 297000000,
+  "engineCc": 3994,
+  "fuel": "M",
+  "residualGroup": "취급불가",
+  "maintenanceGrade": "5급",
+  "guaranteeFeeRate": 0.015,
+  "residualByTerm": {
+   "36": 0.0,
+   "48": 0.0,
+   "60": 0.0
+  }
+ },
+ "맥라렌 4.0 765LT": {
+  "brand": "맥라렌",
+  "model": "4.0 765LT",
+  "vehiclePrice": 493000000,
+  "engineCc": 3994,
+  "fuel": "M",
+  "residualGroup": "취급불가",
+  "maintenanceGrade": "5급",
+  "guaranteeFeeRate": 0.015,
+  "residualByTerm": {
+   "36": 0.0,
+   "48": 0.0,
+   "60": 0.0
+  }
+ },
+ "맥라렌 3.0 Artura": {
+  "brand": "맥라렌",
+  "model": "3.0 Artura",
+  "vehiclePrice": 299000000,
+  "engineCc": 2993,
+  "fuel": "M",
+  "residualGroup": "취급불가",
+  "maintenanceGrade": "4급",
+  "guaranteeFeeRate": 0.015,
+  "residualByTerm": {
+   "36": 0.0,
+   "48": 0.0,
+   "60": 0.0
+  }
+ },
+ "애스턴마틴 Vantage 4.0 V8 Coupe": {
+  "brand": "애스턴마틴",
+  "model": "Vantage 4.0 V8 Coupe",
+  "vehiclePrice": 215000000,
+  "engineCc": 3982,
+  "fuel": "M",
+  "residualGroup": "취급불가",
+  "maintenanceGrade": "5급",
+  "guaranteeFeeRate": 0.015,
+  "residualByTerm": {
+   "36": 0.0,
+   "48": 0.0,
+   "60": 0.0
+  }
+ },
+ "애스턴마틴 DBS 5.2 Superleggera": {
+  "brand": "애스턴마틴",
+  "model": "DBS 5.2 Superleggera",
+  "vehiclePrice": 385000000,
+  "engineCc": 5204,
+  "fuel": "M",
+  "residualGroup": "취급불가",
+  "maintenanceGrade": "6급",
+  "guaranteeFeeRate": 0.015,
+  "residualByTerm": {
+   "36": 0.0,
+   "48": 0.0,
+   "60": 0.0
+  }
+ },
+ "애스턴마틴 DBS 5.2 Volante": {
+  "brand": "애스턴마틴",
+  "model": "DBS 5.2 Volante",
+  "vehiclePrice": 419000000,
+  "engineCc": 5204,
+  "fuel": "M",
+  "residualGroup": "취급불가",
+  "maintenanceGrade": "6급",
+  "guaranteeFeeRate": 0.015,
+  "residualByTerm": {
+   "36": 0.0,
+   "48": 0.0,
+   "60": 0.0
+  }
+ },
+ "애스턴마틴 DBX 4.0 V8": {
+  "brand": "애스턴마틴",
+  "model": "DBX 4.0 V8",
+  "vehiclePrice": 248000000,
+  "engineCc": 3982,
+  "fuel": "M",
+  "residualGroup": "취급불가",
+  "maintenanceGrade": "7급",
+  "guaranteeFeeRate": 0.015,
+  "residualByTerm": {
+   "36": 0.0,
+   "48": 0.0,
+   "60": 0.0
+  }
+ },
+ "애스턴마틴 DBX 4.0 V8 DBX707": {
+  "brand": "애스턴마틴",
+  "model": "DBX 4.0 V8 DBX707",
+  "vehiclePrice": 317000000,
+  "engineCc": 3982,
+  "fuel": "M",
+  "residualGroup": "취급불가",
+  "maintenanceGrade": "7급",
+  "guaranteeFeeRate": 0.015,
+  "residualByTerm": {
+   "36": 0.0,
+   "48": 0.0,
+   "60": 0.0
+  }
+ },
+ "로터스 Emira 3.5 V6 First Edition": {
+  "brand": "로터스",
+  "model": "Emira 3.5 V6 First Edition",
+  "vehiclePrice": 152200000,
+  "engineCc": 3456,
+  "fuel": "M",
+  "residualGroup": "취급불가",
+  "maintenanceGrade": "5급",
+  "guaranteeFeeRate": 0.015,
+  "residualByTerm": {
+   "36": 0.0,
+   "48": 0.0,
+   "60": 0.0
+  }
+ },
+ "로터스 Emira 2.0 I4 First Edition": {
+  "brand": "로터스",
+  "model": "Emira 2.0 I4 First Edition",
+  "vehiclePrice": 145000000,
+  "engineCc": 1991,
+  "fuel": "M",
+  "residualGroup": "취급불가",
+  "maintenanceGrade": "3급",
+  "guaranteeFeeRate": 0.015,
+  "residualByTerm": {
+   "36": 0.0,
+   "48": 0.0,
+   "60": 0.0
+  }
+ },
+ "벤틀리 Continental 4.0 GT V8 S Coupe": {
+  "brand": "벤틀리",
+  "model": "Continental 4.0 GT V8 S Coupe",
+  "vehiclePrice": 328900000,
+  "engineCc": 3996,
+  "fuel": "M",
+  "residualGroup": "취급불가",
+  "maintenanceGrade": "5급",
+  "guaranteeFeeRate": 0.015,
+  "residualByTerm": {
+   "36": 0.0,
+   "48": 0.0,
+   "60": 0.0
+  }
+ },
+ "벤틀리 Continental 4.0 GT V8 Azure Coupe": {
+  "brand": "벤틀리",
+  "model": "Continental 4.0 GT V8 Azure Coupe",
+  "vehiclePrice": 345400000,
+  "engineCc": 3996,
+  "fuel": "M",
+  "residualGroup": "취급불가",
+  "maintenanceGrade": "5급",
+  "guaranteeFeeRate": 0.015,
+  "residualByTerm": {
+   "36": 0.0,
+   "48": 0.0,
+   "60": 0.0
+  }
+ },
+ "벤틀리 Continental 4.0 GT V8 Mulliner Coupe": {
+  "brand": "벤틀리",
+  "model": "Continental 4.0 GT V8 Mulliner Coupe",
+  "vehiclePrice": 380700000,
+  "engineCc": 3996,
+  "fuel": "M",
+  "residualGroup": "취급불가",
+  "maintenanceGrade": "5급",
+  "guaranteeFeeRate": 0.015,
+  "residualByTerm": {
+   "36": 0.0,
+   "48": 0.0,
+   "60": 0.0
+  }
+ },
+ "벤틀리 Flying Spur 4.0 V8 S": {
+  "brand": "벤틀리",
+  "model": "Flying Spur 4.0 V8 S",
+  "vehiclePrice": 356000000,
+  "engineCc": 3996,
+  "fuel": "M",
+  "residualGroup": "취급불가",
+  "maintenanceGrade": "5급",
+  "guaranteeFeeRate": 0.015,
+  "residualByTerm": {
+   "36": 0.0,
+   "48": 0.0,
+   "60": 0.0
+  }
+ },
+ "벤틀리 Flying Spur 4.0 V8 Azure": {
+  "brand": "벤틀리",
+  "model": "Flying Spur 4.0 V8 Azure",
+  "vehiclePrice": 343200000,
+  "engineCc": 3996,
+  "fuel": "M",
+  "residualGroup": "취급불가",
+  "maintenanceGrade": "5급",
+  "guaranteeFeeRate": 0.015,
+  "residualByTerm": {
+   "36": 0.0,
+   "48": 0.0,
+   "60": 0.0
+  }
+ },
+ "벤틀리 Bentayga 4.0 V8 Azure": {
+  "brand": "벤틀리",
+  "model": "Bentayga 4.0 V8 Azure",
+  "vehiclePrice": 331000000,
+  "engineCc": 3996,
+  "fuel": "M",
+  "residualGroup": "FF",
+  "maintenanceGrade": "7급",
+  "guaranteeFeeRate": 0.015,
+  "residualByTerm": {
+   "36": 0.54,
+   "48": 0.47,
+   "60": 0.41
+  }
+ },
+ "페라리 SF90 Stradale 4.0 V8": {
+  "brand": "페라리",
+  "model": "SF90 Stradale 4.0 V8",
+  "vehiclePrice": 640000000,
+  "engineCc": 3990,
+  "fuel": "M",
+  "residualGroup": "취급불가",
+  "maintenanceGrade": "5급",
+  "guaranteeFeeRate": 0.015,
+  "residualByTerm": {
+   "36": 0.0,
+   "48": 0.0,
+   "60": 0.0
+  }
+ },
+ "페라리 812 GTS 6.5 V12": {
+  "brand": "페라리",
+  "model": "812 GTS 6.5 V12",
+  "vehiclePrice": 515000000,
+  "engineCc": 6496,
+  "fuel": "M",
+  "residualGroup": "취급불가",
+  "maintenanceGrade": "6급",
+  "guaranteeFeeRate": 0.015,
+  "residualByTerm": {
+   "36": 0.0,
+   "48": 0.0,
+   "60": 0.0
+  }
+ },
+ "페라리 Roma 3.9 V8": {
+  "brand": "페라리",
+  "model": "Roma 3.9 V8",
+  "vehiclePrice": 320000000,
+  "engineCc": 3855,
+  "fuel": "M",
+  "residualGroup": "취급불가",
+  "maintenanceGrade": "5급",
+  "guaranteeFeeRate": 0.015,
+  "residualByTerm": {
+   "36": 0.0,
+   "48": 0.0,
+   "60": 0.0
+  }
+ },
+ "페라리 296 GTB V6": {
+  "brand": "페라리",
+  "model": "296 GTB V6",
+  "vehiclePrice": 376000000,
+  "engineCc": 2992,
+  "fuel": "M",
+  "residualGroup": "취급불가",
+  "maintenanceGrade": "4급",
+  "guaranteeFeeRate": 0.015,
+  "residualByTerm": {
+   "36": 0.0,
+   "48": 0.0,
+   "60": 0.0
+  }
+ },
+ "람보르기니 Urus 4.0 V8": {
+  "brand": "람보르기니",
+  "model": "Urus 4.0 V8",
+  "vehiclePrice": 328900000,
+  "engineCc": 3996,
+  "fuel": "M",
+  "residualGroup": "취급불가",
+  "maintenanceGrade": "7급",
+  "guaranteeFeeRate": 0.015,
+  "residualByTerm": {
+   "36": 0.0,
+   "48": 0.0,
+   "60": 0.0
+  }
+ },
+ "람보르기니 Urus S 4.0 V8": {
+  "brand": "람보르기니",
+  "model": "Urus S 4.0 V8",
+  "vehiclePrice": 290000000,
+  "engineCc": 3996,
+  "fuel": "M",
+  "residualGroup": "취급불가",
+  "maintenanceGrade": "7급",
+  "guaranteeFeeRate": 0.015,
+  "residualByTerm": {
+   "36": 0.0,
+   "48": 0.0,
+   "60": 0.0
+  }
+ },
+ "람보르기니 Huracan EVO 5.2 LP640-4 Tecnica": {
+  "brand": "람보르기니",
+  "model": "Huracan EVO 5.2 LP640-4 Tecnica",
+  "vehiclePrice": 348000000,
+  "engineCc": 5204,
+  "fuel": "M",
+  "residualGroup": "취급불가",
+  "maintenanceGrade": "6급",
+  "guaranteeFeeRate": 0.015,
+  "residualByTerm": {
+   "36": 0.0,
+   "48": 0.0,
+   "60": 0.0
+  }
+ },
+ "도요타 GR 86 가솔린 2.4 Standard": {
+  "brand": "도요타",
+  "model": "GR 86 가솔린 2.4 Standard",
+  "vehiclePrice": 40900000,
+  "engineCc": 2387,
+  "fuel": "M",
+  "residualGroup": "취급불가",
+  "maintenanceGrade": "3급",
+  "guaranteeFeeRate": 0.015,
+  "residualByTerm": {
+   "36": 0.0,
+   "48": 0.0,
+   "60": 0.0
+  }
+ },
+ "도요타 GR 86 가솔린 2.4 Premium": {
+  "brand": "도요타",
+  "model": "GR 86 가솔린 2.4 Premium",
+  "vehiclePrice": 46900000,
+  "engineCc": 2387,
+  "fuel": "M",
+  "residualGroup": "취급불가",
+  "maintenanceGrade": "4급",
+  "guaranteeFeeRate": 0.015,
+  "residualByTerm": {
+   "36": 0.0,
+   "48": 0.0,
+   "60": 0.0
+  }
+ },
+ "도요타 GR SUPRA  가솔린 3.0": {
+  "brand": "도요타",
+  "model": "GR SUPRA  가솔린 3.0",
+  "vehiclePrice": 79800000,
+  "engineCc": 2998,
+  "fuel": "M",
+  "residualGroup": "취급불가",
+  "maintenanceGrade": "4급",
+  "guaranteeFeeRate": 0.015,
+  "residualByTerm": {
+   "36": 0.0,
+   "48": 0.0,
+   "60": 0.0
+  }
+ },
+ "도요타 Prius 가솔린 2.0 하이브리드 LE": {
+  "brand": "도요타",
+  "model": "Prius 가솔린 2.0 하이브리드 LE",
+  "vehiclePrice": 39900000,
+  "engineCc": 1987,
+  "fuel": "T",
+  "residualGroup": "Y",
+  "maintenanceGrade": "3급",
+  "guaranteeFeeRate": 0.015,
+  "residualByTerm": {
+   "36": 0.61,
+   "48": 0.54,
+   "60": 0.48
+  }
+ },
+ "도요타 Prius 가솔린 2.0 하이브리드 XLE": {
+  "brand": "도요타",
+  "model": "Prius 가솔린 2.0 하이브리드 XLE",
+  "vehiclePrice": 43700000,
+  "engineCc": 1987,
+  "fuel": "T",
+  "residualGroup": "Y",
+  "maintenanceGrade": "3급",
+  "guaranteeFeeRate": 0.015,
+  "residualByTerm": {
+   "36": 0.61,
+   "48": 0.54,
+   "60": 0.48
+  }
+ },
+ "도요타 Prius 가솔린 2.0 하이브리드 SE": {
+  "brand": "도요타",
+  "model": "Prius 가솔린 2.0 하이브리드 SE",
+  "vehiclePrice": 46300000,
+  "engineCc": 1987,
+  "fuel": "T",
+  "residualGroup": "Y",
+  "maintenanceGrade": "3급",
+  "guaranteeFeeRate": 0.015,
+  "residualByTerm": {
+   "36": 0.61,
+   "48": 0.54,
+   "60": 0.48
+  }
+ },
+ "도요타 Prius 가솔린 2.0 하이브리드 XSE": {
+  "brand": "도요타",
+  "model": "Prius 가솔린 2.0 하이브리드 XSE",
+  "vehiclePrice": 51330000,
+  "engineCc": 1987,
+  "fuel": "T",
+  "residualGroup": "Y",
+  "maintenanceGrade": "3급",
+  "guaranteeFeeRate": 0.015,
+  "residualByTerm": {
+   "36": 0.61,
+   "48": 0.54,
+   "60": 0.48
+  }
+ },
+ "도요타 Camry 가솔린  2.5 하이브리드 LE": {
+  "brand": "도요타",
+  "model": "Camry 가솔린  2.5 하이브리드 LE",
+  "vehiclePrice": 40300000,
+  "engineCc": 2487,
+  "fuel": "T",
+  "residualGroup": "CC",
+  "maintenanceGrade": "4급",
+  "guaranteeFeeRate": 0.015,
+  "residualByTerm": {
+   "36": 0.63,
+   "48": 0.56,
+   "60": 0.5
+  }
+ },
+ "도요타 Camry 가솔린 2.5 하이브리드 XLE": {
+  "brand": "도요타",
+  "model": "Camry 가솔린 2.5 하이브리드 XLE",
+  "vehiclePrice": 46030000,
+  "engineCc": 2487,
+  "fuel": "T",
+  "residualGroup": "CC",
+  "maintenanceGrade": "4급",
+  "guaranteeFeeRate": 0.015,
+  "residualByTerm": {
+   "36": 0.63,
+   "48": 0.56,
+   "60": 0.5
+  }
+ },
+ "도요타 Camry 가솔린 2.5 하이브리드 XSE": {
+  "brand": "도요타",
+  "model": "Camry 가솔린 2.5 하이브리드 XSE",
+  "vehiclePrice": 46630000,
+  "engineCc": 2487,
+  "fuel": "T",
+  "residualGroup": "CC",
+  "maintenanceGrade": "4급",
+  "guaranteeFeeRate": 0.015,
+  "residualByTerm": {
+   "36": 0.63,
+   "48": 0.56,
+   "60": 0.5
+  }
+ },
+ "도요타 Crown 2.5L 하이브리드": {
+  "brand": "도요타",
+  "model": "Crown 2.5L 하이브리드",
+  "vehiclePrice": 59530000,
+  "engineCc": 2487,
+  "fuel": "T",
+  "residualGroup": "CC",
+  "maintenanceGrade": "4급",
+  "guaranteeFeeRate": 0.015,
+  "residualByTerm": {
+   "36": 0.6,
+   "48": 0.53,
+   "60": 0.47
+  }
+ },
+ "도요타 Crown 가솔린 2.4L HEV Dual Boost": {
+  "brand": "도요타",
+  "model": "Crown 가솔린 2.4L HEV Dual Boost",
+  "vehiclePrice": 66400000,
+  "engineCc": 2393,
+  "fuel": "M",
+  "residualGroup": "CC",
+  "maintenanceGrade": "4급",
+  "guaranteeFeeRate": 0.015,
+  "residualByTerm": {
+   "36": 0.6,
+   "48": 0.53,
+   "60": 0.47
+  }
+ },
+ "도요타 RAV4 가솔린2.5 하이브리드 2WD XLE": {
+  "brand": "도요타",
+  "model": "RAV4 가솔린2.5 하이브리드 2WD XLE",
+  "vehiclePrice": 45730000,
+  "engineCc": 2487,
+  "fuel": "T",
+  "residualGroup": "FF",
+  "maintenanceGrade": "7급",
+  "guaranteeFeeRate": 0.015,
+  "residualByTerm": {
+   "36": 0.5,
+   "48": 0.43,
+   "60": 0.37
+  }
+ },
+ "도요타 RAV4 가솔린 2.5 하이브리드 AWD LTD": {
+  "brand": "도요타",
+  "model": "RAV4 가솔린 2.5 하이브리드 AWD LTD",
+  "vehiclePrice": 51630000,
+  "engineCc": 2487,
+  "fuel": "T",
+  "residualGroup": "FF",
+  "maintenanceGrade": "7급",
+  "guaranteeFeeRate": 0.015,
+  "residualByTerm": {
+   "36": 0.5,
+   "48": 0.43,
+   "60": 0.37
+  }
+ },
+ "도요타 RAV4 가솔린 2.5 플러그인 하이브리드 XSE": {
+  "brand": "도요타",
+  "model": "RAV4 가솔린 2.5 플러그인 하이브리드 XSE",
+  "vehiclePrice": 58430000,
+  "engineCc": 2487,
+  "fuel": "T",
+  "residualGroup": "FF",
+  "maintenanceGrade": "7급",
+  "guaranteeFeeRate": 0.015,
+  "residualByTerm": {
+   "36": 0.5,
+   "48": 0.43,
+   "60": 0.37
+  }
+ },
+ "도요타 Sienna 가솔린 2.5 하이브리드 2WD": {
+  "brand": "도요타",
+  "model": "Sienna 가솔린 2.5 하이브리드 2WD",
+  "vehiclePrice": 72030000,
+  "engineCc": 2487,
+  "fuel": "T",
+  "residualGroup": "CC",
+  "maintenanceGrade": "7급",
+  "guaranteeFeeRate": 0.015,
+  "residualByTerm": {
+   "36": 0.58,
+   "48": 0.51,
+   "60": 0.45
+  }
+ },
+ "도요타 Sienna 가솔린 2.5 AWD (E-four)": {
+  "brand": "도요타",
+  "model": "Sienna 가솔린 2.5 AWD (E-four)",
+  "vehiclePrice": 70500000,
+  "engineCc": 2487,
+  "fuel": "M",
+  "residualGroup": "CC",
+  "maintenanceGrade": "7급",
+  "guaranteeFeeRate": 0.015,
+  "residualByTerm": {
+   "36": 0.58,
+   "48": 0.51,
+   "60": 0.45
+  }
+ },
+ "도요타 Highlander 가솔린 2.5 하이브리드 Limited": {
+  "brand": "도요타",
+  "model": "Highlander 가솔린 2.5 하이브리드 Limited",
+  "vehiclePrice": 68030000,
+  "engineCc": 2487,
+  "fuel": "T",
+  "residualGroup": "FF",
+  "maintenanceGrade": "7급",
+  "guaranteeFeeRate": 0.015,
+  "residualByTerm": {
+   "36": 0.54,
+   "48": 0.47,
+   "60": 0.41
+  }
+ },
+ "도요타 Highlander 가솔린 2.5 하이브리드 Platinum": {
+  "brand": "도요타",
+  "model": "Highlander 가솔린 2.5 하이브리드 Platinum",
+  "vehiclePrice": 76130000,
+  "engineCc": 2487,
+  "fuel": "T",
+  "residualGroup": "FF",
+  "maintenanceGrade": "7급",
+  "guaranteeFeeRate": 0.015,
+  "residualByTerm": {
+   "36": 0.54,
+   "48": 0.47,
+   "60": 0.41
+  }
+ },
+ "도요타 Alphard 가솔린 2.5 하이브리드": {
+  "brand": "도요타",
+  "model": "Alphard 가솔린 2.5 하이브리드",
+  "vehiclePrice": 99200000,
+  "engineCc": 2487,
+  "fuel": "V",
+  "residualGroup": "Z",
+  "maintenanceGrade": "7급",
+  "guaranteeFeeRate": 0.015,
+  "residualByTerm": {
+   "36": 0.58,
+   "48": 0.51,
+   "60": 0.45
+  }
+ },
+ "혼다 Odyssey 3.5 Elite": {
+  "brand": "혼다",
+  "model": "Odyssey 3.5 Elite",
+  "vehiclePrice": 60500000,
+  "engineCc": 3471,
+  "fuel": "M",
+  "residualGroup": "EE",
+  "maintenanceGrade": "7급",
+  "guaranteeFeeRate": 0.015,
+  "residualByTerm": {
+   "36": 0.47,
+   "48": 0.4,
+   "60": 0.34
+  }
+ },
+ "혼다 All New Pilot 3.5 Elite": {
+  "brand": "혼다",
+  "model": "All New Pilot 3.5 Elite",
+  "vehiclePrice": 69400000,
+  "engineCc": 3471,
+  "fuel": "M",
+  "residualGroup": "EE",
+  "maintenanceGrade": "7급",
+  "guaranteeFeeRate": 0.015,
+  "residualByTerm": {
+   "36": 0.47,
+   "48": 0.4,
+   "60": 0.34
+  }
+ },
+ "혼다 All New Pilot 3.5 Black Edition": {
+  "brand": "혼다",
+  "model": "All New Pilot 3.5 Black Edition",
+  "vehiclePrice": 70900000,
+  "engineCc": 3471,
+  "fuel": "M",
+  "residualGroup": "EE",
+  "maintenanceGrade": "7급",
+  "guaranteeFeeRate": 0.015,
+  "residualByTerm": {
+   "36": 0.47,
+   "48": 0.4,
+   "60": 0.34
+  }
+ },
+ "혼다 All New CR-V 1.5 2WD": {
+  "brand": "혼다",
+  "model": "All New CR-V 1.5 2WD",
+  "vehiclePrice": 42600000,
+  "engineCc": 1498,
+  "fuel": "M",
+  "residualGroup": "DD",
+  "maintenanceGrade": "7급",
+  "guaranteeFeeRate": 0.015,
+  "residualByTerm": {
+   "36": 0.56,
+   "48": 0.49,
+   "60": 0.43
+  }
+ },
+ "혼다 All New CR-V 2.0 2WD Touring": {
+  "brand": "혼다",
+  "model": "All New CR-V 2.0 2WD Touring",
+  "vehiclePrice": 53830000,
+  "engineCc": 1993,
+  "fuel": "T",
+  "residualGroup": "DD",
+  "maintenanceGrade": "7급",
+  "guaranteeFeeRate": 0.015,
+  "residualByTerm": {
+   "36": 0.56,
+   "48": 0.49,
+   "60": 0.43
+  }
+ },
+ "혼다 All New CR-V 2.0 4WD Touring": {
+  "brand": "혼다",
+  "model": "All New CR-V 2.0 4WD Touring",
+  "vehiclePrice": 55900000,
+  "engineCc": 1993,
+  "fuel": "V",
+  "residualGroup": "DD",
+  "maintenanceGrade": "7급",
+  "guaranteeFeeRate": 0.015,
+  "residualByTerm": {
+   "36": 0.56,
+   "48": 0.49,
+   "60": 0.43
+  }
+ },
+ "혼다 New Accord 2.0 Touring 하이브리드": {
+  "brand": "혼다",
+  "model": "New Accord 2.0 Touring 하이브리드",
+  "vehiclePrice": 53400000,
+  "engineCc": 1993,
+  "fuel": "T",
+  "residualGroup": "CC",
+  "maintenanceGrade": "3급",
+  "guaranteeFeeRate": 0.015,
+  "residualByTerm": {
+   "36": 0.53,
+   "48": 0.46,
+   "60": 0.4
+  }
+ },
+ "혼다 New Accord 1.5 Turbo": {
+  "brand": "혼다",
+  "model": "New Accord 1.5 Turbo",
+  "vehiclePrice": 43900000,
+  "engineCc": 1498,
+  "fuel": "M",
+  "residualGroup": "EE",
+  "maintenanceGrade": "2급",
+  "guaranteeFeeRate": 0.015,
+  "residualByTerm": {
+   "36": 0.53,
+   "48": 0.46,
+   "60": 0.4
+  }
+ },
+ "마세라티 Grecale GT": {
+  "brand": "마세라티",
+  "model": "Grecale GT",
+  "vehiclePrice": 99000000,
+  "engineCc": 1995,
+  "fuel": "M",
+  "residualGroup": "II",
+  "maintenanceGrade": "7급",
+  "guaranteeFeeRate": 0.015,
+  "residualByTerm": {
+   "36": 0.43,
+   "48": 0.36,
+   "60": 0.3
+  }
+ },
+ "마세라티 Grecale GT Type P": {
+  "brand": "마세라티",
+  "model": "Grecale GT Type P",
+  "vehiclePrice": 121000000,
+  "engineCc": 1995,
+  "fuel": "M",
+  "residualGroup": "II",
+  "maintenanceGrade": "7급",
+  "guaranteeFeeRate": 0.015,
+  "residualByTerm": {
+   "36": 0.43,
+   "48": 0.36,
+   "60": 0.3
+  }
+ },
+ "마세라티 Grecale Modena": {
+  "brand": "마세라티",
+  "model": "Grecale Modena",
+  "vehiclePrice": 133000000,
+  "engineCc": 1995,
+  "fuel": "M",
+  "residualGroup": "II",
+  "maintenanceGrade": "7급",
+  "guaranteeFeeRate": 0.015,
+  "residualByTerm": {
+   "36": 0.43,
+   "48": 0.36,
+   "60": 0.3
+  }
+ },
+ "마세라티 Grecale Trofeo": {
+  "brand": "마세라티",
+  "model": "Grecale Trofeo",
+  "vehiclePrice": 169000000,
+  "engineCc": 2992,
+  "fuel": "M",
+  "residualGroup": "II",
+  "maintenanceGrade": "7급",
+  "guaranteeFeeRate": 0.015,
+  "residualByTerm": {
+   "36": 0.43,
+   "48": 0.36,
+   "60": 0.3
+  }
+ },
+ "마세라티 Ghibli GT": {
+  "brand": "마세라티",
+  "model": "Ghibli GT",
+  "vehiclePrice": 139000000,
+  "engineCc": 1995,
+  "fuel": "M",
+  "residualGroup": "OO",
+  "maintenanceGrade": "4급",
+  "guaranteeFeeRate": 0.015,
+  "residualByTerm": {
+   "36": 0.34,
+   "48": 0.27,
+   "60": 0.21
+  }
+ },
+ "마세라티 Ghibli Modena S Q4": {
+  "brand": "마세라티",
+  "model": "Ghibli Modena S Q4",
+  "vehiclePrice": 181500000,
+  "engineCc": 2979,
+  "fuel": "M",
+  "residualGroup": "OO",
+  "maintenanceGrade": "4급",
+  "guaranteeFeeRate": 0.015,
+  "residualByTerm": {
+   "36": 0.34,
+   "48": 0.27,
+   "60": 0.21
+  }
+ },
+ "마세라티 Ghibli Trofeo": {
+  "brand": "마세라티",
+  "model": "Ghibli Trofeo",
+  "vehiclePrice": 205000000,
+  "engineCc": 3799,
+  "fuel": "M",
+  "residualGroup": "OO",
+  "maintenanceGrade": "5급",
+  "guaranteeFeeRate": 0.015,
+  "residualByTerm": {
+   "36": 0.34,
+   "48": 0.27,
+   "60": 0.21
+  }
+ },
+ "마세라티 QP GT": {
+  "brand": "마세라티",
+  "model": "QP GT",
+  "vehiclePrice": 200400000,
+  "engineCc": 2979,
+  "fuel": "M",
+  "residualGroup": "OO",
+  "maintenanceGrade": "4급",
+  "guaranteeFeeRate": 0.015,
+  "residualByTerm": {
+   "36": 0.34,
+   "48": 0.27,
+   "60": 0.21
+  }
+ },
+ "마세라티 QP Modena Q4": {
+  "brand": "마세라티",
+  "model": "QP Modena Q4",
+  "vehiclePrice": 240800000,
+  "engineCc": 2979,
+  "fuel": "M",
+  "residualGroup": "OO",
+  "maintenanceGrade": "4급",
+  "guaranteeFeeRate": 0.015,
+  "residualByTerm": {
+   "36": 0.34,
+   "48": 0.27,
+   "60": 0.21
+  }
+ },
+ "마세라티 QP Trofeo": {
+  "brand": "마세라티",
+  "model": "QP Trofeo",
+  "vehiclePrice": 323800000,
+  "engineCc": 3799,
+  "fuel": "M",
+  "residualGroup": "OO",
+  "maintenanceGrade": "5급",
+  "guaranteeFeeRate": 0.015,
+  "residualByTerm": {
+   "36": 0.34,
+   "48": 0.27,
+   "60": 0.21
+  }
+ },
+ "마세라티 LEV GT": {
+  "brand": "마세라티",
+  "model": "LEV GT",
+  "vehiclePrice": 146000000,
+  "engineCc": 1995,
+  "fuel": "M",
+  "residualGroup": "OO",
+  "maintenanceGrade": "7급",
+  "guaranteeFeeRate": 0.015,
+  "residualByTerm": {
+   "36": 0.43,
+   "48": 0.36,
+   "60": 0.3
+  }
+ },
+ "마세라티 LEV Modena S": {
+  "brand": "마세라티",
+  "model": "LEV Modena S",
+  "vehiclePrice": 199500000,
+  "engineCc": 2979,
+  "fuel": "M",
+  "residualGroup": "OO",
+  "maintenanceGrade": "7급",
+  "guaranteeFeeRate": 0.015,
+  "residualByTerm": {
+   "36": 0.43,
+   "48": 0.36,
+   "60": 0.3
+  }
+ },
+ "마세라티 LEV Trofeo": {
+  "brand": "마세라티",
+  "model": "LEV Trofeo",
+  "vehiclePrice": 265000000,
+  "engineCc": 3799,
+  "fuel": "M",
+  "residualGroup": "OO",
+  "maintenanceGrade": "7급",
+  "guaranteeFeeRate": 0.015,
+  "residualByTerm": {
+   "36": 0.42,
+   "48": 0.35,
+   "60": 0.29
+  }
+ },
+ "마세라티 MC20 Coupe": {
+  "brand": "마세라티",
+  "model": "MC20 Coupe",
+  "vehiclePrice": 340600000,
+  "engineCc": 2992,
+  "fuel": "M",
+  "residualGroup": "취급불가",
+  "maintenanceGrade": "",
+  "guaranteeFeeRate": 0.015,
+  "residualByTerm": {
+   "36": 0.0,
+   "48": 0.0,
+   "60": 0.0
+  }
+ },
+ "마세라티 MC20 Cielo": {
+  "brand": "마세라티",
+  "model": "MC20 Cielo",
+  "vehiclePrice": 385600000,
+  "engineCc": 2992,
+  "fuel": "M",
+  "residualGroup": "취급불가",
+  "maintenanceGrade": "",
+  "guaranteeFeeRate": 0.015,
+  "residualByTerm": {
+   "36": 0.0,
+   "48": 0.0,
+   "60": 0.0
+  }
+ },
+ "전기차 GranTurismo Modena": {
+  "brand": "전기차",
+  "model": "GranTurismo Modena",
+  "vehiclePrice": 244250000,
+  "engineCc": 2992,
+  "fuel": "M",
+  "residualGroup": "취급불가",
+  "maintenanceGrade": "4급",
+  "guaranteeFeeRate": 0.015,
+  "residualByTerm": {
+   "36": 0.0,
+   "48": 0.0,
+   "60": 0.0
+  }
+ },
+ "전기차 GranTurismo Trofeo": {
+  "brand": "전기차",
+  "model": "GranTurismo Trofeo",
+  "vehiclePrice": 302250000,
+  "engineCc": 2992,
+  "fuel": "M",
+  "residualGroup": "취급불가",
+  "maintenanceGrade": "4급",
+  "guaranteeFeeRate": 0.015,
+  "residualByTerm": {
+   "36": 0.0,
+   "48": 0.0,
+   "60": 0.0
+  }
+ },
+ "전기차 GranCabrio Trofeo": {
+  "brand": "전기차",
+  "model": "GranCabrio Trofeo",
+  "vehiclePrice": 312250000,
+  "engineCc": 2992,
+  "fuel": "M",
+  "residualGroup": "취급불가",
+  "maintenanceGrade": "4급",
+  "guaranteeFeeRate": 0.015,
+  "residualByTerm": {
+   "36": 0.0,
+   "48": 0.0,
+   "60": 0.0
+  }
+ },
+ "벤츠 EQA": {
+  "brand": "벤츠",
+  "model": "EQA",
+  "vehiclePrice": 67900000,
+  "engineCc": 0,
+  "fuel": "E",
+  "residualGroup": "EE",
+  "maintenanceGrade": "7급",
+  "guaranteeFeeRate": 0.015,
+  "residualByTerm": {
+   "36": 0.53,
+   "48": 0.46,
+   "60": 0.4
+  }
+ },
+ "벤츠 EQB 300": {
+  "brand": "벤츠",
+  "model": "EQB 300",
+  "vehiclePrice": 82000000,
+  "engineCc": 0,
+  "fuel": "E",
+  "residualGroup": "EE",
+  "maintenanceGrade": "7급",
+  "guaranteeFeeRate": 0.015,
+  "residualByTerm": {
+   "36": 0.53,
+   "48": 0.46,
+   "60": 0.4
+  }
+ },
+ "벤츠 EQE 300": {
+  "brand": "벤츠",
+  "model": "EQE 300",
+  "vehiclePrice": 92100000,
+  "engineCc": 0,
+  "fuel": "E",
+  "residualGroup": "EE",
+  "maintenanceGrade": "1급",
+  "guaranteeFeeRate": 0.015,
+  "residualByTerm": {
+   "36": 0.53,
+   "48": 0.46,
+   "60": 0.4
+  }
+ },
+ "벤츠 EQE 350+": {
+  "brand": "벤츠",
+  "model": "EQE 350+",
+  "vehiclePrice": 103800000,
+  "engineCc": 0,
+  "fuel": "E",
+  "residualGroup": "EE",
+  "maintenanceGrade": "1급",
+  "guaranteeFeeRate": 0.015,
+  "residualByTerm": {
+   "36": 0.53,
+   "48": 0.46,
+   "60": 0.4
+  }
+ },
+ "벤츠 EQE 350 4MATIC": {
+  "brand": "벤츠",
+  "model": "EQE 350 4MATIC",
+  "vehiclePrice": 106200000,
+  "engineCc": 0,
+  "fuel": "E",
+  "residualGroup": "EE",
+  "maintenanceGrade": "1급",
+  "guaranteeFeeRate": 0.015,
+  "residualByTerm": {
+   "36": 0.53,
+   "48": 0.46,
+   "60": 0.4
+  }
+ },
+ "벤츠 AMG EQE 53 4MATIC+": {
+  "brand": "벤츠",
+  "model": "AMG EQE 53 4MATIC+",
+  "vehiclePrice": 145200000,
+  "engineCc": 0,
+  "fuel": "E",
+  "residualGroup": "EE",
+  "maintenanceGrade": "1급",
+  "guaranteeFeeRate": 0.015,
+  "residualByTerm": {
+   "36": 0.53,
+   "48": 0.46,
+   "60": 0.4
+  }
+ },
+ "벤츠 EQE SUV 350 4MATIC": {
+  "brand": "벤츠",
+  "model": "EQE SUV 350 4MATIC",
+  "vehiclePrice": 109900000,
+  "engineCc": 0,
+  "fuel": "E",
+  "residualGroup": "EE",
+  "maintenanceGrade": "7급",
+  "guaranteeFeeRate": 0.015,
+  "residualByTerm": {
+   "36": 0.53,
+   "48": 0.46,
+   "60": 0.4
+  }
+ },
+ "벤츠 EQE SUV 500 4MATIC": {
+  "brand": "벤츠",
+  "model": "EQE SUV 500 4MATIC",
+  "vehiclePrice": 128500000,
+  "engineCc": 0,
+  "fuel": "E",
+  "residualGroup": "EE",
+  "maintenanceGrade": "7급",
+  "guaranteeFeeRate": 0.015,
+  "residualByTerm": {
+   "36": 0.53,
+   "48": 0.46,
+   "60": 0.4
+  }
+ },
+ "벤츠 EQS 350": {
+  "brand": "벤츠",
+  "model": "EQS 350",
+  "vehiclePrice": 147600000,
+  "engineCc": 0,
+  "fuel": "E",
+  "residualGroup": "EE",
+  "maintenanceGrade": "7급",
+  "guaranteeFeeRate": 0.015,
+  "residualByTerm": {
+   "36": 0.48,
+   "48": 0.41,
+   "60": 0.35
+  }
+ },
+ "벤츠 EQS 450+": {
+  "brand": "벤츠",
+  "model": "EQS 450+",
+  "vehiclePrice": 163900000,
+  "engineCc": 0,
+  "fuel": "E",
+  "residualGroup": "EE",
+  "maintenanceGrade": "7급",
+  "guaranteeFeeRate": 0.015,
+  "residualByTerm": {
+   "36": 0.48,
+   "48": 0.41,
+   "60": 0.35
+  }
+ },
+ "벤츠 EQS 450 4MATIC": {
+  "brand": "벤츠",
+  "model": "EQS 450 4MATIC",
+  "vehiclePrice": 190000000,
+  "engineCc": 0,
+  "fuel": "E",
+  "residualGroup": "EE",
+  "maintenanceGrade": "7급",
+  "guaranteeFeeRate": 0.015,
+  "residualByTerm": {
+   "36": 0.48,
+   "48": 0.41,
+   "60": 0.35
+  }
+ },
+ "벤츠 AMG EQS 53 4MATIC+": {
+  "brand": "벤츠",
+  "model": "AMG EQS 53 4MATIC+",
+  "vehiclePrice": 216000000,
+  "engineCc": 0,
+  "fuel": "E",
+  "residualGroup": "EE",
+  "maintenanceGrade": "7급",
+  "guaranteeFeeRate": 0.015,
+  "residualByTerm": {
+   "36": 0.48,
+   "48": 0.41,
+   "60": 0.35
+  }
+ },
+ "벤츠 EQS SUV 450 4MATIC": {
+  "brand": "벤츠",
+  "model": "EQS SUV 450 4MATIC",
+  "vehiclePrice": 154100000,
+  "engineCc": 0,
+  "fuel": "E",
+  "residualGroup": "EE",
+  "maintenanceGrade": "7급",
+  "guaranteeFeeRate": 0.015,
+  "residualByTerm": {
+   "36": 0.48,
+   "48": 0.41,
+   "60": 0.35
+  }
+ },
+ "벤츠 EQS SUV 580 4MATIC": {
+  "brand": "벤츠",
+  "model": "EQS SUV 580 4MATIC",
+  "vehiclePrice": 186800000,
+  "engineCc": 0,
+  "fuel": "E",
+  "residualGroup": "EE",
+  "maintenanceGrade": "7급",
+  "guaranteeFeeRate": 0.015,
+  "residualByTerm": {
+   "36": 0.48,
+   "48": 0.41,
+   "60": 0.35
+  }
+ },
+ "벤츠 G580": {
+  "brand": "벤츠",
+  "model": "G580",
+  "vehiclePrice": 239000000,
+  "engineCc": 0,
+  "fuel": "E",
+  "residualGroup": "GG",
+  "maintenanceGrade": "7급",
+  "guaranteeFeeRate": 0.015,
+  "residualByTerm": {
+   "36": 0.55,
+   "48": 0.48,
+   "60": 0.42
+  }
+ },
+ "벤츠 Maybach EQS SUV 680": {
+  "brand": "벤츠",
+  "model": "Maybach EQS SUV 680",
+  "vehiclePrice": 225000000,
+  "engineCc": 0,
+  "fuel": "E",
+  "residualGroup": "EE",
+  "maintenanceGrade": "7급",
+  "guaranteeFeeRate": 0.015,
+  "residualByTerm": {
+   "36": 0.48,
+   "48": 0.41,
+   "60": 0.35
+  }
+ },
+ "BMW iX M60": {
+  "brand": "BMW",
+  "model": "iX M60",
+  "vehiclePrice": 163900000,
+  "engineCc": 0,
+  "fuel": "E",
+  "residualGroup": "CC",
+  "maintenanceGrade": "7급",
+  "guaranteeFeeRate": 0.015,
+  "residualByTerm": {
+   "36": 0.57,
+   "48": 0.5,
+   "60": 0.44
+  }
+ },
+ "BMW iX xDrive45 M Sport": {
+  "brand": "BMW",
+  "model": "iX xDrive45 M Sport",
+  "vehiclePrice": 124800000,
+  "engineCc": 0,
+  "fuel": "E",
+  "residualGroup": "Z",
+  "maintenanceGrade": "7급",
+  "guaranteeFeeRate": 0.015,
+  "residualByTerm": {
+   "36": 0.6,
+   "48": 0.53,
+   "60": 0.47
+  }
+ },
+ "BMW iX xDrive50 Sport Plus": {
+  "brand": "BMW",
+  "model": "iX xDrive50 Sport Plus",
+  "vehiclePrice": 152200000,
+  "engineCc": 0,
+  "fuel": "E",
+  "residualGroup": "Z",
+  "maintenanceGrade": "7급",
+  "guaranteeFeeRate": 0.015,
+  "residualByTerm": {
+   "36": 0.6,
+   "48": 0.53,
+   "60": 0.47
+  }
+ },
+ "BMW iX xDrive60 M Sport Pro": {
+  "brand": "BMW",
+  "model": "iX xDrive60 M Sport Pro",
+  "vehiclePrice": 153800000,
+  "engineCc": 0,
+  "fuel": "E",
+  "residualGroup": "CC",
+  "maintenanceGrade": "7급",
+  "guaranteeFeeRate": 0.015,
+  "residualByTerm": {
+   "36": 0.6,
+   "48": 0.53,
+   "60": 0.47
+  }
+ },
+ "BMW iX M70 xDrive": {
+  "brand": "BMW",
+  "model": "iX M70 xDrive",
+  "vehiclePrice": 177700000,
+  "engineCc": 0,
+  "fuel": "E",
+  "residualGroup": "CC",
+  "maintenanceGrade": "7급",
+  "guaranteeFeeRate": 0.015,
+  "residualByTerm": {
+   "36": 0.57,
+   "48": 0.5,
+   "60": 0.44
+  }
+ },
+ "BMW iX1 eDrive20 M Sport": {
+  "brand": "BMW",
+  "model": "iX1 eDrive20 M Sport",
+  "vehiclePrice": 66500000,
+  "engineCc": 0,
+  "fuel": "E",
+  "residualGroup": "U",
+  "maintenanceGrade": "7급",
+  "guaranteeFeeRate": 0.015,
+  "residualByTerm": {
+   "36": 0.59,
+   "48": 0.52,
+   "60": 0.46
+  }
+ },
+ "BMW iX1 eDrive20 xLine": {
+  "brand": "BMW",
+  "model": "iX1 eDrive20 xLine",
+  "vehiclePrice": 64200000,
+  "engineCc": 0,
+  "fuel": "E",
+  "residualGroup": "U",
+  "maintenanceGrade": "7급",
+  "guaranteeFeeRate": 0.015,
+  "residualByTerm": {
+   "36": 0.59,
+   "48": 0.52,
+   "60": 0.46
+  }
+ },
+ "BMW iX1 xDrive30 xLine": {
+  "brand": "BMW",
+  "model": "iX1 xDrive30 xLine",
+  "vehiclePrice": 67600000,
+  "engineCc": 0,
+  "fuel": "E",
+  "residualGroup": "U",
+  "maintenanceGrade": "7급",
+  "guaranteeFeeRate": 0.015,
+  "residualByTerm": {
+   "36": 0.59,
+   "48": 0.52,
+   "60": 0.46
+  }
+ },
+ "BMW iX1 xDrive30 M Sport": {
+  "brand": "BMW",
+  "model": "iX1 xDrive30 M Sport",
+  "vehiclePrice": 69500000,
+  "engineCc": 0,
+  "fuel": "E",
+  "residualGroup": "U",
+  "maintenanceGrade": "7급",
+  "guaranteeFeeRate": 0.015,
+  "residualByTerm": {
+   "36": 0.59,
+   "48": 0.52,
+   "60": 0.46
+  }
+ },
+ "BMW iX2 eDrive20 M Sport": {
+  "brand": "BMW",
+  "model": "iX2 eDrive20 M Sport",
+  "vehiclePrice": 64700000,
+  "engineCc": 0,
+  "fuel": "E",
+  "residualGroup": "CC",
+  "maintenanceGrade": "7급",
+  "guaranteeFeeRate": 0.015,
+  "residualByTerm": {
+   "36": 0.59,
+   "48": 0.52,
+   "60": 0.46
+  }
+ },
+ "BMW iX3 M Sport": {
+  "brand": "BMW",
+  "model": "iX3 M Sport",
+  "vehiclePrice": 82600000,
+  "engineCc": 0,
+  "fuel": "E",
+  "residualGroup": "Z",
+  "maintenanceGrade": "7급",
+  "guaranteeFeeRate": 0.015,
+  "residualByTerm": {
+   "36": 0.59,
+   "48": 0.52,
+   "60": 0.46
+  }
+ },
+ "BMW i4 eDrive40 Gran Coupe M Sport Pro": {
+  "brand": "BMW",
+  "model": "i4 eDrive40 Gran Coupe M Sport Pro",
+  "vehiclePrice": 81100000,
+  "engineCc": 0,
+  "fuel": "E",
+  "residualGroup": "GG",
+  "maintenanceGrade": "7급",
+  "guaranteeFeeRate": 0.015,
+  "residualByTerm": {
+   "36": 0.53,
+   "48": 0.46,
+   "60": 0.4
+  }
+ },
+ "BMW i4 M50 Gran coupe": {
+  "brand": "BMW",
+  "model": "i4 M50 Gran coupe",
+  "vehiclePrice": 84900000,
+  "engineCc": 0,
+  "fuel": "E",
+  "residualGroup": "GG",
+  "maintenanceGrade": "7급",
+  "guaranteeFeeRate": 0.015,
+  "residualByTerm": {
+   "36": 0.53,
+   "48": 0.46,
+   "60": 0.4
+  }
+ },
+ "BMW i4 M50 xDrive Gran Coupe": {
+  "brand": "BMW",
+  "model": "i4 M50 xDrive Gran Coupe",
+  "vehiclePrice": 84900000,
+  "engineCc": 0,
+  "fuel": "E",
+  "residualGroup": "GG",
+  "maintenanceGrade": "7급",
+  "guaranteeFeeRate": 0.015,
+  "residualByTerm": {
+   "36": 0.53,
+   "48": 0.46,
+   "60": 0.4
+  }
+ },
+ "BMW i4 M50 xDrive Gran Coupe Pro": {
+  "brand": "BMW",
+  "model": "i4 M50 xDrive Gran Coupe Pro",
+  "vehiclePrice": 91600000,
+  "engineCc": 0,
+  "fuel": "E",
+  "residualGroup": "GG",
+  "maintenanceGrade": "7급",
+  "guaranteeFeeRate": 0.015,
+  "residualByTerm": {
+   "36": 0.53,
+   "48": 0.46,
+   "60": 0.4
+  }
+ },
+ "BMW i4 M60 xDrive Gran Coupe": {
+  "brand": "BMW",
+  "model": "i4 M60 xDrive Gran Coupe",
+  "vehiclePrice": 84900000,
+  "engineCc": 0,
+  "fuel": "E",
+  "residualGroup": "GG",
+  "maintenanceGrade": "7급",
+  "guaranteeFeeRate": 0.015,
+  "residualByTerm": {
+   "36": 0.53,
+   "48": 0.46,
+   "60": 0.4
+  }
+ },
+ "BMW i4 M60 xDrive Gran Coupe Pro": {
+  "brand": "BMW",
+  "model": "i4 M60 xDrive Gran Coupe Pro",
+  "vehiclePrice": 91600000,
+  "engineCc": 0,
+  "fuel": "E",
+  "residualGroup": "GG",
+  "maintenanceGrade": "7급",
+  "guaranteeFeeRate": 0.015,
+  "residualByTerm": {
+   "36": 0.53,
+   "48": 0.46,
+   "60": 0.4
+  }
+ },
+ "BMW i5 xDrive40 M Sport": {
+  "brand": "BMW",
+  "model": "i5 xDrive40 M Sport",
+  "vehiclePrice": 103000000,
+  "engineCc": 0,
+  "fuel": "E",
+  "residualGroup": "AA",
+  "maintenanceGrade": "7급",
+  "guaranteeFeeRate": 0.015,
+  "residualByTerm": {
+   "36": 0.57,
+   "48": 0.5,
+   "60": 0.44
+  }
+ },
+ "BMW i5 xDrive40 M Sport Pro": {
+  "brand": "BMW",
+  "model": "i5 xDrive40 M Sport Pro",
+  "vehiclePrice": 105800000,
+  "engineCc": 0,
+  "fuel": "E",
+  "residualGroup": "AA",
+  "maintenanceGrade": "7급",
+  "guaranteeFeeRate": 0.015,
+  "residualByTerm": {
+   "36": 0.57,
+   "48": 0.5,
+   "60": 0.44
+  }
+ },
+ "BMW i5 eDrive40": {
+  "brand": "BMW",
+  "model": "i5 eDrive40",
+  "vehiclePrice": 93900000,
+  "engineCc": 0,
+  "fuel": "E",
+  "residualGroup": "AA",
+  "maintenanceGrade": "7급",
+  "guaranteeFeeRate": 0.015,
+  "residualByTerm": {
+   "36": 0.57,
+   "48": 0.5,
+   "60": 0.44
+  }
+ },
+ "BMW i5 eDrive40 M Sport": {
+  "brand": "BMW",
+  "model": "i5 eDrive40 M Sport",
+  "vehiclePrice": 96900000,
+  "engineCc": 0,
+  "fuel": "E",
+  "residualGroup": "AA",
+  "maintenanceGrade": "7급",
+  "guaranteeFeeRate": 0.015,
+  "residualByTerm": {
+   "36": 0.57,
+   "48": 0.5,
+   "60": 0.44
+  }
+ },
+ "BMW i5 eDrive40 M Sport Pro": {
+  "brand": "BMW",
+  "model": "i5 eDrive40 M Sport Pro",
+  "vehiclePrice": 101700000,
+  "engineCc": 0,
+  "fuel": "E",
+  "residualGroup": "AA",
+  "maintenanceGrade": "7급",
+  "guaranteeFeeRate": 0.015,
+  "residualByTerm": {
+   "36": 0.57,
+   "48": 0.5,
+   "60": 0.44
+  }
+ },
+ "BMW i5 M60 xDrive": {
+  "brand": "BMW",
+  "model": "i5 M60 xDrive",
+  "vehiclePrice": 138900000,
+  "engineCc": 0,
+  "fuel": "E",
+  "residualGroup": "AA",
+  "maintenanceGrade": "7급",
+  "guaranteeFeeRate": 0.015,
+  "residualByTerm": {
+   "36": 0.57,
+   "48": 0.5,
+   "60": 0.44
+  }
+ },
+ "BMW i7 eDrive50 M Sport Limited": {
+  "brand": "BMW",
+  "model": "i7 eDrive50 M Sport Limited",
+  "vehiclePrice": 166900000,
+  "engineCc": 0,
+  "fuel": "E",
+  "residualGroup": "CC",
+  "maintenanceGrade": "7급",
+  "guaranteeFeeRate": 0.015,
+  "residualByTerm": {
+   "36": 0.55,
+   "48": 0.48,
+   "60": 0.42
+  }
+ },
+ "BMW i7 eDrive50 M Sport": {
+  "brand": "BMW",
+  "model": "i7 eDrive50 M Sport",
+  "vehiclePrice": 181900000,
+  "engineCc": 0,
+  "fuel": "E",
+  "residualGroup": "CC",
+  "maintenanceGrade": "7급",
+  "guaranteeFeeRate": 0.015,
+  "residualByTerm": {
+   "36": 0.55,
+   "48": 0.48,
+   "60": 0.42
+  }
+ },
+ "BMW i7 xDrive60 DPE": {
+  "brand": "BMW",
+  "model": "i7 xDrive60 DPE",
+  "vehiclePrice": 212100000,
+  "engineCc": 0,
+  "fuel": "E",
+  "residualGroup": "CC",
+  "maintenanceGrade": "7급",
+  "guaranteeFeeRate": 0.015,
+  "residualByTerm": {
+   "36": 0.55,
+   "48": 0.48,
+   "60": 0.42
+  }
+ },
+ "BMW i7 xDrive60 M Sport": {
+  "brand": "BMW",
+  "model": "i7 xDrive60 M Sport",
+  "vehiclePrice": 215900000,
+  "engineCc": 0,
+  "fuel": "E",
+  "residualGroup": "CC",
+  "maintenanceGrade": "7급",
+  "guaranteeFeeRate": 0.015,
+  "residualByTerm": {
+   "36": 0.55,
+   "48": 0.48,
+   "60": 0.42
+  }
+ },
+ "BMW i7 M70 xDrive": {
+  "brand": "BMW",
+  "model": "i7 M70 xDrive",
+  "vehiclePrice": 231800000,
+  "engineCc": 0,
+  "fuel": "E",
+  "residualGroup": "CC",
+  "maintenanceGrade": "7급",
+  "guaranteeFeeRate": 0.015,
+  "residualByTerm": {
+   "36": 0.55,
+   "48": 0.48,
+   "60": 0.42
+  }
+ },
+ "미니 Electric SE Class": {
+  "brand": "미니",
+  "model": "Electric SE Class",
+  "vehiclePrice": 52500000,
+  "engineCc": 0,
+  "fuel": "E",
+  "residualGroup": "DD",
+  "maintenanceGrade": "7급",
+  "guaranteeFeeRate": 0.015,
+  "residualByTerm": {
+   "36": 0.49,
+   "48": 0.42,
+   "60": 0.36
+  }
+ },
+ "미니 Electric SE Favoured": {
+  "brand": "미니",
+  "model": "Electric SE Favoured",
+  "vehiclePrice": 56100000,
+  "engineCc": 0,
+  "fuel": "E",
+  "residualGroup": "DD",
+  "maintenanceGrade": "7급",
+  "guaranteeFeeRate": 0.015,
+  "residualByTerm": {
+   "36": 0.49,
+   "48": 0.42,
+   "60": 0.36
+  }
+ },
+ "미니 Countryman Electric E Classic": {
+  "brand": "미니",
+  "model": "Countryman Electric E Classic",
+  "vehiclePrice": 56700000,
+  "engineCc": 0,
+  "fuel": "E",
+  "residualGroup": "DD",
+  "maintenanceGrade": "7급",
+  "guaranteeFeeRate": 0.015,
+  "residualByTerm": {
+   "36": 0.49,
+   "48": 0.42,
+   "60": 0.36
+  }
+ },
+ "미니 Countryman Electric SE All4 Favoured": {
+  "brand": "미니",
+  "model": "Countryman Electric SE All4 Favoured",
+  "vehiclePrice": 63100000,
+  "engineCc": 0,
+  "fuel": "E",
+  "residualGroup": "DD",
+  "maintenanceGrade": "7급",
+  "guaranteeFeeRate": 0.015,
+  "residualByTerm": {
+   "36": 0.49,
+   "48": 0.42,
+   "60": 0.36
+  }
+ },
+ "미니 Countryman Electric SE All4 JCW": {
+  "brand": "미니",
+  "model": "Countryman Electric SE All4 JCW",
+  "vehiclePrice": 66100000,
+  "engineCc": 0,
+  "fuel": "E",
+  "residualGroup": "DD",
+  "maintenanceGrade": "7급",
+  "guaranteeFeeRate": 0.015,
+  "residualByTerm": {
+   "36": 0.49,
+   "48": 0.42,
+   "60": 0.36
+  }
+ },
+ "미니 Aceman E Classic": {
+  "brand": "미니",
+  "model": "Aceman E Classic",
+  "vehiclePrice": 49700000,
+  "engineCc": 0,
+  "fuel": "E",
+  "residualGroup": "DD",
+  "maintenanceGrade": "7급",
+  "guaranteeFeeRate": 0.015,
+  "residualByTerm": {
+   "36": 0.49,
+   "48": 0.42,
+   "60": 0.36
+  }
+ },
+ "미니 Aceman SE Favoured": {
+  "brand": "미니",
+  "model": "Aceman SE Favoured",
+  "vehiclePrice": 58000000,
+  "engineCc": 0,
+  "fuel": "E",
+  "residualGroup": "DD",
+  "maintenanceGrade": "7급",
+  "guaranteeFeeRate": 0.015,
+  "residualByTerm": {
+   "36": 0.49,
+   "48": 0.42,
+   "60": 0.36
+  }
+ },
+ "미니 Aceman SE": {
+  "brand": "미니",
+  "model": "Aceman SE",
+  "vehiclePrice": 58600000,
+  "engineCc": 0,
+  "fuel": "E",
+  "residualGroup": "DD",
+  "maintenanceGrade": "7급",
+  "guaranteeFeeRate": 0.015,
+  "residualByTerm": {
+   "36": 0.49,
+   "48": 0.42,
+   "60": 0.36
+  }
+ },
+ "아우디 e-tron 55 Quattro": {
+  "brand": "아우디",
+  "model": "e-tron 55 Quattro",
+  "vehiclePrice": 114930000,
+  "engineCc": 0,
+  "fuel": "E",
+  "residualGroup": "II",
+  "maintenanceGrade": "7급",
+  "guaranteeFeeRate": 0.015,
+  "residualByTerm": {
+   "36": 0.52,
+   "48": 0.45,
+   "60": 0.39
+  }
+ },
+ "아우디 e-tron 50 Quattro": {
+  "brand": "아우디",
+  "model": "e-tron 50 Quattro",
+  "vehiclePrice": 99800000,
+  "engineCc": 0,
+  "fuel": "E",
+  "residualGroup": "II",
+  "maintenanceGrade": "7급",
+  "guaranteeFeeRate": 0.015,
+  "residualByTerm": {
+   "36": 0.52,
+   "48": 0.45,
+   "60": 0.39
+  }
+ },
+ "아우디 A6 e-tron Performance Advanced": {
+  "brand": "아우디",
+  "model": "A6 e-tron Performance Advanced",
+  "vehiclePrice": 94590000,
+  "engineCc": 0,
+  "fuel": "E",
+  "residualGroup": "FF",
+  "maintenanceGrade": "7급",
+  "guaranteeFeeRate": 0.015,
+  "residualByTerm": {
+   "36": 0.52,
+   "48": 0.45,
+   "60": 0.39
+  }
+ },
+ "아우디 A6 e-tron Performance S-line": {
+  "brand": "아우디",
+  "model": "A6 e-tron Performance S-line",
+  "vehiclePrice": 102100000,
+  "engineCc": 0,
+  "fuel": "E",
+  "residualGroup": "FF",
+  "maintenanceGrade": "7급",
+  "guaranteeFeeRate": 0.015,
+  "residualByTerm": {
+   "36": 0.52,
+   "48": 0.45,
+   "60": 0.39
+  }
+ },
+ "아우디 A6 e-tron Performance S-line Black Edition": {
+  "brand": "아우디",
+  "model": "A6 e-tron Performance S-line Black Edition",
+  "vehiclePrice": 105860000,
+  "engineCc": 0,
+  "fuel": "E",
+  "residualGroup": "FF",
+  "maintenanceGrade": "7급",
+  "guaranteeFeeRate": 0.015,
+  "residualByTerm": {
+   "36": 0.52,
+   "48": 0.45,
+   "60": 0.39
+  }
+ },
+ "아우디 A6 e-tron S6": {
+  "brand": "아우디",
+  "model": "A6 e-tron S6",
+  "vehiclePrice": 116240000,
+  "engineCc": 0,
+  "fuel": "E",
+  "residualGroup": "HH",
+  "maintenanceGrade": "7급",
+  "guaranteeFeeRate": 0.015,
+  "residualByTerm": {
+   "36": 0.52,
+   "48": 0.45,
+   "60": 0.39
+  }
+ },
+ "아우디 Q4 e-tron 40": {
+  "brand": "아우디",
+  "model": "Q4 e-tron 40",
+  "vehiclePrice": 59700000,
+  "engineCc": 0,
+  "fuel": "E",
+  "residualGroup": "JJ",
+  "maintenanceGrade": "7급",
+  "guaranteeFeeRate": 0.015,
+  "residualByTerm": {
+   "36": 0.51,
+   "48": 0.44,
+   "60": 0.38
+  }
+ },
+ "아우디 Q4 e-tron 40 SportBack": {
+  "brand": "아우디",
+  "model": "Q4 e-tron 40 SportBack",
+  "vehiclePrice": 70700000,
+  "engineCc": 0,
+  "fuel": "E",
+  "residualGroup": "JJ",
+  "maintenanceGrade": "7급",
+  "guaranteeFeeRate": 0.015,
+  "residualByTerm": {
+   "36": 0.51,
+   "48": 0.44,
+   "60": 0.38
+  }
+ },
+ "아우디 Q4 e-tron 45 Premium": {
+  "brand": "아우디",
+  "model": "Q4 e-tron 45 Premium",
+  "vehiclePrice": 69800000,
+  "engineCc": 0,
+  "fuel": "E",
+  "residualGroup": "JJ",
+  "maintenanceGrade": "7급",
+  "guaranteeFeeRate": 0.015,
+  "residualByTerm": {
+   "36": 0.51,
+   "48": 0.44,
+   "60": 0.38
+  }
+ },
+ "아우디 Q4 e-tron 45 Sportback": {
+  "brand": "아우디",
+  "model": "Q4 e-tron 45 Sportback",
+  "vehiclePrice": 68300000,
+  "engineCc": 0,
+  "fuel": "E",
+  "residualGroup": "JJ",
+  "maintenanceGrade": "7급",
+  "guaranteeFeeRate": 0.015,
+  "residualByTerm": {
+   "36": 0.51,
+   "48": 0.44,
+   "60": 0.38
+  }
+ },
+ "아우디 Q4 e-tron 45 Premium Sportback": {
+  "brand": "아우디",
+  "model": "Q4 e-tron 45 Premium Sportback",
+  "vehiclePrice": 73800000,
+  "engineCc": 0,
+  "fuel": "E",
+  "residualGroup": "JJ",
+  "maintenanceGrade": "7급",
+  "guaranteeFeeRate": 0.015,
+  "residualByTerm": {
+   "36": 0.51,
+   "48": 0.44,
+   "60": 0.38
+  }
+ },
+ "아우디 Q6 e-tron Performance": {
+  "brand": "아우디",
+  "model": "Q6 e-tron Performance",
+  "vehiclePrice": 82900000,
+  "engineCc": 0,
+  "fuel": "E",
+  "residualGroup": "JJ",
+  "maintenanceGrade": "7급",
+  "guaranteeFeeRate": 0.015,
+  "residualByTerm": {
+   "36": 0.51,
+   "48": 0.44,
+   "60": 0.38
+  }
+ },
+ "아우디 Q6 e-tron Performance Premium": {
+  "brand": "아우디",
+  "model": "Q6 e-tron Performance Premium",
+  "vehiclePrice": 89900000,
+  "engineCc": 0,
+  "fuel": "E",
+  "residualGroup": "JJ",
+  "maintenanceGrade": "7급",
+  "guaranteeFeeRate": 0.015,
+  "residualByTerm": {
+   "36": 0.51,
+   "48": 0.44,
+   "60": 0.38
+  }
+ },
+ "아우디 Q6 e-tron Quattro Premium": {
+  "brand": "아우디",
+  "model": "Q6 e-tron Quattro Premium",
+  "vehiclePrice": 106900000,
+  "engineCc": 0,
+  "fuel": "E",
+  "residualGroup": "JJ",
+  "maintenanceGrade": "7급",
+  "guaranteeFeeRate": 0.015,
+  "residualByTerm": {
+   "36": 0.51,
+   "48": 0.44,
+   "60": 0.38
+  }
+ },
+ "아우디 Q6 e-tron(SQ6 전기)": {
+  "brand": "아우디",
+  "model": "Q6 e-tron(SQ6 전기)",
+  "vehiclePrice": 115900000,
+  "engineCc": 0,
+  "fuel": "E",
+  "residualGroup": "JJ",
+  "maintenanceGrade": "7급",
+  "guaranteeFeeRate": 0.015,
+  "residualByTerm": {
+   "36": 0.51,
+   "48": 0.44,
+   "60": 0.38
+  }
+ },
+ "아우디 Q8 e-tron 50 e-tron Quattro": {
+  "brand": "아우디",
+  "model": "Q8 e-tron 50 e-tron Quattro",
+  "vehiclePrice": 108600000,
+  "engineCc": 0,
+  "fuel": "E",
+  "residualGroup": "JJ",
+  "maintenanceGrade": "7급",
+  "guaranteeFeeRate": 0.015,
+  "residualByTerm": {
+   "36": 0.48,
+   "48": 0.41,
+   "60": 0.35
+  }
+ },
+ "아우디 Q8 e-tron 55 e-tron Quattro": {
+  "brand": "아우디",
+  "model": "Q8 e-tron 55 e-tron Quattro",
+  "vehiclePrice": 120600000,
+  "engineCc": 0,
+  "fuel": "E",
+  "residualGroup": "JJ",
+  "maintenanceGrade": "7급",
+  "guaranteeFeeRate": 0.015,
+  "residualByTerm": {
+   "36": 0.48,
+   "48": 0.41,
+   "60": 0.35
+  }
+ },
+ "아우디 Q8 e-tron 55 e-tron Quattro Premium": {
+  "brand": "아우디",
+  "model": "Q8 e-tron 55 e-tron Quattro Premium",
+  "vehiclePrice": 131600000,
+  "engineCc": 0,
+  "fuel": "E",
+  "residualGroup": "JJ",
+  "maintenanceGrade": "7급",
+  "guaranteeFeeRate": 0.015,
+  "residualByTerm": {
+   "36": 0.48,
+   "48": 0.41,
+   "60": 0.35
+  }
+ },
+ "아우디 SQ8 e-tron": {
+  "brand": "아우디",
+  "model": "SQ8 e-tron",
+  "vehiclePrice": 154600000,
+  "engineCc": 0,
+  "fuel": "E",
+  "residualGroup": "JJ",
+  "maintenanceGrade": "7급",
+  "guaranteeFeeRate": 0.015,
+  "residualByTerm": {
+   "36": 0.0,
+   "48": 0.0,
+   "60": 0.0
+  }
+ },
+ "아우디 e-tron SB 50 Quattro": {
+  "brand": "아우디",
+  "model": "e-tron SB 50 Quattro",
+  "vehiclePrice": 103800000,
+  "engineCc": 0,
+  "fuel": "E",
+  "residualGroup": "II",
+  "maintenanceGrade": "7급",
+  "guaranteeFeeRate": 0.015,
+  "residualByTerm": {
+   "36": 0.0,
+   "48": 0.0,
+   "60": 0.0
+  }
+ },
+ "아우디 e-tron SB 55 Quattro (2C5+PAO)": {
+  "brand": "아우디",
+  "model": "e-tron SB 55 Quattro (2C5+PAO)",
+  "vehiclePrice": 122940000,
+  "engineCc": 0,
+  "fuel": "E",
+  "residualGroup": "II",
+  "maintenanceGrade": "7급",
+  "guaranteeFeeRate": 0.015,
+  "residualByTerm": {
+   "36": 0.0,
+   "48": 0.0,
+   "60": 0.0
+  }
+ },
+ "아우디 e-tron SB 55 Quattro (2C5)": {
+  "brand": "아우디",
+  "model": "e-tron SB 55 Quattro (2C5)",
+  "vehiclePrice": 123480000,
+  "engineCc": 0,
+  "fuel": "E",
+  "residualGroup": "II",
+  "maintenanceGrade": "7급",
+  "guaranteeFeeRate": 0.015,
+  "residualByTerm": {
+   "36": 0.0,
+   "48": 0.0,
+   "60": 0.0
+  }
+ },
+ "아우디 e-tron SB 55 Quattro": {
+  "brand": "아우디",
+  "model": "e-tron SB 55 Quattro",
+  "vehiclePrice": 124100000,
+  "engineCc": 0,
+  "fuel": "E",
+  "residualGroup": "II",
+  "maintenanceGrade": "7급",
+  "guaranteeFeeRate": 0.015,
+  "residualByTerm": {
+   "36": 0.0,
+   "48": 0.0,
+   "60": 0.0
+  }
+ },
+ "아우디 e-tron GT  Quattro": {
+  "brand": "아우디",
+  "model": "e-tron GT  Quattro",
+  "vehiclePrice": 140910000,
+  "engineCc": 0,
+  "fuel": "E",
+  "residualGroup": "KK",
+  "maintenanceGrade": "7급",
+  "guaranteeFeeRate": 0.015,
+  "residualByTerm": {
+   "36": 0.48,
+   "48": 0.41,
+   "60": 0.35
+  }
+ },
+ "아우디 e-tron GT  Quattro Premium": {
+  "brand": "아우디",
+  "model": "e-tron GT  Quattro Premium",
+  "vehiclePrice": 163910000,
+  "engineCc": 0,
+  "fuel": "E",
+  "residualGroup": "KK",
+  "maintenanceGrade": "7급",
+  "guaranteeFeeRate": 0.015,
+  "residualByTerm": {
+   "36": 0.48,
+   "48": 0.41,
+   "60": 0.35
+  }
+ },
+ "아우디 e-tron GT  RS": {
+  "brand": "아우디",
+  "model": "e-tron GT  RS",
+  "vehiclePrice": 203910000,
+  "engineCc": 0,
+  "fuel": "E",
+  "residualGroup": "KK",
+  "maintenanceGrade": "7급",
+  "guaranteeFeeRate": 0.015,
+  "residualByTerm": {
+   "36": 0.48,
+   "48": 0.41,
+   "60": 0.35
+  }
+ },
+ "아우디 e-tron S": {
+  "brand": "아우디",
+  "model": "e-tron S",
+  "vehiclePrice": 137220000,
+  "engineCc": 0,
+  "fuel": "E",
+  "residualGroup": "II",
+  "maintenanceGrade": "7급",
+  "guaranteeFeeRate": 0.015,
+  "residualByTerm": {
+   "36": 0.52,
+   "48": 0.45,
+   "60": 0.39
+  }
+ },
+ "아우디 e-tron S (2C5+PAO+PAX)": {
+  "brand": "아우디",
+  "model": "e-tron S (2C5+PAO+PAX)",
+  "vehiclePrice": 135600000,
+  "engineCc": 0,
+  "fuel": "E",
+  "residualGroup": "II",
+  "maintenanceGrade": "7급",
+  "guaranteeFeeRate": 0.015,
+  "residualByTerm": {
+   "36": 0.52,
+   "48": 0.45,
+   "60": 0.39
+  }
+ },
+ "아우디 e-tron S SportBack (2C5+PAO+PAX)": {
+  "brand": "아우디",
+  "model": "e-tron S SportBack (2C5+PAO+PAX)",
+  "vehiclePrice": 139600000,
+  "engineCc": 0,
+  "fuel": "E",
+  "residualGroup": "II",
+  "maintenanceGrade": "7급",
+  "guaranteeFeeRate": 0.015,
+  "residualByTerm": {
+   "36": 0.52,
+   "48": 0.45,
+   "60": 0.39
+  }
+ },
+ "아우디 e-tron S SportBack": {
+  "brand": "아우디",
+  "model": "e-tron S SportBack",
+  "vehiclePrice": 141220000,
+  "engineCc": 0,
+  "fuel": "E",
+  "residualGroup": "II",
+  "maintenanceGrade": "7급",
+  "guaranteeFeeRate": 0.015,
+  "residualByTerm": {
+   "36": 0.52,
+   "48": 0.45,
+   "60": 0.39
+  }
+ },
+ "포르쉐 Taycan": {
+  "brand": "포르쉐",
+  "model": "Taycan",
+  "vehiclePrice": 129900000,
+  "engineCc": 0,
+  "fuel": "E",
+  "residualGroup": "AA",
+  "maintenanceGrade": "1급",
+  "guaranteeFeeRate": 0.015,
+  "residualByTerm": {
+   "36": 0.55,
+   "48": 0.48,
+   "60": 0.42
+  }
+ },
+ "포르쉐 Macan": {
+  "brand": "포르쉐",
+  "model": "Macan",
+  "vehiclePrice": 99100000,
+  "engineCc": 0,
+  "fuel": "E",
+  "residualGroup": "AA",
+  "maintenanceGrade": "7급",
+  "guaranteeFeeRate": 0.015,
+  "residualByTerm": {
+   "36": 0.54,
+   "48": 0.47,
+   "60": 0.41
+  }
+ },
+ "포르쉐 Cayenne Electric": {
+  "brand": "포르쉐",
+  "model": "Cayenne Electric",
+  "vehiclePrice": 142300000,
+  "engineCc": 0,
+  "fuel": "E",
+  "residualGroup": "AA",
+  "maintenanceGrade": "7급",
+  "guaranteeFeeRate": 0.015,
+  "residualByTerm": {
+   "36": 0.55,
+   "48": 0.48,
+   "60": 0.42
+  }
+ },
+ "JEEP Avenger Longitude": {
+  "brand": "JEEP",
+  "model": "Avenger Longitude",
+  "vehiclePrice": 52900000,
+  "engineCc": 0,
+  "fuel": "E",
+  "residualGroup": "II",
+  "maintenanceGrade": "7급",
+  "guaranteeFeeRate": 0.015,
+  "residualByTerm": {
+   "36": 0.48,
+   "48": 0.41,
+   "60": 0.35
+  }
+ },
+ "JEEP Avenger Altitude": {
+  "brand": "JEEP",
+  "model": "Avenger Altitude",
+  "vehiclePrice": 56400000,
+  "engineCc": 0,
+  "fuel": "E",
+  "residualGroup": "II",
+  "maintenanceGrade": "7급",
+  "guaranteeFeeRate": 0.015,
+  "residualByTerm": {
+   "36": 0.48,
+   "48": 0.41,
+   "60": 0.35
+  }
+ },
+ "푸조 e-2008 Allure": {
+  "brand": "푸조",
+  "model": "e-2008 Allure",
+  "vehiclePrice": 52900000,
+  "engineCc": 0,
+  "fuel": "E",
+  "residualGroup": "II",
+  "maintenanceGrade": "7급",
+  "guaranteeFeeRate": 0.015,
+  "residualByTerm": {
+   "36": 0.44,
+   "48": 0.37,
+   "60": 0.31
+  }
+ },
+ "푸조 e-2008 GT": {
+  "brand": "푸조",
+  "model": "e-2008 GT",
+  "vehiclePrice": 54900000,
+  "engineCc": 0,
+  "fuel": "E",
+  "residualGroup": "II",
+  "maintenanceGrade": "7급",
+  "guaranteeFeeRate": 0.015,
+  "residualByTerm": {
+   "36": 0.44,
+   "48": 0.37,
+   "60": 0.31
+  }
+ },
+ "푸조 e-208 GT": {
+  "brand": "푸조",
+  "model": "e-208 GT",
+  "vehiclePrice": 53000000,
+  "engineCc": 0,
+  "fuel": "E",
+  "residualGroup": "II",
+  "maintenanceGrade": "1급",
+  "guaranteeFeeRate": 0.015,
+  "residualByTerm": {
+   "36": 0.44,
+   "48": 0.37,
+   "60": 0.31
+  }
+ },
+ "선구매 전용 Tesla Model Y Premium RWD": {
+  "brand": "선구매 전용 Tesla",
+  "model": "Model Y Premium RWD",
+  "vehiclePrice": 49990000,
+  "engineCc": 0,
+  "fuel": "E",
+  "residualGroup": "W",
+  "maintenanceGrade": "7급",
+  "guaranteeFeeRate": 0.015,
+  "residualByTerm": {
+   "36": 0.62,
+   "48": 0.55,
+   "60": 0.49
+  }
+ },
+ "선구매 전용 Tesla Model Y Premium Long Range": {
+  "brand": "선구매 전용 Tesla",
+  "model": "Model Y Premium Long Range",
+  "vehiclePrice": 59990000,
+  "engineCc": 0,
+  "fuel": "E",
+  "residualGroup": "W",
+  "maintenanceGrade": "7급",
+  "guaranteeFeeRate": 0.015,
+  "residualByTerm": {
+   "36": 0.62,
+   "48": 0.55,
+   "60": 0.49
+  }
+ },
+ "선구매 전용 Tesla Model Y L AWD": {
+  "brand": "선구매 전용 Tesla",
+  "model": "Model Y L AWD",
+  "vehiclePrice": 64990000,
+  "engineCc": 0,
+  "fuel": "E",
+  "residualGroup": "W",
+  "maintenanceGrade": "7급",
+  "guaranteeFeeRate": 0.015,
+  "residualByTerm": {
+   "36": 0.63,
+   "48": 0.56,
+   "60": 0.5
+  }
+ },
+ "캐딜락 Lyriq": {
+  "brand": "캐딜락",
+  "model": "Lyriq",
+  "vehiclePrice": 106960000,
+  "engineCc": 0,
+  "fuel": "E",
+  "residualGroup": "NN",
+  "maintenanceGrade": "7급",
+  "guaranteeFeeRate": 0.015,
+  "residualByTerm": {
+   "36": 0.46,
+   "48": 0.39,
+   "60": 0.33
+  }
+ },
+ "캐딜락 Escalade IQ": {
+  "brand": "캐딜락",
+  "model": "Escalade IQ",
+  "vehiclePrice": 277570000,
+  "engineCc": 0,
+  "fuel": "E",
+  "residualGroup": "DD",
+  "maintenanceGrade": "7급",
+  "guaranteeFeeRate": 0.015,
+  "residualByTerm": {
+   "36": 0.46,
+   "48": 0.39,
+   "60": 0.33
+  }
+ },
+ "렉서스 RZ 450e Luxury": {
+  "brand": "렉서스",
+  "model": "RZ 450e Luxury",
+  "vehiclePrice": 93000000,
+  "engineCc": 0,
+  "fuel": "E",
+  "residualGroup": "KK",
+  "maintenanceGrade": "7급",
+  "guaranteeFeeRate": 0.015,
+  "residualByTerm": {
+   "36": 0.52,
+   "48": 0.45,
+   "60": 0.39
+  }
+ },
+ "렉서스 RZ 450e Supreme": {
+  "brand": "렉서스",
+  "model": "RZ 450e Supreme",
+  "vehiclePrice": 84900000,
+  "engineCc": 0,
+  "fuel": "E",
+  "residualGroup": "KK",
+  "maintenanceGrade": "7급",
+  "guaranteeFeeRate": 0.015,
+  "residualByTerm": {
+   "36": 0.52,
+   "48": 0.45,
+   "60": 0.39
+  }
+ },
+ "폭스바겐 ID.4 Pro": {
+  "brand": "폭스바겐",
+  "model": "ID.4 Pro",
+  "vehiclePrice": 59900000,
+  "engineCc": 0,
+  "fuel": "E",
+  "residualGroup": "HH",
+  "maintenanceGrade": "7급",
+  "guaranteeFeeRate": 0.015,
+  "residualByTerm": {
+   "36": 0.5,
+   "48": 0.43,
+   "60": 0.37
+  }
+ },
+ "폭스바겐 ID.4 Pro Lite": {
+  "brand": "폭스바겐",
+  "model": "ID.4 Pro Lite",
+  "vehiclePrice": 56900000,
+  "engineCc": 0,
+  "fuel": "E",
+  "residualGroup": "HH",
+  "maintenanceGrade": "7급",
+  "guaranteeFeeRate": 0.015,
+  "residualByTerm": {
+   "36": 0.5,
+   "48": 0.43,
+   "60": 0.37
+  }
+ },
+ "폭스바겐 ID.5 Pro": {
+  "brand": "폭스바겐",
+  "model": "ID.5 Pro",
+  "vehiclePrice": 60990000,
+  "engineCc": 0,
+  "fuel": "E",
+  "residualGroup": "HH",
+  "maintenanceGrade": "7급",
+  "guaranteeFeeRate": 0.015,
+  "residualByTerm": {
+   "36": 0.5,
+   "48": 0.43,
+   "60": 0.37
+  }
+ },
+ "마세라티 Grecale Folgore": {
+  "brand": "마세라티",
+  "model": "Grecale Folgore",
+  "vehiclePrice": 123800000,
+  "engineCc": 0,
+  "fuel": "E",
+  "residualGroup": "OO",
+  "maintenanceGrade": "7급",
+  "guaranteeFeeRate": 0.015,
+  "residualByTerm": {
+   "36": 0.42,
+   "48": 0.35,
+   "60": 0.29
+  }
+ },
+ "_note": "신한카드 장기렌트 2607_V1 '차량모델기준' 시트에서 추출 (약정거리 20,000km 기준선)"
+}

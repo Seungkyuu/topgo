@@ -1,0 +1,366 @@
+{
+ "Model Y L <D/B>": {
+  "displacementCc": 0,
+  "price": 71919000
+ },
+ "Model Y L <S/B>": {
+  "displacementCc": 0,
+  "price": 69990000
+ },
+ "A 220 Hatch": {
+  "displacementCc": 1991,
+  "price": 48100000
+ },
+ "A 220 Sedan": {
+  "displacementCc": 1991,
+  "price": 49900000
+ },
+ "AMG A 35 4M": {
+  "displacementCc": 1991,
+  "price": 67700000
+ },
+ "AMG A 45 S 4M+": {
+  "displacementCc": 1991,
+  "price": 80400000
+ },
+ "AMG CLA 45 S 4M+": {
+  "displacementCc": 1991,
+  "price": 90600000
+ },
+ "AMG CLE 53 4M Cabriolet": {
+  "displacementCc": 2988,
+  "price": 113600000
+ },
+ "AMG CLE 53 4M Coupe": {
+  "displacementCc": 2988,
+  "price": 107700000
+ },
+ "AMG E 53 Hybrid 4M": {
+  "displacementCc": 2998,
+  "price": 138600000
+ },
+ "AMG EQE 53 4M+ SUV": {
+  "price": 153600000
+ },
+ "AMG G 63": {
+  "displacementCc": 3982,
+  "price": 253100000
+ },
+ "AMG G 63 Manufatur": {
+  "displacementCc": 3982,
+  "price": 279600000
+ },
+ "AMG GLB 35 4M": {
+  "displacementCc": 1991,
+  "price": 78500000
+ },
+ "AMG GLC 43 4M": {
+  "displacementCc": 2996,
+  "price": 102300000
+ },
+ "AMG GLC 43 4M Coupe": {
+  "displacementCc": 2996,
+  "price": 106900000
+ },
+ "AMG GLE 53 4M+": {
+  "displacementCc": 2999,
+  "price": 164600000
+ },
+ "AMG GLE 53 4M+ Coupe": {
+  "displacementCc": 2999,
+  "price": 168600000
+ },
+ "AMG GT 43 4M+": {
+  "displacementCc": 2999,
+  "price": 162600000
+ },
+ "AMG GT 55 4M+": {
+  "displacementCc": 2999,
+  "price": 208600000
+ },
+ "AMG S 63 E Performance": {
+  "displacementCc": 3982,
+  "price": 297600000
+ },
+ "AMG SL 43": {
+  "displacementCc": 1991,
+  "price": 158600000
+ },
+ "AMG SL 63 4M+": {
+  "displacementCc": 3982,
+  "price": 236600000
+ },
+ "AMG SL 63 4M+ Performance": {
+  "displacementCc": 3982,
+  "price": 261600000
+ },
+ "C 200 AMG Line": {
+  "displacementCc": 1999,
+  "price": 65900000
+ },
+ "C 200 AV": {
+  "displacementCc": 1999,
+  "price": 62800000
+ },
+ "C 300 4M AMG Line": {
+  "displacementCc": 1999,
+  "price": 76000000
+ },
+ "C 300 4M AV": {
+  "displacementCc": 1999,
+  "price": 68800000
+ },
+ "CLA 250 4M": {
+  "displacementCc": 1991,
+  "price": 62500000
+ },
+ "CLA 250 4M AMG Line": {
+  "displacementCc": 1991,
+  "price": 63700000
+ },
+ "CLA 250 4M Progressive": {
+  "displacementCc": 1991,
+  "price": 57400000
+ },
+ "CLE 200 Cabriolet": {
+  "displacementCc": 1999,
+  "price": 80500000
+ },
+ "CLE 200 Cabriolet AMG Line": {
+  "displacementCc": 1999,
+  "price": 82100000
+ },
+ "CLE 200 Coupe": {
+  "displacementCc": 1999,
+  "price": 74200000
+ },
+ "CLE 200 Coupe AMG Line": {
+  "displacementCc": 1999,
+  "price": 75700000
+ },
+ "CLE 450 4M Cabriolet": {
+  "displacementCc": 2999,
+  "price": 101100000
+ },
+ "CLE 450 4M Cabriolet AMG Line": {
+  "displacementCc": 2999,
+  "price": 102600000
+ },
+ "CLE 450 4M Coupe": {
+  "displacementCc": 2999,
+  "price": 98200000
+ },
+ "E 200 AMG Line": {
+  "displacementCc": 1999,
+  "price": 80000000
+ },
+ "E 200 AV": {
+  "displacementCc": 1999,
+  "price": 76500000
+ },
+ "E 200 AV Limited": {
+  "displacementCc": 1999,
+  "price": 69000000
+ },
+ "E 220d 4M EX": {
+  "displacementCc": 1993,
+  "price": 86100000
+ },
+ "E 300 4M AMG Line": {
+  "displacementCc": 1999,
+  "price": 97700000
+ },
+ "E 300 4M EX": {
+  "displacementCc": 1999,
+  "price": 93600000
+ },
+ "E 350e 4M EX": {
+  "displacementCc": 1991,
+  "price": 97600000
+ },
+ "E 450 4M": {
+  "displacementCc": 2999,
+  "price": 98500000
+ },
+ "E 450 4M AMG Line": {
+  "displacementCc": 2999,
+  "price": 128200000
+ },
+ "E 450 4M EX": {
+  "displacementCc": 2999,
+  "price": 128200000
+ },
+ "EQA 250 AMG Line": {
+  "price": 75800000
+ },
+ "EQA 250 Electric Art": {
+  "price": 67900000
+ },
+ "EQA 250 Progressive": {
+  "price": 70000000
+ },
+ "EQB 300 4M AMG Line": {
+  "price": 84300000
+ },
+ "EQB 300 4M Electric Art": {
+  "price": 76600000
+ },
+ "EQB 300 4M Progressive": {
+  "price": 78800000
+ },
+ "EQE 350 4M": {
+  "price": 109900000
+ },
+ "EQE 350 4M SUV": {
+  "price": 113100000
+ },
+ "EQE 350+": {
+  "price": 103500000
+ },
+ "EQE 500 4M SUV": {
+  "price": 132900000
+ },
+ "EQS 350": {
+  "price": 147600000
+ },
+ "EQS 450 4M SUV": {
+  "price": 162700000
+ },
+ "EQS 580 4M SUV": {
+  "price": 186100000
+ },
+ "G 400d": {
+  "displacementCc": 2925,
+  "price": 181600000
+ },
+ "G 450d": {
+  "displacementCc": 2985,
+  "price": 187600000
+ },
+ "G 450d Manufatur": {
+  "displacementCc": 2985,
+  "price": 211300000
+ },
+ "G 580 EQ": {
+  "price": 242600000
+ },
+ "GLA 250 4M": {
+  "displacementCc": 1991,
+  "price": 69100000
+ },
+ "GLA 250 4M AMG Line": {
+  "displacementCc": 1991,
+  "price": 69100000
+ },
+ "GLB 200d": {
+  "displacementCc": 1950,
+  "price": 63300000
+ },
+ "GLB 250 4M": {
+  "displacementCc": 1991,
+  "price": 71100000
+ },
+ "GLC 220d 4M": {
+  "displacementCc": 1950,
+  "price": 81200000
+ },
+ "GLC 300 4M": {
+  "displacementCc": 1991,
+  "price": 87900000
+ },
+ "GLC 300 4M AMG Line": {
+  "displacementCc": 1991,
+  "price": 91400000
+ },
+ "GLC 300 4M AV": {
+  "displacementCc": 1991,
+  "price": 81400000
+ },
+ "GLC 300 4M Coupe": {
+  "displacementCc": 1999,
+  "price": 92100000
+ },
+ "GLC 300 4M Coupe AMG Line": {
+  "displacementCc": 1991,
+  "price": 95700000
+ },
+ "GLC 300 4M Coupe AV": {
+  "displacementCc": 1991,
+  "price": 85500000
+ },
+ "GLE 300d 4M": {
+  "displacementCc": 1993,
+  "price": 117800000
+ },
+ "GLE 350 4M": {
+  "displacementCc": 2999,
+  "price": 116600000
+ },
+ "GLE 450 4M": {
+  "displacementCc": 2999,
+  "price": 127600000
+ },
+ "GLE 450 4M Coupe": {
+  "displacementCc": 2989,
+  "price": 141100000
+ },
+ "GLE 450d 4M Coupe": {
+  "displacementCc": 2989,
+  "price": 138400000
+ },
+ "GLS 450 4M": {
+  "displacementCc": 2925,
+  "price": 157100000
+ },
+ "GLS 450d 4M": {
+  "displacementCc": 2925,
+  "price": 157100000
+ },
+ "GLS 580 4M": {
+  "displacementCc": 3982,
+  "price": 186600000
+ },
+ "Maybach EQS 680 SUV": {
+  "price": 223600000
+ },
+ "Maybach GLS 600 4M": {
+  "displacementCc": 3982,
+  "price": 293600000
+ },
+ "Maybach GLS 600 4M Manufatur": {
+  "displacementCc": 3982,
+  "price": 317600000
+ },
+ "Maybach S 580": {
+  "displacementCc": 3982,
+  "price": 315600000
+ },
+ "Maybach S 680": {
+  "displacementCc": 3982,
+  "price": 401600000
+ },
+ "S 350d 4M": {
+  "displacementCc": 2925,
+  "price": 152600000
+ },
+ "S 450 4M": {
+  "displacementCc": 2996,
+  "price": 159600000
+ },
+ "S 450d 4M": {
+  "displacementCc": 2925,
+  "price": 159500000
+ },
+ "S 450d 4M AMG Line": {
+  "displacementCc": 2925,
+  "price": 178500000
+ },
+ "S 500 4M": {
+  "displacementCc": 3982,
+  "price": 213600000
+ },
+ "S 580 4M": {
+  "displacementCc": 2996,
+  "price": 258600000
+ }
+}

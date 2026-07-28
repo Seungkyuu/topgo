@@ -1,0 +1,17 @@
+{
+  "_source": "오릭스 견적 엑셀 각 상품 시트의 금리 영역(운용리스 X50~AE54 등). 매달 변동.",
+  "operatingLease": {
+    "baseRateByTerm": { "36": 0.052, "48": 0.052, "60": 0.052 },
+    "depositBrackets": [
+      { "belowRate": 0.10, "surcharge": 0.002 },
+      { "belowRate": 0.30, "surcharge": 0.002 },
+      { "belowRate": 0.45, "surcharge": 0.0 },
+      { "belowRate": 0.50, "surcharge": 0.002 },
+      { "belowRate": 0.60, "surcharge": 0.002 }
+    ],
+    "prepaymentSurcharge": 0.002
+  },
+  "financeLease": {
+    "baseRateByTerm": { "36": 0.055, "48": 0.055, "60": 0.055 }
+  }
+}
