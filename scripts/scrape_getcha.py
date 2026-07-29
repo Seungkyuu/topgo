@@ -136,6 +136,11 @@ def extract_initial_prices(html: str, brand_id: int, debug: bool = False) -> dic
         # RSC 스트리밍 포맷이라 앞에 "29:" 같은 청크 번호가 붙어있다.
         m = re.match(r"^\d+:(.*)$", decoded, re.DOTALL)
         payload = m.group(1) if m else decoded
+        # 청크가 커지면 Next가 "T<16진수 길이>,<원문>" 텍스트 로우로 보낸다
+        # (JSON이 아니라 태그+길이+원문) — 이 태그를 벗겨야 실제 JSON이 나온다.
+        tm = re.match(r"^T[0-9a-fA-F]+,(.*)$", payload, re.DOTALL)
+        if tm:
+            payload = tm.group(1)
         try:
             data = json.loads(payload)
         except json.JSONDecodeError:
