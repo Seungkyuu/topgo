@@ -954,14 +954,21 @@ export default function QuoteApp() {
   // 둔다 — "견적도 안 나왔는데 연락처부터 받는" 구조를 피한다.
   // 브랜드 select → 모델 select 2단계. 브랜드는 listBrands() 그대로,
   // 모델은 그 브랜드로 좁혀진 목록 중 실제로 견적이 나오는 그룹만(대표님
-  // 피드백: 골라도 견적이 안 나오는 항목은 토글에서 아예 빼라) 최저가순으로
-  // 보여준다.
+  // 피드백: 골라도 견적이 안 나오는 항목은 토글에서 아예 빼라) 가나다순으로
+  // 보여준다(대표님 피드백: 가격순이 아니라 이름순이 찾기 편하다).
   const leadModelOptions = useMemo(() => {
     if (!leadBrand) return [];
     return groups
       .filter((g) => g.brand === leadBrand && g.trims[0] && bestLandingQuote(g.trims[0]))
-      .sort((a, b) => a.minPrice - b.minPrice);
+      .sort((a, b) => a.name.localeCompare(b.name, "ko"));
   }, [groups, leadBrand]);
+
+  // listBrands()는 브랜드 칩 등 다른 곳에서 인기순(취급 대수 많은 순)으로
+  // 써야 해서 그대로 두고, 리드폼 브랜드 select만 가나다순으로 따로 정렬한다.
+  const leadBrandOptions = useMemo(
+    () => [...brands].sort((a, b) => a.localeCompare(b, "ko")),
+    [brands],
+  );
 
   const leadQuote = useMemo(() => {
     if (!leadGroupId) return null;
@@ -1251,7 +1258,7 @@ export default function QuoteApp() {
                     }}
                   >
                     <option value="">브랜드 선택</option>
-                    {brands.map((b) => (
+                    {leadBrandOptions.map((b) => (
                       <option key={b} value={b}>{b}</option>
                     ))}
                   </select>
