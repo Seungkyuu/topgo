@@ -133,8 +133,11 @@ def extract_initial_prices(html: str, brand_id: int, debug: bool = False) -> dic
         except (json.JSONDecodeError, ValueError):
             decode1_fail += 1
             continue
-        # RSC 스트리밍 포맷이라 앞에 "29:" 같은 청크 번호가 붙어있다.
-        m = re.match(r"^\d+:(.*)$", decoded, re.DOTALL)
+        # RSC 스트리밍 포맷이라 앞에 청크 번호가 붙어있다 — 이 번호는 10진수가
+        # 아니라 16진수라 "2b:" 같은 값이 나온다(글자가 섞임). 기존 코드는
+        # \d+(10진수)만 벗겨서 "2b:" 같은 건 못 벗기고 그대로 json.loads에
+        # 넘겨 매번 파싱이 깨졌다 — 이게 이번 장애의 진짜 원인.
+        m = re.match(r"^[0-9a-fA-F]+:(.*)$", decoded, re.DOTALL)
         payload = m.group(1) if m else decoded
         # 청크가 커지면 Next가 "T<16진수 길이>,<원문>" 텍스트 로우로 보낸다
         # (JSON이 아니라 태그+길이+원문) — 이 태그를 벗겨야 실제 JSON이 나온다.
