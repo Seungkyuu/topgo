@@ -953,10 +953,14 @@ export default function QuoteApp() {
   // 그룹이 있어야만 견적을 보여주고, 없으면 2단계(연락처)도 비활성 상태로
   // 둔다 — "견적도 안 나왔는데 연락처부터 받는" 구조를 피한다.
   // 브랜드 select → 모델 select 2단계. 브랜드는 listBrands() 그대로,
-  // 모델은 그 브랜드로 좁혀진 목록만 최저가순으로 보여준다.
+  // 모델은 그 브랜드로 좁혀진 목록 중 실제로 견적이 나오는 그룹만(대표님
+  // 피드백: 골라도 견적이 안 나오는 항목은 토글에서 아예 빼라) 최저가순으로
+  // 보여준다.
   const leadModelOptions = useMemo(() => {
     if (!leadBrand) return [];
-    return groups.filter((g) => g.brand === leadBrand).sort((a, b) => a.minPrice - b.minPrice);
+    return groups
+      .filter((g) => g.brand === leadBrand && g.trims[0] && bestLandingQuote(g.trims[0]))
+      .sort((a, b) => a.minPrice - b.minPrice);
   }, [groups, leadBrand]);
 
   const leadQuote = useMemo(() => {
@@ -1260,16 +1264,6 @@ export default function QuoteApp() {
                     {leadModelOptions.map((g) => (
                       <option key={g.id} value={g.id}>{g.name}</option>
                     ))}
-                  </select>
-                </div>
-                <div className="lead-row">
-                  <select
-                    value={heroPick}
-                    onChange={(e) => setHeroPick(e.target.value as typeof heroPick)}
-                  >
-                    <option value="lowest">최저가 우선</option>
-                    <option value="residual">잔존가치 우선</option>
-                    <option value="instant">즉시출고 우선</option>
                   </select>
                 </div>
 

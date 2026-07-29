@@ -106,9 +106,15 @@ def meritz_tesla_pairs() -> list[tuple[str, str]]:
     return [("테슬라", key) for key, _ in dict_items(data)]
 
 
+_BYD_PREFIX_RE = re.compile(r"^BYD\s*", re.IGNORECASE)
+
+
 def meritz_byd_pairs() -> list[tuple[str, str]]:
+    # vehicle-index.ts의 add() 호출도 "BYD " 접두어를 떼고 넘긴다 — 여기서
+    # 안 떼면 model-groups.json 키가 "BYD SEAL ..."로 저장되는데 런타임
+    # 조회는 "SEAL ..."로 하니 매번 못 찾고 라벨 그대로 폴백됐다.
     data = load(LIB / "meritz-byd" / "data" / "vehicles.json")
-    return [("BYD", key) for key, _ in dict_items(data)]
+    return [("BYD", _BYD_PREFIX_RE.sub("", key)) for key, _ in dict_items(data)]
 
 
 # ─── 그룹 판별 디스패치 ─────────────────────────────────────────────────────────

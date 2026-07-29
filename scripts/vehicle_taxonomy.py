@@ -26,6 +26,7 @@ import re
 # 그 외 브랜드는 브랜드명+모델코드가 붙어있다("PORSCHE718 718 Cayman").
 MERITZ_PLAIN_BRANDS = {
     "BMW": "BMW", "Benz": "벤츠", "Audi": "아우디", "Tesla": "테슬라", "BYD": "BYD",
+    "GMC": "GMC", "Citroen": "시트로엥",
     # 겟차에 아직 폴스타 상품이 없어(2026-07 기준 스크랩 0건) 지금은 매칭 효과가
     # 없지만, 나중에 겟차가 취급을 시작하면 재스크랩만으로 바로 잡히게 등록해둔다.
     "Polestar": "폴스타",
@@ -44,6 +45,7 @@ MERITZ_PREFIX_BRANDS = {
     "TOYOTA": "토요타",
     "VOLKSWAGEN": "폭스바겐",
     "FORD": "포드",
+    "HONDA": "혼다",
 }
 # 정렬: 긴 접두어부터 검사(겹치는 접두어 없지만 안전하게)
 MERITZ_PREFIX_SORTED = sorted(MERITZ_PREFIX_BRANDS, key=len, reverse=True)
@@ -58,13 +60,32 @@ SHINHAN_DIRECT_BRANDS = {
 def split_meritz(label: str) -> tuple[str | None, str]:
     parts = label.split(maxsplit=1)
     first = parts[0]
-    rest = parts[1] if len(parts) > 1 else ""
     if first in MERITZ_PLAIN_BRANDS:
-        return MERITZ_PLAIN_BRANDS[first], rest
+        rest = parts[1] if len(parts) > 1 else ""
+        # 테슬라 라벨 일부가 "Model_3"처럼 밑줄을 쓴다 — vehicle-index.ts의
+        # splitMeritzBrand()는 모든 브랜드에 공통으로 밑줄을 공백으로
+        # 바꾸는데, 여기서 빠뜨리면 python이 만든 그룹 딕셔너리 키("Model_3
+        # ...")와 TS가 실제로 조회하는 rawLabel("Model 3 ...")이 어긋나서
+        # 매번 조회 실패로 라벨 그대로 폴백됐다.
+        return MERITZ_PLAIN_BRANDS[first], rest.replace("_", " ").strip()
+    # 접두 브랜드는 모델명 첫 단어에 공백 없이 바로 붙어있다(예:
+    # "LANDROVERRange Rover ...", "LANDROVERDefender Defender 90 ...").
+    # 예전엔 여기서도 공백 기준으로 먼저 자른 "first"를 썼는데, 그러면
+    # "LANDROVERRange"가 통째로 first가 되고 rest는 그다음 공백 뒤인
+    # "Rover ..."부터 시작해서 "Range"라는 단어가 통째로 사라졌다(랜드로버·
+    # 포르쉐·지프 등 대부분의 접두 브랜드에서 실제로 발생 — 모델 그룹 이름이
+    # 죄다 깨져서 라벨 그대로 노출되던 원인). vehicle-index.ts의
+    # splitMeritzBrand()와 동일하게, 원본 라벨 전체에서 접두어 글자수만큼
+    # 그대로 잘라내야 한다.
+    upper = label.upper()
     for prefix in MERITZ_PREFIX_SORTED:
-        if first.startswith(prefix):
-            return MERITZ_PREFIX_BRANDS[prefix], rest
-    return None, rest
+        if upper.startswith(prefix):
+            rest = label[len(prefix):]
+            if rest.startswith(" ") or rest.startswith("_"):
+                rest = rest[1:]
+            rest = rest.replace("_", " ").strip()
+            return MERITZ_PREFIX_BRANDS[prefix], rest or label
+    return None, (parts[1] if len(parts) > 1 else "")
 
 
 def split_shinhan(label: str) -> tuple[str | None, str]:
@@ -784,8 +805,44 @@ def _honda_class_alias(rest: str) -> str | None:
         return "어코드"
     if "odyssey" in low:
         return "오디세이"
-    if "cr-v" in low or "crv" in low:
+    # 메리츠 라벨은 "CR V CR-V ..."/"HR V HR-V ..."처럼 하이픈 없는 표기가
+    # 먼저 나온다 — "hr-v"/"cr-v"만 찾으면 매칭이 안 됐다. HR-V를 CR-V보다
+    # 먼저 확인해야 한다("hr v" 안에 "r v"가 있어도 cr-v 체크는 안 걸리니
+    # 순서 자체는 안전하지만, 브랜드 표기 일관성을 위해 나란히 둔다).
+    if "hr-v" in low or "hr v" in low:
+        return "HR-V"
+    if "cr-v" in low or "crv" in low or "cr v" in low:
         return "CR-V"
+    if "civic" in low:
+        return "시빅"
+    return None
+
+
+def _citroen_class_alias(rest: str) -> str | None:
+    low = rest.lower()
+    # "Grand C4 Spacetourer"를 "C4"보다 먼저 체크해야 한다(안 그러면
+    # 그랜드 C4 스페이스투어러가 그냥 "C4 칵투스"로 잘못 묶인다).
+    if "grand c4 spacetourer" in low:
+        return "그랜드 C4 스페이스투어러"
+    if "c4 cactus" in low:
+        return "C4 칵투스"
+    if "c5 aircross" in low:
+        return "C5 에어크로스"
+    if "c3 aircross" in low:
+        return "C3 에어크로스"
+    return None
+
+
+def _gmc_class_alias(rest: str) -> str | None:
+    low = rest.lower()
+    if "acadia" in low:
+        return "아카디아"
+    if "canyon" in low:
+        return "캐년"
+    if "sierra" in low:
+        return "시에라"
+    if "hummer" in low:
+        return "허머 EV"
     return None
 
 
@@ -822,6 +879,8 @@ CLASS_ALIAS_RESOLVERS: dict[str, "callable"] = {
     "폴스타": _polestar_class_alias,
     "BYD": _byd_class_alias,
     "혼다": _honda_class_alias,
+    "시트로엥": _citroen_class_alias,
+    "GMC": _gmc_class_alias,
     "애스턴마틴": _astonmartin_class_alias,
 }
 
@@ -866,6 +925,8 @@ _DECIMAL_ONLY_RE = re.compile(r"^\d+\.\d+$")
 
 def _bmw_group(rest: str) -> str | None:
     for c in ordered_model_codes(rest):
+        if _PACKAGE_ONLY_RE.fullmatch(c):
+            continue
         m = _BMW_MPERF_RE.fullmatch(c)
         if m:
             return f"{m.group(1)}시리즈"
@@ -873,6 +934,12 @@ def _bmw_group(rest: str) -> str | None:
         if m:
             return f"{m.group(1)}시리즈"
     for c in ordered_model_codes(rest):
+        # "(P1)"/"(P2)" 패키지 코드가 "글자1~2개+숫자1개" 형태라
+        # _BMW_LETTER_SERIES_RE("X1", "IX2" 등을 잡는 패턴)에도 우연히
+        # 걸려서 iX/XM 트림이 "P1"/"P2"라는 가짜 모델 그룹으로 잘못
+        # 분류되던 버그 — 패키지 코드는 여기서도 제외해야 한다.
+        if _PACKAGE_ONLY_RE.fullmatch(c):
+            continue
         m = _BMW_LETTER_SERIES_RE.fullmatch(c)
         if m:
             return c.upper()  # X1~X7, Z4, M2~M8, iX1~iX3 등
@@ -921,7 +988,8 @@ def classify_group(brand: str, rest: str) -> str | None:
 # 마케팅 접두어를 떼어내는 것과, 겟챠 자신의 모델 그룹 목록(model_groups)에
 # 대고 라벨이 어떤 그룹에 속하는지 부분 문자열로 판별하는 것 두 가지다.
 DOMESTIC_DECOR_RE = re.compile(
-    r"더\s*뉴|디\s*올\s*뉴|디\s*뉴|올\s*뉴|신형|\(NX4\)|\(CN7\)|Ⅰ|Ⅱ", re.IGNORECASE
+    r"더\s*뉴|디\s*올\s*뉴|디\s*뉴|올\s*뉴|신형|\(NX4\)|\(CN7\)|Ⅰ|Ⅱ|\[Select\s*프로모션\]",
+    re.IGNORECASE,
 )
 
 
