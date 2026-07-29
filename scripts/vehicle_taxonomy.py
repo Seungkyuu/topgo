@@ -997,6 +997,23 @@ def strip_domestic_decor(label: str) -> str:
     return DOMESTIC_DECOR_RE.sub("", label).strip()
 
 
+# 원본 엑셀 자체의 오타 교정 — 고객에게 보이는 모델 그룹명이 오타 때문에
+# 별도 모델처럼 쪼개지는 걸 막는다. 예: "쏘나티 디엣지 하이브리드"(원본
+# 오타)가 "쏘나타 디엣지"와 다른 그룹으로 갈라져서, 선택 토글에 육안으로는
+# 구분이 안 되는 항목이 두 개 뜨는 사고가 났다(한쪽은 하이브리드 전용).
+# ⚠ 원본 JSON은 건드리지 않는다 — 조회 키는 원본 라벨 그대로 두고,
+#   표시용 그룹명을 만들 때만 교정한다.
+LABEL_TYPO_FIXES = {
+    "쏘나티": "쏘나타",
+}
+
+
+def fix_label_typos(label: str) -> str:
+    for wrong, right in LABEL_TYPO_FIXES.items():
+        label = label.replace(wrong, right)
+    return label
+
+
 _DOMESTIC_TRIM_START_RE = re.compile(
     r"\d+\.\d+|\d+인승|\d+인치|가솔린|디젤|하이브리드|일렉트릭|LPG|HEV|EV\b"
     r"|성능형|항속형|스탠다드|롱레인지|[24]WD\b|AWD\b|RWD\b",
@@ -1010,9 +1027,13 @@ def domestic_base_model(label: str) -> str:
     앞까지를 베이스 모델명으로 본다. (참고용 폴백이며, `getcha_domestic_
     group()`이 우선이다 — 그쪽이 실제 겟챠 모델명과 정확히 일치해서 더
     정확하다.)"""
-    clean = strip_domestic_decor(label)
+    clean = strip_domestic_decor(fix_label_typos(label))
     m = _DOMESTIC_TRIM_START_RE.search(clean)
     base = clean[: m.start()] if m else clean
+    # "마이티(2.5톤)"처럼 괄호 안에서 트림 토큰이 시작하면 여는 괄호만
+    # 덩그러니 남아 "마이티("가 그룹명이 됐다 — 매달린 여는 괄호/구분자는
+    # 잘라낸다.
+    base = re.sub(r"[\s(\[/·,-]+$", "", base)
     return base.strip() or clean.strip()
 
 

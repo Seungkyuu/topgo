@@ -101,9 +101,15 @@ const DECORATIONS: RegExp[] = [
   /\((NX4|CN7)\)/g,       // 플랫폼 코드
 ];
 
+/** 원본 엑셀 자체의 오타 교정 — 고객에게 그대로 노출되면 안 되는 것만.
+ *  scripts/vehicle_taxonomy.py의 LABEL_TYPO_FIXES와 같은 목록을 유지한다
+ *  (그쪽은 모델 그룹명, 여기는 트림 표시명 — 둘 다 고쳐야 한 모델로 보인다). */
+const TYPO_FIXES: [RegExp, string][] = [[/쏘나티/g, "쏘나타"]];
+
 export function cleanDisplayName(label: string): string {
   let s = label;
   for (const re of DECORATIONS) s = s.replace(re, " ");
+  for (const [re, to] of TYPO_FIXES) s = s.replace(re, to);
   return s.replace(/\s+/g, " ").trim();
 }
 
