@@ -959,19 +959,32 @@ export default function QuoteApp() {
   // 모델은 그 브랜드로 좁혀진 목록 중 실제로 견적이 나오는 그룹만(대표님
   // 피드백: 골라도 견적이 안 나오는 항목은 토글에서 아예 빼라) 가나다순으로
   // 보여준다(대표님 피드백: 가격순이 아니라 이름순이 찾기 편하다).
-  const leadModelOptions = useMemo(() => {
-    if (!leadBrand) return [];
-    return groups
-      .filter((g) => g.brand === leadBrand && g.trims[0] && bestLandingQuote(g.trims[0]))
-      .sort((a, b) => a.name.localeCompare(b.name, "ko"));
-  }, [groups, leadBrand]);
+  // 견적이 실제로 나오는 모델만 남긴다. 예전엔 "최저가 트림 하나"만
+  // 확인했는데, 최저가 트림만 견적이 안 나오고 나머지는 되는 모델이 많아서
+  // (미니 8개 모델·혼다 4개 모델이 통째로 사라져 있었다) 트림 중 하나라도
+  // 견적이 되면 남긴다 — leadQuote도 트림 전체를 훑어 최저가를 고르므로
+  // 여기서 남긴 모델은 반드시 견적이 나온다.
+  const quotableGroups = useMemo(
+    () => groups.filter((g) => g.trims.some((t) => bestLandingQuote(t))),
+    [groups],
+  );
+
+  const leadModelOptions = useMemo(
+    () =>
+      quotableGroups
+        .filter((g) => g.brand === leadBrand)
+        .sort((a, b) => a.name.localeCompare(b.name, "ko")),
+    [quotableGroups, leadBrand],
+  );
 
   // listBrands()는 브랜드 칩 등 다른 곳에서 인기순(취급 대수 많은 순)으로
   // 써야 해서 그대로 두고, 리드폼 브랜드 select만 가나다순으로 따로 정렬한다.
-  const leadBrandOptions = useMemo(
-    () => [...brands].sort((a, b) => a.localeCompare(b, "ko")),
-    [brands],
-  );
+  // 견적 가능한 모델이 하나도 없는 브랜드(볼보·재규어)는 아예 빼서, 골랐는데
+  // 모델 목록이 텅 비는 상황을 막는다.
+  const leadBrandOptions = useMemo(() => {
+    const withModels = new Set(quotableGroups.map((g) => g.brand));
+    return brands.filter((b) => withModels.has(b)).sort((a, b) => a.localeCompare(b, "ko"));
+  }, [brands, quotableGroups]);
 
   // 한 모델 그룹 안에 가솔린·하이브리드·LPG가 같이 들어있는 경우가 많다
   // (견적 가능 모델의 74%가 트림 2개 이상). 트림 토글을 하나 더 두는 대신,

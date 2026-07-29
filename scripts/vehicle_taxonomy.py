@@ -452,6 +452,13 @@ def _porsche_class_alias(rest: str) -> str | None:
         return "파나메라"
     if "taycan" in low or "타이칸" in rest:
         return "타이칸"
+    # 신한 라벨은 "911Spirit70"/"911Targa4GTS가솔린4.0"처럼 계열번호와 트림이
+    # 공백 없이 붙어있다 — 숫자 코드 경로로 흘리면 "911SPIRIT"/"911TARGA"가
+    # 통째로 모델명이 돼서 911이 세 항목으로 쪼개졌다. 계열번호로 먼저 묶는다.
+    if re.match(r"^\s*911", low):
+        return "911"
+    if re.match(r"^\s*718", low):
+        return "718"
     return None
 
 
@@ -733,7 +740,65 @@ _LEXUS_MODEL_RE = re.compile(r"\b(ES|GS|IS|LC|LS|LM|LX|NX|RC|RX|CT|GX|UX)\b", re
 
 def _lexus_class_alias(rest: str) -> str | None:
     m = _LEXUS_MODEL_RE.search(rest)
-    return m.group(1).upper() if m else None
+    if m:
+        return m.group(1).upper()
+    # 전기 SUV RZ는 _LEXUS_MODEL_RE 목록에 없어서 숫자 경로로 새고,
+    # "RZ 450e Supreme"의 출력 코드 "450e"가 모델명이 돼버렸다.
+    if re.match(r"^\s*RZ\b", rest, re.IGNORECASE):
+        return "RZ"
+    return None
+
+
+# 페라리·람보르기니·맥라렌은 모델명이 전부 숫자 없는 고유명사(Roma,
+# Urus, Artura...)라 숫자 코드 경로로 흘리면 라벨에 같이 적힌 엔진 표기
+# (V8/V12/V6)나 배기량(3.0/4.0)이 모델명 자리를 차지한다. 실제 모델명으로
+# 먼저 잡아준다.
+def _ferrari_class_alias(rest: str) -> str | None:
+    low = rest.lower()
+    if "purosangue" in low:
+        return "푸로산게"
+    if "roma" in low:
+        return "로마"
+    if "portofino" in low:
+        return "포르토피노"
+    if "cilindri" in low:
+        return "12칠린드리"
+    return None
+
+
+def _lamborghini_class_alias(rest: str) -> str | None:
+    low = rest.lower()
+    if "urus" in low:
+        return "우루스"
+    if "huracan" in low or "우라칸" in rest:
+        return "우라칸"
+    if "revuelto" in low:
+        return "레부엘토"
+    if "aventador" in low:
+        return "아벤타도르"
+    return None
+
+
+def _mclaren_class_alias(rest: str) -> str | None:
+    low = rest.lower()
+    if "artura" in low:
+        return "아투라"
+    if "765lt" in low:
+        return "765LT"
+    if "750s" in low:
+        return "750S"
+    if "720s" in low:
+        return "720S"
+    # "4.0 GT"처럼 배기량이 앞에 붙은 GT — 배기량이 모델명이 되지 않도록.
+    if re.search(r"\bgt\b", low):
+        return "GT"
+    return None
+
+
+def _ineos_class_alias(rest: str) -> str | None:
+    if "grenadier" in rest.lower():
+        return "그레나디어"
+    return None
 
 
 def _audi_class_alias(rest: str) -> str | None:
@@ -881,6 +946,10 @@ CLASS_ALIAS_RESOLVERS: dict[str, "callable"] = {
     "혼다": _honda_class_alias,
     "시트로엥": _citroen_class_alias,
     "GMC": _gmc_class_alias,
+    "페라리": _ferrari_class_alias,
+    "람보르기니": _lamborghini_class_alias,
+    "맥라렌": _mclaren_class_alias,
+    "이네오스": _ineos_class_alias,
     "애스턴마틴": _astonmartin_class_alias,
 }
 
@@ -921,6 +990,11 @@ _BMW_BARE_SERIES = {"ix", "xm"}
 # generic 숫자-브랜드 그룹핑에서 제외한다.
 _PACKAGE_ONLY_RE = re.compile(r"^p\d(-\d)?$")
 _DECIMAL_ONLY_RE = re.compile(r"^\d+\.\d+$")
+# 엔진 기통 표기(V6/V8/V10/V12)는 모델명이 아니다 — 모델명에 숫자가 없는
+# 브랜드(페라리 Roma, 람보르기니 Urus, 맥라렌 Artura)에서 이게 첫 코드로
+# 잡혀 "V8"/"V12"/"V6"가 모델명 자리를 차지했다. 브랜드별 리졸버가 먼저
+# 잡아주지만, 새 모델이 들어와도 같은 사고가 안 나도록 여기서도 막는다.
+_ENGINE_ONLY_RE = re.compile(r"^v(6|8|10|12)$")
 
 
 def _bmw_group(rest: str) -> str | None:
@@ -955,7 +1029,11 @@ def _generic_digit_group(rest: str) -> str | None:
     (A4, G80, XC60, 308...) — 라벨에 처음 등장하는, 패키지/순수배기량이
     아닌 코드를 그대로 그룹 키로 쓴다."""
     for c in ordered_model_codes(rest):
-        if _PACKAGE_ONLY_RE.fullmatch(c) or _DECIMAL_ONLY_RE.fullmatch(c):
+        if (
+            _PACKAGE_ONLY_RE.fullmatch(c)
+            or _DECIMAL_ONLY_RE.fullmatch(c)
+            or _ENGINE_ONLY_RE.fullmatch(c)
+        ):
             continue
         return c.upper()
     return None
@@ -1015,10 +1093,17 @@ def fix_label_typos(label: str) -> str:
 
 
 _DOMESTIC_TRIM_START_RE = re.compile(
-    r"\d+\.\d+|\d+인승|\d+인치|가솔린|디젤|하이브리드|일렉트릭|LPG|HEV|EV\b"
+    # "Lpi"(LPG 직접분사)를 빠뜨려서 "디 올 뉴 그랜저 Lpi 3.5"가 "3.5"에서
+    # 잘려 "그랜저 Lpi"라는 별도 모델로 떨어졌다 — "그랜저"와 중복.
+    r"\d+\.\d+|\d+인승|\d+인치|가솔린|디젤|하이브리드|일렉트릭|LPG|LPi|HEV|EV\b"
     r"|성능형|항속형|스탠다드|롱레인지|[24]WD\b|AWD\b|RWD\b",
     re.IGNORECASE,
 )
+
+# 국산 라벨에 브랜드명이 들어간 소스와 안 들어간 소스가 섞여 있다
+# (메리츠 렌탈="신형 제네시스 G70 2.5 T", 메리츠 리스="신형 G70 2.5T").
+# 안 떼면 같은 차가 "제네시스 G70"과 "G70" 두 항목으로 갈라진다.
+_DOMESTIC_BRAND_PREFIX_RE = re.compile(r"^(제네시스|현대|기아)\s+", re.IGNORECASE)
 
 
 def domestic_base_model(label: str) -> str:
@@ -1028,6 +1113,9 @@ def domestic_base_model(label: str) -> str:
     group()`이 우선이다 — 그쪽이 실제 겟챠 모델명과 정확히 일치해서 더
     정확하다.)"""
     clean = strip_domestic_decor(fix_label_typos(label))
+    # 장식어("신형"/"올 뉴")를 먼저 뗀 뒤여야 "신형 제네시스 G70"의
+    # 브랜드명이 맨 앞으로 와서 걸린다.
+    clean = _DOMESTIC_BRAND_PREFIX_RE.sub("", clean).strip()
     m = _DOMESTIC_TRIM_START_RE.search(clean)
     base = clean[: m.start()] if m else clean
     # "마이티(2.5톤)"처럼 괄호 안에서 트림 토큰이 시작하면 여는 괄호만
