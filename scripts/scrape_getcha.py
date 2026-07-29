@@ -143,8 +143,13 @@ def extract_initial_prices(html: str, brand_id: int, debug: bool = False) -> dic
             payload = tm.group(1)
         try:
             data = json.loads(payload)
-        except json.JSONDecodeError:
+        except json.JSONDecodeError as e:
             decode2_fail += 1
+            if debug:
+                print(
+                    f"      진단: 2차디코드실패 상세 — {e} / len={len(payload)} / "
+                    f"앞부분={payload[:200]!r} / 끝부분={payload[-100:]!r}"
+                )
             continue
         # data == ["$","$L2a",null,{"initialPrices":{...}}] 형태 — 재귀적으로 찾는다
         found = _find_initial_prices(data)
