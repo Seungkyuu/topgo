@@ -1123,6 +1123,17 @@ input:focus, select:focus { outline: 2px solid var(--navy); outline-offset: 1px;
 .my-quote-name { font-size: 18px; font-weight: 800; color: var(--navy-ink); margin: 8px 0 0; }
 .my-quote-price { font-size: 24px; font-weight: 800; color: var(--navy-ink); margin: 3px 0 0; font-variant-numeric: tabular-nums; }
 .my-quote-cond { font-size: 12.5px; color: var(--ink-soft); margin: 8px 0 0; line-height: 1.6; }
+/* 트림이 여러 개인 모델 — 대표값이 최저가 트림 기준임을 밝히고, 트림별
+   가격 범위를 같이 보여준다(트림 토글을 늘리지 않기 위한 장치). */
+.my-quote-trimtag {
+  display: inline-block; margin-left: 6px; padding: 2px 7px; border-radius: 100px;
+  background: var(--accent); color: var(--on-accent);
+  font-size: 10.5px; font-weight: 700; font-style: normal; vertical-align: middle;
+}
+.my-quote-range {
+  font-size: 12.5px; font-weight: 700; color: var(--accent);
+  margin: 6px 0 0; font-variant-numeric: tabular-nums;
+}
 
 /* 히어로 리드폼 — 1단계(차종+우선순위)는 항상 열려 있고, 2단계
    (성함·연락처)는 견적이 실제로 나와야만 활성화된다(lead-stage2.active).

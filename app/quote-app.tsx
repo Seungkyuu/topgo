@@ -37,6 +37,9 @@ import { quoteMeritzTeslaLease } from "@/lib/engine/meritz-tesla";
 
 const won = (n: number) => n.toLocaleString("ko-KR");
 const man = (n: number) => `${Math.round(n / 10_000).toLocaleString("ko-KR")}만원`;
+/** 만원 단위 소수 1자리 — 트림별 가격 범위처럼 만원 단위 반올림으론
+ *  양끝이 같아 보일 수 있는 곳에 쓴다("45.2만 ~ 78.6만"). */
+const manFine = (n: number) => (n / 10_000).toFixed(1).replace(/\.0$/, "");
 
 /** 고객 화면엔 캐피탈사 실명을 절대 노출하지 않는다 — 비교 로직(3사 비교 등)은
  *  내부적으로 실명(r.capital)을 그대로 쓰되, 화면에 찍는 자리에서만 이 함수를
@@ -970,14 +973,29 @@ export default function QuoteApp() {
     [brands],
   );
 
+  // 한 모델 그룹 안에 가솔린·하이브리드·LPG가 같이 들어있는 경우가 많다
+  // (견적 가능 모델의 74%가 트림 2개 이상). 트림 토글을 하나 더 두는 대신,
+  // 대표값은 최저가 트림으로 보여주고 "N개 트림 · 월 A만~B만원" 범위를 같이
+  // 적어서 트림 간 가격 차이를 숫자로 체감하게 한다 — 정확한 트림은 상담에서
+  // 확정(대표님 결정).
   const leadQuote = useMemo(() => {
     if (!leadGroupId) return null;
     const g = groups.find((g) => g.id === leadGroupId);
-    const v = g?.trims[0];
-    if (!v) return null;
-    const quote = bestLandingQuote(v);
-    if (!quote) return null;
-    return { vehicle: v, ...quote };
+    if (!g) return null;
+    const quotes = g.trims
+      .map((v) => {
+        const q = bestLandingQuote(v);
+        return q ? { vehicle: v, ...q } : null;
+      })
+      .filter((c): c is NonNullable<typeof c> => !!c)
+      .sort((a, b) => a.monthlyPayment - b.monthlyPayment);
+    if (quotes.length === 0) return null;
+    return {
+      ...quotes[0],
+      trimCount: quotes.length,
+      minPayment: quotes[0].monthlyPayment,
+      maxPayment: quotes[quotes.length - 1].monthlyPayment,
+    };
   }, [groups, leadGroupId]);
 
   // 메일 연동 없이 카카오 오픈채팅으로만 연결 — 성함/연락처는 상담 시 채팅으로
@@ -1335,8 +1353,17 @@ export default function QuoteApp() {
               {leadQuote && (
                 <div className="my-quote-card show">
                   <p className="my-quote-label">✓ 회원님이 고른 차의 실시간 견적</p>
-                  <p className="my-quote-name">{leadQuote.vehicle.brand} {leadQuote.vehicle.display}</p>
+                  <p className="my-quote-name">
+                    {leadQuote.vehicle.brand} {leadQuote.vehicle.display}
+                    {leadQuote.trimCount > 1 && <em className="my-quote-trimtag">최저가 트림</em>}
+                  </p>
                   <p className="my-quote-price">월 {won(leadQuote.monthlyPayment)}원</p>
+                  {leadQuote.trimCount > 1 && (
+                    <p className="my-quote-range">
+                      {leadQuote.trimCount}개 트림 · 월 {manFine(leadQuote.minPayment)}만 ~{" "}
+                      {manFine(leadQuote.maxPayment)}만원
+                    </p>
+                  )}
                   <p className="my-quote-cond">
                     {DEAL_EXPLAIN[leadQuote.deal].name} · 48개월 · 보증금 30% 기준 실시간 계산가
                   </p>
