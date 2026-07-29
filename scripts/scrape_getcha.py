@@ -263,6 +263,20 @@ def fetch_brand_offers(
     data = extract_initial_prices(html, brand_id)
     if not data:
         print("    ✗ initialPrices 데이터를 못 찾음")
+        # debug/ 덤프는 CI에선 아무도 못 본다(아티팩트로 안 올림). 원인이
+        # "차단당함"인지 "페이지 구조가 바뀜"인지는 로그만 봐도 갈려야 하니
+        # 판단에 필요한 최소 정보를 stdout에도 같이 찍는다.
+        print(f"      진단: title={page.title()!r} len={len(html)}B url={page.url}")
+        markers = [
+            m
+            for m in (
+                "captcha", "cloudflare", "access denied", "forbidden",
+                "__NEXT_DATA__", "initialPrices", "self.__next_f", "modelsGroup",
+            )
+            if m.lower() in html.lower()
+        ]
+        print(f"      진단: 마커={markers or '없음'}")
+        print(f"      진단: 앞부분={html[:240]!r}")
         dump_debug(page, brand)
         return [], {}, brand_logos
 
