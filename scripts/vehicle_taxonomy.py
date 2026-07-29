@@ -997,7 +997,21 @@ _DECIMAL_ONLY_RE = re.compile(r"^\d+\.\d+$")
 _ENGINE_ONLY_RE = re.compile(r"^v(6|8|10|12)$")
 
 
+# 메리츠 수입 카탈로그에 모델명 없이 M 퍼포먼스 배지만 적힌 행이 있다.
+# M40i·M35i는 M3/M4 같은 독립 모델이 아니라 X1/X2/X3/X4/Z4에 붙는 트림
+# 배지라, 라벨만으론 어느 계열인지 알 수 없다 — 차량가로 특정한다.
+#   "M40i" 8,910만원 = "Z4 M40i (P2)" 8,910만원(정확히 일치).
+#   X3 M40i 9,670만·X4 M40i 10,030만원과는 700만원 이상 차이나 배제된다.
+# ⚠ 가격이 바뀌면 이 대응도 다시 확인해야 한다(라벨 자체엔 근거가 없다).
+_BMW_BARE_BADGE_GROUPS = {
+    "m40i": "Z4",
+}
+
+
 def _bmw_group(rest: str) -> str | None:
+    bare = _BMW_BARE_BADGE_GROUPS.get(rest.strip().lower())
+    if bare:
+        return bare
     for c in ordered_model_codes(rest):
         if _PACKAGE_ONLY_RE.fullmatch(c):
             continue
