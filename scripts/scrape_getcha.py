@@ -106,16 +106,32 @@ PUSH_BLOCK_RE = re.compile(r'self\.__next_f\.push\(\[1,"(.*?)"\]\)</script>')
 INITIAL_PRICES_MARKER = "initialPrices"  # raw는 아직 이스케이프된 상태라 따옴표 없이 검색
 
 
-def extract_initial_prices(html: str, brand_id: int) -> dict | None:
+def extract_initial_prices(html: str, brand_id: int, debug: bool = False) -> dict | None:
     """페이지 HTML에서 initialPrices JSON(등급별 price+discount 포함)을 찾아 파싱한다."""
-    for raw in PUSH_BLOCK_RE.findall(html):
+    blocks = PUSH_BLOCK_RE.findall(html)
+    if debug:
+        loose = len(re.findall(r'self\.__next_f\.push\(\[1,"', html))
+        print(
+            f"      진단: PUSH_BLOCK_RE 매치={len(blocks)}건 / "
+            f"느슨한 push( 시작 패턴={loose}건"
+        )
+        if loose and not blocks:
+            idx = html.find('self.__next_f.push([1,"')
+            print(f"      진단: 첫 push 시작 후 100자={html[idx:idx+100]!r}")
+    marker_hits = 0
+    decode1_fail = 0
+    decode2_fail = 0
+    found_but_wrong_brand = []
+    for raw in blocks:
         if INITIAL_PRICES_MARKER not in raw:
             continue
+        marker_hits += 1
         try:
             # 이 조각 자체가 JSON 문자열 리터럴이라 한 번 더 디코드해야
             # 실제 텍스트가 나온다 (\" → ", \\ → \ 등).
             decoded = json.loads('"' + raw + '"')
         except (json.JSONDecodeError, ValueError):
+            decode1_fail += 1
             continue
         # RSC 스트리밍 포맷이라 앞에 "29:" 같은 청크 번호가 붙어있다.
         m = re.match(r"^\d+:(.*)$", decoded, re.DOTALL)
@@ -123,11 +139,20 @@ def extract_initial_prices(html: str, brand_id: int) -> dict | None:
         try:
             data = json.loads(payload)
         except json.JSONDecodeError:
+            decode2_fail += 1
             continue
         # data == ["$","$L2a",null,{"initialPrices":{...}}] 형태 — 재귀적으로 찾는다
         found = _find_initial_prices(data)
         if found and found.get("brandId") == brand_id:
             return found
+        if found:
+            found_but_wrong_brand.append(found.get("brandId"))
+    if debug:
+        print(
+            f"      진단: marker포함블록={marker_hits}건 / "
+            f"1차디코드실패={decode1_fail}건 / 2차디코드실패={decode2_fail}건 / "
+            f"brandId불일치={found_but_wrong_brand or '없음'} (기대={brand_id})"
+        )
     return None
 
 
@@ -260,7 +285,7 @@ def fetch_brand_offers(
     html = page.content()
     brand_logos = extract_brand_logos(html)
 
-    data = extract_initial_prices(html, brand_id)
+    data = extract_initial_prices(html, brand_id, debug=True)
     if not data:
         print("    ✗ initialPrices 데이터를 못 찾음")
         # debug/ 덤프는 CI에선 아무도 못 본다(아티팩트로 안 올림). 원인이
