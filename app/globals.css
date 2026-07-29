@@ -1062,7 +1062,7 @@ input:focus, select:focus { outline: 2px solid var(--navy); outline-offset: 1px;
    너무 길다는 피드백 반영 — 예전엔 섹션 4개가 따로 있었다). */
 /* 탑고 전용 — 히어로가 곧 상품. 이번 주 1위 차량과 실제 계산가를
    첫 화면에 띄운다(가격 비교 사이트인데 첫 화면에 가격이 없던 문제). */
-.hero-board { display: flex; align-items: center; justify-content: space-between; gap: 28px; }
+.hero-board { display: flex; align-items: flex-start; justify-content: space-between; gap: 28px; }
 .hero-board-text { flex: 1; min-width: 0; }
 .hero-eyebrow {
   font-size: 11.5px; font-weight: 800; letter-spacing: 0.06em; text-transform: uppercase;
@@ -1099,10 +1099,12 @@ input:focus, select:focus { outline: 2px solid var(--navy); outline-offset: 1px;
 }
 
 /* 히어로 우측 컬럼 — 1위 탭(최저가/잔존가치/즉시출고) + 픽 카드 +
-   (차종을 입력했을 때만 뜨는) 내 견적 카드를 세로로 쌓는다. */
-.hero-pick-col { flex: 0 0 300px; display: flex; flex-direction: column; gap: 10px; }
+   (차종을 입력했을 때만 뜨는) 내 견적 카드를 세로로 쌓는다. 좌측
+   리드폼(.lead-form, max-width 420px)과 너비를 맞춰서 두 컬럼의
+   카드 크기가 통일감 있게 보이도록 한다. */
+.hero-pick-col { flex: 0 0 420px; display: flex; flex-direction: column; gap: 10px; }
 @media (max-width: 760px) { .hero-pick-col { flex-basis: auto; width: 100%; } }
-.hero-pick-col .hero-pick-card { width: 100%; }
+.hero-pick-col .hero-pick-card { width: 100%; padding: 20px; }
 .pick-tabs { display: flex; gap: 6px; }
 .pick-tab {
   font-size: 11.5px; font-weight: 700; padding: 7px 12px; border-radius: 100px;

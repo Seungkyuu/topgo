@@ -851,7 +851,8 @@ export default function QuoteApp() {
 
   // 히어로 리드폼 1단계(차량 조건) — 성함·연락처는 견적 계산에 필요 없어서
   // 별도 2단계로 뺐다(대표님 피드백: "견적 내는데 왜 연락처부터 물어보냐").
-  const [leadCarQuery, setLeadCarQuery] = useState("");
+  // 직접 타이핑 대신 실제 존재하는 모델 그룹 중에서 고르는 토글(select)로 변경.
+  const [leadGroupId, setLeadGroupId] = useState("");
   const [leadName, setLeadName] = useState("");
   const [leadPhone, setLeadPhone] = useState("");
 
@@ -948,29 +949,31 @@ export default function QuoteApp() {
   // 견적을 뽑는다(가짜 값 아님, bestLandingQuote 재사용). 매칭되는 모델
   // 그룹이 있어야만 견적을 보여주고, 없으면 2단계(연락처)도 비활성 상태로
   // 둔다 — "견적도 안 나왔는데 연락처부터 받는" 구조를 피한다.
+  // 브랜드별로 묶어서 select의 optgroup으로 보여줄 목록 — 브랜드명 기준 정렬.
+  const leadGroupsByBrand = useMemo(() => {
+    const byBrand = new Map<string, ModelGroupSummary[]>();
+    for (const g of groups) {
+      if (!byBrand.has(g.brand)) byBrand.set(g.brand, []);
+      byBrand.get(g.brand)!.push(g);
+    }
+    for (const list of byBrand.values()) list.sort((a, b) => a.minPrice - b.minPrice);
+    return [...byBrand.entries()].sort((a, b) => a[0].localeCompare(b[0], "ko"));
+  }, [groups]);
+
   const leadQuote = useMemo(() => {
-    const q = leadCarQuery.trim().toLowerCase();
-    if (!q) return null;
-    const g = groups.find(
-      (g) =>
-        g.name.toLowerCase().includes(q) ||
-        `${g.brand} ${g.name}`.toLowerCase().includes(q) ||
-        g.trims.some((t) => t.display.toLowerCase().includes(q)),
-    );
+    if (!leadGroupId) return null;
+    const g = groups.find((g) => g.id === leadGroupId);
     const v = g?.trims[0];
     if (!v) return null;
     const quote = bestLandingQuote(v);
     if (!quote) return null;
     return { vehicle: v, ...quote };
-  }, [groups, leadCarQuery]);
+  }, [groups, leadGroupId]);
 
+  // 메일 연동 없이 카카오 오픈채팅으로만 연결 — 성함/연락처는 상담 시 채팅으로
+  // 직접 전달해달라는 안내용으로만 쓰인다(백엔드가 없어 자동 전송은 불가).
   function submitLead(e: FormEvent) {
     e.preventDefault();
-    const subject = encodeURIComponent(`[탑고 견적 문의] ${leadCarQuery.trim() || "차종 미정"}`);
-    const body = encodeURIComponent(
-      `차종: ${leadCarQuery.trim() || "미정"}\n성함: ${leadName.trim() || "미입력"}\n연락처: ${leadPhone.trim() || "미입력"}`,
-    );
-    window.location.href = `mailto:${CONTACT_EMAIL}?subject=${subject}&body=${body}`;
     window.open(KAKAO_URL, "_blank", "noopener,noreferrer");
   }
 
@@ -1015,10 +1018,10 @@ export default function QuoteApp() {
       .filter((c): c is NonNullable<typeof c> => !!c);
   }, [groups]);
 
-  /** "최저가" — 전체 모델그룹 중 월 납부액이 낮은 순 10위까지. 히어로의
+  /** "최저가" — 전체 모델그룹 중 월 납부액이 낮은 순 5위까지. 히어로의
    *  "이번 주 1위"도 이 목록의 첫 번째를 쓴다.
    *
-   *  단, 순수 가격순으로만 자르면 국산 경차만 10칸을 다 채워서 랭킹으로
+   *  단, 순수 가격순으로만 자르면 국산 경차만 5칸을 다 채워서 랭킹으로
    *  읽히지 않는다(캐스퍼·아반떼·코나·포터…). 그래서 한 브랜드가 3칸을
    *  넘지 않도록만 제한한다 — 순위 자체를 조작하는 게 아니라 같은 브랜드
    *  반복만 걷어내는 것이라 "계산된 가격순"이라는 성격은 유지된다. */
@@ -1030,7 +1033,7 @@ export default function QuoteApp() {
       if (n >= 3) continue;
       perBrand.set(c.vehicle.brand, n + 1);
       out.push(c);
-      if (out.length === 10) break;
+      if (out.length === 5) break;
     }
     return out;
   }, [allGroupQuotes]);
@@ -1043,7 +1046,7 @@ export default function QuoteApp() {
       allGroupQuotes
         .filter((c) => typeof c.residualRate === "number")
         .sort((a, b) => b.residualRate! - a.residualRate!)
-        .slice(0, 10),
+        .slice(0, 5),
     [allGroupQuotes],
   );
 
@@ -1061,7 +1064,7 @@ export default function QuoteApp() {
       })
       .filter((c): c is NonNullable<typeof c> => !!c)
       .sort((a, b) => b.rate - a.rate)
-      .slice(0, 10);
+      .slice(0, 5);
   }, [index]);
 
   /** "예산대별 TOP1" — 예산 구간(50/70/100/150만원)마다 그 예산 안에서
@@ -1205,8 +1208,8 @@ export default function QuoteApp() {
           <div className="landing-inner landing-header-row">
             <Wordmark />
             <nav className="landing-nav">
-              <a className="landing-navlink" href="#why">왜 탑고인가</a>
               <a className="landing-navlink" href="#rank">랭킹</a>
+              <a className="landing-navlink" href="#why">왜 탑고인가</a>
               <a className="landing-navlink" href="#faq">FAQ</a>
               <ThemeToggle />
               <a className="landing-nav-cta" href="#lead">🚀 3초 빠른 견적</a>
@@ -1237,12 +1240,21 @@ export default function QuoteApp() {
               <form className="lead-form" id="lead" onSubmit={submitLead}>
                 <p className="lead-form-label"><span className="dot" />1단계 · 차량 조건 입력하고 바로 견적 확인</p>
                 <div className="lead-row">
-                  <input
-                    type="text"
-                    placeholder="어떤 차 보고 계세요? (예: 카니발, G80)"
-                    value={leadCarQuery}
-                    onChange={(e) => setLeadCarQuery(e.target.value)}
-                  />
+                  <select
+                    value={leadGroupId}
+                    onChange={(e) => setLeadGroupId(e.target.value)}
+                  >
+                    <option value="">어떤 차 보고 계세요?</option>
+                    {leadGroupsByBrand.map(([brand, list]) => (
+                      <optgroup key={brand} label={brand}>
+                        {list.map((g) => (
+                          <option key={g.id} value={g.id}>
+                            {g.name}
+                          </option>
+                        ))}
+                      </optgroup>
+                    ))}
+                  </select>
                   <select
                     value={heroPick}
                     onChange={(e) => setHeroPick(e.target.value as typeof heroPick)}
@@ -1271,7 +1283,7 @@ export default function QuoteApp() {
                   </div>
                   <button type="submit" className="lead-submit">🚀 이 견적으로 상담받기</button>
                   <p className="lead-note">
-                    제출하면 입력하신 내용이 이메일로 탑고에 전달되고, 오픈카톡 상담도 함께 열립니다.
+                    제출하면 카카오톡 오픈채팅방이 열려요. 입력하신 성함·연락처를 채팅으로 보내주시면 바로 상담해드립니다.
                   </p>
                 </div>
               </form>
@@ -1321,50 +1333,6 @@ export default function QuoteApp() {
                   </p>
                 </div>
               )}
-            </div>
-          </div>
-        </section>
-
-        <section className="landing-section" id="why">
-          <div className="landing-inner why-cta-split">
-            <div className="why-col">
-              <div className="landing-sec-head">
-                <h2>왜 탑고(TopGo)인가</h2>
-                <p className="landing-sec-desc">Top Choice + Go Speed — 정상을 향한 탑고의 3가지 약속</p>
-              </div>
-              <div className="why-list">
-                <div className="why-item">
-                  <span className="why-icon">🏆</span>
-                  <div>
-                    <b>Top Choice</b>
-                    <p>제휴 캐피탈사 조건을 실시간으로 비교해서 가장 낮은 가격을 골라드려요. 48개월·보증금 30% 동일 조건이라 진짜 비교예요.</p>
-                  </div>
-                </div>
-                <div className="why-item">
-                  <span className="why-icon">⚡</span>
-                  <div>
-                    <b>Go Speed</b>
-                    <p>테슬라 즉시출고 재고를 우선 매칭해드려요. 색상·옵션 변경 없이 바로 인도되는 한정 재고예요.</p>
-                  </div>
-                </div>
-                <div className="why-item">
-                  <span className="why-icon">🎯</span>
-                  <div>
-                    <b>Top Execution</b>
-                    <p>무보증 심사와 서류 준비까지 탑고가 대행해요. 복잡한 절차 없이 빠르게 출고까지 이어드려요.</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div className="cta-col">
-              <h2>마음에 드는 차를 찾으셨나요?</h2>
-              <p>조건은 상담에서 확정돼요 · 순위·견적은 무료예요</p>
-              <div className="cta-col-btns">
-                <a className="landing-nav-cta" href="#lead">내 차 견적 만들기</a>
-                <a className="landing-kakao-btn" href={KAKAO_URL} target="_blank" rel="noopener noreferrer">
-                  💬 오픈카톡 상담
-                </a>
-              </div>
             </div>
           </div>
         </section>
@@ -1440,7 +1408,7 @@ export default function QuoteApp() {
             </div>
 
             {/* 카드 그리드 대신 표 — 카드는 한 화면에 3대뿐이지만 표는
-                10대가 들어간다. 랭킹 사이트에 필요한 정보 밀도. */}
+                5대가 들어간다. 랭킹 사이트에 필요한 정보 밀도. */}
             <div className="rank-table-wrap">
               <table className="rank-table">
                 <thead>
@@ -1563,6 +1531,50 @@ export default function QuoteApp() {
                 </li>
               </ul>
             </details>
+          </div>
+        </section>
+
+        <section className="landing-section" id="why">
+          <div className="landing-inner why-cta-split">
+            <div className="why-col">
+              <div className="landing-sec-head">
+                <h2>왜 탑고(TopGo)인가</h2>
+                <p className="landing-sec-desc">Top Choice + Go Speed — 정상을 향한 탑고의 3가지 약속</p>
+              </div>
+              <div className="why-list">
+                <div className="why-item">
+                  <span className="why-icon">🏆</span>
+                  <div>
+                    <b>Top Choice</b>
+                    <p>제휴 캐피탈사 조건을 실시간으로 비교해서 가장 낮은 가격을 골라드려요. 48개월·보증금 30% 동일 조건이라 진짜 비교예요.</p>
+                  </div>
+                </div>
+                <div className="why-item">
+                  <span className="why-icon">⚡</span>
+                  <div>
+                    <b>Go Speed</b>
+                    <p>테슬라 즉시출고 재고를 우선 매칭해드려요. 색상·옵션 변경 없이 바로 인도되는 한정 재고예요.</p>
+                  </div>
+                </div>
+                <div className="why-item">
+                  <span className="why-icon">🎯</span>
+                  <div>
+                    <b>Top Execution</b>
+                    <p>무보증 심사와 서류 준비까지 탑고가 대행해요. 복잡한 절차 없이 빠르게 출고까지 이어드려요.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div className="cta-col">
+              <h2>마음에 드는 차를 찾으셨나요?</h2>
+              <p>조건은 상담에서 확정돼요 · 순위·견적은 무료예요</p>
+              <div className="cta-col-btns">
+                <a className="landing-nav-cta" href="#lead">내 차 견적 만들기</a>
+                <a className="landing-kakao-btn" href={KAKAO_URL} target="_blank" rel="noopener noreferrer">
+                  💬 오픈카톡 상담
+                </a>
+              </div>
+            </div>
           </div>
         </section>
 
