@@ -1068,6 +1068,9 @@ input:focus, select:focus { outline: 2px solid var(--navy); outline-offset: 1px;
   font-size: 11.5px; font-weight: 800; letter-spacing: 0.06em; text-transform: uppercase;
   color: var(--accent); margin: 0 0 6px;
 }
+.hero-board-text h1 { font-size: 30px; font-weight: 800; line-height: 1.32; margin: 0; color: var(--navy-ink); letter-spacing: -0.01em; }
+.hero-board-text h1 em { color: var(--accent); font-style: normal; }
+.hero-board-sub { font-size: 14px; color: var(--ink-soft); margin: 10px 0 0; line-height: 1.55; }
 .hero-pick-name { font-size: 26px; font-weight: 800; color: var(--navy-ink); margin: 0 0 4px; }
 .hero-pick-price { font-size: 15px; color: var(--ink-soft); margin: 0 0 6px; }
 .hero-pick-price b { font-size: 32px; color: var(--navy-ink); font-variant-numeric: tabular-nums; }
@@ -1094,6 +1097,75 @@ input:focus, select:focus { outline: 2px solid var(--navy); outline-offset: 1px;
   .hero-board { flex-direction: column; align-items: stretch; }
   .hero-pick-card { width: 100%; }
 }
+
+/* 히어로 우측 컬럼 — 1위 탭(최저가/잔존가치/즉시출고) + 픽 카드 +
+   (차종을 입력했을 때만 뜨는) 내 견적 카드를 세로로 쌓는다. */
+.hero-pick-col { flex: 0 0 300px; display: flex; flex-direction: column; gap: 10px; }
+@media (max-width: 760px) { .hero-pick-col { flex-basis: auto; width: 100%; } }
+.hero-pick-col .hero-pick-card { width: 100%; }
+.pick-tabs { display: flex; gap: 6px; }
+.pick-tab {
+  font-size: 11.5px; font-weight: 700; padding: 7px 12px; border-radius: 100px;
+  border: 1px solid var(--rule); background: var(--panel); color: var(--ink-faint); cursor: pointer;
+}
+.pick-tab.on { background: var(--accent); border-color: var(--accent); color: var(--on-accent); }
+.pick-label { display: block; font-size: 11px; font-weight: 700; color: var(--ink-faint); letter-spacing: 0.02em; }
+.pick-name { display: block; font-size: 17px; font-weight: 800; color: var(--navy-ink); margin-top: 4px; }
+.pick-price { display: block; font-size: 24px; font-weight: 800; color: var(--navy-ink); margin-top: 2px; font-variant-numeric: tabular-nums; }
+.pick-cond { display: block; font-size: 11px; color: var(--ink-faint); margin-top: 6px; line-height: 1.5; }
+
+.my-quote-card {
+  background: var(--accent-bg); border: 1px solid var(--accent); border-radius: 12px; padding: 16px;
+}
+.my-quote-label { font-size: 11px; font-weight: 700; color: var(--accent); margin: 0; letter-spacing: 0.02em; }
+.my-quote-name { font-size: 15px; font-weight: 800; color: var(--navy-ink); margin: 6px 0 0; }
+.my-quote-price { font-size: 20px; font-weight: 800; color: var(--navy-ink); margin: 2px 0 0; font-variant-numeric: tabular-nums; }
+.my-quote-cond { font-size: 11px; color: var(--ink-soft); margin: 6px 0 0; line-height: 1.5; }
+
+/* 히어로 리드폼 — 1단계(차종+우선순위)는 항상 열려 있고, 2단계
+   (성함·연락처)는 견적이 실제로 나와야만 활성화된다(lead-stage2.active).
+   "견적도 안 나왔는데 연락처부터 받는" 구조를 피하기 위함. */
+.lead-form { margin-top: 18px; background: var(--panel); border: 1px solid var(--rule); border-radius: 10px; padding: 16px; max-width: 420px; }
+.lead-form-label { font-size: 12px; font-weight: 700; color: var(--ink-soft); margin: 0 0 10px; display: flex; align-items: center; gap: 6px; }
+.lead-form-label .dot { width: 6px; height: 6px; border-radius: 50%; background: var(--accent); display: inline-block; flex-shrink: 0; }
+.lead-row { display: flex; flex-direction: column; gap: 8px; }
+.lead-row input, .lead-row select {
+  font-size: 13.5px; padding: 10px 11px; border: 1px solid var(--rule); border-radius: 6px;
+  background: var(--paper); color: var(--ink); width: 100%; font: inherit;
+}
+.lead-submit {
+  margin-top: 10px; width: 100%; background: var(--accent); color: var(--on-accent);
+  font-size: 14px; font-weight: 800; border: none; border-radius: 6px; padding: 12px; cursor: pointer;
+}
+.lead-submit:hover { filter: brightness(1.05); }
+.lead-note { font-size: 10.5px; color: var(--ink-faint); margin: 8px 0 0; text-align: center; }
+.lead-stage2 {
+  margin-top: 14px; padding-top: 14px; border-top: 1px solid var(--rule);
+  opacity: 0.4; pointer-events: none; transition: opacity .15s ease;
+}
+.lead-stage2.active { opacity: 1; pointer-events: auto; }
+
+/* "왜 탑고인가" + CTA — 좌우로 짝을 이뤄 섹션 하나로 합쳤다(예전엔
+   비슷한 얘기를 하는 섹션 4개가 흩어져 있었음). */
+.why-cta-split { display: flex; gap: 48px; align-items: flex-start; }
+.why-col { flex: 1 1 480px; }
+.cta-col {
+  flex: 1 1 340px; background: var(--panel-2); border-radius: 12px; padding: 26px;
+  text-align: center; align-self: stretch; display: flex; flex-direction: column; justify-content: center;
+}
+@media (max-width: 860px) { .why-cta-split { flex-direction: column; gap: 28px; } }
+.why-list { display: flex; flex-direction: column; gap: 16px; margin-top: 18px; }
+.why-item { display: flex; gap: 12px; }
+.why-icon { font-size: 19px; flex-shrink: 0; }
+.why-item b { display: block; font-size: 15px; font-weight: 800; color: var(--navy-ink); margin-bottom: 4px; }
+.why-item p { font-size: 13px; color: var(--ink-soft); line-height: 1.6; margin: 0; }
+.cta-col h2 { font-size: 19px; font-weight: 800; color: var(--navy-ink); margin: 0; }
+.cta-col p { font-size: 12.5px; color: var(--ink-soft); margin: 8px 0 0; }
+.cta-col-btns { display: flex; flex-direction: column; gap: 8px; margin-top: 16px; }
+
+.landing-navlink { font-size: 13px; font-weight: 600; color: var(--ink-soft); text-decoration: none; margin-right: 20px; }
+.landing-navlink:hover { color: var(--navy-ink); }
+@media (max-width: 860px) { .landing-navlink { display: none; } }
 
 /* 탑고 전용 — 랭킹 표. 카드는 한 화면에 3대뿐이지만 표는 10대가 들어간다. */
 .rank-table-wrap { overflow-x: auto; }

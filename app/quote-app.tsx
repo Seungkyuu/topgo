@@ -12,7 +12,7 @@
  *   · 엔진 내부 문구는 고객 언어로 번역해 노출한다.
  */
 
-import { useEffect, useMemo, useRef, useState } from "react";
+import { useEffect, useMemo, useRef, useState, type FormEvent } from "react";
 import { lowestCapital, type DealType, type CapitalQuoteRow } from "@/lib/engine/capitals";
 import { logoForBrand } from "@/lib/engine/brand-logo";
 import {
@@ -108,21 +108,10 @@ const COMPANY_LEGAL = "유혜리 대표 · 서울특별시 강서구 마곡중�
  *  "업력 10년+"·"누적 계약 3,400건"·"만족도 98%" 같은 수치를 쓸 수 없다
  *  (RENTO에서 복사돼 왔던 값이라 전부 제거). */
 /** 문구는 실제로 하는 것만 쓴다 — "전담 컨설턴트"(전담 인력 보유 주장),
- *  "항상 최신"(갱신 주기는 하루 1회) 같은 표현은 지킬 수 없어서 제거. */
-const RENTO_FEATURES: { title: string; desc: string }[] = [
-  {
-    title: "같은 조건으로 줄 세웁니다",
-    desc: "모든 차량을 48개월·보증금 30%로 똑같이 계산해서 순위를 매겨요. 조건이 다르면 비교가 아니니까요.",
-  },
-  {
-    title: "숨김 없는 계산 근거",
-    desc: "잔존가치·초기 비용·총 납부액까지 전부 펼쳐서 보여드려요. 눌러야 나오는 작은 글씨는 없어요.",
-  },
-  {
-    title: "가격이 바뀌면 순위도 바뀝니다",
-    desc: "실거래가가 갱신되면 순위를 다시 계산해요. 어제 1위가 오늘도 1위라는 보장은 없어요.",
-  },
-];
+ *  "항상 최신"(갱신 주기는 하루 1회) 같은 표현은 지킬 수 없어서 제거.
+ *  "왜 탑고인가" 3약속(Top Choice/Go Speed/Top Execution)은 랜딩
+ *  화면에 직접 인라인으로 썼다 — 예전엔 이 목록과 "탑고가 순위를 매기는
+ *  방법" details가 같은 얘기를 두 번 했었다. */
 
 const PROMO_CONDITIONS = { termMonths: 48, annualMileageKm: 20000, depositRate: 0.3, prepayment: 0 };
 const PROMO_DEAL_TRY_ORDER: DealType[] = ["operatingLease", "financeLease", "longTermRental"];
@@ -857,6 +846,15 @@ export default function QuoteApp() {
   const [budgetDeal, setBudgetDeal] = useState<DealType>("operatingLease");
   const [budgetTerm, setBudgetTerm] = useState(48);
 
+  // 히어로 "1위" 카드 — 최저가/잔존가치/즉시출고 중 어떤 실제 1위를 보여줄지.
+  const [heroPick, setHeroPick] = useState<"lowest" | "residual" | "instant">("lowest");
+
+  // 히어로 리드폼 1단계(차량 조건) — 성함·연락처는 견적 계산에 필요 없어서
+  // 별도 2단계로 뺐다(대표님 피드백: "견적 내는데 왜 연락처부터 물어보냐").
+  const [leadCarQuery, setLeadCarQuery] = useState("");
+  const [leadName, setLeadName] = useState("");
+  const [leadPhone, setLeadPhone] = useState("");
+
   // ── 브라우저 뒤로가기 = 화면 뒤로 ──
   useEffect(() => {
     history.replaceState({ screen: "landing" }, "");
@@ -944,6 +942,36 @@ export default function QuoteApp() {
       return { deal, monthlyPayment: best.monthlyPayment!, residualRate: best.residualRate, spread, sourceCount };
     }
     return null;
+  }
+
+  // 히어로 리드폼 1단계 — 차종을 입력하면 실제 계산 엔진으로 그 자리에서
+  // 견적을 뽑는다(가짜 값 아님, bestLandingQuote 재사용). 매칭되는 모델
+  // 그룹이 있어야만 견적을 보여주고, 없으면 2단계(연락처)도 비활성 상태로
+  // 둔다 — "견적도 안 나왔는데 연락처부터 받는" 구조를 피한다.
+  const leadQuote = useMemo(() => {
+    const q = leadCarQuery.trim().toLowerCase();
+    if (!q) return null;
+    const g = groups.find(
+      (g) =>
+        g.name.toLowerCase().includes(q) ||
+        `${g.brand} ${g.name}`.toLowerCase().includes(q) ||
+        g.trims.some((t) => t.display.toLowerCase().includes(q)),
+    );
+    const v = g?.trims[0];
+    if (!v) return null;
+    const quote = bestLandingQuote(v);
+    if (!quote) return null;
+    return { vehicle: v, ...quote };
+  }, [groups, leadCarQuery]);
+
+  function submitLead(e: FormEvent) {
+    e.preventDefault();
+    const subject = encodeURIComponent(`[탑고 견적 문의] ${leadCarQuery.trim() || "차종 미정"}`);
+    const body = encodeURIComponent(
+      `차종: ${leadCarQuery.trim() || "미정"}\n성함: ${leadName.trim() || "미입력"}\n연락처: ${leadPhone.trim() || "미입력"}`,
+    );
+    window.location.href = `mailto:${CONTACT_EMAIL}?subject=${subject}&body=${body}`;
+    window.open(KAKAO_URL, "_blank", "noopener,noreferrer");
   }
 
   function rankPool(targets: { brand: string; group: string }[], limit = 3) {
@@ -1151,68 +1179,193 @@ export default function QuoteApp() {
   // ─── 화면: 랜딩(홈페이지) ────────────────────────────────────────────────────
 
   if (screen === "landing") {
+    const heroPicks = {
+      lowest: lowestCards[0]
+        ? { label: "오늘 기준 최저가 1위", vehicle: lowestCards[0].vehicle, monthlyPayment: lowestCards[0].monthlyPayment, deal: lowestCards[0].deal, sub: null as string | null }
+        : null,
+      residual: residualCards[0]
+        ? { label: "잔존가치 1위", vehicle: residualCards[0].vehicle, monthlyPayment: residualCards[0].monthlyPayment, deal: residualCards[0].deal, sub: `잔가율 ${Math.round((residualCards[0].residualRate ?? 0) * 100)}%` }
+        : null,
+      instant: instantDeliveryCards[0]
+        ? {
+            label: "즉시출고 1위",
+            vehicle: null,
+            monthlyPayment: instantDeliveryCards[0].monthlyPayment,
+            deal: "operatingLease" as DealType,
+            sub: "색상·옵션 변경 불가",
+            name: `테슬라 Model ${instantDeliveryCards[0].group === "모델 Y" ? "Y" : "3"} ${instantDeliveryCards[0].trimLabel}`,
+          }
+        : null,
+    };
+    const activePick = heroPicks[heroPick];
+
     return (
       <main className="landing">
         <header className="landing-header">
           <div className="landing-inner landing-header-row">
             <Wordmark />
             <nav className="landing-nav">
+              <a className="landing-navlink" href="#why">왜 탑고인가</a>
+              <a className="landing-navlink" href="#rank">랭킹</a>
+              <a className="landing-navlink" href="#faq">FAQ</a>
               <ThemeToggle />
-              <button type="button" className="landing-nav-cta" onClick={() => navigate("home")}>
-                견적 시작하기
-              </button>
+              <a className="landing-nav-cta" href="#lead">🚀 3초 빠른 견적</a>
             </nav>
           </div>
         </header>
 
-        {/* 히어로가 곧 상품 — 글자만 있던 히어로 대신 이번 주 실제 1위
-            차량과 계산된 월 납부액을 첫 화면에 띄운다(가격 비교 사이트인데
-            첫 화면에 가격이 없던 문제). */}
+        {/* 히어로가 곧 상품 — 글자만 있던 히어로 대신 실제 1위 차량과
+            계산된 월 납부액을 첫 화면에 띄운다. 리드폼은 "차량 조건 →
+            견적 확인 → (마음에 들면) 연락처" 2단계 — 견적을 내는 데
+            필요 없는 성함·연락처를 먼저 묻지 않는다(대표님 피드백). */}
         <section className="landing-hero landing-hero-compact">
           <div className="landing-inner hero-board">
             <div className="hero-board-text">
-              <p className="hero-eyebrow">이번 주 최저가 1위</p>
-              {lowestCards[0] ? (
-                <>
-                  <h1 className="hero-pick-name">{lowestCards[0].vehicle.display}</h1>
-                  <p className="hero-pick-price">
-                    월 <b>{won(lowestCards[0].monthlyPayment)}</b>원
+              <p className="hero-eyebrow">Top Choice, Go Further</p>
+              <h1>
+                최고의 조건으로,<br />가장 빠르게 <em>Go!</em>
+              </h1>
+              <p className="hero-board-sub">
+                제휴 캐피탈사 실시간 최저가 비교 &amp; 즉시출고 재고 우선 매칭
+              </p>
+              <div className="landing-hero-badges">
+                <span>취급 브랜드 {brands.length}개</span>
+                <span>취급 차량 {index.length.toLocaleString("ko-KR")}+</span>
+                <span>제휴 캐피탈사 3곳</span>
+              </div>
+
+              <form className="lead-form" id="lead" onSubmit={submitLead}>
+                <p className="lead-form-label"><span className="dot" />1단계 · 차량 조건 입력하고 바로 견적 확인</p>
+                <div className="lead-row">
+                  <input
+                    type="text"
+                    placeholder="어떤 차 보고 계세요? (예: 카니발, G80)"
+                    value={leadCarQuery}
+                    onChange={(e) => setLeadCarQuery(e.target.value)}
+                  />
+                  <select
+                    value={heroPick}
+                    onChange={(e) => setHeroPick(e.target.value as typeof heroPick)}
+                  >
+                    <option value="lowest">최저가 우선</option>
+                    <option value="residual">잔존가치 우선</option>
+                    <option value="instant">즉시출고 우선</option>
+                  </select>
+                </div>
+
+                <div className={`lead-stage2${leadQuote ? " active" : ""}`}>
+                  <p className="lead-form-label"><span className="dot" />2단계 · 이 조건으로 상담받기</p>
+                  <div className="lead-row">
+                    <input
+                      type="text"
+                      placeholder="성함"
+                      value={leadName}
+                      onChange={(e) => setLeadName(e.target.value)}
+                    />
+                    <input
+                      type="tel"
+                      placeholder="연락처 (010-0000-0000)"
+                      value={leadPhone}
+                      onChange={(e) => setLeadPhone(e.target.value)}
+                    />
+                  </div>
+                  <button type="submit" className="lead-submit">🚀 이 견적으로 상담받기</button>
+                  <p className="lead-note">
+                    제출하면 입력하신 내용이 이메일로 탑고에 전달되고, 오픈카톡 상담도 함께 열립니다.
                   </p>
-                  <p className="hero-pick-cond">
-                    {DEAL_EXPLAIN[lowestCards[0].deal].name} · 48개월 · 보증금 30% 동일 조건 ·
-                    겟차 실거래가 기준 · {priceDate} 갱신
-                  </p>
-                </>
-              ) : (
-                <h1>Top Choice, <em>Go Further</em></h1>
-              )}
-              <div className="hero-board-btns">
+                </div>
+              </form>
+            </div>
+
+            <div className="hero-pick-col">
+              <div className="pick-tabs" role="tablist">
+                {(["lowest", "residual", "instant"] as const).map((key) => (
+                  <button
+                    key={key}
+                    type="button"
+                    className={`pick-tab${heroPick === key ? " on" : ""}`}
+                    onClick={() => setHeroPick(key)}
+                  >
+                    {key === "lowest" ? "최저가 1위" : key === "residual" ? "잔존가치 1위" : "즉시출고 1위"}
+                  </button>
+                ))}
+              </div>
+              {activePick && (
                 <button
                   type="button"
-                  className="landing-nav-cta"
-                  onClick={() => document.getElementById("rank")?.scrollIntoView({ behavior: "smooth" })}
+                  className="hero-pick-card"
+                  onClick={() => activePick.vehicle && pickVehicle(activePick.vehicle)}
                 >
-                  전체 랭킹 보기
+                  <span className="hero-pick-rank">1</span>
+                  <span className="pick-label">{activePick.label}</span>
+                  <span className="pick-name">
+                    {activePick.vehicle ? `${activePick.vehicle.brand} ${activePick.vehicle.display}` : (activePick as any).name}
+                  </span>
+                  <span className="pick-price">
+                    {activePick.sub && heroPick === "residual" ? activePick.sub : `월 ${won(activePick.monthlyPayment)}원`}
+                  </span>
+                  <span className="pick-cond">
+                    {DEAL_EXPLAIN[activePick.deal].name} · 48개월 · 보증금 30% 동일 조건 · 실거래가 기준
+                    {activePick.sub && heroPick !== "residual" ? ` · ${activePick.sub}` : ""}
+                  </span>
+                  <span className="pick-cta">견적 보기 →</span>
                 </button>
-                <button type="button" className="hero-btn-ghost" onClick={() => navigate("home")}>
-                  내 차 검색
-                </button>
+              )}
+              {leadQuote && (
+                <div className="my-quote-card show">
+                  <p className="my-quote-label">✓ 회원님이 고른 차의 실시간 견적</p>
+                  <p className="my-quote-name">{leadQuote.vehicle.brand} {leadQuote.vehicle.display}</p>
+                  <p className="my-quote-price">월 {won(leadQuote.monthlyPayment)}원</p>
+                  <p className="my-quote-cond">
+                    {DEAL_EXPLAIN[leadQuote.deal].name} · 48개월 · 보증금 30% 기준 실시간 계산가
+                  </p>
+                </div>
+              )}
+            </div>
+          </div>
+        </section>
+
+        <section className="landing-section" id="why">
+          <div className="landing-inner why-cta-split">
+            <div className="why-col">
+              <div className="landing-sec-head">
+                <h2>왜 탑고(TopGo)인가</h2>
+                <p className="landing-sec-desc">Top Choice + Go Speed — 정상을 향한 탑고의 3가지 약속</p>
+              </div>
+              <div className="why-list">
+                <div className="why-item">
+                  <span className="why-icon">🏆</span>
+                  <div>
+                    <b>Top Choice</b>
+                    <p>제휴 캐피탈사 조건을 실시간으로 비교해서 가장 낮은 가격을 골라드려요. 48개월·보증금 30% 동일 조건이라 진짜 비교예요.</p>
+                  </div>
+                </div>
+                <div className="why-item">
+                  <span className="why-icon">⚡</span>
+                  <div>
+                    <b>Go Speed</b>
+                    <p>테슬라 즉시출고 재고를 우선 매칭해드려요. 색상·옵션 변경 없이 바로 인도되는 한정 재고예요.</p>
+                  </div>
+                </div>
+                <div className="why-item">
+                  <span className="why-icon">🎯</span>
+                  <div>
+                    <b>Top Execution</b>
+                    <p>무보증 심사와 서류 준비까지 탑고가 대행해요. 복잡한 절차 없이 빠르게 출고까지 이어드려요.</p>
+                  </div>
+                </div>
               </div>
             </div>
-            {lowestCards[0] && (
-              <button
-                type="button"
-                className="hero-pick-card"
-                onClick={() => pickVehicle(lowestCards[0].vehicle)}
-              >
-                <span className="hero-pick-rank">1</span>
-                <VehiclePhoto
-                  brand={lowestCards[0].vehicle.brand}
-                  src={lowestCards[0].vehicle.image}
-                />
-                <span className="hero-pick-cta">견적 보기 →</span>
-              </button>
-            )}
+            <div className="cta-col">
+              <h2>마음에 드는 차를 찾으셨나요?</h2>
+              <p>조건은 상담에서 확정돼요 · 순위·견적은 무료예요</p>
+              <div className="cta-col-btns">
+                <a className="landing-nav-cta" href="#lead">내 차 견적 만들기</a>
+                <a className="landing-kakao-btn" href={KAKAO_URL} target="_blank" rel="noopener noreferrer">
+                  💬 오픈카톡 상담
+                </a>
+              </div>
+            </div>
           </div>
         </section>
 
@@ -1220,11 +1373,46 @@ export default function QuoteApp() {
           <div className="landing-inner">
             <div className="landing-sec-head">
               <div>
-                <h2>이번 달 랭킹</h2>
+                <h2>이런 차 찾으세요?</h2>
                 <p className="landing-sec-desc">
-                  48개월·보증금 30% 기준 실시간 계산가 · 겟차 실거래가 기준 · {priceDate} 갱신
+                  차명으로 검색하거나 랭킹에서 바로 고르세요 · 48개월·보증금 30% 기준 실시간 계산가 · {priceDate} 갱신
                 </p>
               </div>
+            </div>
+
+            <form
+              className="landing-search"
+              onSubmit={(e) => {
+                e.preventDefault();
+                goToSearch(query);
+              }}
+            >
+              <input
+                type="text"
+                placeholder="차량명으로 검색 (예: 카니발, G80, E클래스)"
+                value={query}
+                onChange={(e) => setSearchQuery(e.target.value)}
+                aria-label="차량 검색"
+              />
+              <button type="submit">검색</button>
+            </form>
+            <div className="brand-chips landing-hero-chips">
+              {brands.slice(0, 8).map((b) => (
+                <button
+                  key={b}
+                  type="button"
+                  className="brand-chip"
+                  onClick={() => {
+                    setSearchBrand(b);
+                    navigate("home");
+                  }}
+                >
+                  {b}
+                </button>
+              ))}
+              <button type="button" className="brand-chip" onClick={() => navigate("home")}>
+                +{Math.max(brands.length - 8, 0)}개 브랜드
+              </button>
             </div>
 
             <div className="ranktab-bar" role="tablist">
@@ -1367,7 +1555,7 @@ export default function QuoteApp() {
                 </li>
                 <li>
                   <b>실거래가 기준</b>
-                  <span>캐피탈사 정가가 아니라 겟차 실거래가로 계산해요. 할인율 랭킹도 이 값 기준이에요.</span>
+                  <span>캐피탈사 정가가 아니라 실거래가로 계산해요. 할인율 랭킹도 이 값 기준이에요.</span>
                 </li>
                 <li>
                   <b>매일 갱신</b>
@@ -1378,106 +1566,7 @@ export default function QuoteApp() {
           </div>
         </section>
 
-        <section className="landing-section landing-search-secondary">
-          <div className="landing-inner">
-            <p className="landing-row-label">
-              <span className="landing-tag">직접 찾기</span>
-              찾는 차가 랭킹에 없나요? 차량명으로 바로 검색하세요
-            </p>
-            <form
-              className="landing-search"
-              onSubmit={(e) => {
-                e.preventDefault();
-                goToSearch(query);
-              }}
-            >
-              <input
-                type="text"
-                placeholder="차량명으로 검색 (예: 그랜저, E 300, Model Y)"
-                value={query}
-                onChange={(e) => setSearchQuery(e.target.value)}
-                aria-label="차량 검색"
-              />
-              <button type="submit">검색</button>
-            </form>
-            <div className="brand-chips landing-hero-chips">
-              {brands.slice(0, 8).map((b) => (
-                <button
-                  key={b}
-                  type="button"
-                  className="brand-chip"
-                  onClick={() => {
-                    setSearchBrand(b);
-                    navigate("home");
-                  }}
-                >
-                  {b}
-                </button>
-              ))}
-              <button type="button" className="brand-chip" onClick={() => navigate("home")}>
-                +{Math.max(brands.length - 8, 0)}개 브랜드
-              </button>
-            </div>
-          </div>
-        </section>
-
-
-        <section className="landing-section landing-features landing-features-compact">
-          <div className="landing-inner">
-            <p className="landing-mini-label">왜 탑고인가 · 순위를 매기는 기준을 공개합니다</p>
-            <div className="landing-feature-list">
-              {RENTO_FEATURES.map((f) => (
-                <div key={f.title} className="landing-feature-item">
-                  <b>{f.title}</b>
-                  <span>{f.desc}</span>
-                </div>
-              ))}
-            </div>
-            <div className="landing-stats-grid landing-stats-inline">
-              {[
-                { num: index.length.toLocaleString("ko-KR"), unit: "+", label: "취급 차량" },
-                { num: String(brands.length), unit: "개", label: "취급 브랜드" },
-                { num: "3", unit: "곳", label: "제휴 금융사" },
-              ].map((s) => (
-                <div key={s.label} className="landing-stat-item">
-                  <div className="landing-stat-num">
-                    {s.num}
-                    <span>{s.unit}</span>
-                  </div>
-                  <div className="landing-stat-label">{s.label}</div>
-                </div>
-              ))}
-            </div>
-          </div>
-        </section>
-
-        <section className="landing-contact landing-contact-compact">
-          <div className="landing-inner landing-contact-bar">
-            <div className="landing-contact-bar-text">
-              <p className="landing-contact-bar-title">
-                마음에 드는 차를 찾으셨나요? 조건은 상담에서 확정됩니다
-              </p>
-              <p className="landing-contact-bar-meta">
-                순위·견적은 무료로 확인하실 수 있어요
-              </p>
-            </div>
-            <div className="landing-contact-bar-btns">
-              <button type="button" className="landing-nav-cta" onClick={() => navigate("home")}>
-                내 차 견적 만들기
-              </button>
-              <a
-                className="landing-kakao-btn"
-                href={KAKAO_URL}
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                💬 오픈카톡 상담
-              </a>
-            </div>
-          </div>
-        </section>
-
-        <section className="landing-section landing-faq">
+        <section className="landing-section landing-faq" id="faq">
           <div className="landing-inner">
             <div className="landing-sec-head">
               <div>
@@ -1488,16 +1577,15 @@ export default function QuoteApp() {
               <details>
                 <summary>순위가 왜 매일 바뀌나요?</summary>
                 <p>
-                  겟차 실거래가가 갱신될 때마다 할인율·예산대 순위를 다시 계산해요. 어제 1위였던 차가
+                  실거래가가 갱신될 때마다 할인율·예산대 순위를 다시 계산해요. 어제 1위였던 차가
                   오늘은 다른 차로 바뀔 수 있어요 — 그만큼 지금 순위가 최신이라는 뜻이에요.
                 </p>
               </details>
               <details>
                 <summary>할인율은 어떻게 계산되나요?</summary>
                 <p>
-                  캐피탈사가 정한 정가와 겟차 실거래가의 차이를 정가로 나눈 값이에요. 겟차 매칭이 안
-                  된(할인율을 확인할 수 없는) 차량은 랭킹에서 제외해요 — 모르는 값을 0%로 보여드리지
-                  않아요.
+                  캐피탈사가 정한 정가와 실거래가의 차이를 정가로 나눈 값이에요. 매칭이 안 된(할인율을
+                  확인할 수 없는) 차량은 랭킹에서 제외해요 — 모르는 값을 0%로 보여드리지 않아요.
                 </p>
               </details>
               <details>
@@ -1514,25 +1602,24 @@ export default function QuoteApp() {
               <details>
                 <summary>상담은 어떻게 진행되나요?</summary>
                 <p>
-                  마음에 드는 차를 고르면 오픈카톡으로 담당 컨설턴트와 바로 연결돼요. 조건을 확인하고
-                  다음 단계를 안내해드려요.
+                  마음에 드는 차를 고르면 오픈카톡으로 바로 연결돼요. 조건을 확인하고 다음 단계를
+                  안내해드려요.
                 </p>
               </details>
             </div>
           </div>
-        </section>
 
-        <footer className="landing-footer">
-          <div className="landing-inner landing-footer-row">
-            <span>
-              {COMPANY_NAME} · {COMPANY_LEGAL}
-              <br />
-              <a href={`tel:${CONTACT_PHONE}`}>{CONTACT_PHONE}</a> ·{" "}
-              <a href={`mailto:${CONTACT_EMAIL}`}>{CONTACT_EMAIL}</a> · 팩스 {CONTACT_FAX}
-            </span>
-            <span>
-              <a href={KAKAO_URL} target="_blank" rel="noopener noreferrer">
-                오픈카톡
+          <footer className="landing-footer">
+            <div className="landing-inner landing-footer-row">
+              <span>
+                {COMPANY_NAME} · {COMPANY_LEGAL}
+                <br />
+                <a href={`tel:${CONTACT_PHONE}`}>{CONTACT_PHONE}</a> ·{" "}
+                <a href={`mailto:${CONTACT_EMAIL}`}>{CONTACT_EMAIL}</a> · 팩스 {CONTACT_FAX}
+              </span>
+              <span>
+                <a href={KAKAO_URL} target="_blank" rel="noopener noreferrer">
+                  오픈카톡
               </a>{" "}
               ·{" "}
               <a href={BLOG_URL} target="_blank" rel="noopener noreferrer">
@@ -1541,6 +1628,7 @@ export default function QuoteApp() {
             </span>
           </div>
         </footer>
+        </section>
       </main>
     );
   }
