@@ -851,7 +851,10 @@ export default function QuoteApp() {
 
   // 히어로 리드폼 1단계(차량 조건) — 성함·연락처는 견적 계산에 필요 없어서
   // 별도 2단계로 뺐다(대표님 피드백: "견적 내는데 왜 연락처부터 물어보냐").
-  // 직접 타이핑 대신 실제 존재하는 모델 그룹 중에서 고르는 토글(select)로 변경.
+  // 직접 타이핑 대신 실제 존재하는 모델 중에서 고르는 토글(select)로 변경.
+  // 브랜드가 33개·모델그룹이 수백 개라 select 하나에 다 넣으면 토글이 너무
+  // 길어져서(대표님 피드백), 브랜드 → 모델 2단계 select로 나눴다.
+  const [leadBrand, setLeadBrand] = useState("");
   const [leadGroupId, setLeadGroupId] = useState("");
   const [leadName, setLeadName] = useState("");
   const [leadPhone, setLeadPhone] = useState("");
@@ -949,16 +952,12 @@ export default function QuoteApp() {
   // 견적을 뽑는다(가짜 값 아님, bestLandingQuote 재사용). 매칭되는 모델
   // 그룹이 있어야만 견적을 보여주고, 없으면 2단계(연락처)도 비활성 상태로
   // 둔다 — "견적도 안 나왔는데 연락처부터 받는" 구조를 피한다.
-  // 브랜드별로 묶어서 select의 optgroup으로 보여줄 목록 — 브랜드명 기준 정렬.
-  const leadGroupsByBrand = useMemo(() => {
-    const byBrand = new Map<string, ModelGroupSummary[]>();
-    for (const g of groups) {
-      if (!byBrand.has(g.brand)) byBrand.set(g.brand, []);
-      byBrand.get(g.brand)!.push(g);
-    }
-    for (const list of byBrand.values()) list.sort((a, b) => a.minPrice - b.minPrice);
-    return [...byBrand.entries()].sort((a, b) => a[0].localeCompare(b[0], "ko"));
-  }, [groups]);
+  // 브랜드 select → 모델 select 2단계. 브랜드는 listBrands() 그대로,
+  // 모델은 그 브랜드로 좁혀진 목록만 최저가순으로 보여준다.
+  const leadModelOptions = useMemo(() => {
+    if (!leadBrand) return [];
+    return groups.filter((g) => g.brand === leadBrand).sort((a, b) => a.minPrice - b.minPrice);
+  }, [groups, leadBrand]);
 
   const leadQuote = useMemo(() => {
     if (!leadGroupId) return null;
@@ -1239,22 +1238,31 @@ export default function QuoteApp() {
 
               <form className="lead-form" id="lead" onSubmit={submitLead}>
                 <p className="lead-form-label"><span className="dot" />1단계 · 차량 조건 입력하고 바로 견적 확인</p>
-                <div className="lead-row">
+                <div className="lead-row lead-row-split">
+                  <select
+                    value={leadBrand}
+                    onChange={(e) => {
+                      setLeadBrand(e.target.value);
+                      setLeadGroupId("");
+                    }}
+                  >
+                    <option value="">브랜드 선택</option>
+                    {brands.map((b) => (
+                      <option key={b} value={b}>{b}</option>
+                    ))}
+                  </select>
                   <select
                     value={leadGroupId}
                     onChange={(e) => setLeadGroupId(e.target.value)}
+                    disabled={!leadBrand}
                   >
-                    <option value="">어떤 차 보고 계세요?</option>
-                    {leadGroupsByBrand.map(([brand, list]) => (
-                      <optgroup key={brand} label={brand}>
-                        {list.map((g) => (
-                          <option key={g.id} value={g.id}>
-                            {g.name}
-                          </option>
-                        ))}
-                      </optgroup>
+                    <option value="">{leadBrand ? "모델 선택" : "브랜드 먼저 선택"}</option>
+                    {leadModelOptions.map((g) => (
+                      <option key={g.id} value={g.id}>{g.name}</option>
                     ))}
                   </select>
+                </div>
+                <div className="lead-row">
                   <select
                     value={heroPick}
                     onChange={(e) => setHeroPick(e.target.value as typeof heroPick)}
