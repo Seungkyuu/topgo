@@ -196,8 +196,14 @@ def extract_brand_logos(html: str) -> dict[str, str]:
             decoded = json.loads('"' + raw + '"')
         except (json.JSONDecodeError, ValueError):
             continue
-        m = re.match(r"^\d+:(.*)$", decoded, re.DOTALL)
+        # extract_initial_prices()와 동일한 버그 — 청크 ID가 16진수라
+        # \d+로는 못 벗긴다("2b:" 같은 값). brand-logos.json이 계속
+        # {}(빈 값)로 저장되던 원인이 이거였다.
+        m = re.match(r"^[0-9a-fA-F]+:(.*)$", decoded, re.DOTALL)
         payload = m.group(1) if m else decoded
+        tm = re.match(r"^T[0-9a-fA-F]+,(.*)$", payload, re.DOTALL)
+        if tm:
+            payload = tm.group(1)
         try:
             data = json.loads(payload)
         except json.JSONDecodeError:
