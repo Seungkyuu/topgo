@@ -105,7 +105,9 @@ const CONTACT_FAX = "0504-391-5100";
 
 /** 사업자등록증 원본 기준(등록번호 530-86-03837) */
 const COMPANY_NAME = "주식회사 탑고";
-const COMPANY_LEGAL = "유혜리 대표 · 서울특별시 강서구 마곡중앙6로 10, 203-24호 · 사업자등록번호 530-86-03837";
+const COMPANY_LEGAL = "유혜리 대표 · 서울특별시 강서구 마곡중앙6로 10, 203-24호";
+/** 사업자등록번호는 하이픈에서 줄이 갈리지 않게 따로 떼어 nowrap으로 렌더한다. */
+const COMPANY_REG = "사업자등록번호 530-86-03837";
 
 /** 신뢰 지표는 실제로 검증 가능한 값만 쓴다 — 탑고는 2026년 4월 개업이라
  *  "업력 10년+"·"누적 계약 3,400건"·"만족도 98%" 같은 수치를 쓸 수 없다
@@ -1673,10 +1675,11 @@ export default function QuoteApp() {
           <footer className="landing-footer">
             <div className="landing-inner landing-footer-row">
               <span>
-                {COMPANY_NAME} · {COMPANY_LEGAL}
+                {COMPANY_NAME} · {COMPANY_LEGAL} · <span className="nowrap">{COMPANY_REG}</span>
                 <br />
                 <a href={`tel:${CONTACT_PHONE}`}>{CONTACT_PHONE}</a> ·{" "}
-                <a href={`mailto:${CONTACT_EMAIL}`}>{CONTACT_EMAIL}</a> · 팩스 {CONTACT_FAX}
+                <a href={`mailto:${CONTACT_EMAIL}`}>{CONTACT_EMAIL}</a> ·{" "}
+                <span className="nowrap">팩스 {CONTACT_FAX}</span>
               </span>
               <span>
                 <a href={KAKAO_URL} target="_blank" rel="noopener noreferrer">

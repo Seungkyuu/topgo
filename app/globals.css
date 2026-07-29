@@ -86,7 +86,19 @@ body {
   -moz-osx-font-smoothing: grayscale;
   line-height: 1.5;
   letter-spacing: -0.01em;
+  /* 한글 줄바꿈 — 브라우저 기본값은 CJK를 "글자 단위"로 끊어서 어절 한복판에서
+     잘린다("즉시출고 재/고", "가솔/린", "서/동"). keep-all로 띄어쓰기(어절)
+     경계에서만 줄이 바뀌게 한다. 모바일처럼 폭이 좁을수록 차이가 크다. */
+  word-break: keep-all;
+  /* keep-all만 두면 띄어쓰기가 없는 긴 영문·숫자(이메일·URL·모델 코드)가
+     한 덩어리로 남아 화면을 넘칠 수 있어, 그런 경우에만 예외로 쪼갠다. */
+  overflow-wrap: break-word;
 }
+
+/* 전화번호·사업자번호처럼 하이픈이 든 식별자는 하이픈에서 줄이 갈리면
+   ("309-86-/04116") 지저분해서, 한 덩어리로 유지한다. */
+.nowrap { white-space: nowrap; }
+.landing-footer a { white-space: nowrap; }
 
 /* ── 레이아웃 ── */
 .wrap { max-width: 560px; margin: 0 auto; padding: 26px 18px 96px; }
@@ -1008,10 +1020,22 @@ input:focus, select:focus { outline: 2px solid var(--navy); outline-offset: 1px;
   font-size: 12px; color: var(--ink-soft); font-weight: 600;
   padding: 4px 0; position: relative;
 }
-.landing-hero-badges span + span { padding-left: 16px; }
-.landing-hero-badges span + span::before {
-  content: ""; position: absolute; left: 0; top: 50%; transform: translateY(-50%);
+/* 구분점은 "뒤 항목의 앞"이 아니라 "앞 항목의 뒤"에 붙인다 — 앞에 붙이면
+   줄이 바뀔 때 점만 다음 줄 맨 앞에 홀로 남는다("· 제휴 캐피탈사 3곳").
+   마지막 항목에는 점을 찍지 않는다. */
+.landing-hero-badges span { white-space: nowrap; }
+.landing-hero-badges span:not(:last-child) { padding-right: 16px; }
+.landing-hero-badges span:not(:last-child)::after {
+  content: ""; position: absolute; right: 0; top: 50%; transform: translateY(-50%);
   width: 3px; height: 3px; border-radius: 50%; background: var(--rule-strong, var(--rule));
+}
+/* 좁은 화면에서는 세 항목이 한 줄에 못 들어가 어차피 줄이 갈리는데, 그때
+   구분점만 줄 끝에 홀로 남는다. 모바일에서는 점을 빼고 간격으로만 구분해
+   줄바꿈이 깔끔하게 떨어지게 한다. */
+@media (max-width: 520px) {
+  .landing-hero-badges { gap: 4px 14px; }
+  .landing-hero-badges span:not(:last-child) { padding-right: 0; }
+  .landing-hero-badges span:not(:last-child)::after { content: none; }
 }
 
 .landing-kakao-btn {
@@ -1109,6 +1133,13 @@ input:focus, select:focus { outline: 2px solid var(--navy); outline-offset: 1px;
 .pick-tab {
   font-size: 13px; font-weight: 700; padding: 9px 16px; border-radius: 100px;
   border: 1px solid var(--rule); background: var(--panel); color: var(--ink-faint); cursor: pointer;
+  /* 좁은 화면에서 "최저가 1위"가 "최저가"/"1위" 두 줄로 접히면 탭 높이가
+     제각각이 된다 — 칩은 항상 한 줄로 두고 폭이 모자라면 줄을 바꾼다. */
+  white-space: nowrap;
+}
+@media (max-width: 420px) {
+  .pick-tabs { flex-wrap: wrap; }
+  .pick-tab { padding: 8px 12px; font-size: 12px; }
 }
 .pick-tab.on { background: var(--accent); border-color: var(--accent); color: var(--on-accent); }
 .pick-label { display: block; font-size: 12px; font-weight: 700; color: var(--ink-faint); letter-spacing: 0.02em; }
