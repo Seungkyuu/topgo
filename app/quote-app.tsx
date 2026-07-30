@@ -1272,12 +1272,12 @@ export default function QuoteApp() {
                 최고의 조건으로,<br />가장 빠르게 <em>Go!</em>
               </h1>
               <p className="hero-board-sub">
-                제휴 캐피탈사 실시간 최저가 비교 &amp; 즉시출고 재고 우선 매칭
+                제휴 캐피탈사 실시간 최저가 비교 · 즉시출고 재고 우선 매칭
               </p>
               <div className="landing-hero-badges">
                 <span>취급 브랜드 {brands.length}개</span>
                 <span>취급 차량 {index.length.toLocaleString("ko-KR")}+</span>
-                <span>제휴 캐피탈사 3곳</span>
+                <span>제휴 캐피탈사 긴밀 협업</span>
               </div>
 
               <form className="lead-form" id="lead" onSubmit={submitLead}>
@@ -1362,7 +1362,7 @@ export default function QuoteApp() {
                     {DEAL_EXPLAIN[activePick.deal].name} · 48개월 · 보증금 30% 동일 조건 · 실거래가 기준
                     {activePick.sub && heroPick !== "residual" ? ` · ${activePick.sub}` : ""}
                   </span>
-                  <span className="pick-cta">견적 보기 →</span>
+                  <span className="hero-pick-cta">견적 보기 →</span>
                 </button>
               )}
               {leadQuote && (
@@ -1590,7 +1590,7 @@ export default function QuoteApp() {
             <div className="why-col">
               <div className="landing-sec-head">
                 <h2>왜 탑고(TopGo)인가</h2>
-                <p className="landing-sec-desc">Top Choice + Go Speed — 정상을 향한 탑고의 3가지 약속</p>
+                <p className="landing-sec-desc">Top Choice · Go Speed · Top Execution — 정상을 향한 탑고의 3가지 약속</p>
               </div>
               <div className="why-list">
                 <div className="why-item">
@@ -1611,14 +1611,14 @@ export default function QuoteApp() {
                   <span className="why-icon">🎯</span>
                   <div>
                     <b>Top Execution</b>
-                    <p>무보증 심사와 서류 준비까지 탑고가 대행해요. 복잡한 절차 없이 빠르게 출고까지 이어드려요.</p>
+                    <p>보증금 없는 조건 심사와 서류 준비까지 탑고가 대행해요. 복잡한 절차 없이 출고까지 연결해드려요.</p>
                   </div>
                 </div>
               </div>
             </div>
             <div className="cta-col">
               <h2>마음에 드는 차를 찾으셨나요?</h2>
-              <p>조건은 상담에서 확정돼요 · 순위·견적은 무료예요</p>
+              <p>순위와 견적은 무료예요<br />조건은 상담에서 확정됩니다</p>
               <div className="cta-col-btns">
                 <a className="landing-nav-cta" href="#lead">내 차 견적 만들기</a>
                 <a className="landing-kakao-btn" href={KAKAO_URL} target="_blank" rel="noopener noreferrer">
