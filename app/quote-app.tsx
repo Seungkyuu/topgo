@@ -34,6 +34,7 @@ import { useQuoteSettings } from "./settings-context";
 import { useTheme } from "./theme-context";
 import getchaUpdatedAt from "@/lib/engine/data/getcha-updated-at.json";
 import { quoteMeritzTeslaLease } from "@/lib/engine/meritz-tesla";
+import { captureAttribution, formatAttributionForMessage, type Attribution } from "@/lib/attribution";
 
 const won = (n: number) => n.toLocaleString("ko-KR");
 const man = (n: number) => `${Math.round(n / 10_000).toLocaleString("ko-KR")}만원`;
@@ -864,6 +865,13 @@ export default function QuoteApp() {
   const [leadName, setLeadName] = useState("");
   const [leadPhone, setLeadPhone] = useState("");
 
+  // 유입 추적 — ?ref=.../?utm_source=... 로 들어온 방문자 감지. 백엔드가
+  // 없어 자동 집계는 안 되고, 상담 메시지에 실어 보내 사람이 확인한다.
+  const [attribution, setAttribution] = useState<Attribution | null>(null);
+  useEffect(() => {
+    setAttribution(captureAttribution());
+  }, []);
+
   // ── 브라우저 뒤로가기 = 화면 뒤로 ──
   useEffect(() => {
     history.replaceState({ screen: "landing" }, "");
@@ -1013,10 +1021,34 @@ export default function QuoteApp() {
     };
   }, [groups, leadGroupId]);
 
-  // 메일 연동 없이 카카오 오픈채팅으로만 연결 — 성함/연락처는 상담 시 채팅으로
-  // 직접 전달해달라는 안내용으로만 쓰인다(백엔드가 없어 자동 전송은 불가).
+  // 메일 연동 없이 카카오 오픈채팅으로만 연결한다. 카카오 오픈채팅 링크는
+  // 내용을 미리 채워 넣을 수 없어서, 입력한 성함·연락처·유입 정보가 그냥
+  // 사라지지 않도록 상담 메시지를 클립보드에 복사해두고 채팅창에 붙여넣기만
+  // 하면 되게 한다 — 추천인 코드·유입경로(?ref=, ?utm_*)도 여기 실려서
+  // 상담원이 직접 확인할 수 있다(백엔드가 없어 자동 집계는 불가).
+  const [leadCopyStatus, setLeadCopyStatus] = useState<"idle" | "copied" | "failed">("idle");
   function submitLead(e: FormEvent) {
     e.preventDefault();
+    const group = groups.find((g) => g.id === leadGroupId);
+    const carLabel = group ? `${group.brand} ${group.name}` : leadBrand || "미정";
+    const lines = [
+      "[탑고 상담 요청]",
+      `차종: ${carLabel}`,
+      `성함: ${leadName.trim() || "미입력"}`,
+      `연락처: ${leadPhone.trim() || "미입력"}`,
+    ];
+    const attrBlock = formatAttributionForMessage(attribution);
+    if (attrBlock) lines.push(attrBlock);
+    const message = lines.join("\n");
+
+    if (navigator.clipboard?.writeText) {
+      navigator.clipboard
+        .writeText(message)
+        .then(() => setLeadCopyStatus("copied"))
+        .catch(() => setLeadCopyStatus("failed"));
+    } else {
+      setLeadCopyStatus("failed");
+    }
     window.open(KAKAO_URL, "_blank", "noopener,noreferrer");
   }
 
@@ -1325,7 +1357,9 @@ export default function QuoteApp() {
                   </div>
                   <button type="submit" className="lead-submit">🚀 이 견적으로 상담받기</button>
                   <p className="lead-note">
-                    제출하면 카카오톡 오픈채팅방이 열려요. 입력하신 성함·연락처를 채팅으로 보내주시면 바로 상담해드립니다.
+                    {leadCopyStatus === "copied"
+                      ? "상담 내용이 복사됐어요. 카톡 채팅창에 붙여넣기만 해주세요."
+                      : "제출하면 카카오톡 오픈채팅방이 열려요. 입력하신 성함·연락처를 채팅으로 보내주시면 바로 상담해드립니다."}
                   </p>
                 </div>
               </form>
