@@ -62,54 +62,67 @@ def strip_brand_prefix(model: str) -> str:
     return model
 
 
-def extract_vehicles(ws) -> dict:
-    hdr_row = None
+def find_blocks(ws) -> list[tuple[int, int]]:
+    """'차량정보' 시트는 브랜드별로 나란히 놓인 여러 블록으로 구성된다
+    (예: 일반/현대/기아/KG모빌리티/르노/쉐보레/선구매프로모션×2 — 국산 렌트 기준,
+    수입 렌트는 일반/TESLA/폴스타/BYD). 각 블록은 자기 열 위치에 '차종' 헤더를
+    갖는다 — 이 헤더 셀 좌표를 전부 찾아서 블록별로 독립적으로 순회한다.
+    (예전엔 첫 블록(열 E)만 읽어서 브랜드 전용 블록에 있는 차종을 통째로
+    누락시켰다 — 예: 국산 렌트의 제네시스 전 라인업이 '현대자동차' 블록에
+    있는데 열 E만 읽어 전부 빠졌었다.)"""
+    blocks: list[tuple[int, int]] = []
     for r in range(1, 10):
-        if ws.cell(row=r, column=5).value == "차종":
-            hdr_row = r
-            break
-    if hdr_row is None:
+        for c in range(1, 600):
+            if ws.cell(row=r, column=c).value == "차종":
+                blocks.append((r, c))
+    return blocks
+
+
+def extract_vehicles(ws) -> dict:
+    blocks = find_blocks(ws)
+    if not blocks:
         raise RuntimeError("차량정보 헤더('차종') 못 찾음")
 
     vehicles: dict[str, dict] = {}
-    for r in range(hdr_row + 1, 200):
-        model = ws.cell(row=r, column=5).value
-        if not model or not isinstance(model, str):
-            continue
-        model = strip_brand_prefix(model.strip())
-        if model.startswith("■") or model in ("", "-") or set(model) == {"-"}:
-            continue
+    for hdr_row, hdr_col in blocks:
+        for r in range(hdr_row + 1, hdr_row + 200):
+            model = ws.cell(row=r, column=hdr_col).value
+            if not model or not isinstance(model, str):
+                continue
+            model = strip_brand_prefix(model.strip())
+            if model.startswith("■") or model in ("", "-", "차종") or set(model) == {"-"}:
+                continue
 
-        fuel = ws.cell(row=r, column=10).value  # J열: 유종
-        engine_cc = ws.cell(row=r, column=12).value or 0  # L열: 배기량
-        strategy_grade = ws.cell(row=r, column=9).value  # I열: 전략구분
-        kind = ws.cell(row=r, column=7).value  # G열: 차량등급
-        insurance_grade = ws.cell(row=r, column=8).value  # H열: 보험등급(승합/경차 등 개소세 면제 판별용)
-        tax_factor = ws.cell(row=r, column=6).value  # F열: 개소세계수(1+개소세율×1.3, 현재 정책 기준)
+            fuel = ws.cell(row=r, column=hdr_col + 5).value  # 유종
+            engine_cc = ws.cell(row=r, column=hdr_col + 7).value or 0  # 배기량
+            strategy_grade = ws.cell(row=r, column=hdr_col + 4).value  # 전략구분
+            kind = ws.cell(row=r, column=hdr_col + 2).value  # 차량등급
+            insurance_grade = ws.cell(row=r, column=hdr_col + 3).value  # 보험등급(승합/경차 등 개소세 면제 판별용)
+            tax_factor = ws.cell(row=r, column=hdr_col + 1).value  # 개소세계수(1+개소세율×1.3, 현재 정책 기준)
 
-        residual: dict[str, float] = {}
-        col = RESIDUAL_START_COL
-        for term in TERM_MONTHS:
-            for mileage in MILEAGE_BUCKETS:
-                v = ws.cell(row=r, column=col).value
-                if isinstance(v, (int, float)) and mileage is not None:
-                    residual[f"{term}_{mileage}"] = round(float(v), 4)
-                col += 1
+            residual: dict[str, float] = {}
+            col = hdr_col + RESIDUAL_START_COL - 5
+            for term in TERM_MONTHS:
+                for mileage in MILEAGE_BUCKETS:
+                    v = ws.cell(row=r, column=col).value
+                    if isinstance(v, (int, float)) and mileage is not None:
+                        residual[f"{term}_{mileage}"] = round(float(v), 4)
+                    col += 1
 
-        if not residual:
-            continue
+            if not residual:
+                continue
 
-        vehicles[model] = {
-            "fuel": fuel or "",
-            "engineCc": int(engine_cc) if isinstance(engine_cc, (int, float)) else 0,
-            "kind": kind or "",
-            "insuranceGrade": insurance_grade or "",
-            "strategyGrade": strategy_grade or "일반",
-            "consumptionTaxFactor": round(float(tax_factor), 6)
-            if isinstance(tax_factor, (int, float)) and tax_factor
-            else 1.1572,
-            "residualByTermMileage": residual,
-        }
+            vehicles[model] = {
+                "fuel": fuel or "",
+                "engineCc": int(engine_cc) if isinstance(engine_cc, (int, float)) else 0,
+                "kind": kind or "",
+                "insuranceGrade": insurance_grade or "",
+                "strategyGrade": strategy_grade or "일반",
+                "consumptionTaxFactor": round(float(tax_factor), 6)
+                if isinstance(tax_factor, (int, float)) and tax_factor
+                else 1.1572,
+                "residualByTermMileage": residual,
+            }
     return vehicles
 
 
