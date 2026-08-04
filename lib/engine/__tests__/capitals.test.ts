@@ -18,7 +18,7 @@ const input = {
 };
 
 describe("소스(엑셀) 레지스트리 — 근본 원칙", () => {
-  it("등록된 소스는 추출·검증된 엑셀만 (오릭스·신한 오토리스·신한 렌터카·메리츠 수입차·메리츠 국산 리스/렌트)", () => {
+  it("등록된 소스는 추출·검증된 엑셀만 (오릭스·신한 오토리스·신한 렌터카·메리츠 수입차·메리츠 국산/수입 리스·렌트)", () => {
     expect(QUOTE_SOURCES.map((s) => s.id)).toEqual([
       "orix",
       "shinhan-lease",
@@ -26,6 +26,7 @@ describe("소스(엑셀) 레지스트리 — 근본 원칙", () => {
       "meritz-import",
       "meritz-domestic-lease",
       "meritz-rental-domestic",
+      "meritz-rental-import",
       "meritz-tesla-lease",
       "meritz-byd-lease",
     ]);

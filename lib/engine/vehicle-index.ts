@@ -17,6 +17,7 @@ import { listShinhanModels } from "./shinhan";
 import { listMeritzVehicles } from "./meritz";
 import { listDomesticVehicles } from "./meritz-domestic";
 import { listRentalVehicles } from "./meritz-rental-domestic";
+import { listImportRentalVehicles } from "./meritz-rental-import";
 import teslaVehiclesJson from "./meritz-tesla/data/vehicles.json";
 import bydVehiclesJson from "./meritz-byd/data/vehicles.json";
 import shinhanRentalJson from "./shinhan/data/rental-vehicles.json";
@@ -99,6 +100,9 @@ const DECORATIONS: RegExp[] = [
   /^\(\d{2}\.\d{2}\)\s*/, // (25.08) 같은 시점 접두
   /\s1-1$/,               // 내부 변형 접미
   /\((NX4|CN7)\)/g,       // 플랫폼 코드
+  /^BYD\s+/,              // 브랜드 칩으로 이미 보이는 "BYD" 접두어(표시명만 정리,
+                          // ref.model엔 원본 그대로 남아 카탈로그 조회는 안 깨짐)
+  /^폴스타\s+/,            // 위와 동일 이유 — "폴스타 폴스타 4 듀얼모터"처럼 중복 방지
 ];
 
 /** 원본 엑셀 자체의 오타 교정 — 고객에게 그대로 노출되면 안 되는 것만.
@@ -279,8 +283,28 @@ export function buildVehicleIndex(): IndexedVehicle[] {
     add("테슬라", key, "meritz-tesla-lease", approxPrice(key, 55_000_000));
   }
   // 메리츠 BYD
+  // ⚠ 과거엔 여기서 "BYD " 접두어를 벗기고 넘겼는데, meritz-byd 카탈로그
+  //   자체가 "BYD ATTO 3"처럼 접두어를 포함한 키로 저장돼 있어(findBydVehicle
+  //   조회 실패) 이 소스로는 견적이 조용히 하나도 안 나오고 있었다 —
+  //   ref.model은 원본 키 그대로 넘겨야 한다(아래 meritz-rental-import와 동일 원칙).
   for (const key of jsonModelNames(bydVehiclesJson as Record<string, unknown>)) {
-    add("BYD", key.replace(/^BYD\s*/i, ""), "meritz-byd-lease", approxPrice(key, 32_000_000));
+    add("BYD", key, "meritz-byd-lease", approxPrice(key, 32_000_000));
+  }
+  // 메리츠 수입(EV) 장기렌트 — 테슬라·폴스타·BYD(전 모델 EV).
+  // ⚠ add()의 두 번째 인자(rawLabel)는 ref.model로 그대로 저장되고,
+  //   견적 시점에 그 값 그대로 findImportRentalVehicle()에 넘어가 카탈로그
+  //   (data/vehicles.json) 키와 정확히 일치해야 한다 — 브랜드 접두어를
+  //   벗겨서 넘기면(예전 메리츠 BYD 리스 블록의 실수) 카탈로그에 없는 이름을
+  //   조회하게 돼 "이 차량을 취급하지 않아요"로 조용히 실패한다. 표시용
+  //   브랜드만 별도로 넘기고 원본 키는 그대로 보존한다.
+  for (const [key] of listImportRentalVehicles()) {
+    if (key.startsWith("BYD")) {
+      add("BYD", key, "meritz-rental-import", approxPrice(key, 32_000_000));
+    } else if (key.startsWith("폴스타")) {
+      add("폴스타", key, "meritz-rental-import", approxPrice(key, 80_000_000));
+    } else {
+      add("테슬라", key, "meritz-rental-import", approxPrice(key, 55_000_000));
+    }
   }
 
   // ─── 소스 간 병합(겟챠 등급 식별자 기준) ─────────────────────────────────

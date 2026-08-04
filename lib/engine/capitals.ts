@@ -31,6 +31,7 @@ import {
 } from "./meritz";
 import { quoteMeritzDomesticLease, findDomesticVehicle } from "./meritz-domestic";
 import { quoteMeritzDomesticRental, findRentalVehicle } from "./meritz-rental-domestic";
+import { quoteMeritzImportRental, findImportRentalVehicle } from "./meritz-rental-import";
 import { quoteMeritzTeslaLease, findTeslaVehicle } from "./meritz-tesla";
 import { quoteMeritzBydLease, findBydVehicle } from "./meritz-byd";
 import type { MeritzEvLeaseQuote } from "./meritz-ev/lease";
@@ -297,6 +298,33 @@ function meritzDomesticRentalQuote(id: string, deal: DealType, input: CapitalQuo
   }
 }
 
+function meritzImportRentalQuote(id: string, deal: DealType, input: CapitalQuoteInput): CapitalQuoteRow {
+  const capital = "메리츠";
+  try {
+    if (deal !== "longTermRental") {
+      return { capital, sourceId: id, available: false, note: "미취급" };
+    }
+    // 수입(EV) 렌트: 전기차 보조금은 지역·시기별 수기입력값이라 카탈로그에
+    // 없음 — 보조금을 몰라 견적이 실제보다 낮게 보이면 안 되므로 기본 0원
+    // (보조금 받으면 상담 시 더 낮아질 수 있다는 방향만 안전).
+    const q = quoteMeritzImportRental({
+      model: input.model,
+      vehiclePrice: input.vehiclePrice,
+      termMonths: input.termMonths,
+      annualMileageKm: input.annualMileageKm,
+      depositRate: input.depositRate,
+    });
+    return {
+      capital, sourceId: id, available: true,
+      monthlyPayment: q.monthlyPayment, annualRate: q.annualRate,
+      customerRate: q.customerRate, residualRate: q.residualRate,
+      residualValue: q.residualValue, deposit: 0, prepayment: 0,
+    };
+  } catch (e) {
+    return { capital, sourceId: id, available: false, note: e instanceof Error ? e.message : "계산 불가" };
+  }
+}
+
 function evLeaseQuote(
   id: string,
   quoteFn: (input: {
@@ -383,6 +411,14 @@ export const QUOTE_SOURCES: QuoteSource[] = [
     deals: ["longTermRental"],
     handles: (m) => findRentalVehicle(m) !== null,
     quote: (deal, input) => meritzDomesticRentalQuote("meritz-rental-domestic", deal, input),
+  },
+  {
+    id: "meritz-rental-import",
+    capital: "메리츠",
+    label: "수입(EV) 장기렌트",
+    deals: ["longTermRental"],
+    handles: (m) => findImportRentalVehicle(m) !== null,
+    quote: (deal, input) => meritzImportRentalQuote("meritz-rental-import", deal, input),
   },
   {
     id: "meritz-tesla-lease",
