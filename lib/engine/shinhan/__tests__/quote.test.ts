@@ -11,7 +11,7 @@ import { resolveShinhanMaxResidualRate, clampShinhanResidualRate } from "../resi
  *   차량가 148,400,000 + 옵션 21,000,000 - 할인 1,694,000 = 원금 167,706,000
  *   취득세 10,672,200 / 취득원가 178,631,200 / CA수수료(4%) 7,145,248
  *   60개월 / 잔가율 40% 지정 / 보증금 10% → 16,780,000 / 잔가 67,090,000
- *   → 월리스료 2,537,360 (AR17)
+ *   → 월리스료 2,527,660 (AR17, 2608_V1 기준금리 5.8%로 갱신 후)
  */
 describe("신한 오토리스 통합 견적 — 골든 케이스 전체 사슬", () => {
   const q = quoteShinhanOperatingLease({
@@ -29,8 +29,8 @@ describe("신한 오토리스 통합 견적 — 골든 케이스 전체 사슬",
     expect(q.acquisitionCost).toBe(178_631_200));
   it("보증금 = 16,780,000 (AN16)", () => expect(q.deposit).toBe(16_780_000));
   it("잔가 = 67,090,000 (AN14)", () => expect(q.residualValue).toBe(67_090_000));
-  it("★ 월리스료 = 2,537,360 (AR17, 오차 0)", () =>
-    expect(q.monthlyPayment).toBe(2_537_360));
+  it("★ 월리스료 = 2,527,660 (AR17, 오차 0)", () =>
+    expect(q.monthlyPayment).toBe(2_527_660));
 });
 
 describe("신한 잔가율 산정 (잔가군 R = Cayenne Coupe)", () => {
@@ -49,7 +49,7 @@ describe("신한 잔가율 산정 (잔가군 R = Cayenne Coupe)", () => {
 });
 
 describe("신한 통합 견적 — 자동 최대잔가 (수식 재계산 대조)", () => {
-  it("Cayenne / 60개월 / 2만km / 보증금 30% → 잔가율 0.41, 월 2,078,410", () => {
+  it("Cayenne / 60개월 / 2만km / 보증금 30% → 잔가율 0.41, 월 2,072,240", () => {
     const q = quoteShinhanOperatingLease({
       model: "포르쉐 CayenneCoupe가솔린3.0",
       termMonths: 60,
@@ -59,10 +59,10 @@ describe("신한 통합 견적 — 자동 최대잔가 (수식 재계산 대조)
     expect(q.residualRate).toBe(0.41);
     expect(q.deposit).toBe(44_520_000);
     expect(q.residualValue).toBe(60_850_000);
-    expect(q.monthlyPayment).toBe(2_078_410);
+    expect(q.monthlyPayment).toBe(2_072_240);
   });
 
-  it("벤츠 S500 4MATIC Long / 60개월 / 2만km / 보증금 30% → 월 2,956,620", () => {
+  it("벤츠 S500 4MATIC Long / 60개월 / 2만km / 보증금 30% → 월 2,948,010", () => {
     const q = quoteShinhanOperatingLease({
       model: "벤츠 S500 4MATIC Long",
       termMonths: 60,
@@ -71,7 +71,7 @@ describe("신한 통합 견적 — 자동 최대잔가 (수식 재계산 대조)
     });
     expect(q.vehiclePrice).toBe(209_100_000);
     expect(q.residualRate).toBe(0.4);
-    expect(q.monthlyPayment).toBe(2_956_620);
+    expect(q.monthlyPayment).toBe(2_948_010);
   });
 });
 
@@ -93,7 +93,7 @@ describe("신한 운용리스 — 실제 계약 대조 (BMW X3, annualRate 재�
     expect(Math.abs(impliedTotal - 102_985_600) / 102_985_600).toBeLessThan(0.001);
   });
 
-  it("annualRate 미지정 시 기존 스냅샷 금리(5.9%) 사용 — 하위호환", () => {
+  it("annualRate 미지정 시 기존 스냅샷 금리(5.8%) 사용 — 하위호환", () => {
     const q = quoteShinhanOperatingLease({
       model: "포르쉐 CayenneCoupe가솔린3.0",
       optionPrice: 21_000_000,
@@ -102,8 +102,8 @@ describe("신한 운용리스 — 실제 계약 대조 (BMW X3, annualRate 재�
       depositRate: 0.1,
       residualRate: 0.4,
     });
-    expect(q.annualRate).toBe(0.059);
-    expect(q.monthlyPayment).toBe(2_537_360);
+    expect(q.annualRate).toBe(0.058);
+    expect(q.monthlyPayment).toBe(2_527_660);
   });
 });
 

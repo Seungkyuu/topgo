@@ -1109,10 +1109,25 @@
    "60": 0.38
   }
  },
- "링컨 Aviator": {
+ "링컨 Aviator 리저브 (7인승)": {
   "brand": "링컨",
-  "model": "Aviator",
+  "model": "Aviator 리저브 (7인승)",
   "vehiclePrice": 92850000,
+  "engineCc": 2956,
+  "fuel": "M",
+  "residualGroup": "FF",
+  "maintenanceGrade": "7급",
+  "guaranteeFeeRate": 0.015,
+  "residualByTerm": {
+   "36": 0.52,
+   "48": 0.45,
+   "60": 0.39
+  }
+ },
+ "링컨 Aviator 블랙라벨 (6인승)": {
+  "brand": "링컨",
+  "model": "Aviator 블랙라벨 (6인승)",
+  "vehiclePrice": 106000000,
   "engineCc": 2956,
   "fuel": "M",
   "residualGroup": "FF",

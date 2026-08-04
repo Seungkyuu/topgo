@@ -19,9 +19,9 @@ describe("신한 오토리스(금융) — 취득원가 재사용 검증", () => 
     expect(q.acquisitionCost).toBe(178_631_200));
   it("보증금 개념 없이 잔가만 반영, 잔가 = 67,090,000", () =>
     expect(q.residualValue).toBe(67_090_000));
-  it("보증금이 없어 운용리스(2,537,360)보다 월납입이 더 큼", () =>
-    expect(q.monthlyPayment).toBeGreaterThan(2_537_360));
-  it("월리스료 = 2,620,000", () => expect(q.monthlyPayment).toBe(2_620_000));
+  it("보증금이 없어 운용리스(2,527,660)보다 월납입이 더 큼", () =>
+    expect(q.monthlyPayment).toBeGreaterThan(2_527_660));
+  it("월리스료 = 2,608,900", () => expect(q.monthlyPayment).toBe(2_608_900));
 });
 
 describe("신한 오토리스(금융) — 잔가율 미지정 시 완전상환(0)", () => {

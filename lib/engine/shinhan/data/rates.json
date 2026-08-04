@@ -1,6 +1,6 @@
 {
  "operatingLease": {
-  "baseRate": 0.059,
+  "baseRate": 0.058,
   "rateSurcharge": 0.0001,
   "note": "주요기준!C7 — 매달 변동. PMT에는 +0.01% 가산 적용(엑셀 AR17)"
  },

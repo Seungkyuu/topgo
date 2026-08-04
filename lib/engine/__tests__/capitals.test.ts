@@ -58,8 +58,8 @@ describe("2차 필터 — 상품별 소스", () => {
 });
 
 describe("견적 — 차량→상품→연산", () => {
-  it("운용리스 → 오릭스 3,091,300(최저), 신한 3,370,600, 메리츠 3,334,800", () => {
-    // 신한 3,370,600·메리츠 3,334,800은 둘 다 input.vehiclePrice(213,600,000 — 오릭스
+  it("운용리스 → 오릭스 3,091,300(최저), 신한 3,361,340, 메리츠 3,334,800", () => {
+    // 신한 3,361,340·메리츠 3,334,800은 둘 다 input.vehiclePrice(213,600,000 — 오릭스
     // 엑셀 골든케이스 원가)를 그대로 넘겼을 때의 결과다. 과거엔 신한·메리츠-수입 라우팅
     // 경로가 vehiclePrice를 무시하고 각자 마스터 카탈로그 가격
     // (신한 209,100,000 "S500 4MATIC Long" / 메리츠 199,100,000 "Benz S 500 4MATIC Long")
@@ -71,7 +71,7 @@ describe("견적 — 차량→상품→연산", () => {
     expect(orix.monthlyPayment).toBe(3_091_300);
     const shinhan = rows.find((r) => r.capital === "신한카드")!;
     expect(shinhan.available).toBe(true);
-    expect(shinhan.monthlyPayment).toBe(3_370_600);
+    expect(shinhan.monthlyPayment).toBe(3_361_340);
     const meritz = rows.find((r) => r.capital === "메리츠")!;
     expect(meritz.available).toBe(true);
     expect(meritz.monthlyPayment).toBe(3_334_800);
