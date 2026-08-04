@@ -12,6 +12,8 @@ import vehiclesJson from "./data/vehicles.json";
 import maintenanceJson from "./data/maintenance.json";
 
 export interface RentalVehicle {
+  /** 실제 제조사(엑셀 브랜드 구분행/블록에서 추출) — 현대/기아/KGM/르노/쉐보레 등 */
+  brand: string;
   fuel: string;
   engineCc: number;
   kind: string;

@@ -62,6 +62,23 @@ def strip_brand_prefix(model: str) -> str:
     return model
 
 
+import re
+
+BRAND_DIVIDER_RE = re.compile(r"^■+\s*(.+?)\s*■+$")
+
+# "차종" 헤더열만으로는 그 블록이 어느 브랜드인지 알 수 없다 — 실제 열 위치를
+# 열어서 확인한 고정 매핑(2608.v1 기준). "일반"/"선구매프로모션" 블록은 고정
+# 브랜드가 없고 내부에 "■■■■■■■■■■ 브랜드 ■■■■■■■■■■" 구분행으로 브랜드가
+# 바뀌므로 이 매핑에 넣지 않는다(구분행을 실시간으로 추적해서 판별).
+BLOCK_FIXED_BRAND = {
+    74: "현대",
+    144: "기아",
+    214: "KGM",
+    284: "르노",
+    354: "쉐보레",
+}
+
+
 def find_blocks(ws) -> list[tuple[int, int]]:
     """'차량정보' 시트는 브랜드별로 나란히 놓인 여러 블록으로 구성된다
     (예: 일반/현대/기아/KG모빌리티/르노/쉐보레/선구매프로모션×2 — 국산 렌트 기준,
@@ -85,11 +102,20 @@ def extract_vehicles(ws) -> dict:
 
     vehicles: dict[str, dict] = {}
     for hdr_row, hdr_col in blocks:
+        # "일반"/"선구매프로모션" 블록은 "■■■■■■■■■■ 브랜드 ■■■■■■■■■■" 구분행을
+        # 만날 때마다 그 아래 차종들의 브랜드가 바뀐다 — 고정 브랜드 블록이면
+        # 처음부터 그 브랜드로 시작.
+        current_brand = BLOCK_FIXED_BRAND.get(hdr_col)
         for r in range(hdr_row + 1, hdr_row + 200):
             model = ws.cell(row=r, column=hdr_col).value
             if not model or not isinstance(model, str):
                 continue
-            model = strip_brand_prefix(model.strip())
+            model = model.strip()
+            divider = BRAND_DIVIDER_RE.match(model)
+            if divider:
+                current_brand = divider.group(1).strip()
+                continue
+            model = strip_brand_prefix(model)
             if model.startswith("■") or model in ("", "-", "차종") or set(model) == {"-"}:
                 continue
 
@@ -113,6 +139,7 @@ def extract_vehicles(ws) -> dict:
                 continue
 
             vehicles[model] = {
+                "brand": current_brand or "",
                 "fuel": fuel or "",
                 "engineCc": int(engine_cc) if isinstance(engine_cc, (int, float)) else 0,
                 "kind": kind or "",

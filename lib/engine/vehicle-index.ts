@@ -167,8 +167,13 @@ function splitMeritzBrand(key: string): { brand: string; rest: string } {
 
 const GENESIS_PATTERN = /\b(G70|G80|G90|GV60|GV70|GV80)\b/i;
 
-function domesticBrand(label: string): string {
-  return GENESIS_PATTERN.test(label) ? "제네시스" : "현대";
+// 메리츠 국산(리스·렌트) 카탈로그 브랜드는 실데이터(v.brand)를 그대로 쓴다 —
+// 제네시스만 예외로, 카탈로그 브랜드가 "현대"로 뭉뚱그려 있어도 모델코드로
+// 재분류해야 한다(예전엔 이 재분류 로직을 "전체 도메스틱 브랜드 판별"로
+// 잘못 확장해서 기아/KGM/르노/쉐보레까지 전부 "현대"로 오분류했었다 — 그랑
+// 콜레오스/쏘렌토/스포티지/토레스/필랑트/액티언 버그).
+function domesticBrand(label: string, catalogBrand: string): string {
+  return GENESIS_PATTERN.test(label) ? "제네시스" : catalogBrand.replace(/자동차$/, "") || "현대";
 }
 
 // ─── 인덱스 빌드 ─────────────────────────────────────────────────────────────
@@ -274,12 +279,18 @@ export function buildVehicleIndex(): IndexedVehicle[] {
     );
   }
   // 메리츠 국산차
-  for (const [key] of listDomesticVehicles()) {
-    add(domesticBrand(key), key, "meritz-domestic-lease", approxPrice(key, 38_000_000));
+  for (const [key, v] of listDomesticVehicles()) {
+    add(domesticBrand(key, v.brand), key, "meritz-domestic-lease", approxPrice(key, 38_000_000));
   }
-  // 메리츠 국산 장기렌트
-  for (const [key] of listRentalVehicles()) {
-    add(domesticBrand(key), key, "meritz-rental-domestic", approxPrice(key, 38_000_000));
+  // 메리츠 국산 장기렌트 — "[프로모션]"/"[Select 프로모션]" 접두 모델은 같은
+  // 실차의 별도 판매조건 변형이라 정제명이 안 겹쳐(대괄호가 DECORATIONS에
+  // 없어 안 벗겨짐) 기본 트림과 별개의 카드로 중복 노출되고, 심지어 브랜드
+  // 표기까지 기본 트림과 어긋나 보이는 문제가 있었다 — 사용자 확정: 이런
+  // 프로모션/특판 변형은 카탈로그에서 아예 제외하고 기본 트림만 남긴다.
+  const PROMO_LABEL_RE = /^\[(Select\s*)?프로모션\]\s*/;
+  for (const [key, v] of listRentalVehicles()) {
+    if (PROMO_LABEL_RE.test(key)) continue;
+    add(domesticBrand(key, v.brand), key, "meritz-rental-domestic", approxPrice(key, 38_000_000));
   }
   // 메리츠 테슬라
   for (const key of jsonModelNames(teslaVehiclesJson as Record<string, unknown>)) {
