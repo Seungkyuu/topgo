@@ -18,6 +18,7 @@ import { listMeritzVehicles } from "./meritz";
 import { listDomesticVehicles } from "./meritz-domestic";
 import { listRentalVehicles } from "./meritz-rental-domestic";
 import { listImportRentalVehicles } from "./meritz-rental-import";
+import { listBnkVehicles } from "./bnk";
 import teslaVehiclesJson from "./meritz-tesla/data/vehicles.json";
 import bydVehiclesJson from "./meritz-byd/data/vehicles.json";
 import shinhanRentalJson from "./shinhan/data/rental-vehicles.json";
@@ -305,6 +306,12 @@ export function buildVehicleIndex(): IndexedVehicle[] {
     } else {
       add("테슬라", key, "meritz-rental-import", approxPrice(key, 55_000_000));
     }
+  }
+  // BNK캐피탈 — 브랜드가 카탈로그(CDB)에 이미 정확히 들어있어 그대로 사용.
+  // 차량가는 CDB에 없음(잔가사 자동선택 구조라 엑셀도 겟챠 시세를 그때그때
+  // 입력받는 방식) — 겟챠 실가격을 우선 쓰고 없으면 근사치로 대체.
+  for (const v of listBnkVehicles()) {
+    add(v.brand, v.model, "bnk-operating-lease", importRealPrice(v.model, approxPrice(v.model, 45_000_000)));
   }
 
   // ─── 소스 간 병합(겟챠 등급 식별자 기준) ─────────────────────────────────

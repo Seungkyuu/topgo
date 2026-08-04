@@ -18,7 +18,7 @@ const input = {
 };
 
 describe("소스(엑셀) 레지스트리 — 근본 원칙", () => {
-  it("등록된 소스는 추출·검증된 엑셀만 (오릭스·신한 오토리스·신한 렌터카·메리츠 수입차·메리츠 국산/수입 리스·렌트)", () => {
+  it("등록된 소스는 추출·검증된 엑셀만 (오릭스·신한 오토리스·신한 렌터카·메리츠 수입차·메리츠 국산/수입 리스·렌트·BNK 운용리스)", () => {
     expect(QUOTE_SOURCES.map((s) => s.id)).toEqual([
       "orix",
       "shinhan-lease",
@@ -27,12 +27,13 @@ describe("소스(엑셀) 레지스트리 — 근본 원칙", () => {
       "meritz-domestic-lease",
       "meritz-rental-domestic",
       "meritz-rental-import",
+      "bnk-operating-lease",
       "meritz-tesla-lease",
       "meritz-byd-lease",
     ]);
   });
   it("캐피탈 목록은 소스에서 중복 제거해 도출", () => {
-    expect(ALL_CAPITALS).toEqual(["오릭스", "신한카드", "메리츠"]);
+    expect(ALL_CAPITALS).toEqual(["오릭스", "신한카드", "메리츠", "BNK캐피탈"]);
   });
 });
 

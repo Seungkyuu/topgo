@@ -32,6 +32,7 @@ import {
 import { quoteMeritzDomesticLease, findDomesticVehicle } from "./meritz-domestic";
 import { quoteMeritzDomesticRental, findRentalVehicle } from "./meritz-rental-domestic";
 import { quoteMeritzImportRental, findImportRentalVehicle } from "./meritz-rental-import";
+import { quoteBnkOperatingLease, findBnkVehicle } from "./bnk";
 import { quoteMeritzTeslaLease, findTeslaVehicle } from "./meritz-tesla";
 import { quoteMeritzBydLease, findBydVehicle } from "./meritz-byd";
 import type { MeritzEvLeaseQuote } from "./meritz-ev/lease";
@@ -325,6 +326,33 @@ function meritzImportRentalQuote(id: string, deal: DealType, input: CapitalQuote
   }
 }
 
+function bnkOperatingLeaseQuote(id: string, deal: DealType, input: CapitalQuoteInput): CapitalQuoteRow {
+  const capital = "BNK캐피탈";
+  try {
+    if (deal !== "operatingLease") {
+      return { capital, sourceId: id, available: false, note: "미취급" };
+    }
+    // 딜러사별 제휴 우대금리(annualRate)는 우리 UI가 딜러사를 안 물어봐서
+    // 모른다 — 항상 "비제휴" 최고금리를 쓰는 안전한 기본값(quoteBnkOperatingLease
+    // 내부 기본값)을 그대로 사용한다. 실제로 제휴 딜러면 상담에서 더 낮아질 수 있음.
+    const q = quoteBnkOperatingLease({
+      model: input.model,
+      vehiclePrice: input.vehiclePrice,
+      termMonths: input.termMonths,
+      annualMileageKm: input.annualMileageKm,
+      depositRate: input.depositRate,
+    });
+    return {
+      capital, sourceId: id, available: true,
+      monthlyPayment: q.monthlyPayment, annualRate: q.annualRate,
+      customerRate: q.customerRate, residualRate: q.residualRate,
+      residualValue: q.residualValue, deposit: q.deposit, prepayment: q.prepayment,
+    };
+  } catch (e) {
+    return { capital, sourceId: id, available: false, note: e instanceof Error ? e.message : "계산 불가" };
+  }
+}
+
 function evLeaseQuote(
   id: string,
   quoteFn: (input: {
@@ -419,6 +447,14 @@ export const QUOTE_SOURCES: QuoteSource[] = [
     deals: ["longTermRental"],
     handles: (m) => findImportRentalVehicle(m) !== null,
     quote: (deal, input) => meritzImportRentalQuote("meritz-rental-import", deal, input),
+  },
+  {
+    id: "bnk-operating-lease",
+    capital: "BNK캐피탈",
+    label: "운용리스",
+    deals: ["operatingLease"],
+    handles: (m) => findBnkVehicle(m) !== null,
+    quote: (deal, input) => bnkOperatingLeaseQuote("bnk-operating-lease", deal, input),
   },
   {
     id: "meritz-tesla-lease",
