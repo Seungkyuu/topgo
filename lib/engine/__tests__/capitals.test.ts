@@ -28,12 +28,14 @@ describe("소스(엑셀) 레지스트리 — 근본 원칙", () => {
       "meritz-rental-domestic",
       "meritz-rental-import",
       "bnk-operating-lease",
+      "mg-rental",
+      "mg-lease",
       "meritz-tesla-lease",
       "meritz-byd-lease",
     ]);
   });
   it("캐피탈 목록은 소스에서 중복 제거해 도출", () => {
-    expect(ALL_CAPITALS).toEqual(["오릭스", "신한카드", "메리츠", "BNK캐피탈"]);
+    expect(ALL_CAPITALS).toEqual(["오릭스", "신한카드", "메리츠", "BNK캐피탈", "MG캐피탈"]);
   });
 });
 

@@ -1,0 +1,128 @@
+{
+  "EV3": {
+    "byTerm": {
+      "24": 0.052,
+      "36": 0.052,
+      "48": 0.052,
+      "60": 0.052
+    },
+    "manufacturerDiscountRate": 0.02
+  },
+  "EV5": {
+    "byTerm": {
+      "24": 0.052,
+      "36": 0.052,
+      "48": 0.052,
+      "60": 0.052
+    },
+    "manufacturerDiscountRate": 0.02
+  },
+  "EV6": {
+    "byTerm": {
+      "24": 0.11,
+      "36": 0.11,
+      "48": 0.11,
+      "60": 0.11
+    },
+    "manufacturerDiscountRate": 0.0
+  },
+  "EV6_GT": {
+    "byTerm": {
+      "24": 0.11,
+      "36": 0.11,
+      "48": 0.11,
+      "60": 0.11
+    },
+    "manufacturerDiscountRate": 0.0
+  },
+  "EV9": {
+    "byTerm": {
+      "24": 0.11,
+      "36": 0.11,
+      "48": 0.11,
+      "60": 0.11
+    },
+    "manufacturerDiscountRate": 0.0
+  },
+  "G80_EV": {
+    "byTerm": {
+      "24": 0.052,
+      "36": 0.052,
+      "48": 0.052,
+      "60": 0.052
+    },
+    "manufacturerDiscountRate": 0.015
+  },
+  "GV60_EV_2WD": {
+    "byTerm": {
+      "24": 0.11,
+      "36": 0.11,
+      "48": 0.11,
+      "60": 0.11
+    },
+    "manufacturerDiscountRate": 0.0
+  },
+  "GV70_EV_A-type": {
+    "byTerm": {
+      "24": 0.11,
+      "36": 0.11,
+      "48": 0.11,
+      "60": 0.11
+    },
+    "manufacturerDiscountRate": 0.0
+  },
+  "GV70_EV_B-type": {
+    "byTerm": {
+      "24": 0.11,
+      "36": 0.11,
+      "48": 0.11,
+      "60": 0.11
+    },
+    "manufacturerDiscountRate": 0.0
+  },
+  "PV5_패신저": {
+    "byTerm": {
+      "24": 0.052,
+      "36": 0.052,
+      "48": 0.052,
+      "60": 0.052
+    },
+    "manufacturerDiscountRate": 0.025
+  },
+  "레이_EV": {
+    "byTerm": {
+      "24": 0.11,
+      "36": 0.11,
+      "48": 0.11,
+      "60": 0.11
+    },
+    "manufacturerDiscountRate": 0.0
+  },
+  "아이오닉 5 EV": {
+    "byTerm": {
+      "24": 0.11,
+      "36": 0.11,
+      "48": 0.11,
+      "60": 0.11
+    },
+    "manufacturerDiscountRate": 0.0
+  },
+  "아이오닉 5 EV 4WD": {
+    "byTerm": {
+      "24": 0.11,
+      "36": 0.11,
+      "48": 0.11,
+      "60": 0.11
+    },
+    "manufacturerDiscountRate": 0.0
+  },
+  "아이오닉 6 EV": {
+    "byTerm": {
+      "24": 0.11,
+      "36": 0.11,
+      "48": 0.11,
+      "60": 0.11
+    },
+    "manufacturerDiscountRate": 0.0
+  }
+}

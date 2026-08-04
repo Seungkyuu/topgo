@@ -1,0 +1,114 @@
+{
+  "EV3": {
+    "brand": "기아자동차",
+    "consumptionTaxFactor": 1.1572,
+    "fuel": "EV",
+    "insuranceGrade": "승용",
+    "residualClass": 25,
+    "specialResidualBonus": 0.17
+  },
+  "EV5": {
+    "brand": "기아자동차",
+    "consumptionTaxFactor": 1.1572,
+    "fuel": "EV",
+    "insuranceGrade": "승용",
+    "residualClass": 25,
+    "specialResidualBonus": 0.17
+  },
+  "EV6": {
+    "brand": "기아자동차",
+    "consumptionTaxFactor": 1.1572,
+    "fuel": "EV",
+    "insuranceGrade": "승용",
+    "residualClass": 25,
+    "specialResidualBonus": -0.01
+  },
+  "EV6_GT": {
+    "brand": "기아자동차",
+    "consumptionTaxFactor": 1.1572,
+    "fuel": "EV",
+    "insuranceGrade": "승용",
+    "residualClass": 25,
+    "specialResidualBonus": -0.01
+  },
+  "EV9": {
+    "brand": "기아자동차",
+    "consumptionTaxFactor": 1.1572,
+    "fuel": "EV",
+    "insuranceGrade": "승용",
+    "residualClass": 25,
+    "specialResidualBonus": -0.01
+  },
+  "G80_EV": {
+    "brand": "현대자동차",
+    "consumptionTaxFactor": 1.1572,
+    "fuel": "EV",
+    "insuranceGrade": "승용",
+    "residualClass": 25,
+    "specialResidualBonus": 0.075
+  },
+  "GV60_EV_2WD": {
+    "brand": "현대자동차",
+    "consumptionTaxFactor": 1.1572,
+    "fuel": "EV",
+    "insuranceGrade": "승용",
+    "residualClass": 25,
+    "specialResidualBonus": -0.01
+  },
+  "GV70_EV_A-type": {
+    "brand": "현대자동차",
+    "consumptionTaxFactor": 1.1572,
+    "fuel": "EV",
+    "insuranceGrade": "승용",
+    "residualClass": 25,
+    "specialResidualBonus": -0.01
+  },
+  "GV70_EV_B-type": {
+    "brand": "현대자동차",
+    "consumptionTaxFactor": 1.1572,
+    "fuel": "EV",
+    "insuranceGrade": "승용",
+    "residualClass": 25,
+    "specialResidualBonus": -0.01
+  },
+  "PV5_패신저": {
+    "brand": "기아자동차",
+    "consumptionTaxFactor": 1.1572,
+    "fuel": "EV",
+    "insuranceGrade": "승용",
+    "residualClass": 25,
+    "specialResidualBonus": 0.04
+  },
+  "레이_EV": {
+    "brand": "기아자동차",
+    "consumptionTaxFactor": 1.1572,
+    "fuel": "EV",
+    "insuranceGrade": "승용",
+    "residualClass": 25,
+    "specialResidualBonus": -0.01
+  },
+  "아이오닉 5 EV": {
+    "brand": "현대자동차",
+    "consumptionTaxFactor": 1.1572,
+    "fuel": "EV",
+    "insuranceGrade": "승용",
+    "residualClass": 25,
+    "specialResidualBonus": -0.01
+  },
+  "아이오닉 5 EV 4WD": {
+    "brand": "현대자동차",
+    "consumptionTaxFactor": 1.1572,
+    "fuel": "EV",
+    "insuranceGrade": "승용",
+    "residualClass": 25,
+    "specialResidualBonus": -0.01
+  },
+  "아이오닉 6 EV": {
+    "brand": "현대자동차",
+    "consumptionTaxFactor": 1.1572,
+    "fuel": "EV",
+    "insuranceGrade": "승용",
+    "residualClass": 25,
+    "specialResidualBonus": -0.01
+  }
+}

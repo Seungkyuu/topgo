@@ -19,6 +19,8 @@ import { listDomesticVehicles } from "./meritz-domestic";
 import { listRentalVehicles } from "./meritz-rental-domestic";
 import { listImportRentalVehicles } from "./meritz-rental-import";
 import { listBnkVehicles } from "./bnk";
+import { listMgRentalVehicles } from "./mg-rental";
+import { listMgLeaseVehicles } from "./mg-lease";
 import teslaVehiclesJson from "./meritz-tesla/data/vehicles.json";
 import bydVehiclesJson from "./meritz-byd/data/vehicles.json";
 import shinhanRentalJson from "./shinhan/data/rental-vehicles.json";
@@ -312,6 +314,18 @@ export function buildVehicleIndex(): IndexedVehicle[] {
   // 입력받는 방식) — 겟챠 실가격을 우선 쓰고 없으면 근사치로 대체.
   for (const v of listBnkVehicles()) {
     add(v.brand, v.model, "bnk-operating-lease", importRealPrice(v.model, approxPrice(v.model, 45_000_000)));
+  }
+  // MG캐피탈 — EV 전용 장기렌터카(14개 모델). 원본 브랜드가 전부
+  // "현대자동차"/"기아자동차"인데 G80_EV·GV60·GV70은 실제로 제네시스라
+  // GENESIS_PATTERN으로 재분류하고, "_"는 공백으로 정리해서 표시한다.
+  for (const [key, v] of listMgRentalVehicles()) {
+    const display = key.replace(/_/g, " ");
+    const brand = GENESIS_PATTERN.test(display) ? "제네시스" : v.brand.replace(/자동차$/, "");
+    add(brand, display, "mg-rental", importRealPrice(key, approxPrice(key, 50_000_000)));
+  }
+  // MG캐피탈 — 운용리스(235개 모델, 브랜드는 카탈로그에 이미 정확히 들어있음)
+  for (const [key, v] of listMgLeaseVehicles()) {
+    add(v.brand, key, "mg-lease", importRealPrice(key, approxPrice(key, v.vehiclePrice)));
   }
 
   // ─── 소스 간 병합(겟챠 등급 식별자 기준) ─────────────────────────────────

@@ -1,0 +1,3057 @@
+{
+  "320d M Sport": {
+    "brand": "BMW",
+    "engineCc": 1995,
+    "kind": "승용일반",
+    "residualByTerm": {
+      "12": 0.78,
+      "24": 0.7,
+      "36": 0.61,
+      "48": 0.53,
+      "60": 0.47
+    },
+    "vehiclePrice": 64400000
+  },
+  "320d M Sport xDrive": {
+    "brand": "BMW",
+    "engineCc": 1995,
+    "kind": "승용일반",
+    "residualByTerm": {
+      "12": 0.78,
+      "24": 0.7,
+      "36": 0.61,
+      "48": 0.53,
+      "60": 0.47
+    },
+    "vehiclePrice": 67100000
+  },
+  "320d Sedan": {
+    "brand": "BMW",
+    "engineCc": 1995,
+    "kind": "승용일반",
+    "residualByTerm": {
+      "12": 0.78,
+      "24": 0.7,
+      "36": 0.61,
+      "48": 0.53,
+      "60": 0.47
+    },
+    "vehiclePrice": 61400000
+  },
+  "320d Sedan xDrive": {
+    "brand": "BMW",
+    "engineCc": 1995,
+    "kind": "승용일반",
+    "residualByTerm": {
+      "12": 0.78,
+      "24": 0.7,
+      "36": 0.61,
+      "48": 0.53,
+      "60": 0.47
+    },
+    "vehiclePrice": 64100000
+  },
+  "320d Touring": {
+    "brand": "BMW",
+    "engineCc": 1995,
+    "kind": "승용일반",
+    "residualByTerm": {
+      "12": 0.71,
+      "24": 0.63,
+      "36": 0.54,
+      "48": 0.46,
+      "60": 0.4
+    },
+    "vehiclePrice": 63800000
+  },
+  "320d Touring M Sport": {
+    "brand": "BMW",
+    "engineCc": 1995,
+    "kind": "승용일반",
+    "residualByTerm": {
+      "12": 0.71,
+      "24": 0.63,
+      "36": 0.54,
+      "48": 0.46,
+      "60": 0.4
+    },
+    "vehiclePrice": 66700000
+  },
+  "320i M Sport": {
+    "brand": "BMW",
+    "engineCc": 1998,
+    "kind": "승용일반",
+    "residualByTerm": {
+      "12": 0.78,
+      "24": 0.7,
+      "36": 0.61,
+      "48": 0.53,
+      "60": 0.47
+    },
+    "vehiclePrice": 61800000
+  },
+  "320i Sedan": {
+    "brand": "BMW",
+    "engineCc": 1998,
+    "kind": "승용일반",
+    "residualByTerm": {
+      "12": 0.78,
+      "24": 0.7,
+      "36": 0.61,
+      "48": 0.53,
+      "60": 0.47
+    },
+    "vehiclePrice": 58600000
+  },
+  "320i Touring": {
+    "brand": "BMW",
+    "engineCc": 1998,
+    "kind": "승용일반",
+    "residualByTerm": {
+      "12": 0.71,
+      "24": 0.63,
+      "36": 0.54,
+      "48": 0.46,
+      "60": 0.4
+    },
+    "vehiclePrice": 61000000
+  },
+  "320i Touring M Sport": {
+    "brand": "BMW",
+    "engineCc": 1998,
+    "kind": "승용일반",
+    "residualByTerm": {
+      "12": 0.71,
+      "24": 0.63,
+      "36": 0.54,
+      "48": 0.46,
+      "60": 0.4
+    },
+    "vehiclePrice": 63800000
+  },
+  "330e M Sport": {
+    "brand": "BMW",
+    "engineCc": 1998,
+    "kind": "승용일반",
+    "residualByTerm": {
+      "12": 0.71,
+      "24": 0.63,
+      "36": 0.54,
+      "48": 0.46,
+      "60": 0.4
+    },
+    "vehiclePrice": 69600000
+  },
+  "420d Coupe M Sport": {
+    "brand": "BMW",
+    "engineCc": 1995,
+    "kind": "승용일반",
+    "residualByTerm": {
+      "12": 0.78,
+      "24": 0.7,
+      "36": 0.61,
+      "48": 0.53,
+      "60": 0.47
+    },
+    "vehiclePrice": 62300000
+  },
+  "420d Gran Coupe M Sport": {
+    "brand": "BMW",
+    "engineCc": 1995,
+    "kind": "승용일반",
+    "residualByTerm": {
+      "12": 0.78,
+      "24": 0.7,
+      "36": 0.61,
+      "48": 0.53,
+      "60": 0.47
+    },
+    "vehiclePrice": 64300000
+  },
+  "420d Gran Coupe M Sport Perf. Pkg": {
+    "brand": "BMW",
+    "engineCc": 1995,
+    "kind": "승용일반",
+    "residualByTerm": {
+      "12": 0.78,
+      "24": 0.7,
+      "36": 0.61,
+      "48": 0.53,
+      "60": 0.47
+    },
+    "vehiclePrice": 67000000
+  },
+  "420i Convertible M Sport": {
+    "brand": "BMW",
+    "engineCc": 1998,
+    "kind": "승용일반",
+    "residualByTerm": {
+      "12": 0.78,
+      "24": 0.7,
+      "36": 0.61,
+      "48": 0.53,
+      "60": 0.47
+    },
+    "vehiclePrice": 74800000
+  },
+  "420i Coupe M Sport": {
+    "brand": "BMW",
+    "engineCc": 1998,
+    "kind": "승용일반",
+    "residualByTerm": {
+      "12": 0.78,
+      "24": 0.7,
+      "36": 0.61,
+      "48": 0.53,
+      "60": 0.47
+    },
+    "vehiclePrice": 73200000
+  },
+  "420i Gran Coupe M Sport": {
+    "brand": "BMW",
+    "engineCc": 1998,
+    "kind": "승용일반",
+    "residualByTerm": {
+      "12": 0.78,
+      "24": 0.7,
+      "36": 0.61,
+      "48": 0.53,
+      "60": 0.47
+    },
+    "vehiclePrice": 62200000
+  },
+  "420i Gran Coupe M Sport Perf. Pkg": {
+    "brand": "BMW",
+    "engineCc": 1998,
+    "kind": "승용일반",
+    "residualByTerm": {
+      "12": 0.78,
+      "24": 0.7,
+      "36": 0.61,
+      "48": 0.53,
+      "60": 0.47
+    },
+    "vehiclePrice": 64800000
+  },
+  "520i": {
+    "brand": "BMW",
+    "engineCc": 1998,
+    "kind": "승용일반",
+    "residualByTerm": {
+      "12": 0.805,
+      "24": 0.725,
+      "36": 0.635,
+      "48": 0.555,
+      "60": 0.495
+    },
+    "vehiclePrice": 69500000
+  },
+  "520i M Sport": {
+    "brand": "BMW",
+    "engineCc": 1998,
+    "kind": "승용일반",
+    "residualByTerm": {
+      "12": 0.805,
+      "24": 0.725,
+      "36": 0.635,
+      "48": 0.555,
+      "60": 0.495
+    },
+    "vehiclePrice": 74000000
+  },
+  "523d": {
+    "brand": "BMW",
+    "engineCc": 1995,
+    "kind": "승용일반",
+    "residualByTerm": {
+      "12": 0.805,
+      "24": 0.725,
+      "36": 0.635,
+      "48": 0.555,
+      "60": 0.495
+    },
+    "vehiclePrice": 76500000
+  },
+  "523d M Sport": {
+    "brand": "BMW",
+    "engineCc": 1995,
+    "kind": "승용일반",
+    "residualByTerm": {
+      "12": 0.805,
+      "24": 0.725,
+      "36": 0.635,
+      "48": 0.555,
+      "60": 0.495
+    },
+    "vehiclePrice": 81000000
+  },
+  "523d M Sport xDrive": {
+    "brand": "BMW",
+    "engineCc": 1995,
+    "kind": "승용일반",
+    "residualByTerm": {
+      "12": 0.805,
+      "24": 0.725,
+      "36": 0.635,
+      "48": 0.555,
+      "60": 0.495
+    },
+    "vehiclePrice": 84000000
+  },
+  "523d xDrive": {
+    "brand": "BMW",
+    "engineCc": 1995,
+    "kind": "승용일반",
+    "residualByTerm": {
+      "12": 0.805,
+      "24": 0.725,
+      "36": 0.635,
+      "48": 0.555,
+      "60": 0.495
+    },
+    "vehiclePrice": 79500000
+  },
+  "530e": {
+    "brand": "BMW",
+    "engineCc": 1998,
+    "kind": "승용일반",
+    "residualByTerm": {
+      "12": 0.805,
+      "24": 0.725,
+      "36": 0.635,
+      "48": 0.555,
+      "60": 0.495
+    },
+    "vehiclePrice": 89200000
+  },
+  "530e M Sport": {
+    "brand": "BMW",
+    "engineCc": 1998,
+    "kind": "승용일반",
+    "residualByTerm": {
+      "12": 0.805,
+      "24": 0.725,
+      "36": 0.635,
+      "48": 0.555,
+      "60": 0.495
+    },
+    "vehiclePrice": 92200000
+  },
+  "530e M Sport xDrive": {
+    "brand": "BMW",
+    "engineCc": 1998,
+    "kind": "승용일반",
+    "residualByTerm": {
+      "12": 0.805,
+      "24": 0.725,
+      "36": 0.635,
+      "48": 0.555,
+      "60": 0.495
+    },
+    "vehiclePrice": 98500000
+  },
+  "530e xDrive": {
+    "brand": "BMW",
+    "engineCc": 1998,
+    "kind": "승용일반",
+    "residualByTerm": {
+      "12": 0.805,
+      "24": 0.725,
+      "36": 0.635,
+      "48": 0.555,
+      "60": 0.495
+    },
+    "vehiclePrice": 95300000
+  },
+  "530i M Sport xDrive": {
+    "brand": "BMW",
+    "engineCc": 1998,
+    "kind": "승용일반",
+    "residualByTerm": {
+      "12": 0.805,
+      "24": 0.725,
+      "36": 0.635,
+      "48": 0.555,
+      "60": 0.495
+    },
+    "vehiclePrice": 92500000
+  },
+  "530i xDrive": {
+    "brand": "BMW",
+    "engineCc": 1998,
+    "kind": "승용일반",
+    "residualByTerm": {
+      "12": 0.805,
+      "24": 0.725,
+      "36": 0.635,
+      "48": 0.555,
+      "60": 0.495
+    },
+    "vehiclePrice": 84200000
+  },
+  "718 BOXSTER 2.0": {
+    "brand": "PORSCHE",
+    "engineCc": 1988,
+    "kind": "승용일반",
+    "residualByTerm": {
+      "12": 0.77,
+      "24": 0.69,
+      "36": 0.6,
+      "48": 0.52,
+      "60": 0.46
+    },
+    "vehiclePrice": 96300000
+  },
+  "718 BOXSTER GTS": {
+    "brand": "PORSCHE",
+    "engineCc": 3995,
+    "kind": "승용일반",
+    "residualByTerm": {
+      "12": 0.77,
+      "24": 0.69,
+      "36": 0.6,
+      "48": 0.52,
+      "60": 0.46
+    },
+    "vehiclePrice": 128200000
+  },
+  "718 BOXSTER S": {
+    "brand": "PORSCHE",
+    "engineCc": 2497,
+    "kind": "승용일반",
+    "residualByTerm": {
+      "12": 0.77,
+      "24": 0.69,
+      "36": 0.6,
+      "48": 0.52,
+      "60": 0.46
+    },
+    "vehiclePrice": 108200000
+  },
+  "718 Cayman 2.0": {
+    "brand": "PORSCHE",
+    "engineCc": 1988,
+    "kind": "승용일반",
+    "residualByTerm": {
+      "12": 0.75,
+      "24": 0.67,
+      "36": 0.58,
+      "48": 0.5,
+      "60": 0.44
+    },
+    "vehiclePrice": 91600000
+  },
+  "718 Cayman GT4": {
+    "brand": "PORSCHE",
+    "engineCc": 3995,
+    "kind": "승용일반",
+    "residualByTerm": {
+      "12": 0.75,
+      "24": 0.67,
+      "36": 0.58,
+      "48": 0.5,
+      "60": 0.44
+    },
+    "vehiclePrice": 138700000
+  },
+  "718 Cayman GTS": {
+    "brand": "PORSCHE",
+    "engineCc": 3995,
+    "kind": "승용일반",
+    "residualByTerm": {
+      "12": 0.75,
+      "24": 0.67,
+      "36": 0.58,
+      "48": 0.5,
+      "60": 0.44
+    },
+    "vehiclePrice": 123400000
+  },
+  "718 Cayman S": {
+    "brand": "PORSCHE",
+    "engineCc": 2497,
+    "kind": "승용일반",
+    "residualByTerm": {
+      "12": 0.75,
+      "24": 0.67,
+      "36": 0.58,
+      "48": 0.5,
+      "60": 0.44
+    },
+    "vehiclePrice": 103500000
+  },
+  "740d DPE xDrive": {
+    "brand": "BMW",
+    "engineCc": 2993,
+    "kind": "승용일반",
+    "residualByTerm": {
+      "12": 0.72,
+      "24": 0.64,
+      "36": 0.55,
+      "48": 0.47,
+      "60": 0.41
+    },
+    "vehiclePrice": 159800000
+  },
+  "740d M Sport xDrive": {
+    "brand": "BMW",
+    "engineCc": 2993,
+    "kind": "승용일반",
+    "residualByTerm": {
+      "12": 0.72,
+      "24": 0.64,
+      "36": 0.55,
+      "48": 0.47,
+      "60": 0.41
+    },
+    "vehiclePrice": 163100000
+  },
+  "740i xDrive DPE": {
+    "brand": "BMW",
+    "engineCc": 2998,
+    "kind": "승용일반",
+    "residualByTerm": {
+      "12": 0.72,
+      "24": 0.64,
+      "36": 0.55,
+      "48": 0.47,
+      "60": 0.41
+    },
+    "vehiclePrice": 174400000
+  },
+  "740i xDrive M Sport": {
+    "brand": "BMW",
+    "engineCc": 2998,
+    "kind": "승용일반",
+    "residualByTerm": {
+      "12": 0.72,
+      "24": 0.64,
+      "36": 0.55,
+      "48": 0.47,
+      "60": 0.41
+    },
+    "vehiclePrice": 177700000
+  },
+  "911 Carrera 4 Cabriolet": {
+    "brand": "PORSCHE",
+    "engineCc": 2981,
+    "kind": "승용일반",
+    "residualByTerm": {
+      "12": 0.77,
+      "24": 0.69,
+      "36": 0.6,
+      "48": 0.52,
+      "60": 0.46
+    },
+    "vehiclePrice": 183800000
+  },
+  "911 Carrera 4 Coupe": {
+    "brand": "PORSCHE",
+    "engineCc": 2981,
+    "kind": "승용일반",
+    "residualByTerm": {
+      "12": 0.77,
+      "24": 0.69,
+      "36": 0.6,
+      "48": 0.52,
+      "60": 0.46
+    },
+    "vehiclePrice": 167900000
+  },
+  "911 Carrera 4 GTS Cabriolet": {
+    "brand": "PORSCHE",
+    "engineCc": 2981,
+    "kind": "승용일반",
+    "residualByTerm": {
+      "12": 0.77,
+      "24": 0.69,
+      "36": 0.6,
+      "48": 0.52,
+      "60": 0.46
+    },
+    "vehiclePrice": 229500000
+  },
+  "911 Carrera 4 GTS Coupe": {
+    "brand": "PORSCHE",
+    "engineCc": 2981,
+    "kind": "승용일반",
+    "residualByTerm": {
+      "12": 0.77,
+      "24": 0.69,
+      "36": 0.6,
+      "48": 0.52,
+      "60": 0.46
+    },
+    "vehiclePrice": 213700000
+  },
+  "911 Carrera 4S Cabriolet": {
+    "brand": "PORSCHE",
+    "engineCc": 2981,
+    "kind": "승용일반",
+    "residualByTerm": {
+      "12": 0.77,
+      "24": 0.69,
+      "36": 0.6,
+      "48": 0.52,
+      "60": 0.46
+    },
+    "vehiclePrice": 201100000
+  },
+  "911 Carrera 4S Coupe": {
+    "brand": "PORSCHE",
+    "engineCc": 2981,
+    "kind": "승용일반",
+    "residualByTerm": {
+      "12": 0.77,
+      "24": 0.69,
+      "36": 0.6,
+      "48": 0.52,
+      "60": 0.46
+    },
+    "vehiclePrice": 185300000
+  },
+  "911 Carrera Cabriolet": {
+    "brand": "PORSCHE",
+    "engineCc": 2981,
+    "kind": "승용일반",
+    "residualByTerm": {
+      "12": 0.77,
+      "24": 0.69,
+      "36": 0.6,
+      "48": 0.52,
+      "60": 0.46
+    },
+    "vehiclePrice": 174600000
+  },
+  "911 Carrera Coupe": {
+    "brand": "PORSCHE",
+    "engineCc": 2981,
+    "kind": "승용일반",
+    "residualByTerm": {
+      "12": 0.77,
+      "24": 0.69,
+      "36": 0.6,
+      "48": 0.52,
+      "60": 0.46
+    },
+    "vehiclePrice": 158700000
+  },
+  "911 Carrera GTS Cabriolet": {
+    "brand": "PORSCHE",
+    "engineCc": 2981,
+    "kind": "승용일반",
+    "residualByTerm": {
+      "12": 0.75,
+      "24": 0.67,
+      "36": 0.58,
+      "48": 0.5,
+      "60": 0.44
+    },
+    "vehiclePrice": 220300000
+  },
+  "911 Carrera GTS Coupe": {
+    "brand": "PORSCHE",
+    "engineCc": 2981,
+    "kind": "승용일반",
+    "residualByTerm": {
+      "12": 0.75,
+      "24": 0.67,
+      "36": 0.58,
+      "48": 0.5,
+      "60": 0.44
+    },
+    "vehiclePrice": 204500000
+  },
+  "911 Carrera S Cabriolet": {
+    "brand": "PORSCHE",
+    "engineCc": 2981,
+    "kind": "승용일반",
+    "residualByTerm": {
+      "12": 0.77,
+      "24": 0.69,
+      "36": 0.6,
+      "48": 0.52,
+      "60": 0.46
+    },
+    "vehiclePrice": 191900000
+  },
+  "911 Carrera S Coupe": {
+    "brand": "PORSCHE",
+    "engineCc": 2981,
+    "kind": "승용일반",
+    "residualByTerm": {
+      "12": 0.77,
+      "24": 0.69,
+      "36": 0.6,
+      "48": 0.52,
+      "60": 0.46
+    },
+    "vehiclePrice": 176100000
+  },
+  "911 GT3": {
+    "brand": "PORSCHE",
+    "engineCc": 3996,
+    "kind": "승용일반",
+    "residualByTerm": {
+      "12": 0.77,
+      "24": 0.69,
+      "36": 0.6,
+      "48": 0.52,
+      "60": 0.46
+    },
+    "vehiclePrice": 233400000
+  },
+  "911 Targa 4": {
+    "brand": "PORSCHE",
+    "engineCc": 2981,
+    "kind": "승용일반",
+    "residualByTerm": {
+      "12": 0.77,
+      "24": 0.69,
+      "36": 0.6,
+      "48": 0.52,
+      "60": 0.46
+    },
+    "vehiclePrice": 183800000
+  },
+  "911 Targa 4 GTS": {
+    "brand": "PORSCHE",
+    "engineCc": 2981,
+    "kind": "승용일반",
+    "residualByTerm": {
+      "12": 0.77,
+      "24": 0.69,
+      "36": 0.6,
+      "48": 0.52,
+      "60": 0.46
+    },
+    "vehiclePrice": 229500000
+  },
+  "911 Targa 4S": {
+    "brand": "PORSCHE",
+    "engineCc": 2981,
+    "kind": "승용일반",
+    "residualByTerm": {
+      "12": 0.77,
+      "24": 0.69,
+      "36": 0.6,
+      "48": 0.52,
+      "60": 0.46
+    },
+    "vehiclePrice": 201100000
+  },
+  "911 Turbo S Cabriolet": {
+    "brand": "PORSCHE",
+    "engineCc": 3745,
+    "kind": "승용일반",
+    "residualByTerm": {
+      "12": 0.77,
+      "24": 0.69,
+      "36": 0.6,
+      "48": 0.52,
+      "60": 0.46
+    },
+    "vehiclePrice": 306500000
+  },
+  "911 Turbo S Coupe": {
+    "brand": "PORSCHE",
+    "engineCc": 3745,
+    "kind": "승용일반",
+    "residualByTerm": {
+      "12": 0.77,
+      "24": 0.69,
+      "36": 0.6,
+      "48": 0.52,
+      "60": 0.46
+    },
+    "vehiclePrice": 290900000
+  },
+  "A 35 AMG 4Matic Sedan": {
+    "brand": "BENZ",
+    "engineCc": 1991,
+    "kind": "승용일반",
+    "residualByTerm": {
+      "12": 0.67,
+      "24": 0.59,
+      "36": 0.5,
+      "48": 0.42,
+      "60": 0.36
+    },
+    "vehiclePrice": 66400000
+  },
+  "A 45 AMG 4Matic Hatchback": {
+    "brand": "BENZ",
+    "engineCc": 1991,
+    "kind": "승용일반",
+    "residualByTerm": {
+      "12": 0.67,
+      "24": 0.59,
+      "36": 0.5,
+      "48": 0.42,
+      "60": 0.36
+    },
+    "vehiclePrice": 78800000
+  },
+  "Aviator Black Label": {
+    "brand": "LINCOLN",
+    "engineCc": 2956,
+    "kind": "승용SUV(7~10인)",
+    "residualByTerm": {
+      "12": 0.7,
+      "24": 0.62,
+      "36": 0.53,
+      "48": 0.45,
+      "60": 0.39
+    },
+    "vehiclePrice": 95600000
+  },
+  "Aviator PHEV Grand Touring": {
+    "brand": "LINCOLN",
+    "engineCc": 2956,
+    "kind": "승용SUV(7~10인)",
+    "residualByTerm": {
+      "12": 0.7,
+      "24": 0.62,
+      "36": 0.53,
+      "48": 0.45,
+      "60": 0.39
+    },
+    "vehiclePrice": 98900000
+  },
+  "Aviator Reserve": {
+    "brand": "LINCOLN",
+    "engineCc": 2956,
+    "kind": "승용SUV(7~10인)",
+    "residualByTerm": {
+      "12": 0.7,
+      "24": 0.62,
+      "36": 0.53,
+      "48": 0.45,
+      "60": 0.39
+    },
+    "vehiclePrice": 85700000
+  },
+  "Bronco 4 Door OUTER BANKS": {
+    "brand": "FORD",
+    "engineCc": 2694,
+    "kind": "승용SUV(~5인)",
+    "residualByTerm": {
+      "12": 0.7,
+      "24": 0.62,
+      "36": 0.53,
+      "48": 0.45,
+      "60": 0.39
+    },
+    "vehiclePrice": 69000000
+  },
+  "C 200 Avantgarde": {
+    "brand": "BENZ",
+    "engineCc": 1999,
+    "kind": "승용일반",
+    "residualByTerm": {
+      "12": 0.78,
+      "24": 0.7,
+      "36": 0.61,
+      "48": 0.53,
+      "60": 0.47
+    },
+    "vehiclePrice": 64600000
+  },
+  "C 200 Cabriolet": {
+    "brand": "BENZ",
+    "engineCc": 1991,
+    "kind": "승용일반",
+    "residualByTerm": {
+      "12": 0.78,
+      "24": 0.7,
+      "36": 0.61,
+      "48": 0.53,
+      "60": 0.47
+    },
+    "vehiclePrice": 73800000
+  },
+  "C 200 Coupe": {
+    "brand": "BENZ",
+    "engineCc": 1991,
+    "kind": "승용일반",
+    "residualByTerm": {
+      "12": 0.78,
+      "24": 0.7,
+      "36": 0.61,
+      "48": 0.53,
+      "60": 0.47
+    },
+    "vehiclePrice": 68300000
+  },
+  "C 300 4Matic Avantgarde": {
+    "brand": "BENZ",
+    "engineCc": 1999,
+    "kind": "승용일반",
+    "residualByTerm": {
+      "12": 0.78,
+      "24": 0.7,
+      "36": 0.61,
+      "48": 0.53,
+      "60": 0.47
+    },
+    "vehiclePrice": 68300000
+  },
+  "CLA 250 4Matic Progressive": {
+    "brand": "BENZ",
+    "engineCc": 1991,
+    "kind": "승용일반",
+    "residualByTerm": {
+      "12": 0.78,
+      "24": 0.7,
+      "36": 0.61,
+      "48": 0.53,
+      "60": 0.47
+    },
+    "vehiclePrice": 61000000
+  },
+  "Cayenne 3.0 Coupe Platinum Ed.": {
+    "brand": "PORSCHE",
+    "engineCc": 2995,
+    "kind": "승용SUV(~5인)",
+    "residualByTerm": {
+      "12": 0.805,
+      "24": 0.725,
+      "36": 0.635,
+      "48": 0.555,
+      "60": 0.495
+    },
+    "vehiclePrice": 142100000
+  },
+  "Cayenne 3.0 Platinum Ed.": {
+    "brand": "PORSCHE",
+    "engineCc": 2995,
+    "kind": "승용SUV(~5인)",
+    "residualByTerm": {
+      "12": 0.805,
+      "24": 0.725,
+      "36": 0.635,
+      "48": 0.555,
+      "60": 0.495
+    },
+    "vehiclePrice": 139700000
+  },
+  "Cayenne Coupe E-Hybrid Platinum Ed.": {
+    "brand": "PORSCHE",
+    "engineCc": 2995,
+    "kind": "승용SUV(~5인)",
+    "residualByTerm": {
+      "12": 0.78,
+      "24": 0.7,
+      "36": 0.61,
+      "48": 0.53,
+      "60": 0.47
+    },
+    "vehiclePrice": 148800000
+  },
+  "Cayenne E-Hybrid Platinum Ed.": {
+    "brand": "PORSCHE",
+    "engineCc": 2995,
+    "kind": "승용SUV(~5인)",
+    "residualByTerm": {
+      "12": 0.78,
+      "24": 0.7,
+      "36": 0.61,
+      "48": 0.53,
+      "60": 0.47
+    },
+    "vehiclePrice": 145500000
+  },
+  "Cayenne Turbo": {
+    "brand": "PORSCHE",
+    "engineCc": 3996,
+    "kind": "승용SUV(~5인)",
+    "residualByTerm": {
+      "12": 0.75,
+      "24": 0.67,
+      "36": 0.58,
+      "48": 0.5,
+      "60": 0.44
+    },
+    "vehiclePrice": 180200000
+  },
+  "Cayenne Turbo Coupe": {
+    "brand": "PORSCHE",
+    "engineCc": 3996,
+    "kind": "승용SUV(~5인)",
+    "residualByTerm": {
+      "12": 0.75,
+      "24": 0.67,
+      "36": 0.58,
+      "48": 0.5,
+      "60": 0.44
+    },
+    "vehiclePrice": 193400000
+  },
+  "Cayenne Turbo GT": {
+    "brand": "PORSCHE",
+    "engineCc": 3996,
+    "kind": "승용SUV(~5인)",
+    "residualByTerm": {
+      "12": 0.75,
+      "24": 0.67,
+      "36": 0.58,
+      "48": 0.5,
+      "60": 0.44
+    },
+    "vehiclePrice": 246800000
+  },
+  "E 200 AMG Line": {
+    "brand": "BENZ",
+    "engineCc": 1999,
+    "kind": "승용일반",
+    "residualByTerm": {
+      "12": 0.805,
+      "24": 0.725,
+      "36": 0.635,
+      "48": 0.555,
+      "60": 0.495
+    },
+    "vehiclePrice": 80000000
+  },
+  "E 200 Avantgarde": {
+    "brand": "BENZ",
+    "engineCc": 1999,
+    "kind": "승용일반",
+    "residualByTerm": {
+      "12": 0.805,
+      "24": 0.725,
+      "36": 0.635,
+      "48": 0.555,
+      "60": 0.495
+    },
+    "vehiclePrice": 73800000
+  },
+  "E 200 Avantgarde Limited": {
+    "brand": "BENZ",
+    "engineCc": 1999,
+    "kind": "승용일반",
+    "residualByTerm": {
+      "12": 0.805,
+      "24": 0.725,
+      "36": 0.635,
+      "48": 0.555,
+      "60": 0.495
+    },
+    "vehiclePrice": 69000000
+  },
+  "E 220d 4Matic AMG Line": {
+    "brand": "BENZ",
+    "engineCc": 1993,
+    "kind": "승용일반",
+    "residualByTerm": {
+      "12": 0.805,
+      "24": 0.725,
+      "36": 0.635,
+      "48": 0.555,
+      "60": 0.495
+    },
+    "vehiclePrice": 86400000
+  },
+  "E 220d 4Matic Exclusive": {
+    "brand": "BENZ",
+    "engineCc": 1993,
+    "kind": "승용일반",
+    "residualByTerm": {
+      "12": 0.805,
+      "24": 0.725,
+      "36": 0.635,
+      "48": 0.555,
+      "60": 0.495
+    },
+    "vehiclePrice": 82300000
+  },
+  "E 300 4Matic AMG Line": {
+    "brand": "BENZ",
+    "engineCc": 1999,
+    "kind": "승용일반",
+    "residualByTerm": {
+      "12": 0.805,
+      "24": 0.725,
+      "36": 0.635,
+      "48": 0.555,
+      "60": 0.495
+    },
+    "vehiclePrice": 93800000
+  },
+  "E 300 4Matic Exclusive": {
+    "brand": "BENZ",
+    "engineCc": 1999,
+    "kind": "승용일반",
+    "residualByTerm": {
+      "12": 0.805,
+      "24": 0.725,
+      "36": 0.635,
+      "48": 0.555,
+      "60": 0.495
+    },
+    "vehiclePrice": 89900000
+  },
+  "E 350e 4Matic Exclusive": {
+    "brand": "BENZ",
+    "engineCc": 1991,
+    "kind": "승용일반",
+    "residualByTerm": {
+      "12": 0.805,
+      "24": 0.725,
+      "36": 0.635,
+      "48": 0.555,
+      "60": 0.495
+    },
+    "vehiclePrice": 91300000
+  },
+  "E 450 4Matic": {
+    "brand": "BENZ",
+    "engineCc": 2998,
+    "kind": "승용일반",
+    "residualByTerm": {
+      "12": 0.77,
+      "24": 0.69,
+      "36": 0.6,
+      "48": 0.52,
+      "60": 0.46
+    },
+    "vehiclePrice": 99900000
+  },
+  "E 450 4Matic Exclusive": {
+    "brand": "BENZ",
+    "engineCc": 2999,
+    "kind": "승용일반",
+    "residualByTerm": {
+      "12": 0.77,
+      "24": 0.69,
+      "36": 0.6,
+      "48": 0.52,
+      "60": 0.46
+    },
+    "vehiclePrice": 123000000
+  },
+  "ES 300h Executive": {
+    "brand": "LEXUS",
+    "engineCc": 2487,
+    "kind": "승용일반",
+    "residualByTerm": {
+      "12": 0.77,
+      "24": 0.69,
+      "36": 0.6,
+      "48": 0.52,
+      "60": 0.46
+    },
+    "vehiclePrice": 71600000
+  },
+  "ES 300h F-SPORT": {
+    "brand": "LEXUS",
+    "engineCc": 2487,
+    "kind": "승용일반",
+    "residualByTerm": {
+      "12": 0.77,
+      "24": 0.69,
+      "36": 0.6,
+      "48": 0.52,
+      "60": 0.46
+    },
+    "vehiclePrice": 74100000
+  },
+  "ES 300h Luxury": {
+    "brand": "LEXUS",
+    "engineCc": 2487,
+    "kind": "승용일반",
+    "residualByTerm": {
+      "12": 0.77,
+      "24": 0.69,
+      "36": 0.6,
+      "48": 0.52,
+      "60": 0.46
+    },
+    "vehiclePrice": 64800000
+  },
+  "ES 300h Luxury Plus": {
+    "brand": "LEXUS",
+    "engineCc": 2487,
+    "kind": "승용일반",
+    "residualByTerm": {
+      "12": 0.77,
+      "24": 0.69,
+      "36": 0.6,
+      "48": 0.52,
+      "60": 0.46
+    },
+    "vehiclePrice": 66900000
+  },
+  "Explorer 2.3L LTD AWD": {
+    "brand": "FORD",
+    "engineCc": 2261,
+    "kind": "승용SUV(7~10인)",
+    "residualByTerm": {
+      "12": 0.7,
+      "24": 0.62,
+      "36": 0.53,
+      "48": 0.45,
+      "60": 0.39
+    },
+    "vehiclePrice": 61500000
+  },
+  "Explorer 3.0L Platinum": {
+    "brand": "FORD",
+    "engineCc": 2956,
+    "kind": "승용SUV(7~10인)",
+    "residualByTerm": {
+      "12": 0.7,
+      "24": 0.62,
+      "36": 0.53,
+      "48": 0.45,
+      "60": 0.39
+    },
+    "vehiclePrice": 69000000
+  },
+  "Explorer PHEV": {
+    "brand": "FORD",
+    "engineCc": 2956,
+    "kind": "승용SUV(7~10인)",
+    "residualByTerm": {
+      "12": 0.67,
+      "24": 0.59,
+      "36": 0.5,
+      "48": 0.42,
+      "60": 0.36
+    },
+    "vehiclePrice": 67700000
+  },
+  "G 450d": {
+    "brand": "BENZ",
+    "engineCc": 2989,
+    "kind": "승용SUV(~5인)",
+    "residualByTerm": {
+      "12": 0.73,
+      "24": 0.65,
+      "36": 0.56,
+      "48": 0.48,
+      "60": 0.42
+    },
+    "vehiclePrice": 187600000
+  },
+  "G 63 AMG": {
+    "brand": "BENZ",
+    "engineCc": 3982,
+    "kind": "승용SUV(~5인)",
+    "residualByTerm": {
+      "12": 0.73,
+      "24": 0.65,
+      "36": 0.56,
+      "48": 0.48,
+      "60": 0.42
+    },
+    "vehiclePrice": 238000000
+  },
+  "G 63 AMG MANUFAKTUR": {
+    "brand": "BENZ",
+    "engineCc": 3982,
+    "kind": "승용SUV(~5인)",
+    "residualByTerm": {
+      "12": 0.73,
+      "24": 0.65,
+      "36": 0.56,
+      "48": 0.48,
+      "60": 0.42
+    },
+    "vehiclePrice": 259000000
+  },
+  "GLA 250 4Matic": {
+    "brand": "BENZ",
+    "engineCc": 1991,
+    "kind": "승용SUV(~5인)",
+    "residualByTerm": {
+      "12": 0.78,
+      "24": 0.7,
+      "36": 0.61,
+      "48": 0.53,
+      "60": 0.47
+    },
+    "vehiclePrice": 69100000
+  },
+  "GLB 200d": {
+    "brand": "BENZ",
+    "engineCc": 1950,
+    "kind": "승용SUV(~5인)",
+    "residualByTerm": {
+      "12": 0.78,
+      "24": 0.7,
+      "36": 0.61,
+      "48": 0.53,
+      "60": 0.47
+    },
+    "vehiclePrice": 63300000
+  },
+  "GLB 250 4Matic": {
+    "brand": "BENZ",
+    "engineCc": 1991,
+    "kind": "승용SUV(~5인)",
+    "residualByTerm": {
+      "12": 0.78,
+      "24": 0.7,
+      "36": 0.61,
+      "48": 0.53,
+      "60": 0.47
+    },
+    "vehiclePrice": 71100000
+  },
+  "GLB 35 AMG 4Matic": {
+    "brand": "BENZ",
+    "engineCc": 1991,
+    "kind": "승용SUV(~5인)",
+    "residualByTerm": {
+      "12": 0.67,
+      "24": 0.59,
+      "36": 0.5,
+      "48": 0.42,
+      "60": 0.36
+    },
+    "vehiclePrice": 78500000
+  },
+  "GLC 220d 4Matic": {
+    "brand": "BENZ",
+    "engineCc": 1993,
+    "kind": "승용SUV(~5인)",
+    "residualByTerm": {
+      "12": 0.8,
+      "24": 0.72,
+      "36": 0.63,
+      "48": 0.55,
+      "60": 0.49
+    },
+    "vehiclePrice": 79200000
+  },
+  "GLC 300 4MATIC Coupe AMG Line": {
+    "brand": "BENZ",
+    "engineCc": 1999,
+    "kind": "승용SUV(~5인)",
+    "residualByTerm": {
+      "12": 0.8,
+      "24": 0.72,
+      "36": 0.63,
+      "48": 0.55,
+      "60": 0.49
+    },
+    "vehiclePrice": 92500000
+  },
+  "GLC 300 4MATIC Coupe Avantgarde": {
+    "brand": "BENZ",
+    "engineCc": 1999,
+    "kind": "승용SUV(~5인)",
+    "residualByTerm": {
+      "12": 0.8,
+      "24": 0.72,
+      "36": 0.63,
+      "48": 0.55,
+      "60": 0.49
+    },
+    "vehiclePrice": 82800000
+  },
+  "GLC 300 4Matic AMG Line": {
+    "brand": "BENZ",
+    "engineCc": 1999,
+    "kind": "승용SUV(~5인)",
+    "residualByTerm": {
+      "12": 0.8,
+      "24": 0.72,
+      "36": 0.63,
+      "48": 0.55,
+      "60": 0.49
+    },
+    "vehiclePrice": 90400000
+  },
+  "GLC 300 4Matic Avantgarde": {
+    "brand": "BENZ",
+    "engineCc": 1999,
+    "kind": "승용SUV(~5인)",
+    "residualByTerm": {
+      "12": 0.8,
+      "24": 0.72,
+      "36": 0.63,
+      "48": 0.55,
+      "60": 0.49
+    },
+    "vehiclePrice": 80500000
+  },
+  "GLC 43 4Matic AMG": {
+    "brand": "BENZ",
+    "engineCc": 1991,
+    "kind": "승용SUV(~5인)",
+    "residualByTerm": {
+      "12": 0.67,
+      "24": 0.59,
+      "36": 0.5,
+      "48": 0.42,
+      "60": 0.36
+    },
+    "vehiclePrice": 98900000
+  },
+  "GLC 43 4Matic AMG Coupe": {
+    "brand": "BENZ",
+    "engineCc": 1991,
+    "kind": "승용SUV(~5인)",
+    "residualByTerm": {
+      "12": 0.67,
+      "24": 0.59,
+      "36": 0.5,
+      "48": 0.42,
+      "60": 0.36
+    },
+    "vehiclePrice": 103400000
+  },
+  "GLE 300d 4Matic": {
+    "brand": "BENZ",
+    "engineCc": 1993,
+    "kind": "승용SUV(~5인)",
+    "residualByTerm": {
+      "12": 0.8,
+      "24": 0.72,
+      "36": 0.63,
+      "48": 0.55,
+      "60": 0.49
+    },
+    "vehiclePrice": 112600000
+  },
+  "GLE 350 4Matic": {
+    "brand": "BENZ",
+    "engineCc": 1999,
+    "kind": "승용SUV(~5인)",
+    "residualByTerm": {
+      "12": 0.8,
+      "24": 0.72,
+      "36": 0.63,
+      "48": 0.55,
+      "60": 0.49
+    },
+    "vehiclePrice": 116600000
+  },
+  "GLE 450 4Matic 26MY": {
+    "brand": "BENZ",
+    "engineCc": 2998,
+    "kind": "승용SUV(~5인)",
+    "residualByTerm": {
+      "12": 0.8,
+      "24": 0.72,
+      "36": 0.63,
+      "48": 0.55,
+      "60": 0.49
+    },
+    "vehiclePrice": 134400000
+  },
+  "GLE 450 4Matic AMG Line26MY": {
+    "brand": "BENZ",
+    "engineCc": 2998,
+    "kind": "승용SUV(~5인)",
+    "residualByTerm": {
+      "12": 0.8,
+      "24": 0.72,
+      "36": 0.63,
+      "48": 0.55,
+      "60": 0.49
+    },
+    "vehiclePrice": 134400000
+  },
+  "GLE 450 4Matic Coupe 26MY": {
+    "brand": "BENZ",
+    "engineCc": 2998,
+    "kind": "승용SUV(~5인)",
+    "residualByTerm": {
+      "12": 0.8,
+      "24": 0.72,
+      "36": 0.63,
+      "48": 0.55,
+      "60": 0.49
+    },
+    "vehiclePrice": 134400000
+  },
+  "GLE 450d 4Matic Coupe AMG Line": {
+    "brand": "BENZ",
+    "engineCc": 2989,
+    "kind": "승용SUV(~5인)",
+    "residualByTerm": {
+      "12": 0.8,
+      "24": 0.72,
+      "36": 0.63,
+      "48": 0.55,
+      "60": 0.49
+    },
+    "vehiclePrice": 137000000
+  },
+  "GLE 53 AMG 4Matic": {
+    "brand": "BENZ",
+    "engineCc": 2998,
+    "kind": "승용SUV(~5인)",
+    "residualByTerm": {
+      "12": 0.67,
+      "24": 0.59,
+      "36": 0.5,
+      "48": 0.42,
+      "60": 0.36
+    },
+    "vehiclePrice": 151500000
+  },
+  "GLE 53 AMG 4Matic Coupe": {
+    "brand": "BENZ",
+    "engineCc": 2999,
+    "kind": "승용SUV(~5인)",
+    "residualByTerm": {
+      "12": 0.67,
+      "24": 0.59,
+      "36": 0.5,
+      "48": 0.42,
+      "60": 0.36
+    },
+    "vehiclePrice": 155400000
+  },
+  "GLS 450 4Matic": {
+    "brand": "BENZ",
+    "engineCc": 2998,
+    "kind": "승용SUV(7~10인)",
+    "residualByTerm": {
+      "12": 0.72,
+      "24": 0.64,
+      "36": 0.55,
+      "48": 0.47,
+      "60": 0.41
+    },
+    "vehiclePrice": 153600000
+  },
+  "GLS 450d 4Matic": {
+    "brand": "BENZ",
+    "engineCc": 2989,
+    "kind": "승용SUV(7~10인)",
+    "residualByTerm": {
+      "12": 0.72,
+      "24": 0.64,
+      "36": 0.55,
+      "48": 0.47,
+      "60": 0.41
+    },
+    "vehiclePrice": 160200000
+  },
+  "GLS 580 4Matic": {
+    "brand": "BENZ",
+    "engineCc": 3982,
+    "kind": "승용SUV(7~10인)",
+    "residualByTerm": {
+      "12": 0.72,
+      "24": 0.64,
+      "36": 0.55,
+      "48": 0.47,
+      "60": 0.41
+    },
+    "vehiclePrice": 180100000
+  },
+  "LM 500h Executive (6인승)": {
+    "brand": "LEXUS",
+    "engineCc": 2393,
+    "kind": "승용SUV(~5인)",
+    "residualByTerm": {
+      "12": 0.72,
+      "24": 0.64,
+      "36": 0.55,
+      "48": 0.47,
+      "60": 0.41
+    },
+    "vehiclePrice": 146570000
+  },
+  "LM 500h Royal (4인승)": {
+    "brand": "LEXUS",
+    "engineCc": 2393,
+    "kind": "승용SUV(~5인)",
+    "residualByTerm": {
+      "12": 0.72,
+      "24": 0.64,
+      "36": 0.55,
+      "48": 0.47,
+      "60": 0.41
+    },
+    "vehiclePrice": 194570000
+  },
+  "M135 xDrive": {
+    "brand": "BMW",
+    "engineCc": 1998,
+    "kind": "승용일반",
+    "residualByTerm": {
+      "12": 0.69,
+      "24": 0.61,
+      "36": 0.52,
+      "48": 0.44,
+      "60": 0.38
+    },
+    "vehiclePrice": 61800000
+  },
+  "M135i xDrive": {
+    "brand": "BMW",
+    "engineCc": 1998,
+    "kind": "승용일반",
+    "residualByTerm": {
+      "12": 0.69,
+      "24": 0.61,
+      "36": 0.52,
+      "48": 0.44,
+      "60": 0.38
+    },
+    "vehiclePrice": 61900000
+  },
+  "M235i Gran Coupe xDrive": {
+    "brand": "BMW",
+    "engineCc": 1998,
+    "kind": "승용일반",
+    "residualByTerm": {
+      "12": 0.69,
+      "24": 0.61,
+      "36": 0.52,
+      "48": 0.44,
+      "60": 0.38
+    },
+    "vehiclePrice": 64500000
+  },
+  "M240i Coupe xDrive": {
+    "brand": "BMW",
+    "engineCc": 2998,
+    "kind": "승용일반",
+    "residualByTerm": {
+      "12": 0.69,
+      "24": 0.61,
+      "36": 0.52,
+      "48": 0.44,
+      "60": 0.38
+    },
+    "vehiclePrice": 73600000
+  },
+  "M340i Sedan": {
+    "brand": "BMW",
+    "engineCc": 2998,
+    "kind": "승용일반",
+    "residualByTerm": {
+      "12": 0.7,
+      "24": 0.62,
+      "36": 0.53,
+      "48": 0.45,
+      "60": 0.39
+    },
+    "vehiclePrice": 82200000
+  },
+  "M340i Touring xDrive": {
+    "brand": "BMW",
+    "engineCc": 2998,
+    "kind": "승용일반",
+    "residualByTerm": {
+      "12": 0.69,
+      "24": 0.61,
+      "36": 0.52,
+      "48": 0.44,
+      "60": 0.38
+    },
+    "vehiclePrice": 87800000
+  },
+  "M440i Convertible xDrive": {
+    "brand": "BMW",
+    "engineCc": 2998,
+    "kind": "승용일반",
+    "residualByTerm": {
+      "12": 0.69,
+      "24": 0.61,
+      "36": 0.52,
+      "48": 0.44,
+      "60": 0.38
+    },
+    "vehiclePrice": 100700000
+  },
+  "M440i Coupe xDrive": {
+    "brand": "BMW",
+    "engineCc": 2998,
+    "kind": "승용일반",
+    "residualByTerm": {
+      "12": 0.69,
+      "24": 0.61,
+      "36": 0.52,
+      "48": 0.44,
+      "60": 0.38
+    },
+    "vehiclePrice": 93700000
+  },
+  "Macan Ⅲ GTS": {
+    "brand": "PORSCHE",
+    "engineCc": 2894,
+    "kind": "승용SUV(~5인)",
+    "residualByTerm": {
+      "12": 0.75,
+      "24": 0.67,
+      "36": 0.58,
+      "48": 0.5,
+      "60": 0.44
+    },
+    "vehiclePrice": 122200000
+  },
+  "Macan Ⅲ S": {
+    "brand": "PORSCHE",
+    "engineCc": 2894,
+    "kind": "승용SUV(~5인)",
+    "residualByTerm": {
+      "12": 0.75,
+      "24": 0.67,
+      "36": 0.58,
+      "48": 0.5,
+      "60": 0.44
+    },
+    "vehiclePrice": 103000000
+  },
+  "Maybach GLS 600 4Matic": {
+    "brand": "BENZ",
+    "engineCc": 3982,
+    "kind": "승용SUV(7~10인)",
+    "residualByTerm": {
+      "12": 0.67,
+      "24": 0.59,
+      "36": 0.5,
+      "48": 0.42,
+      "60": 0.36
+    },
+    "vehiclePrice": 280700000
+  },
+  "Maybach GLS 600 4Matic MANUFAKTUR": {
+    "brand": "BENZ",
+    "engineCc": 3982,
+    "kind": "승용SUV(7~10인)",
+    "residualByTerm": {
+      "12": 0.67,
+      "24": 0.59,
+      "36": 0.5,
+      "48": 0.42,
+      "60": 0.36
+    },
+    "vehiclePrice": 317600000
+  },
+  "Maybach S 580 4Matic": {
+    "brand": "BENZ",
+    "engineCc": 3982,
+    "kind": "승용일반",
+    "residualByTerm": {
+      "12": 0.67,
+      "24": 0.59,
+      "36": 0.5,
+      "48": 0.42,
+      "60": 0.36
+    },
+    "vehiclePrice": 309600000
+  },
+  "Maybach S 680 4Matic": {
+    "brand": "BENZ",
+    "engineCc": 5980,
+    "kind": "승용일반",
+    "residualByTerm": {
+      "12": 0.67,
+      "24": 0.59,
+      "36": 0.5,
+      "48": 0.42,
+      "60": 0.36
+    },
+    "vehiclePrice": 393600000
+  },
+  "NX 350h Luxury": {
+    "brand": "LEXUS",
+    "engineCc": 2487,
+    "kind": "승용SUV(~5인)",
+    "residualByTerm": {
+      "12": 0.75,
+      "24": 0.67,
+      "36": 0.58,
+      "48": 0.5,
+      "60": 0.44
+    },
+    "vehiclePrice": 76300000
+  },
+  "NX 350h Premium": {
+    "brand": "LEXUS",
+    "engineCc": 2487,
+    "kind": "승용SUV(~5인)",
+    "residualByTerm": {
+      "12": 0.75,
+      "24": 0.67,
+      "36": 0.58,
+      "48": 0.5,
+      "60": 0.44
+    },
+    "vehiclePrice": 66700000
+  },
+  "NX 450h+ F SPORT": {
+    "brand": "LEXUS",
+    "engineCc": 2487,
+    "kind": "승용SUV(~5인)",
+    "residualByTerm": {
+      "12": 0.75,
+      "24": 0.67,
+      "36": 0.58,
+      "48": 0.5,
+      "60": 0.44
+    },
+    "vehiclePrice": 82000000
+  },
+  "NX 450h+ Premium": {
+    "brand": "LEXUS",
+    "engineCc": 2487,
+    "kind": "승용SUV(~5인)",
+    "residualByTerm": {
+      "12": 0.75,
+      "24": 0.67,
+      "36": 0.58,
+      "48": 0.5,
+      "60": 0.44
+    },
+    "vehiclePrice": 74900000
+  },
+  "Panamera 4": {
+    "brand": "PORSCHE",
+    "engineCc": 2894,
+    "kind": "승용일반",
+    "residualByTerm": {
+      "12": 0.805,
+      "24": 0.725,
+      "36": 0.635,
+      "48": 0.555,
+      "60": 0.495
+    },
+    "vehiclePrice": 150300000
+  },
+  "Panamera 4 E-Hybrid": {
+    "brand": "PORSCHE",
+    "engineCc": 2894,
+    "kind": "승용일반",
+    "residualByTerm": {
+      "12": 0.75,
+      "24": 0.67,
+      "36": 0.58,
+      "48": 0.5,
+      "60": 0.44
+    },
+    "vehiclePrice": 173600000
+  },
+  "Panamera 4 E-Hybrid Platinum Ed.": {
+    "brand": "PORSCHE",
+    "engineCc": 2894,
+    "kind": "승용일반",
+    "residualByTerm": {
+      "12": 0.75,
+      "24": 0.67,
+      "36": 0.58,
+      "48": 0.5,
+      "60": 0.44
+    },
+    "vehiclePrice": 188300000
+  },
+  "Panamera 4 Executive": {
+    "brand": "PORSCHE",
+    "engineCc": 2894,
+    "kind": "승용일반",
+    "residualByTerm": {
+      "12": 0.805,
+      "24": 0.725,
+      "36": 0.635,
+      "48": 0.555,
+      "60": 0.495
+    },
+    "vehiclePrice": 158800000
+  },
+  "Panamera 4 Platinum Ed.": {
+    "brand": "PORSCHE",
+    "engineCc": 2894,
+    "kind": "승용일반",
+    "residualByTerm": {
+      "12": 0.805,
+      "24": 0.725,
+      "36": 0.635,
+      "48": 0.555,
+      "60": 0.495
+    },
+    "vehiclePrice": 168300000
+  },
+  "Panamera GTS": {
+    "brand": "PORSCHE",
+    "engineCc": 3996,
+    "kind": "승용일반",
+    "residualByTerm": {
+      "12": 0.75,
+      "24": 0.67,
+      "36": 0.58,
+      "48": 0.5,
+      "60": 0.44
+    },
+    "vehiclePrice": 221200000
+  },
+  "Panamera Turbo S": {
+    "brand": "PORSCHE",
+    "engineCc": 3996,
+    "kind": "승용일반",
+    "residualByTerm": {
+      "12": 0.75,
+      "24": 0.67,
+      "36": 0.58,
+      "48": 0.5,
+      "60": 0.44
+    },
+    "vehiclePrice": 308100000
+  },
+  "Panamera Turbo S E-Hybrid": {
+    "brand": "PORSCHE",
+    "engineCc": 3996,
+    "kind": "승용일반",
+    "residualByTerm": {
+      "12": 0.75,
+      "24": 0.67,
+      "36": 0.58,
+      "48": 0.5,
+      "60": 0.44
+    },
+    "vehiclePrice": 317800000
+  },
+  "RX 350h": {
+    "brand": "LEXUS",
+    "engineCc": 2487,
+    "kind": "승용SUV(~5인)",
+    "residualByTerm": {
+      "12": 0.72,
+      "24": 0.64,
+      "36": 0.55,
+      "48": 0.47,
+      "60": 0.41
+    },
+    "vehiclePrice": 98700000
+  },
+  "RX 450h+": {
+    "brand": "LEXUS",
+    "engineCc": 2487,
+    "kind": "승용SUV(~5인)",
+    "residualByTerm": {
+      "12": 0.72,
+      "24": 0.64,
+      "36": 0.55,
+      "48": 0.47,
+      "60": 0.41
+    },
+    "vehiclePrice": 109930000
+  },
+  "RX 500h": {
+    "brand": "LEXUS",
+    "engineCc": 2393,
+    "kind": "승용SUV(~5인)",
+    "residualByTerm": {
+      "12": 0.72,
+      "24": 0.64,
+      "36": 0.55,
+      "48": 0.47,
+      "60": 0.41
+    },
+    "vehiclePrice": 117030000
+  },
+  "S 350d 4Matic": {
+    "brand": "BENZ",
+    "engineCc": 2989,
+    "kind": "승용일반",
+    "residualByTerm": {
+      "12": 0.75,
+      "24": 0.67,
+      "36": 0.58,
+      "48": 0.5,
+      "60": 0.44
+    },
+    "vehiclePrice": 151600000
+  },
+  "S 450 4Matic": {
+    "brand": "BENZ",
+    "engineCc": 2999,
+    "kind": "승용일반",
+    "residualByTerm": {
+      "12": 0.75,
+      "24": 0.67,
+      "36": 0.58,
+      "48": 0.5,
+      "60": 0.44
+    },
+    "vehiclePrice": 187600000
+  },
+  "S 450 4Matic Long": {
+    "brand": "BENZ",
+    "engineCc": 2998,
+    "kind": "승용일반",
+    "residualByTerm": {
+      "12": 0.75,
+      "24": 0.67,
+      "36": 0.58,
+      "48": 0.5,
+      "60": 0.44
+    },
+    "vehiclePrice": 187600000
+  },
+  "S 500 4Matic Long": {
+    "brand": "BENZ",
+    "engineCc": 2999,
+    "kind": "승용일반",
+    "residualByTerm": {
+      "12": 0.74,
+      "24": 0.66,
+      "36": 0.57,
+      "48": 0.49,
+      "60": 0.43
+    },
+    "vehiclePrice": 209100000
+  },
+  "S 580 4Matic": {
+    "brand": "BENZ",
+    "engineCc": 3982,
+    "kind": "승용일반",
+    "residualByTerm": {
+      "12": 0.74,
+      "24": 0.66,
+      "36": 0.57,
+      "48": 0.49,
+      "60": 0.43
+    },
+    "vehiclePrice": 248500000
+  },
+  "S 580e 4Matic": {
+    "brand": "BENZ",
+    "engineCc": 2999,
+    "kind": "승용일반",
+    "residualByTerm": {
+      "12": 0.67,
+      "24": 0.59,
+      "36": 0.5,
+      "48": 0.42,
+      "60": 0.36
+    },
+    "vehiclePrice": 242000000
+  },
+  "S60 B5 Momentum": {
+    "brand": "VOLVO",
+    "engineCc": 1969,
+    "kind": "승용일반",
+    "residualByTerm": {
+      "12": 0.75,
+      "24": 0.67,
+      "36": 0.58,
+      "48": 0.5,
+      "60": 0.44
+    },
+    "vehiclePrice": 47470000
+  },
+  "S60 B5 Ultimate Bright": {
+    "brand": "VOLVO",
+    "engineCc": 1969,
+    "kind": "승용일반",
+    "residualByTerm": {
+      "12": 0.75,
+      "24": 0.67,
+      "36": 0.58,
+      "48": 0.5,
+      "60": 0.44
+    },
+    "vehiclePrice": 55360000
+  },
+  "S90 B5 Plus": {
+    "brand": "VOLVO",
+    "engineCc": 1969,
+    "kind": "승용일반",
+    "residualByTerm": {
+      "12": 0.75,
+      "24": 0.67,
+      "36": 0.58,
+      "48": 0.5,
+      "60": 0.44
+    },
+    "vehiclePrice": 62600000
+  },
+  "S90 B5 Ultra Bright": {
+    "brand": "VOLVO",
+    "engineCc": 1969,
+    "kind": "승용일반",
+    "residualByTerm": {
+      "12": 0.75,
+      "24": 0.67,
+      "36": 0.58,
+      "48": 0.5,
+      "60": 0.44
+    },
+    "vehiclePrice": 68510000
+  },
+  "S90 B5 Ultra Dark": {
+    "brand": "VOLVO",
+    "engineCc": 1969,
+    "kind": "승용일반",
+    "residualByTerm": {
+      "12": 0.75,
+      "24": 0.67,
+      "36": 0.58,
+      "48": 0.5,
+      "60": 0.44
+    },
+    "vehiclePrice": 72460000
+  },
+  "S90 T8 Ultra PHEV": {
+    "brand": "VOLVO",
+    "engineCc": 1969,
+    "kind": "승용일반",
+    "residualByTerm": {
+      "12": 0.75,
+      "24": 0.67,
+      "36": 0.58,
+      "48": 0.5,
+      "60": 0.44
+    },
+    "vehiclePrice": 86130000
+  },
+  "Taycan 4S": {
+    "brand": "PORSCHE",
+    "engineCc": 1,
+    "kind": "승용일반",
+    "residualByTerm": {
+      "12": 0.72,
+      "24": 0.64,
+      "36": 0.55,
+      "48": 0.47,
+      "60": 0.41
+    },
+    "vehiclePrice": 148500000
+  },
+  "Taycan Base": {
+    "brand": "PORSCHE",
+    "engineCc": 1,
+    "kind": "승용일반",
+    "residualByTerm": {
+      "12": 0.72,
+      "24": 0.64,
+      "36": 0.55,
+      "48": 0.47,
+      "60": 0.41
+    },
+    "vehiclePrice": 123800000
+  },
+  "Taycan Cross Turismo 4S": {
+    "brand": "PORSCHE",
+    "engineCc": 1,
+    "kind": "승용일반",
+    "residualByTerm": {
+      "12": 0.72,
+      "24": 0.64,
+      "36": 0.55,
+      "48": 0.47,
+      "60": 0.41
+    },
+    "vehiclePrice": 154500000
+  },
+  "Taycan Cross Turismo S": {
+    "brand": "PORSCHE",
+    "engineCc": 1,
+    "kind": "승용일반",
+    "residualByTerm": {
+      "12": 0.72,
+      "24": 0.64,
+      "36": 0.55,
+      "48": 0.47,
+      "60": 0.41
+    },
+    "vehiclePrice": 138000000
+  },
+  "Taycan Cross Turismo Turbo": {
+    "brand": "PORSCHE",
+    "engineCc": 1,
+    "kind": "승용일반",
+    "residualByTerm": {
+      "12": 0.72,
+      "24": 0.64,
+      "36": 0.55,
+      "48": 0.47,
+      "60": 0.41
+    },
+    "vehiclePrice": 202400000
+  },
+  "Taycan GTS": {
+    "brand": "PORSCHE",
+    "engineCc": 1,
+    "kind": "승용일반",
+    "residualByTerm": {
+      "12": 0.72,
+      "24": 0.64,
+      "36": 0.55,
+      "48": 0.47,
+      "60": 0.41
+    },
+    "vehiclePrice": 180300000
+  },
+  "Taycan Turbo": {
+    "brand": "PORSCHE",
+    "engineCc": 1,
+    "kind": "승용일반",
+    "residualByTerm": {
+      "12": 0.72,
+      "24": 0.64,
+      "36": 0.55,
+      "48": 0.47,
+      "60": 0.41
+    },
+    "vehiclePrice": 200000000
+  },
+  "Taycan Turbo S": {
+    "brand": "PORSCHE",
+    "engineCc": 1,
+    "kind": "승용일반",
+    "residualByTerm": {
+      "12": 0.72,
+      "24": 0.64,
+      "36": 0.55,
+      "48": 0.47,
+      "60": 0.41
+    },
+    "vehiclePrice": 237600000
+  },
+  "UX 250h 2WD": {
+    "brand": "LEXUS",
+    "engineCc": 1987,
+    "kind": "승용SUV(~5인)",
+    "residualByTerm": {
+      "12": 0.72,
+      "24": 0.64,
+      "36": 0.55,
+      "48": 0.47,
+      "60": 0.41
+    },
+    "vehiclePrice": 50900000
+  },
+  "UX 250h AWD": {
+    "brand": "LEXUS",
+    "engineCc": 1987,
+    "kind": "승용SUV(~5인)",
+    "residualByTerm": {
+      "12": 0.72,
+      "24": 0.64,
+      "36": 0.55,
+      "48": 0.47,
+      "60": 0.41
+    },
+    "vehiclePrice": 58600000
+  },
+  "UX 250h F Sport": {
+    "brand": "LEXUS",
+    "engineCc": 1987,
+    "kind": "승용SUV(~5인)",
+    "residualByTerm": {
+      "12": 0.72,
+      "24": 0.64,
+      "36": 0.55,
+      "48": 0.47,
+      "60": 0.41
+    },
+    "vehiclePrice": 56400000
+  },
+  "V60 CC B5 AWD Plus": {
+    "brand": "VOLVO",
+    "engineCc": 1969,
+    "kind": "승용일반",
+    "residualByTerm": {
+      "12": 0.72,
+      "24": 0.64,
+      "36": 0.55,
+      "48": 0.47,
+      "60": 0.41
+    },
+    "vehiclePrice": 54570000
+  },
+  "V60 CC B5 AWD Ultimate": {
+    "brand": "VOLVO",
+    "engineCc": 1969,
+    "kind": "승용일반",
+    "residualByTerm": {
+      "12": 0.72,
+      "24": 0.64,
+      "36": 0.55,
+      "48": 0.47,
+      "60": 0.41
+    },
+    "vehiclePrice": 60780000
+  },
+  "V90 CC B5 AWD Plus": {
+    "brand": "VOLVO",
+    "engineCc": 1969,
+    "kind": "승용일반",
+    "residualByTerm": {
+      "12": 0.72,
+      "24": 0.64,
+      "36": 0.55,
+      "48": 0.47,
+      "60": 0.41
+    },
+    "vehiclePrice": 70070000
+  },
+  "V90 CC B5 AWD Ultimate": {
+    "brand": "VOLVO",
+    "engineCc": 1969,
+    "kind": "승용일반",
+    "residualByTerm": {
+      "12": 0.72,
+      "24": 0.64,
+      "36": 0.55,
+      "48": 0.47,
+      "60": 0.41
+    },
+    "vehiclePrice": 75690000
+  },
+  "V90 CC B6 AWD Ultimate": {
+    "brand": "VOLVO",
+    "engineCc": 1969,
+    "kind": "승용일반",
+    "residualByTerm": {
+      "12": 0.72,
+      "24": 0.64,
+      "36": 0.55,
+      "48": 0.47,
+      "60": 0.41
+    },
+    "vehiclePrice": 79640000
+  },
+  "X1 18d M Sport xDrive": {
+    "brand": "BMW",
+    "engineCc": 1995,
+    "kind": "승용SUV(~5인)",
+    "residualByTerm": {
+      "12": 0.79,
+      "24": 0.71,
+      "36": 0.62,
+      "48": 0.54,
+      "60": 0.48
+    },
+    "vehiclePrice": 63100000
+  },
+  "X1 18d xLine xDrive": {
+    "brand": "BMW",
+    "engineCc": 1995,
+    "kind": "승용SUV(~5인)",
+    "residualByTerm": {
+      "12": 0.79,
+      "24": 0.71,
+      "36": 0.62,
+      "48": 0.54,
+      "60": 0.48
+    },
+    "vehiclePrice": 58400000
+  },
+  "X1 20i M Sport xDrive": {
+    "brand": "BMW",
+    "engineCc": 1998,
+    "kind": "승용SUV(~5인)",
+    "residualByTerm": {
+      "12": 0.79,
+      "24": 0.71,
+      "36": 0.62,
+      "48": 0.54,
+      "60": 0.48
+    },
+    "vehiclePrice": 64100000
+  },
+  "X1 20i xLine xDrive": {
+    "brand": "BMW",
+    "engineCc": 1998,
+    "kind": "승용SUV(~5인)",
+    "residualByTerm": {
+      "12": 0.79,
+      "24": 0.71,
+      "36": 0.62,
+      "48": 0.54,
+      "60": 0.48
+    },
+    "vehiclePrice": 59400000
+  },
+  "X2 M35i": {
+    "brand": "BMW",
+    "engineCc": 1998,
+    "kind": "승용SUV(~5인)",
+    "residualByTerm": {
+      "12": 0.71,
+      "24": 0.63,
+      "36": 0.54,
+      "48": 0.46,
+      "60": 0.4
+    },
+    "vehiclePrice": 75000000
+  },
+  "X3 20 M Sport Pro xDrive": {
+    "brand": "BMW",
+    "engineCc": 1998,
+    "kind": "승용SUV(~5인)",
+    "residualByTerm": {
+      "12": 0.8,
+      "24": 0.72,
+      "36": 0.63,
+      "48": 0.55,
+      "60": 0.49
+    },
+    "vehiclePrice": 78300000
+  },
+  "X3 20 M Sport xDrive": {
+    "brand": "BMW",
+    "engineCc": 1998,
+    "kind": "승용SUV(~5인)",
+    "residualByTerm": {
+      "12": 0.8,
+      "24": 0.72,
+      "36": 0.63,
+      "48": 0.55,
+      "60": 0.49
+    },
+    "vehiclePrice": 72500000
+  },
+  "X3 20 xLine xDrive": {
+    "brand": "BMW",
+    "engineCc": 1998,
+    "kind": "승용SUV(~5인)",
+    "residualByTerm": {
+      "12": 0.8,
+      "24": 0.72,
+      "36": 0.63,
+      "48": 0.55,
+      "60": 0.49
+    },
+    "vehiclePrice": 69500000
+  },
+  "X3 20d M Sport xDrive": {
+    "brand": "BMW",
+    "engineCc": 1995,
+    "kind": "승용SUV(~5인)",
+    "residualByTerm": {
+      "12": 0.8,
+      "24": 0.72,
+      "36": 0.63,
+      "48": 0.55,
+      "60": 0.49
+    },
+    "vehiclePrice": 77800000
+  },
+  "X3 20d xDrive": {
+    "brand": "BMW",
+    "engineCc": 1995,
+    "kind": "승용SUV(~5인)",
+    "residualByTerm": {
+      "12": 0.8,
+      "24": 0.72,
+      "36": 0.63,
+      "48": 0.55,
+      "60": 0.49
+    },
+    "vehiclePrice": 74700000
+  },
+  "X3 30e M Sport Pro xDrive": {
+    "brand": "BMW",
+    "engineCc": 1998,
+    "kind": "승용SUV(~5인)",
+    "residualByTerm": {
+      "12": 0.8,
+      "24": 0.72,
+      "36": 0.63,
+      "48": 0.55,
+      "60": 0.49
+    },
+    "vehiclePrice": 89700000
+  },
+  "X3 30e M Sport xDrive": {
+    "brand": "BMW",
+    "engineCc": 1998,
+    "kind": "승용SUV(~5인)",
+    "residualByTerm": {
+      "12": 0.8,
+      "24": 0.72,
+      "36": 0.63,
+      "48": 0.55,
+      "60": 0.49
+    },
+    "vehiclePrice": 87600000
+  },
+  "X3 30e xLine xDrive": {
+    "brand": "BMW",
+    "engineCc": 1998,
+    "kind": "승용SUV(~5인)",
+    "residualByTerm": {
+      "12": 0.8,
+      "24": 0.72,
+      "36": 0.63,
+      "48": 0.55,
+      "60": 0.49
+    },
+    "vehiclePrice": 83700000
+  },
+  "X3 M": {
+    "brand": "BMW",
+    "engineCc": 2993,
+    "kind": "승용SUV(~5인)",
+    "residualByTerm": {
+      "12": 0.7,
+      "24": 0.62,
+      "36": 0.53,
+      "48": 0.45,
+      "60": 0.39
+    },
+    "vehiclePrice": 117500000
+  },
+  "X3 M50 xDrive Pro": {
+    "brand": "BMW",
+    "engineCc": 2998,
+    "kind": "승용SUV(~5인)",
+    "residualByTerm": {
+      "12": 0.71,
+      "24": 0.63,
+      "36": 0.54,
+      "48": 0.46,
+      "60": 0.4
+    },
+    "vehiclePrice": 98900000
+  },
+  "X4 20d M Sport Pro xDrive": {
+    "brand": "BMW",
+    "engineCc": 1995,
+    "kind": "승용SUV(~5인)",
+    "residualByTerm": {
+      "12": 0.8,
+      "24": 0.72,
+      "36": 0.63,
+      "48": 0.55,
+      "60": 0.49
+    },
+    "vehiclePrice": 85000000
+  },
+  "X4 20d M Sport xDrive": {
+    "brand": "BMW",
+    "engineCc": 1995,
+    "kind": "승용SUV(~5인)",
+    "residualByTerm": {
+      "12": 0.8,
+      "24": 0.72,
+      "36": 0.63,
+      "48": 0.55,
+      "60": 0.49
+    },
+    "vehiclePrice": 80000000
+  },
+  "X4 20d xLine xDrive": {
+    "brand": "BMW",
+    "engineCc": 1995,
+    "kind": "승용SUV(~5인)",
+    "residualByTerm": {
+      "12": 0.8,
+      "24": 0.72,
+      "36": 0.63,
+      "48": 0.55,
+      "60": 0.49
+    },
+    "vehiclePrice": 77000000
+  },
+  "X4 20i M Sport Pro xDrive": {
+    "brand": "BMW",
+    "engineCc": 1998,
+    "kind": "승용SUV(~5인)",
+    "residualByTerm": {
+      "12": 0.8,
+      "24": 0.72,
+      "36": 0.63,
+      "48": 0.55,
+      "60": 0.49
+    },
+    "vehiclePrice": 81500000
+  },
+  "X4 20i M Sport xDrive": {
+    "brand": "BMW",
+    "engineCc": 1998,
+    "kind": "승용SUV(~5인)",
+    "residualByTerm": {
+      "12": 0.8,
+      "24": 0.72,
+      "36": 0.63,
+      "48": 0.55,
+      "60": 0.49
+    },
+    "vehiclePrice": 74900000
+  },
+  "X4 20i xLine xDrive": {
+    "brand": "BMW",
+    "engineCc": 1998,
+    "kind": "승용SUV(~5인)",
+    "residualByTerm": {
+      "12": 0.8,
+      "24": 0.72,
+      "36": 0.63,
+      "48": 0.55,
+      "60": 0.49
+    },
+    "vehiclePrice": 71700000
+  },
+  "X4 M": {
+    "brand": "BMW",
+    "engineCc": 2993,
+    "kind": "승용SUV(~5인)",
+    "residualByTerm": {
+      "12": 0.7,
+      "24": 0.62,
+      "36": 0.53,
+      "48": 0.45,
+      "60": 0.39
+    },
+    "vehiclePrice": 120700000
+  },
+  "X4 M40i": {
+    "brand": "BMW",
+    "engineCc": 2998,
+    "kind": "승용SUV(~5인)",
+    "residualByTerm": {
+      "12": 0.71,
+      "24": 0.63,
+      "36": 0.54,
+      "48": 0.46,
+      "60": 0.4
+    },
+    "vehiclePrice": 101600000
+  },
+  "X5 30d M Sport xDrive (5인승)": {
+    "brand": "BMW",
+    "engineCc": 2993,
+    "kind": "승용SUV(~5인)",
+    "residualByTerm": {
+      "12": 0.805,
+      "24": 0.725,
+      "36": 0.635,
+      "48": 0.555,
+      "60": 0.495
+    },
+    "vehiclePrice": 118400000
+  },
+  "X5 30d M Sport xDrive (7인승)": {
+    "brand": "BMW",
+    "engineCc": 2993,
+    "kind": "승용SUV(7~10인)",
+    "residualByTerm": {
+      "12": 0.805,
+      "24": 0.725,
+      "36": 0.635,
+      "48": 0.555,
+      "60": 0.495
+    },
+    "vehiclePrice": 120900000
+  },
+  "X5 30d xLine xDrive (7인승)": {
+    "brand": "BMW",
+    "engineCc": 2993,
+    "kind": "승용SUV(7~10인)",
+    "residualByTerm": {
+      "12": 0.805,
+      "24": 0.725,
+      "36": 0.635,
+      "48": 0.555,
+      "60": 0.495
+    },
+    "vehiclePrice": 115500000
+  },
+  "X5 40i M Sport xDrive (5인승)": {
+    "brand": "BMW",
+    "engineCc": 2998,
+    "kind": "승용SUV(~5인)",
+    "residualByTerm": {
+      "12": 0.805,
+      "24": 0.725,
+      "36": 0.635,
+      "48": 0.555,
+      "60": 0.495
+    },
+    "vehiclePrice": 124000000
+  },
+  "X5 40i M Sport xDrive (7인승)": {
+    "brand": "BMW",
+    "engineCc": 2998,
+    "kind": "승용SUV(7~10인)",
+    "residualByTerm": {
+      "12": 0.805,
+      "24": 0.725,
+      "36": 0.635,
+      "48": 0.555,
+      "60": 0.495
+    },
+    "vehiclePrice": 126500000
+  },
+  "X5 40i xLine xDrive (7인승)": {
+    "brand": "BMW",
+    "engineCc": 2998,
+    "kind": "승용SUV(7~10인)",
+    "residualByTerm": {
+      "12": 0.805,
+      "24": 0.725,
+      "36": 0.635,
+      "48": 0.555,
+      "60": 0.495
+    },
+    "vehiclePrice": 120500000
+  },
+  "X5 50e xDrive M Sport": {
+    "brand": "BMW",
+    "engineCc": 2998,
+    "kind": "승용SUV(~5인)",
+    "residualByTerm": {
+      "12": 0.805,
+      "24": 0.725,
+      "36": 0.635,
+      "48": 0.555,
+      "60": 0.495
+    },
+    "vehiclePrice": 135400000
+  },
+  "X5 50e xDrive xLine": {
+    "brand": "BMW",
+    "engineCc": 2998,
+    "kind": "승용SUV(~5인)",
+    "residualByTerm": {
+      "12": 0.805,
+      "24": 0.725,
+      "36": 0.635,
+      "48": 0.555,
+      "60": 0.495
+    },
+    "vehiclePrice": 128700000
+  },
+  "X5 M": {
+    "brand": "BMW",
+    "engineCc": 4395,
+    "kind": "승용SUV(~5인)",
+    "residualByTerm": {
+      "12": 0.69,
+      "24": 0.61,
+      "36": 0.52,
+      "48": 0.44,
+      "60": 0.38
+    },
+    "vehiclePrice": 174600000
+  },
+  "X5 M60i xDrive Pro": {
+    "brand": "BMW",
+    "engineCc": 4395,
+    "kind": "승용SUV(~5인)",
+    "residualByTerm": {
+      "12": 0.7,
+      "24": 0.62,
+      "36": 0.53,
+      "48": 0.45,
+      "60": 0.39
+    },
+    "vehiclePrice": 158000000
+  },
+  "X6 30d M Sport xDrive": {
+    "brand": "BMW",
+    "engineCc": 2993,
+    "kind": "승용SUV(~5인)",
+    "residualByTerm": {
+      "12": 0.805,
+      "24": 0.725,
+      "36": 0.635,
+      "48": 0.555,
+      "60": 0.495
+    },
+    "vehiclePrice": 123100000
+  },
+  "X6 40d M Sport xDrive": {
+    "brand": "BMW",
+    "engineCc": 2993,
+    "kind": "승용SUV(~5인)",
+    "residualByTerm": {
+      "12": 0.805,
+      "24": 0.725,
+      "36": 0.635,
+      "48": 0.555,
+      "60": 0.495
+    },
+    "vehiclePrice": 138100000
+  },
+  "X6 40i M Sport xDrive": {
+    "brand": "BMW",
+    "engineCc": 2998,
+    "kind": "승용SUV(~5인)",
+    "residualByTerm": {
+      "12": 0.805,
+      "24": 0.725,
+      "36": 0.635,
+      "48": 0.555,
+      "60": 0.495
+    },
+    "vehiclePrice": 127600000
+  },
+  "X6 M Competition": {
+    "brand": "BMW",
+    "engineCc": 4395,
+    "kind": "승용SUV(~5인)",
+    "residualByTerm": {
+      "12": 0.69,
+      "24": 0.61,
+      "36": 0.52,
+      "48": 0.44,
+      "60": 0.38
+    },
+    "vehiclePrice": 181500000
+  },
+  "X6 M60i xDrive Pro": {
+    "brand": "BMW",
+    "engineCc": 4395,
+    "kind": "승용SUV(~5인)",
+    "residualByTerm": {
+      "12": 0.7,
+      "24": 0.62,
+      "36": 0.53,
+      "48": 0.45,
+      "60": 0.39
+    },
+    "vehiclePrice": 156000000
+  },
+  "X7 xDrive 40d DPE (6인승)": {
+    "brand": "BMW",
+    "engineCc": 2993,
+    "kind": "승용SUV(~5인)",
+    "residualByTerm": {
+      "12": 0.8,
+      "24": 0.72,
+      "36": 0.63,
+      "48": 0.55,
+      "60": 0.49
+    },
+    "vehiclePrice": 152700000
+  },
+  "X7 xDrive 40d DPE (7인승)": {
+    "brand": "BMW",
+    "engineCc": 2993,
+    "kind": "승용SUV(7~10인)",
+    "residualByTerm": {
+      "12": 0.8,
+      "24": 0.72,
+      "36": 0.63,
+      "48": 0.55,
+      "60": 0.49
+    },
+    "vehiclePrice": 148200000
+  },
+  "X7 xDrive 40d M Sport (6인승)": {
+    "brand": "BMW",
+    "engineCc": 2993,
+    "kind": "승용SUV(~5인)",
+    "residualByTerm": {
+      "12": 0.8,
+      "24": 0.72,
+      "36": 0.63,
+      "48": 0.55,
+      "60": 0.49
+    },
+    "vehiclePrice": 152700000
+  },
+  "X7 xDrive 40d M Sport (7인승)": {
+    "brand": "BMW",
+    "engineCc": 2993,
+    "kind": "승용SUV(7~10인)",
+    "residualByTerm": {
+      "12": 0.8,
+      "24": 0.72,
+      "36": 0.63,
+      "48": 0.55,
+      "60": 0.49
+    },
+    "vehiclePrice": 150700000
+  },
+  "X7 xDrive 40i DPE (6인승)": {
+    "brand": "BMW",
+    "engineCc": 2993,
+    "kind": "승용SUV(~5인)",
+    "residualByTerm": {
+      "12": 0.8,
+      "24": 0.72,
+      "36": 0.63,
+      "48": 0.55,
+      "60": 0.49
+    },
+    "vehiclePrice": 149200000
+  },
+  "X7 xDrive 40i DPE (7인승)": {
+    "brand": "BMW",
+    "engineCc": 2993,
+    "kind": "승용SUV(7~10인)",
+    "residualByTerm": {
+      "12": 0.8,
+      "24": 0.72,
+      "36": 0.63,
+      "48": 0.55,
+      "60": 0.49
+    },
+    "vehiclePrice": 147200000
+  },
+  "X7 xDrive 40i M Sport (6인승)": {
+    "brand": "BMW",
+    "engineCc": 2993,
+    "kind": "승용SUV(~5인)",
+    "residualByTerm": {
+      "12": 0.8,
+      "24": 0.72,
+      "36": 0.63,
+      "48": 0.55,
+      "60": 0.49
+    },
+    "vehiclePrice": 151700000
+  },
+  "X7 xDrive 40i M Sport (7인승)": {
+    "brand": "BMW",
+    "engineCc": 2993,
+    "kind": "승용SUV(7~10인)",
+    "residualByTerm": {
+      "12": 0.8,
+      "24": 0.72,
+      "36": 0.63,
+      "48": 0.55,
+      "60": 0.49
+    },
+    "vehiclePrice": 149700000
+  },
+  "XC40 B4 AWD Plus Bright": {
+    "brand": "VOLVO",
+    "engineCc": 1969,
+    "kind": "승용SUV(~5인)",
+    "residualByTerm": {
+      "12": 0.75,
+      "24": 0.67,
+      "36": 0.58,
+      "48": 0.5,
+      "60": 0.44
+    },
+    "vehiclePrice": 47760000
+  },
+  "XC40 B4 AWD Ultra Bright": {
+    "brand": "VOLVO",
+    "engineCc": 1969,
+    "kind": "승용SUV(~5인)",
+    "residualByTerm": {
+      "12": 0.75,
+      "24": 0.67,
+      "36": 0.58,
+      "48": 0.5,
+      "60": 0.44
+    },
+    "vehiclePrice": 52100000
+  },
+  "XC40 B4 AWD Ultra Dark": {
+    "brand": "VOLVO",
+    "engineCc": 1969,
+    "kind": "승용SUV(~5인)",
+    "residualByTerm": {
+      "12": 0.75,
+      "24": 0.67,
+      "36": 0.58,
+      "48": 0.5,
+      "60": 0.44
+    },
+    "vehiclePrice": 52100000
+  },
+  "XC60 B5 AWD Plus Bright": {
+    "brand": "VOLVO",
+    "engineCc": 1969,
+    "kind": "승용SUV(~5인)",
+    "residualByTerm": {
+      "12": 0.75,
+      "24": 0.67,
+      "36": 0.58,
+      "48": 0.5,
+      "60": 0.44
+    },
+    "vehiclePrice": 62060000
+  },
+  "XC60 B5 AWD Ultra Bright": {
+    "brand": "VOLVO",
+    "engineCc": 1969,
+    "kind": "승용SUV(~5인)",
+    "residualByTerm": {
+      "12": 0.75,
+      "24": 0.67,
+      "36": 0.58,
+      "48": 0.5,
+      "60": 0.44
+    },
+    "vehiclePrice": 68080000
+  },
+  "XC60 B6 AWD Ultra Dark": {
+    "brand": "VOLVO",
+    "engineCc": 1969,
+    "kind": "승용SUV(~5인)",
+    "residualByTerm": {
+      "12": 0.75,
+      "24": 0.67,
+      "36": 0.58,
+      "48": 0.5,
+      "60": 0.44
+    },
+    "vehiclePrice": 72030000
+  },
+  "XC60 T8 AWD Ultra PHEV": {
+    "brand": "VOLVO",
+    "engineCc": 1969,
+    "kind": "승용SUV(~5인)",
+    "residualByTerm": {
+      "12": 0.75,
+      "24": 0.67,
+      "36": 0.58,
+      "48": 0.5,
+      "60": 0.44
+    },
+    "vehiclePrice": 84640000
+  },
+  "XC90 B6 AWD Plus Bright": {
+    "brand": "VOLVO",
+    "engineCc": 1969,
+    "kind": "승용SUV(7~10인)",
+    "residualByTerm": {
+      "12": 0.75,
+      "24": 0.67,
+      "36": 0.58,
+      "48": 0.5,
+      "60": 0.44
+    },
+    "vehiclePrice": 84670000
+  },
+  "XC90 B6 AWD Ultra Bright": {
+    "brand": "VOLVO",
+    "engineCc": 1969,
+    "kind": "승용SUV(7~10인)",
+    "residualByTerm": {
+      "12": 0.75,
+      "24": 0.67,
+      "36": 0.58,
+      "48": 0.5,
+      "60": 0.44
+    },
+    "vehiclePrice": 93850000
+  },
+  "XC90 B6 AWD Ultra Dark": {
+    "brand": "VOLVO",
+    "engineCc": 1969,
+    "kind": "승용SUV(7~10인)",
+    "residualByTerm": {
+      "12": 0.75,
+      "24": 0.67,
+      "36": 0.58,
+      "48": 0.5,
+      "60": 0.44
+    },
+    "vehiclePrice": 98570000
+  },
+  "XC90 T8 AWD Ultra Bright PHEV": {
+    "brand": "VOLVO",
+    "engineCc": 1969,
+    "kind": "승용SUV(7~10인)",
+    "residualByTerm": {
+      "12": 0.75,
+      "24": 0.67,
+      "36": 0.58,
+      "48": 0.5,
+      "60": 0.44
+    },
+    "vehiclePrice": 113270000
+  }
+}

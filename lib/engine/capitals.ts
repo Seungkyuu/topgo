@@ -33,6 +33,8 @@ import { quoteMeritzDomesticLease, findDomesticVehicle } from "./meritz-domestic
 import { quoteMeritzDomesticRental, findRentalVehicle } from "./meritz-rental-domestic";
 import { quoteMeritzImportRental, findImportRentalVehicle } from "./meritz-rental-import";
 import { quoteBnkOperatingLease, findBnkVehicle } from "./bnk";
+import { quoteMgRental, findMgRentalVehicle } from "./mg-rental";
+import { quoteMgLease, findMgLeaseVehicle } from "./mg-lease";
 import { quoteMeritzTeslaLease, findTeslaVehicle } from "./meritz-tesla";
 import { quoteMeritzBydLease, findBydVehicle } from "./meritz-byd";
 import type { MeritzEvLeaseQuote } from "./meritz-ev/lease";
@@ -353,6 +355,54 @@ function bnkOperatingLeaseQuote(id: string, deal: DealType, input: CapitalQuoteI
   }
 }
 
+function mgRentalQuote(id: string, deal: DealType, input: CapitalQuoteInput): CapitalQuoteRow {
+  const capital = "MG캐피탈";
+  try {
+    if (deal !== "longTermRental") {
+      return { capital, sourceId: id, available: false, note: "미취급" };
+    }
+    // 전기차보조금은 지역·시기별 수기입력값이라 카탈로그에 없음 — 기본 0원
+    // (몰라서 낮게 보이는 것보단 안전, 보조금 받으면 상담에서 더 낮아질 수 있음).
+    const q = quoteMgRental({
+      model: input.model,
+      vehiclePrice: input.vehiclePrice,
+      termMonths: input.termMonths,
+      annualMileageKm: input.annualMileageKm,
+    });
+    return {
+      capital, sourceId: id, available: true,
+      monthlyPayment: q.monthlyPayment, annualRate: q.annualRate,
+      customerRate: q.customerRate, residualRate: q.residualRate,
+      residualValue: q.residualValue, deposit: 0, prepayment: 0,
+    };
+  } catch (e) {
+    return { capital, sourceId: id, available: false, note: e instanceof Error ? e.message : "계산 불가" };
+  }
+}
+
+function mgLeaseQuote(id: string, deal: DealType, input: CapitalQuoteInput): CapitalQuoteRow {
+  const capital = "MG캐피탈";
+  try {
+    if (deal !== "operatingLease") {
+      return { capital, sourceId: id, available: false, note: "미취급" };
+    }
+    const q = quoteMgLease({
+      model: input.model,
+      vehiclePrice: input.vehiclePrice,
+      termMonths: input.termMonths,
+      depositRate: input.depositRate,
+    });
+    return {
+      capital, sourceId: id, available: true,
+      monthlyPayment: q.monthlyPayment, annualRate: q.annualRate,
+      customerRate: q.customerRate, residualRate: q.residualRate,
+      residualValue: q.residualValue, deposit: 0, prepayment: 0,
+    };
+  } catch (e) {
+    return { capital, sourceId: id, available: false, note: e instanceof Error ? e.message : "계산 불가" };
+  }
+}
+
 function evLeaseQuote(
   id: string,
   quoteFn: (input: {
@@ -455,6 +505,22 @@ export const QUOTE_SOURCES: QuoteSource[] = [
     deals: ["operatingLease"],
     handles: (m) => findBnkVehicle(m) !== null,
     quote: (deal, input) => bnkOperatingLeaseQuote("bnk-operating-lease", deal, input),
+  },
+  {
+    id: "mg-rental",
+    capital: "MG캐피탈",
+    label: "장기렌터카(EV)",
+    deals: ["longTermRental"],
+    handles: (m) => findMgRentalVehicle(m) !== null,
+    quote: (deal, input) => mgRentalQuote("mg-rental", deal, input),
+  },
+  {
+    id: "mg-lease",
+    capital: "MG캐피탈",
+    label: "운용리스",
+    deals: ["operatingLease"],
+    handles: (m) => findMgLeaseVehicle(m) !== null,
+    quote: (deal, input) => mgLeaseQuote("mg-lease", deal, input),
   },
   {
     id: "meritz-tesla-lease",
