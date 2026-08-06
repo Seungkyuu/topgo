@@ -135,8 +135,8 @@ def extract_vehicles(ws) -> dict:
                         residual[f"{term}_{mileage}"] = round(float(v), 4)
                     col += 1
 
-            if not residual:
-                continue
+            if not residual or not any(residual.values()):
+                continue  # 잔가율 전부 0/미기입 — 구분선 등 비차량 행(예: "―――" 행)
 
             vehicles[model] = {
                 "brand": current_brand or "",

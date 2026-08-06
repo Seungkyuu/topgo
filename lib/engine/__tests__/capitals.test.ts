@@ -61,14 +61,15 @@ describe("2차 필터 — 상품별 소스", () => {
 });
 
 describe("견적 — 차량→상품→연산", () => {
-  it("운용리스 → 오릭스 3,091,300(최저), 신한 3,361,340, 메리츠 3,334,800", () => {
-    // 신한 3,361,340·메리츠 3,334,800은 둘 다 input.vehiclePrice(213,600,000 — 오릭스
+  it("운용리스 → 오릭스 3,091,300(최저), 신한 3,361,340, 메리츠 3,377,900", () => {
+    // 신한 3,361,340·메리츠 3,377,900은 둘 다 input.vehiclePrice(213,600,000 — 오릭스
     // 엑셀 골든케이스 원가)를 그대로 넘겼을 때의 결과다. 과거엔 신한·메리츠-수입 라우팅
     // 경로가 vehiclePrice를 무시하고 각자 마스터 카탈로그 가격
     // (신한 209,100,000 "S500 4MATIC Long" / 메리츠 199,100,000 "Benz S 500 4MATIC Long")
     // 으로만 계산하는 버그가 있어 각각 3,299,810·3,110,300이 나왔었다 — capitals.ts의
     // priceOverride 배관 수정으로 세 캐피탈 모두 "같은 겟챠 실가격"을 받아 계산하는 것이
-    // 이제 실제로 보장된다.
+    // 이제 실제로 보장된다. 메리츠 값은 2608_V1 갱신(브랜드 금리·잔가보장수수료 변경)으로
+    // 3,334,800 → 3,377,900 재조정.
     const rows = quoteVehicle("S 500 4M", "operatingLease", input);
     const orix = rows.find((r) => r.capital === "오릭스")!;
     expect(orix.monthlyPayment).toBe(3_091_300);
@@ -77,7 +78,7 @@ describe("견적 — 차량→상품→연산", () => {
     expect(shinhan.monthlyPayment).toBe(3_361_340);
     const meritz = rows.find((r) => r.capital === "메리츠")!;
     expect(meritz.available).toBe(true);
-    expect(meritz.monthlyPayment).toBe(3_334_800);
+    expect(meritz.monthlyPayment).toBe(3_377_900);
     expect(lowestCapital(rows)).toBe("오릭스");
   });
 

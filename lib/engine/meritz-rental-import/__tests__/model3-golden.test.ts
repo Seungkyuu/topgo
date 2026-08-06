@@ -12,10 +12,11 @@ describe("메리츠 수입(EV) 렌트 — Model 3 RWD(보조금) 실제 견적 �
       annualMileageKm: 20_000,
       evSubsidy: 2_200_000,
     });
-    // 엑셀 견적조건!H21
+    // 엑셀 견적조건!H21 — 계산 사슬(원금)은 갱신과 무관하게 그대로 일치.
     expect(q.principal).toBeCloseTo(39_185_451, 0);
-    expect(q.strategyGrade).toBe("전략AA");
-    expect(q.annualRate).toBeCloseTo(0.065, 4);
+    // 2608_V2 갱신분 — 전략AA → 수입E로 재분류, 금리도 6.5% → 5.25%로 변경.
+    expect(q.strategyGrade).toBe("수입E");
+    expect(q.annualRate).toBeCloseTo(0.0525, 4);
   });
 
   it("EV 취득세감면 제외 플래그가 있는 트림은 감면 없이 계산된다", () => {
@@ -66,8 +67,10 @@ describe("메리츠 수입(EV) 렌트 — Model 3 RWD(보조금) 실제 견적 �
     expect(() =>
       quoteMeritzImportRental({
         model: "Model 3 RWD (보조금)",
+        // 2608_V2 갱신분에서 24개월 잔가율이 새로 채워졌다 — 이제 미등록
+        // 구간은 12개월뿐이라 테스트 대상을 그쪽으로 옮긴다.
         vehiclePrice: 45_000_000,
-        termMonths: 24, // 이 모델은 24개월 잔가율 미제공
+        termMonths: 12,
         annualMileageKm: 20_000,
       }),
     ).toThrow("잔가율 미등록");
