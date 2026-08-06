@@ -1,0 +1,107 @@
+{
+  "Polestar4 Long Range Dual Motor (2차시)": {
+    "brand": "Polestar",
+    "discountAmount": 2200000,
+    "discountRate": 0.135,
+    "evAcquisitionTaxRebate": true,
+    "fuel": "EV",
+    "kind": "전기",
+    "residualByTerm": {
+      "36": 0.65,
+      "48": 0.6,
+      "60": 0.55
+    }
+  },
+  "Polestar4 Long Range Dual Motor + PLDC (3차시)": {
+    "brand": "Polestar",
+    "discountAmount": 2200000,
+    "discountRate": 0.13,
+    "evAcquisitionTaxRebate": true,
+    "fuel": "EV",
+    "kind": "전기",
+    "residualByTerm": {
+      "36": 0.65,
+      "48": 0.6,
+      "60": 0.55
+    }
+  },
+  "Polestar4 Long Range Dual Motor + PLDC + Performance (3차시)": {
+    "brand": "Polestar",
+    "discountAmount": 1840000,
+    "discountRate": 0.13,
+    "evAcquisitionTaxRebate": false,
+    "fuel": "EV",
+    "kind": "전기",
+    "residualByTerm": {
+      "36": 0.65,
+      "48": 0.6,
+      "60": 0.55
+    }
+  },
+  "Polestar4 Long Range Dual Motor + Performance (3차시)": {
+    "brand": "Polestar",
+    "discountAmount": 1840000,
+    "discountRate": 0.14,
+    "evAcquisitionTaxRebate": false,
+    "fuel": "EV",
+    "kind": "전기",
+    "residualByTerm": {
+      "36": 0.65,
+      "48": 0.6,
+      "60": 0.55
+    }
+  },
+  "Polestar4 Long Range Dual Motor Performance (2차시)": {
+    "brand": "Polestar",
+    "discountAmount": 1840000,
+    "discountRate": 0.135,
+    "evAcquisitionTaxRebate": false,
+    "fuel": "EV",
+    "kind": "전기",
+    "residualByTerm": {
+      "36": 0.65,
+      "48": 0.6,
+      "60": 0.55
+    }
+  },
+  "Polestar4 Long Range Dual Motor Performance(1차시)": {
+    "brand": "Polestar",
+    "discountAmount": 1840000,
+    "discountRate": 0.13,
+    "evAcquisitionTaxRebate": false,
+    "fuel": "EV",
+    "kind": "전기",
+    "residualByTerm": {
+      "36": 0.65,
+      "48": 0.6,
+      "60": 0.55
+    }
+  },
+  "Polestar4 Long Range Dual Motor(1차시)": {
+    "brand": "Polestar",
+    "discountAmount": 2200000,
+    "discountRate": 0.13,
+    "evAcquisitionTaxRebate": true,
+    "fuel": "EV",
+    "kind": "전기",
+    "residualByTerm": {
+      "36": 0.65,
+      "48": 0.6,
+      "60": 0.55
+    }
+  },
+  "Polestar4 Long Range Single Motor(1차시)": {
+    "brand": "Polestar",
+    "discountAmount": 2200000,
+    "discountRate": 0.13,
+    "evAcquisitionTaxRebate": true,
+    "fuel": "EV",
+    "kind": "전기",
+    "residualByTerm": {
+      "36": 0.65,
+      "48": 0.6,
+      "60": 0.55
+    }
+  },
+  "_note": "메리츠 Polestar 전용 운용리스 2608_V2 '차종' 시트에서 추출"
+}

@@ -37,6 +37,7 @@ import { quoteMgRental, findMgRentalVehicle } from "./mg-rental";
 import { quoteMgLease, findMgLeaseVehicle } from "./mg-lease";
 import { quoteMeritzTeslaLease, findTeslaVehicle } from "./meritz-tesla";
 import { quoteMeritzBydLease, findBydVehicle } from "./meritz-byd";
+import { quoteMeritzPolestarLease, findPolestarLeaseVehicle } from "./meritz-polestar";
 import type { MeritzEvLeaseQuote } from "./meritz-ev/lease";
 
 export type DealType = "operatingLease" | "financeLease" | "longTermRental";
@@ -436,6 +437,29 @@ function evLeaseQuote(
   }
 }
 
+function polestarLeaseQuote(id: string, deal: DealType, input: CapitalQuoteInput): CapitalQuoteRow {
+  const capital = "메리츠";
+  try {
+    if (deal !== "operatingLease") {
+      return { capital, sourceId: id, available: false, note: "미취급" };
+    }
+    const q = quoteMeritzPolestarLease({
+      model: input.model,
+      vehiclePrice: input.vehiclePrice,
+      termMonths: input.termMonths,
+      depositRate: input.depositRate,
+    });
+    return {
+      capital, sourceId: id, available: true,
+      monthlyPayment: q.monthlyPayment, annualRate: q.annualRate,
+      customerRate: q.customerRate, residualRate: q.residualRate,
+      residualValue: q.residualValue, deposit: q.deposit, prepayment: q.prepayment,
+    };
+  } catch (e) {
+    return { capital, sourceId: id, available: false, note: e instanceof Error ? e.message : "계산 불가" };
+  }
+}
+
 // ─── 소스 레지스트리 (추출·검증된 엑셀만 등록. 없는 파일은 등록하지 않음) ─────────
 //
 // 아직 미추출인 메리츠 국산차·테슬라·BYD·렌트 엑셀은 데이터가 없으므로 등록하지
@@ -537,6 +561,14 @@ export const QUOTE_SOURCES: QuoteSource[] = [
     deals: ["operatingLease"],
     handles: (m) => findBydVehicle(m) !== null,
     quote: (deal, input) => evLeaseQuote("meritz-byd-lease", quoteMeritzBydLease, deal, input),
+  },
+  {
+    id: "meritz-polestar-lease",
+    capital: "메리츠",
+    label: "Polestar 전용",
+    deals: ["operatingLease"],
+    handles: (m) => findPolestarLeaseVehicle(m) !== null,
+    quote: (deal, input) => polestarLeaseQuote("meritz-polestar-lease", deal, input),
   },
 ];
 

@@ -23,6 +23,7 @@ import { listMgRentalVehicles } from "./mg-rental";
 import { listMgLeaseVehicles } from "./mg-lease";
 import teslaVehiclesJson from "./meritz-tesla/data/vehicles.json";
 import bydVehiclesJson from "./meritz-byd/data/vehicles.json";
+import { listPolestarLeaseVehicles } from "./meritz-polestar";
 import shinhanRentalJson from "./shinhan/data/rental-vehicles.json";
 import { approxPrice } from "./approx-prices";
 import { importRealPrice, importOfferKey } from "./import-real-price";
@@ -303,6 +304,11 @@ export function buildVehicleIndex(): IndexedVehicle[] {
   //   ref.model은 원본 키 그대로 넘겨야 한다(아래 meritz-rental-import와 동일 원칙).
   for (const key of jsonModelNames(bydVehiclesJson as Record<string, unknown>)) {
     add("BYD", key, "meritz-byd-lease", approxPrice(key, 32_000_000));
+  }
+  // 메리츠 Polestar 전용 운용리스 — Polestar 4 생산배치별(1~3차시) 세부 트림.
+  // 마스터에 차량가가 없어(엑셀도 매 견적 시세 수기입력) approxPrice로만 표시.
+  for (const [key] of listPolestarLeaseVehicles()) {
+    add("Polestar", key, "meritz-polestar-lease", approxPrice(key, 70_000_000));
   }
   // 메리츠 수입(EV) 장기렌트 — 테슬라·폴스타·BYD(전 모델 EV).
   // ⚠ add()의 두 번째 인자(rawLabel)는 ref.model로 그대로 저장되고,

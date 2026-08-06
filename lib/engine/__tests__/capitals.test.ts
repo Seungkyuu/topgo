@@ -32,6 +32,7 @@ describe("소스(엑셀) 레지스트리 — 근본 원칙", () => {
       "mg-lease",
       "meritz-tesla-lease",
       "meritz-byd-lease",
+      "meritz-polestar-lease",
     ]);
   });
   it("캐피탈 목록은 소스에서 중복 제거해 도출", () => {
