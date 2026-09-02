@@ -1,6 +1,8 @@
 import { ImageResponse } from "next/og";
 
-export const runtime = "edge";
+// 빌드 시점에 PNG로 미리 생성해 CDN 정적 자산으로 서빙한다. edge 런타임으로
+// 두면 요청마다 즉석 렌더라 렌더 오류가 빌드에서 안 잡히고 요청 시점에만
+// 터진다(스크래퍼는 이미지를 못 받아 조용히 옛 캐시를 노출한다).
 export const alt = "탑고 — 자동차 장기렌트·리스·법인 리스 최저가 랭킹 비교";
 export const size = { width: 1200, height: 630 };
 export const contentType = "image/png";
