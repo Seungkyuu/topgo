@@ -114,11 +114,32 @@ const DECORATIONS: RegExp[] = [
  *  (그쪽은 모델 그룹명, 여기는 트림 표시명 — 둘 다 고쳐야 한 모델로 보인다). */
 const TYPO_FIXES: [RegExp, string][] = [[/쏘나티/g, "쏘나타"]];
 
+/**
+ * 맨 앞 토큰이 곧바로 한 번 더 반복되면 하나로 접는다.
+ *
+ * 메리츠 수입차 엑셀 키가 `<브랜드><모델> <세부모델>` 꼴인데 세부모델이 모델명을
+ * 다시 포함하는 경우가 많다("LANDROVERDefender Defender 130 D300" →
+ * 브랜드 제거 후 "Defender Defender 130 D300"). 그대로 두면 두 가지가 깨진다.
+ *   1) 고객 화면에 "Discovery Discovery 3.0 D250 S"처럼 보인다.
+ *   2) mergeKey가 brand+display라서 같은 차인데도 신한 표기와 안 합쳐져,
+ *      메리츠 단독 취급 차량인 것처럼 중복 노출된다.
+ * 위 DECORATIONS의 폴스타·BYD 접두 제거가 이 문제를 브랜드별로 하나씩 막고
+ * 있었는데, 실제로는 369건(전체 5,332건)이라 일반 규칙으로 올린다.
+ */
+function collapseRepeatedHead(s: string): string {
+  // 반복 토큰 뒤가 문자열 끝이거나 (·- 같은 비단어 문자여도 접는다
+  // ("Ghibli Ghibli", "Macan Macan(가솔린)", "CT5 CT5-V Blackwing").
+  // 다만 뒤에 단어 문자가 이어지면 접지 않는다 — "GT GTS"처럼 앞 토큰이
+  // 뒤 토큰의 접두사일 뿐 중복이 아닌 경우를 지켜야 한다.
+  return s.replace(/^(\S+)\s+\1(?![\w가-힣])/, "$1");
+}
+
 export function cleanDisplayName(label: string): string {
   let s = label;
   for (const re of DECORATIONS) s = s.replace(re, " ");
   for (const [re, to] of TYPO_FIXES) s = s.replace(re, to);
-  return s.replace(/\s+/g, " ").trim();
+  s = s.replace(/\s+/g, " ").trim();
+  return collapseRepeatedHead(s);
 }
 
 /** 병합 키: 소문자·기호/공백 제거 (한글 유지) */

@@ -1,15 +1,31 @@
 import { describe, expect, it } from "vitest";
 import { buildVehicleCatalog } from "../vehicle-catalog";
 import { approxPrice } from "../approx-prices";
+import realPricesJson from "../data/real-prices.json";
+
+const REAL_PRICES: Record<string, number> = realPricesJson;
 import { RECOMMENDABLE_DEALS } from "../recommend";
 
 describe("개략 시세 (approx-prices)", () => {
+  // real-prices.json은 겟챠 스크래핑이 매일 갱신하는 실시간 시세라, 기대값을
+  // 숫자로 박아두면 시세가 움직일 때마다 테스트가 깨진다(엑셀에서 뽑은 골든
+  // 케이스와 성격이 다르다 — 그쪽은 계약 금액이라 고정이어야 한다).
+  // 그래서 "얼마인가" 대신 "실가격 경로가 실제로 선택됐는가"를 검증한다.
   it("겟챠 실가격(real-prices.json)에 있으면 그 값을 우선 쓴다 (할인 있으면 할인가)", () => {
-    expect(approxPrice("디 올 뉴 그랜저 2.5G", 0)).toBe(41_613_889);
-    expect(approxPrice("디 올 뉴 팰리세이드 2.5 HEV 7인승 2WD", 0)).toBe(49_655_477);
-    expect(approxPrice("Model Y Long Range", 0)).toBe(66_990_000);
-    expect(approxPrice("♣프로모션♣ 모델3 롱레인지", 0)).toBe(59_990_000);
-    expect(approxPrice("BYD Dolphin", 0)).toBe(24_500_000);
+    const SENTINEL = -1; // fallback이 쓰이면 이 값이 그대로 나온다
+    for (const label of [
+      "디 올 뉴 그랜저 2.5G",
+      "디 올 뉴 팰리세이드 2.5 HEV 7인승 2WD",
+      "Model Y Long Range",
+      "♣프로모션♣ 모델3 롱레인지",
+      "BYD Dolphin",
+    ]) {
+      const expected = REAL_PRICES[label];
+      // 라벨이 실가격 표에서 통째로 빠졌다면 매칭 파이프라인이 깨진 것이다.
+      expect(expected, `실가격 표에 없는 라벨: ${label}`).toBeDefined();
+      expect(approxPrice(label, SENTINEL)).toBe(expected);
+      expect(approxPrice(label, SENTINEL)).not.toBe(SENTINEL);
+    }
   });
 
   it("실가격 매칭이 없으면 정규식 개략가로 폴백한다", () => {

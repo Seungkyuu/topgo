@@ -7,6 +7,7 @@ import {
   dealsForIndexed,
   quoteIndexed,
 } from "../vehicle-index";
+import { importRealPrice } from "../import-real-price";
 
 describe("표시명 정제", () => {
   it("내부 표기를 걷어낸다", () => {
@@ -76,13 +77,23 @@ describe("통합 차량 인덱스", () => {
     expect(rentals.length).toBeGreaterThan(400);
   });
 
+  // 겟챠 실가격은 매일 갱신되는 시세라 금액을 박아두면 시세가 움직일 때마다
+  // 깨진다. "얼마인가" 대신 "엑셀가가 아니라 겟챠 실가격이 쓰였는가"를 본다.
   it("수입차도 겟챠 실가격 매칭이 있으면 캐피탈사 엑셀가 대신 그 값을 계산에 쓴다", () => {
     const bmw740d = index.find(
       (v) => v.brand === "BMW" && /740d xDrive M Sport \(P1\)$/.test(v.display),
     );
     expect(bmw740d).toBeDefined();
     const shinhanRef = bmw740d!.refs.find((r) => r.sourceId === "shinhan-lease");
-    expect(shinhanRef?.price).toBe(137_100_000);
+    expect(shinhanRef).toBeDefined();
+
+    // 신한 실가격 조회 키는 "브랜드 모델명" 형식이다(vehicle-index.ts와 동일).
+    const rawKey = `${bmw740d!.brand} ${shinhanRef!.model}`;
+    const real = importRealPrice(rawKey, NaN);
+    // 이 차가 실가격 매칭에서 빠졌다면 수입차 매칭 파이프라인이 깨진 것이다.
+    expect(Number.isNaN(real), `740d 실가격 매칭이 사라졌다: ${rawKey}`).toBe(false);
+    // 엑셀 정가가 아니라 겟챠 실가격이 계산 입력값으로 들어갔는지 확인.
+    expect(shinhanRef!.price).toBe(real);
   });
 
   it("겟챠 등급 식별자가 같으면 표기가 다른 소스끼리도 하나로 합쳐진다", () => {
